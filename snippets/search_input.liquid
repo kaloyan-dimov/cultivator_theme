@@ -1,0 +1,23 @@
+<div class="search_container fixed hidden z-[3] w-full">
+  <form class="search_products relative fixed z-[2] w-full h-[60px] border-b border-[#EAE2DB]" action="{{ routes.search_url }}">
+    <input
+      class="search_input absolute pl-[44px] h-[44px] w-[200px] top-[8px] left-[16px] w-[calc(100vw-68px)] border border-[#EAE2DB] rounded-[12px]"
+      type="text"
+      placeholder="search"
+      name="q"
+      value="{{ search.terms | escape }}" />
+    <button class="absolute top-[76px] right-[16px] underline">see all results</button>
+  </form>
+  <div class="search_close z-[2] cursor-pointer">
+    <span></span>
+    <span></span>
+  </div>
+  <div class="fixed top-[0] left-0 w-full h-full bg-[#FBF9F9] z-[1] pt-[76px] overflow-auto">
+    <h2 class="search_text mb-[16px]">Trending products:</h2>
+    <div class="search_results">
+      {% for product in settings.trending_products %}
+        <h2>{{ product.title }}</h2>
+      {% endfor %}
+    </div>
+  </div>
+</div>

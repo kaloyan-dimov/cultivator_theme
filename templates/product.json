@@ -1,0 +1,185 @@
+{
+  "sections": {
+    "main": {
+      "type": "template_product",
+      "settings": {}
+    },
+    "16921968550071b76a": {
+      "type": "apps",
+      "blocks": {
+        "5f45a87e-2d18-4e3c-97af-b6e2e0eec43f": {
+          "type": "shopify:\/\/apps\/the4-toolkit\/blocks\/wishlist-product-block\/049d73ec-9c99-4c7d-a189-72c9200dcc8f",
+          "settings": {
+            "text_color": "#000000",
+            "added_text_color": "#333333",
+            "text_size": 15,
+            "color": "#b50000",
+            "added_color": "#ff0000",
+            "icon_size": 14,
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "5f45a87e-2d18-4e3c-97af-b6e2e0eec43f"
+      ],
+      "settings": {}
+    },
+    "ingridients": {
+      "type": "template_product_key_ingridients",
+      "blocks": {
+        "99b32e59-8f12-421c-b4f2-7113fa969d19": {
+          "type": "Ingridient",
+          "repeater": "{{ product.metafields.custom.product_ingridients_metafield.value }}",
+          "settings": {
+            "ingridient_title": "{{ block.repeater.ingridient_name.value }}",
+            "ingridient_description": "{{ block.repeater.ingridient_description.value }}",
+            "ingridient_image": "{{ block.repeater.ingridient_media.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "99b32e59-8f12-421c-b4f2-7113fa969d19"
+      ],
+      "settings": {
+        "section_title": ""
+      }
+    },
+    "usage_guilde": {
+      "type": "template_product_use_guide",
+      "blocks": {
+        "32302ec4-c5e6-4b33-a7c6-794330636d0d": {
+          "type": "Step",
+          "repeater": "{{ product.metafields.custom.usage_guide_steps_metafield.value }}",
+          "settings": {
+            "step_text": "{{ block.repeater.step_text | metafield_tag }}",
+            "step_image": "{{ block.repeater.step_image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "32302ec4-c5e6-4b33-a7c6-794330636d0d"
+      ],
+      "settings": {
+        "section_title": "",
+        "usage_guide_video": "{{ product.metafields.custom.usage_guide_video_metafield.value.usage_guide_video.value }}"
+      }
+    },
+    "clinically_safe": {
+      "type": "template_product_clinically_safe",
+      "settings": {
+        "clinically_safe_title": "Clinically Safe Product",
+        "background_image": "shopify:\/\/shop_images\/Clinically_safe_image.png",
+        "overlay_icon": "shopify:\/\/shop_images\/Clinically_safe_icon_20e939be-f5f6-4265-9379-d4353858eebe.png",
+        "pdf_url": "{{ product.metafields.custom.clinically_safe_product_file.value.link_to_clinically_safe_product_file.value }}"
+      }
+    },
+    "ingridient_sourcing": {
+      "type": "template_product_ingridient_sourcing",
+      "blocks": {
+        "28e378b0-bd93-4a3b-8164-8c1349f58146": {
+          "type": "Ingridient",
+          "repeater": "{{ product.metafields.custom.sustainable_ingridients_sourcing.value }}",
+          "settings": {
+            "ingridient_title": "{{ block.repeater.ingridient_location_country_code.value }}",
+            "ingridient_image": "{{ block.repeater.sustainable_ingridient_image.value }}",
+            "ingridient_country_name": "{{ block.repeater.ingridient_location_name.value }}",
+            "ingridient_country_code": "{{ block.repeater.ingridient_name.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "28e378b0-bd93-4a3b-8164-8c1349f58146"
+      ],
+      "settings": {
+        "section_title": ""
+      }
+    },
+    "product_technologies": {
+      "type": "template_product_technologies",
+      "blocks": {
+        "c6104f58-e876-4a8e-bed9-e9d7e217631f": {
+          "type": "Technology",
+          "repeater": "{{ product.metafields.custom.product_technologies.value }}",
+          "settings": {
+            "technology_title": "{{ block.repeater.title.value }}",
+            "technology_image": "{{ block.repeater.image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "c6104f58-e876-4a8e-bed9-e9d7e217631f"
+      ],
+      "settings": {
+        "section_title": "Green technology",
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+      }
+    },
+    "169320605971fdd3ff": {
+      "type": "apps",
+      "blocks": {
+        "eeaaea41-1c5c-4294-ae74-2f1b321590c3": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "eeaaea41-1c5c-4294-ae74-2f1b321590c3"
+      ],
+      "settings": {}
+    },
+    "8d395340-5ea1-4a17-ba2e-d76f4275198d": {
+      "type": "block_banner",
+      "blocks": {
+        "b87ec3e5-efdf-4b8c-9de2-d2543dce2b76": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/plant.png",
+            "banner_text": "100% Organic"
+          }
+        },
+        "7d66456e-af7f-4f01-8a00-7b05b58c922e": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/rabbit.png",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "569ed249-6b8e-483b-b089-6f0dfad8bcd5": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/drop.png",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "33b8200b-9b2d-4102-ad19-a3ad016bd83d": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/hand_heart.png",
+            "banner_text": "Fairly Sourced"
+          }
+        }
+      },
+      "block_order": [
+        "b87ec3e5-efdf-4b8c-9de2-d2543dce2b76",
+        "7d66456e-af7f-4f01-8a00-7b05b58c922e",
+        "569ed249-6b8e-483b-b089-6f0dfad8bcd5",
+        "33b8200b-9b2d-4102-ad19-a3ad016bd83d"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16921968550071b76a",
+    "ingridients",
+    "usage_guilde",
+    "clinically_safe",
+    "ingridient_sourcing",
+    "product_technologies",
+    "169320605971fdd3ff",
+    "8d395340-5ea1-4a17-ba2e-d76f4275198d"
+  ]
+}

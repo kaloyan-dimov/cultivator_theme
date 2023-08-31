@@ -1,0 +1,92 @@
+<div class="w-full flex justify-center items-center flex-col">
+  <h1 class="m-auto text-[50px] text-center">This is product page</h1>
+  <div class="flex flex-col gap-[50px] justify-center items-center">
+    <h2>
+      Product Title:
+      {{ product.title }}
+    </h2>
+    <h2>
+      Product Metafields:
+      {{ product.metafields.custom.product_ingridients_metafield }}
+      {% for field in product.metafields.custom.product_ingridients_metafield.value %}
+        <!-- forloop{{ field | json }} -->
+      {% endfor %}
+    </h2>
+    <h2>
+      Full Description:
+      {{ product.description }}
+    </h2>
+    <h2>Featured image:</h2>
+    <img
+      class="w-[300px] h-auto object-contain"
+      src="{{ product.featured_image | img_url: 'master'}}"
+      alt="">
+    <h2>Product variants:<h2>
+      <!-- {{ product.variants | json }} -->
+      <div class="section flex gap-[20px] flex-wrap">
+      {% if product.has_only_default_variant %}
+        This product has only 1 variant
+      {% else %}
+      {% comment %}
+      {% assign variant_option1 = "" %}
+      {% assign variant_option2 = "" %}
+      {% for variant in product.variants %}
+          {% for option in variant_option1 %}
+            {% if option == variant.option1 %}
+              {% break %}
+            {% endif %}
+          {% endfor %} 
+          {% if variant_option1 != variant.option1 %}
+            {% assign variant_option1 = variant.option1 %}
+            <h2>Variant types1: {{ variant_option1  }}</h2>
+        {% endif %}
+        {% if variant_option2 != variant.option2 %}
+          {% assign variant_option2 = variant.option2 %}
+          <h2>Variant types2: {{ variant_option2  }}</h2>
+        {% endif %}
+      {% endfor %}
+    {% endcomment %}
+
+      {% for variant in product.variants %}
+        <div class="flex flex-col gap-[20px] border border-black">
+          <!-- <h2> {{ variant | json }}</h2> -->
+          <h2>{{ variant.title }}</h2>
+          <h2>{{ variant.price | money_without_trailing_zeros }}</h2>
+          <h2>ID: {{ variant.id }}</h2>
+          </div>
+        {% endfor %}
+      {% endif %}
+      </div>
+    <h2 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
+      <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
+      </span>
+      |
+      {% assign offer_price = product.price %}
+      {% assign max_price = product.compare_at_price | times: 1.0 %}
+      {% assign discount = offer_price | divided_by: max_price %}
+      {{ discount | times: 100 | minus: 100 | round: 2 }} %
+    </h2>
+    <form method="post" action="/cart/add">
+      <input
+        type="hidden"
+        name="id"
+        value="{{ product.variants.first.id }}" />
+      <input
+        min="1"
+        type="number"
+        id="quantity"
+        name="quantity"
+        value="1" />
+      <input
+        type="submit"
+        value="Add to cart"
+        class="btn" />
+    </form>
+      {% render "product_recommendations" %}
+  </div>
+<h1 class="text-[50px]">{{ product.id }} </h1>
+  {% comment %}
+  {{ all_products["bangle-bracelet"].title }}:title
+  {{ all_products["bangle-bracelet"].price }}:price
+  {{ product | json }}
+  {% endcomment %}</div>

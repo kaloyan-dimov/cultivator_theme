@@ -1,0 +1,45 @@
+<div class="section w-full p-[63px] flex justify-center flex-wrap items-center gap-4 sm:gap-6">
+  {% for block in section.blocks %}
+    <div class="w-[163px] sm:w-[198px] h-[200px] sm:h-[263px] flex flex-col items-center py-12 border rounded-[90px] border-[#D1BEB1]">
+      {% if block.settings.card_image != null %}
+        <div class="w-[115px] sm:w-[151px] h-[100px] sm:h-[113px]">
+          <img
+            class="bg-center"
+            src="{{ block.settings.card_image | img_url: 'master'}}"
+            alt="">
+        </div>
+      {% endif %}
+      {% if block.settings.card_text != null %}
+        <h2 class="text-center max-w-[115px] sm:max-w-[151px] min-w-[46px] text-[16px] sm:text-[20px]">{{ block.settings.card_text }}</h2>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "Cards",
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Card Text",
+            "id": "card_text"
+          }, {
+            "type": "image_picker",
+            "label": "Card Image",
+            "id": "card_image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Cards"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,251 @@
+.hero_swiper {
+    .swiper-slide {
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+
+    .swiper-pagination {
+        height: 33px;
+        padding-bottom: 29px;
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0,0,0,0);
+            color: #B1B1B1;
+            font-size: 18px;
+            height: 33px;
+            transition: all 0.25s;
+
+            &.swiper-pagination-bullet-active {
+                color: #FFFFFF;
+                font-size: 24px;
+                transition: all 0.25s;
+            }
+        }
+    }
+}
+
+.best_selling_swiper {
+    padding-bottom: 41px !important;
+    .swiper-wrapper{
+        width: 100%;
+        height: 500px;
+
+        .swiper-slide {
+            // height: 100%;
+            width: 316px;
+            border: 1px solid transparent;
+            transition: all 0.5s;
+
+            .hover_class {
+                border: 1px solid transparent;
+                transition: all 0.5s;
+            }
+
+            &:hover {
+                border: 1px solid #CCAC71;
+                transition: all 0.5s;
+
+                .hover_class:first-child {
+                    border: 1px solid #CCAC71;
+                    transition: all 0.5s;
+                }
+                .hover_class:last-child {
+                    border-top: 1px solid #CCAC71;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background-color: unset;
+        border: 1px solid #56463D;
+        transition: all 0.5s;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #56463D;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.instagram_feed_swiper {
+    padding-bottom: 41px !important;
+    .swiper-wrapper{
+        width: 100%;
+        height: 199px;
+
+        .swiper-slide {
+            width: 199px;
+            border: 1px solid transparent;
+            transition: all 0.5s;
+        }
+    }
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background-color: unset;
+        border: 1px solid #56463D;
+        transition: all 0.5s;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #56463D;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.video_feed_with_text_swiper {
+    padding-bottom: 41px !important;
+    counter-reset: section-swiper;
+
+    .swiper-wrapper{
+        width: 100%;
+        height: fit-content;
+
+        .swiper-slide {
+            width: 100%;
+            border: 1px solid transparent;
+            transition: all 0.5s;
+
+            h2 {
+                position: relative;
+    
+                &::before {
+                    content: "0"counter(section-swiper);
+                    font-size: 14px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0; 
+                    counter-increment: section-swiper;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background-color: unset;
+        border: 1px solid #56463D;
+        transition: all 0.5s;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #56463D;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.video_feed_swiper {
+    padding-bottom: 41px !important;
+
+    .swiper-wrapper{
+        width: 100%;
+        height: fit-content;
+        
+        .swiper-slide {
+            width: 310px;
+            height: 505px;
+        }
+    }
+    
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        background-color: unset;
+        border: 1px solid #56463D;
+        transition: all 0.5s;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #56463D;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.single_product_swiper {
+    height: 396px;
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 360px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        position: absolute;
+        top: 100%;
+        height: 20px;
+        width: 25px;
+        &::after{
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='25' height='20' viewBox='0 0 25 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.9551 10.4404H25V9.44044H23.955C22.4386 9.32426 20.1288 8.71132 18.1552 7.255C16.1904 5.80522 14.5514 3.51714 14.3485 0L13.3502 0.0575965C13.5721 3.90349 15.3845 6.45331 17.5614 8.05966C18.3414 8.63522 19.1673 9.08932 19.9827 9.44044L0 9.44044L0 10.4404L19.9828 10.4404C19.1673 10.7916 18.3415 11.2457 17.5614 11.8212C15.3845 13.4276 13.5721 15.9774 13.3502 19.8233L14.3485 19.8809C14.5514 16.3637 16.1904 14.0757 18.1552 12.6259C20.1288 11.1696 22.4386 10.5566 23.9551 10.4404Z' fill='%2354443B'/%3E%3C/svg%3E%0A");
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .swiper-button-prev::after {
+        transform: rotate(180deg);
+    }
+
+}
+
+.sustainable_sourcing_swiper {
+    .swiper-wrapper {
+        width: 100%;
+        height: 570px;
+        
+        .swiper-slide {
+            width: 358px;
+            height: 500px;
+        }
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .hero_swiper {
+        .swiper-slide {
+            justify-content: start;
+        }
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgba(0,0,0,0.5);
+                font-size: 18px;
+                height: 33px;
+                transition: all 0.25s;
+    
+                &.swiper-pagination-bullet-active {
+                    color: rgba(0,0,0,1);
+                    font-size: 24px;
+                    transition: all 0.25s;
+                }
+            }
+        }
+    }
+    .instagram_feed_swiper {
+        .swiper-wrapper{
+            height: 163px;
+            .swiper-slide {
+                width: 163px;
+                border: 1px solid transparent;
+                transition: all 0.5s;
+            }
+        }
+    }
+}

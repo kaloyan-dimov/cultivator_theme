@@ -1,0 +1,125 @@
+<div class="section mb-[64px]">
+  <h2 class="text-center text-[48px] mb-[80px]">
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.section_title != null %}
+      {{ section.settings.section_title }}
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+      {% comment %} {% endcomment %}
+    {% endif %}
+  </h2>
+  <div class="video_feed_with_text flex gap-6 min-h-[574px] flex-col-reverse md:flex-row">
+    <div class="video_feed_list md:w-[50%] md:flex items-center justify-center hidden ">
+      <ol class="max-w-[532px]">
+        {% for block in section.blocks %}
+          <li class="mb-[40px]">
+            {% if block.settings.video_title != null %}
+              <h2 class="text-[32px] text-[#56463D]">{{ block.settings.video_title }}</h2>
+            {% endif %}
+            {% if block.settings.video_paragraph != null %}
+              <h3>{{ block.settings.video_paragraph }}</h3>
+            {% endif %}
+            {% if block.settings.button_text != null %}
+              <button class="border-[#CCAC71] border text-[14px] uppercase px-[24px] flex gap-2 rounded-[24px]">{{ block.settings.button_text }}</button>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="video_feed_videos min-h-[574px] relative md:w-[50%]">
+      {% for block in section.blocks %}
+        <div class="video_feed_video w-[342px] md:w-[320px] h-[513px] rounded-[160px]">
+          {{ block.settings.video | video_tag: autoplay: true, loop: true }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="section md:hidden">
+    <div class="swiper video_feed_with_text_swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide relative flex">
+            {% if block.settings.video_title != null %}
+              <h2 class="text-[32px] text-center text-[#56463D] px-[30px] mb-[4px]">{{ block.settings.video_title }}</h2>
+            {% endif %}
+            {% if block.settings.video_paragraph != null %}
+              <h3 class="text-justify">{{ block.settings.video_paragraph }}</h3>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Video Feed With Text",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Video Collection",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Video Title",
+            "id": "video_title"
+          },
+          {
+            "type": "textarea",
+            "label": "Video Pargraph",
+            "id": "video_paragraph"
+          },
+          {
+            "type": "text",
+            "label": "Video Button Text",
+            "id": "button_text",
+            "default": "Watch Video"
+          },
+          {
+            "type": "video",
+            "label": "Video",
+            "id": "video"
+          }, {
+            "type": "url",
+            "label": "Video Url",
+            "id": "video_url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Video Feed With Text"
+      }
+    ]
+  }
+{% endschema %}

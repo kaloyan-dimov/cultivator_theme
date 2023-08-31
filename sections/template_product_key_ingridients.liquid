@@ -1,0 +1,81 @@
+<div class="section">
+  <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.section_title != null %}
+      {{ section.settings.section_title }}
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+      {% comment %} {% endcomment %}
+    {% endif %}
+  </h2>
+  <div class="flex flex-wrap w-full items-center justify-center gap-[16px]">
+    {% for block in section.blocks %}
+      <div class="flex flex-col w-[358px] min-h-[562px] relative space-between rounded-[20px] border border-[#E6DFDB] overflow-hidden">
+        <div class="h-[280px] w-full">
+          <img
+            class="w-full h-full object-cover"
+            src="{{ block.settings.ingridient_image | img_url: 'master'}}"
+            alt="">
+        </div>
+        <h2 class="text-[24px] py-[16px] text-center border-b border-[#E6DFDB]">{{ block.settings.ingridient_title }}</h2>
+        <h3 class="text-[16px] text-center px-[16px] pt-[16px] max-h-[144px] pb-[55px]">{{ block.settings.ingridient_description }}</h3>
+        <div class="absolute w-full h-[56px] bg-[#FBF9F9] flex items-center justify-center left-[0] bottom-[0]">
+          <h3 class="text-[16px] underline">Read more +</h3>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Product Key Ingridients",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Ingridients Section Title",
+        "id": "section_title"
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Ingridient",
+        "name": "Ingridient",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Ingridient_title",
+            "id": "ingridient_title"
+          }, {
+            "type": "text",
+            "label": "Ingridient Description",
+            "id": "ingridient_description"
+          }, {
+            "type": "image_picker",
+            "label": "Ingridient Image",
+            "id": "ingridient_image"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}

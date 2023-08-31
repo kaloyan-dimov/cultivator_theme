@@ -1,0 +1,39 @@
+<div class="w-full border border-black flex flex-col justify-center items-center py-[10vw] gap-5">
+  <h1 class="m-auto text-[50px] text-center">This is collection page</h1>
+  <h2>Collection name: {{ collection.title }}</h2>
+  <h2>Products in collection:</h2>
+  {% paginate collection.products by section.settings.product_pagination %}
+    <div class="flex flex-row gap-[25px]">
+      {% for product in collection.products %}
+        <div class="colelction-product flex flex-col">
+          <h2>{{ product.title }}</h2>
+          <img
+            class="w-[250px] h-[250px]"
+            src="{{ product.featured_image | img_url}}"
+            alt="">
+        </div>
+      {% endfor %}
+    </div>
+    <div class="pagination flex gap-2">
+      {{ paginate | default_pagination }}
+    </div>
+  {% endpaginate %}
+</div>
+
+{% schema %}
+  {
+    "name": "Template Collection",
+    "settings": [
+      {
+        "type": "number",
+        "label": "Number of products to show per page",
+        "id": "product_pagination",
+        "default": 4
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
+      }
+    ]
+  }
+{% endschema %}

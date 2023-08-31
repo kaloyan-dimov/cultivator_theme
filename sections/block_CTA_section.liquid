@@ -1,0 +1,63 @@
+{% if section.settings.background_image != null %}
+  <div class="relative w-full h-[570px] sm:h-[671px] mb-[64px]">
+    <img
+      class="relative sm:absolute top-0 left-0 w-full h-[356px] sm:h-full object-cover mb-6 sm:mb-[0]"
+      src="{{ section.settings.background_image | img_url: 'master'}}"
+      alt="">
+  {% endif %}
+  <div class="section relative">
+    <div class="relative sm: absolute top-[0] sm:top-[126px] sm:left-[15.7%] w-full sm:w-[320px] sm:h-[416px] sm:bg-white sm:rounded-[160px] flex flex-col items-start sm:justify-center sm:items-center ">
+      {% if section.settings.title != null %}
+        <h2 class="mb-2 text-[32px] text-[#56463D] text-center">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      {% if section.settings.paragraph != null %}
+        <h3 class="mb-4 text-[16px] text-[#7B695E] text-center">{{ section.settings.paragraph }}</h3>
+      {% endif %}
+
+      <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="border-[#CCAC71] border text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] sm:mx-auto items-center">
+        {% if section.settings.button_text != null %}
+          <h3 class="text-[#CCAC71] h-[18px]">{{ section.settings.button_text }}</h3>
+        {% endif %}
+        <div class="button_arrow button_arrow_gold"></div>
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Call to Action",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Background Image",
+        "id": "background_image"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title"
+      },
+      {
+        "type": "textarea",
+        "label": "Paragraph",
+        "id": "paragraph"
+      },
+      {
+        "type": "text",
+        "label": "Button Text",
+        "id": "button_text"
+      }, {
+        "type": "url",
+        "label": "Button Link",
+        "id": "button_link"
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Call to Action"
+      }
+    ]
+  }
+{% endschema %}

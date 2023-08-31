@@ -1,0 +1,44 @@
+.spr-container {
+    padding: 0;
+    border: none;
+
+    .spr-header {
+        .spr-header-title {
+            display: block;
+        }
+    }
+    
+    .spr-summary {
+        display: flex;
+        .spr-summary-actions {
+            display: block;
+        }
+    }
+    .spr-content {
+        display: block;
+    }
+}
+
+
+.review_only_stars {
+    .spr-container {
+        padding: 0;
+        border: none;
+
+        .spr-header {
+            .spr-header-title {
+                display: none;
+            }
+        }
+        
+        .spr-summary {
+            display: flex;
+            .spr-summary-actions {
+                display: none;
+            }
+        }
+        .spr-content {
+            display: none;
+        }
+    }
+}

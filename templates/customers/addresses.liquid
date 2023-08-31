@@ -1,0 +1,27 @@
+<div class="w-full mt-250px flex flex-col border border-black flex justify-center items-center">
+  <h1 class="m-auto text-[50px] text-center">This is addresses page</h1>
+
+  <!-- Adding customer address -->
+  {% form 'customer_address', customer.new_address %}
+    <!-- form content -->
+  {% endform %}
+  <!-- Editing customer address -->
+  {% for address in customer.addresses %}
+    <!-- address details -->
+
+    {% form 'customer_address', address %}
+      <!-- form content -->
+    {% endform %}
+  {% endfor %}
+  <!-- Deleting customer address -->
+  <form
+    class="address-delete-form"
+    method="post"
+    action="/account/addresses/{{ address.id }}">
+    <input
+      type="hidden"
+      name="_method"
+      value="delete">
+    <button type="submit">{{ 'customer.addresses.delete' | t }}</button>
+  </form>
+</div>

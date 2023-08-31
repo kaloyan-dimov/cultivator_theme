@@ -1,0 +1,63 @@
+<div class="section mb-[64px]">
+  <div class="flex items-center justify-center gap-4 mb-[48px] flex-col md:flex-row">
+    <h2 class="text-center text-[32px] sm:text-[48px] flex-wrap">
+      {% if section.settings.section_title != null %}
+        {{ section.settings.section_title }}
+      {% endif %}
+    </h2>
+    <a class="text-[14px] uppercase text-[#CCAC71] border border-[#CCAC71] w-[159px] h-[56px] flex items-center justify-center rounded-[20px]" href="{{ settings.instagram_link }}">Instagram</a>
+  </div>
+  <div class="swiper instagram_feed_swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide relative flex">
+          <a href="{{block.settings.link_url}}" class="relative w-[199px] h-[199px]">
+            {% if block.settings.image != null %}
+              <img
+                class="w-full h-full object-cover"
+                src="{{ block.settings.image | img_url: 'master'}}"
+                alt="">
+              <div class="instagram_feed_logo"></div>
+            {% endif %}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Instagram Feed",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Image with Link",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+          }, {
+            "type": "url",
+            "label": "Link URL",
+            "id": "link_url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Instagram Feed"
+      }
+    ]
+  }
+{% endschema %}

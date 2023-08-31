@@ -1,0 +1,402 @@
+{
+  "sections": {
+    "139ef830-5da2-4d17-9f15-f653fedecc28": {
+      "type": "block_hero_swiper",
+      "blocks": {
+        "15620e64-abb9-4acb-ae01-a5c12013ba54": {
+          "type": "section",
+          "settings": {
+            "slide_title": "Experience Vegetal Hair Coloring",
+            "slide_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ultrices augue. Etiam vitae tempus augue. In aliquet est sit amet quam fermentum, ac elementum ex suscipit.",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_text": "shop now",
+            "slide_image": "shopify:\/\/shop_images\/image_35.png"
+          }
+        },
+        "5f3299ea-b6bc-4d12-b9db-753c295a4bb6": {
+          "type": "section",
+          "settings": {
+            "slide_title": "Experience Vegetal Hair Coloring",
+            "slide_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ultrices augue. Etiam vitae tempus augue. In aliquet est sit amet quam fermentum, ac elementum ex suscipit.",
+            "button_link": "",
+            "button_text": "shop now",
+            "slide_image": "shopify:\/\/shop_images\/image_31.png"
+          }
+        },
+        "8ab52c44-2c35-4631-a1c0-4a4d92c8e1b2": {
+          "type": "section",
+          "settings": {
+            "slide_title": "Experience Vegetal Hair Coloring",
+            "slide_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ultrices augue. Etiam vitae tempus augue. In aliquet est sit amet quam fermentum, ac elementum ex suscipit.",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_text": "shop now",
+            "slide_image": "shopify:\/\/shop_images\/womens-green-turtleneck_925x_8e43b795-a279-4609-a6c1-a65c1ea3dbcc.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "15620e64-abb9-4acb-ae01-a5c12013ba54",
+        "5f3299ea-b6bc-4d12-b9db-753c295a4bb6",
+        "8ab52c44-2c35-4631-a1c0-4a4d92c8e1b2"
+      ],
+      "settings": {}
+    },
+    "ee01da14-0a26-4805-9263-0e39ee1e1d8a": {
+      "type": "block_cards",
+      "blocks": {
+        "c4b073d7-1bc2-4548-9545-2689ecebb01b": {
+          "type": "section",
+          "settings": {
+            "card_text": "100% Plant-Based",
+            "card_image": "shopify:\/\/shop_images\/Card_6.png"
+          }
+        },
+        "0fd17f79-b920-422b-b912-8b82769740dc": {
+          "type": "section",
+          "settings": {
+            "card_text": "Zero Toxic Chemical",
+            "card_image": "shopify:\/\/shop_images\/Card_5.png"
+          }
+        },
+        "f3f0c0a3-773f-47c4-b215-4da99baa20be": {
+          "type": "section",
+          "settings": {
+            "card_text": "100% Organic Ingredients",
+            "card_image": "shopify:\/\/shop_images\/Card_4.png"
+          }
+        },
+        "e1cacdb0-c443-403c-b627-8aa4263fb0c8": {
+          "type": "section",
+          "settings": {
+            "card_text": "GMO Free",
+            "card_image": "shopify:\/\/shop_images\/Card_3.png"
+          }
+        },
+        "c486c41c-1836-4081-ae06-8d989997983d": {
+          "type": "section",
+          "settings": {
+            "card_text": "Dermatologically Tested",
+            "card_image": "shopify:\/\/shop_images\/Card_2.png"
+          }
+        },
+        "053e6958-dd72-4e18-8c08-b5d7367f8fc8": {
+          "type": "section",
+          "settings": {
+            "card_text": "Sustainability Focused",
+            "card_image": "shopify:\/\/shop_images\/Card_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "c4b073d7-1bc2-4548-9545-2689ecebb01b",
+        "0fd17f79-b920-422b-b912-8b82769740dc",
+        "f3f0c0a3-773f-47c4-b215-4da99baa20be",
+        "e1cacdb0-c443-403c-b627-8aa4263fb0c8",
+        "c486c41c-1836-4081-ae06-8d989997983d",
+        "053e6958-dd72-4e18-8c08-b5d7367f8fc8"
+      ],
+      "settings": {}
+    },
+    "54802d62-1f56-426a-8f28-6d4c05933e7e": {
+      "type": "block_paragraph",
+      "blocks": {
+        "5943f44c-ed50-46bd-982d-854565ee7b10": {
+          "type": "section",
+          "settings": {
+            "text": "Cultivator’s isn’t just a name. It is a Holistic Viewpoint that finds a perfect balance between"
+          }
+        },
+        "78ea63f7-7f8a-4ad2-b4e8-7d76a1360b0b": {
+          "type": "section",
+          "settings": {
+            "text": "Life",
+            "image_for_text": "shopify:\/\/shop_images\/heart.png"
+          }
+        },
+        "91634fb5-ab00-4c0b-b8c6-4f5d72d3876e": {
+          "type": "section",
+          "settings": {
+            "text": "and"
+          }
+        },
+        "e8cc56ec-65da-4041-8c98-54e2b81e86c2": {
+          "type": "section",
+          "settings": {
+            "text": "Nature",
+            "image_for_text": "shopify:\/\/shop_images\/Leaf.png"
+          }
+        }
+      },
+      "block_order": [
+        "5943f44c-ed50-46bd-982d-854565ee7b10",
+        "78ea63f7-7f8a-4ad2-b4e8-7d76a1360b0b",
+        "91634fb5-ab00-4c0b-b8c6-4f5d72d3876e",
+        "e8cc56ec-65da-4041-8c98-54e2b81e86c2"
+      ],
+      "settings": {}
+    },
+    "23c7a703-cb92-4fd9-b047-d17653a74cd9": {
+      "type": "block_best_selling_products",
+      "blocks": {
+        "4782bc96-f0f6-43d3-98a2-9436ec6f91fa": {
+          "type": "section",
+          "settings": {
+            "selected_collection": "frontpage",
+            "products_number": 3
+          }
+        },
+        "14678796-b66b-46e3-8702-22c4885ca4a5": {
+          "type": "section",
+          "settings": {
+            "selected_collection": "frontpage",
+            "products_number": 3
+          }
+        }
+      },
+      "block_order": [
+        "4782bc96-f0f6-43d3-98a2-9436ec6f91fa",
+        "14678796-b66b-46e3-8702-22c4885ca4a5"
+      ],
+      "settings": {
+        "section_title": ""
+      }
+    },
+    "b25833b1-4d5b-4b37-8aaa-c74105602ffe": {
+      "type": "block_links_to_collections",
+      "blocks": {
+        "429cc835-a147-4aff-a21b-e384ca9b0fe0": {
+          "type": "section",
+          "settings": {
+            "selected_collection": "frontpage",
+            "collection_image": "shopify:\/\/shop_images\/Volumizing_01_1.png",
+            "collection_description": "Hair cleaners for all hair types",
+            "button_text": "shop now"
+          }
+        },
+        "5fdfb271-29bf-4e2a-a8c9-6bfc6123edc7": {
+          "type": "section",
+          "settings": {
+            "selected_collection": "frontpage",
+            "collection_image": "shopify:\/\/shop_images\/Volumizing_2.png",
+            "collection_description": "Steam distilled hair masks for all concerns",
+            "button_text": "shop now"
+          }
+        }
+      },
+      "block_order": [
+        "429cc835-a147-4aff-a21b-e384ca9b0fe0",
+        "5fdfb271-29bf-4e2a-a8c9-6bfc6123edc7"
+      ],
+      "settings": {
+        "section_title": ""
+      }
+    },
+    "e1d366af-0f30-4ee8-8dc9-c9f7c85276e1": {
+      "type": "block_video_feed",
+      "blocks": {
+        "8b2a496f-6f34-4c0e-ac44-761b6d7dd47f": {
+          "type": "section",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/2500_02217_FPpreview.mp4",
+            "video_url": ""
+          }
+        },
+        "5372cf1a-36ef-4de1-b0e1-dc796953cd7c": {
+          "type": "section",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/BB_02f955bc-41e2-4fd9-b489-24880468518c_FPpreview.mp4",
+            "video_url": ""
+          }
+        },
+        "38b9854b-4048-4a7b-9886-4d9f41b562be": {
+          "type": "section",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4",
+            "video_url": ""
+          }
+        },
+        "05ada62d-ee70-46d8-9355-ea69fc962cc8": {
+          "type": "section",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/2500_02217_FPpreview.mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "8b2a496f-6f34-4c0e-ac44-761b6d7dd47f",
+        "5372cf1a-36ef-4de1-b0e1-dc796953cd7c",
+        "38b9854b-4048-4a7b-9886-4d9f41b562be",
+        "05ada62d-ee70-46d8-9355-ea69fc962cc8"
+      ],
+      "settings": {
+        "section_title": ""
+      }
+    },
+    "636788fc-189a-4931-be1f-0a05116c181c": {
+      "type": "block_CTA_section",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/image_31.png",
+        "title": "30% Off on hair colors",
+        "paragraph": "Hair cleaners for all hair types",
+        "button_text": "SHOP NOW",
+        "button_link": ""
+      }
+    },
+    "30ce9665-2aad-40d6-98c6-8036efbbb9f4": {
+      "type": "block_video_feed_with_text",
+      "blocks": {
+        "262c3890-261d-4b14-8657-e44a1d2d5112": {
+          "type": "section",
+          "settings": {
+            "video_title": "Organic, Ethical and Sustainable Sourcing",
+            "video_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec neque metus. Cras vel urna quis turpis dictum facilisis.",
+            "button_text": "Watch Video",
+            "video": "shopify:\/\/files\/videos\/2500_02217_FPpreview.mp4",
+            "video_url": ""
+          }
+        },
+        "ddfa9647-e545-4ff3-aebe-9214f6cc2480": {
+          "type": "section",
+          "settings": {
+            "video_title": "World Class Manufacturing",
+            "video_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec neque metus. Cras vel urna quis turpis dictum facilisis.",
+            "button_text": "Watch Video",
+            "video": "shopify:\/\/files\/videos\/BB_02f955bc-41e2-4fd9-b489-24880468518c_FPpreview.mp4",
+            "video_url": ""
+          }
+        },
+        "ac5f723d-8ead-4ab1-9d03-4ec9a7e2ecca": {
+          "type": "section",
+          "settings": {
+            "video_title": "Global Research Center",
+            "video_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec neque metus. Cras vel urna quis turpis dictum facilisis.",
+            "button_text": "Watch Video",
+            "video": "shopify:\/\/files\/videos\/BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "262c3890-261d-4b14-8657-e44a1d2d5112",
+        "ddfa9647-e545-4ff3-aebe-9214f6cc2480",
+        "ac5f723d-8ead-4ab1-9d03-4ec9a7e2ecca"
+      ],
+      "settings": {
+        "section_title": ""
+      }
+    },
+    "bb32c763-4e89-466a-be07-8858c238064b": {
+      "type": "block_instagram_feed",
+      "blocks": {
+        "e9f3aad0-12c1-4727-ab75-6a15a884f101": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_37.png",
+            "link_url": ""
+          }
+        },
+        "e202317e-e8b7-4d5e-8f79-a56031d4517c": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_41.png",
+            "link_url": ""
+          }
+        },
+        "35f1273f-50ea-455a-bae0-35e1b760eeb1": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_42.png",
+            "link_url": ""
+          }
+        },
+        "c3a03da9-6bfa-4a85-b015-e5c83fd0b1c7": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_38.png",
+            "link_url": ""
+          }
+        },
+        "58795f7e-cacb-4181-b5ac-a98fcf6f8319": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_39.png",
+            "link_url": ""
+          }
+        },
+        "869f4d63-1d8e-4e10-bb8a-9b1866745506": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_40.png",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "e9f3aad0-12c1-4727-ab75-6a15a884f101",
+        "e202317e-e8b7-4d5e-8f79-a56031d4517c",
+        "35f1273f-50ea-455a-bae0-35e1b760eeb1",
+        "c3a03da9-6bfa-4a85-b015-e5c83fd0b1c7",
+        "58795f7e-cacb-4181-b5ac-a98fcf6f8319",
+        "869f4d63-1d8e-4e10-bb8a-9b1866745506"
+      ],
+      "settings": {
+        "section_title": "Follow Products and Discounts on"
+      }
+    },
+    "29ef1e09-83f2-4734-93e1-5afcb978f683": {
+      "type": "block_banner",
+      "blocks": {
+        "824c4774-9c41-4bfd-9772-2a19a79a6d1a": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/drop.png",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "d4ba304d-2c38-487e-8e24-4efea895c34a": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/rabbit.png",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "40edfb78-df3e-44e8-a2a7-2ff91ceb1a2e": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/plant.png",
+            "banner_text": "100% Organic"
+          }
+        },
+        "7b28c1d5-4769-49ee-b024-95b072e84494": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/hand_heart.png",
+            "banner_text": "100% Organic"
+          }
+        }
+      },
+      "block_order": [
+        "824c4774-9c41-4bfd-9772-2a19a79a6d1a",
+        "d4ba304d-2c38-487e-8e24-4efea895c34a",
+        "40edfb78-df3e-44e8-a2a7-2ff91ceb1a2e",
+        "7b28c1d5-4769-49ee-b024-95b072e84494"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
+    }
+  },
+  "order": [
+    "139ef830-5da2-4d17-9f15-f653fedecc28",
+    "ee01da14-0a26-4805-9263-0e39ee1e1d8a",
+    "54802d62-1f56-426a-8f28-6d4c05933e7e",
+    "23c7a703-cb92-4fd9-b047-d17653a74cd9",
+    "b25833b1-4d5b-4b37-8aaa-c74105602ffe",
+    "e1d366af-0f30-4ee8-8dc9-c9f7c85276e1",
+    "636788fc-189a-4931-be1f-0a05116c181c",
+    "30ce9665-2aad-40d6-98c6-8036efbbb9f4",
+    "bb32c763-4e89-466a-be07-8858c238064b",
+    "29ef1e09-83f2-4734-93e1-5afcb978f683"
+  ]
+}

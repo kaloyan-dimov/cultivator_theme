@@ -1,0 +1,133 @@
+<footer class="">
+  <div class="section">
+    <div class="w-full border border-[#EAE2DB]">
+      <div class="flex flex-wrap md:flex-nowrap border-b border-[#EAE2DB] ">
+        <div class="flex  flex-col w-full md:w-[67.91%] md:border-r md:border-[#EAE2DB] border-b md:border-b-0">
+          <div class="w-full flex flex-col sm:flex-row justify-between pt-[32px] px-[16px] pb-[16px] ">
+            {% for link in linklists.footer.links %}
+              <div class="flex flex-col footer_nav_entry">
+                <div class="footer_entry_title relative text-[20px] pb-4 pt-4 sm:pt-[0]">{{ link.title }}
+                  <div class="footer_expand">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-6">
+                  {% for child_link in link.links %}
+                    <li class="text-[14px]">
+                      <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="pb-[32px] pl-[16px] ">
+            <div class="hidden md:flex bg-white w-[191px] h-[42] rounded-[16px] border border-[#EAE2DB] items-center justify-center ">Language</div>
+          </div>
+        </div>
+        <div class="border-r border-[#EAE2DB] border-b sm:border-b-0 w-full sm:w-[50%] md:w-[25.46%] py-[32px] flex flex-col px-6 md:px-4">
+          <h2 class="mb-4 text-[20px]">Contact Us</h2>
+          <h3 class="break-words mb-[3px] text-[32px]">{{ settings.phone_number }}</h3>
+          <h3 class="break-words mb-6 text-[13px]">{{ settings.working_hours }}</h3>
+          <h3 class="break-words text-[20px]">{{ settings.email }}</h3>
+        </div>
+        <div class="w-full sm:w-[50%] md:w-[6.63%] py-[32px] px-[20.5px] flex flex-row md:flex-col gap-2 min-w-[87px] items-center justify-around md:justify-center">
+          {% if settings.instagram_link != null and section.settings.instagram_link == true %}
+            <a href="{{ settings.instagram_link }}" class="footer_social instagram_footer"></a>
+          {% endif %}
+          {% if settings.facebook_link != null and section.settings.facebook_link == true %}
+            <a href="{{ settings.facebook_link }}" class="footer_social facebook_footer"></a>
+          {% endif %}
+          {% if settings.twitter_link != null and section.settings.twitter_link == true %}
+            <a href="{{ settings.twitter_link }}" class="footer_social twitter_footer"></a>
+          {% endif %}
+          {% if settings.linkedin_link != null and section.settings.linkedin_link == true %}
+            <a href="{{ settings.linkedin_link }}" class="footer_social linkedin_footer"></a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="p-2 w-full border-b border-[#EAE2DB] md:hidden">
+        <div class="bg-white w-full max-w-[400px] m-auto h-[42] rounded-[16px] border border-[#EAE2DB] flex items-center justify-center">Language</div>
+      </div>
+      <div class="py-[32px] flex flex-col gap-4 justify-center items-center">
+        <a href="{{ shop.url }}">
+          <img
+            class="bg-center w-[274px] h-[46px] "
+            src="{{ section.settings.footer_logo | img_url: 'master'}}"
+            alt="">
+        </a>
+        <h2 class="text-[13px]  w-full md:max-w-[422px] text-center px-6">{{ section.settings.footer_text }}</h2>
+      </div>
+      <div class="flex flex-col-reverse sm:flex-row justify-between items-center sm:pr-[42px] border-t border-[#EAE2DB] min-h-[50px]">
+        <div class="py-[18px] px-[25px]">
+          <h3 class="inline">© {{ "now" | date: "%Y" }} Cultivator Natural Products</h3>
+          <h3 class="inline text-[#787878]">|</h3>
+          <h3 class="inline text-[#787878]">Website Design and Development by</h3>
+          <a href="https://grind.studio/" class="grind_logo inline-block"></a>
+        </div>
+        <div class="flex gap-2 items-center justify-center border-b border-[#EAE2DB] sm:border-0 m-auto sm:m-[unset] py-[12px] w-full sm:w-[250px] ">
+          {% for block in section.blocks %}
+            <img
+              class="w-[35px] h-[24px]"
+              src="{{ block.settings.payment_image | img_url: 'master'}}"
+              alt="{{ block.settings.payment_name }}"
+              title="{{ block.settings.payment_name }}">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "label": "Footer Logo",
+        "type": "image_picker",
+        "id": "footer_logo"
+      },
+      {
+        "label": "Footer Text",
+        "type": "textarea",
+        "id": "footer_text"
+      },
+      {
+        "label": "Show Facebook Link",
+        "type": "checkbox",
+        "id": "facebook_link"
+      },
+      {
+        "label": "Show Twitter Link",
+        "type": "checkbox",
+        "id": "twitter_link"
+      }, {
+        "label": "Show LinkedIn Link",
+        "type": "checkbox",
+        "id": "linkedin_link"
+      }, {
+        "label": "Show Instagram Link",
+        "type": "checkbox",
+        "id": "instagram_link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Payment Methods",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Payment Method Image",
+            "id": "payment_image"
+          }, {
+            "type": "text",
+            "label": "Payment Method Name",
+            "id": "payment_name"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

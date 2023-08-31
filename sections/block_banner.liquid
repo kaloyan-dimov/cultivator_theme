@@ -1,0 +1,57 @@
+<div class="banner flex flex-nowrap gap-6 h-[180px] pl-[64px] bg-white items-center mb-[64px]" data-animation="{{ section.settings.animation_speed }}">
+  <div class="banner_container flex flex-nowrap">
+    {% for i in (1..3) %}
+      {% for block in section.blocks %}
+        <div class="banner_item flex justify-center gap-2 w-max items-center p-6 flex-nowrap">
+          {% if block.settings.banner_image != null %}
+            <div class="w-[72px] h-[68px]">
+              <img
+                class="bg-center"
+                src="{{ block.settings.banner_image | img_url: 'master'}}"
+                alt="">
+            </div>
+          {% endif %}
+          {% if block.settings.banner_text != null %}
+            <h2 class="text-[22px] text-[#56463D]">{{ block.settings.banner_text }}</h2>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "label": "Banner Animation Speed (seconds)",
+        "type": "number",
+        "id": "animation_speed",
+        "default": 10
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Banner Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Banner Item Image",
+            "id": "banner_image"
+          }, {
+            "type": "text",
+            "label": "Banner Item Text",
+            "id": "banner_text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Banner"
+      }
+    ]
+  }
+{% endschema %}

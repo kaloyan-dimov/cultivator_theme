@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "a9b2ccdc-1ef7-472b-92ab-ab4fe79bc74f": {
+      "type": "block_hero_image",
+      "settings": {
+        "title": "100% Natural Hair Coloring",
+        "textarea": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempora cupiditate qui ea voluptatibus molestias sit soluta. Reiciendis, ratione. Explicabo nemo sed alias, tempora repellendus obcaecati consectetur totam maxime. Provident quae autem recusandae, accusantium aspernatur modi maiores suscipit. Facilis quasi doloribus voluptates cum at nemo impedit provident vel, blanditiis a praesentium illum vero laborum iure, inventore nulla repudiandae dignissimos animi explicabo sed distinctio. Possimus eius vero earum ullam impedit quia dolor? Adipisci ut illum ad eius similique laborum magni consectetur. Nobis vitae doloribus minima dolorem voluptatum amet repudiandae. Deserunt recusandae, autem doloremque atque nulla assumenda adipisci. Molestias eveniet ipsa incidunt odio hic amet, porro tempora placeat nemo saepe officiis dignissimos non atque neque harum repellat aliquid rerum eaque excepturi in ut. Autem distinctio, aut consequatur omnis dolore cumque odio voluptate tenetur pariatur. Accusamus ipsam voluptatibus nisi",
+        "image": "shopify:\/\/shop_images\/image_31.png"
+      }
+    },
+    "main": {
+      "type": "template_collection",
+      "settings": {
+        "product_pagination": 3
+      }
+    }
+  },
+  "order": [
+    "a9b2ccdc-1ef7-472b-92ab-ab4fe79bc74f",
+    "main"
+  ]
+}

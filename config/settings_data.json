@@ -1,0 +1,99 @@
+{
+  "current": {
+    "instagram_link": "https:\/\/www.instagram.com",
+    "facebook_link": "https:\/\/www.facebook.com",
+    "twitter_link": "https:\/\/www.twitter.com",
+    "linkedin_link": "https:\/\/www.linkedin.com",
+    "phone_number": "1800 123 0690",
+    "address": "Address line 1\nAddress line 2",
+    "working_hours": "10:00 a.m - 6:00 p.m IST (Mon-Fri)",
+    "email": "helpdesk@khadinatural.com",
+    "shipping_enquiries_email": "shop@email.com",
+    "product_enquiries_email": "shop@email.com",
+    "trending_products": [
+      "leather-anchor",
+      "bangle-bracelet",
+      "bangle-bracelet-with-feathers",
+      "choker-with-bead",
+      "choker-with-triangle",
+      "galaxy-earrings"
+    ],
+    "sections": {
+      "theme_header": {
+        "type": "theme_header",
+        "settings": {}
+      },
+      "theme_footer": {
+        "type": "theme_footer",
+        "blocks": {
+          "df79b658-b822-46df-b247-6e54d3f0bc91": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Amex.png",
+              "payment_name": ""
+            }
+          },
+          "5a30f7ab-0ea6-47a8-aec4-7f57d876af79": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Visa.png",
+              "payment_name": ""
+            }
+          },
+          "dc8394c5-2f26-4f56-9979-6c1c3b2b3937": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Maestro.png",
+              "payment_name": ""
+            }
+          },
+          "042634fa-5dac-4328-af54-b13b878603ce": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Mastercard.png",
+              "payment_name": ""
+            }
+          },
+          "e01b6234-4db2-4ffc-b98b-913d45ef5244": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Klarna.png",
+              "payment_name": ""
+            }
+          }
+        },
+        "block_order": [
+          "df79b658-b822-46df-b247-6e54d3f0bc91",
+          "5a30f7ab-0ea6-47a8-aec4-7f57d876af79",
+          "dc8394c5-2f26-4f56-9979-6c1c3b2b3937",
+          "042634fa-5dac-4328-af54-b13b878603ce",
+          "e01b6234-4db2-4ffc-b98b-913d45ef5244"
+        ],
+        "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/01_1.png",
+          "footer_text": "Cultivator’s Organic Hair Color combines the goodness of nature and science with innovation. It is made from finest part of the Henna plant and other herbs to preserve its properties and give you only the best from the nature.",
+          "facebook_link": true,
+          "twitter_link": true,
+          "linkedin_link": true,
+          "instagram_link": true
+        }
+      },
+      "theme_special_offer_banner": {
+        "type": "theme_special_offer_banner",
+        "settings": {
+          "display_banner": true,
+          "background_color": "#e2dad5",
+          "banner_text": "<p>SAVE 20% ON YOUR FIRST ORDER. USE CODE: <strong>FIRST20<\/strong>. <a href=\"\/products\/chain-bracelet\" title=\"7 Shakra Bracelet\">SHOP NOW<\/a><\/p>"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "8942208844547249051": {
+        "type": "shopify:\/\/apps\/ultimate-gdpr-eu-cookie-banner\/blocks\/widget\/9ad66af2-f521-41c0-96ef-0e66c4e1d187",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+<div class="section mb-[64px]">
+  <h2 class="text-center text-[48px] mb-[80px]">
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.section_title != null %}
+      {{ section.settings.section_title }}
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+      {% comment %} {% endcomment %}
+    {% endif %}
+  </h2>
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-[0]">
+    {% for block in section.blocks %}
+      {% if block.settings.selected_collection != null %}
+        <div class="flex flex-col w-full sm:w-[50%] overflow-hidden">
+          {% if block.settings.selected_collection.featured_image != null %}
+            <div class="relative w-[320px] h-[416px] mx-auto mb-4">
+              <img
+                class="w-full h-full rounded-[150px]"
+                src="{{ block.settings.selected_collection.featured_image | img_url: 'master'}}"
+                alt="">
+            {% endif %}
+            {% if block.settings.collection_image != null %}
+              <div class="absolute w-[249px] h-[249px] bottom-0 right-[-20%]">
+                <img
+                  class="w-full h-full"
+                  src="{{ block.settings.collection_image | img_url: 'master'}}"
+                  alt="">
+              </div>
+            {% endif %}
+          </div>
+          {% if block.settings.selected_collection != null %}
+            <h2 class="text-[40px] text-center mb-2">{{ block.settings.selected_collection.title }}</h2>
+          {% endif %}
+          {% if block.settings.collection_description != null %}
+            <h2 class="text-[16px] text-center mb-4">{{ block.settings.collection_description }}</h2>
+          {% endif %}
+        {% endif %}
+        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="bg-[#CCAC71] text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center mx-auto mb-8">
+          {% if block.settings.button_text != null %}
+            <h3 class="h-[18px]">{{ block.settings.button_text }}</h3>
+          {% endif %}
+          <div class="button_arrow button_arrow_white"></div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Links to Collections",
+    "max_blocks": 2,
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "label": "Collection",
+            "id": "selected_collection"
+          }, {
+            "type": "image_picker",
+            "label": "Collection Product Image",
+            "id": "collection_image"
+          }, {
+            "type": "text",
+            "label": "Collection Description",
+            "id": "collection_description"
+          }, {
+            "type": "text",
+            "label": "Button Text",
+            "id": "button_text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Links to Collections"
+      }
+    ]
+  }
+{% endschema %}

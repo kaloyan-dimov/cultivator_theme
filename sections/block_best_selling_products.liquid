@@ -1,0 +1,137 @@
+{% comment %} <h2>Test collection sort order {{ collection }}</h2>
+{% for collection in collections %}
+<h1>collection: {{ collection.title }}</h1>
+{% assign products_by_filter = collection.products | sort: 'price' %}
+<h2>prod by filt {{ products_by_filter }}</h2>
+{% for product in products_by_filter %}
+<h2>prod {{ product.title }}</h2>
+<h2>price {{ product.price }}</h2>
+{% endfor %}
+{% endfor %}
+{% assign products_by_price = collection.products | sort: "price" %}
+{% for product in products_by_price %}
+<h4>Product.title: {{ product.title }}</h4>
+{% endfor %}
+<h2>
+section.settings.section_title{{ }}</h2>
+<div class="m-auto">
+<h2>Keys{{ product }}</h2>
+{% for collection in collections %}
+<h1>Collection name: {{ collection }}</h1>
+{% for product in collection.products %}
+<!-- Output product information here -->
+<h2>Item title:{{ product.title }}</h2>
+<p>Price: {{ product.price | money }}</p>
+<!-- Add more product details as needed -->
+{% endfor %}
+{% endfor %}
+</div>
+{% endcomment %}
+{{ customer.firstName }}
+{{ customer.id }}
+
+<div class="section mb-[64px] relative">
+  <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.section_title != null %}
+      {{ section.settings.section_title }}
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+      {% comment %} {% endcomment %}
+    {% endif %}
+  </h2>
+
+  {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
+  <div class="swiper best_selling_swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% assign sorted_products = block.settings.selected_collection.products | sort: "best-selling" %}
+        {% for product in sorted_products limit: block.settings.products_number %}
+          <div class="swiper-slide relative flex">
+            <a href="{{ product.url  }}" class="hover_class flex flex-col h-[428px] rounded-[140px] justify-between p-6">
+              <div class="w-full h-[200px]">
+                <img
+                  class="w-full h-full object-contain"
+                  src="{{ product.featured_image | img_url: 'master'}}"
+                  alt="">
+              </div>
+              <h2 class="text-[18px] text-center">{{ product.title }}</h2>
+              <h2 class="text-[16px] text-center text-red-300">Hardcode Burgundy</h2>
+              <h2 class="text-[14px] text-center">{{ product.description }}</h2>
+              <h2 class="text-[14px] text-center">{{ product.price | money_without_trailing_zeros }}</h2>
+            </a>
+            <div class="hover_class flex px-4 py-2 gap-2">
+              <a href="" class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[211px] h-[56px] ">Add to Bag</a>
+
+              <div
+                class="rounded-[24px] w-[65px] h-[56px] border border-[#CCAC71] heart_gold add_to_wishlist
+                {% for wishlist_item in wishlist_array %}
+                  {% assign current_product = all_products[wishlist_item] %}
+                  {% if current_product.handle == product.handle %}bg-[#CCAC71]
+                  {% else %}
+                    no-match{% endif %}
+                {% endfor %}"
+                data-handle="{{ product.handle }}"></div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Best Selling Products",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Collections",
+        "settings": [
+          {
+            "type": "collection",
+            "label": "Collection",
+            "id": "selected_collection"
+          }, {
+            "type": "number",
+            "label": "Number of products shown from collection",
+            "id": "products_number"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Best Selling Products"
+      }
+    ]
+  }
+{% endschema %}

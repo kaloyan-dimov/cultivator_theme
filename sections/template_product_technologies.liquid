@@ -1,0 +1,74 @@
+<div class="section mt-[64px]">
+  <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.section_title != null %}
+      {{ section.settings.section_title }}
+    {% endif %}
+    {% comment %} {% endcomment %}
+    {% if section.settings.title_image != null %}
+      <span class="w-[50px] h-[50px]">
+        <img
+          class="h-[42px] inline-block"
+          src="{{ section.settings.title_image | img_url: 'master'}}"
+          alt="">
+      </span>
+      {% comment %} {% endcomment %}
+    {% endif %}
+  </h2>
+  <div class="flex flex-col gap-[24px]">
+    {% for block in section.blocks %}
+      <div class="flex gap-[16px] items-center">
+        <div class="rounded-[34px] h-[95px] w-[78px] overflow-hidden">
+          {% if block.settings.technology_image != null %}
+            <img
+              class="w-full h-full object-cover"
+              src="{{ block.settings.technology_image | img_url: 'master'}}"
+              alt="">
+          {% endif %}
+        </div>
+        <h2>{{ block.settings.technology_title }}</h2>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Product Technologies",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Technology",
+        "name": "Technology",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Technology Ttle",
+            "id": "technology_title"
+          }, {
+            "type": "image_picker",
+            "label": "Technology Image",
+            "id": "technology_image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

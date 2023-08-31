@@ -1,0 +1,26 @@
+<div class="w-full mt-250px flex flex-col border border-black flex justify-center items-center">
+  <h1 class="m-auto text-[50px] text-center">This is activate accounts page</h1>
+
+  {% form 'activate_customer_password' %}
+    {{ form.errors | default_errors }}
+
+    <div class="password">
+      <label for="password">Password</label>
+      <input type="password" name="customer[password]">
+    </div>
+
+    <div class="password_confirm">
+      <label for="password_confirmation">Password Confirmation</label>
+      <input type="password" name="customer[password_confirmation]">
+    </div>
+
+    <div class="submit">
+      <input type="submit" value="Activate account">
+      <span>or</span>
+      <input
+        type="submit"
+        name="decline"
+        value="Decline invitation">
+    </div>
+  {% endform %}
+</div>

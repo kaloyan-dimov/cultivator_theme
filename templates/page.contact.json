@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "main": {
+      "type": "theme_contact_page",
+      "settings": {
+        "title": "Contact Us",
+        "working_hours": true,
+        "paragraph": "<p>We’re happy to help! If you have brand or website questions, check out our FAQ page. If you still need help, we’ll respond to your message below.<\/p>"
+      }
+    },
+    "60ef9f47-8157-4b11-994b-7121ecba24f9": {
+      "type": "block_get_in_touch",
+      "settings": {
+        "section_title": "Get in Touch",
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
+        "paragraph": "<p>It will be our pleasure to answer any questions you may have, and we’ll do our best to respond as quickly as possible.<br\/>We cultivate the fruit of nature and help the world become a healthier one. Be a part of cultivator’s family and spread the fruits of ayurveda!<\/p>"
+      }
+    },
+    "5343dcae-785a-4804-b6e1-14f30944fb01": {
+      "type": "block_banner",
+      "blocks": {
+        "57936e84-8be0-4848-9d88-05cd60d5d01f": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/drop.png",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "4c722545-8654-4c40-a044-b41295ef18f9": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/rabbit.png",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "53c8b2a3-c384-4e38-a9bd-16ad38ce0c17": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/plant.png",
+            "banner_text": "100% Organic"
+          }
+        },
+        "a4ad449c-5528-4385-8ead-bdf998058e8c": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/hand_heart.png",
+            "banner_text": "Fairly Sourced"
+          }
+        }
+      },
+      "block_order": [
+        "57936e84-8be0-4848-9d88-05cd60d5d01f",
+        "4c722545-8654-4c40-a044-b41295ef18f9",
+        "53c8b2a3-c384-4e38-a9bd-16ad38ce0c17",
+        "a4ad449c-5528-4385-8ead-bdf998058e8c"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "60ef9f47-8157-4b11-994b-7121ecba24f9",
+    "5343dcae-785a-4804-b6e1-14f30944fb01"
+  ]
+}

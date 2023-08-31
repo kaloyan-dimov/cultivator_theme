@@ -1,0 +1,40 @@
+.list_item {
+    .list_arrow {
+        position: relative;
+        transform: scale(1);
+        transition: all 0.5s;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='25' height='20' viewBox='0 0 25 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.9551 10.4404H25V9.44044H23.955C22.4386 9.32426 20.1288 8.71132 18.1552 7.255C16.1904 5.80522 14.5514 3.51714 14.3485 0L13.3502 0.0575965C13.5721 3.90349 15.3845 6.45331 17.5614 8.05966C18.3414 8.63522 19.1673 9.08932 19.9827 9.44044L0 9.44044L0 10.4404L19.9828 10.4404C19.1673 10.7916 18.3415 11.2457 17.5614 11.8212C15.3845 13.4276 13.5721 15.9774 13.3502 19.8233L14.3485 19.8809C14.5514 16.3637 16.1904 14.0757 18.1552 12.6259C20.1288 11.1696 22.4386 10.5566 23.9551 10.4404Z' fill='%2354443B'/%3E%3C/svg%3E%0A");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px 25px;
+            transform: rotate(45deg);
+        }
+    }
+    .list_content {
+        transform: scaleY(0);
+        max-height: 0;
+        transform-origin: top;
+        transition: all 0.5s;
+    }
+
+    &.active {
+
+        .list_content {
+            transform: scaleY(1);
+            transform-origin: top;
+            max-height: 1000px;
+            transition: all 0.5s;
+        }
+
+        .list_arrow {
+            transform: scale(-1);
+            transition: all 0.5s;
+        }
+    }
+}

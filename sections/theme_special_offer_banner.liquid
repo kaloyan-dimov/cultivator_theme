@@ -1,0 +1,38 @@
+<style>
+  .special_offer_banner {
+    background-color: {{ section.settings.background_color }}
+    ;
+  }
+</style>
+{% if section.settings.display_banner == true %}
+  <div class="special_offer_banner top-[0] left-0] py-[16px] flex justify-center items-center">
+    <h2 class="text-[14px]">{{ section.settings.banner_text }}</h2>
+  </div>
+{% endif %}
+{% schema %}
+  {
+    "name": "Special Offer Banner",
+    "settings": [
+      {
+        "type": "checkbox",
+        "label": "Display Banner",
+        "id": "display_banner"
+      }, {
+        "type": "color",
+        "label": "Banner Background Color",
+        "id": "background_color",
+        "default": "#E2DAD5"
+      }, {
+        "type": "richtext",
+        "label": "Banner Text",
+        "id": "banner_text"
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Special Offer Banner"
+      }
+    ]
+  }
+{% endschema %}

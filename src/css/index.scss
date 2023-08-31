@@ -1,0 +1,28 @@
+html, body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./globals";
+
+@import "./components/swipers";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/banner.scss";
+
+@import "./sections/video_feed_with_text";
+@import "./sections/video_feed";
+@import "./sections/instagram_feed";
+@import "./sections/product_use_guide.scss";
+
+@import "./snippets/search_results.scss";
+@import "./snippets/product_add_number.scss";
+@import "./snippets/product_lists.scss";
+
+@import "./pages/contact_us.scss";

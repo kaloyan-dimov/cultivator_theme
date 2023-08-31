@@ -1,0 +1,38 @@
+<div class="w-full h-[500px] flex justify-center items-center">
+  <img
+    class="absolute top-[0] left-0 w-full h-[inherit] object-cover  z-[0]"
+    src="{{ section.settings.image | img_url: 'master'}}"
+    alt="">
+  <div class="section z-[1]">
+    <h1 class="text-[50px] text-white">{{ section.settings.title }}</h1>
+  </div>
+</div>
+<div class="section">
+  <h2 class="text-[17px] ">{{ section.settings.textarea }}</h2>
+</div>
+{% schema %}
+  {
+    "name": "Hero Swiper",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title"
+      }, {
+        "type": "textarea",
+        "label": "Slide Paragraph",
+        "id": "textarea"
+      }, {
+        "type": "image_picker",
+        "label": "Image",
+        "id": "image"
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "Hero Image"
+      }
+    ]
+  }
+{% endschema %}

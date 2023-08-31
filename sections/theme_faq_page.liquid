@@ -1,0 +1,29 @@
+<div class="section">
+  <h1 class="m-auto text-[50px] text-center">FAQs</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "FAQ Page",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Block",
+        "name": "FAQ Block of questions",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "question",
+            "label": "question"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "block",
+        "name": "FAQ"
+      }
+    ]
+  }
+{% endschema %}

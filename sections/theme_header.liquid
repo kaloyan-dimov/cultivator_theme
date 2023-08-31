@@ -1,0 +1,87 @@
+<header id="desktop_header" class="hidden md:block w-full top-0 left-0 bg-white z-[2]">
+  <div class="section flex justify-between py-4 items-center w-full">
+    <ul class="flex w-[430px] min-w-[29%] max-w-[40%] justify-between">
+      {% for link in linklists.main-menu.links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ shop.url }}" class="header_logo w-[76px] h-[65px]"></a>
+    <div class="w-[430px] min-w-[29%] max-w-[40%] flex gap-6 items-center justify-end">
+      <div class="client_interactions flex gap-4">
+        <div class="search_icon w-[44px] h-[44px] cursor-pointer"></div>
+        <a
+          id="link_to_wishlist"
+          href="/account/#wishlist"
+          class="heart_icon relative">
+          <span data-count-wishlist="" class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box"></span>
+        </a>
+        <a href="/account" class="profile_icon"></a>
+      </div>
+      <a href="/cart" class="cart_div flex w-[97px] h-[44px] rounded-[18px] border-[1px] border-[#56463D] flex gap-[13px] content-center items-center">
+        <div class="cart_icon"></div>
+        <div id="cart_number">{{ cart.item_count }}</div>
+      </a>
+      <a href="#" class="change_language w-6 h-6"></a>
+    </div>
+  </div>
+</header>
+
+{% render "search_input" %}
+
+<header id="mobile_header" class="block md:hidden fixed w-full top-0 left-0 bg-white z-[2]">
+  <div class="section flex justify-between py-2 items-center z-[0]">
+    <div class="flex gap-4">
+      <div class="w-[44px]"></div>
+      <div class="search_icon w-[44px] h-[44px] relative"></div>
+    </div>
+    <a href="{{ shop.url }}" class="header_logo w-[76px] h-[65px]"></a>
+    <div class="flex gap-4">
+      <a href="/the4-wishlist" class="w-[44px] h-[44px] heart_icon"></a>
+      <a href="/cart" class="w-[44px] h-[44px] cart_icon cart_icon_mobile"></a>
+    </div>
+  </div>
+  <div class="hamburger fixed left-[24px] top-[19px] z-[2]">
+    <div class="hamburger_container">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="mobile_header_items flex z-[1] fixed  w-full top-[0]  h-full ">
+    <div class="w-full sm:w-[50%] flex-col bg-white px-[24px] overflow-scroll">
+      <div class="h-[81px] flex justify-end px-4 gap-2 items-center">
+        <a href="/account" class="profile_icon w-[44px] h-[44px]"></a>
+        <a href="#" class="change_language w-6 h-6"></a>
+      </div>
+      {% for link in linklists.main-menu.links %}
+        <div class="flex flex-col header_nav_entry w-full border-b border-[#EAE2DB]">
+          <div class="header_title relative  h-[107px] flex items-center ">
+            <div class="h-[75px] w-[59px] border border-[#D1BEB1] rounded-[26px] text-[#FF0000]">Image</div>
+            <h2 class="text-[20px] ml-[16px]">{{ link.title }}</h2>
+            <div class="header_expand ml-[8px]">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="flex flex-col w-full ">
+            {% for child_link in link.links %}
+              <li class="flex items-center text-[14px] w-full h-[71px]">
+                <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="w-[0] sm:w-[50%] bg-black mobile_header_background_filler opacity-50"></div>
+  </div>
+</header>
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [],
+    "blocks": []
+  }
+{% endschema %}

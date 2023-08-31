@@ -1,0 +1,56 @@
+<style>
+  .pdf_embed {
+    width: 100%;
+    height: 557px;
+  }
+</style>
+<div class="w-full  h-[1183px]">
+  <div class="h-[626px] relative">
+    <div class="absolute w-full h-full">
+      <img
+        class="w-full h-full object-cover"
+        src="{{ section.settings.background_image | img_url: 'master'}}"
+        alt="">
+      <h2 class="absolute top-[50%] w-full text-white text-[40px] text-center">{{ section.settings.clinically_safe_title }}</h2>
+      <div class="absolute bottom-[40px] w-[163px] h-[200px] left-[50%] translate-x-[-50%]">
+        <img
+          class="w-full h-full object-cover"
+          src="{{ section.settings.overlay_icon | img_url: 'master'}}"
+          alt="">
+      </div>
+    </div>
+  </div>
+  <embed
+    class="pdf_embed"
+    src="{{ section.settings.pdf_url }}"
+    type="application/pdf" />
+</div>
+<a
+  href="{{ section.settings.pdf_url }}"
+  target="_blank"
+  rel="noopener noreferrer">Download PDF Link</a>
+
+{% schema %}
+  {
+    "name": "Clinically Safe Product",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "clinically_safe_title"
+      }, {
+        "type": "image_picker",
+        "label": "Background Image",
+        "id": "background_image"
+      }, {
+        "type": "image_picker",
+        "label": "Overlay Icon",
+        "id": "overlay_icon"
+      }, {
+        "type": "url",
+        "label": "Url to pdf file",
+        "id": "pdf_url"
+      }
+    ]
+  }
+{% endschema %}
