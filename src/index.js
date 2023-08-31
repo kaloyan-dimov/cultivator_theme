@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if(document.querySelector('.video_feed_with_text')){video_feed_with_text()}
   if(document.querySelector('.banner')){banner()}
   // if(document.querySelector('.best_selling_products')){best_selling_products()}
-  
+  console.log("git gitted")
   // Partials
   if(document.querySelector(".list_item")){product_lists()}
   if(document.querySelector('.search_icon')){search_toggle()}
