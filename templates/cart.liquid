@@ -2,7 +2,7 @@
   <div class="w-full flex flex-col gap-[50px] p-[50px] border border-black flex justify-center items-center">
     <h1 class="m-auto text-[50px] text-center">This is cart page</h1>
     {% for item in cart.items %}
-      {{ item }}
+      {{ item | json }}
     {% endfor %}
     {% if cart.empty? == true %}
       <div class="flex flex-col">
