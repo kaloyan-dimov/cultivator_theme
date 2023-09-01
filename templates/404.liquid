@@ -3,3 +3,63 @@
   <h1 class="m-auto text-[50px] text-center">{{ customer.id }}</h1>
   <h1 class="m-auto text-[50px] text-center">{{ customer.firstName }}</h1>
 </div>
+<div class="section">
+  <div class="w-full flex flex-col gap-[50px] p-[50px] border border-black flex justify-center items-center">
+    <h1 class="m-auto text-[50px] text-center">This is cart page</h1>
+    {{ cart | json }}
+    {% for item in cart.items %}
+      {{ item.title }}
+    {% endfor %}
+    {% if cart.empty? == true %}
+      <div class="flex flex-col">
+        <h2>Your cart is empty</h2>
+        <button>Start shopping now</button>
+      </div>
+    {% else %}
+      {% for item in cart.items %}
+        <div class="w-full flex bg-gray-100">
+          <div class="flex w-1/2">
+            <img src="{{ item.image | image_url: width: 200 }}" />
+            <div class="flex flex-col justify-evenly">
+              <h2>{{ item.title }}</h2>
+              <h2>{{ item.variant.title }}</h2>
+              <a class="text-gray-500" href=" {{ item.url_to_remove }}">Remove</a>
+            </div>
+          </div>
+          <div class="w-1/4">
+            <input
+              class="border border-black w-[40px]"
+              type="text"
+              name="updates[]"
+              value="{{ item.quantity }}">
+            <button
+              class="p-[5px] bg-pink-300"
+              type="submit"
+              name="update">Update</button>
+          </div>
+          <div class="w-1/4">
+            <h2>{{ item.price | money_with_currency }}</h2>
+          </div>
+        </div>
+      {% endfor %}
+      <div class="flex flex-col gap-[20px]">
+        <h2 class="text-[20px]">Prices:</h2>
+        <h2>Total cart price: {{ cart.total_price | money_with_currency }}</h2>
+        <h2>Total discount: {{ cart.total_discount | money_with_currency }}</h2>
+        <h2>Original Total cart price: {{ cart.original_total_price | money_with_currency }}</h2>
+        <h2>Items subtotal price: {{ cart.items_subtotal_price | money_with_currency }}</h2>
+      </div>
+    {% endif %}
+  </div>
+  <h2 class="text-[40px]">customer ID: {{ customer.id }}</h2>
+  {% assign wishlist = customer.metafields.the4.wishlist %}
+  <h2 class="text-[40px]">customer mseta: {{ wishlist }}</h2>
+  <h2 class="text-[40px]">Password:
+    {{ customer | json }}
+  </h2>
+  {% comment %}
+  {\"the4_ids\":
+  [\"8473614451000\",\"8473615565112\"],
+  \"gemstone\":{\"product_handle\":\"gemstone\",\"product_id\":\"8473614451000\",\"time\":\"2023-08-18T13:27:50.930806Z\"},
+  \"dainty-gold-neclace\":{\"product_handle\":\"dainty-gold-neclace\",\"product_id\":\"8473615565112\",\"time\":\"2023-08-18T13:28:58.904135Z\"}}
+  {% endcomment %}</div>
