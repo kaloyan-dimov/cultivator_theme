@@ -82,7 +82,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (req_cookie => {\n  req_cookie = name => {\n    function escape(s) {\n      return s.replace(/([.*+?\\^$(){}|\\[\\]\\/\\\\])/g, '\\\\$1');\n    }\n    var match = document.cookie.match(RegExp('(?:^|;\\\\s*)' + escape(name) + '=([^;]*)'));\n    return match ? match[1] : null;\n  };\n});\n\n//# sourceURL=webpack://theme/./src/js/partials/auth.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (req_cookie => {\n  return getCookie(req_cookie);\n  function getCookie(name) {\n    function escape(s) {\n      return s.replace(/([.*+?\\^$(){}|\\[\\]\\/\\\\])/g, '\\\\$1');\n    }\n    var match = document.cookie.match(RegExp('(?:^|;\\\\s*)' + escape(name) + '=([^;]*)'));\n    return match ? match[1] : null;\n  }\n});\n\n//# sourceURL=webpack://theme/./src/js/partials/auth.js?");
 
 /***/ }),
 
