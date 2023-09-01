@@ -20,7 +20,7 @@ export default () => {
               body: JSON.stringify({
                   query: 
                   `mutation customerAccessTokenCreate {
-                    customerAccessTokenCreate(input: {email: "${email}", password: "${password}"}) {
+                    customerAccessTokenCreate(input: {email: "K_Dimov@hotmail.com", password: "grindwebstudio"}) {
                       customerAccessToken {
                         accessToken
                         expiresAt
