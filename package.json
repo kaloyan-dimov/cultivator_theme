@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "webpack_dev": "webpack --watch",
+    "dev": "webpack --watch",
     "push": "theme watch --allow-live",
-    "dev": "concurrently npm:shopify_push npm:webpack_dev"
+    "dev_old": "concurrently npm:shopify_push npm:webpack_dev"
   },
   "keywords": [],
   "author": "",
