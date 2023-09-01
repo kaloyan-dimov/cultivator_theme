@@ -28,7 +28,7 @@ import get_customer_wishlist_id from "./js/api/get_customer_wishlist_id";
 window.addEventListener("DOMContentLoaded", () => {
   header();
   footer();
-
+  console.log("Product test started");
   if (document.querySelector(".swiper")) {
     swiper_init();
   }
