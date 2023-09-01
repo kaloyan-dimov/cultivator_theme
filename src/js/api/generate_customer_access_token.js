@@ -10,7 +10,7 @@ export default () => {
       console.log("email.value, password.value", email.value, password.value)
       authenticate(email.value, password.value)
     });
-    async function authenticate(email, password){
+    function authenticate(email, password){
           fetch('https://cultivator-theme-development.myshopify.com/api/2023-07/graphql.json', {
               method: 'POST',
               headers: {
