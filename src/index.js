@@ -43,12 +43,12 @@ window.addEventListener("DOMContentLoaded", () => {
   if(document.querySelector(".list_item")){product_lists()}
   if(document.querySelector('.search_icon')){search_toggle()}
   if(document.querySelector("#customer_login")){generate_customer_access_token()};
-  if(ShopifyAnalytics.meta.page.customerId){
-    auth("_cat") == null ? window.location.href ="/account/logout/" : auth("_wish") == null ? get_customer_wishlist_id(auth("_wish")): console.log("wish cookie: ", auth("_wish") );
-  } else {
-      document.cookie = `_cat=1; expires=1 23:00:00 UTC; Path=/ ; SameSite=None; Secure`;
-      document.cookie = `_wish=1; expires=1 23:00:00 UTC; Path=/ ; SameSite=None; Secure`;
-  }
+  // if(ShopifyAnalytics.meta.page.customerId){
+  //   auth("_cat") == null ? window.location.href ="/account/logout/" : auth("_wish") == null ? get_customer_wishlist_id(auth("_wish")): console.log("wish cookie: ", auth("_wish") );
+  // } else {
+  //     document.cookie = `_cat=1; expires=1 23:00:00 UTC; Path=/ ; SameSite=None; Secure`;
+  //     document.cookie = `_wish=1; expires=1 23:00:00 UTC; Path=/ ; SameSite=None; Secure`;
+  // }
   if(document.querySelector("#quantity")){product_numbers()}
   console.log("pushed")
   // if(document.querySelector(".review_only_stars")){product_review_stars()}
