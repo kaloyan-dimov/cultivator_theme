@@ -15,7 +15,7 @@ export default () => {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
-                  'X-Shopify-Storefront-Access-Token': '36a45b23f87a17997645114258465663', 
+                  'X-Shopify-Storefront-Access-Token': 'shptka_23ec5df5fb58aa768438cd8e2a498855', 
               },
               body: JSON.stringify({
                   query: 
