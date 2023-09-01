@@ -32,9 +32,15 @@ export default () => {
                   }`,
               }),
               })
-              .then(response => console.log("response.json()", response.json()), response.json())
+              .then(response => response.json())
+              .then(data => console.log("data", data))
               .catch(error => {
               console.error('GraphQL request failed', error);
           })
       }
   }
+
+  // .then(data => 
+  //   console.log("data:", data),
+  //   document.cookie = `_cat=${data.data.customerAccessTokenCreate.customerAccessToken.accessToken}; expires=${new Date(data.data.customerAccessTokenCreate.customerAccessToken.expiresAt).toUTCString()}; Path=/ ; SameSite=None; Secure`,
+  //   get_customer_wishlist_id(data.data.customerAccessTokenCreate.customerAccessToken.accessToken))
