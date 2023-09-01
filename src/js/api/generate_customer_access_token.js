@@ -15,7 +15,7 @@ export default () => {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
-                  'X-Shopify-Storefront-Access-Token': 'shptka_23ec5df5fb58aa768438cd8e2a498855', 
+                  'X-Shopify-Storefront-Access-Token': '36a45b23f87a17997645114258465663', 
               },
               body: JSON.stringify({
                   query: 
@@ -33,10 +33,6 @@ export default () => {
               }),
               })
               .then(response => console.log("response.json()", response.json()), response.json())
-              .then(data => 
-                console.log("data:", data),
-                document.cookie = `_cat=${data.data.customerAccessTokenCreate.customerAccessToken.accessToken}; expires=${new Date(data.data.customerAccessTokenCreate.customerAccessToken.expiresAt).toUTCString()}; Path=/ ; SameSite=None; Secure`,
-                get_customer_wishlist_id(data.data.customerAccessTokenCreate.customerAccessToken.accessToken))
               .catch(error => {
               console.error('GraphQL request failed', error);
           })
