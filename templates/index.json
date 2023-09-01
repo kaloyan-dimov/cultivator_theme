@@ -39,7 +39,8 @@
         "5f3299ea-b6bc-4d12-b9db-753c295a4bb6",
         "8ab52c44-2c35-4631-a1c0-4a4d92c8e1b2"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "ee01da14-0a26-4805-9263-0e39ee1e1d8a": {
       "type": "block_cards",
@@ -95,7 +96,8 @@
         "c486c41c-1836-4081-ae06-8d989997983d",
         "053e6958-dd72-4e18-8c08-b5d7367f8fc8"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "54802d62-1f56-426a-8f28-6d4c05933e7e": {
       "type": "block_paragraph",
@@ -133,7 +135,8 @@
         "91634fb5-ab00-4c0b-b8c6-4f5d72d3876e",
         "e8cc56ec-65da-4041-8c98-54e2b81e86c2"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "23c7a703-cb92-4fd9-b047-d17653a74cd9": {
       "type": "block_best_selling_products",
