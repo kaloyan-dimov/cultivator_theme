@@ -582,9 +582,6 @@ video {
 .top-0 {
   top: 0px;
 }
-.top-\[-114px\] {
-  top: -114px;
-}
 .top-\[0\] {
   top: 0;
 }
@@ -2294,11 +2291,13 @@ video {
   transform: scaleY(0);
   transform-origin: bottom;
   transition: all 0.5s;
+  top: 0;
 }
 .add_to_bag.active .options_list {
   max-height: 500px;
   transform: scaleY(1);
   transform-origin: bottom;
+  top: -114px;
   transition: all 0.5s;
 }
 .add_to_bag .add_option.active {
