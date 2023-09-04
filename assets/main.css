@@ -765,6 +765,9 @@ video {
 .h-\[340px\] {
   height: 340px;
 }
+.h-\[34px\] {
+  height: 34px;
+}
 .h-\[356px\] {
   height: 356px;
 }
@@ -1028,6 +1031,9 @@ video {
 }
 .flex-1 {
   flex: 1 1 0%;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
@@ -1419,6 +1425,9 @@ video {
 }
 .pt-\[16px\] {
   padding-top: 16px;
+}
+.pt-\[21px\] {
+  padding-top: 21px;
 }
 .pt-\[32px\] {
   padding-top: 32px;
