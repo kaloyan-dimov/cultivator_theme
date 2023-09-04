@@ -2307,16 +2307,24 @@ video {
 }
 
 .account_navigation {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
 }
 .account_navigation li {
   height: 56px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid #B3A094;
   border-radius: 16px;
 }
+
+@media (min-width: 1024px) {
+  .account_navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
 
   .sm\:absolute {
@@ -2456,6 +2464,7 @@ video {
     font-size: 48px;
   }
 }
+
 @media (min-width: 1024px) {
 
   .md\:absolute {
@@ -2598,6 +2607,7 @@ video {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 }
+
 @media (min-width: 1280px) {
 
   .lg\:pt-\[97px\] {
