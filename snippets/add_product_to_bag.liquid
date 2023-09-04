@@ -1,6 +1,6 @@
 <div class="add_to_bag flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-[#54443B] text-[14px] w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
   {% if product.has_only_default_variant %}
-    <a href="/cart/add?id={{ product.id }}&quantity=1 text-white add_product_variants" class="text-white w-full h-full flex justify-center items-center">ADD TO BAG</a>
+    <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1 text-white add_product_variants" class="text-white w-full h-full flex justify-center items-center">ADD TO BAG</a>
   {% else %}
     <h3 class="text-white">CHOOSE OPTIONS</h3>
     <div class="flex flex-col w-full absolute left-[0] bg-white  h-[114px] top-[-114px] pt-[21px] ">
