@@ -88,14 +88,17 @@ section.settings.section_title{{ }}</h2>
                     <div class="flex gap-[11px] justify-between">
                       {% for variant in product.variants %}
                         {{ forloop.index }}
-                        {% if forloop.index == 1 %}
-                          <h2>1 is true</h2>
-                        {% endif %}
-                        <h4 class=" flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]">{{ variant.option1 }}{{ variant.price }}</h4>
+
+                        <h4
+                          class="
+                          flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]
+                          {% if forloop.index == 1 %}
+                            active
+                          {% endif %}">
+                          {{ variant.option1 }}{{ variant.price }}</h4>
                       {% endfor %}
                     </div>
-                    <h4
-                      class="">Price: {{ product.first_available_variant.price }}</h4>
+                    <h4 class="">Price: {{ product.first_available_variant.price }}</h4>
                   </div>
                 {% endif %}
               </div>
