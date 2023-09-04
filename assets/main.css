@@ -2321,6 +2321,15 @@ video {
   padding-right: 12px;
   border: 1px solid #B3A094;
   border-radius: 16px;
+  gap: 6px;
+}
+.account_navigation li .icon {
+  width: 36px;
+  height: 36px;
+  border: 2px solid red;
+}
+.account_navigation li h3 {
+  font-size: 15px;
 }
 
 @media (min-width: 1024px) {
