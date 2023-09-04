@@ -24,7 +24,7 @@
     {{ customer.orders_count }}
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
-        <!-- order info -->
+        Order Listed:
       {% endfor %}
       {{ paginate | default_pagination }}
     {% endpaginate %}
