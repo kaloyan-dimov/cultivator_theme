@@ -77,17 +77,17 @@ section.settings.section_title{{ }}</h2>
 
               <h2 class="text-[14px] text-center">{{ product.price | money_without_trailing_zeros }}</h2>
               <div class="w-full h-[56px]"></div>
-              </div>
               </a>
               <div class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-full h-[56px] bg-red-300 absolute">
                 <h3>Add to Bag</h3> 
                 <div
-                  class="flex w-full">
-                  {% for variant in product.variants %}
-                    <h2>{{ variant.option1 }}</h2>
-                  {% endfor %}
+                class="flex w-full">
+                {% for variant in product.variants %}
+                  <h2>{{ variant.option1 }}</h2>
+                {% endfor %}
                 </div>
-              </div>
+                </div>
+                </div>
             </div>
             <div
               class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
