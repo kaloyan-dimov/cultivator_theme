@@ -2307,7 +2307,8 @@ video {
 }
 
 .account_navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .account_navigation li {
   height: 56px;
@@ -2320,8 +2321,7 @@ video {
 
 @media (min-width: 1024px) {
   .account_navigation {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
   }
 }
 
