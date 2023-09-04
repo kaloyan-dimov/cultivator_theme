@@ -570,6 +570,9 @@ video {
 .right-\[16px\] {
   right: 16px;
 }
+.right-\[24px\] {
+  right: 24px;
+}
 .top-0 {
   top: 0px;
 }
@@ -578,6 +581,9 @@ video {
 }
 .top-\[19px\] {
   top: 19px;
+}
+.top-\[24px\] {
+  top: 24px;
 }
 .top-\[316px\] {
   top: 316px;
