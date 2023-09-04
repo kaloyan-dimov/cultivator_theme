@@ -2309,12 +2309,16 @@ video {
 .account_navigation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  gap: 8px;
 }
 .account_navigation li {
   height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
   border: 1px solid #B3A094;
   border-radius: 16px;
 }
