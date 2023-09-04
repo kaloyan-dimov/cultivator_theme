@@ -2289,6 +2289,18 @@ video {
   transition: all 0.5s;
 }
 
+.add_to_bag .options_list {
+  max-height: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 0.5s;
+}
+.add_to_bag.active .options_list {
+  max-height: 500px;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: all 0.5s;
+}
 .add_to_bag .add_option.active {
   border: 2px solid #CCAC71;
 }
