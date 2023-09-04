@@ -582,9 +582,6 @@ video {
 .top-0 {
   top: 0px;
 }
-.top-\[-100\%\] {
-  top: -100%;
-}
 .top-\[-114px\] {
   top: -114px;
 }
@@ -1521,6 +1518,11 @@ video {
   --tw-text-opacity: 1;
   color: rgba(255, 0, 0, 1);
   color: rgba(255, 0, 0, var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 .text-gray-500 {
   --tw-text-opacity: 1;
