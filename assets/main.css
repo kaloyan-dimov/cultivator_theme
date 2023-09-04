@@ -687,6 +687,9 @@ video {
 .ml-\[8px\] {
   margin-left: 8px;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .mt-\[64px\] {
   margin-top: 64px;
 }
