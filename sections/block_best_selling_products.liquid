@@ -63,7 +63,7 @@ section.settings.section_title{{ }}</h2>
         {% assign sorted_products = block.settings.selected_collection.products | sort: "best-selling" %}
         {% for product in sorted_products limit: block.settings.products_number %}
           <div class="swiper-slide relative flex">
-            <a href="{{ product.url  }}" class="hover_class flex flex-col h-[428px] rounded-[48px] justify-between p-6 bg-white border border-[#E6DFDB]">
+            <a href="{{ product.url  }}" class="flex flex-col h-[428px] rounded-[48px] justify-between p-6 bg-white border border-[#E6DFDB]">
               <div class="w-full h-[200px]">
                 <img
                   class="w-full h-full object-contain"
@@ -75,7 +75,7 @@ section.settings.section_title{{ }}</h2>
               <h2 class="text-[14px] text-center">{{ product.description }}</h2>
               <h2 class="text-[14px] text-center">{{ product.price | money_without_trailing_zeros }}</h2>
             </a>
-            <div class="hover_class flex px-4 py-2 gap-2">
+            <div class=" flex px-4 py-2 gap-2">
               <a href="" class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[211px] h-[56px] bg-red-300">Add to Bag</a>
 
               <div
