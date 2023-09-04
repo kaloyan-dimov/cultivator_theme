@@ -543,6 +543,9 @@ video {
 .bottom-\[0\] {
   bottom: 0;
 }
+.bottom-\[16px\] {
+  bottom: 16px;
+}
 .bottom-\[40px\] {
   bottom: 40px;
 }
@@ -951,6 +954,9 @@ video {
 }
 .w-\[97px\] {
   width: 97px;
+}
+.w-\[calc\(100\%-32px\)\] {
+  width: calc(100% - 32px);
 }
 .w-\[calc\(100vw-68px\)\] {
   width: calc(100vw - 68px);
