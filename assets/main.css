@@ -2247,6 +2247,13 @@ video {
   transform: scale(0);
   transform-origin: center;
 }
+.recover_password_form.active {
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
+  transform-origin: center;
+}
+
 .contact_us_page form {
   display: flex;
   flex-direction: column;
