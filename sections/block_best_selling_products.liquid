@@ -78,7 +78,7 @@ section.settings.section_title{{ }}</h2>
                 <h2 class="text-[14px] text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money_without_trailing_zeros }}</h2>
                 <div class="w-full h-[56px]"></div>
               </a>
-              {% render "add_product_variants" with product %}
+              {% render "add_product_variants", product %}
             </div>
             <div
               class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
