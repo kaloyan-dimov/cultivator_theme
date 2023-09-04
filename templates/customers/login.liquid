@@ -32,18 +32,7 @@
   {% endform %}
   <div id="test_submit bg-red-300">test submit</div>
   Recover Customer Password
-  {% form 'recover_customer_password' %}
-    {{ form.errors | default_errors }}
-
-    <div class="email">
-      <label for="email">Email</label>
-      <input type="email" name="email">
-    </div>
-
-    <div class="submit">
-      <input type="submit" value="Submit">
-    </div>
-  {% endform %}
+  {% render "recover_password" %}
 
   {% if shop.customer_accounts_enabled %}
     <div class="flex flex-col">
