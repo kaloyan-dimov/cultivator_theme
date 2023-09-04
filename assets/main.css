@@ -1519,11 +1519,6 @@ video {
   color: rgba(255, 0, 0, 1);
   color: rgba(255, 0, 0, var(--tw-text-opacity));
 }
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, 1);
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
-}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, 1);
