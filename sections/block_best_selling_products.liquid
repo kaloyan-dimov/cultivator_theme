@@ -79,7 +79,7 @@ section.settings.section_title{{ }}</h2>
                 <div class="w-full h-[56px]"></div>
               </a>
               <div
-                class="add_to_bag flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-[#54443B] text-[14px] uppercase w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
+                class="add_to_bag flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
                 {% if product.has_only_default_variant %}
                   <h3>Add to Bag</h3>
                 {% else %}
@@ -89,11 +89,11 @@ section.settings.section_title{{ }}</h2>
                       {% for variant in product.variants %}
                         {{ forloop.index }}
                         <h4
-                          class=" flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]">{{ variant.option1 }}{{ variant.price }}</h4>
+                          class="text-[#54443B] flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]">{{ variant.option1 }}{{ variant.price }}</h4>
                       {% endfor %}
                     </div>
                     <h4
-                      class="">Price: {{ product.first_available_variant.price }}</h4>
+                      class="text-black">Price: {{ product.first_available_variant.price }}</h4>
                   </div>
                 {% endif %}
               </div>
