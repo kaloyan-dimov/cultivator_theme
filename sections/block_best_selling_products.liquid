@@ -90,7 +90,7 @@ section.settings.section_title{{ }}</h2>
                       {% for variant in product.variants %}
                         <h4
                           data-id="{{ variant.id }}"
-                          data.price="{{ variant.price | money_without_trailing_zeros }}"
+                          data-price="{{ variant.price | money_without_trailing_zeros }}"
                           class="
                           flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]
                           {% if forloop.index == 1 %}
