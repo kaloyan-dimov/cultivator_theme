@@ -1,7 +1,6 @@
 <div class="section">
   <div class="w-full flex flex-col gap-[50px] p-[50px] border border-black flex justify-center items-center">
     <h1 class="m-auto text-[50px] text-center">This is cart page</h1>
-    {{ cart | json }}
     {% for item in cart.items %}
       {{ item.title }}
     {% endfor %}
@@ -44,7 +43,8 @@
         <h2>Original Total cart price: {{ cart.original_total_price | money_with_currency }}</h2>
         <h2>Items subtotal price: {{ cart.items_subtotal_price | money_with_currency }}</h2>
       </div>
-      <a href="/checkout">Checkout</a>
+      <a
+        href="/checkout">Checkout</a>
     {% endif %}
   </div>
   <h2 class="text-[40px]">customer ID: {{ customer.id }}</h2>
