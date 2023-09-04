@@ -30,6 +30,7 @@
   </div>
   <div class="flex flex-col">
     <h2>Addresses</h2>
+    {{ customer.addresses_count }}
     {% if customer.default_address %}
       <p>{{ customer.default_address.address1 }}</p>
 
