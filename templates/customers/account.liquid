@@ -25,8 +25,10 @@
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         Order Listed:
-        <h2>Number: {{ order.order_number }}</h2>
+        <h2>Order: (Number) {{ order.order_number }}</h2>
         <h2>Created At: {{ order.created_at }}</h2>
+        <h2>Fulfillment Status (Order cancelled?): {{ order.cancelled }}</h2>
+        <h2>Order (financial status): {{ order.cancelled }}</h2>
         <h2>Total: {{ order.total_spent }}</h2>
       {% endfor %}
       {{ paginate | default_pagination }}
