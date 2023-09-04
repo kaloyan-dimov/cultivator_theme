@@ -79,7 +79,7 @@ section.settings.section_title{{ }}</h2>
               <a href="" class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[211px] h-[56px] ">Add to Bag</a>
 
               <div
-                class="rounded-[24px] w-[65px] h-[56px] border border-[#CCAC71] heart_gold add_to_wishlist
+                class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist
                 {% for wishlist_item in wishlist_array %}
                   {% assign current_product = all_products[wishlist_item] %}
                   {% if current_product.handle == product.handle %}bg-[#CCAC71]
