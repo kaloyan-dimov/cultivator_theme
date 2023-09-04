@@ -25,6 +25,8 @@
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         Order Listed:
+        <h2>Number: {{ order.order_number }}</h2>
+        {{ order.created_at }}
       {% endfor %}
       {{ paginate | default_pagination }}
     {% endpaginate %}
