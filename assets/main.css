@@ -747,6 +747,9 @@ video {
 .h-\[360px\] {
   height: 360px;
 }
+.h-\[40px\] {
+  height: 40px;
+}
 .h-\[416px\] {
   height: 416px;
 }
@@ -931,9 +934,6 @@ video {
 .w-\[59px\] {
   width: 59px;
 }
-.w-\[65px\] {
-  width: 65px;
-}
 .w-\[72px\] {
   width: 72px;
 }
@@ -1106,9 +1106,6 @@ video {
 .rounded-\[12px\] {
   border-radius: 12px;
 }
-.rounded-\[140px\] {
-  border-radius: 140px;
-}
 .rounded-\[150px\] {
   border-radius: 150px;
 }
@@ -1132,6 +1129,9 @@ video {
 }
 .rounded-\[34px\] {
   border-radius: 34px;
+}
+.rounded-\[48px\] {
+  border-radius: 48px;
 }
 .rounded-\[80px\] {
   border-radius: 80px;
@@ -1593,24 +1593,6 @@ video {
 }
 .best_selling_swiper .swiper-wrapper .swiper-slide {
   width: 316px;
-  border: 1px solid transparent;
-  transition: all 0.5s;
-}
-.best_selling_swiper .swiper-wrapper .swiper-slide .hover_class {
-  border: 1px solid transparent;
-  transition: all 0.5s;
-}
-.best_selling_swiper .swiper-wrapper .swiper-slide:hover {
-  border: 1px solid #CCAC71;
-  transition: all 0.5s;
-}
-.best_selling_swiper .swiper-wrapper .swiper-slide:hover .hover_class:first-child {
-  border: 1px solid #CCAC71;
-  transition: all 0.5s;
-}
-.best_selling_swiper .swiper-wrapper .swiper-slide:hover .hover_class:last-child {
-  border-top: 1px solid #CCAC71;
-  transition: all 0.5s;
 }
 .best_selling_swiper .swiper-pagination-bullet {
   height: 10px;
