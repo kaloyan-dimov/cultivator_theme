@@ -606,6 +606,9 @@ video {
 .z-\[3\] {
   z-index: 3;
 }
+.m-4 {
+  margin: 1rem;
+}
 .m-auto {
   margin: auto;
 }
@@ -983,6 +986,9 @@ video {
 }
 .max-w-\[428px\] {
   max-width: 428px;
+}
+.max-w-\[458px\] {
+  max-width: 458px;
 }
 .max-w-\[532px\] {
   max-width: 532px;
