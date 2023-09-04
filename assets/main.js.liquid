@@ -71,7 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {\n  document.querySelectorAll(\".add_to_bag\").forEach(item => {\n    item.querySelector(\".choose_option\").addEventListener(\"click\", function (e) {\n      e.target.innerHTML = \"ADD TO BAG\";\n      item.classList.add(\"active\");\n    });\n    console.log(\"item\", item, \"options: \", item.querySelectorAll(\".add_option\"));\n  });\n});\n\n//# sourceURL=webpack://theme/./src/js/partials/add_product_to_bag.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {\n  document.querySelectorAll(\".add_to_bag\").forEach(item => {\n    item.querySelector(\".choose_option\").addEventListener(\"click\", function (e) {\n      e.target.innerHTML = \"ADD TO BAG\";\n      item.classList.add(\"active\");\n    });\n    item.querySelectorAll(\".add_option\").forEach(subitem, () => {\n      console.log(subitem.dataset.id, subitem.dataset.price);\n    });\n    // console.log(\"item\", item, \"options: \", item.querySelectorAll(\".add_option\"))\n  });\n});\n\n//# sourceURL=webpack://theme/./src/js/partials/add_product_to_bag.js?");
 
 /***/ }),
 
