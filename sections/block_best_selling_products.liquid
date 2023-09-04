@@ -78,6 +78,7 @@ section.settings.section_title{{ }}</h2>
                 <h2 class="text-[14px] text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money_without_trailing_zeros }}</h2>
                 <div class="w-full h-[56px]"></div>
               </a>
+              {% render "add_product_variants" with product %}
               <div
                 class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
                 {% if product.has_only_default_variant %}
@@ -91,11 +92,9 @@ section.settings.section_title{{ }}</h2>
                           class="text-[#54443B] flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]">{{ variant.option1 }}g{{ variant.price }}</h4>
                       {% endfor %}
                     </div>
-                    <h4
-                      class="text-black">Price: {{ product.first_available_variant.price }}</h4>
+                    <h4 class="text-black">Price: {{ product.first_available_variant.price }}</h4>
                   </div>
                 {% endif %}
-
               </div>
             </div>
             <div
