@@ -78,6 +78,7 @@ section.settings.section_title{{ }}</h2>
                 <h2 class="text-[14px] text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money_without_trailing_zeros }}</h2>
                 <div class="w-full h-[56px]"></div>
               </a>
+              {% include 'add_product_to_bag' with product %}
               <div
                 class="add_to_bag flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-[#54443B] text-[14px] uppercase w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
                 {% if product.has_only_default_variant %}
