@@ -27,9 +27,13 @@
         Order Listed:
         <h2>Order: (Number) {{ order.order_number }}</h2>
         <h2>Created At: {{ order.created_at }}</h2>
-        <h2>Fulfillment Status (Order cancelled?): {{ order.cancelled }}</h2>
+        {% if order.cancelled %}
+          <h2>Fulfillment Status: Cancelled</h2>
+        {% else %}
+          <h2>Fulfillment Status (Order cancelled?): {{ order.fulfillment_status_label }}</h2>
+        {% endif %}
         <h2>Order (financial status): {{ order.cancelled }}</h2>
-        <h2>Total: {{ order.total_spent }}</h2>
+        <h2>Total: {{ order.line_items_subtotal_price }}</h2>
       {% endfor %}
       {{ paginate | default_pagination }}
     {% endpaginate %}
