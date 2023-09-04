@@ -82,7 +82,7 @@ section.settings.section_title{{ }}</h2>
                 class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
                 <h3>Add to Bag</h3>
                 <div
-                  class="flex w-full absolute left-[0] top-[-100%] bg-white justify-between h-[114px] top-[-114px] pt-[21px]">
+                  class="flex w-full absolute left-[0] top-[-100%] bg-white justify-between h-[114px] top-[-114px] pt-[21px] gap-[11px]">
                   {% for variant in product.variants %}
                     <a href="/cart/add?id={{ variant.id }}&quantity=1" class="text-[#54443B] flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center">{{ variant.option1 }}</a>
                   {% endfor %}
