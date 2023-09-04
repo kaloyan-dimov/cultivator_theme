@@ -1,0 +1,15 @@
+<div class="flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-white text-[14px] uppercase w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
+  {% if product.has_only_default_variant %}
+    <h3>Add to Bag</h3>
+  {% else %}
+    <h3 href="/cart/add?id={{ variant.id }}&quantity=1">CHOOSE OPTIONS</h3>
+    <div class="flex flex-col w-full absolute left-[0] bg-white  h-[114px] top-[-114px] pt-[21px] ">
+      <div class="flex gap-[11px] justify-between">
+        {% for variant in product.variants %}
+          <h4 class="text-[#54443B] flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px]">{{ variant.option1 }}g{{ variant.price }}</h4>
+        {% endfor %}
+      </div>
+      <h4 class="text-black">Price: {{ product.first_available_variant.price }}</h4>
+    </div>
+  {% endif %}
+</div>
