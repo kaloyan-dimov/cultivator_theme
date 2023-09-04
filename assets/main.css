@@ -2291,7 +2291,7 @@ video {
   transform: scaleY(0);
   transform-origin: bottom;
   transition: all 0.5s;
-  top: 0;
+  top: -114px;
 }
 .add_to_bag.active .options_list {
   max-height: 500px;
