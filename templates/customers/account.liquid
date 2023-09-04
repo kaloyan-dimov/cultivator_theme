@@ -21,6 +21,7 @@
   </div>
   <div class="flex flex-col">
     <h2>Orders</h2>
+    {{ customer.orders_count }}
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         <!-- order info -->
