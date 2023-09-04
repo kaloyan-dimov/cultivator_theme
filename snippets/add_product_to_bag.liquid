@@ -1,6 +1,6 @@
 <div class="add_to_bag flex justify-center items-center rounded-[24px] bg-[#CCAC71] text-[#54443B] text-[14px] w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
   {% if product.has_only_default_variant %}
-    <h3 class="text-white">Add to Bag</h3>
+    <h3 class="text-white ">Add to Bag</h3>
   {% else %}
     <h3 class="text-white" href="/cart/add?id={{ variant.id }}&quantity=1 text-white add_product_variants">CHOOSE OPTIONS</h3>
     <div class="flex flex-col w-full absolute left-[0] bg-white  h-[114px] top-[-114px] pt-[21px] ">
@@ -10,7 +10,7 @@
             data-id="{{ variant.id }}"
             data-price="{{ variant.price | money_without_trailing_zeros }}"
             class="
-            flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px] cursor-pointer
+            add_option flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px] cursor-pointer
             {% if forloop.index == 1 %}
               active
             {% endif %}">
