@@ -2241,6 +2241,12 @@ video {
   transition: all 0.5s;
 }
 
+.recover_password_form {
+  width: 0;
+  height: 0;
+  transform: scale(0);
+  transform-origin: center;
+}
 .contact_us_page form {
   display: flex;
   flex-direction: column;
