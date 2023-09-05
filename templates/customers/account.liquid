@@ -158,7 +158,12 @@
           </div>
           <div
             class="w-full">
-            Posted successfully? {{ form.posted_successfully }}
+            Posted successfully?
+            {% if form.posted_successfully == true %}
+              succ
+            {% else %}
+              fail
+            {% endif %}
           </div>
         </div>
       {% endform %}
