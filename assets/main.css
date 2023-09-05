@@ -1323,6 +1323,9 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
+.p-\[24px\] {
+  padding: 24px;
+}
 .p-\[50px\] {
   padding: 50px;
 }
