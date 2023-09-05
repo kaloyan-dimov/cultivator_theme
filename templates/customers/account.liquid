@@ -103,7 +103,10 @@
     {% else %}
       <h2>You currently have no saved addresses</h2>
     {% endif %}
-    <button>ADD NEW ADDRESS</button>
+    <div
+      class="add_address border border-[#CCAC71] h-[56px] w-[150px] m-auto rounded-[12px] flex justify-center items-center">
+      ADD NEW ADDRESS
+    </div>
     {% form 'customer_address', customer.new_address %}
       <!-- form content -->
     {% endform %}
