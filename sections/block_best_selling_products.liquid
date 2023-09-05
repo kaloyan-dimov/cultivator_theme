@@ -1,7 +1,10 @@
-<div class="section mb-[64px] relative">
-  <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
+<div
+  class="section mb-[64px] relative">
+  <h2
+    class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
     {% if section.settings.title_image != null %}
-      <span class="w-[50px] h-[50px]">
+      <span
+        class="w-[50px] h-[50px]">
         <img
           class="h-[42px] inline-block"
           src="{{ section.settings.title_image | img_url: 'master'}}"
@@ -14,7 +17,8 @@
     {% endif %}
     {% comment %} {% endcomment %}
     {% if section.settings.title_image != null %}
-      <span class="w-[50px] h-[50px]">
+      <span
+        class="w-[50px] h-[50px]">
         <img
           class="h-[42px] inline-block"
           src="{{ section.settings.title_image | img_url: 'master'}}"
@@ -25,46 +29,20 @@
   </h2>
 
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-  <div class="swiper best_selling_swiper">
-    <div class="swiper-wrapper">
+  <div
+    class="swiper best_selling_swiper">
+    <div
+      class="swiper-wrapper">
       {% for block in section.blocks %}
         {% assign sorted_products = block.settings.selected_collection.products | sort: "best-selling" %}
         {% for product in sorted_products limit: block.settings.products_number %}
-          <div class="swiper-slide relative flex">
-            <div class="relative">
-              <div class="flex flex-col h-[488px] rounded-[48px] justify-between p-4 bg-white border border-[#E6DFDB] relative">
-                <a href="{{ product.url }}">
-                  <div class="w-full h-[200px] mb-2">
-                    <img
-                      class="w-full h-full object-contain"
-                      src="{{ product.featured_image | img_url: 'master'}}"
-                      alt="">
-                  </div>
-                  <h2 class="text-[18px] text-center mb-[2px]">{{ product.title }}</h2>
-                  <h2 class="text-[16px] text-center text-red-300 mb-4">Hardcode Burgundy</h2>
-                  <h2 class="text-[14px] text-center mb-6">{{ product.description }}</h2>
-
-                  <h2 class="text-[14px] text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money_without_trailing_zeros }}</h2>
-                  <div class="w-full h-[56px]"></div>
-                </a>
-                {% include 'add_product_to_bag' with product %}
-
-              </div>
-              <div
-                class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
-                {% for wishlist_item in wishlist_array %}
-                  {% assign current_product = all_products[wishlist_item] %}
-                  {% if current_product.handle == product.handle %}bg-[#CCAC71]
-                  {% else %}
-                    no-match{% endif %}
-                {% endfor %}"
-                data-handle="{{ product.handle }}"></div>
-            </div>
-          </div>
+          <div
+            class="swiper-slide relative flex"></div>
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="swiper-pagination"></div>
+    <div
+      class="swiper-pagination"></div>
   </div>
 </div>
 
