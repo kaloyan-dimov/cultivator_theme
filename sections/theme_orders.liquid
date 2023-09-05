@@ -58,9 +58,12 @@
           <h2>QTY</h2>
           <h2 class="justify-self-end">TOTAL</h2>
         </div>
-        {% for product in order.line_items %}
+        {% for line_item in order.line_items %}
           <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px] bg-red-300">
-            <h2>{{ product.title }}</h2>
+            <h2>{{ line_item.title }}</h2>
+            <h2>{{ line_item.sku }}</h2>
+            <h2>{{ line_item.price }}</h2>
+            <h2>{{ line_item.quantity }}</h2>
           </div>
         {% endfor %}
         <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px] bg-red-300">
