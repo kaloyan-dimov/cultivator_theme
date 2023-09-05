@@ -80,10 +80,21 @@
     <h2>Addresses</h2>
     Count: {{ customer.addresses_count }}
     {% if customer.addresses_count > 0 %}
-      Default:
-      {{ customer.default_address }} {{ customer.default_address.country }}{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}{{ customer.default_address.name }}
       <div
-        class="fixed top-[0] left-[0] bg-[rgba(0,0,0,0.6)] flex justify-center items-center w-full h-full">
+        class="flex flex-col sm:flex-row max-w-[868px]">
+        <div
+          class="flex flex-col w-full">
+          <h2>Default address</h2>
+          <h3>{{ customer.default_address.name }}</h3>
+          <h3>{{ customer.default_address.country }}</h3>
+        </div>
+        <div
+          class="w-full">
+          <h3>Edit</h3>
+        </div>
+      </div>
+      <div
+        class="fixed top-[0] left-[0] bg-[rgba(0,0,0,0.6)] flex justify-center items-center w-full h-full z-[2]">
         {% form 'customer_address', customer.default_address %}
           <div class="max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
             <!-- form content -->
