@@ -36,20 +36,20 @@
   {% comment %} Desktop {% endcomment %}
   <div class="hidden md:flex flex-col w-full bg-white border border-[#E6DFDB] rounded-[20px]">
     <div class="grid grid-cols-5 h-[56px] items-center px-[24px]">
-      <h2 class="flex-grow">ORDER</h2>
-      <h2 class="flex-grow">DATE</h2>
-      <h2 class="flex-grow">PAYMENT STATUS</h2>
-      <h2 class="flex-grow">FULFILMENT STATUS</h2>
-      <h2 class="flex-grow">TOTAL</h2>
+      <h2>ORDER</h2>
+      <h2>DATE</h2>
+      <h2>PAYMENT STATUS</h2>
+      <h2>FULFILMENT STATUS</h2>
+      <h2>TOTAL</h2>
     </div>
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px]">
-          <h2 class="flex-grow">#{{ order.order_number }}</h2>
-          <h2 class="flex-grow">{{ order.created_at | date: '%B %d, %Y' }}</h2>
-          <h2 class="flex-grow">{{ order.financial_status_label }}</h2>
-          <h2 class="flex-grow">{{ order.fulfillment_status_label }}</h2>
-          <h2 class="flex-grow">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+          <h2>#{{ order.order_number }}</h2>
+          <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
+          <h2>{{ order.financial_status_label }}</h2>
+          <h2>{{ order.fulfillment_status_label }}</h2>
+          <h2>{{ order.line_items_subtotal_price | money_with_currency }}</h2>
         </div>
       {% endfor %}
       {{ paginate | default_pagination }}
