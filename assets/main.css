@@ -2354,6 +2354,7 @@ video {
   border: 1px solid #B3A094;
   border-radius: 16px;
   gap: 6px;
+  color: #B3A094;
 }
 .account_navigation li .icon {
   width: 36px;
