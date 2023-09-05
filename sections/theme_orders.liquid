@@ -5,31 +5,33 @@
   <div class="flex flex-col bg-white md:bg-red-300">
     <h2>Orders</h2>
     {% paginate customer.orders by 10 %}
-      {% for order in customer.orders %}
-        <div class="w-full bg-white border border-[#E6DFDB]">
-          <div class="w-full justify-between">
-            <h2>ORDER</h2>
-            <h2>{{ order.order_number }}</h2>
+      <div class="flex flex-col gap-[16px]">
+        {% for order in customer.orders %}
+          <div class="w-full bg-white border border-[#E6DFDB]">
+            <div class="w-full justify-between">
+              <h2>ORDER</h2>
+              <h2>{{ order.order_number }}</h2>
+            </div>
+            <div class="w-full justify-between">
+              <h2>DATE</h2>
+              <h2>{{ order.created_at }}</h2>
+            </div>
+            <div class="w-full justify-between">
+              <h2>DATE</h2>
+              <h2>{{ order.created_at }}</h2>
+            </div>
           </div>
-          <div class="w-full justify-between">
-            <h2>DATE</h2>
-            <h2>{{ order.created_at }}</h2>
-          </div>
-          <div class="w-full justify-between">
-            <h2>DATE</h2>
-            <h2>{{ order.created_at }}</h2>
-          </div>
-        </div>
-        <h2>Created At: {{ order.created_at }}</h2>
-        {% if order.cancelled %}
-          <h2>Fulfillment Status: Cancelled</h2>
-        {% else %}
-          <h2>Fulfillment Status (Order cancelled?): {{ order.fulfillment_status_label }}</h2>
-        {% endif %}
-        <h2>Order (financial status): {{ order.financial_status_label }}</h2>
-        <h2>Total: {{ order.line_items_subtotal_price }}</h2>
-      {% endfor %}
-      {{ paginate | default_pagination }}
+          <h2>Created At: {{ order.created_at }}</h2>
+          {% if order.cancelled %}
+            <h2>Fulfillment Status: Cancelled</h2>
+          {% else %}
+            <h2>Fulfillment Status (Order cancelled?): {{ order.fulfillment_status_label }}</h2>
+          {% endif %}
+          <h2>Order (financial status): {{ order.financial_status_label }}</h2>
+          <h2>Total: {{ order.line_items_subtotal_price }}</h2>
+        {% endfor %}
+        {{ paginate | default_pagination }}
+      </div>
     {% endpaginate %}
   </div>
 </div>
