@@ -95,17 +95,7 @@
     {% for wishlist_item in wishlist_array %}
       {% if wishlist_item != "null" %}
         {% assign product = all_products[wishlist_item] %}
-        {{ product.title }}
-        <div
-          class="w-[284px] h[200px]">
-          <img
-            src="{{ product.featured_image | img_url }}"
-            alt=""
-            srcset="">
-        </div>
-        <div
-          class="remove_from_wishlist p-[40px] border border-red-500 absolute top-[0] right-[0]"
-          data-handle="{{ current_product.handle }}">X</div>
+        {% include 'product_card' with product %}
       {% else %}
         Your wishlist is empty, start shopping now!
       {% endif %}
