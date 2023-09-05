@@ -693,6 +693,9 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mt-\[16px\] {
+  margin-top: 16px;
+}
 .mt-\[48px\] {
   margin-top: 48px;
 }
@@ -1315,6 +1318,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(252, 165, 165, 1);
   background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(248, 113, 113, 1);
+  background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
