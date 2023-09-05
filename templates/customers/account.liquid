@@ -86,59 +86,61 @@
       Edit:
       <h2>Edit address</h2>
       {% form 'customer_address', customer.default_address %}
-        <!-- form content -->
-        <div
-          class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
-          <select
-            name="country">
-            {{ all_country_option_tags }}
-          </select>
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
-          <input
-            class="w-full"
-            type="text"
-            name="customer[email]"
-            placeholder="Email">
+        <div class="flex justify-center items-center max-w-[662px]">
+          <!-- form content -->
+          <div
+            class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
+            <select
+              name="country">
+              {{ all_country_option_tags }}
+            </select>
+            <input
+              class="w-1/2 md:w-full md:bg-red-500"
+              type="text"
+              name="address[first_name]"
+              placeholder="Email">
+            <input
+              class="w-full"
+              type="text"
+              name="address[last_name]"
+              placeholder="Email">
+            <input
+              class="w-full"
+              type="text"
+              name="address[address1]"
+              placeholder="Email">
+            <input
+              class="w-full"
+              type="text"
+              name="address[address2]"
+              placeholder="Email">
+            <input
+              class="w-full"
+              type="text"
+              name="address[city]"
+              placeholder="Email">
+            <input
+              class="w-full"
+              type="text"
+              name="customer[email]"
+              placeholder="Email">
+            <input
+              class="w-full"
+              type="text"
+              name="customer[email]"
+              placeholder="Email">
+          </div>
         </div>
-        First name	text	address[first_name]
-        Last name	text	address[last_name]
-                        Company	text	address[company]
-                        Address 1	text	address[address1]
-                        Address 2	text	address[address2]
-                        City	text	address[city]
-                        Country	select	address[country]
-                        Province	select	address[province]
-                        ZIP/Postal Code	text	address[zip]
-                        Phone Number	tel	address[phone]
+        First name	text	
+        Last name	text	
+              Company	text	address[company]
+              Address 1	text	
+              Address 2	text	
+              City	text	
+              Country	select	address[country]
+              Province	select	address[province]
+              ZIP/Postal Code	text	address[zip]
+              Phone Number	tel	address[phone]
       {% endform %}
       {% for address in customer.addresses %}
         AddressDrop
