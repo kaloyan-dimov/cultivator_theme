@@ -1,0 +1,79 @@
+<div
+  class="edit_address_form fixed top-[0] left-[0] bg-[rgba(0,0,0,0.6)] w-full h-full flex justify-center items-center z-[2]">
+  {% form 'customer_address', customer.default_address %}
+    <div class="max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
+      <!-- form content -->
+      <div
+        class="flex flex-wrap gap-y-[16px]">
+        <div
+          class="w-full flex justify-between">
+          <h2
+            class="w-1/2 text-underline sm:self-end">Edit address</h2>
+          <h2
+            class="close_address_button">Close</h2>
+        </div>
+        <select
+          data-selected-country="{{ customer.default_address.country }}"
+          class="select_country w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+          name="address[country]">
+          {{ all_country_option_tags }}
+        </select>
+        <div
+          class="flex flex-col sm:flex-row gap-x-[8px] w-full gap-y-[16px]">
+          <input
+            class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+            type="text"
+            name="address[first_name]"
+            placeholder="First Name"
+            value="{{ customer.default_address.first_name }}">
+          <input
+            class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+            type="text"
+            name="address[last_name]"
+            placeholder="Last Name"
+            value="{{ customer.default_address.last_name }}">
+        </div>
+        <input
+          class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+          type="text"
+          name="address[address1]"
+          placeholder="Address"
+          value="{{ customer.default_address.address1 }}">
+        <input
+          class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+          type="text"
+          name="address[address2]"
+          placeholder="Apartment, suite, etc. (opt)"
+          value="{{ customer.default_address.address2 }}">
+        <div
+          class="flex w-full gap-x-[8px]">
+          <input
+            class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+            type="text"
+            name="address[city]"
+            placeholder="City"
+            value="{{ customer.default_address.city }}">
+          <input
+            class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+            type="text"
+            name="address[zip]"
+            placeholder="ZIP Code"
+            value="{{ customer.default_address.zip }}">
+        </div>
+        <input
+          class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
+          type="tel"
+          name="address[phone]"
+          placeholder="Phone"
+          value="{{ customer.default_address.phone }}">
+        <h3
+          class="w-full">
+          {{ form.set_as_default_checkbox }} set as default
+        </h3>
+        <button
+          class="w-full"
+          type="submit">UPDATE ADDRESS</button>
+      </div>
+    </div>
+  {% endform %}
+</div>
