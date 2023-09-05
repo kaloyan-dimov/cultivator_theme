@@ -81,7 +81,7 @@
     Count: {{ customer.addresses_count }}
     {% if customer.addresses_count > 0 %}
       <div
-        class="flex flex-col sm:flex-row max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-x-[auto]">
+        class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
         <div
           class="flex flex-col w-full">
           <h2
@@ -102,7 +102,7 @@
       </div>
       {% for address in customer.addresses %}
         <div
-          class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-[auto]">
+          class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
           <div
             class="flex flex-col w-full">
             <h2
