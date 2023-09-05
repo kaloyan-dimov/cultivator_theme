@@ -83,9 +83,9 @@
       Default:
       {{ customer.default_address }} {{ customer.default_address.country }}{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}{{ customer.default_address.name }}
       <div
-        class="fixed top-[0] left-[0] bg-[rgba(0,0,0,0.6)] flex justify-center items-center">
+        class="fixed top-[0] left-[0] bg-[rgba(0,0,0,0.6)] flex justify-center items-center w-full h-full">
         {% form 'customer_address', customer.default_address %}
-          <div class=" max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
+          <div class="max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
             <!-- form content -->
             <div
               class="flex flex-wrap gap-y-[16px]">
