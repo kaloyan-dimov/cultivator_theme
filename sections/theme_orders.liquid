@@ -52,10 +52,10 @@
           <h2 class="justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
         </div>
         <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px] bg-red-300">
-          <h2>ORDER</h2>
-          <h2>DATE</h2>
-          <h2>PAYMENT STATUS</h2>
-          <h2>FULFILMENT STATUS</h2>
+          <h2>PRODUCT</h2>
+          <h2>SKU</h2>
+          <h2>PRICE</h2>
+          <h2>QTY</h2>
           <h2 class="justify-self-end">TOTAL</h2>
           <h2>#{{ order.order_number }}</h2>
           <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
