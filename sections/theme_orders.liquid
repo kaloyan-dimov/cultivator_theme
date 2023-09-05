@@ -36,11 +36,11 @@
   {% comment %} Desktop {% endcomment %}
   <div class="hidden md:flex flex-col w-full bg-white border border-[#E6DFDB] border-[20px]">
     <div class="flex">
-      <h2>DATE</h2>
-      <h2>ORDER</h2>
-      <h2>PAYMENT STATUS</h2>
-      <h2>FULFILMENT STATUS</h2>
-      <h2>TOTAL</h2>
+      <h2 class="flex-grow">DATE</h2>
+      <h2 class="flex-grow">ORDER</h2>
+      <h2 class="flex-grow">PAYMENT STATUS</h2>
+      <h2 class="flex-grow">FULFILMENT STATUS</h2>
+      <h2 class="flex-grow">TOTAL</h2>
     </div>
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
