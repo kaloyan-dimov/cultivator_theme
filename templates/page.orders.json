@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "theme_wishlist",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
