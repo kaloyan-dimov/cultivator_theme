@@ -6,8 +6,12 @@
     <h2>Orders</h2>
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
-        Order Listed:
-        <h2>Order: (Number) {{ order.order_number }}</h2>
+        <div class="w-full">
+          <div class="w-full justify-between">
+            <h2>Order</h2>
+            <h2>{{ order.order_number }}</h2>
+          </div>
+        </div>
         <h2>Created At: {{ order.created_at }}</h2>
         {% if order.cancelled %}
           <h2>Fulfillment Status: Cancelled</h2>
