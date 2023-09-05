@@ -573,6 +573,9 @@ video {
 .right-\[-20\%\] {
   right: -20%;
 }
+.right-\[0\] {
+  right: 0;
+}
 .right-\[16px\] {
   right: 16px;
 }
@@ -913,11 +916,11 @@ video {
 .w-\[274px\] {
   width: 274px;
 }
-.w-\[284px\] {
-  width: 284px;
-}
 .w-\[300px\] {
   width: 300px;
+}
+.w-\[316px\] {
+  width: 316px;
 }
 .w-\[320px\] {
   width: 320px;
