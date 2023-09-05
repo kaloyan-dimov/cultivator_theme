@@ -150,6 +150,10 @@
               type="submit">UPDATE ADDRESS</button>
           </div>
         </div>
+        <div
+          class="w-full">
+          {{ form.errors | default_errors }}
+        </div>
       {% endform %}
       {% for address in customer.addresses %}
         AddressDrop
