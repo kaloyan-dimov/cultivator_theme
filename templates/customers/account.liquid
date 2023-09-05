@@ -82,19 +82,35 @@
     {% if customer.addresses_count > 0 %}
       Default:
       {{ customer.default_address }} {{ customer.default_address.country }}{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}{{ customer.default_address.name }}
+      Address default? 
       Edit:
+      <h2>Edit address</h2>
       {% form 'customer_address', customer.default_address %}
         <!-- form content -->
+        <div
+          class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
+          <select
+            name="country">
+            {{ all_country_option_tags }}
+          </select>
+          <input
+            class="w-full"
+            type="text"
+            name="customer[email]"
+            placeholder="Email">
+
+
+        </div>
         First name	text	address[first_name]
         Last name	text	address[last_name]
-        Company	text	address[company]
-        Address 1	text	address[address1]
-        Address 2	text	address[address2]
-        City	text	address[city]
-        Country	select	address[country]
-        Province	select	address[province]
-        ZIP/Postal Code	text	address[zip]
-        Phone Number	tel	address[phone]
+                Company	text	address[company]
+                Address 1	text	address[address1]
+                Address 2	text	address[address2]
+                City	text	address[city]
+                Country	select	address[country]
+                Province	select	address[province]
+                ZIP/Postal Code	text	address[zip]
+                Phone Number	tel	address[phone]
       {% endform %}
       {% for address in customer.addresses %}
         AddressDrop
