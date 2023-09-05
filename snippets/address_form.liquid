@@ -1,6 +1,6 @@
 <div
   class="edit_address_form fixed top-[0] left-[0] bg-[rgba(0,0,0,0.6)] w-full h-full flex justify-center items-center z-[2] p-[8px]">
-  {% form 'customer_address', address %}
+  {% form 'customer_address', form_address %}
     <div class="max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
       <!-- form content -->
       <div
@@ -13,7 +13,7 @@
             class="close_address_button underline">Close</h2>
         </div>
         <select
-          data-selected-country="{{ address.country }}"
+          data-selected-country="{{ form_address.country }}"
           class="select_country w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
           name="address[country]">
           {{ all_country_option_tags }}
@@ -25,26 +25,26 @@
             type="text"
             name="address[first_name]"
             placeholder="First Name"
-            value="{{ address.first_name }}">
+            value="{{ form_address.first_name }}">
           <input
             class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
             type="text"
             name="address[last_name]"
             placeholder="Last Name"
-            value="{{ address.last_name }}">
+            value="{{ form_address.last_name }}">
         </div>
         <input
           class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
           type="text"
           name="address[address1]"
           placeholder="Address"
-          value="{{ address.address1 }}">
+          value="{{ form_address.address1 }}">
         <input
           class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
           type="text"
           name="address[address2]"
           placeholder="Apartment, suite, etc. (opt)"
-          value="{{ address.address2 }}">
+          value="{{ form_address.address2 }}">
         <div
           class="flex w-full gap-x-[8px]">
           <input
@@ -52,20 +52,20 @@
             type="text"
             name="address[city]"
             placeholder="City"
-            value="{{ address.city }}">
+            value="{{ form_address.city }}">
           <input
             class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
             type="text"
             name="address[zip]"
             placeholder="ZIP Code"
-            value="{{ address.zip }}">
+            value="{{ form_address.zip }}">
         </div>
         <input
           class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
           type="tel"
           name="address[phone]"
           placeholder="Phone"
-          value="{{ address.phone }}">
+          value="{{ form_address.phone }}">
         <h3
           class="w-full">
           {{ form.set_as_default_checkbox }} set as default
