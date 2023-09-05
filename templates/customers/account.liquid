@@ -85,14 +85,16 @@
       Address default? 
       Edit:
       {% form 'customer_address', customer.default_address %}
-        <div class="flex justify-center items-center max-w-[662px]">
+        <div class="flex justify-center items-center max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px]">
           <!-- form content -->
           <div
             class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
-            <h2
-              class="w-1/2">Edit address</h2>
-            <h2
-              class="w-1/2">Close</h2>
+            <div
+              class="w-full flex justify-between">
+              <h2
+                class="w-1/2">Edit address</h2>
+              <h2>Close</h2>
+            </div>
             <select
               class="w-full"
               name="address[country]">
