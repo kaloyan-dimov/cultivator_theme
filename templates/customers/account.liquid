@@ -82,10 +82,9 @@
     {% if customer.addresses_count > 0 %}
       Default:
       {{ customer.default_address }} {{ customer.default_address.country }}{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}{{ customer.default_address.name }}
-      Address default? 
-      Edit:
+      Address default?
       {% form 'customer_address', customer.default_address %}
-        <div class="flex justify-center items-center max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px]">
+        <div class="flex justify-center items-center max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
           <!-- form content -->
           <div
             class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
@@ -96,45 +95,45 @@
               <h2>Close</h2>
             </div>
             <select
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               name="address[country]">
               {{ all_country_option_tags }}
             </select>
             <input
-              class="w-1/2 md:w-full sm:bg-red-500"
+              class="w-1/2 rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[first_name]"
               placeholder="First Name"
               value="{{ customer.default_address.first_name }}">
             <input
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[last_name]"
               placeholder="Email"
               value="{{ customer.default_address.first_name }}">
             <input
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[address1]"
               placeholder="Email"
               value="{{ customer.default_address.first_name }}">
             <input
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[address2]"
               placeholder="Email">
             <input
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[city]"
               placeholder="Email">
             <input
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[zip]"
               placeholder="Email">
             <input
-              class="w-full"
+              class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="tel"
               name="address[phone]"
               placeholder="Phone">
