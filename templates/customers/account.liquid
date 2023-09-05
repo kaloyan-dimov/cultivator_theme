@@ -91,7 +91,7 @@
           <div
             class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
             <select
-              name="country">
+              name="address[country]">
               {{ all_country_option_tags }}
             </select>
             <input
@@ -122,25 +122,25 @@
             <input
               class="w-full"
               type="text"
-              name="customer[email]"
+              name="address[zip]"
               placeholder="Email">
             <input
               class="w-full"
-              type="text"
-              name="customer[email]"
-              placeholder="Email">
+              type="tel"
+              name="address[phone]"
+              placeholder="Phone">
           </div>
         </div>
         First name	text	
         Last name	text	
-              Company	text	address[company]
-              Address 1	text	
-              Address 2	text	
-              City	text	
-              Country	select	address[country]
-              Province	select	address[province]
-              ZIP/Postal Code	text	address[zip]
-              Phone Number	tel	address[phone]
+                              Company	text	address[company]
+                              Address 1	text	
+                              Address 2	text	
+                              City	text	
+                              Country	select	
+                              Province	select	address[province]
+                              ZIP/Postal Code	text	
+                              Phone Number	tel
       {% endform %}
       {% for address in customer.addresses %}
         AddressDrop
