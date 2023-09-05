@@ -2464,6 +2464,10 @@ video {
     height: 100%;
   }
 
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-\[151px\] {
     width: 151px;
   }
