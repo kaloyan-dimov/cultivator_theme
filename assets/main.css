@@ -678,6 +678,9 @@ video {
 .mb-\[80px\] {
   margin-bottom: 80px;
 }
+.mb-\[8px\] {
+  margin-bottom: 8px;
+}
 .ml-\[16px\] {
   margin-left: 16px;
 }
@@ -2529,6 +2532,10 @@ video {
 
   .sm\:gap-\[0\] {
     gap: 0;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
   }
 
   .sm\:rounded-\[160px\] {
