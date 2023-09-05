@@ -130,17 +130,10 @@
               name="address[phone]"
               placeholder="Phone">
           </div>
+          Checkbox Set as default
+          <button
+            type="submit">UPDATE ADDRESS</button>
         </div>
-        First name	text	
-        Last name	text	
-                              Company	text	address[company]
-                              Address 1	text	
-                              Address 2	text	
-                              City	text	
-                              Country	select	
-                              Province	select	address[province]
-                              ZIP/Postal Code	text	
-                              Phone Number	tel
       {% endform %}
       {% for address in customer.addresses %}
         AddressDrop
