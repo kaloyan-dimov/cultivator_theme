@@ -1,48 +1,30 @@
-<div
-  class="section">
-  <div
-    class="flex justify-between">
-    <h1
-      class="text-[36px]">Hi {{ customer.first_name }}</h1>
-    <a
-      href="/account/logout/"
-      class="logout text-[16px]">Logout</a>
+<div class="section">
+  <div class="flex justify-between">
+    <h1 class="text-[36px]">Hi {{ customer.first_name }}</h1>
+    <a href="/account/logout/" class="logout text-[16px]">Logout</a>
   </div>
-  <ul
-    class="account_navigation">
-    <li
-      class="{% if selected == 'account' %} active {% endif %}">
-      <a
-        href="/account">
-        <div
-          class="icon icon_account"></div>
+  <ul class="account_navigation">
+    <li class="{% if selected == 'account' %} active {% endif %}">
+      <a href="/account">
+        <div class="icon icon_account"></div>
         <h3>ACCOUNT</h3>
       </a>
     </li>
-    <li
-      class="">
-      <a
-        href="#">
-        <div
-          class="icon icon_orders"></div>
+    <li class="">
+      <a href="/orders">
+        <div class="icon icon_orders"></div>
         <h3>ORDERS</h3>
       </a>
     </li>
-    <li
-      class="{% if selected == 'addresses' %} active {% endif %}">
-      <a
-        href="/account/addresses">
-        <div
-          class="icon icon_addresses "></div>
+    <li class="{% if selected == 'addresses' %} active {% endif %}">
+      <a href="/account/addresses">
+        <div class="icon icon_addresses "></div>
         <h3>ADDRESSES</h3>
       </a>
     </li>
-    <li
-      class="{% if selected == 'wishlist' %} active {% endif %}">
-      <a
-        href="#">
-        <div
-          class="icon icon_wishlist"></div>
+    <li class="{% if selected == 'wishlist' %} active {% endif %}">
+      <a href="#">
+        <div class="icon icon_wishlist"></div>
         <h3>WISHLIST</h3>
       </a>
     </li>
