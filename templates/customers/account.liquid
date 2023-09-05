@@ -159,11 +159,15 @@
           <div
             class="w-full">
             Posted successfully?
-            {% if form.posted_successfully == true %}
-              succ
-            {% else %}
-              fail
-            {% endif %}
+            {% for error in form.errors %}
+              <li>
+                {% if error == 'form' %}
+                  {{ form.errors.messages[error] }}
+                {% else %}
+                  {{ form.errors.translated_fields[error] }} - {{ form.errors.messages[error] }}
+                {% endif %}
+              </li>
+            {% endfor %}
           </div>
         </div>
       {% endform %}
