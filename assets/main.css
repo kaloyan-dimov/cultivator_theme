@@ -2524,12 +2524,6 @@ video {
     border-bottom-width: 0px;
   }
 
-  .sm\:bg-red-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(239, 68, 68, 1);
-    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
-  }
-
   .sm\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -2635,10 +2629,6 @@ video {
 
   .md\:w-\[67\.91\%\] {
     width: 67.91%;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:max-w-\[422px\] {

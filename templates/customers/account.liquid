@@ -109,34 +109,38 @@
               class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[last_name]"
-              placeholder="Email"
+              placeholder="Last Name"
               value="{{ customer.default_address.last_name }}">
             <input
               class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[address1]"
-              placeholder="Email"
-              value="{{ customer.default_address.first_name }}">
+              placeholder="Address"
+              value="{{ customer.default_address.address1 }}">
             <input
               class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[address2]"
-              placeholder="Email">
+              placeholder="Apartment, suite, etc. (opt)"
+              value="{{ customer.default_address.address2 }}">
             <input
               class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[city]"
-              placeholder="Email">
+              placeholder="City"
+              value="{{ customer.default_address.city }}">
             <input
               class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="text"
               name="address[zip]"
-              placeholder="Email">
+              placeholder="ZIP Code"
+              value="{{ customer.default_address.zip }}">
             <input
               class="w-full rounded-[12px] border border-[#EAE2DB]"
               type="tel"
               name="address[phone]"
-              placeholder="Phone">
+              placeholder="Phone"
+              value="{{ customer.default_address.phone }}">
             <h3
               class="w-full">
               Checkbox Set as default
