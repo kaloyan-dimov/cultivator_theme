@@ -96,7 +96,7 @@
           <button
             class="edit_address_button underline">Edit</button>
           {% assign form_address = customer.default_address %}
-          {% assign existing = true %}
+          {% assign existing = false %}
           {% include 'address_form' with form_address, new %}
         </div>
       </div>
