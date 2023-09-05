@@ -1159,6 +1159,9 @@ video {
 .self-center {
   align-self: center;
 }
+.justify-self-end {
+  justify-self: end;
+}
 .overflow-auto {
   overflow: auto;
 }

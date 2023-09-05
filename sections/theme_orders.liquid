@@ -40,7 +40,7 @@
       <h2>DATE</h2>
       <h2>PAYMENT STATUS</h2>
       <h2>FULFILMENT STATUS</h2>
-      <h2>TOTAL</h2>
+      <h2 class="justify-self-end">TOTAL</h2>
     </div>
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
@@ -49,7 +49,7 @@
           <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
           <h2>{{ order.financial_status_label }}</h2>
           <h2>{{ order.fulfillment_status_label }}</h2>
-          <h2>{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+          <h2 class="justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
         </div>
       {% endfor %}
       {{ paginate | default_pagination }}
