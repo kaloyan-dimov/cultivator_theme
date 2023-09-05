@@ -2,8 +2,8 @@
 {% include 'account_nav' with selected %}
 
 <div class="section mt-[48px]">
-  {% paginate customer.orders by 10 %}
-    <div class="flex md:hidden flex-col gap-[16px]">
+  <div class="flex md:hidden flex-col gap-[16px]">
+    {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         <div class="w-full bg-white border border-[#E6DFDB] rounded-[20px] py-[24px] px-[16px] flex flex-col gap-[24px]">
           <div class="w-full flex justify-between">
@@ -29,6 +29,6 @@
         </div>
       {% endfor %}
       {{ paginate | default_pagination }}
-    </div>
-  {% endpaginate %}
+    {% endpaginate %}
+  </div>
 </div>
