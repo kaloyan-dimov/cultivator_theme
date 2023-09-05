@@ -135,9 +135,7 @@
       {% assign existing = false %}
       {% include 'address_form' with form_address, existing %}
     </div>
-    {% form 'customer_address', customer.new_address %}
-      <!-- form content -->
-    {% endform %}
+
     {% comment %}
     DELETE ADDRESS
     <form class="address-delete-form"
@@ -147,8 +145,7 @@
     <input type="hidden" name="_method" value="delete">
     <button type="submit">{{ 'customer.addresses.delete' | t }}</button>
     </form>
-    {% endcomment %}
-  </div>
+    {% endcomment %}</div>
 
 
 
