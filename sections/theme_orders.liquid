@@ -6,10 +6,18 @@
     <h2>Orders</h2>
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
-        <div class="w-full">
+        <div class="w-full bg-white border border-[#E6DFDB]">
           <div class="w-full justify-between">
-            <h2>Order</h2>
+            <h2>ORDER</h2>
             <h2>{{ order.order_number }}</h2>
+          </div>
+          <div class="w-full justify-between">
+            <h2>DATE</h2>
+            <h2>{{ order.created_at }}</h2>
+          </div>
+          <div class="w-full justify-between">
+            <h2>DATE</h2>
+            <h2>{{ order.created_at }}</h2>
           </div>
         </div>
         <h2>Created At: {{ order.created_at }}</h2>
