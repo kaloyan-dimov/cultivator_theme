@@ -61,9 +61,7 @@
       class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
       {% for wishlist_item in wishlist_array %}
         {% assign current_product = all_products[wishlist_item] %}
-        {% if current_product.handle == product.handle %}bg-[#CCAC71]
-        {% else %}
-          no-match{% endif %}
+        {% if current_product.handle == product.handle %}bg-[#CCAC71]{% endif %}
       {% endfor %}"
       data-handle="{{ product.handle }}"></div>
   </div>
