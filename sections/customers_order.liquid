@@ -1,0 +1,22 @@
+<!-- You should include the order object in your customers/account template or a section inside of the template. -->
+<div class="w-full mt-250px flex flex-col border border-black flex justify-center items-center">
+  <h1 class="m-auto text-[50px] text-center">This is order page</h1>
+  <div class="flex flex-col bg-white md:bg-red-300">
+    <h2>Orders</h2>
+    {% paginate customer.orders by 10 %}
+      {% for order in customer.orders %}
+        Order Listed:
+        <h2>Order: (Number) {{ order.order_number }}</h2>
+        <h2>Created At: {{ order.created_at }}</h2>
+        {% if order.cancelled %}
+          <h2>Fulfillment Status: Cancelled</h2>
+        {% else %}
+          <h2>Fulfillment Status (Order cancelled?): {{ order.fulfillment_status_label }}</h2>
+        {% endif %}
+        <h2>Order (financial status): {{ order.financial_status_label }}</h2>
+        <h2>Total: {{ order.line_items_subtotal_price }}</h2>
+      {% endfor %}
+      {{ paginate | default_pagination }}
+    {% endpaginate %}
+  </div>
+</div>
