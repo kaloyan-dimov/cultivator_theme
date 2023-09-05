@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "theme_wishlist",
+      "type": "theme_orders",
       "settings": {
       }
     }
