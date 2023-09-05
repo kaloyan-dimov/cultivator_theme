@@ -95,6 +95,7 @@
               <h2>Close</h2>
             </div>
             <select
+              data-selected-country="{{ customer.default_address.country }}"
               class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
               name="address[country]">
               {{ all_country_option_tags }}
