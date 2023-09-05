@@ -84,13 +84,17 @@
       {{ customer.default_address }} {{ customer.default_address.country }}{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}{{ customer.default_address.name }}
       Address default? 
       Edit:
-      <h2>Edit address</h2>
       {% form 'customer_address', customer.default_address %}
         <div class="flex justify-center items-center max-w-[662px]">
           <!-- form content -->
           <div
             class="flex flex-wrap gap-x-[8px] gap-y-[16px]">
+            <h2
+              class="w-1/2">Edit address</h2>
+            <h2
+              class="w-1/2">Close</h2>
             <select
+              class="w-full"
               name="address[country]">
               {{ all_country_option_tags }}
             </select>
@@ -98,18 +102,20 @@
               class="w-1/2 md:w-full md:bg-red-500"
               type="text"
               name="address[first_name]"
-              placeholder="First Names"
+              placeholder="First Name"
               value="{{ customer.default_address.first_name }}">
             <input
               class="w-full"
               type="text"
               name="address[last_name]"
-              placeholder="Email">
+              placeholder="Email"
+              value="{{ customer.default_address.first_name }}">
             <input
               class="w-full"
               type="text"
               name="address[address1]"
-              placeholder="Email">
+              placeholder="Email"
+              value="{{ customer.default_address.first_name }}">
             <input
               class="w-full"
               type="text"
@@ -130,10 +136,14 @@
               type="tel"
               name="address[phone]"
               placeholder="Phone">
+            <h3
+              class="w-full">
+              Checkbox Set as default
+            </h3>
+            <button
+              class="w-full"
+              type="submit">UPDATE ADDRESS</button>
           </div>
-          Checkbox Set as default
-          <button
-            type="submit">UPDATE ADDRESS</button>
         </div>
       {% endform %}
       {% for address in customer.addresses %}
