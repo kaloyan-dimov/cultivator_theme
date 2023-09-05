@@ -95,7 +95,8 @@
           class="w-full flex sm:justify-end sm:items-start">
           <button
             class="edit_address_button underline">Edit</button>
-          {% include 'address_form' %}
+          {% assign address = customer.default_address %}
+          {% include 'address_form' with address %}
         </div>
       </div>
       {% for address in customer.addresses %}
