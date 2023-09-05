@@ -81,18 +81,13 @@
     {{ customer.addresses_count }}
     Default:
     {{ customer.default_address }} {{ customer.default_address.country }}{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}{{ customer.default_address.name }}
-    EDIT?
-    <div
-      class="edit-address-form">
-      <h2>Edit Address</h2>
-      <form
-        method="post"
-        action="/account/addresses">
-        {{ form | customer_address_form }}
-        <button
-          type="submit">Save Address</button>
-      </form>
-    </div>
+      {% for address in customer.addresses %}
+      <!-- address details -->
+
+      {% form 'customer_address', customer.default_address %}
+        <!-- form content -->
+      {% endform %}
+    {% endfor %}
     {% if customer.addresses_count > 0 %}
       {% if customer.default_address %}
         <p>{{ customer.default_address.address1 }}</p>
