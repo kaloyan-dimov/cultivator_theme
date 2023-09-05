@@ -14,7 +14,9 @@
       {% render "recover_password_form" %}
     </div>
   </div>
-
+  {% for order in customer.orders %}
+    {% assign order = order %}
+  {% endfor %}
   <div
     class="flex flex-col relative">
     <h2>Wishlist</h2>
