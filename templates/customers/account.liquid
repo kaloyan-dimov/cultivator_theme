@@ -99,25 +99,7 @@
           {% include 'address_form' with address %}
         </div>
       </div>
-      {% for address in customer.addresses %}
-        <div
-          class="flex flex-col sm:flex-row max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-x-auto">
-          <div
-            class="flex flex-col w-full">
-            <h2
-              class="text-[#56463D] text-[24px] mb-[8px]">Default address</h2>
-            <h3
-              class="text-[18px] mb-[4px]">{{ customer.default_address.name }}</h3>
-            <h3
-              class="text-[18px] mb-[8px] sm:mb-[0]">{{ customer.default_address.country }}</h3>
-          </div>
-          <div
-            class="w-full flex sm:justify-end sm:items-start">
-            <button
-              class="edit_address_button underline">Edit</button>
-          </div>
-        </div>
-      {% endfor %}
+      {% for address in customer.addresses %}{% endfor %}
     {% else %}
       <h2>You currently have no saved addresses</h2>
     {% endif %}
