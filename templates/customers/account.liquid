@@ -106,6 +106,10 @@
     {% else %}
       <h2>You currently have no saved addresses</h2>
     {% endif %}
+    ADD NEW ADDRESS
+    {% form 'customer_address', customer.new_address %}
+      <!-- form content -->
+    {% endform %}
   </div>
 
 
