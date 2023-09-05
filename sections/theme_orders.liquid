@@ -51,6 +51,10 @@
           <h2>{{ order.fulfillment_status_label }}</h2>
           <h2 class="justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
         </div>
+        <div class="flex flex-col">
+          <h2>order info</h2>
+          <h2></h2>
+        </div>
       {% endfor %}
       {{ paginate | default_pagination }}
     {% endpaginate %}
