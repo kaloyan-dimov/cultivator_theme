@@ -1064,6 +1064,9 @@ video {
 .cursor-pointer {
   cursor: pointer;
 }
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
