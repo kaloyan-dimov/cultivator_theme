@@ -126,8 +126,14 @@
       <h2>You currently have no saved addresses</h2>
     {% endif %}
     <div
-      class="add_address border border-[#CCAC71] h-[56px] w-[150px] m-auto rounded-[12px] flex justify-center items-center">
-      ADD NEW ADDRESS
+      class="m-auto">
+      <button
+        class="edit_address_button border border-[#CCAC71] h-[56px] w-[150px] m-auto rounded-[12px] flex justify-center items-center">
+        ADD ADDRESS
+      </button>
+      {% assign form_address = customer.new_address %}
+      {% assign existing = false %}
+      {% include 'address_form' with form_address, existing %}
     </div>
     {% form 'customer_address', customer.new_address %}
       <!-- form content -->
