@@ -2524,6 +2524,12 @@ video {
     border-bottom-width: 0px;
   }
 
+  .sm\:bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, 1);
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  }
+
   .sm\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -2677,12 +2683,6 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgba(252, 165, 165, 1);
     background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
-  }
-
-  .md\:bg-red-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(239, 68, 68, 1);
-    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
   }
 
   .md\:px-4 {
