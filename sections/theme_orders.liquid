@@ -1,7 +1,39 @@
 {% assign selected = "orders" %}
 {% include 'account_nav' with selected %}
 
-<div class="section mt-[48px]">
+  <div class="section mt-[48px]">
+  {% comment %} Mobile {% endcomment %}
+  <div class="flex md:hidden flex-col gap-[16px]">
+    {% paginate customer.orders by 10 %}
+      {% for order in customer.orders %}
+        <div class="w-full bg-white border border-[#E6DFDB] rounded-[20px] py-[24px] px-[16px] flex flex-col gap-[24px]">
+          <div class="w-full flex justify-between">
+            <h2>ORDER</h2>
+            <h2 class="underline">#{{ order.order_number }}</h2>
+          </div>
+          <div class="w-full flex justify-between">
+            <h2>PAYMENT STATUS</h2>
+            <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
+          </div>
+          <div class="w-full flex justify-between">
+            <h2>DATE</h2>
+            <h2>{{ order.financial_status_label }}</h2>
+          </div>
+          <div class="w-full flex justify-between">
+            <h2>FULFILMENT STATUS</h2>
+            <h2>{{ order.fulfillment_status_label }}</h2>
+          </div>
+          <div class="w-full flex justify-between">
+            <h2>TOTAL</h2>
+            <h2>{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+          </div>
+        </div>
+      {% endfor %}
+      {{ paginate | default_pagination }}
+    {% endpaginate %}
+  </div>
+
+  {% comment %} Desktop {% endcomment %}
   <div class="flex md:hidden flex-col gap-[16px]">
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
