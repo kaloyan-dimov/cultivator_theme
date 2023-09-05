@@ -37,7 +37,9 @@
         {% assign sorted_products = block.settings.selected_collection.products | sort: "best-selling" %}
         {% for product in sorted_products limit: block.settings.products_number %}
           <div
-            class="swiper-slide relative flex"></div>
+            class="swiper-slide relative flex">
+            {% include 'product_card' with product, wishlist_array %}
+          </div>
         {% endfor %}
       {% endfor %}
     </div>
