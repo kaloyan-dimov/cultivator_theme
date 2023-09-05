@@ -59,12 +59,17 @@
     {% endif %}
     <div
       class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
-      {% for wishlist_item in wishlist_array %}
-        {% assign current_product = all_products[wishlist_item] %}
-        {% if current_product.handle == product.handle %}bg-[#CCAC71]
-        {% else %}
-          no-match{% endif %}
-      {% endfor %}"
-      data-handle="{{ product.handle }}"></div>
+              <div
+              class="
+      remove_from_wishlist
+      p-[40px]
+      border
+      border-red-500
+      absolute
+      top-[0]
+      right-[0]"
+              data-handle="
+      {{ product.handle }}
+      ">Remove</div>
   </div>
 </div>
