@@ -4,25 +4,25 @@
     <a href="/account/logout/" class="logout text-[16px]">Logout</a>
   </div>
   <ul class="account_navigation">
-    <li class="{% if selected == 'account' %} active {% endif %}">
+    <li class="{% if selected == 'account' %}active{% endif %}">
       <a href="/account">
         <div class="icon icon_account"></div>
         <h3>ACCOUNT</h3>
       </a>
     </li>
-    <li class="">
-      <a href="/account/orders">
+    <li class="{% if selected == 'orders' %}active{% endif %}">
+      <a href="/pages/orders">
         <div class="icon icon_orders"></div>
         <h3>ORDERS</h3>
       </a>
     </li>
-    <li class="{% if selected == 'addresses' %} active {% endif %}">
+    <li class="{% if selected == 'addresses' %}active{% endif %}">
       <a href="/account/addresses">
         <div class="icon icon_addresses "></div>
         <h3>ADDRESSES</h3>
       </a>
     </li>
-    <li class="{% if selected == 'wishlist' %} active {% endif %}">
+    <li class="{% if selected == 'wishlist' %}active{% endif %}">
       <a href="/pages/wishlist">
         <div class="icon icon_wishlist"></div>
         <h3>WISHLIST</h3>
