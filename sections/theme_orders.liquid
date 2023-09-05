@@ -12,7 +12,7 @@
           </div>
           <div class="w-full flex justify-between">
             <h2>PAYMENT STATUS</h2>
-            <h2>{{ order.created_at }}</h2>
+            <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
           </div>
           <div class="w-full flex justify-between">
             <h2>DATE</h2>
