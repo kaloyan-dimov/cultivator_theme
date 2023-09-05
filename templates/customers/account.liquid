@@ -85,6 +85,16 @@
       Edit:
       {% form 'customer_address', customer.default_address %}
         <!-- form content -->
+        First name	text	address[first_name]
+        Last name	text	address[last_name]
+        Company	text	address[company]
+        Address 1	text	address[address1]
+        Address 2	text	address[address2]
+        City	text	address[city]
+        Country	select	address[country]
+        Province	select	address[province]
+        ZIP/Postal Code	text	address[zip]
+        Phone Number	tel	address[phone]
       {% endform %}
       {% for address in customer.addresses %}
         AddressDrop
@@ -110,6 +120,16 @@
     {% form 'customer_address', customer.new_address %}
       <!-- form content -->
     {% endform %}
+    {% comment %}
+    DELETE ADDRESS
+    <form class="address-delete-form"
+    method="post"
+    action="/account/addresses/{{ address.id }}"
+    >
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">{{ 'customer.addresses.delete' | t }}</button>
+    </form>
+    {% endcomment %}
   </div>
 
 
