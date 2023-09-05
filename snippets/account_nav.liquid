@@ -3,7 +3,7 @@
   <div
     class="flex justify-between">
     <h1
-      class="text-[36px]">Hi {{ customer.first_name }} {{ selected }}</h1>
+      class="text-[36px]">Hi {{ customer.first_name }}</h1>
     <a
       href="/account/logout/"
       class="logout text-[16px]">Logout</a>
@@ -11,7 +11,7 @@
   <ul
     class="account_navigation">
     <li
-      class="li_account {% if selected == 'account' %} active {% endif %}">
+      class="{% if selected == 'account' %} active {% endif %}">
       <a
         href="/account">
         <div
@@ -20,7 +20,7 @@
       </a>
     </li>
     <li
-      class="li_orders">
+      class="">
       <a
         href="#">
         <div
@@ -29,7 +29,7 @@
       </a>
     </li>
     <li
-      class="li_addresses {% if selected == 'addresses' %} active {% endif %}">
+      class="{% if selected == 'addresses' %} active {% endif %}">
       <a
         href="/account/addresses">
         <div
@@ -38,7 +38,7 @@
       </a>
     </li>
     <li
-      class="li_wishlist">
+      class="{% if selected == 'wishlist' %} active {% endif %}">
       <a
         href="#">
         <div
