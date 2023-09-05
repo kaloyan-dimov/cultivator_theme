@@ -2466,6 +2466,10 @@ video {
     margin-bottom: 0;
   }
 
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:h-\[113px\] {
     height: 113px;
   }
@@ -2518,8 +2522,16 @@ video {
     flex-direction: row;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:items-center {
     align-items: center;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .sm\:justify-center {
