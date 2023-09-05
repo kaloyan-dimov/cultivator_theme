@@ -92,13 +92,16 @@
     class="flex flex-col relative">
     <h2>Wishlist</h2>
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-    {% for wishlist_item in wishlist_array %}
-      {% if wishlist_item != "null" %}
-        {% assign product = all_products[wishlist_item] %}
-        {% include 'product_card_wishlist' with product %}
-      {% else %}
-        Your wishlist is empty, start shopping now!
-      {% endif %}
-    {% endfor %}
+    <div
+      class="flex flex-wrap">
+      {% for wishlist_item in wishlist_array %}
+        {% if wishlist_item != "null" %}
+          {% assign product = all_products[wishlist_item] %}
+          {% include 'product_card_wishlist' with product %}
+        {% else %}
+          Your wishlist is empty, start shopping now!
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
