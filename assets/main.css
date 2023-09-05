@@ -2466,10 +2466,6 @@ video {
     margin-bottom: 0;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:h-\[113px\] {
     height: 113px;
   }
