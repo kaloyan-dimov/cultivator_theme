@@ -693,6 +693,9 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mt-\[48px\] {
+  margin-top: 48px;
+}
 .mt-\[64px\] {
   margin-top: 64px;
 }
@@ -707,6 +710,9 @@ video {
 }
 .flex {
   display: flex;
+}
+.table {
+  display: table;
 }
 .grid {
   display: grid;
