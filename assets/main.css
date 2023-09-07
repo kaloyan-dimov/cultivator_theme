@@ -2395,6 +2395,11 @@ video {
   border: 2px solid #CCAC71;
 }
 
+.blog_tag_nagivation a.active {
+  background-color: #B3A094;
+  color: white;
+}
+
 .contact_us_page form {
   display: flex;
   flex-direction: column;
