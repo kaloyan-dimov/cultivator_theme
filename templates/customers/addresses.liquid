@@ -21,22 +21,21 @@
         </div>
         {% for address in customer.addresses %}
           {% if customer.default_address.id != address.id %}
-            <h1 class="text-[50px]">address not repeated</h1>
+            <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
+              <div class="flex flex-col w-full">
+                <h2 class="text-[#56463D] text-[24px] mb-[8px]">Secondary address</h2>
+                <h2>{{ address.id }}</h2>
+                <h3 class="text-[18px] mb-[4px]">{{ address.name }}</h3>
+                <h3 class="text-[18px] mb-[8px] sm:mb-[0]">{{ address.country }}</h3>
+              </div>
+              <div class="w-full flex sm:justify-end sm:items-start">
+                <button class="edit_address_button underline">Edit</button>
+                {% assign form_address = address %}
+                {% assign existing = true %}
+                {% include 'address_form' with form_address, existing %}
+              </div>
+            </div>
           {% endif %}
-          <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
-            <div class="flex flex-col w-full">
-              <h2 class="text-[#56463D] text-[24px] mb-[8px]">Secondary address</h2>
-              <h2>{{ address.id }}</h2>
-              <h3 class="text-[18px] mb-[4px]">{{ address.name }}</h3>
-              <h3 class="text-[18px] mb-[8px] sm:mb-[0]">{{ address.country }}</h3>
-            </div>
-            <div class="w-full flex sm:justify-end sm:items-start">
-              <button class="edit_address_button underline">Edit</button>
-              {% assign form_address = address %}
-              {% assign existing = true %}
-              {% include 'address_form' with form_address, existing %}
-            </div>
-          </div>
         {% endfor %}
       {% else %}
         <h2>You currently have no saved addresses</h2>
