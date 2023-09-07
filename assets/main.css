@@ -2473,6 +2473,7 @@ video {
 .orders_wrapper {
   left: calc(100% - 100px);
   opacity: 0;
+  transition: all 0.5s;
 }
 .orders_wrapper.active {
   left: 0;
