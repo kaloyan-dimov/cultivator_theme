@@ -1,15 +1,17 @@
 <div class="section blog_page">
   <h1 class="w-full text-center text-[36px] mb-[24px]">{{ blog.title }}</h1>
-  <ul class="blog_tag_nagivation flex gap-[8px] justify-center w-full mb-[32px] py-[12px]">
-    <li>
-      <a href="/blogs/{{ blog.title }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px] text-[15px] text-[#B3A094] {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
-    </li>
-    {% for tag in blog.all_tags %}
+  <div class="blog_tag_navigation_wrapper">
+    <ul class="blog_tag_nagivation flex gap-[8px] justify-center w-full mb-[32px] py-[12px]">
       <li>
-        <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px] text-[15px] text-[#B3A094] {% if current_tags contains tag %} active {% endif %}">{{ tag | upcase }}</a>
+        <a href="/blogs/{{ blog.title }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px] text-[15px] text-[#B3A094] {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
       </li>
-    {% endfor %}
-  </ul>
+      {% for tag in blog.all_tags %}
+        <li>
+          <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px] text-[15px] text-[#B3A094] {% if current_tags contains tag %} active {% endif %}">{{ tag | upcase }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
   <div class="article_listing flex flex-wrap gap-y-[16px] sm:gap-x-[16px] sm:gap-x-[0]">
     {% for article in blogs.journals.articles %}
       {% if current_tags.size > 0 %}
