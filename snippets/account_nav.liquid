@@ -1,7 +1,7 @@
 <div class="section py-[12px]">
   <div class="flex justify-between items-center">
     <h1 class="text-[36px]">Hi {{ customer.first_name }}</h1>
-    <a href="/account/logout/" class="logout text-[16px]">Logout</a>
+    <a href="/account/logout/" class="logout text-[16px] underline cursor-pointer">Logout</a>
   </div>
   <ul class="account_navigation">
     <li class="{% if selected == 'account' %}active{% endif %}">
