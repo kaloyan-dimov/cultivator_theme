@@ -2483,13 +2483,11 @@ video {
   opacity: 1;
   transition: all 0.5s;
 }
-.orders_wrapper .order_hide,
 .orders_wrapper .order_content {
   opacity: 0;
   left: 100vw;
   transition: all 0.5s;
 }
-.orders_wrapper .order_hide.active,
 .orders_wrapper .order_content.active {
   width: 100%;
   opacity: 1;
