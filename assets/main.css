@@ -1586,6 +1586,11 @@ video {
   color: rgba(123, 105, 94, 1);
   color: rgba(123, 105, 94, var(--tw-text-opacity));
 }
+.text-\[\#B3A094\] {
+  --tw-text-opacity: 1;
+  color: rgba(179, 160, 148, 1);
+  color: rgba(179, 160, 148, var(--tw-text-opacity));
+}
 .text-\[\#CCAC71\] {
   --tw-text-opacity: 1;
   color: rgba(204, 172, 113, 1);
