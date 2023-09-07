@@ -1,11 +1,11 @@
 <div class="px-[16px] w-full max-w-[428px] flex flex-col items-center mx-auto">
-  <h1 class="text-[36px]">Login</h1>
+  <h1 class="text-[36px] mb-[48px]">Login</h1>
   {% form 'customer_login' %}
     {{ form.errors | default_errors }}
 
     <div class="email w-full">
       <input
-        class="w-full"
+        class="flex items-center w-full bg-white border border-[#EAE2DB] px-[16px] h-[56px] mb-[16px]"
         type="email"
         name="customer[email]"
         placeholder="Email">
