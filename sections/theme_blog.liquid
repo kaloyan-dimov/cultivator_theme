@@ -4,7 +4,7 @@
     <div class="flex gap-[8px] justify-center w-full mb-[32px] py-[12px]">
       <a href="/blogs/{{ blog.title }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px]">ALL</a>
       {% for tag in blog.all_tags %}
-        <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px]">{{ tag }}</a>
+        <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px]">{{ tag | upcase }}</a>
       {% endfor %}
     </div>
   {% endif %}
