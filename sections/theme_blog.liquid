@@ -2,9 +2,9 @@
   <h1 class="w-full text-center text-[36px] mb-[36px]">{{ blog.title }}</h1>
   {% if blog.all_tags.size > 0 %}
     <div class="flex gap-[8px] justify-center w-full">
-      <a href="/blogs/{{ blog.title }}">All</a>
+      <a href="/blogs/{{ blog.title }}" class="py-[16px] px-[12px]">All</a>
       {% for tag in blog.all_tags %}
-        <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}">{{ tag }}</a>
+        <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="py-[16px] px-[12px]">{{ tag }}</a>
       {% endfor %}
     </div>
   {% endif %}
