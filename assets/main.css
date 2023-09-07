@@ -639,6 +639,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-\[8px\] {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
