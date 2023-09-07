@@ -52,8 +52,8 @@
             <h2>{{ order.fulfillment_status_label }}</h2>
             <h2 class="justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
-          <h2 class="order_hide underline absolute top-[0]">Return to Orders</h2>
-          <div class="order_content absolute top-[20px]">
+          <div class="order_content absolute top-[0]">
+            <h2 class="order_hide underline">Return to Orders</h2>
             <h2>#{{ order.order_number }}</h2>
             <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px] bg-red-300">
               <h2>PRODUCT</h2>
