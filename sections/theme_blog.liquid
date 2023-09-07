@@ -2,11 +2,8 @@
   <div class="grid grid-cols-4">
     {% for article in blogs.journals.articles %}
       <div class="article_listing">
-        {{ article.title }}
-
-        <h2>Cotnent:<br>{{ article.content }}</h2>
-        <h2>Exerpt:<br>{{ article.excerpt }}</h2>
-
+        <h2>{{ article.title }}</h2>
+        <h3>{{ article.excerpt }}</h3>
       </div>
     {% endfor %}
   </div>
