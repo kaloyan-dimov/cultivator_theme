@@ -7,7 +7,7 @@
         src="{{ article.image | img_url: 'master'}}"
         alt="">
     </div>
-    <h2 class="border border-[#E6DFDB] rounded-[12px] text-center py-[10px] mb-[16px]">by {{ article.author }} | {{ article.published_at | date: "%b %d, %y" }}</h2>
+    <h2 class="border border-[#E6DFDB] rounded-[12px] text-center py-[10px] mb-[16px] text-[#776255]">by {{ article.author }} | {{ article.published_at | date: "%b %d, %y" }}</h2>
     <div>{{ article.content }}</div>
   </div>
 </div>
