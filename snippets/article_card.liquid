@@ -1,0 +1,13 @@
+<div class="w-[316px] h-[550px]">
+  <div class="flex flex-col w-full h-[518px] px-[24px] pb-[16px] relative">
+    <div class="w-full h-[193px] mb-[16px]">
+      <img
+        class="w-full h-full object-cover"
+        src="{{ article.image | img_url: 'master'}}"
+        alt="">
+    </div>
+    <h2 class="mb-[8px]">{{ article.title }}</h2>
+    <h3 class="mb-[64px] max-h-[135px] overflow-hidden">{{ article.excerpt }}</h3>
+    <div class="absolute left-[24px] bottom-[16px]">arrow</div>
+  </div>
+</div>
