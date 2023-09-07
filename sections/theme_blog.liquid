@@ -19,8 +19,8 @@
   {% endif %}
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
-      {% else %}
-        {% if current_tags.size > 0 %}
+      {% if current_tags.size > 0 %}
+        {% else %}
           <div class="w-[316px] h-[550px]">
             <div class="flex flex-col w-full h-[518px] px-[24px] pb-[16px] relative">
               <div class="w-full h-[193px] mb-[16px]">
@@ -34,7 +34,7 @@
               <div class="absolute left-[24px] bottom-[16px]">arrow</div>
             </div>
           </div>
-        {% endif %}
+      {% endif %}
     {% endfor %}
 
   </div>
