@@ -1,8 +1,8 @@
 <div class="section blog_page">
   {% for article in blogs.journals.articles %}
-    <div class="article_listing">
+    <div class="article_listing grid-cols-4">
       {{ article.title }}
-      {{ article.author }}
+
       Cotnent:{{ article.content }}
       Exerpt
       {{ article.excerpt }}
