@@ -2471,7 +2471,7 @@ video {
   }
 }
 .orders_wrapper {
-  right: calc(100% - 100px);
+  right: calc(100vw - 100px);
   opacity: 1;
   transition: all 0.5s;
 }
@@ -2482,11 +2482,11 @@ video {
 }
 .orders_wrapper .order_content {
   opacity: 0;
-  left: calc(100% + 100px);
+  left: calc(100vw + 100px);
   transition: all 0.5s;
 }
 .orders_wrapper .order_content.active {
-  left: calc(100% + 100px);
+  left: calc(100vw + 100px);
   width: 100%;
   opacity: 1;
   transition: all 0.5s;
