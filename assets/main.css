@@ -2485,16 +2485,12 @@ video {
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
-}
-.orders_wrapper .order_content .order_hide {
-  display: none;
+  z-index: 0;
 }
 .orders_wrapper .order_content.active {
   opacity: 1;
   transition: all 0.5s;
-}
-.orders_wrapper .order_content.active .order_hide {
-  display: block;
+  z-index: 1;
 }
 @media (min-width: 768px) {
 
