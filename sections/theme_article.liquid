@@ -4,7 +4,6 @@
 </div>
 <div class="section">
   <div class="article_single max-w-[867px] mx-[auto]">
-    {{ article.author }}
-    {{ article.published_at }}
+    <h2>{{ article.author }}|{{ article.published_at | date: "%b %d, %y" }}</h2>
   </div>
 </div>
