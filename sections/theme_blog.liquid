@@ -2,6 +2,11 @@
   {% for article in blogs.journals.articles %}
     <div class="article_listing">
       {{ article.title }}
+      {{ article.author }}
+      Cotnent:{{ article.content }}
+      Exerpt
+      {{ article.excerpt }}
+
     </div>
   {% endfor %}
 </div>
