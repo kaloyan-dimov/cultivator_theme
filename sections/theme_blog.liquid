@@ -1,7 +1,7 @@
 <div class="section blog_page">
-  <div class="grid grid-cols-4">
+  <div class="article_listing flex flex-wrap">
     {% for article in blogs.journals.articles %}
-      <div class="article_listing">
+      <div class="w-[332px]">
         <h2>{{ article.title }}</h2>
         <h3>{{ article.excerpt }}</h3>
       </div>

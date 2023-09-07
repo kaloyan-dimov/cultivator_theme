@@ -943,6 +943,9 @@ video {
 .w-\[32px\] {
   width: 32px;
 }
+.w-\[332px\] {
+  width: 332px;
+}
 .w-\[342px\] {
   width: 342px;
 }
@@ -1066,9 +1069,6 @@ video {
 }
 .cursor-pointer {
   cursor: pointer;
-}
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
