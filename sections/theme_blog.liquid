@@ -1,9 +1,10 @@
 <div class="section blog_page">
   <h1 class="w-full text-center text-[36px] mb-[24px]">{{ blog.title }}</h1>
-  {% if current_tags.size > 0 %}
-    has tags
+  {% if current_tags.size < 1 %}
+    less than 1
   {% else %}
-    has no tags
+    more than 1
+
   {% endif %}
   {% if blog.all_tags.size > 0 %}
     <div class="flex gap-[8px] justify-center w-full mb-[32px] py-[12px]">
