@@ -1186,6 +1186,12 @@ video {
 .overflow-scroll {
   overflow: scroll;
 }
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
 .break-words {
   word-wrap: break-word;
 }
@@ -1364,6 +1370,9 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
+.p-\[16px\] {
+  padding: 16px;
+}
 .p-\[24px\] {
   padding: 24px;
 }
@@ -1484,6 +1493,9 @@ video {
 }
 .pl-\[16px\] {
   padding-left: 16px;
+}
+.pl-\[32px\] {
+  padding-left: 32px;
 }
 .pl-\[44px\] {
   padding-left: 44px;
