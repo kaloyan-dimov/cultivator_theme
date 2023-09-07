@@ -2485,7 +2485,7 @@ video {
 }
 .orders_wrapper .order_hide,
 .orders_wrapper .order_content {
-  opacity: 1;
+  opacity: 0;
   left: 100vw;
   transition: all 0.5s;
 }
