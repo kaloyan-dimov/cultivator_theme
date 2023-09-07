@@ -1,7 +1,9 @@
 <div class="section blog_page">
   <h1 class="w-full text-center text-[36px] mb-[36px]">{{ blog.title }}</h1>
   <div class="all_tags flex gap-[8px]">
-    {{ blog.all_tags }}
+    {% for tag in blog.all_tags %}
+      <h3>{{ tag }}</h3>
+    {% endfor %}
   </div>
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
