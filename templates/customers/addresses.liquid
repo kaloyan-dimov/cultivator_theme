@@ -8,6 +8,7 @@
         <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
           <div class="flex flex-col w-full">
             <h2 class="text-[#56463D] text-[24px] mb-[8px]">Default address</h2>
+            <h2>ID: {{ customer.default_address.id }}</h2>
             <h3 class="text-[18px] mb-[4px]">{{ customer.default_address.name }}</h3>
             <h3 class="text-[18px] mb-[8px] sm:mb-[0]">{{ customer.default_address.country }}</h3>
           </div>
