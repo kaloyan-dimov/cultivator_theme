@@ -21,7 +21,9 @@
     {% for article in blogs.journals.articles %}
       {% if current_tags.size > 0 %}
         {% for article_tag in article.tags %}
-          <h2>{{ article_tag }}</h2>
+          {% if current_tags contains article_tag %}
+            <h2>{{ article_tag }}</h2>
+          {% endif %}
         {% endfor %}
       {% else %}
         {% include 'article_card' with article %}
