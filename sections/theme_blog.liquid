@@ -10,7 +10,7 @@
       </li>
     {% endfor %}
   </ul>
-  <div class="article_listing flex flex-wrap gap-[16px]">
+  <div class="article_listing flex flex-wrap gap-y-[16px] sm:gap-x-[16px] sm:gap-x-[0]">
     {% for article in blogs.journals.articles %}
       {% if current_tags.size > 0 %}
         {% for article_tag in article.tags %}
