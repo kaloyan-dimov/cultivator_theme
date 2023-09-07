@@ -5,6 +5,17 @@
       <h3>{{ tag }}</h3>
     {% endfor %}
   </div>
+  {% if blog.all_tags.size > 0 %}
+    <ul class="tag-filters">
+      {% for tag in blog.all_tags %}
+        {% if current_tags contains tag %}
+          <li class="tag-filters__item active">{{ tag | link_to_remove_tag: tag }}</li>
+        {% else %}
+          <li class="tag-filters__item">{{ tag | link_to_add_tag: tag }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
       {{ article.tags }}
