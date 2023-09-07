@@ -4,7 +4,9 @@
     {% for tag in blog.all_tags %}
       <h3>{{ tag }}</h3>
     {% endfor %}
-  </div>
+  </div><br>
+  current_tags: {{ current_tags }}
+  <br>
   {% if blog.all_tags.size > 0 %}
     <ul class="tag-filters">
       {% for tag in blog.all_tags %}
