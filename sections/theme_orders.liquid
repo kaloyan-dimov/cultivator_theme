@@ -44,7 +44,7 @@
     </div>
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
-        <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px]">
+        <div class="order_hidden grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px]" data-order="{{ order.order_number }}">
           <h2>#{{ order.order_number }}</h2>
           <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
           <h2>{{ order.financial_status_label }}</h2>
