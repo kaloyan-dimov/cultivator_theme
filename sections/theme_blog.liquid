@@ -2,8 +2,10 @@
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
       <div class="w-[316px] h-[550px]">
-        <h2>{{ article.title }}</h2>
-        <h3>{{ article.excerpt }}</h3>
+        <div class="w-full h-[518px]">
+          <h2>{{ article.title }}</h2>
+          <h3>{{ article.excerpt }}</h3>
+        </div>
       </div>
     {% endfor %}
   </div>
