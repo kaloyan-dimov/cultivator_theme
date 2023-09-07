@@ -1258,6 +1258,11 @@ video {
   border-color: rgba(86, 70, 61, 1);
   border-color: rgba(86, 70, 61, var(--tw-border-opacity));
 }
+.border-\[\#B3A094\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(179, 160, 148, 1);
+  border-color: rgba(179, 160, 148, var(--tw-border-opacity));
+}
 .border-\[\#CCAC71\] {
   --tw-border-opacity: 1;
   border-color: rgba(204, 172, 113, 1);
@@ -1388,6 +1393,10 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .px-\[16px\] {
   padding-left: 16px;
