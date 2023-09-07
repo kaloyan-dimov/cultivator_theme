@@ -6,13 +6,6 @@
     {% endfor %}
   </div><br>
   current_tags: {{ current_tags }}<br>
-  curr tags null?
-  {% if current_tags.size > 0 %}
-    more
-  {% else %}
-    less
-  {% endif %}
-  <br>
   {% if blog.all_tags.size > 0 %}
     <ul class="tag-filters">
       {% for tag in blog.all_tags %}
@@ -26,20 +19,22 @@
   {% endif %}
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
-      {{ article.tags }}
-      <div class="w-[316px] h-[550px]">
-        <div class="flex flex-col w-full h-[518px] px-[24px] pb-[16px] relative">
-          <div class="w-full h-[193px] mb-[16px]">
-            <img
-              class="w-full h-full object-cover"
-              src="{{ article.image | img_url: 'master'}}"
-              alt="">
+      {% else %}
+        {% if current_tags.size > 0 %}
+          <div class="w-[316px] h-[550px]">
+            <div class="flex flex-col w-full h-[518px] px-[24px] pb-[16px] relative">
+              <div class="w-full h-[193px] mb-[16px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="{{ article.image | img_url: 'master'}}"
+                  alt="">
+              </div>
+              <h2 class="mb-[8px]">{{ article.title }}</h2>
+              <h3 class="mb-[64px] max-h-[135px] overflow-hidden">{{ article.excerpt }}</h3>
+              <div class="absolute left-[24px] bottom-[16px]">arrow</div>
+            </div>
           </div>
-          <h2 class="mb-[8px]">{{ article.title }}</h2>
-          <h3 class="mb-[64px] max-h-[135px] overflow-hidden">{{ article.excerpt }}</h3>
-          <div class="absolute left-[24px] bottom-[16px]">arrow</div>
-        </div>
-      </div>
+        {% endif %}
     {% endfor %}
 
   </div>
