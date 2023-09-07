@@ -1177,6 +1177,9 @@ video {
 .gap-y-\[32px\] {
   row-gap: 32px;
 }
+.self-end {
+  align-self: flex-end;
+}
 .self-center {
   align-self: center;
 }
