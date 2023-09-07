@@ -2604,6 +2604,10 @@ video {
     height: 263px;
   }
 
+  .sm\:h-\[407px\] {
+    height: 407px;
+  }
+
   .sm\:h-\[416px\] {
     height: 416px;
   }
