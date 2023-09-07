@@ -2400,10 +2400,6 @@ video {
   color: white;
 }
 
-.single_article:not(:first-child) {
-  background-color: red;
-}
-
 .article_arrow {
   height: 32px;
   width: 32px;
