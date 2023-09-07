@@ -4,6 +4,7 @@
   <div class="article_listing flex flex-wrap gap-[16px]">
 
     {% for article in blogs.journals.articles %}
+      {{ article.tags }}
       <div class="w-[316px] h-[550px]">
         <div class="flex flex-col w-full h-[518px] px-[24px] pb-[16px] relative">
           <div class="w-full h-[193px] mb-[16px]">
