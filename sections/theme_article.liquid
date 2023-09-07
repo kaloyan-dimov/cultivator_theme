@@ -1,7 +1,3 @@
-<div class="w-full h-[500px] border border-black flex justify-center items-center">
-  <h1 class="m-auto text-[50px] text-center">This is article page</h1>
-
-</div>
 <div class="section">
   <div class="article_single max-w-[867px] mx-[auto] flex flex-col">
     <h1 class="text-[36px] text-[#54443B]">{{ article.title }}</h1>
@@ -11,7 +7,7 @@
         src="{{ article.image | img_url: 'master'}}"
         alt="">
     </div>
-    <h2>{{ article.author }}|{{ article.published_at | date: "%b %d, %y" }}</h2>
+    <h2 class="border border-[#E6DFDB] rounded-[12px]">{{ article.author }}|{{ article.published_at | date: "%b %d, %y" }}</h2>
     <div>{{ article.content }}</div>
   </div>
 </div>
