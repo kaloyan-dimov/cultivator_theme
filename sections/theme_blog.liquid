@@ -1,5 +1,6 @@
 <div class="section blog_page">
   <h1 class="w-full text-center text-[36px] mb-[36px]">{{ blog.title }}</h1>
+  {{ blog.all_tags }}
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
       <div class="w-[316px] h-[550px]">
@@ -15,7 +16,6 @@
           <div class="absolute left-[24px] bottom-[16px]">arrow</div>
         </div>
       </div>
-      {{ article.tags }}
     {% endfor %}
   </div>
 </div>
