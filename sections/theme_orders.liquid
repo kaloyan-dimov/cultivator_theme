@@ -46,7 +46,7 @@
       {% for order in customer.orders %}
         <div class="order">
           <div class="order_show grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px]">
-            <h2>#{{ order.order_number }}</h2>
+            <h2 class="underline">#{{ order.order_number }}</h2>
             <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
             <h2>{{ order.financial_status_label }}</h2>
             <h2>{{ order.fulfillment_status_label }}</h2>
