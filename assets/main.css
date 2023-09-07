@@ -2470,7 +2470,25 @@ video {
     display: flex;
   }
 }
-
+.orders_wrapper {
+  left: calc(100% - 100px);
+  opacity: 0;
+}
+.orders_wrapper.active {
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.orders_wrapper .order {
+  opacity: 0;
+  right: calc(100% + 100px);
+  transition: all 0.5s;
+}
+.orders_wrapper .order.active {
+  right: 0;
+  opacity: 1;
+  transition: all 0.5s;
+}
 @media (min-width: 768px) {
 
   .sm\:absolute {
@@ -2622,7 +2640,6 @@ video {
     font-size: 48px;
   }
 }
-
 @media (min-width: 1024px) {
 
   .md\:absolute {
@@ -2765,7 +2782,6 @@ video {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 }
-
 @media (min-width: 1280px) {
 
   .lg\:pt-\[97px\] {
