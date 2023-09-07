@@ -2479,12 +2479,12 @@ video {
   opacity: 1;
   transition: all 0.5s;
 }
-.orders_wrapper .order {
+.orders_wrapper .order_content {
   opacity: 0;
   right: calc(100% + 100px);
   transition: all 0.5s;
 }
-.orders_wrapper .order.active {
+.orders_wrapper .order_content.active {
   right: 0;
   opacity: 1;
   transition: all 0.5s;
