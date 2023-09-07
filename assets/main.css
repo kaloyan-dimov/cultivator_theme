@@ -837,9 +837,6 @@ video {
 .h-\[570px\] {
   height: 570px;
 }
-.h-\[575px\] {
-  height: 575px;
-}
 .h-\[60px\] {
   height: 60px;
 }
@@ -1411,6 +1408,10 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-\[0\] {
+  padding-left: 0;
+  padding-right: 0;
 }
 .px-\[12px\] {
   padding-left: 12px;
@@ -2711,6 +2712,11 @@ video {
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
 
+  .sm\:px-\[16px\] {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .sm\:py-\[128px\] {
     padding-top: 128px;
     padding-bottom: 128px;
@@ -2781,6 +2787,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[575px\] {
+    height: 575px;
   }
 
   .md\:h-\[607px\] {
