@@ -1452,6 +1452,10 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .py-\[10vw\] {
   padding-top: 10vw;
   padding-bottom: 10vw;

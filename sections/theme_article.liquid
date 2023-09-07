@@ -1,13 +1,13 @@
 <div class="section">
   <div class="article_single max-w-[867px] mx-[auto] flex flex-col pb-[56px] px-[16px]">
     <h1 class="text-[36px] text-[#54443B] text-center mb-[56px]">{{ article.title }}</h1>
-    <div class="w-full h-[575px] rounded-[17px] oveflow-hidden">
+    <div class="w-full h-[575px] rounded-[17px] overflow-hidden">
       <img
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover mb-[32px]"
         src="{{ article.image | img_url: 'master'}}"
         alt="">
     </div>
-    <h2 class="border border-[#E6DFDB] rounded-[12px] text-center">by {{ article.author }} | {{ article.published_at | date: "%b %d, %y" }}</h2>
+    <h2 class="border border-[#E6DFDB] rounded-[12px] text-center py-[10px]">by {{ article.author }} | {{ article.published_at | date: "%b %d, %y" }}</h2>
     <div>{{ article.content }}</div>
   </div>
 </div>
