@@ -20,9 +20,11 @@
   <div class="article_listing flex flex-wrap gap-[16px]">
     {% for article in blogs.journals.articles %}
       {% if current_tags.size > 0 %}
-
-        {% else %}
-          {% include 'article_card' with article %}
+        {% for article_tag in article.tags %}
+          <h2>{{ article_tag }}</h2>
+        {% endfor %}
+      {% else %}
+        {% include 'article_card' with article %}
       {% endif %}
     {% endfor %}
 
