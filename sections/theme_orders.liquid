@@ -62,7 +62,7 @@
           <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px] bg-red-300">
             <h2>{{ line_item.title }}</h2>
             <h2>{{ line_item.sku }}</h2>
-            <h2>{{ line_item.price }}</h2>
+            <h2>{{ line_item.price | money_with_currency }}</h2>
             <h2>{{ line_item.quantity }}</h2>
             <h2 class="justify-self-end">{{ line_item.price | money_with_currency }}</h2>
           </div>
