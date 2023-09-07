@@ -2400,7 +2400,7 @@ video {
   color: white;
 }
 
-.single_article:first-child {
+.single_article:not(:first-child) {
   background-color: red;
 }
 
