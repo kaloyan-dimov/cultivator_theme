@@ -1,5 +1,7 @@
 <div class="section blog_page">
   {% for article in blogs.journals.articles %}
-    {{ article.title }}
+    <div class="article_listing">
+      {{ article.title }}
+    </div>
   {% endfor %}
 </div>
