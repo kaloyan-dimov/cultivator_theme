@@ -1893,6 +1893,8 @@ video {
 }
 .single_product_swiper .swiper-pagination {
   left: 0 !important;
+  transform: none !important;
+  transform: initial !important;
 }
 .single_product_swiper .swiper-pagination {
   display: flex;
@@ -1900,8 +1902,6 @@ video {
   bottom: 0;
   top: auto;
   top: initial;
-  transform: none;
-  transform: initial;
   right: auto;
   right: initial;
 }
