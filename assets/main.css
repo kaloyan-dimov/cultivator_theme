@@ -1728,6 +1728,7 @@ video {
 }
 .single_product_swiper .swiper-wrapper .swiper-slide {
   width: calc(100% - 110px);
+  padding: 58px 44px;
 }
 .single_product_swiper .swiper-button-prev,
 .single_product_swiper .swiper-button-next {
