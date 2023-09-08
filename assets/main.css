@@ -1896,6 +1896,7 @@ video {
   height: 80px;
   border-radius: 12px;
   border: 1px solid #E6DFDB;
+  overflow: none;
 }
 .single_product_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 1px solid #CCAC71;
