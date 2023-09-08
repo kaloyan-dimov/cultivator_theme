@@ -2954,8 +2954,8 @@ video {
     margin-right: auto;
   }
 
-  .lg\:flex {
-    display: flex;
+  .lg\:block {
+    display: block;
   }
 
   .lg\:hidden {
