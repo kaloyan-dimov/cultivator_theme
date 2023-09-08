@@ -1,28 +1,30 @@
 <div class="lg:section lg:flex">
-  {% if product.media.size > 1 %}
-    <div class="swiper single_product_swiper w-full  mb-[24px]">
-      <div class="swiper-wrapper">
-        {% for image in product.media %}
-          <div class="swiper-slide w-full">
-            <img
-              class="w-full h-full object-cover"
-              src="{{ image | img_url: 'master'}}"
-              alt="">
-          </div>
-        {% endfor %}
+  <div>
+    {% if product.media.size > 1 %}
+      <div class="swiper single_product_swiper w-full  mb-[24px]">
+        <div class="swiper-wrapper">
+          {% for image in product.media %}
+            <div class="swiper-slide w-full">
+              <img
+                class="w-full h-full object-cover"
+                src="{{ image | img_url: 'master'}}"
+                alt="">
+            </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  {% else %}
-    <div class="w-full h-[360px]">
-      <img
-        class="w-full h-full object-cover"
-        src="{{ product.featured_image | img_url: 'master'}}"
-        alt="">
-    </div>
-  {% endif %}
+    {% else %}
+      <div class="w-full h-[360px]">
+        <img
+          class="w-full h-full object-cover"
+          src="{{ product.featured_image | img_url: 'master'}}"
+          alt="">
+      </div>
+    {% endif %}
+  </div>
   <div class="section">
     <div class="flex flex-col gap-2">
       <div class="flex">
