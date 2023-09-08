@@ -66,25 +66,19 @@
 
       {% if product.has_only_default_variant %}
         {% else %}
-          <a
-            href="javascript:void(0)"
-            class="choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
           <div
-            class="options_list flex flex-col w-full bg-white  h-[114px] pt-[21px] border-t border-[#E6DFDB]">
-            <div
-              class="flex gap-[11px] justify-between">
-              {% for variant in product.variants %}
-                <h4
-                  data-id="{{ variant.id }}"
-                  data-price="{{ variant.price | money_without_trailing_zeros }}"
-                  class="
-                  add_option flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px] cursor-pointer
-                  {% if forloop.index == 1 %}
-                    active
-                  {% endif %}">
-                  {{ variant.option1 }}</h4>
-              {% endfor %}
-            </div>
+            class="flex gap-[11px] justify-between">
+            {% for variant in product.variants %}
+              <h4
+                data-id="{{ variant.id }}"
+                data-price="{{ variant.price | money_without_trailing_zeros }}"
+                class="
+                add_option flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px] cursor-pointer
+                {% if forloop.index == 1 %}
+                  active
+                {% endif %}">
+                {{ variant.option1 }}</h4>
+            {% endfor %}
             <h4
               class="option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money_without_trailing_zeros }}</h4>
           </div>
