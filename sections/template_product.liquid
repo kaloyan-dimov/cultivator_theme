@@ -23,7 +23,7 @@
   {% endif %}
   <div class="section">
     Recommendations performed s{{ recommendations.performed }}
-    {% render "block_product_recommendations" with product %}
+    {% include "block_product_recommendations" with product %}
     <div class="flex flex-col gap-2">
 
       <div class="flex">
