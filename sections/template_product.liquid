@@ -3,8 +3,8 @@
     {% if product.media.size > 1 %}
       <div class="swiper single_product_swiper w-full  mb-[24px]">
         <div class="swiper-wrapper lg:pl-[111px]">
-          {% for image in product.media %}
-            <div class="swiper-slide w-full">
+          {% for image in product.media %}s
+            <div class="swiper-slide w-full lg:w-[calc(100%-111px)]">
               <img
                 class="w-full h-full object-cover"
                 src="{{ image | img_url: 'master'}}"
