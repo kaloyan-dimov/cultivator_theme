@@ -2582,6 +2582,9 @@ video {
 .password_text.active {
   color: green;
 }
+.password_text.inactive {
+  color: red;
+}
 .password_text::after {
   content: "";
   display: block;
