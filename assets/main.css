@@ -1161,6 +1161,9 @@ video {
 .gap-\[25px\] {
   gap: 25px;
 }
+.gap-\[4px\] {
+  gap: 4px;
+}
 .gap-\[50px\] {
   gap: 50px;
 }
