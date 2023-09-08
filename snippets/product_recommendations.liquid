@@ -1,7 +1,7 @@
 {% if product %}
   <h1>Product!</h1>
 {% else %}
-  <h1>No product</h1>
+  <h1>No product found in context, please select one from the section options</h1>
 {% endif %}
 <div class="product-recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related">
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
@@ -34,6 +34,7 @@
     if (!entries[0].isIntersecting) 
       return;
     
+
 
 
     observer.unobserve(productRecommendationsSection);
