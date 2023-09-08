@@ -2,7 +2,7 @@
   <div class="w-full lg:w-1/2">
     {% if product.media.size > 1 %}
       <div class="swiper single_product_swiper w-full  mb-[24px]">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper lg:pl-[111px]">
           {% for image in product.media %}
             <div class="swiper-slide w-full">
               <img
@@ -17,7 +17,7 @@
             </div>
           {% endfor %}
         </div>
-        <div class="swiper-pagination hidden lg:block"></div>
+        <div class="swiper-pagination hidden lg:flex"></div>
         <div class="swiper-button-prev lg:hidden"></div>
         <div class="swiper-button-next lg:hidden"></div>
       </div>
