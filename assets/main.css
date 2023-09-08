@@ -1891,6 +1891,15 @@ video {
 .single_product_swiper .swiper-button-prev::after {
   transform: rotate(180deg);
 }
+.single_product_swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 1px solid #E6DFDB;
+}
+.single_product_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border: 1px solid #CCAC71;
+}
 
 .sustainable_sourcing_swiper .swiper-wrapper {
   width: 100%;
