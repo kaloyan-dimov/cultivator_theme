@@ -33,7 +33,6 @@
   <div class="w-full lg:w-1/2">
     <div class="flex flex-col gap-2">
       <div class="flex">
-        <h2 class="text-[18px] flex-1">{{ product.title }}</h2>
         {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
         <div
           class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist
@@ -45,6 +44,7 @@
           {% endfor %}"
           data-handle="{{ product.handle }}"></div>
       </div>
+      <h2 class="text-[18px] flex-1">{{ product.title }}</h2>
       <h3 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h3>
 
       {% if product.has_only_default_variant %}
