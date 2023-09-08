@@ -66,24 +66,6 @@
 
       {% if product.has_only_default_variant %}
         {% else %}
-          <div
-            class="flex flex-col">
-            {% for variant in product.variants %}
-              <div class="flex gap-[20px] flex-1 border border-black">
-                <!-- <h2> {{ variant | json }}</h2> -->
-                <h2>{{ variant.title }}</h2>
-                <h2>{{ variant.price | money_without_trailing_zeros }}</h2>
-                <a
-                  href="{{variant.url}}">Url to variant</a>
-                <h2>Selected: {{ variant.selected }}</h2>
-              </div>
-            {% endfor %}
-          </div>
-      {% endif %}
-      {% if product.has_only_default_variant %}
-
-        {% else %}
-
           <a
             href="javascript:void(0)"
             class="choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
