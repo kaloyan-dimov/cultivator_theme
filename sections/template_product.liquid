@@ -7,10 +7,13 @@
             <div class="swiper-slide w-full">
               <img
                 class="w-full h-full object-cover"
-                src="{{ image | img_url }}"
+                src="{{ image | img_url: 'master'}}"
                 alt="">
             </div>
-            <div class="swiper_thumbs"></div>
+            <div class="swiper_thumbs hidden"><img
+                class="w-full h-full object-cover"
+                src="{{ image | img_url}}"
+                alt=""></div>
           {% endfor %}
         </div>
         <div class="swiper-pagination"></div>
