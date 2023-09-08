@@ -36,7 +36,7 @@
         <h2 class="text-[18px] flex-1">{{ product.title }}</h2>
         {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
         <div
-          class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
+          class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist
           {% for wishlist_item in wishlist_array %}
             {% assign current_product = all_products[wishlist_item] %}
             {% if current_product.handle == product.handle %}bg-[#CCAC71]
