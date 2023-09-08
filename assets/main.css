@@ -537,9 +537,6 @@ video {
 .relative {
   position: relative;
 }
-.sticky {
-  position: sticky;
-}
 .bottom-0 {
   bottom: 0px;
 }
@@ -1716,6 +1713,7 @@ video {
 
 .single_product_swiper {
   height: 564px;
+  position: sticky;
 }
 .single_product_swiper .swiper-wrapper {
   width: 100%;
@@ -1774,6 +1772,7 @@ video {
 @media (max-width: 1280px) {
   .single_product_swiper {
     height: 396px;
+    position: relative;
   }
   .single_product_swiper .swiper-button-prev,
   .single_product_swiper .swiper-button-next {
