@@ -2942,6 +2942,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:gap-\[16px\] {
+    gap: 16px;
+  }
+
   .lg\:pt-\[97px\] {
     padding-top: 97px;
   }
