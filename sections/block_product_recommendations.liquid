@@ -1,9 +1,11 @@
 {% if section.settings.selected_product != empty %}
+  {% assign product = section.settings.selected_product %}
   <h2>product selected</h2>
+  {% include "product_recommendations" with product %}
 {% else %}
   <h2>Product not selected</h2>
+  {% include "product_recommendations" %}
 {% endif %}
-{% include "product_recommendations" %}
 
 {% schema %}
   {
