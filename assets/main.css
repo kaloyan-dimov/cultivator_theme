@@ -2969,8 +2969,8 @@ video {
     width: 50%;
   }
 
-  .lg\:w-\[calc\(100\%-111px\)\] {
-    width: calc(100% - 111px);
+  .lg\:w-\[calc\(100\%-110px\)\] {
+    width: calc(100% - 110px);
   }
 
   .lg\:max-w-\[1440px\] {
