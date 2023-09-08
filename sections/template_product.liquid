@@ -1,85 +1,156 @@
-<div class="flex">
-    <h2 class="text-[18px] flex-1">{{ product.title }}</h2>
-    <div class="w-[52px] border border-red-600" data-handle="{{ product.handle }}">Heart</div>
-  </div>
-  <h3 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h3>
-
-  {% if product.has_only_default_variant %}
-    {% else %}
-      <div class="flex">
-        {% for variant in product.variants %}
-          <div class="flex flex-col gap-[20px] flex-1 border border-black">
-            <!-- <h2> {{ variant | json }}</h2> -->
-            <h2>{{ variant.title }}</h2>
-            <h2>{{ variant.price | money_without_trailing_zeros }}</h2>
-            <a href="{{variant.url}}">Url to variant</a>
-            <h2>Selected: {{ variant.selected }}</h2>
+{% if product.media.size > 1 %}
+    <div class="swiper single_product_swiper w-full  mb-[24px]">
+      <div class="swiper-wrapper">
+        {% for image in product.media %}
+          <div class="swiper-slide w-full">
+            <img
+              class="w-full h-full object-cover"
+              src="{{ image | img_url: 'master'}}"
+              alt="">
           </div>
         {% endfor %}
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  {% else %}
+    <div class="w-full h-[360px]">
+      <img
+        class="w-full h-full object-cover"
+        src="{{ product.featured_image | img_url: 'master'}}"
+        alt="">
+    </div>
   {% endif %}
-  <h3>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h3>
-  <h3 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
-    <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
-    </span>
-    |
-    {% assign offer_price = product.price %}
-    {% assign max_price = product.compare_at_price | times: 1.0 %}
-    {% assign discount = offer_price | divided_by: max_price %}
-    {{ discount | times: 100 | minus: 100 | round: 2 }} %
-  </h3>
-  <div class="review_only_stars"></div>
-</div>
+  <div class="section">
+    Recommendations performed {{ recommendations.performed }}
+    {% include "block_product_recommendations" with product %}
+    <div class="flex flex-col gap-2">
 
-<form
-  class="flex gap-2 text-[#CCAC71]"
-  method="post"
-  action="/cart/add">
-  <input
-    type="hidden"
-    name="id"
-    value="{{ product.selected_or_first_available_variant.id }}" />
-  <div class="w-[146px] h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px]">
-    <div id="input_minus" class=" w-[32px] h-[32px] flex justify-center items-center">-</div>
-    <input
-      class="bg-transparent w-[50px] text-center"
-      min="1"
-      type="number"
-      id="quantity"
-      name="quantity"
-      value="1" />
-    <div id="input_plus" class=" w-[32px] h-[32px] flex justify-center items-center">+</div>
-  </div>
-  <input
-    type="submit"
-    value="ADD TO CART"
-    class="flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
-</form></div><ul class="w-full flex flex-col">
-<li class="border-t border-[#E6DFDB]">
-  <div class="list_item flex flex-col px-[16px]">
-    <div class="list_title h-[64px] flex justify-between items-center">
-      <h2 class="text-[16px]">Description</h2>
-      <div class="list_arrow h-[32px] w-[32px]"></div>
+      <div class="flex">
+        <h2 class="text-[18px] flex-1">{{ product.title }}</h2>
+        <div class="w-[52px] border border-red-600" data-handle="{{ product.handle }}">Heart</div>
+      </div>
+      <h3 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h3>
+
+      {% if product.has_only_default_variant %}
+        {% else %}
+          <div class="flex">
+            {% for variant in product.variants %}
+              <div class="flex flex-col gap-[20px] flex-1 border border-black">
+                <!-- <h2> {{ variant | json }}</h2> -->
+                <h2>{{ variant.title }}</h2>
+                <h2>{{ variant.price | money_without_trailing_zeros }}</h2>
+                <a href="{{variant.url}}">Url to variant</a>
+                <h2>Selected: {{ variant.selected }}</h2>
+              </div>
+            {% endfor %}
+          </div>
+      {% endif %}
+      <h3>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h3>
+      <h3 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
+        <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
+        </span>
+        |
+        {% assign offer_price = product.price %}
+        {% assign max_price = product.compare_at_price | times: 1.0 %}
+        {% assign discount = offer_price | divided_by: max_price %}
+        {{ discount | times: 100 | minus: 100 | round: 2 }} %
+      </h3>
+      <div class="review_only_stars"></div>
     </div>
-    <div class="list_content pb-[16px]">{{ product.description }}</div>
-  </li>
-</li>
-<li class="border-t border-[#E6DFDB]">
-  <div class="list_item flex flex-col  px-[16px]">
-    <div class="list_title h-[64px] flex justify-between items-center">
-      <h2 class="text-[16px]">Clinical Safe Product</h2>
-      <div class="list_arrow h-[32px] w-[32px]"></div>
-    </div>
-    <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
+
+    <form
+      class="flex gap-2 text-[#CCAC71]"
+      method="post"
+      action="/cart/add">
+      <input
+        type="hidden"
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}" />
+      <div class="w-[146px] h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px]">
+        <div id="input_minus" class=" w-[32px] h-[32px] flex justify-center items-center">-</div>
+        <input
+          class="bg-transparent w-[50px] text-center"
+          min="1"
+          type="number"
+          id="quantity"
+          name="quantity"
+          value="1" />
+        <div id="input_plus" class=" w-[32px] h-[32px] flex justify-center items-center">+</div>
+      </div>
+      <input
+        type="submit"
+        value="ADD TO CART"
+        class="flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
+    </form>
+
   </div>
-</li>
-<li class="border-t border-[#E6DFDB]">
-  <div class="list_item flex flex-col px-[16px]">
-    <div class="list_title h-[64px] flex justify-between items-center">
-      <h2 class="text-[16px]">Ingridients</h2>
-      <div class="list_arrow h-[32px] w-[32px]"></div>
-    </div>
-    <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
-  </div>
-</li>
-<li class="border-t border-[#E6DFDB]">
+
+  <ul class="w-full flex flex-col">
+    <li class="border-t border-[#E6DFDB]">
+      <div class="list_item flex flex-col px-[16px]">
+        <div class="list_title h-[64px] flex justify-between items-center">
+          <h2 class="text-[16px]">Description</h2>
+          <div class="list_arrow h-[32px] w-[32px]"></div>
+        </div>
+        <div class="list_content pb-[16px]">{{ product.description }}</div>
+      </li>
+    </li>
+    <li class="border-t border-[#E6DFDB]">
+      <div class="list_item flex flex-col  px-[16px]">
+        <div class="list_title h-[64px] flex justify-between items-center">
+          <h2 class="text-[16px]">Clinical Safe Product</h2>
+          <div class="list_arrow h-[32px] w-[32px]"></div>
+        </div>
+        <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
+      </div>
+    </li>
+    <li class="border-t border-[#E6DFDB]">
+      <div class="list_item flex flex-col px-[16px]">
+        <div class="list_title h-[64px] flex justify-between items-center">
+          <h2 class="text-[16px]">Ingridients</h2>
+          <div class="list_arrow h-[32px] w-[32px]"></div>
+        </div>
+        <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
+      </div>
+    </li>
+    <li class="border-t border-[#E6DFDB]">
+      <div class="list_item flex flex-col px-[16px]">
+        <div class="list_title h-[64px] flex justify-between items-center">
+          <h2 class="text-[16px]">FAQ</h2>
+          <div class="list_arrow h-[32px] w-[32px]"></div>
+        </div>
+        <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
+      </div>
+    </li>
+    <li class="border-t border-[#E6DFDB]">
+      <div class="list_item flex flex-col px-[16px]">
+        <div class="list_title h-[64px] flex justify-between items-center">
+          <h2 class="text-[16px]">Certification</h2>
+          <div class="list_arrow h-[32px] w-[32px]"></div>
+        </div>
+        <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
+      </div>
+    </li>
+  </ul>
+
+  {% comment %}
+
+  <h2 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
+  <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
+  </span>
+  |
+  {% assign offer_price = product.price %}
+  {% assign max_price = product.compare_at_price | times: 1.0 %}
+  {% assign discount = offer_price | divided_by: max_price %}
+  {{ discount | times: 100 | minus: 100 | round: 2 }} %
+  </h2>
+
+  {% render "product_recommendations" %}
+
+  Product Metafields:
+  {{ product.metafields.custom.product_ingridients_metafield }}
+  {% for field in product.metafields.custom.product_ingridients_metafield.value %}
+  <!-- forloop{{ field | json }} -->
+  {% endfor %}
+  {% endcomment %}
