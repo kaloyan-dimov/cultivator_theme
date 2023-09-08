@@ -2,28 +2,13 @@
   "sections": {
     "main": {
       "type": "template_product",
-      "settings": {}
+      "settings": {
+      }
     },
     "16921968550071b76a": {
       "type": "apps",
-      "blocks": {
-        "5f45a87e-2d18-4e3c-97af-b6e2e0eec43f": {
-          "type": "shopify:\/\/apps\/the4-toolkit\/blocks\/wishlist-product-block\/049d73ec-9c99-4c7d-a189-72c9200dcc8f",
-          "settings": {
-            "text_color": "#000000",
-            "added_text_color": "#333333",
-            "text_size": 15,
-            "color": "#b50000",
-            "added_color": "#ff0000",
-            "icon_size": 14,
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "5f45a87e-2d18-4e3c-97af-b6e2e0eec43f"
-      ],
-      "settings": {}
+      "settings": {
+      }
     },
     "ingridients": {
       "type": "template_product_key_ingridients",
@@ -120,13 +105,15 @@
       "blocks": {
         "eeaaea41-1c5c-4294-ae74-2f1b321590c3": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "eeaaea41-1c5c-4294-ae74-2f1b321590c3"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "8d395340-5ea1-4a17-ba2e-d76f4275198d": {
       "type": "block_banner",
@@ -169,6 +156,11 @@
       "settings": {
         "animation_speed": 10
       }
+    },
+    "e8f4abed-f3ef-4421-b3b7-52fc2f5470ae": {
+      "type": "block_product_recommendations",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -180,6 +172,7 @@
     "ingridient_sourcing",
     "product_technologies",
     "169320605971fdd3ff",
-    "8d395340-5ea1-4a17-ba2e-d76f4275198d"
+    "8d395340-5ea1-4a17-ba2e-d76f4275198d",
+    "e8f4abed-f3ef-4421-b3b7-52fc2f5470ae"
   ]
 }
