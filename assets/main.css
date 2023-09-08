@@ -1892,10 +1892,18 @@ video {
   transform: rotate(180deg);
 }
 .single_product_swiper .swiper-pagination {
+  left: 0 !important;
+}
+.single_product_swiper .swiper-pagination {
   display: flex;
   flex-direction: column;
-  left: 0;
   bottom: 0;
+  top: auto;
+  top: initial;
+  transform: none;
+  transform: initial;
+  right: auto;
+  right: initial;
 }
 .single_product_swiper .swiper-pagination .swiper-pagination-bullet {
   width: 80px;
