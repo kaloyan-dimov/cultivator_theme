@@ -1891,12 +1891,18 @@ video {
 .single_product_swiper .swiper-button-prev::after {
   transform: rotate(180deg);
 }
+.single_product_swiper .swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
+}
 .single_product_swiper .swiper-pagination .swiper-pagination-bullet {
   width: 80px;
   height: 80px;
   border-radius: 12px;
   border: 1px solid #E6DFDB;
-  overflow: none;
+  overflow: hidden;
 }
 .single_product_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 1px solid #CCAC71;
