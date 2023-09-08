@@ -2579,6 +2579,9 @@ video {
   padding-left: 32px;
   position: relative;
 }
+.password_text.active {
+  color: green;
+}
 .password_text::after {
   content: "";
   display: block;
