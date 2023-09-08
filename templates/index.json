@@ -388,6 +388,37 @@
       "settings": {
         "animation_speed": 10
       }
+    },
+    "fb02db95-6fa2-4b89-93f7-bc9c59d43b0d": {
+      "type": "block_banner",
+      "blocks": {
+        "c3c48d51-1a4b-4a4c-a227-ea9b59277ceb": {
+          "type": "section",
+          "settings": {
+            "banner_text": "asd"
+          }
+        },
+        "923d702c-6c9e-48ea-b9cb-acc5b4c333ea": {
+          "type": "section",
+          "settings": {
+            "banner_text": "sdfsdfs"
+          }
+        },
+        "05af63dc-f8bf-49a6-8ace-8b508ac5de29": {
+          "type": "section",
+          "settings": {
+            "banner_text": "sdfsdfsds"
+          }
+        }
+      },
+      "block_order": [
+        "c3c48d51-1a4b-4a4c-a227-ea9b59277ceb",
+        "923d702c-6c9e-48ea-b9cb-acc5b4c333ea",
+        "05af63dc-f8bf-49a6-8ace-8b508ac5de29"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
     }
   },
   "order": [
@@ -400,6 +431,7 @@
     "636788fc-189a-4931-be1f-0a05116c181c",
     "30ce9665-2aad-40d6-98c6-8036efbbb9f4",
     "bb32c763-4e89-466a-be07-8858c238064b",
-    "29ef1e09-83f2-4734-93e1-5afcb978f683"
+    "29ef1e09-83f2-4734-93e1-5afcb978f683",
+    "fb02db95-6fa2-4b89-93f7-bc9c59d43b0d"
   ]
 }
