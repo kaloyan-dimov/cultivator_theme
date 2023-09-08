@@ -9,12 +9,12 @@
                 class="w-full h-full object-cover"
                 src="{{ image | img_url: 'master'}}"
                 alt="">
+              <div class="swiper_thumb hidden">
+                <img
+                  class="w-full h-full object-cover"
+                  src="{{ image | img_url}}"
+                  alt=""></div>
             </div>
-            <div class="swiper_thumb hidden">
-              <img
-                class="w-full h-full object-cover"
-                src="{{ image | img_url}}"
-                alt=""></div>
           {% endfor %}
         </div>
         <div class="swiper-pagination"></div>
