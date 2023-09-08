@@ -35,11 +35,12 @@
       </div>
     </div>
   {% endform %}
+  {% render "recover_password_form" %}
+
   {% if shop.customer_accounts_enabled %}
     <div class="flex flex-col items-center">
       <h2 class="text-[18px] text-[#776255]">Don't have an account yet?</h2>
       <a class="text-[18px] text-[#776255] underline" href="{{ routes.account_register_url }}">Create an account</a>
     </div>
   {% endif %}
-  {% render "recover_password_form" %}
 </div>
