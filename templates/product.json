@@ -66,10 +66,10 @@
           "type": "Ingridient",
           "repeater": "{{ product.metafields.custom.sustainable_ingridients_sourcing.value }}",
           "settings": {
-            "ingridient_title": "{{ block.repeater.ingridient_location_country_code.value }}",
+            "ingridient_title": "{{ block.repeater.ingridient_name.value }}",
             "ingridient_image": "{{ block.repeater.sustainable_ingridient_image.value }}",
             "ingridient_country_name": "{{ block.repeater.ingridient_location_name.value }}",
-            "ingridient_country_code": "{{ block.repeater.ingridient_name.value }}"
+            "ingridient_country_code": "{{ block.repeater.ingridient_location_country_code.value }}"
           }
         }
       },
