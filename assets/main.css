@@ -639,6 +639,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-\[8px\] {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1348,11 +1352,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 168, 212, 1);
   background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
-}
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(252, 165, 165, 1);
-  background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
