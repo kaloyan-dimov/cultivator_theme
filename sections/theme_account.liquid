@@ -1,0 +1,10 @@
+{% assign selected = "account" %}
+{% include 'account_nav' with selected %}
+<div class="section flex flex-col mt-[48px]">
+    <div class="bg-white rounded-[20px] w-full flex flex-col p-6 border border-[#E6DFDB] m-auto max-w-[868px]">
+      <h2>{{ customer.first_name }} {{ customer.last_name }}</h2>
+      <h2>{{ customer.email }}</h2>
+      <h2>Password length</h2>
+      <h2 class="recover_password_trigger">Reset password</h2>
+      {% render "recover_password_form" %}
+  </div>
