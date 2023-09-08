@@ -1,0 +1,37 @@
+<div class="w-full mt-250px flex flex-col border border-black flex justify-center items-center">
+  <h1 class="m-auto text-[50px] text-center">This is register page</h1>
+
+  {% form 'create_customer' %}
+    {{ form.errors | default_errors }}
+
+    <div class="first-name">
+      <label for="first-name">First name</label>
+      <input type="text" name="customer[first_name]">
+    </div>
+
+    <div class="last-name">
+      <label for="last-name">Last name</label>
+      <input type="text" name="customer[last_name]">
+    </div>
+
+    <div class="email">
+      <label for="email">Email</label>
+      <input type="email" name="customer[email]">
+    </div>
+
+    <div class="password">
+      <label for="password">Password</label>
+      <input type="password" name="customer[password]">
+    </div>
+
+    <div class="submit">
+      <input type="submit" value="Create">
+    </div>
+  {% endform %}
+
+</div>
+
+<!-- Redirect customers on account creationAnchor link to section titled "Redirect customers on account creation"
+By default, when a customer creates an account, they're directed to the home page. However, you can specify a page to direct customers to using the return_to parameter of the Liquid form tag. -->{% form 'create_customer', return_to: routes.all_products_collection_url %}
+  <!-- form content -->
+{% endform %}
