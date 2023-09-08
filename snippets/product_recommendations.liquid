@@ -16,7 +16,9 @@
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
     <div class="flex flex-wrap gap-[16px]">
       {%- for product in recommendations.products -%}
-        {% include 'product_card' with product, wishlist_array %}
+        <div class="w">
+          {% include 'product_card' with product, wishlist_array %}
+        </div>
       {%- endfor -%}
     </div>
   {%- endif -%}
@@ -27,6 +29,7 @@
     if (!entries[0].isIntersecting) 
       return;
     
+
 
 
     observer.unobserve(productRecommendationsSection);
