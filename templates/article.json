@@ -4,9 +4,16 @@
       "type": "theme_article",
       "settings": {
       }
+    },
+    "57d57e03-4013-4cb7-96ee-7719588bbb01": {
+      "type": "block_product_recommendations",
+      "settings": {
+        "selected_product": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "57d57e03-4013-4cb7-96ee-7719588bbb01"
   ]
 }
