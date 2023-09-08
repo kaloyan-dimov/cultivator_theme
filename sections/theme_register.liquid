@@ -1,68 +1,70 @@
 <div class="section">
-  <h1 class="text-[36px] text-center">Create an account</h1>
-  <div class="flex flex-col items-center justify-center">
-    {% form 'create_customer' %}
-      {{ form.errors | default_errors }}
+  <div class="w-full max-w-[396px] flex flex-col items-center mx-auto">
+    <h1 class="text-[36px] text-center">Create an account</h1>
+    <div class="flex flex-col items-center justify-center">
+      {% form 'create_customer' %}
+        {{ form.errors | default_errors }}
 
-      <div class="first-name">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
-          type="text"
-          name="customer[first_name]"
-          placeholder="First name">
-      </div>
+        <div class="first-name">
+          <input
+            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            type="text"
+            name="customer[first_name]"
+            placeholder="First name">
+        </div>
 
-      <div class="last-name">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
-          type="text"
-          name="customer[last_name]"
-          placeholder="Last name">
-      </div>
+        <div class="last-name">
+          <input
+            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            type="text"
+            name="customer[last_name]"
+            placeholder="Last name">
+        </div>
 
-      <div class="email">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
-          type="email"
-          name="customer[email]"
-          placeholder="Email">
-      </div>
+        <div class="email">
+          <input
+            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            type="email"
+            name="customer[email]"
+            placeholder="Email">
+        </div>
 
-      <div class="password">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
-          type="password"
-          name="customer[password]"
-          placeholder="Password">
-      </div>
+        <div class="password">
+          <input
+            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            type="password"
+            name="customer[password]"
+            placeholder="Password">
+        </div>
 
-      <div class="re-password">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
-          type="password"
-          placeholder="Re-enter password">
-      </div>
+        <div class="re-password">
+          <input
+            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            type="password"
+            placeholder="Re-enter password">
+        </div>
 
-      <div class="tos">
-        <input
-          type="checkbox"
-          name="tos"
-          placeholder="Re-enter password">
-        <label for="tos">i agree to
-          <a href="#">terms</a>, and
-          <a href="#">privacy policy</a>
-          to create an account</label>
-      </div>
+        <div class="tos">
+          <input
+            type="checkbox"
+            name="tos"
+            placeholder="Re-enter password">
+          <label for="tos">i agree to
+            <a href="#">terms</a>, and
+            <a href="#">privacy policy</a>
+            to create an account</label>
+        </div>
 
-      <div class="submit">
-        <input
-          class="flex justify-center items-center w-full bg-[#CCAC71] rounded-[18px] text-[15px] h-[56px] text-white cursor-pointer"
-          type="submit"
-          value="CREATE ACCOUNT">
-      </div>
-    {% endform %}
-    <h2>Already have an account?</h2>
-    <a href="" class="underline">Log in</a>
+        <div class="submit">
+          <input
+            class="flex justify-center items-center w-full bg-[#CCAC71] rounded-[18px] text-[15px] h-[56px] text-white cursor-pointer"
+            type="submit"
+            value="CREATE ACCOUNT">
+        </div>
+      {% endform %}
+      <h2>Already have an account?</h2>
+      <a href="" class="underline">Log in</a>
+    </div>
   </div>
 </div>
 
