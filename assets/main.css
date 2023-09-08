@@ -1899,7 +1899,6 @@ video {
   transform: initial !important;
 }
 .single_product_swiper .swiper-pagination {
-  display: flex;
   flex-direction: column;
   bottom: 0;
   right: auto;
@@ -2954,8 +2953,8 @@ video {
     margin-right: auto;
   }
 
-  .lg\:block {
-    display: block;
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {
@@ -2964,6 +2963,10 @@ video {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[calc\(100\%-111px\)\] {
+    width: calc(100% - 111px);
   }
 
   .lg\:max-w-\[1440px\] {
@@ -2976,6 +2979,10 @@ video {
 
   .lg\:gap-\[16px\] {
     gap: 16px;
+  }
+
+  .lg\:pl-\[111px\] {
+    padding-left: 111px;
   }
 
   .lg\:pt-\[97px\] {
