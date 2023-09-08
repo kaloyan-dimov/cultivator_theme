@@ -1719,11 +1719,14 @@ video {
   background-image: url("data:image/svg+xml,%3Csvg width=%2726%27 height=%2710%27 viewBox=%270 0 26 10%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M0 5.73485H23.7469L20.8502 8.9606L21.7835 10L25.8067 5.51976C25.9304 5.3821 26 5.19522 26 5.00006C26 4.80549 25.9304 4.61844 25.8067 4.48036L21.7835 0L20.8502 1.0394L23.7469 4.26515H0V5.73485Z%27 fill=%27%23CCAC71%27/%3E%3C/svg%3E%0A");
 }
 
+.single_product_swiper {
+  height: 564px;
+}
 .single_product_swiper .swiper-wrapper {
   width: 100%;
-  height: 360px;
+  height: 564px;
 }
-.single_product_swiper .swiper-slide {
+.single_product_swiper .swiper-wrapper .swiper-slide {
   width: calc(100% - 110px);
 }
 .single_product_swiper .swiper-button-prev,
@@ -1775,7 +1778,10 @@ video {
   .single_product_swiper {
     height: 396px;
   }
-  .single_product_swiper .swiper-slide {
+  .single_product_swiper .swiper-wrapper {
+    height: 360px;
+  }
+  .single_product_swiper .swiper-wrapper .swiper-slide {
     width: 100%;
   }
 }
