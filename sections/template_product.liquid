@@ -67,7 +67,7 @@
       {% if product.has_only_default_variant %}
         {% else %}
           <div
-            class="flex gap-[11px] justify-between">
+            class="flex flex-col gap-[11px] justify-between">
             {% for variant in product.variants %}
               <h4
                 data-id="{{ variant.id }}"
