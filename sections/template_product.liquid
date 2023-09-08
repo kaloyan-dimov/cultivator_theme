@@ -67,9 +67,9 @@
       {% if product.has_only_default_variant %}
         {% else %}
           <div
-            class="flex">
+            class="flex flex-col">
             {% for variant in product.variants %}
-              <div class="flex flex-col gap-[20px] flex-1 border border-black">
+              <div class="flex gap-[20px] flex-1 border border-black">
                 <!-- <h2> {{ variant | json }}</h2> -->
                 <h2>{{ variant.title }}</h2>
                 <h2>{{ variant.price | money_without_trailing_zeros }}</h2>
