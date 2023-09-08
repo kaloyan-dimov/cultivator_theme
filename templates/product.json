@@ -156,6 +156,12 @@
       "settings": {
         "animation_speed": 10
       }
+    },
+    "f437be0a-2e06-48d2-874c-e71e4b5e4ebe": {
+      "type": "block_product_recommendations",
+      "settings": {
+        "selected_product": ""
+      }
     }
   },
   "order": [
@@ -167,6 +173,7 @@
     "ingridient_sourcing",
     "product_technologies",
     "169320605971fdd3ff",
-    "8d395340-5ea1-4a17-ba2e-d76f4275198d"
+    "8d395340-5ea1-4a17-ba2e-d76f4275198d",
+    "f437be0a-2e06-48d2-874c-e71e4b5e4ebe"
   ]
 }
