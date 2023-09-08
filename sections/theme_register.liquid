@@ -31,7 +31,10 @@
 
 </div>
 
+{% comment %}
 <!-- Redirect customers on account creationAnchor link to section titled "Redirect customers on account creation"
-By default, when a customer creates an account, they're directed to the home page. However, you can specify a page to direct customers to using the return_to parameter of the Liquid form tag. -->{% form 'create_customer', return_to: routes.all_products_collection_url %}
-  <!-- form content -->
+By default, when a customer creates an account, they're directed to the home page. However, you can specify a page to direct customers to using the return_to parameter of the Liquid form tag. -->
+{% form 'create_customer', return_to: routes.all_products_collection_url %}
+<!-- form content -->
 {% endform %}
+{% endcomment %}
