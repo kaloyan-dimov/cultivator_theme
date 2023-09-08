@@ -1,5 +1,5 @@
 <div class="lg:section flex flex-col lg:flex-row">
-  <div class="w-1/2">
+  <div class="w-full lg:w-1/2">
     {% if product.media.size > 1 %}
       <div class="swiper single_product_swiper w-full  mb-[24px]">
         <div class="swiper-wrapper">
@@ -25,7 +25,7 @@
       </div>
     {% endif %}
   </div>
-  <div class="w-1/2">
+  <div class="w-full lg:w-1/2">
     <div class="flex flex-col gap-2">
       <div class="flex">
         <h2 class="text-[18px] flex-1">{{ product.title }}</h2>
