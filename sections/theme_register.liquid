@@ -1,34 +1,39 @@
-<div class="w-full mt-250px flex flex-col border border-black flex justify-center items-center">
-  <h1 class="m-auto text-[50px] text-center">This is register page</h1>
+<div class="section">
+  <h1 class="text-[36px] text-center">Create an account</h1>
+  <div class="flex items-center justify-center">
+    {% form 'create_customer' %}
+      {{ form.errors | default_errors }}
 
-  {% form 'create_customer' %}
-    {{ form.errors | default_errors }}
+      <div class="first-name">
+        <label for="first-name">First name</label>
+        <input type="text" name="customer[first_name]">
+      </div>
 
-    <div class="first-name">
-      <label for="first-name">First name</label>
-      <input type="text" name="customer[first_name]">
-    </div>
+      <div class="last-name">
+        <label for="last-name">Last name</label>
+        <input type="text" name="customer[last_name]">
+      </div>
 
-    <div class="last-name">
-      <label for="last-name">Last name</label>
-      <input type="text" name="customer[last_name]">
-    </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="customer[email]">
+      </div>
 
-    <div class="email">
-      <label for="email">Email</label>
-      <input type="email" name="customer[email]">
-    </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input type="password" name="customer[password]">
+      </div>
 
-    <div class="password">
-      <label for="password">Password</label>
-      <input type="password" name="customer[password]">
-    </div>
+      <div class="re-password">
+        <label for="password">Password</label>
+        <input type="password" name="customer[password]">
+      </div>
 
-    <div class="submit">
-      <input type="submit" value="Create">
-    </div>
-  {% endform %}
-
+      <div class="submit">
+        <input type="submit" value="Create">
+      </div>
+    {% endform %}
+  </div>
 </div>
 
 {% comment %}
