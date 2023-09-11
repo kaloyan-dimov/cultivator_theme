@@ -62,6 +62,7 @@
                 {% endif %}">
                 {{ variant.option1 }} - {{ variant.price | money }}</h4>
             {% endfor %}
+            <div class="test_add"></div>
             <h4 class="option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money_without_trailing_zeros }}</h4>
           </div>
       {% endif %}
