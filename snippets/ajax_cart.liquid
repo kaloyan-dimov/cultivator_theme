@@ -36,9 +36,9 @@
                   class="ajax_cart_product_info">
                   <h3>{{ item.product.title }}</h3>
                   <h3>
-                    {% if item.product.has_only_default_variant %}def
-                    {% else %}
-                      {{ item.variant.title }}{% endif %}
+                    {% if item.product.has_only_default_variant %}
+                      {% else %}
+                        {{ item.variant.title }}{% endif %}
                   </h3>
                   <h3>{{ item.final_line_price | money }}</h3>
                 </div>
