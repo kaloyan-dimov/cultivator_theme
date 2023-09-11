@@ -10,13 +10,15 @@
       {% else %}
         exactly 0
       {% endif %}
-      <div class="ajax_cart_products border-b border-[#E6DFDB] p-[16px]"></div>
+      <div class="ajax_cart_products border-b border-[#E6DFDB] p-[16px]">
+        {% for item in cart.items %}{% endfor %}
+      </div>
       <div class="ajax_cart_recommended border-b border-[#E6DFDB] p-[16px]"></div>
     </div>
     <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white">
       <div class="flex justify-between">
         <h2>Estimated total:</h2>
-        <h2>101,80 Eur</h2>
+        <h2>{{ cart.total_price }}</h2>
       </div>
       <h3>shipping and discounts calculated at checkout</h3>
       <button class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</button>
