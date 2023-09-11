@@ -63,6 +63,7 @@
                 {{ variant.option1 }} - {{ variant.price | money }}</h4>
             {% endfor %}
             <div>{{ variant.option1.id }}</div>
+            {{ product.selected_or_first_available_variant.id }}
             <div class="test_add">test add</div>
             <h4 class="option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money_without_trailing_zeros }}</h4>
           </div>
