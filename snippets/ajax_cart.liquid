@@ -1,11 +1,11 @@
-<div class="ajax_cart fixed w-full h-full left-[0] top-[0] z-[2]">
+<div class="ajax_cart_container fixed w-full h-full left-[0] top-[0] z-[2]">
   <div class="ajax_cart_background absolute w-full h-full z-[1] eft-[0] top-[0] bg-black bg-opacity-40"></div>
   <div class="absolute top-[0] right-[0] w-full h-full max-w-[491px] bg-[#FBF9F9] z-[2]">
     <div class="flex items-center justify-between h-[68px] px-[16px] border-b border-[#E6DFDB]">
       <h2>cart 2 items</h2>
       <div class="ajax_cart_close">X</div>
     </div>
-    <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)]">
+    <div class="ajax_cart absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)]">
       {% if cart.item_count > 0 %}
         <div class="ajax_cart_products border-b border-[#E6DFDB] p-[16px]">
           {% for item in cart.items %}
