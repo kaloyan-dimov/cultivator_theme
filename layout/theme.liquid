@@ -11,9 +11,7 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       {% render "breadcrumb" %}
-      <div class="test_ajax">
-        {% include 'ajax_cart' %}
-      </div>
+      {% include 'ajax_cart' %}
       {{ content_for_layout }}
     </main>
 
