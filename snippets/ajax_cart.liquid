@@ -5,7 +5,11 @@
       <div class="ajax_cart_close">X</div>
     </div>
     <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)]">
-      {{ cart.item_count }}
+      {% if cart.item_count > 0 %}
+        more than 0
+      {% else %}
+        exactly 0
+      {% endif %}
       <div class="ajax_cart_products border-b border-[#E6DFDB] p-[16px]"></div>
       <div class="ajax_cart_recommended border-b border-[#E6DFDB] p-[16px]"></div>
     </div>
