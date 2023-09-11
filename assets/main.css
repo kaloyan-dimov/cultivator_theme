@@ -2229,8 +2229,9 @@ video {
 }
 
 .ajax_cart_container {
-  opacity: 0;
-  transition: all 0.5s;
+  max-width: 0;
+  max-height: 0;
+  transition: all 0.01s;
 }
 .ajax_cart_container .ajax_cart_background {
   background-color: rgba(1, 1, 1, 0);
@@ -2245,7 +2246,8 @@ video {
   transition: all 0.5s;
 }
 .ajax_cart_container.active {
-  opacity: 1;
+  max-width: 0;
+  max-height: 0;
   transition: all 0.5s;
 }
 .ajax_cart_container.active .ajax_cart_background {
