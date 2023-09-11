@@ -2326,6 +2326,12 @@ video {
   justify-content: center;
   align-items: center;
 }
+.ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .item_quantity::-webkit-outer-spin-button, .ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .item_quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /* Firefox */
+  -moz-appearance: textfield;
+}
 
 .video_feed_with_text {
   counter-reset: section;
