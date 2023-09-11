@@ -1069,9 +1069,6 @@ video {
 .max-w-\[458px\] {
   max-width: 458px;
 }
-.max-w-\[491px\] {
-  max-width: 491px;
-}
 .max-w-\[532px\] {
   max-width: 532px;
 }
@@ -2259,7 +2256,7 @@ video {
 }
 .ajax_cart_container.active .ajax_cart {
   transform: scaleX(1);
-  max-width: 1000px;
+  max-width: 491px;
   transform-origin: right center;
   transition: all 0.5s;
 }
