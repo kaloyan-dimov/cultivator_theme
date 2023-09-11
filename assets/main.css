@@ -576,6 +576,9 @@ video {
 .right-\[-20\%\] {
   right: -20%;
 }
+.right-\[0\] {
+  right: 0;
+}
 .right-\[16px\] {
   right: 16px;
 }
@@ -1051,6 +1054,9 @@ video {
 .max-w-\[458px\] {
   max-width: 458px;
 }
+.max-w-\[491px\] {
+  max-width: 491px;
+}
 .max-w-\[532px\] {
   max-width: 532px;
 }
@@ -1352,6 +1358,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
 }
 .bg-center {
   background-position: center;
