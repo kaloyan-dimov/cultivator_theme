@@ -13,34 +13,33 @@
       {% if cart.item_count > 0 %}
         <div class="ajax_cart_products flex flex-col gap-[16px] border-b border-[#E6DFDB] p-[16px]">
           {% for item in cart.items %}
-            <div class="ajax_cart_product flex justify-between items-center w-full h-[127px] bg-white rounded-[16px] border border-[#E6DFDB] px-[16px] py-[12px]">
-              <div class="ajax_cart_product_container flex gap-[8px] items-center">
-                <div class="ajax_cart_product_image w-[64px] h-[64px]">
-                  <img
-                    class="w-full h-full object-cover"
-                    src="{{ item.image | img_url }}"
-                    alt="">
+            <div class="ajax_cart_product">
+              <div class="ajax_cart_product_container">
+                <div class="ajax_cart_product_image">
+                  <img src="{{ item.image | img_url }}" alt="">
                 </div>
-                <div class="ajax_cart_product_info flex flex-col gap-[8px]">
+                <div class="ajax_cart_product_info">
                   <h3>{{ item.product.title }}</h3>
                   <h3>{{ item.variant.title }}</h3>
                   <h3>{{ item.price | money }}</h3>
                 </div>
               </div>
-              <div class="flex flex-col justify-between h-full">
-                <h4 class="underline self-end">remove</h4>
-                <div class="add_remove_quantity flex justify-center items-center border border-[#54443B] rounded-[12px] gap-[8px] py-[9px] px-[16px]">
-                  <div class="remove_quantity flex justify-center items-center">-</div>
-                  <div class="item_quantity flex justify-center items-center w-[18px] h-[18px]">{{ item.quantity }}</div>
-                  <div class="add_quantity flex justify-center items-center">+</div>
+              <div
+                class="ajax_cart_quantity">
+                <h4>remove</h4>
+                <div class="add_remove_quantity ">
+                  <div class="remove_quantity">-</div>
+                  <div class="item_quantity">{{ item.quantity }}</div>
+                  <div class="add_quantity">+</div>
                 </div>
               </div>
             </div>
           {% endfor %}
         </div>
-        <div class="ajax_cart_recommended flex flex-col gap-[16px] p-[16px]"></div>
+        <div class="ajax_cart_recommended"></div>
       </div>
-      <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white">
+      <div
+        class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white">
         <div class="flex justify-between">
           <h2>Estimated total:</h2>
           <h2>{{ cart.total_price | money }}</h2>
