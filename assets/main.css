@@ -2322,7 +2322,6 @@ video {
 .ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .add_quantity {
   width: 18px;
   height: 18px;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
