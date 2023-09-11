@@ -757,6 +757,9 @@ video {
 .h-\[1183px\] {
   height: 1183px;
 }
+.h-\[127px\] {
+  height: 127px;
+}
 .h-\[152px\] {
   height: 152px;
 }
@@ -1362,11 +1365,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 168, 212, 1);
   background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
-}
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(248, 113, 113, 1);
-  background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
