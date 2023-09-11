@@ -11,7 +11,7 @@
     </div>
     <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)]">
       {% if cart.item_count > 0 %}
-        <div class="ajax_cart_products flex flex-col gap-[16px] border-b border-[#E6DFDB] p-[16px]">
+        <div class="ajax_cart_products">
           {% for item in cart.items %}
             <div class="ajax_cart_product">
               <div class="ajax_cart_product_container">
