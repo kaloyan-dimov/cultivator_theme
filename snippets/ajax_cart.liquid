@@ -29,10 +29,10 @@
               </div>
               <div class="flex flex-col justify-between h-full">
                 <h4 class="underline">remove</h4>
-                <div class="add_remove_quantity flex">
-                  <div class="remove_quantity">-</div>
-                  {{ item.quantity }}</div>
-                <div class="add_quantity">+</div>
+                <div class="add_remove_quantity flex border border-[#54443B] rounded-[12px] gap-[8px]">
+                  <div class="remove_quantity flex justify-center items-center">-</div>
+                  <div class="item_quantity flex justify-center items-center w-[18px] h-[18px]">{{ item.quantity }}</div>
+                <div class="add_quantity flex justify-center items-center">+</div>
               </div>
             </div>
           {% endfor %}

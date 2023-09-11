@@ -950,6 +950,9 @@ video {
 .w-\[163px\] {
   width: 163px;
 }
+.w-\[18px\] {
+  width: 18px;
+}
 .w-\[191px\] {
   width: 191px;
 }
@@ -1289,6 +1292,11 @@ video {
 }
 .border-t {
   border-top-width: 1px;
+}
+.border-\[\#54443B\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(84, 68, 59, 1);
+  border-color: rgba(84, 68, 59, var(--tw-border-opacity));
 }
 .border-\[\#56463D\] {
   --tw-border-opacity: 1;
