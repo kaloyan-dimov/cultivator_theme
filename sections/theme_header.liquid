@@ -19,9 +19,9 @@
         </a>
         <a href="/account" class="profile_icon"></a>
       </div>
-      <a href="/cart" class="cart_div flex w-[97px] h-[44px] rounded-[18px] border-[1px] border-[#56463D] flex gap-[13px] content-center items-center">
+      <a href="javascript:void(0)" class="cart_div flex w-[97px] h-[44px] rounded-[18px] border-[1px] border-[#56463D] flex gap-[13px] content-center items-center">
         <div class="cart_icon"></div>
-        <div id="cart_number">{{ cart.item_count }}</div>
+        <div class="cart_number">{{ cart.item_count }}</div>
       </a>
       <a href="#" class="change_language w-6 h-6"></a>
     </div>
@@ -39,7 +39,9 @@
     <a href="{{ shop.url }}" class="header_logo w-[76px] h-[65px]"></a>
     <div class="flex gap-4">
       <a href="/the4-wishlist" class="w-[44px] h-[44px] heart_icon"></a>
-      <a href="/cart" class="w-[44px] h-[44px] cart_icon cart_icon_mobile"></a>
+      <a
+        href="/cart"
+        class="w-[44px] h-[44px] cart_icon cart_icon_mobile"></a>
     </div>
   </div>
   <div class="hamburger fixed left-[24px] top-[19px] z-[2]">
