@@ -14,8 +14,8 @@
         <div class="ajax_cart_products flex flex-col gap-[16px] border-b border-[#E6DFDB] p-[16px]">
           {% for item in cart.items %}
             <div class="ajax_cart_product flex justify-between items-center w-full h-[127px] bg-white rounded-[16px] border border-[#E6DFDB] px-[16px] py-[12px]">
-              <div class="flex gap-[8px] items-center">
-                <div class="w-[64px] h-[64px]">
+              <div class="ajax_cart_product_container flex gap-[8px] items-center">
+                <div class="ajax_cart_product_image w-[64px] h-[64px]">
                   <img
                     class="w-full h-full object-cover"
                     src="{{ item.image | img_url }}"
