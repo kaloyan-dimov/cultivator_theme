@@ -2,7 +2,11 @@
   <div class="ajax_cart_background absolute w-full h-full z-[1] eft-[0] top-[0] bg-black bg-opacity-40"></div>
   <div class="ajax_cart absolute top-[0] right-[0] w-full h-full bg-[#FBF9F9] z-[2]">
     <div class="flex items-center justify-between h-[68px] px-[16px] border-b border-[#E6DFDB]">
-      <h2>cart 2 items</h2>
+      <div>
+        <h2>cart</h2>
+        <h2 class="cart_item_count">{{ cart.item_count }}</h2>
+        <h2>items</h2>
+      </div>
       <div class="ajax_cart_close">X</div>
     </div>
     <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)]">
