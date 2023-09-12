@@ -84,14 +84,7 @@
       {% endif %}
     </div>
 
-    <form
-      class="flex gap-2 text-[#CCAC71]"
-      method="post"
-      action="/cart/add">
-      <input
-        type="hidden"
-        name="id"
-        value="{{ product.selected_or_first_available_variant.id }}" />
+    <div class="flex gap-2 text-[#CCAC71]">
       <div class="w-[146px] h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px]">
         <div id="input_minus" class=" w-[32px] h-[32px] flex justify-center items-center">-</div>
         <input
@@ -107,7 +100,7 @@
         type="submit"
         value="ADD TO CART"
         class="flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
-    </form>
+    </div>
 
     <ul class="w-full flex flex-col">
       <li class="border-t border-[#E6DFDB]">
