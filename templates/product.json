@@ -10,26 +10,6 @@
       "settings": {
       }
     },
-    "ingridients": {
-      "type": "template_product_key_ingridients",
-      "blocks": {
-        "99b32e59-8f12-421c-b4f2-7113fa969d19": {
-          "type": "Ingridient",
-          "repeater": "{{ product.metafields.custom.product_ingridients_metafield.value }}",
-          "settings": {
-            "ingridient_title": "{{ block.repeater.ingridient_name.value }}",
-            "ingridient_description": "{{ block.repeater.ingridient_description.value }}",
-            "ingridient_image": "{{ block.repeater.ingridient_media.value }}"
-          }
-        }
-      },
-      "block_order": [
-        "99b32e59-8f12-421c-b4f2-7113fa969d19"
-      ],
-      "settings": {
-        "section_title": ""
-      }
-    },
     "usage_guilde": {
       "type": "template_product_use_guide",
       "blocks": {
@@ -48,6 +28,26 @@
       "settings": {
         "section_title": "",
         "usage_guide_video": "{{ product.metafields.custom.usage_guide_video_metafield.value.usage_guide_video.value }}"
+      }
+    },
+    "ingridients": {
+      "type": "template_product_key_ingridients",
+      "blocks": {
+        "99b32e59-8f12-421c-b4f2-7113fa969d19": {
+          "type": "Ingridient",
+          "repeater": "{{ product.metafields.custom.product_ingridients_metafield.value }}",
+          "settings": {
+            "ingridient_title": "{{ block.repeater.ingridient_name.value }}",
+            "ingridient_description": "{{ block.repeater.ingridient_description.value }}",
+            "ingridient_image": "{{ block.repeater.ingridient_media.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "99b32e59-8f12-421c-b4f2-7113fa969d19"
+      ],
+      "settings": {
+        "section_title": ""
       }
     },
     "clinically_safe": {
@@ -167,8 +167,8 @@
   "order": [
     "main",
     "16921968550071b76a",
-    "ingridients",
     "usage_guilde",
+    "ingridients",
     "clinically_safe",
     "ingridient_sourcing",
     "product_technologies",
