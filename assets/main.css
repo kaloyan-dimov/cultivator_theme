@@ -2307,6 +2307,10 @@ video {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   align-self: flex-end;
+  cursor: pointer;
+}
+.ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .remove_all:hover {
+  color: #E6DFDB;
 }
 .ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity {
   display: flex;
@@ -2338,6 +2342,10 @@ video {
 .ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .remove_quantity,
 .ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .add_quantity {
   cursor: pointer;
+}
+.ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .remove_quantity:hover,
+.ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .add_quantity:hover {
+  color: #E6DFDB;
 }
 
 .video_feed_with_text {
