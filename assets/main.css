@@ -603,9 +603,6 @@ video {
 .top-\[24px\] {
   top: 24px;
 }
-.top-\[250px\] {
-  top: 250px;
-}
 .top-\[316px\] {
   top: 316px;
 }
@@ -1613,6 +1610,9 @@ video {
 }
 .text-\[32px\] {
   font-size: 32px;
+}
+.text-\[34px\] {
+  font-size: 34px;
 }
 .text-\[36px\] {
   font-size: 36px;
