@@ -65,7 +65,7 @@
       <h4 class="text-[#54443B] text-red-500">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h4>
       {% if product.has_only_default_variant %}
         {% else %}
-          <div class="flex flex-col">
+          <div class="flex flex-col border border-[#E6DFDB]">
             {% for variant in product.variants %}
               <h4
                 data-id="{{ variant.id }}"
