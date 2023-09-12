@@ -26,7 +26,8 @@
         "32302ec4-c5e6-4b33-a7c6-794330636d0d"
       ],
       "settings": {
-        "section_title": "",
+        "section_title": "How to use",
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
         "usage_guide_video": "{{ product.metafields.custom.usage_guide_video_metafield.value.usage_guide_video.value }}"
       }
     },
