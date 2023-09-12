@@ -85,7 +85,8 @@
                   name="product_variant"
                   {% if variant.id == product.selected_variant.id %}
                   checked
-                  {% else if product.selected_variant == nil and forloop.index == 1 %}
+                  {% endif %}
+                  {% if product.selected_variant == nil and forloop.index == 1 %}
                   checked
                   {% endif %}>
                 <label for="{{ variant.id }}" class="text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</label>
