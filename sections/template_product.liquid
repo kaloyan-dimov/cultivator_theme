@@ -76,7 +76,7 @@
                   type="radio"
                   id="{{ variant.id }}"
                   name="product_variant"
-                  {% if forloop.index == 1 %}
+                  {% if variant.id == product.selected_variant.id %}
                   checked
                   {% endif %}>
                 <label for="{{ variant.id }}" class="text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</label>
