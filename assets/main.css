@@ -609,6 +609,9 @@ video {
 .top-\[50\%\] {
   top: 50%;
 }
+.top-\[50vh\] {
+  top: 50vh;
+}
 .top-\[68px\] {
   top: 68px;
 }
@@ -1074,6 +1077,9 @@ video {
 }
 .max-w-\[400px\] {
   max-width: 400px;
+}
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 .max-w-\[458px\] {
   max-width: 458px;
