@@ -763,6 +763,9 @@ video {
 .h-\[160px\] {
   height: 160px;
 }
+.h-\[170px\] {
+  height: 170px;
+}
 .h-\[180px\] {
   height: 180px;
 }
@@ -964,6 +967,9 @@ video {
 }
 .w-\[274px\] {
   width: 274px;
+}
+.w-\[278px\] {
+  width: 278px;
 }
 .w-\[300px\] {
   width: 300px;
@@ -1861,7 +1867,10 @@ video {
     transition: all 0.25s;
   }
 }
-.product_usage_swiper .swiper-slide {
+.product_usage_swiper .swiper-wrapper {
+  height: 514px;
+}
+.product_usage_swiper .swiper-wrapper .swiper-slide {
   width: 326px;
 }
 
