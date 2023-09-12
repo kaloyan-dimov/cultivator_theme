@@ -1274,6 +1274,9 @@ video {
 .rounded-\[48px\] {
   border-radius: 48px;
 }
+.rounded-\[60px\] {
+  border-radius: 60px;
+}
 .rounded-\[80px\] {
   border-radius: 80px;
 }
