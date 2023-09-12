@@ -1,7 +1,14 @@
-<div class="section mt-[64px]">
-  <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
+<div
+  class="section mt-[64px]">
+  <div
+    class="usage_guide_video w-full aspect-video rounded-[24px] mb-[24px] overflow-hidden">
+    {{ section.settings.usage_guide_video | video_tag: autoplay: true, loop: true }}
+  </div>
+  <h2
+    class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
     {% if section.settings.title_image != null %}
-      <span class="w-[50px] h-[50px]">
+      <span
+        class="w-[50px] h-[50px]">
         <img
           class="h-[42px] inline-block"
           src="{{ section.settings.title_image | img_url: 'master'}}"
@@ -14,7 +21,8 @@
     {% endif %}
     {% comment %} {% endcomment %}
     {% if section.settings.title_image != null %}
-      <span class="w-[50px] h-[50px]">
+      <span
+        class="w-[50px] h-[50px]">
         <img
           class="h-[42px] inline-block"
           src="{{ section.settings.title_image | img_url: 'master'}}"
@@ -23,24 +31,28 @@
       {% comment %} {% endcomment %}
     {% endif %}
   </h2>
-  <div class="usage_guide_video w-full aspect-video rounded-[24px] mb-[24px] overflow-hidden">
-    {{ section.settings.usage_guide_video | video_tag: autoplay: true, loop: true }}
-  </div>
+
   <h1>
     {{ section.settings.steps_text }}</h1>
-  <ul class="usage_guide_list flex w-full items-center justify-center gap-[8px] flex-wrap">
+  <ul
+    class="usage_guide_list flex w-full items-center justify-center gap-[8px] flex-wrap">
     {% for block in section.blocks %}
-      <li class="list_item w-[358px] flex flex-col bg-white rounded-[24px] py-[24px] px-[16px]">
-        <div class="list_title flex justify-between items-center">
+      <li
+        class="list_item w-[358px] flex flex-col bg-white rounded-[24px] py-[24px] px-[16px]">
+        <div
+          class="list_title flex justify-between items-center">
           <h2>Step</h2>
-          <div class="list_arrow h-[32px] w-[32px]"></div>
+          <div
+            class="list_arrow h-[32px] w-[32px]"></div>
         </div>
-        <div class="list_content flex flex-col">
+        <div
+          class="list_content flex flex-col">
           <img
             class="w-[152px] h-[152px] object-contain self-center"
             src="{{ block.settings.step_image | img_url: 'master'}}"
             alt="">
-          <h2 class="text-[17px]">{{ block.settings.step_text }}</h2>
+          <h2
+            class="text-[17px]">{{ block.settings.step_text }}</h2>
         </div>
       </li>
     {% endfor %}
