@@ -49,17 +49,9 @@
         <div>tag</div>
         <div>tag</div>
         <div>tag</div>
-        {{ product.handle }}<br>
-        {{ product.selected_variant.id }}<br>
-        {% if product.selected_variant == nil %}
-          has variant
-        {% else %}
-          has no variant
-        {% endif %}
       </div>
       <h1 class="text-[18px]">{{ product.title }}</h1>
-      <h2
-        class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
+      <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
       <h2 class="text-[14px]">{{ product.price | money_without_trailing_zeros }} |
         <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
         </span>
@@ -69,8 +61,7 @@
         {% assign discount = offer_price | divided_by: max_price %}
         {{ discount | times: 100 | minus: 100 | round: 2 }} %
       </h2>
-      <h3
-        class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
+      <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
         {% else %}
           <div class="flex flex-col border border-[#E6DFDB]">
