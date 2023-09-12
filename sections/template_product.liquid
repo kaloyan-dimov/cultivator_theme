@@ -77,9 +77,8 @@
                   {% if forloop.index == 1 %}
                   checked
                   {% endif %}>
-                <label for="{{ variant.id }}">{{ variant.option1 }} - {{ variant.price | money }}</label>
-                <h2></div>
-              </h2>
+                <label for="{{ variant.id }}" class="text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</label>
+              </div>
             {% endfor %}
           </div>
       {% endif %}
