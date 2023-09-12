@@ -31,29 +31,6 @@
       {% comment %} {% endcomment %}
     {% endif %}
   </h2>
-  <ul
-    class="flex w-full items-center justify-center gap-[8px] flex-wrap">
-    {% for block in section.blocks %}
-      <li
-        class="list_item w-[358px] flex flex-col bg-white rounded-[24px] py-[24px] px-[16px]">
-        <div
-          class="list_title flex justify-between items-center">
-          <h2>Step</h2>
-          <div
-            class="list_arrow h-[32px] w-[32px]"></div>
-        </div>
-        <div
-          class="list_content flex flex-col">
-          <img
-            class="w-[152px] h-[152px] object-contain self-center"
-            src="{{ block.settings.step_image | img_url: 'master'}}"
-            alt="">
-          <h2
-            class="text-[17px]">{{ block.settings.step_text }}</h2>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
 </div>
 <div
   class="swiper product_usage_swiper">
