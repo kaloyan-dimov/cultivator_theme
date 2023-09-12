@@ -11,7 +11,7 @@
     </div>
     <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)] overflow-auto">
       <div class="ajax_cart_products">
-      {% if cart.item_count > 0 %}
+        {% if cart.item_count > 0 %}
           {% for item in cart.items %}
             <div class="ajax_cart_product">
               <div class="ajax_cart_product_container">
@@ -28,7 +28,10 @@
                   <h3>{{ item.final_line_price | money }}</h3>
                 </div>
               </div>
-              <div class="ajax_cart_quantity" data-id="{{ item.variant.id }}" data-quantity="{{ item.quantity }}"> 
+              <div
+                class="ajax_cart_quantity"
+                data-id="{{ item.variant.id }}"
+                data-quantity="{{ item.quantity }}">
                 <h4 class="remove_all">remove</h4>
                 <div class="add_remove_quantity">
                   <div class="remove_quantity">-</div>
@@ -38,20 +41,19 @@
               </div>
             </div>
           {% endfor %}
-          {% else %}
+        {% else %}
           <h2>Your cart is empty</h2>
         {% endif %}
-        </div>
       </div>
-      <div class="ajax_cart_recommended"></div>
     </div>
-    <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white border-t border-[#E6DFDB]">
-      <div class="flex justify-between">
-        <h2>Estimated total:</h2>
-        <h2 class="cart_subtotal">{{ cart.total_price | money }}</h2>
-      </div>
-      <h3>shipping and discounts calculated at checkout</h3>
-      <button class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</button>
+    <div class="ajax_cart_recommended"></div>
+  </div>
+  <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white border-t border-[#E6DFDB]">
+    <div class="flex justify-between">
+      <h2>Estimated total:</h2>
+      <h2 class="cart_subtotal">{{ cart.total_price | money }}</h2>
     </div>
+    <h3>shipping and discounts calculated at checkout</h3>
+    <button class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</button>
   </div>
 </div>
