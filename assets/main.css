@@ -935,9 +935,6 @@ video {
 .w-\[115px\] {
   width: 115px;
 }
-.w-\[146px\] {
-  width: 146px;
-}
 .w-\[150px\] {
   width: 150px;
 }
@@ -1041,6 +1038,9 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+.min-w-\[146px\] {
+  min-width: 146px;
 }
 .min-w-\[29\%\] {
   min-width: 29%;
