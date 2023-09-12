@@ -52,7 +52,16 @@
       </div>
       <h2 class="text-[18px]">{{ product.title }}</h2>
       <h3 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h3>
-
+      <h3>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h3>
+      <h3 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
+        <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
+        </span>
+        |
+        {% assign offer_price = product.price %}
+        {% assign max_price = product.compare_at_price | times: 1.0 %}
+        {% assign discount = offer_price | divided_by: max_price %}
+        {{ discount | times: 100 | minus: 100 | round: 2 }} %
+      </h3>
       {% if product.has_only_default_variant %}
         {% else %}
           <div class="flex flex-col gap-[11px] justify-between">
@@ -73,17 +82,6 @@
             <h4 class="option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money_without_trailing_zeros }}</h4>
           </div>
       {% endif %}
-      <h3>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h3>
-      <h3 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
-        <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
-        </span>
-        |
-        {% assign offer_price = product.price %}
-        {% assign max_price = product.compare_at_price | times: 1.0 %}
-        {% assign discount = offer_price | divided_by: max_price %}
-        {{ discount | times: 100 | minus: 100 | round: 2 }} %
-      </h3>
-      <div class="review_only_stars"></div>
     </div>
 
     <form
