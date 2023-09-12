@@ -2234,7 +2234,7 @@ video {
   background-color: rgba(1, 1, 1, 0);
   transform-origin: center center;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart {
   transform: scaleX(0);
@@ -2249,7 +2249,7 @@ video {
   background-color: rgba(1, 1, 1, 0.4);
   transform-origin: center center;
   opacity: 1;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .ajax_cart_container.active .ajax_cart {
   transform: scaleX(1);
