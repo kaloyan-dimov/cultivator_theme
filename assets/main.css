@@ -1861,6 +1861,9 @@ video {
     transition: all 0.25s;
   }
 }
+.product_usage_swiper {
+  position: relative;
+}
 .product_usage_swiper .swiper-wrapper {
   height: 514px;
 }
@@ -1870,7 +1873,6 @@ video {
 }
 .product_usage_swiper .swiper-button-prev,
 .product_usage_swiper .swiper-button-next {
-  display: none;
   position: absolute;
   top: 100%;
   height: 20px;
