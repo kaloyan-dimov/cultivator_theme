@@ -51,7 +51,7 @@
         <div>tag</div>
         {{ product.handle }}<br>
         {{ product.selected_variant.id }}<br>
-        {% if product.selected_variant %}
+        {% if product.selected_variant == nil %}
           has variant
         {% else %}
           has no variant
@@ -85,6 +85,7 @@
                   name="product_variant"
                   {% if variant.id == product.selected_variant.id %}
                   checked
+                  {% else if product.selected_variant %}
                   {% endif %}>
                 <label for="{{ variant.id }}" class="text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</label>
               </div>
