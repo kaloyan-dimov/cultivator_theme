@@ -1,39 +1,24 @@
-<div
-  class="ajax_cart_container fixed w-full h-full left-[0] top-[0] z-[2]">
-  <div
-    class="ajax_cart_background absolute w-full h-full z-[1] eft-[0] top-[0] bg-black bg-opacity-40"></div>
-  <div
-    class="ajax_cart absolute top-[0] right-[0] w-full h-full bg-[#FBF9F9] z-[2]">
-    <div
-      class="flex items-center justify-between h-[68px] px-[16px] border-b border-[#E6DFDB]">
-      <div
-        class="flex gap-[4px]">
+<div class="ajax_cart_container fixed w-full h-full left-[0] top-[0] z-[2]">
+  <div class="ajax_cart_background absolute w-full h-full z-[1] eft-[0] top-[0] bg-black bg-opacity-40"></div>
+  <div class="ajax_cart absolute top-[0] right-[0] w-full h-full bg-[#FBF9F9] z-[2]">
+    <div class="flex items-center justify-between h-[68px] px-[16px] border-b border-[#E6DFDB]">
+      <div class="flex gap-[4px]">
         <h2>cart</h2>
-        <h2
-          class="cart_item_count">{{ cart.item_count }}</h2>
+        <h2 class="cart_item_count">{{ cart.item_count }}</h2>
         <h2>items</h2>
       </div>
-      <div
-        class="ajax_cart_close">X</div>
+      <div class="ajax_cart_close">X</div>
     </div>
-    <div
-      class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)] overflow-auto">
+    <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)] overflow-auto">
       {% if cart.item_count > 0 %}
-        <div
-          class="ajax_cart_products">
+        <div class="ajax_cart_products">
           {% for item in cart.items %}
-            <div
-              class="ajax_cart_product">
-              <div
-                class="ajax_cart_product_container">
-                <div
-                  class="ajax_cart_product_image">
-                  <img
-                    src="{{ item.image | img_url }}"
-                    alt="">
+            <div class="ajax_cart_product">
+              <div class="ajax_cart_product_container">
+                <div class="ajax_cart_product_image">
+                  <img src="{{ item.image | img_url }}" alt="">
                 </div>
-                <div
-                  class="ajax_cart_product_info">
+                <div class="ajax_cart_product_info">
                   <h3>{{ item.product.title }}</h3>
                   <h3>
                     {% if item.product.has_only_default_variant %}
@@ -43,39 +28,26 @@
                   <h3>{{ item.final_line_price | money }}</h3>
                 </div>
               </div>
-              <div
-                class="ajax_cart_quantity"
-                data-id="{{ item.variant.id }}">
-                <h4
-                  class="remove_all">remove</h4>
-                <div
-                  class="add_remove_quantity">
-                  <div
-                    class="remove_quantity">-</div>
-                  <input
-                    class="item_quantity"
-                    value="{{ item.quantity }}" />
-                  <div
-                    class="add_quantity">+</div>
+              <div class="ajax_cart_quantity" data-id="{{ item.variant.id }}">
+                <h4 class="remove_all">remove</h4>
+                <div class="add_remove_quantity">
+                  <div class="remove_quantity">-</div>
+                  <input class="item_quantity" value="{{ item.quantity }}" />
+                  <div class="add_quantity">+</div>
                 </div>
               </div>
             </div>
           {% endfor %}
         </div>
-        <div
-          class="ajax_cart_recommended"></div>
+        <div class="ajax_cart_recommended"></div>
       </div>
-      <div
-        class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white">
-        <div
-          class="flex justify-between">
+      <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white">
+        <div class="flex justify-between">
           <h2>Estimated total:</h2>
-          <h2
-            class="cart_subtotal">{{ cart.total_price | money }}</h2>
+          <h2 class="cart_subtotal">{{ cart.total_price | money }}</h2>
         </div>
         <h3>shipping and discounts calculated at checkout</h3>
-        <button
-          class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</button>
+        <button class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</button>
       </div>
     </div>
   {% else %}
