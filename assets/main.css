@@ -1871,6 +1871,7 @@ video {
   height: 514px;
 }
 .product_usage_swiper .swiper-wrapper .swiper-slide {
+  display: flex;
   width: 326px;
 }
 
