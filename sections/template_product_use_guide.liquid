@@ -61,10 +61,13 @@
     class="swiper-wrapper">
     {% for block in section.blocks %}
       <div
-        class="swiper-slide bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
-        <h2>step {{ forloop.index }}</h2>
-        <h2
-          class="text-[17px]">{{ block.settings.step_text }}</h2>
+        class="swiper-slide flex flex-col justify-between bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
+        <div>
+          <h2
+            class="mb-[8px]">step {{ forloop.index }}</h2>
+          <h2
+            class="text-[17px]">{{ block.settings.step_text }}</h2>
+        </div>
         <div
           class="w-[278px] h-[170px] overflow-hidden rounded-[20px]">
           <img
