@@ -55,9 +55,12 @@
     class="flex flex-col lg:flex-row w-full border border-[#E6DFDB] bg-white rounded-[20px]">
     <div
       class="w-1/2 px-[24px] py-[42px] ">
-      {% if section.settings.section_title != null %}
-        {{ section.settings.section_title }}
-      {% endif %}
+      <div
+        class="sticky top-[50%]">
+        {% if section.settings.section_title != null %}
+          {{ section.settings.section_title }}
+        {% endif %}
+      </div>
     </div>
     <div
       class="flex flex-col w-1/2 py-[42px] px-[24px] border-b lg:border-r border-[#E6DFDB] gap-[32px]">
