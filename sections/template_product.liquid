@@ -69,12 +69,16 @@
               <div
                 data-id="{{ variant.id }}"
                 data-price="{{ variant.price | money_without_trailing_zeros }}"
-                class="
-                add_option min-h-[56px] cursor-pointer border-b border-[#E6DFDB] last:border-b-0 flex items-center p-[16px]
-                {% if forloop.index == 1 %}
-                  active
-                {% endif %}">
-                <h2>{{ variant.option1 }} - {{ variant.price | money }}</div>
+                class="add_option min-h-[56px] cursor-pointer border-b border-[#E6DFDB] last:border-b-0 flex items-center p-[16px]">
+                <input
+                  type="radio"
+                  id="{{ variant.id }}"
+                  name="drone"
+                  {% if forloop.index == 1 %}
+                  checked
+                  {% endif %}>
+                <label for="{{ variant.id }}">{{ variant.option1 }} - {{ variant.price | money }}</label>
+                <h2></div>
               </h2>
             {% endfor %}
           </div>
