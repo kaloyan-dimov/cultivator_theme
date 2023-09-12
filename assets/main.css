@@ -914,6 +914,9 @@ video {
 .min-h-\[562px\] {
   min-height: 562px;
 }
+.min-h-\[56px\] {
+  min-height: 56px;
+}
 .min-h-\[574px\] {
   min-height: 574px;
 }
@@ -1666,11 +1669,6 @@ video {
   --tw-text-opacity: 1;
   color: rgba(252, 165, 165, 1);
   color: rgba(252, 165, 165, var(--tw-text-opacity));
-}
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, 1);
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
 .text-red-600 {
   --tw-text-opacity: 1;
