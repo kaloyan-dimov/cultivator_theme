@@ -49,13 +49,13 @@
         <div>tag</div>
         <div>tag</div>
         <div>tag</div>
-        {{ product.handle }}
+        {{ product.handle }}<br>
+        {{ product.selected_or_first_available_variant }}
       </div>
       <h1 class="text-[18px]">{{ product.title }}</h1>
       <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
       <h2 class="text-[14px]">{{ product.price | money_without_trailing_zeros }} |
-        <span
-          class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
+        <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
         </span>
         |
         {% assign offer_price = product.price %}
@@ -66,7 +66,8 @@
       <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
         {% else %}
-          <div class="flex flex-col border border-[#E6DFDB]">
+          <div
+            class="flex flex-col border border-[#E6DFDB]">
             {% for variant in product.variants %}
               <div
                 data-id="{{ variant.id }}"
