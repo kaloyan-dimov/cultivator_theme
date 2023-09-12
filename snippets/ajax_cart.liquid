@@ -10,8 +10,8 @@
       <div class="ajax_cart_close">X</div>
     </div>
     <div class="absolute w-full top-[68px] left-[0px] h-[calc(100%-250px)] overflow-auto">
-      <div class="ajax_cart_products">
       {% if cart.item_count > 0 %}
+        <div class="ajax_cart_products">
           {% for item in cart.items %}
             <div class="ajax_cart_product">
               <div class="ajax_cart_product_container">
@@ -38,11 +38,10 @@
               </div>
             </div>
           {% endfor %}
-          {% else %}
-          </div>
-        <h2>Your cart is empty</h2>
+        </div>
+      {% else %}
+        <div class="ajax_cart_products">Your cart is empty</div>
       {% endif %}
-      </div>
       <div class="ajax_cart_recommended"></div>
     </div>
     <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white border-t border-[#E6DFDB]">
