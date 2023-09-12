@@ -757,9 +757,6 @@ video {
 .h-\[1183px\] {
   height: 1183px;
 }
-.h-\[152px\] {
-  height: 152px;
-}
 .h-\[160px\] {
   height: 160px;
 }
@@ -940,9 +937,6 @@ video {
 }
 .w-\[150px\] {
   width: 150px;
-}
-.w-\[152px\] {
-  width: 152px;
 }
 .w-\[159px\] {
   width: 159px;
@@ -2465,26 +2459,6 @@ video {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.usage_guide_list {
-  counter-reset: section;
-}
-.usage_guide_list li {
-  list-style: none;
-  cursor: pointer;
-}
-.usage_guide_list li .list_title h2 {
-  position: relative;
-  transition: all 0.5s;
-}
-.usage_guide_list li .list_title h2::after {
-  content: "0" counter(section);
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  counter-increment: section;
 }
 
 .search_container .search_text {
