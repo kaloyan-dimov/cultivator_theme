@@ -1,37 +1,34 @@
 <div
-  class="section mt-[64px]">
-  <div
-    class="usage_guide_video w-full aspect-video rounded-[24px] mb-[24px] overflow-hidden">
-    {{ section.settings.usage_guide_video | video_tag: autoplay: true, loop: true }}
-  </div>
-  <h2
-    class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
-    {% if section.settings.title_image != null %}
-      <span
-        class="w-[50px] h-[50px]">
-        <img
-          class="h-[42px] inline-block"
-          src="{{ section.settings.title_image | img_url: 'master'}}"
-          alt="">
-      </span>
-    {% endif %}
-    {% comment %} {% endcomment %}
-    {% if section.settings.section_title != null %}
-      {{ section.settings.section_title }}
-    {% endif %}
-    {% comment %} {% endcomment %}
-    {% if section.settings.title_image != null %}
-      <span
-        class="w-[50px] h-[50px]">
-        <img
-          class="h-[42px] inline-block"
-          src="{{ section.settings.title_image | img_url: 'master'}}"
-          alt="">
-      </span>
-      {% comment %} {% endcomment %}
-    {% endif %}
-  </h2>
+  class="usage_guide_video w-full aspect-video rounded-[24px] mb-[24px] overflow-hidden">
+  {{ section.settings.usage_guide_video | video_tag: autoplay: true, loop: true }}
 </div>
+<h2
+  class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
+  {% if section.settings.title_image != null %}
+    <span
+      class="w-[50px] h-[50px]">
+      <img
+        class="h-[42px] inline-block"
+        src="{{ section.settings.title_image | img_url: 'master'}}"
+        alt="">
+    </span>
+  {% endif %}
+  {% comment %} {% endcomment %}
+  {% if section.settings.section_title != null %}
+    {{ section.settings.section_title }}
+  {% endif %}
+  {% comment %} {% endcomment %}
+  {% if section.settings.title_image != null %}
+    <span
+      class="w-[50px] h-[50px]">
+      <img
+        class="h-[42px] inline-block"
+        src="{{ section.settings.title_image | img_url: 'master'}}"
+        alt="">
+    </span>
+    {% comment %} {% endcomment %}
+  {% endif %}
+</h2>
 <div
   class="swiper product_usage_swiper">
   <div
