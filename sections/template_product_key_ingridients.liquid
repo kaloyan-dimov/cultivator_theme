@@ -60,7 +60,29 @@
       {% endif %}
     </div>
     <div
-      class="w-1/2"></div>
+      class="flex flex-col w-1/2 py-[42px] px-[24px] border-b lg:border-r border-[border-[#E6DFDB]">
+      {% for block in section.blocks %}
+        <div
+          class="flex flex-col w-[358px] min-h-[562px] relative space-between rounded-[20px] border border-[#E6DFDB] overflow-hidden">
+          <div
+            class="h-[280px] w-full">
+            <img
+              class="w-full h-full object-cover"
+              src="{{ block.settings.ingridient_image | img_url: 'master'}}"
+              alt="">
+          </div>
+          <h2
+            class="text-[24px] py-[16px] text-center border-b border-[#E6DFDB]">{{ block.settings.ingridient_title }}</h2>
+          <h3
+            class="text-[16px] text-center px-[16px] pt-[16px] max-h-[144px] pb-[55px]">{{ block.settings.ingridient_description }}</h3>
+          <div
+            class="absolute w-full h-[56px] bg-[#FBF9F9] flex items-center justify-center left-[0] bottom-[0]">
+            <h3
+              class="text-[16px] underline">Read more +</h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 {% schema %}
