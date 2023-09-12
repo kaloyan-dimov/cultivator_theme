@@ -2550,11 +2550,13 @@ video {
   transform: rotate(-45deg);
 }
 
-#quantity::-webkit-outer-spin-button #quantity::-webkit-inner-spin-button {
+#quantity {
+  background-color: red;
+}
+#quantity::-webkit-outer-spin-button, #quantity::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   -moz-appearance: textfield;
-  background-color: red;
 }
 #quantity:focus, #quantity:focus-visible {
   border: none;
