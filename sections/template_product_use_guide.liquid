@@ -54,27 +54,29 @@
       </li>
     {% endfor %}
   </ul>
+</div>
+<div
+  class="swiper product_usage_swiper">
   <div
-    class="swiper product_usage_swiper">
-    <div
-      class="swiper-wrapper">
-      {% for block in section.blocks %}
+    class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div
+        class="swiper-slide bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
+        <h2
+          class="text-[17px]">{{ block.settings.step_text }}</h2>
         <div
-          class="swiper-slide bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
-          <h2
-            class="text-[17px]">{{ block.settings.step_text }}</h2>
-          <img
-            class="w-[152px] h-[152px] object-contain self-center"
-            src="{{ block.settings.step_image | img_url: 'master'}}"
-            alt="">
-        </div>
-      {% endfor %}
-    </div>
-    <div
-      class="swiper-button-prev "></div>
-    <div
-      class="swiper-button-next"></div>
+          class="w-[152px] h-[152px]"></div>
+        <img
+          class=" object-contain self-center"
+          src="{{ block.settings.step_image | img_url: 'master'}}"
+          alt="">
+      </div>
+    {% endfor %}
   </div>
+  <div
+    class="swiper-button-prev "></div>
+  <div
+    class="swiper-button-next"></div>
 </div>
 {% schema %}
   {
