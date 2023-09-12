@@ -61,7 +61,7 @@
         {% assign discount = offer_price | divided_by: max_price %}
         {{ discount | times: 100 | minus: 100 | round: 2 }} %
       </h2>
-      <h3 class="text-[#54443B] text-red-500">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
+      <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
         {% else %}
           <div class="flex flex-col border border-[#E6DFDB]">
@@ -74,7 +74,8 @@
                 {% if forloop.index == 1 %}
                   active
                 {% endif %}">
-                {{ variant.option1 }} - {{ variant.price | money }}</div>
+                <h2>{{ variant.option1 }} - {{ variant.price | money }}</div>
+              </h2>
             {% endfor %}
           </div>
       {% endif %}
