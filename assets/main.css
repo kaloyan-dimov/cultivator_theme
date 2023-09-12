@@ -1861,6 +1861,10 @@ video {
     transition: all 0.25s;
   }
 }
+.product_usage_swiper .swiper-slide {
+  width: 326px;
+}
+
 .best_selling_swiper {
   padding-bottom: 41px !important;
 }
