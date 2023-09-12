@@ -2554,6 +2554,7 @@ video {
   -webkit-appearance: none;
   margin: 0;
   -moz-appearance: textfield;
+  background-color: red;
 }
 #quantity:focus, #quantity:focus-visible {
   border: none;
