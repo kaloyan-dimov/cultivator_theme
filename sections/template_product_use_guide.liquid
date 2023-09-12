@@ -65,11 +65,11 @@
         <h2
           class="text-[17px]">{{ block.settings.step_text }}</h2>
         <div
-          class="w-[152px] h-[152px]"></div>
-        <img
-          class=" object-contain self-center"
-          src="{{ block.settings.step_image | img_url: 'master'}}"
-          alt="">
+          class="w-[278px] h-[170px]">
+          <img
+            class="object-cover self-center"
+            src="{{ block.settings.step_image | img_url: 'master'}}"
+            alt=""></div>
       </div>
     {% endfor %}
   </div>
