@@ -2463,9 +2463,8 @@ video {
 .usage_guide_list li .list_title h2 {
   position: relative;
   transition: all 0.5s;
-  padding-left: 30px;
 }
-.usage_guide_list li .list_title h2::before {
+.usage_guide_list li .list_title h2::after {
   content: "0" counter(section);
   font-size: 14px;
   position: absolute;
