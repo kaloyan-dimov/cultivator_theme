@@ -2712,6 +2712,18 @@ video {
   justify-content: center;
   width: 100%;
 }
+.spr-container .spr-header .spr-summary .spr-summary-actions .spr-summary-actions-newreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 56px;
+  font-size: 15px;
+  color: #CCAC71;
+  border: 1px solid #CCAC71;
+  text-transform: uppercase;
+  border-radius: 24px;
+}
 .spr-container .spr-content .spr-reviews {
   display: flex;
   flex-wrap: wrap;
