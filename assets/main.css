@@ -877,9 +877,6 @@ video {
 .h-\[calc\(100\%-250px\)\] {
   height: calc(100% - 250px);
 }
-.h-\[inherit\] {
-  height: inherit;
-}
 .h-auto {
   height: auto;
 }
