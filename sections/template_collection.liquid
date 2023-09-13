@@ -1,4 +1,4 @@
-<div class="section collection_page">
+<div class="section collection_page_listing">
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   {% paginate collection.products by section.settings.product_pagination %}
     <div class="flex flex-wrap gap-y-[32px] gap-x-[16px]">
