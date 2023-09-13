@@ -2719,7 +2719,6 @@ video {
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
   max-width: 437px;
-  padding: 16px;
   border: 1px solid red;
 }
 .spr-container .spr-content .spr-reviews .spr-review:first-child {
