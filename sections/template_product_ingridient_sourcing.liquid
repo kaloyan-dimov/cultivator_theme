@@ -23,32 +23,6 @@
       {% comment %} {% endcomment %}
     {% endif %}
   </h2>
-  <div class="swiper sustainable_sourcing_swiper">
-    <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-        <div class="swiper-slide flex flex-col relative rounded-[80px] overflow-hidden">
-          <div class="h-[340px] w-full">
-            <img
-              class="w-full h-full object-cover"
-              src="{{ block.settings.ingridient_image | img_url: 'master'}}"
-              alt="">
-          </div>
-          <div class="absolute top-[316px] rounded-full w-[48px] h-[48px] overflow-hidden left-[calc(50%-24px)]">
-            <img
-              src="//cdn.shopify.com/static/images/flags/{{ block.settings.ingridient_country_code | downcase }}.svg?width=32"
-              alt=""
-              srcset="//cdn.shopify.com/static/images/flags/{{ block.settings.ingridient_country_code | downcase }}.svg?width=32 32w"
-              class="w-full h-full object-cover">
-          </div>
-          <div class="h-[160px] flex flex-col justify-center items-center bg-white border-b border-l border-r border rounded-b-[80px] border-[#E6DFDB]">
-            <h2 class="text-[24px]">{{ block.settings.ingridient_title }}</h2>
-            <h3 class="text-[18px]">{{ block.settings.ingridient_country_name }}</h3>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
   <div class="flex flex-wrap gap-[16px]">
     {% for block in section.blocks %}
       <div class="flex flex-col justify-between w-[358px] sm:w-[316px] h-[417px] rounded-[48px] border border-[#E6DFDB] overflow-hidden">
