@@ -20,16 +20,30 @@
       </div>
     </div>
   </div>
-  <embed
-    class="pdf_embed"
-    src="{{ section.settings.pdf_url }}"
-    type="application/pdf" />
 </div>
 <a
   href="{{ section.settings.pdf_url }}"
   target="_blank"
   rel="noopener noreferrer">Download PDF Link</a>
 
+<div class="section">
+  <div class="flex flex-col md:flex-row md:h-[668px] justify-between w-full border border-[#E6DFDB] rounded-[20px] overflow-hidden">
+    <div class="w-full h-[420px]">
+      <img
+        class="w-full h-full object-cover"
+        src="{{ section.settings.background_image | img_url: 'master'}}"
+        alt="">
+    </div>
+    <div class="flex flex-col justify-center items-center w-full h-[460px] border- border-[#E6DFDB] px-[19px] gap-[8px]">
+      <h2 class="w-full text-center">{{ section.settings.clinically_safe_title }}</h2>
+      <a
+        class="w-full underline"
+        href="{{ section.settings.pdf_url }}"
+        target="_blank"
+        rel="noopener noreferrer">View Certification</a>
+    </div>
+  </div>
+</div>
 {% schema %}
   {
     "name": "Clinically Safe Product",
@@ -42,10 +56,6 @@
         "type": "image_picker",
         "label": "Background Image",
         "id": "background_image"
-      }, {
-        "type": "image_picker",
-        "label": "Overlay Icon",
-        "id": "overlay_icon"
       }, {
         "type": "url",
         "label": "Url to pdf file",
