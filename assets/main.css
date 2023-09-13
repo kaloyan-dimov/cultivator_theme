@@ -1876,7 +1876,7 @@ video {
 .product_usage_swiper .swiper-button-prev,
 .product_usage_swiper .swiper-button-next {
   position: absolute;
-  top: 100%;
+  top: calc(100% - 25px);
   height: 48px;
   width: 57px;
   border: 1px solid #54443B;
