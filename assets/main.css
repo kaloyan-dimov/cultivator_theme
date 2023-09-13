@@ -1084,6 +1084,9 @@ video {
 .max-w-\[400px\] {
   max-width: 400px;
 }
+.max-w-\[425px\] {
+  max-width: 425px;
+}
 .max-w-\[450px\] {
   max-width: 450px;
 }
@@ -1538,6 +1541,10 @@ video {
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .pb-4 {
   padding-bottom: 1rem;

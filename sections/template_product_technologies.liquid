@@ -23,9 +23,9 @@
       {% comment %} {% endcomment %}
     {% endif %}
   </h2>
-  <div class="flex flex-col gap-[24px]">
+  <div class="flex flex-wrap gap-[24px]">
     {% for block in section.blocks %}
-      <div class="flex gap-[16px] items-center">
+      <div class="flex gap-[16px] items-center justify-center w-full max-w-[425px] min-h-[201px] py-[8px] px-[24px]">
         <div class="rounded-[34px] h-[95px] w-[78px] overflow-hidden">
           {% if block.settings.technology_image != null %}
             <img
