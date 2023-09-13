@@ -12,7 +12,7 @@
           "type": "section",
           "repeater": "{{ collection.metafields.custom.image_title_paragraph.value }}",
           "settings": {
-            "image_right": false,
+            "image_right": true,
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
             "paragraph": "{{ block.repeater.paragraph.value }}"
