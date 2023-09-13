@@ -28,7 +28,21 @@
     },
     "main": {
       "type": "template_collection",
+      "blocks": {
+        "83622b93-254e-441f-876a-a85875166829": {
+          "type": "section",
+          "repeater": "{{ collection.metafields.custom.faq_questions.value }}",
+          "settings": {
+            "title": "",
+            "paragraph": ""
+          }
+        }
+      },
+      "block_order": [
+        "83622b93-254e-441f-876a-a85875166829"
+      ],
       "settings": {
+        "section_title": "",
         "product_pagination": 4
       }
     }
