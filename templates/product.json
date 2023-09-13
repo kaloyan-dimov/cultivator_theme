@@ -51,15 +51,6 @@
         "section_title": "Sustainable        ingredients sourcing - no no harsh chemicals, parabens, SLSs or fillers."
       }
     },
-    "clinically_safe": {
-      "type": "template_product_clinically_safe",
-      "settings": {
-        "clinically_safe_title": "Clinically Safe Product",
-        "background_image": "shopify:\/\/shop_images\/Clinically_safe_image.png",
-        "overlay_icon": "shopify:\/\/shop_images\/Clinically_safe_icon_20e939be-f5f6-4265-9379-d4353858eebe.png",
-        "pdf_url": "{{ product.metafields.custom.clinically_safe_product_file.value.link_to_clinically_safe_product_file.value }}"
-      }
-    },
     "ingridient_sourcing": {
       "type": "template_product_ingridient_sourcing",
       "blocks": {
@@ -99,6 +90,15 @@
       "settings": {
         "section_title": "Green technology",
         "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+      }
+    },
+    "clinically_safe": {
+      "type": "template_product_clinically_safe",
+      "settings": {
+        "clinically_safe_title": "Clinically Safe Product",
+        "background_image": "shopify:\/\/shop_images\/Clinically_safe_image.png",
+        "overlay_icon": "shopify:\/\/shop_images\/Clinically_safe_icon_20e939be-f5f6-4265-9379-d4353858eebe.png",
+        "pdf_url": "{{ product.metafields.custom.clinically_safe_product_file.value.link_to_clinically_safe_product_file.value }}"
       }
     },
     "169320605971fdd3ff": {
@@ -170,9 +170,9 @@
     "16921968550071b76a",
     "usage_guilde",
     "ingridients",
-    "clinically_safe",
     "ingridient_sourcing",
     "product_technologies",
+    "clinically_safe",
     "169320605971fdd3ff",
     "8d395340-5ea1-4a17-ba2e-d76f4275198d",
     "f437be0a-2e06-48d2-874c-e71e4b5e4ebe"
