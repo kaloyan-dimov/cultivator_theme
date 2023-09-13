@@ -1,0 +1,33 @@
+{% schema %}
+  {
+    "name": "Image, Title, Paragraph",
+    "settings": [
+      {
+        "type": "checkbox",
+        "label": "Display Image on Left Side",
+        "id": "image_left"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Image, Title, Paragraph",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+          }, {
+            "type": "text",
+            "label": "Title",
+            "id": "title"
+          }, {
+            "type": "text",
+            "label": "Paragraph",
+            "id": "paragraph"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
