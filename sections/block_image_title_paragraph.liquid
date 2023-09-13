@@ -5,15 +5,13 @@
   {% for block in section.blocks %}
     checkbox {{ block.image_right }}
     <div class="flex flex-col md:flex-row w-full border border-[#E6DFDB] rounded-[20px]">
-      <div class="w-full md:w-[491px] md:rounded-[240px] overflow-hidden shrink-0">
-        <div class="relative w-full h-[570px] sm:h-[671px] mb-[64px]">
-          {% if block.settings.image != null %}
-            <img
-              class="w-full h-full object-cover"
-              src="{{ block.settings.image | img_url: 'master'}}"
-              alt="">
-          {% endif %}
-        </div>
+      <div class="w-full md:w-[491px] h-[570px] sm:h-[671px] md:rounded-[240px] overflow-hidden shrink-0">
+        {% if block.settings.image != null %}
+          <img
+            class="w-full h-full object-cover"
+            src="{{ block.settings.image | img_url: 'master'}}"
+            alt="">
+        {% endif %}
       </div>
       <div class="flex flex-col text-center md:text-left bg-white rounded-[120px] md:rounded-[0] md:bg-[none]">
         <h2 class="text-[24px]">{{ block.settings.title }}
