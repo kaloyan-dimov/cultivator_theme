@@ -1861,8 +1861,10 @@ video {
   }
 }
 .product_usage_swiper {
+  padding-bottom: 88px !important;
+}
+.product_usage_swiper {
   position: relative;
-  padding-bottom: 88px;
 }
 .product_usage_swiper .swiper-wrapper {
   height: 514px;
