@@ -2695,17 +2695,17 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
-.spr-container .spr-header .spr-starrating,
-.spr-container .spr-header .spr-summary-caption {
+.spr-container .spr-header .spr-summary {
+  flex-wrap: wrap;
+  display: flex;
+}
+.spr-container .spr-header .spr-summary .spr-starrating,
+.spr-container .spr-header .spr-summary .spr-summary-caption {
   width: 50%;
 }
-.spr-container .spr-header .spr-summary-actions {
+.spr-container .spr-header .spr-summary .spr-summary-actions {
   width: 100%;
-}
-.spr-container .spr-summary {
-  display: flex;
 }
 .spr-container .spr-content {
   display: block;
