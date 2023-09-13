@@ -10,10 +10,17 @@
       "settings": {
         "product_pagination": 3
       }
+    },
+    "361542e9-5c04-45db-8ca5-86342be173a7": {
+      "type": "block_image_title_paragraph",
+      "settings": {
+        "image_left": true
+      }
     }
   },
   "order": [
     "introduction",
-    "main"
+    "main",
+    "361542e9-5c04-45db-8ca5-86342be173a7"
   ]
 }
