@@ -33,8 +33,8 @@
           "type": "section",
           "repeater": "{{ collection.metafields.custom.faq_questions.value }}",
           "settings": {
-            "title": "",
-            "paragraph": ""
+            "title": "{{ block.repeater.question_title.value }}",
+            "paragraph": "{{ block.repeater.question_answer.value }}"
           }
         }
       },
