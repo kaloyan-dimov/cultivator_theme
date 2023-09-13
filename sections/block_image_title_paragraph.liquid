@@ -5,7 +5,7 @@
   {% for block in section.blocks %}
     checkbox {{ block.image_right }}
     <div class="flex flex-col md:flex-row w-full border border-[#E6DFDB] rounded-[20px] overflow-hidden">
-      <div class="w-full md:w-[491px] h-[570px] sm:h-[671px] sm:rounded-[240px] overflow-hidden shrink-0 border border-[#E6DFDB]">
+      <div class="w-full md:w-[491px] h-[570px] sm:h-[671px] md:rounded-[240px] overflow-hidden shrink-0 border border-[#E6DFDB]">
         {% if block.settings.image != null %}
           <img
             class="w-full h-full object-cover"
@@ -13,7 +13,7 @@
             alt="">
         {% endif %}
       </div>
-      <div class="flex flex-col text-center sm:text-left bg-white rounded-[120px] sm:rounded-[0] sm:bg-transparent py-[48px] px-[24px] sm:px-[64px] justify-center">
+      <div class="flex flex-col text-center md:text-left bg-white rounded-[120px] md:rounded-[0] md:bg-transparent py-[48px] px-[24px] md:px-[64px] justify-center">
         <h2 class="text-[24px]">{{ block.settings.title }}
         </h2>
         <p class="text-[18px]">{{ block.settings.paragraph }}</p>
