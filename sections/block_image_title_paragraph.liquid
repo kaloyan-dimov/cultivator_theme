@@ -3,7 +3,12 @@
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
   {% for block in section.blocks %}
-    {{ forloop.index | modulo: 2 }}
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod == 0 %}
+      even
+    {% else %}
+      odd
+    {% endif %}
     <div class="flex flex-col sm:flex-row w-full border border-[#E6DFDB] rounded-[20px] overflow-hidden">
       <div class="w-full sm:w-[391px] md:w-[441px] lg:w-[491px] h-[420px] sm:h-[671px] sm:rounded-[240px] overflow-hidden shrink-0 border border-[#E6DFDB]">
         {% if block.settings.image != null %}
