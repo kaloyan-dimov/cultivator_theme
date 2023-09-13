@@ -3,7 +3,7 @@
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
   {% for block in section.blocks %}
-    checkbox {{ block.image_right}}
+    checkbox {{ block.image_right }}
     <div class="flex flex-col md:flex-row w-full border border-[#E6DFDB] rounded-[20px]">
       <div class="w-full md:w-[491px]  md:rounded-[240px] overflow-hidden">
         {% if block.settings.image != null %}
@@ -14,9 +14,11 @@
               alt="">
           {% endif %}
           <div class="flex flex-col text-center md:text-left bg-white rounded-[120px] md:rounded-[0] md:bg-[none]">
-            <h2 class="text-[24px]">{{ block.settings.title }} </h2>
+            <h2 class="text-[24px]">{{ block.settings.title }}
+            </h2>
             <p class="text-[18px]">{{ block.settings.paragraph }}</p>
           </div>
+        </div>
       </div>
     </div>
   {% endfor %}
