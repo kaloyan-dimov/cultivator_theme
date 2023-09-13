@@ -49,6 +49,17 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
+  <div class="flex flex-wrap gap-[16px]">
+    {% for block in section.blocks %}
+      <div class="flex flex-col justify-between w-[316px] h-[417px] rounded-[48px] border border-[#E6DFDB]">
+        <div class="h-[260px] w-full border-b border-[#E6DFDB] ">
+          <img
+            class="w-full h-full object-cover"
+            src="{{ block.settings.ingridient_image | img_url: 'master'}}"
+            alt=""></div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% schema %}
