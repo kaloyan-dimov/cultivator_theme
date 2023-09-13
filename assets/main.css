@@ -1876,7 +1876,7 @@ video {
 .product_usage_swiper .swiper-button-prev,
 .product_usage_swiper .swiper-button-next {
   position: absolute;
-  top: calc(100% - 25px);
+  top: calc(100% - 26px);
   height: 48px;
   width: 57px;
   border: 1px solid #54443B;
@@ -2720,6 +2720,9 @@ video {
   width: 100%;
   max-width: 437px;
   border: 1px solid red;
+}
+.spr-container .spr-content .spr-reviews .spr-review:first-child {
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
