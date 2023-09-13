@@ -1,12 +1,17 @@
 <style>
+  .collection_description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
   h1 {
     font-size: 50px;
     color: black;
   }
 </style>
-<div class="w-full bg-white">
+<div class="w-full bg-white pb-[16px]">
   <div class="section">
-    <div class="collection_description">
+    <div class="collection_description ">
       {{ collection.description }}
     </div>
   </div>
