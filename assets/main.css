@@ -2705,7 +2705,14 @@ video {
   width: 50%;
 }
 .spr-container .spr-header .spr-summary .spr-summary-actions {
+  display: flex;
+  justify-content: center;
   width: 100%;
+}
+.spr-container .spr-header .spr-content .spr-reviews .spr-review {
+  width: 100%;
+  max-width: 437px;
+  border: 1px solid red;
 }
 .spr-container .spr-content {
   display: block;
