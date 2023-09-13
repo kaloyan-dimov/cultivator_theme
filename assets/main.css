@@ -3005,6 +3005,10 @@ video {
     gap: 0;
   }
 
+  .sm\:gap-\[24px\] {
+    gap: 24px;
+  }
+
   .sm\:gap-x-\[0\] {
     -moz-column-gap: 0;
          column-gap: 0;
