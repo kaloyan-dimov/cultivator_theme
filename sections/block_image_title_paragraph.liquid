@@ -4,7 +4,7 @@
   {% include 'section_title' with title_text, title_image %}
   {% for block in section.blocks %}
     checkbox {{ block.image_right }}
-    <div class="flex flex-col md:flex-row w-full border border-[#E6DFDB] rounded-[20px]">
+    <div class="flex flex-col md:flex-row w-full border border-[#E6DFDB] rounded-[20px] overflow-hidden">
       <div class="w-full md:w-[491px] h-[570px] sm:h-[671px] md:rounded-[240px] overflow-hidden shrink-0 border border-[#E6DFDB]">
         {% if block.settings.image != null %}
           <img
