@@ -7,6 +7,19 @@
     },
     "361542e9-5c04-45db-8ca5-86342be173a7": {
       "type": "block_image_title_paragraph",
+      "blocks": {
+        "c0ba433c-a120-4e8e-98bc-8929dea2f657": {
+          "type": "section",
+          "settings": {
+            "image_left": false,
+            "title": "",
+            "paragraph": ""
+          }
+        }
+      },
+      "block_order": [
+        "c0ba433c-a120-4e8e-98bc-8929dea2f657"
+      ],
       "settings": {
         "section_title": "Must Know facts",
         "title_image": "shopify:\/\/shop_images\/Square_flower.png"
