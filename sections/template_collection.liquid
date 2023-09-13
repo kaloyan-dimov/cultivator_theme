@@ -3,7 +3,9 @@
   {% paginate collection.products by section.settings.product_pagination %}
     <div class="flex flex-wrap gap-y-[32px] gap-x-[16px]">
       {% for product in collection.products %}
-        {% include 'product_card' with product, wishlist_array %}
+        <div class="w-[358px] sm:w-[316px]">
+          {% include 'product_card' with product, wishlist_array %}
+        </div>
       {% endfor %}
     </div>
     <div class="pagination flex gap-2">
