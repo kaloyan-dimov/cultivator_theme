@@ -1,24 +1,21 @@
 <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
-  {% if section.settings.title_image != null %}
+  {% if title_image != null %}
     <span class="w-[50px] h-[50px]">
       <img
         class="h-[42px] inline-block"
-        src="{{ section.settings.title_image | img_url: 'master'}}"
+        src="{{ title_image | img_url: 'master'}}"
         alt="">
     </span>
   {% endif %}
-  {% comment %} {% endcomment %}
-  {% if section.settings.section_title != null %}
-    {{ section.settings.section_title }}
+  {% if title_text != null %}
+    {{ title_text }}
   {% endif %}
-  {% comment %} {% endcomment %}
-  {% if section.settings.title_image != null %}
+  {% if title_image != null %}
     <span class="w-[50px] h-[50px]">
       <img
         class="h-[42px] inline-block"
-        src="{{ section.settings.title_image | img_url: 'master'}}"
+        src="{{ title_image | img_url: 'master'}}"
         alt="">
     </span>
-    {% comment %} {% endcomment %}
   {% endif %}
 </h2>
