@@ -1,49 +1,18 @@
-<div
-  class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] overflow-hidden">
+<div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] overflow-hidden">
   {{ section.settings.usage_guide_video | video_tag: autoplay: true, loop: true }}
 </div>
-<h2
-  class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
-  {% if section.settings.title_image != null %}
-    <span
-      class="w-[50px] h-[50px]">
-      <img
-        class="h-[42px] inline-block"
-        src="{{ section.settings.title_image | img_url: 'master'}}"
-        alt="">
-    </span>
-  {% endif %}
-  {% comment %} {% endcomment %}
-  {% if section.settings.section_title != null %}
-    {{ section.settings.section_title }}
-  {% endif %}
-  {% comment %} {% endcomment %}
-  {% if section.settings.title_image != null %}
-    <span
-      class="w-[50px] h-[50px]">
-      <img
-        class="h-[42px] inline-block"
-        src="{{ section.settings.title_image | img_url: 'master'}}"
-        alt="">
-    </span>
-    {% comment %} {% endcomment %}
-  {% endif %}
-</h2>
-<div
-  class="swiper product_usage_swiper">
-  <div
-    class="swiper-wrapper">
+{% assign title_text = section.settings.section_title %}
+{% assign title_image = section.settings.title_image %}
+{% include 'section_title' with title_text, title_image %}
+<div class="swiper product_usage_swiper">
+  <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <div
-        class="swiper-slide flex flex-col justify-between bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
+      <div class="swiper-slide flex flex-col justify-between bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
         <div>
-          <h2
-            class="mb-[8px]">step {{ forloop.index }}</h2>
-          <h2
-            class="text-[17px]">{{ block.settings.step_text }}</h2>
+          <h2 class="mb-[8px]">step {{ forloop.index }}</h2>
+          <h2 class="text-[17px]">{{ block.settings.step_text }}</h2>
         </div>
-        <div
-          class="w-[278px] h-[170px] overflow-hidden rounded-[20px]">
+        <div class="w-[278px] h-[170px] overflow-hidden rounded-[20px]">
           <img
             class="w-full h-full object-contain self-center"
             src="{{ block.settings.step_image | img_url: 'master'}}"
@@ -51,10 +20,8 @@
       </div>
     {% endfor %}
   </div>
-  <div
-    class="swiper-button-prev "></div>
-  <div
-    class="swiper-button-next"></div>
+  <div class="swiper-button-prev "></div>
+  <div class="swiper-button-next"></div>
 </div>
 {% schema %}
   {
