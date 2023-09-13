@@ -1,7 +1,4 @@
 <div class="section">
-  <h1 class="m-auto text-[50px] text-center">This is collection page</h1>
-  <h2>Collection name: {{ collection.title }}</h2>
-  <h2>Products in collection:</h2>
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   {% paginate collection.products by section.settings.product_pagination %}
     <div class="flex flex-wrap gap-y-[32px] gap-x-[16px]">
