@@ -1,28 +1,7 @@
 <div class="section mb-[64px] video_feed">
-  <h2 class="text-center text-[48px] mb-[80px]">
-    {% if section.settings.title_image != null %}
-      <span class="w-[50px] h-[50px]">
-        <img
-          class="h-[42px] inline-block"
-          src="{{ section.settings.title_image | img_url: 'master'}}"
-          alt="">
-      </span>
-    {% endif %}
-    {% comment %} {% endcomment %}
-    {% if section.settings.section_title != null %}
-      {{ section.settings.section_title }}
-    {% endif %}
-    {% comment %} {% endcomment %}
-    {% if section.settings.title_image != null %}
-      <span class="w-[50px] h-[50px]">
-        <img
-          class="h-[42px] inline-block"
-          src="{{ section.settings.title_image | img_url: 'master'}}"
-          alt="">
-      </span>
-      {% comment %} {% endcomment %}
-    {% endif %}
-  </h2>
+  {% assign title_text = section.settings.section_title %}
+  {% assign title_image = section.settings.title_image %}
+  {% include 'section_title' with title_text, title_image %}
 
   <div class="swiper video_feed_swiper">
     <div class="swiper-wrapper">
