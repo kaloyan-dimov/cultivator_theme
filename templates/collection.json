@@ -10,10 +10,12 @@
       "blocks": {
         "c0ba433c-a120-4e8e-98bc-8929dea2f657": {
           "type": "section",
+          "repeater": "{{ collection.metafields.custom.image_title_paragraph.value }}",
           "settings": {
-            "image_left": false,
-            "title": "",
-            "paragraph": ""
+            "image_right": false,
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "paragraph": "{{ block.repeater.paragraph.value }}"
           }
         }
       },
