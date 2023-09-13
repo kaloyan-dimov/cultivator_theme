@@ -3,9 +3,13 @@
     "name": "Image, Title, Paragraph",
     "settings": [
       {
-        "type": "checkbox",
-        "label": "Display Image on Left Side",
-        "id": "image_left"
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }, {
+        "type": "image_picker",
+        "label": "Title Images",
+        "id": "title_image"
       }
     ],
     "blocks": [
@@ -14,6 +18,10 @@
         "name": "Image, Title, Paragraph",
         "settings": [
           {
+            "type": "checkbox",
+            "label": "Display Image on Left Side",
+            "id": "image_left"
+          }, {
             "type": "image_picker",
             "label": "Image",
             "id": "image"
