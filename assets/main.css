@@ -1488,6 +1488,10 @@ video {
   padding-top: 42px;
   padding-bottom: 42px;
 }
+.py-\[48px\] {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -3188,8 +3192,8 @@ video {
     border-color: rgba(234, 226, 219, var(--tw-border-opacity));
   }
 
-  .md\:bg-\[none\] {
-    background-color: none;
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:px-4 {
