@@ -2699,13 +2699,27 @@ video {
   flex-direction: column;
   align-items: center;
 }
+.spr-container .spr-header .spr-header-title {
+  margin-bottom: 8px;
+  line-height: 44px;
+  font-size: 32px;
+}
 .spr-container .spr-header .spr-summary {
   flex-wrap: wrap;
   display: flex;
+  row-gap: 16px;
 }
 .spr-container .spr-header .spr-summary .spr-starrating,
 .spr-container .spr-header .spr-summary .spr-summary-caption {
   width: 50%;
+  display: flex;
+}
+.spr-container .spr-header .spr-summary .spr-starrating {
+  justify-content: end;
+  padding-right: 4px;
+}
+.spr-container .spr-header .spr-summary .spr-summary-caption {
+  padding-left: 4px;
 }
 .spr-container .spr-header .spr-summary .spr-summary-actions {
   display: flex;
