@@ -1,50 +1,21 @@
-<div
-  class="section mb-[64px] relative">
-  <h2
-    class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
-    {% if section.settings.title_image != null %}
-      <span
-        class="w-[50px] h-[50px]">
-        <img
-          class="h-[42px] inline-block"
-          src="{{ section.settings.title_image | img_url: 'master'}}"
-          alt="">
-      </span>
-    {% endif %}
-    {% comment %} {% endcomment %}
-    {% if section.settings.section_title != null %}
-      {{ section.settings.section_title }}
-    {% endif %}
-    {% comment %} {% endcomment %}
-    {% if section.settings.title_image != null %}
-      <span
-        class="w-[50px] h-[50px]">
-        <img
-          class="h-[42px] inline-block"
-          src="{{ section.settings.title_image | img_url: 'master'}}"
-          alt="">
-      </span>
-      {% comment %} {% endcomment %}
-    {% endif %}
-  </h2>
+<div class="section mb-[64px] relative">
+  {% assign title_text = section.settings.section_title %}
+  {% assign title_image = section.settings.title_image %}
+  {% include 'section_title' with title_text, title_image %}
 
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-  <div
-    class="swiper best_selling_swiper">
-    <div
-      class="swiper-wrapper">
+  <div class="swiper best_selling_swiper">
+    <div class="swiper-wrapper">
       {% for block in section.blocks %}
         {% assign sorted_products = block.settings.selected_collection.products | sort: "best-selling" %}
         {% for product in sorted_products limit: block.settings.products_number %}
-          <div
-            class="swiper-slide">
+          <div class="swiper-slide">
             {% include 'product_card' with product, wishlist_array %}
           </div>
         {% endfor %}
       {% endfor %}
     </div>
-    <div
-      class="swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
   </div>
 </div>
 
