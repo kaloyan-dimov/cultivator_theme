@@ -3,11 +3,10 @@
     <span class="w-[50px] h-[50px]">
       <img
         class="h-[42px] inline-block"
-        src="{{ title_image }}"
+        src="{{ title_image | img_url: 'master' }}"
         alt="">
     </span>
   {% endif %}
-  <span class="test">{{ title_image }}</span>
   {% if title_text != null %}
     {{ title_text }}
   {% endif %}
