@@ -2695,15 +2695,17 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
-.spr-container .spr-header .spr-header-title {
-  display: block;
+.spr-container .spr-header .spr-starrating,
+.spr-container .spr-header .spr-summary-caption {
+  width: 50%;
+}
+.spr-container .spr-header .spr-summary-actions {
+  width: 100%;
 }
 .spr-container .spr-summary {
   display: flex;
-}
-.spr-container .spr-summary .spr-summary-actions {
-  display: block;
 }
 .spr-container .spr-content {
   display: block;
