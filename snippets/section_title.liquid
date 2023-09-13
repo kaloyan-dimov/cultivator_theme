@@ -1,13 +1,13 @@
 <h2 class="text-center text-[32px] sm:text-[48px] mb-[48px] w-auto">
-  {{ title_image | img_url: 'master' }}
   {% if title_image != null %}
     <span class="w-[50px] h-[50px]">
       <img
         class="h-[42px] inline-block"
-        src="{{ title_image | img_url: 'master' }}"
+        src="{{ title_image }}"
         alt="">
     </span>
   {% endif %}
+  <span class="test">{{ title_image }}</span>
   {% if title_text != null %}
     {{ title_text }}
   {% endif %}
