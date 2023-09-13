@@ -3147,6 +3147,10 @@ video {
     width: 320px;
   }
 
+  .md\:w-\[491px\] {
+    width: 491px;
+  }
+
   .md\:w-\[50\%\] {
     width: 50%;
   }
@@ -3157,10 +3161,6 @@ video {
 
   .md\:w-\[67\.91\%\] {
     width: 67.91%;
-  }
-
-  .md\:w-\[821px\] {
-    width: 821px;
   }
 
   .md\:max-w-\[422px\] {
