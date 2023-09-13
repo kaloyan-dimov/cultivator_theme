@@ -2691,6 +2691,11 @@ video {
   padding: 16px;
   border: none;
 }
+.spr-container .spr-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .spr-container .spr-header .spr-header-title {
   display: block;
 }
