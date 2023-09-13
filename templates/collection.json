@@ -5,22 +5,23 @@
       "settings": {
       }
     },
+    "361542e9-5c04-45db-8ca5-86342be173a7": {
+      "type": "block_image_title_paragraph",
+      "settings": {
+        "section_title": "Must Know facts",
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+      }
+    },
     "main": {
       "type": "template_collection",
       "settings": {
         "product_pagination": 3
       }
-    },
-    "361542e9-5c04-45db-8ca5-86342be173a7": {
-      "type": "block_image_title_paragraph",
-      "settings": {
-        "image_left": true
-      }
     }
   },
   "order": [
     "introduction",
-    "main",
-    "361542e9-5c04-45db-8ca5-86342be173a7"
+    "361542e9-5c04-45db-8ca5-86342be173a7",
+    "main"
   ]
 }
