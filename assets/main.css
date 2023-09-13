@@ -1892,11 +1892,13 @@ video {
   background-repeat: no-repeat;
   background-position: center;
 }
-.product_usage_swiper .swiper-button-prev::after {
-  transform: rotate(180deg);
+.product_usage_swiper .swiper-button-prev {
   left: auto;
   left: initial;
   right: 145px;
+}
+.product_usage_swiper .swiper-button-prev::after {
+  transform: rotate(180deg);
 }
 .product_usage_swiper .swiper-button-next {
   right: 64px;
