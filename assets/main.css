@@ -2712,6 +2712,11 @@ video {
   justify-content: center;
   width: 100%;
 }
+.spr-container .spr-content .spr-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
   max-width: 437px;
