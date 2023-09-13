@@ -2,16 +2,11 @@
   <h1 class="m-auto text-[50px] text-center">This is collection page</h1>
   <h2>Collection name: {{ collection.title }}</h2>
   <h2>Products in collection:</h2>
+  {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   {% paginate collection.products by section.settings.product_pagination %}
     <div class="flex flex-row gap-[25px]">
       {% for product in collection.products %}
-        <div class="colelction-product flex flex-col">
-          <h2>{{ product.title }}</h2>
-          <img
-            class="w-[250px] h-[250px]"
-            src="{{ product.featured_image | img_url}}"
-            alt="">
-        </div>
+        {% include 'product_card' with product, wishlist_array %}
       {% endfor %}
     </div>
     <div class="pagination flex gap-2">
