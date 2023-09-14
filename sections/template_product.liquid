@@ -146,13 +146,13 @@
             {{ product.metafields.custom.product_accordion_faq }}
             {% assign test_test = product.metafields.custom.product_accordion_faq %}
             {% assign test_test_test = test_test | split: ',' %}
-            {% for sss in test_test %}
+            {% for sss in test_test_test %}
               {{ sss }}
             {% endfor %}
             {% for entry in product.metafields.custom.product_accordion_faq %}
               test
             {% endfor %}
-            ssss
+            sssss
           </div>
         </div>
       </li>
