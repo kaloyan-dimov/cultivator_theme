@@ -1,21 +1,25 @@
 <div class="faq_page w-full">
   <h1 class="m-auto text-[50px] text-center">FAQs</h1>
-  <div class="section py-[12px] mx-[auto]">
-    <ul class="account_navigation">
-      <li class="{% if selected == 'account' %}active{% endif %}">
-        <a href="/account">
-          <h3>ALL</h3>
+  <ul class="account_navigation mx-[auto]">
+    <li class="{% if selected == 'account' %}active{% endif %}">
+      <a href="/account">
+        <h3>ALL</h3>
+      </a>
+    </li>
+    {% assign categories = ["all"] %}
+    {% for block in section.blocks %}
+      {% assign category = block.settings.category %}
+      {% if category != blank %}
+        {% assign categories = categories | push: category %}
+      {% endif %}
+      <li class="{% if selected == 'orders' %}active{% endif %}">
+        <a href="/pages/orders">
+          <h3>{{ block.settings.category }}</h3>
         </a>
       </li>
-      {% for block in section.blocks %}
-        <li class="{% if selected == 'orders' %}active{% endif %}">
-          <a href="/pages/orders">
-            <h3>ORDERS</h3>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+    {% endfor %}
+  </ul>
+  {{ categories }}
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
     {% for block in section.blocks %}
       <li class="border-b border-[#E6DFDB]" data-category="{{ block.settings.category }}">
