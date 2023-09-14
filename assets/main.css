@@ -2894,6 +2894,30 @@ video {
   font-size: 50px;
   color: black;
 }
+
+.faq_navigation {
+  display: flex;
+  gap: 8px;
+}
+.faq_navigation li {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px solid #B3A094;
+  border-radius: 16px;
+  gap: 6px;
+  color: #B3A094;
+}
+.faq_navigation li h3 {
+  font-size: 15px;
+}
+.faq_navigation li.active {
+  background-color: #B3A094;
+  color: white;
+}
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
 }
