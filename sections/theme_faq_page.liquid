@@ -9,7 +9,7 @@
     {% assign categories = ["all"] %}
     {% for block in section.blocks %}
       {% assign category = block.settings.category %}
-      {% if category != blank %}
+      {% if category != null %}
         {% for assigned_category in categories %}
           {% if assigned_category == category %}
             {% assign categories = categories | push: category %}
