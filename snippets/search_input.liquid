@@ -18,8 +18,7 @@
     <div class="search_results flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap">
       {% for product in settings.trending_products %}
         <div class="w-[316px]">
-          {{ product.handle }}
-          {% include 'product_card' with product %}
+          {% include 'product_card' with product, wishlist_array %}
         </div>
       {% endfor %}
     </div>
