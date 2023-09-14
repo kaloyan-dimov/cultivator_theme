@@ -2,6 +2,19 @@
   "sections": {
     "main": {
       "type": "template_product",
+      "blocks": {
+        "eaf24640-da0c-4713-859a-9b23663fa345": {
+          "type": "Product_FAQ",
+          "repeater": "{{ product.metafields.custom.product_accordion_faq.value }}",
+          "settings": {
+            "faq_title": "{{ block.repeater.question_title.value }}",
+            "faq_answer": "{{ block.repeater.question_answer.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "eaf24640-da0c-4713-859a-9b23663fa345"
+      ],
       "settings": {
       }
     },
@@ -97,7 +110,6 @@
       "settings": {
         "clinically_safe_title": "Clinically Safe Product",
         "background_image": "shopify:\/\/shop_images\/Clinically_safe_image.png",
-        "overlay_icon": "shopify:\/\/shop_images\/Clinically_safe_icon_20e939be-f5f6-4265-9379-d4353858eebe.png",
         "pdf_url": "{{ product.metafields.custom.clinically_safe_product_file.value.link_to_clinically_safe_product_file.value }}"
       }
     },
