@@ -2507,6 +2507,26 @@ video {
   font-size: 14px;
   margin-left: 16px;
 }
+.search_container .search_trending_products {
+  max-height: 0;
+  transform: scaleY(0);
+  transition: all 0.25s;
+}
+.search_container .search_trending_products.active {
+  transform: scaleY(1);
+  max-height: 3000px;
+  transition: all 0.25s;
+}
+.search_container .search_results {
+  transform: scaleY(0);
+  max-height: 0;
+  transition: all 0.25s;
+}
+.search_container .search_results.active {
+  transform: scaleY(1);
+  max-height: 3000px;
+  transition: all 0.25s;
+}
 .search_container .search_results .search_result {
   position: relative;
   border: 1px solid #D1BEB1;
