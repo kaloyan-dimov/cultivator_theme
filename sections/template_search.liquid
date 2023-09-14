@@ -1,0 +1,9 @@
+<div class="section">
+  <div class="search_trending_products flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center active">
+    {% for product in settings.trending_products %}
+      <div class="w-full max-w-[358px] sm:max-w-[316px]">
+        {% include 'product_card' with product, wishlist_array %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
