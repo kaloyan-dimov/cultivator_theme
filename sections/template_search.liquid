@@ -10,7 +10,7 @@
   {% for result in search.results %}
     {% if result.object_type == "product" %}
         {% assign product = result %}
-        <div class="flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center active">
+        <div class="flex flex-col w-full sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center">
             <div class="w-full max-w-[358px] sm:max-w-[316px]">
                 {% include 'product_card' with product, wishlist_array %}
             </div>
