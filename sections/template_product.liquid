@@ -143,7 +143,8 @@
           </div>
           <div class="list_content pb-[16px]">
             {% for block in section.blocks %}
-              <h2>ASD</h2>
+              <h2>{{ block.settings.faq_title }}</h2>
+              <h3>{{ block.settings.faq_answer }}</h3>
             {% endfor %}
           </div>
         </div>
