@@ -143,8 +143,11 @@
           </div>
           <div class="list_content pb-[16px]">
             <div class="flex flex-col gap-[8px]">
-              {% for block in section.blocks["Product_FAQ"] %}
-                ASD
+              {% for block in section.blocks %}
+                {% if block.type == "Product_FAQ" %}
+
+                  ASD
+                {% endif %}
               {% endfor %}
               {% for block in section.blocks %}
                 {{ block.type }}
