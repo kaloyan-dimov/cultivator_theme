@@ -28,7 +28,7 @@
   </div>
 </header>
 
-{% render "search_input" %}
+{% include "search_input" %}
 
 <header id="mobile_header" class="block md:hidden fixed w-full top-0 left-0 bg-white z-[2]">
   <div class="section flex justify-between py-2 items-center z-[0]">
@@ -39,9 +39,7 @@
     <a href="{{ shop.url }}" class="header_logo w-[76px] h-[65px]"></a>
     <div class="flex gap-4">
       <a href="/wishlist" class="w-[44px] h-[44px] heart_icon"></a>
-      <a
-        href="javascript:void(0);"
-        class="w-[44px] h-[44px] cart_icon cart_icon_mobile"></a>
+      <a href="javascript:void(0);" class="w-[44px] h-[44px] cart_icon cart_icon_mobile"></a>
     </div>
   </div>
   <div class="hamburger fixed left-[24px] top-[19px] z-[2]">
