@@ -158,7 +158,7 @@
             {% else %}
               var is a string
             {% endif %}
-            {% for metaobject in product.custom.product_accordion_faq.values %}
+            {% for metaobject in product.custom.values %}
               {{ metaobject.field }}
               {{ metaobject.field.value }}
             {% endfor %}
