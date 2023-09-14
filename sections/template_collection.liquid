@@ -2,6 +2,24 @@
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
+
+  <ul class="w-full flex flex-col">
+    {% for block in section.blocks %}
+      <li class="border-t border-[#E6DFDB]">
+        <div class="list_item flex flex-col px-[16px]">
+          <div class="list_title h-[64px] flex justify-between items-center">
+            <h2 class="text-[16px]">Description</h2>
+            <div class="list_arrow h-[32px] w-[32px]"></div>
+          </div>
+          <div class="list_content pb-[16px]">
+            <p>Gemstone pendant, housed in sterling silver, with sterling silver chain</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   {% paginate collection.products by section.settings.product_pagination %}
     <div class="flex flex-wrap gap-y-[32px] gap-x-[16px]">
