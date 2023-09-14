@@ -6,7 +6,7 @@
         <h3>ALL</h3>
       </a>
     </li>
-    {% assign categories = ["all"] %}
+    {% assign categories = "all" %}
     {% for block in section.blocks %}
       {% assign category = block.settings.category %}
       {% if category != null %}
