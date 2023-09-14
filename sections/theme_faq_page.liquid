@@ -1,5 +1,21 @@
-<div class="section">
+<div class="faq_page w-full">
   <h1 class="m-auto text-[50px] text-center">FAQs</h1>
+
+  <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
+    {% for block in section.blocks %}
+      <li class="border-b border-[#E6DFDB]">
+        <div class="list_item flex flex-col px-[16px]">
+          <div class="list_title h-[64px] flex justify-between items-center">
+            <h2 class="text-[16px]">{{ block.settings.title }}</h2>
+            <div class="list_arrow h-[32px] w-[32px]"></div>
+          </div>
+          <div class="list_content pb-[16px]">
+            <p>{{ block.settings.paragraph }}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 {% schema %}
