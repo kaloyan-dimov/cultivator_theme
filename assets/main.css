@@ -2910,6 +2910,7 @@ video {
   border-radius: 16px;
   gap: 6px;
   color: #B3A094;
+  transition: all 0.5s;
 }
 .faq_navigation li h3 {
   font-size: 15px;
@@ -2917,13 +2918,16 @@ video {
 .faq_navigation li.active {
   background-color: #B3A094;
   color: white;
+  transition: all 0.5s;
 }
 
 .faq_questions li {
   transform: scaleY(0);
+  transition: all 0.5s;
 }
 .faq_questions li.active {
   transform: scaleY(1);
+  transition: all 0.5s;
 }
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
