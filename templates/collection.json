@@ -34,7 +34,8 @@
           "repeater": "{{ collection.metafields.custom.faq_questions.value }}",
           "settings": {
             "title": "{{ block.repeater.question_title.value }}",
-            "paragraph": "{{ block.repeater.question_answer.value }}"
+            "paragraph": "{{ block.repeater.question_answer.value }}",
+            "category": "{{ block.repeater.question_category.value }}"
           }
         }
       },
@@ -43,7 +44,6 @@
       ],
       "settings": {
         "section_title": "Must Know Facts",
-        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
         "product_pagination": 4
       }
     }
