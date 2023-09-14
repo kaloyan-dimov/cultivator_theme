@@ -1209,6 +1209,9 @@ video {
 .overflow-y-hidden {
   overflow-y: hidden;
 }
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
 .break-words {
   word-wrap: break-word;
 }
