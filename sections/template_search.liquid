@@ -3,7 +3,7 @@
   {% if search.performed %}
     <h2>search results for "{{ search.terms | escape }}" ({{ search.results | size }})</h2>
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-    <div class="flex flex-col w-full sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center">
+    <div class="flex flex-col w-full sm:flex-row gap-[18px] sm:flex-wrap justify-center">
       {% for result in search.results %}
         {% if result.object_type == "product" %}
           {% assign product = result %}
