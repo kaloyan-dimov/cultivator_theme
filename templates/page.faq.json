@@ -18,9 +18,52 @@
       ],
       "settings": {
       }
+    },
+    "161d0ce9-f184-400f-a195-706e1de62bfb": {
+      "type": "block_banner",
+      "blocks": {
+        "c0626ddf-7330-45fc-95d4-3deb1d3d58d4": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/drop.png",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "ddb4868e-ed06-4382-b2fc-c360a5acd0b4": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/rabbit.png",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "86e74817-ba0b-49c8-a473-ce09c71377e1": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/plant.png",
+            "banner_text": "100% Organic"
+          }
+        },
+        "71a0c080-cd60-4737-92b5-c32cc0e74449": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/hand_heart.png",
+            "banner_text": "Fairly Sourced"
+          }
+        }
+      },
+      "block_order": [
+        "c0626ddf-7330-45fc-95d4-3deb1d3d58d4",
+        "ddb4868e-ed06-4382-b2fc-c360a5acd0b4",
+        "86e74817-ba0b-49c8-a473-ce09c71377e1",
+        "71a0c080-cd60-4737-92b5-c32cc0e74449"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "161d0ce9-f184-400f-a195-706e1de62bfb"
   ]
 }
