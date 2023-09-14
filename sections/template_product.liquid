@@ -142,6 +142,7 @@
             <div class="list_arrow h-[32px] w-[32px]"></div>
           </div>
           <div class="list_content pb-[16px]">
+            {{ product.metafields.custom.product_accordion_faq | metafield_tag }}
             {% for entry in product.metafields.custom.product_accordion_faq %}
               test
             {% endfor %}
