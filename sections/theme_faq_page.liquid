@@ -3,7 +3,7 @@
   <ul class="faq_navigation mx-[auto]"></ul>
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto] faq_questions">
     {% for block in section.blocks %}
-      <li class="border-b border-[#E6DFDB]" data-category="{{ block.settings.category | upcase }}">
+      <li class="border-b border-[#E6DFDB] active" data-category="{{ block.settings.category | upcase }}">
         <div class="list_item flex flex-col px-[16px]">
           <div class="list_title h-[64px] flex justify-between items-center">
             <h2 class="text-[16px]">{{ block.settings.title }}</h2>

@@ -2918,6 +2918,13 @@ video {
   background-color: #B3A094;
   color: white;
 }
+
+.faq_questions li {
+  transform: scaleY(0);
+}
+.faq_questions li.active {
+  transform: scaleY(1);
+}
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
 }
