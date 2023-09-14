@@ -12,15 +12,6 @@
         id="first-name"
         placeholder="First name" />
     </div>
-    {% comment %}
-    <div class="last-name">
-    <label for="last-name">Last name</label>
-    <input
-    type="text"
-    name="contact[last_name]"
-    id="last-name" />
-    </div>
-    {% endcomment %}
 
     <div class="phone">
       <input
@@ -37,16 +28,6 @@
         id="email"
         placeholder="Email address" />
     </div>
-
-    {% comment %}
-    <div class="order-number">
-    <label for="order-number">Order number</label>
-    <input
-    type="text"
-    name="contact[order_number]"
-    id="order-number" />
-    </div>
-    {% endcomment %}
 
     <div class="message">
       <textarea
@@ -72,14 +53,18 @@
         "label": "Contact us page title",
         "id": "title"
       }, {
+        "type": "richtext",
+        "label": "Contact us page paragraph",
+        "id": "paragraph"
+      }, {
         "type": "checkbox",
         "label": "Show working hours",
         "id": "working_hours_show",
         "default": true
       }, {
-        "type": "richtext",
-        "label": "Contact us page paragraph",
-        "id": "paragraph"
+        "type": "text",
+        "label": "Working hours",
+        "id": "working_hours"
       }
     ]
   }
