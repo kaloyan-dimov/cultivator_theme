@@ -19,7 +19,7 @@
       {% for product in settings.trending_products %}
         <div class="w-[316px]">
           {{ product.handle }}
-          {% render 'product_card' with product %}
+          {% include 'product_card' with product %}
         </div>
       {% endfor %}
     </div>
