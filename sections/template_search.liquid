@@ -1,24 +1,23 @@
 <div class="section">
   <h1 class="text-[50px]">Search</h1>
   {% if search.performed %}
-  <div class="flex">
+    <div class="flex">
       <h2>search results for</h2>
       <h2>"{{ search.terms | escape }}"</h2>
       <h2>( {{ search.results | size }} )</h2>
-  </div>
-  {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-  {% for result in search.results %}
-    {% if result.object_type == "product" %}
+    </div>
+    {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
+    {% for result in search.results %}
+      {% if result.object_type == "product" %}
         {% assign product = result %}
         <div class="flex flex-col w-full sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center">
-            <div class="w-full max-w-[358px] sm:max-w-[316px]">
-                {% include 'product_card' with product, wishlist_array %}
-            </div>
+          <div class="w-full max-w-[358px] sm:max-w-[316px]">
+            {% include 'product_card' with product, wishlist_array %}
+          </div>
         </div>
-    {% endif %}
-  {%endfor%}
+      {% endif %}
+    {% endfor %}
   {% else %}
-  <h2>Start your search from the searchbar</h2>
-{% endif %}
-</div>
+    <h2>Start your search from the searchbar</h2>
+  {% endif %}
 </div>
