@@ -1,6 +1,37 @@
 <div class="faq_page w-full">
   <h1 class="m-auto text-[50px] text-center">FAQs</h1>
-
+  <div class="section py-[12px]">
+    <div class="flex justify-between items-center">
+      <h1 class="text-[36px]">Hi {{ customer.first_name }}</h1>
+      <a href="/account/logout/" class="logout text-[16px] underline cursor-pointer">Logout</a>
+    </div>
+    <ul class="account_navigation">
+      <li class="{% if selected == 'account' %}active{% endif %}">
+        <a href="/account">
+          <div class="icon icon_account"></div>
+          <h3>ACCOUNT</h3>
+        </a>
+      </li>
+      <li class="{% if selected == 'orders' %}active{% endif %}">
+        <a href="/pages/orders">
+          <div class="icon icon_orders"></div>
+          <h3>ORDERS</h3>
+        </a>
+      </li>
+      <li class="{% if selected == 'addresses' %}active{% endif %}">
+        <a href="/account/addresses">
+          <div class="icon icon_addresses "></div>
+          <h3>ADDRESSES</h3>
+        </a>
+      </li>
+      <li class="{% if selected == 'wishlist' %}active{% endif %}">
+        <a href="/pages/wishlist">
+          <div class="icon icon_wishlist"></div>
+          <h3>WISHLIST</h3>
+        </a>
+      </li>
+    </ul>
+  </div>
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
     {% for block in section.blocks %}
       <li class="border-b border-[#E6DFDB]" data-category="{{ block.settings.category }}">
