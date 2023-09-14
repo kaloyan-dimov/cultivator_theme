@@ -16,7 +16,7 @@
   <div class="fixed top-[0] left-0 w-full h-full bg-[#FBF9F9] z-[1] pt-[76px] overflow-auto">
     <h2 class="search_text mb-[16px]">Trending products:</h2>
     <div class="search_results flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center"></div>
-    <div class="search_trending_products flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center">
+    <div class="search_trending_products flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center active">
       {% for product in settings.trending_products %}
         <div class="w-full max-w-[358px] sm:max-w-[316px]">
           {% include 'product_card' with product, wishlist_array %}
