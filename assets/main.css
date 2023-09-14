@@ -1040,6 +1040,9 @@ video {
 .max-w-\[204px\] {
   max-width: 204px;
 }
+.max-w-\[358px\] {
+  max-width: 358px;
+}
 .max-w-\[396px\] {
   max-width: 396px;
 }
@@ -3028,6 +3031,10 @@ video {
 
   .sm\:max-w-\[151px\] {
     max-width: 151px;
+  }
+
+  .sm\:max-w-\[316px\] {
+    max-width: 316px;
   }
 
   .sm\:max-w-\[72\.3\%\] {
