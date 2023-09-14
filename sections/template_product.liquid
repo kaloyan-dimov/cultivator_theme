@@ -132,7 +132,9 @@
             <h2 class="text-[16px]">Ingridients</h2>
             <div class="list_arrow h-[32px] w-[32px]"></div>
           </div>
-          <div class="list_content pb-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae architecto tempore aperiam, officiis accusantium magni consequuntur, ipsum sed necessitatibus impedit sit velit tenetur eius praesentium voluptatum distinctio numquam asperiores temporibus. Ipsa qui eos tenetur. Voluptas repudiandae vitae facilis est unde? Commodi a recusandae aut? In tenetur perferendis tempora officiis.</div>
+          <div class="list_content pb-[16px]">
+            {{ product.metafields.custom.product_accordion_ingridients | metafield_tag }}
+          </div>
         </div>
       </li>
       <li class="border-t border-[#E6DFDB]">
@@ -143,13 +145,11 @@
           </div>
           <div class="list_content pb-[16px]">
             <div class="flex flex-col gap-[8px]">
-
               {% for block in section.blocks %}
                 {% if block.type == "Product_FAQ" %}
                   <h2>{{ block.settings.faq_title }}</h2>
                   <h3>{{ block.settings.faq_answer }}</h3>
                 {% endif %}
-
               {% endfor %}
             </div>
           </div>
