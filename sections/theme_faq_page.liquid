@@ -1,19 +1,21 @@
 <div class="faq_page w-full">
   <h1 class="m-auto text-[50px] text-center">FAQs</h1>
-  <ul class="account_navigation mx-[auto]">
-    <li class="{% if selected == 'account' %}active{% endif %}">
-      <a href="/account">
-        <h3>ALL</h3>
-      </a>
-    </li>
-    {% for block in section.blocks %}
-      <li class="{% if selected == 'orders' %}active{% endif %}">
-        <a href="/pages/orders">
-          <h3>ORDERS</h3>
+  <div class="section py-[12px] mx-[auto]">
+    <ul class="account_navigation">
+      <li class="{% if selected == 'account' %}active{% endif %}">
+        <a href="/account">
+          <h3>ALL</h3>
         </a>
       </li>
-    {% endfor %}
-  </ul>
+      {% for block in section.blocks %}
+        <li class="{% if selected == 'orders' %}active{% endif %}">
+          <a href="/pages/orders">
+            <h3>ORDERS</h3>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
     {% for block in section.blocks %}
       <li class="border-b border-[#E6DFDB]" data-category="{{ block.settings.category }}">
