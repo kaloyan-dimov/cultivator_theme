@@ -18,12 +18,12 @@
       {% endif %}
       {% for show_category in categories %}
         {{ show_category }}s
+        <li class="{% if selected == 'orders' %}active{% endif %}">
+          <a href="/pages/orders">
+            <h3>{{ block.settings.category }}s</h3>
+          </a>
+        </li>
       {% endfor %}
-      <li class="{% if selected == 'orders' %}active{% endif %}">
-        <a href="/pages/orders">
-          <h3>{{ block.settings.category }}s</h3>
-        </a>
-      </li>
     {% endfor %}
   </ul>
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
