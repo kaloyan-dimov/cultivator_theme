@@ -1,4 +1,17 @@
 <div class="section">
+  <h1 class="m-auto text-[50px] text-center">Search</h1>
+  {% if search.performed %}
+  <h2>search results for</h2>
+  <h2>{{ search.results | size }} </h2>
+  <h2>Results:</h2>
+  {% for result in search.results %}
+    <h2>Object Type: {{ result.object_type }}</h2>
+    <h2>Title: {{ result.title }}</h2>
+  {%endfor%}
+  {% else %}
+  <h2>Start your search from the searchbar</h2>
+{% endif %}
+</div>
   <div class="search_trending_products flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center active">
     {% for product in settings.trending_products %}
       <div class="w-full max-w-[358px] sm:max-w-[316px]">
