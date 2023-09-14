@@ -3,7 +3,7 @@
 
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
     {% for block in section.blocks %}
-      <li class="border-b border-[#E6DFDB]">
+      <li class="border-b border-[#E6DFDB]" data-category="{{ block.settings.category }}">
         <div class="list_item flex flex-col px-[16px]">
           <div class="list_title h-[64px] flex justify-between items-center">
             <h2 class="text-[16px]">{{ block.settings.title }}</h2>
