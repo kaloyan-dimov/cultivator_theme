@@ -4,14 +4,12 @@
     <ul class="account_navigation">
       <li class="{% if selected == 'account' %}active{% endif %}">
         <a href="/account">
-          <div class="icon icon_account"></div>
           <h3>ALL</h3>
         </a>
       </li>
       {% for block in section.blocks %}
         <li class="{% if selected == 'orders' %}active{% endif %}">
           <a href="/pages/orders">
-            <div class="icon icon_orders"></div>
             <h3>ORDERS</h3>
           </a>
         </li>
