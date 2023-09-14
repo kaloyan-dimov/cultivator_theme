@@ -143,11 +143,15 @@
           </div>
           <div class="list_content pb-[16px]">
             test
-            {{ product.metafields.custom.product_accordion_faq | json }}
+            {{ product.metafields.custom.product_accordion_faq }}
+            {% assign test_test = product.metafields.custom.product_accordion_faq %}
+            {% for sss in test_test %}
+              {{ sss }}
+            {% endfor %}
             {% for entry in product.metafields.custom.product_accordion_faq %}
               test
             {% endfor %}
-            sss
+            ssss
           </div>
         </div>
       </li>
