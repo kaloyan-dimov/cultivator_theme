@@ -17,6 +17,7 @@
     <h2 class="search_text mb-[16px]">Trending products:</h2>
     <div class="search_results flex">
       {% for product in settings.trending_products %}
+        {{ product.title }}
         <div class="w-[316px]">
           {% render 'product_card' with product, wishlist_array %}
         </div>
