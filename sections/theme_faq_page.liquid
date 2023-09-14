@@ -6,27 +6,6 @@
         <h3>ALL</h3>
       </a>
     </li>
-    {% assign categories = "all" %}
-    {% for block in section.blocks %}
-      {% assign category = block.settings.category %}
-      {% if category != null %}
-        category not null<br>
-        {% for assigned_category in categories %}
-          {{ assigned_category }}h
-          {% if assigned_category == category %}
-            assigned_category == category
-            {% assign categories = categories | push: category %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-    {% for show_category in categories %}
-      <li class="{% if selected == 'orders' %}active{% endif %}">
-        <a href="/pages/orders">
-          <h3>{{ show_category }}</h3>
-        </a>
-      </li>
-    {% endfor %}
   </ul>
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
     {% for block in section.blocks %}
