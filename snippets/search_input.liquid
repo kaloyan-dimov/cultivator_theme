@@ -15,7 +15,7 @@
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   <div class="fixed top-[0] left-0 w-full h-full bg-[#FBF9F9] z-[1] pt-[76px] overflow-auto">
     <h2 class="search_text mb-[16px]">Trending products:</h2>
-    <div class="search_results flex">
+    <div class="search_results flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap">
       {% for product in settings.trending_products %}
         {{ product.title }}
         <div class="w-[316px]">
