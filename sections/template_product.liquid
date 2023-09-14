@@ -178,6 +178,31 @@
   </div>
 </div>
 
+
+{% schema %}
+  {
+    "name": "Product Page",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "FAQ",
+        "name": "Product Accordion - FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Faq Title",
+            "id": "faq_title"
+          }, {
+            "type": "text",
+            "label": "Faq Answer",
+            "id": "faq_answer"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}
 {% comment %}
 
 <h2 class="text-[14px] text-center">Product Price: {{ product.price | money_without_trailing_zeros }} |
