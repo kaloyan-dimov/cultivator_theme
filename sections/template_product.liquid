@@ -142,25 +142,8 @@
             <div class="list_arrow h-[32px] w-[32px]"></div>
           </div>
           <div class="list_content pb-[16px]">
-            test
-            {{ product.metafields.custom.product_accordion_faq }}
-            {% assign test_test = product.metafields.custom.product_accordion_faq %}
-            {% assign test_test_test = test_test | replace: '[', '' | replace: ']', '' | split: ',' %}
-            {% for sss in test_test_test %}
-              {{ sss }}qq
-            {% endfor %}
-            {% for entry in product.metafields.custom.product_accordion_faq %}
-              test
-            {% endfor %}
-            s
-            {% if test_test.first %}
-              var is not a string
-            {% else %}
-              var is a string
-            {% endif %}
-            {% for metaobject in product.metafields.custom.product_accordion_faq.values %}
-              {{ metaobject.field }}
-              {{ metaobject.field.value }}
+            {% for block in section.blocks %}
+              <h2>ASD</h2>
             {% endfor %}
           </div>
         </div>
