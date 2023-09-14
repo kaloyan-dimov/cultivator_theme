@@ -2,7 +2,7 @@
 {% assign title_image = section.settings.title_image %}
 {% include 'section_title' with title_text, title_image %}
 
-<ul class="w-full flex flex-col">
+<ul class="w-full flex flex-col max-w-[868px]">
   {% for block in section.blocks %}
     <li class="border-t border-[#E6DFDB]">
       <div class="list_item flex flex-col px-[16px]">
