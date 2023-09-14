@@ -143,6 +143,7 @@
           </div>
           <div class="list_content pb-[16px]">
             test
+            {{ product.metafields.custom.product_short_description | metafield_tag }}
             {{ product.metafields.custom.product_accordion_faq | metafield_tag }}
             {% for entry in product.metafields.custom.product_accordion_faq %}
               test
