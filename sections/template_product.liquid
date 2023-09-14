@@ -142,10 +142,12 @@
             <div class="list_arrow h-[32px] w-[32px]"></div>
           </div>
           <div class="list_content pb-[16px]">
-            {% for block in section.blocks %}
-              <h2>{{ block.settings.faq_title }}</h2>
-              <h3>{{ block.settings.faq_answer }}</h3>
-            {% endfor %}
+            <div class="flex flex-col gap-[8px]">
+              {% for block in section.blocks %}
+                <h2>{{ block.settings.faq_title }}</h2>
+                <h3>{{ block.settings.faq_answer }}</h3>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </li>
