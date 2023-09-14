@@ -2,7 +2,22 @@
   "sections": {
     "main": {
       "type": "theme_faq_page",
-      "settings": {}
+      "blocks": {
+        "83ce9183-d9ae-4320-8f38-734659192519": {
+          "type": "section",
+          "repeater": "{{ page.metafields.custom.faq_questions.value }}",
+          "settings": {
+            "title": "{{ block.repeater.question_title.value }}",
+            "paragraph": "{{ block.repeater.question_answer.value }}",
+            "category": "{{ block.repeater.question_category.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "83ce9183-d9ae-4320-8f38-734659192519"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
