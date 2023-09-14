@@ -147,7 +147,7 @@
             {% assign test_test = product.metafields.custom.product_accordion_faq %}
             {% assign test_test_test = test_test | replace: '[', '' | replace: ']', '' | split: ',' %}
             {% for sss in test_test_test %}
-              {{ sss }}
+              {{ sss.field }}q
             {% endfor %}
             {% for entry in product.metafields.custom.product_accordion_faq %}
               test
