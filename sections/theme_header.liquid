@@ -7,8 +7,8 @@
             {% for child_link in link.links %}
               <li>
                 {%- if child_link.type == 'collection_link' -%}
-                  <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">
-                    {% assign linkCollection = child_link.object %}
+                {% assign linkCollection = child_link.object %}
+                  <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}#{{ child_link.title }}">
                     <div class="flex justify-center items-center w-[140px] h-[140px]">
                       <img
                         class="w-[95px] h-[95px]"
