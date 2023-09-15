@@ -1,7 +1,7 @@
 {
   "sections": {
     "introduction": {
-      "type": "block_collection_introduction",
+      "type": "template_collection_introduction",
       "settings": {
       }
     },
@@ -28,23 +28,7 @@
     },
     "main": {
       "type": "template_collection",
-      "blocks": {
-        "83622b93-254e-441f-876a-a85875166829": {
-          "type": "section",
-          "repeater": "{{ collection.metafields.custom.faq_questions.value }}",
-          "settings": {
-            "title": "{{ block.repeater.question_title.value }}",
-            "paragraph": "{{ block.repeater.question_answer.value }}",
-            "category": "{{ block.repeater.question_category.value }}"
-          }
-        }
-      },
-      "block_order": [
-        "83622b93-254e-441f-876a-a85875166829"
-      ],
       "settings": {
-        "section_title": "Must Know Facts",
-        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
         "product_pagination": 4
       }
     }
