@@ -2059,7 +2059,7 @@ video {
   transform: scaleY(0);
   transform-origin: top;
   opacity: 0;
-  transition: max-height 0.3s, transform 0.3s, opacity 0.3s;
+  transition: max-height 0.3s, transform 0.3s, opacity 0.45s;
 }
 #desktop_header ul li:hover > a {
   -webkit-text-decoration: underline;
@@ -2070,7 +2070,7 @@ video {
   transform: scaleY(1);
   transform-origin: top;
   opacity: 1;
-  transition: max-height 0.3s, transform 0.3s, opacity 0.3s;
+  transition: max-height 0.3s, transform 0.3s, opacity 0.45s;
 }
 #desktop_header ul li:hover ul:hover {
   display: flex;
