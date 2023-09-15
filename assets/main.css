@@ -2060,6 +2060,10 @@ video {
 #desktop_header ul li ul {
   display: none;
 }
+#desktop_header ul li:hover > a {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
 #desktop_header ul li:hover ul {
   display: flex;
 }
