@@ -2058,6 +2058,13 @@ video {
     transition: all 0.5s;
   }
 }
+#desktop_header ul li ul {
+  display: none;
+}
+#desktop_header ul li:hover ul {
+  display: flex;
+}
+
 .client_interactions a {
   width: 44px;
   height: 44px;
