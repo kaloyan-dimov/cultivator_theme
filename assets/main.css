@@ -2064,6 +2064,9 @@ video {
 #desktop_header ul li:hover ul {
   display: flex;
 }
+#desktop_header ul li:hover ul:hover {
+  display: flex;
+}
 
 .client_interactions a {
   width: 44px;
