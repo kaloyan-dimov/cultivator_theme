@@ -5,7 +5,7 @@
         <li>
           <a href="{{ link.url }}">{{ link.title }}</a>
         </li>
-        <ul class="absolute flex w-full bg-white gap-6 top-[100%] left-[0]">
+        <ul class="absolute flex justify-center py-[48px] w-full bg-white gap-6 top-[100%] left-[0]">
           {% for child_link in link.links %}
             <li class="text-[14px]">
               <a href="{{ child_link.url }}">{{ child_link.title }}</a>
