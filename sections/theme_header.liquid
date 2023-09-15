@@ -1,11 +1,11 @@
-<header id="desktop_header" class="hidden md:block w-full top-0 left-0 bg-white z-[2]">
+<header id="desktop_header" class="hidden md:block w-full top-0 left-0 bg-[#F4EDE1] z-[2]">
   <div class="section flex justify-between py-4 items-center w-full">
     <ul class="flex w-[430px] min-w-[29%] max-w-[40%] justify-between">
       {% for link in linklists.main-menu.links %}
         <li>
           <a href="{{ link.url }}">{{ link.title }}</a>
         </li>
-        <ul class="flex flex-col gap-6">
+        <ul class="absolute flex w-full bg-[#F4EDE1] gap-6">
           {% for child_link in link.links %}
             <li class="text-[14px]">
               <a href="{{ child_link.url }}">{{ child_link.title }}</a>
