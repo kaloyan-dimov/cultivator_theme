@@ -6,8 +6,8 @@
           <ul class="absolute flex justify-center py-[48px] w-full bg-white gap-[24px] top-[100%] left-[0]">
             {% for child_link in link.links %}
               <li>
+                {%- if child_link.type == 'collection_link' -%}
                 <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">
-                  {%- if child_link.type == 'collection_link' -%}
                     {% assign linkCollection = child_link.object %}
                     <div class="flex justify-center items-center w-[140px] h-[140px]">
                       <img
@@ -16,8 +16,13 @@
                         src="{{linkCollection.featured_image.src | image_url: width: 95, height: 95 }}"
                         alt="">
                     </div>
+                    <h3 class="text-center">{{ child_link.title }}</h3></a>
+                  {%- else -%}
+                  <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">   
+                    <div class="flex justify-center items-center w-[140px] h-[140px]">
+                    </div>
+                    <h3 class="text-center">{{ child_link.title }}</h3></a>
                   {%- endif -%}
-                  <h3 class="text-center">{{ child_link.title }}</h3></a>
               </li>
           </li>
           {% endfor %}
