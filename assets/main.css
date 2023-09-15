@@ -1233,9 +1233,6 @@ video {
 .overflow-y-hidden {
   overflow-y: hidden;
 }
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
 .break-words {
   word-wrap: break-word;
 }
@@ -2058,14 +2055,20 @@ video {
   }
 }
 #desktop_header ul li ul {
-  display: none;
+  max-height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: max-height 0.2s, transform 2s, opacity 0.2s;
 }
 #desktop_header ul li:hover > a {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 #desktop_header ul li:hover ul {
-  display: flex;
+  max-height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: max-height 0.2s, transform 2s, opacity 0.2s;
 }
 #desktop_header ul li:hover ul:hover {
   display: flex;
