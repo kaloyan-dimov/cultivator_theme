@@ -7,7 +7,7 @@
     {% for block in section.blocks %}
       <li class="border-b border-[#E6DFDB] active" data-category="{{ block.settings.category | upcase }}">
         <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center">
+          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
             <h2 class="text-[16px]">{{ block.settings.title }}</h2>
             <div class="list_arrow h-[32px] w-[32px]"></div>
           </div>
