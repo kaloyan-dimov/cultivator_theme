@@ -591,6 +591,9 @@ video {
 .top-\[0\] {
   top: 0;
 }
+.top-\[100\%\] {
+  top: 100%;
+}
 .top-\[19px\] {
   top: 19px;
 }
@@ -1325,6 +1328,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(204, 172, 113, 1);
   background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
+}
+.bg-\[\#F4EDE1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(244, 237, 225, 1);
+  background-color: rgba(244, 237, 225, var(--tw-bg-opacity));
 }
 .bg-\[\#FBF9F9\] {
   --tw-bg-opacity: 1;
