@@ -2057,18 +2057,20 @@ video {
 #desktop_header ul li ul {
   max-height: 0;
   transform: scaleY(0);
+  transform-origin: top;
   opacity: 0;
-  transition: max-height 0.2s, transform 2s, opacity 0.2s;
+  transition: max-height 0.2s, transform 0.2s, opacity 0.5s;
 }
 #desktop_header ul li:hover > a {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 #desktop_header ul li:hover ul {
-  max-height: 301px;
+  max-height: 300px;
   transform: scaleY(1);
+  transform-origin: top;
   opacity: 1;
-  transition: max-height 0.2s, transform 2s, opacity 0.2s;
+  transition: max-height 0.2s, transform 0.2s, opacity 0.5s;
 }
 #desktop_header ul li:hover ul:hover {
   display: flex;
