@@ -2,7 +2,7 @@
   <div class="section flex justify-between h-[92px] items-center w-full">
     <ul class="flex w-[430px] min-w-[29%] max-w-[40%] justify-between h-full uppercase">
       {% for link in linklists.main-menu.links %}
-        <li class="flex items-center h-full text-[16px]"><a href="{{ link.url }}">{{ link.title }}</a>
+        <li class="flex items-center h-full text-[16px]"><a href="{{ link.url }}"><h2>{{ link.title }}</h2></a>
           <ul class="absolute flex justify-center py-[48px] w-full bg-white gap-[24px] top-[100%] left-[0]">
             {% for child_link in link.links %}
               <li>
@@ -17,7 +17,7 @@
                         alt="">
                     </div>
                   {%- endif -%}
-                  {{ child_link.title }}</a>
+                  <h3>{{ child_link.title }}</h3></a>
               </li>
           </li>
           {% endfor %}
