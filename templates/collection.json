@@ -28,7 +28,22 @@
     },
     "main": {
       "type": "template_collection",
+      "blocks": {
+        "9dffe506-a348-4ea5-a205-3a21b08ddbba": {
+          "type": "section",
+          "repeater": "{{ collection.metafields.custom.faq_questions.value }}",
+          "settings": {
+            "title": "{{ block.repeater.question_title.value }}",
+            "paragraph": "{{ block.repeater.question_answer.value }}",
+            "category": "{{ block.repeater.question_category.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "9dffe506-a348-4ea5-a205-3a21b08ddbba"
+      ],
       "settings": {
+        "section_title": "",
         "product_pagination": 4
       }
     }
