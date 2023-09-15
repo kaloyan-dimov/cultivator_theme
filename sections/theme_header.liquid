@@ -9,9 +9,9 @@
                 <a class="flex flex-col gap-[8px]" href="{{ child_link.url }}">
                   {%- if child_link.type == 'collection_link' -%}
                     {% assign linkCollection = child_link.object %}
-                    <div class="w-[140px] h-[140px]">
+                    <div class="flex justify-center items-center w-[140px] h-[140px]">
                       <img
-                        class="flex justify-center items-center w-[95px] h-[95px]"
+                        class="w-[95px] h-[95px]"
                         crossorigin="anonymous"
                         src="{{linkCollection.featured_image.src | img_url: 'master' }}"
                         alt="">
