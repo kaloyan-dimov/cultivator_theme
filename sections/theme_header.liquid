@@ -7,7 +7,7 @@
             {% for child_link in link.links %}
               <li>
                 {%- if child_link.type == 'collection_link' -%}
-                <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">
+                  <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">
                     {% assign linkCollection = child_link.object %}
                     <div class="flex justify-center items-center w-[140px] h-[140px]">
                       <img
@@ -18,10 +18,10 @@
                     </div>
                     <h3 class="text-center">{{ child_link.title }}</h3></a>
                   {%- else -%}
-                  <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">   
-                    <div class="flex justify-center items-center w-[140px] h-[140px]">
-                    </div>
-                    <h3 class="text-center">{{ child_link.title }}</h3></a>
+                    <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">   
+                      <div class="flex justify-center items-center w-[140px] h-[140px]"></div>
+                      <h3 class="text-center">{{ child_link.title }}</h3>
+                      </a>
                   {%- endif -%}
               </li>
           </li>
