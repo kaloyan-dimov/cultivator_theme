@@ -1,3 +1,9 @@
+<div class="section">
+  {% assign title_text = section.settings.title %}
+  {% assign title_image = section.settings.title_image %}
+  {% include 'section_title' with title_text, title_image %}
+  {% for block in section.blocks %}{% endfor %}
+</div>
 {% schema %}
   {
     "name": "Distributors",
@@ -5,15 +11,36 @@
       {
         "type": "text",
         "label": "Section Title",
-        "id": "section_title"
+        "id": "title"
       }, {
         "type": "image_picker",
         "label": "Title Images",
         "id": "title_image"
-      }, {
-        "type": "richtext",
-        "label": "Section Paragraph",
-        "id": "paragraph"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "section",
+        "name": "Distributor",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Address Line 1",
+            "id": "address_1"
+          }, {
+            "type": "text",
+            "label": "Address Line 2",
+            "id": "address_2"
+          }, {
+            "type": "text",
+            "label": "Phone Number",
+            "id": "phone"
+          }, {
+            "type": "text",
+            "label": "Email",
+            "id": "email"
+          }
+        ]
       }
     ],
     "presets": [
