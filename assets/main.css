@@ -3057,12 +3057,15 @@ video {
 
 .shopify-policy__container {
   max-width: 867px;
+  padding: 56px 0;
 }
-
+.shopify-policy__container .shopify-policy__title h1 {
+  font-size: 36px;
+  padding: 24px 0;
+}
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
 }
-
 @media (min-width: 768px) {
 
   .sm\:m-\[unset\] {
@@ -3257,7 +3260,6 @@ video {
     font-size: 48px;
   }
 }
-
 @media (min-width: 1024px) {
 
   .md\:absolute {
@@ -3444,7 +3446,6 @@ video {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 }
-
 @media (min-width: 1280px) {
 
   .lg\:mx-\[auto\] {
