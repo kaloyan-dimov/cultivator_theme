@@ -11,48 +11,6 @@
         "map_link": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d177513.5541079131!2d72.91869470569814!3d26.21682084506533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418bd3293b3b55%3A0xbc1d14a21c3f3997!2sCultivator%20Natural%20Products%20Pvt.%20Ltd.!5e0!3m2!1sen!2sbg!4v1695020591467!5m2!1sen!2sbg\" width=\"1312\" height=\"566\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
       }
     },
-    "5343dcae-785a-4804-b6e1-14f30944fb01": {
-      "type": "block_banner",
-      "blocks": {
-        "57936e84-8be0-4848-9d88-05cd60d5d01f": {
-          "type": "section",
-          "settings": {
-            "banner_image": "shopify:\/\/shop_images\/drop.png",
-            "banner_text": "Dermatologically Tested"
-          }
-        },
-        "4c722545-8654-4c40-a044-b41295ef18f9": {
-          "type": "section",
-          "settings": {
-            "banner_image": "shopify:\/\/shop_images\/rabbit.png",
-            "banner_text": "Cruelty FREE"
-          }
-        },
-        "53c8b2a3-c384-4e38-a9bd-16ad38ce0c17": {
-          "type": "section",
-          "settings": {
-            "banner_image": "shopify:\/\/shop_images\/plant.png",
-            "banner_text": "100% Organic"
-          }
-        },
-        "a4ad449c-5528-4385-8ead-bdf998058e8c": {
-          "type": "section",
-          "settings": {
-            "banner_image": "shopify:\/\/shop_images\/hand_heart.png",
-            "banner_text": "Fairly Sourced"
-          }
-        }
-      },
-      "block_order": [
-        "57936e84-8be0-4848-9d88-05cd60d5d01f",
-        "4c722545-8654-4c40-a044-b41295ef18f9",
-        "53c8b2a3-c384-4e38-a9bd-16ad38ce0c17",
-        "a4ad449c-5528-4385-8ead-bdf998058e8c"
-      ],
-      "settings": {
-        "animation_speed": 10
-      }
-    },
     "6384c0c1-293b-45d2-8f25-944bffb89f9c": {
       "type": "block_distributors",
       "blocks": {
@@ -129,11 +87,53 @@
         "title": "Locate our Distributor",
         "title_image": "shopify:\/\/shop_images\/Square_flower.png"
       }
+    },
+    "5343dcae-785a-4804-b6e1-14f30944fb01": {
+      "type": "block_banner",
+      "blocks": {
+        "57936e84-8be0-4848-9d88-05cd60d5d01f": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/drop.png",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "4c722545-8654-4c40-a044-b41295ef18f9": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/rabbit.png",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "53c8b2a3-c384-4e38-a9bd-16ad38ce0c17": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/plant.png",
+            "banner_text": "100% Organic"
+          }
+        },
+        "a4ad449c-5528-4385-8ead-bdf998058e8c": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/hand_heart.png",
+            "banner_text": "Fairly Sourced"
+          }
+        }
+      },
+      "block_order": [
+        "57936e84-8be0-4848-9d88-05cd60d5d01f",
+        "4c722545-8654-4c40-a044-b41295ef18f9",
+        "53c8b2a3-c384-4e38-a9bd-16ad38ce0c17",
+        "a4ad449c-5528-4385-8ead-bdf998058e8c"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
     }
   },
   "order": [
     "main",
-    "5343dcae-785a-4804-b6e1-14f30944fb01",
-    "6384c0c1-293b-45d2-8f25-944bffb89f9c"
+    "6384c0c1-293b-45d2-8f25-944bffb89f9c",
+    "5343dcae-785a-4804-b6e1-14f30944fb01"
   ]
 }
