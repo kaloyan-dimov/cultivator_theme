@@ -3085,10 +3085,6 @@ video {
     height: 550px;
   }
 
-  .sm\:h-\[640px\] {
-    height: 640px;
-  }
-
   .sm\:h-\[671px\] {
     height: 671px;
   }
@@ -3115,10 +3111,6 @@ video {
 
   .sm\:w-\[426px\] {
     width: 426px;
-  }
-
-  .sm\:w-\[491px\] {
-    width: 491px;
   }
 
   .sm\:w-\[50\%\] {
@@ -3304,6 +3296,10 @@ video {
 
   .md\:h-\[614px\] {
     height: 614px;
+  }
+
+  .md\:h-\[640px\] {
+    height: 640px;
   }
 
   .md\:h-\[668px\] {
