@@ -3057,11 +3057,13 @@ video {
 
 .shopify-policy__container {
   max-width: 867px;
-  padding: 56px 0;
 }
 .shopify-policy__container .shopify-policy__title h1 {
   font-size: 36px;
   padding: 24px 0;
+}
+.shopify-policy__container .shopify-policy__body {
+  padding: 56px 0;
 }
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
