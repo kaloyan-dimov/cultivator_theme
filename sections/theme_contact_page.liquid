@@ -1,40 +1,42 @@
 <div class="section flex flex-col contact_us_page mb-[64px]">
-  {% assign title_text = section.settings.title1 %}
-  {% include 'section_title' with title_text %}
-  <h3 class="text-[16px] text-center">{{ section.settings.paragraph1 }}</h3>
-  <div class="flex flex-col gap-2">
-    <div class="flex gap-2 w-full py-6 px-2">
-      <div class="w-[72px] h-[68px] text-red-300">Image</div>
-      <div class="flex flex-col justify-between gap-4">
-        <h4 class="text-[18px] ">Product Enquiries</h4>
-        <a href="mailto:{{ settings.product_enquiries_email }}" class="underline">{{ settings.product_enquiries_email }}</a>
+  <div>
+    {% assign title_text = section.settings.title1 %}
+    {% include 'section_title' with title_text %}
+    <h3 class="text-[16px] text-center">{{ section.settings.paragraph1 }}</h3>
+    <div class="flex flex-col gap-2">
+      <div class="flex gap-2 w-full py-6 px-2">
+        <div class="w-[72px] h-[68px] text-red-300">Image</div>
+        <div class="flex flex-col justify-between gap-4">
+          <h4 class="text-[18px] ">Product Enquiries</h4>
+          <a href="mailto:{{ settings.product_enquiries_email }}" class="underline">{{ settings.product_enquiries_email }}</a>
+        </div>
       </div>
-    </div>
-    <div class="flex gap-2 w-full py-6 px-2">
-      <div class="w-[72px] h-[68px] text-red-300">Image</div>
-      <div class="flex flex-col justify-between gap-4">
-        <h4 class="text-[18px]">Shipping Enquiries</h4>
-        <a href="mailto:{{ settings.shipping_enquiries_email }}" class="underline">{{ settings.shipping_enquiries_email }}</a>
+      <div class="flex gap-2 w-full py-6 px-2">
+        <div class="w-[72px] h-[68px] text-red-300">Image</div>
+        <div class="flex flex-col justify-between gap-4">
+          <h4 class="text-[18px]">Shipping Enquiries</h4>
+          <a href="mailto:{{ settings.shipping_enquiries_email }}" class="underline">{{ settings.shipping_enquiries_email }}</a>
+        </div>
       </div>
-    </div>
-    <div class="flex gap-2 w-full py-6 px-2">
-      <div class="w-[72px] h-[68px] text-red-300">Image</div>
-      <div class="flex flex-col justify-between gap-4">
-        <h4 class="text-[18px]">Phone</h4>
-        <a href="tel:{{ settings.phone_number }}" class="underline">{{ settings.phone_number }}</a>
+      <div class="flex gap-2 w-full py-6 px-2">
+        <div class="w-[72px] h-[68px] text-red-300">Image</div>
+        <div class="flex flex-col justify-between gap-4">
+          <h4 class="text-[18px]">Phone</h4>
+          <a href="tel:{{ settings.phone_number }}" class="underline">{{ settings.phone_number }}</a>
+        </div>
       </div>
-    </div>
-    <div class="flex gap-2 w-full py-6 px-2">
-      <div class="w-[72px] h-[68px] text-red-300">Image</div>
-      <div class="flex flex-col justify-between gap-4">
-        <h4 class="text-[18px]">Address</h4>
-        <h4>{{ settings.address }}</h4>
+      <div class="flex gap-2 w-full py-6 px-2">
+        <div class="w-[72px] h-[68px] text-red-300">Image</div>
+        <div class="flex flex-col justify-between gap-4">
+          <h4 class="text-[18px]">Address</h4>
+          <h4>{{ settings.address }}</h4>
+        </div>
       </div>
     </div>
   </div>
-  <h1 class="text-[32px] text-center py-6">{{ section.settings.title2 }}</h1>
+  <h2 class="text-[32px] text-center py-6">{{ section.settings.title2 }}</h2>
   {% if section.settings.working_hours_show == true %}
-    <h2 class="text-[16px] text-center py-2">{{ settings.working_hours }}</h2>
+    <h3 class="text-[16px] text-center py-2">{{ settings.working_hours }}</h3>
   {% endif %}
   <h2 class="text-[16px] text-center py-2">{{ section.settings.paragraph2 }}</h2>
   {% form 'contact' %}
