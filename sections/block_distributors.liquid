@@ -4,8 +4,14 @@
   {% include 'section_title' with title_text, title_image %}
   <div class="flex flex-wrap">
     {% for block in section.blocks %}
-      <div class="flex flex-col bg-white rounded-[48px] border border-[#E6DFDB]">
-        <h2>{{ block.settings.name }}</h2>
+      <div class="flex flex-col bg-white rounded-[48px] border border-[#E6DFDB] p-[24px]">
+        <h2 class="mb-[24px]">{{ block.settings.name }}</h2>
+        <div class="mb-[16px]">
+          <h2>{{ block.settings.address_1 }}</h2>
+          <h2>{{ block.settings.address_2 }}</h2>
+        </div>
+        <a class="mb-[16px]" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
+        <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
       </div>
     {% endfor %}
   </div>
