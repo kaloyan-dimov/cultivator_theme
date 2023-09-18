@@ -55,6 +55,21 @@
     },
     "6384c0c1-293b-45d2-8f25-944bffb89f9c": {
       "type": "block_distributors",
+      "blocks": {
+        "b97e469d-5ef2-41f7-8ba6-df2c1c6dabd9": {
+          "type": "section",
+          "settings": {
+            "name": "Distributor 1",
+            "address_1": "Address Line 1",
+            "address_2": "Address LIne 2",
+            "phone": "123455678",
+            "email": "shop@email.com"
+          }
+        }
+      },
+      "block_order": [
+        "b97e469d-5ef2-41f7-8ba6-df2c1c6dabd9"
+      ],
       "settings": {
         "title": "Locate our Distributor",
         "title_image": "shopify:\/\/shop_images\/Square_flower.png"
