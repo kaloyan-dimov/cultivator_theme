@@ -22,7 +22,7 @@
         <div class="w-[72px] h-[68px] text-red-300">Image</div>
         <div class="flex flex-col justify-between gap-4">
           <h4 class="text-[18px]">Phone</h4>
-          <a href="tel:{{ settings.phone_number }}" class="underline">{{ settings.phone_number }}</a>
+          <a href="tel:{{ settings.phone_number | strip }}" class="underline">{{ settings.phone_number }}</a>
         </div>
       </div>
       <div class="flex gap-2 w-full py-6 px-2">
