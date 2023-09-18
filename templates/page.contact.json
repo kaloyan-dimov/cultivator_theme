@@ -3,9 +3,11 @@
     "main": {
       "type": "theme_contact_page",
       "settings": {
-        "title": "Contact Us",
-        "working_hours": true,
-        "paragraph": "<p>We’re happy to help! If you have brand or website questions, check out our FAQ page. If you still need help, we’ll respond to your message below.<\/p>"
+        "title1": "Get in touch",
+        "paragraph1": "<p>It will be our pleasure to answer any questions you may have, and we’ll do our best to respond as quickly as possible.<br\/>We cultivate the fruit of nature and help the world become a healthier one. Be a part of cultivator’s family and spread the fruits of ayurveda!<\/p>",
+        "title2": "Contact Us",
+        "paragraph2": "<p>We’re happy to help!  If you have brand or website questions, check out our FAQ page. If you still need help, we’ll respond to your message below.<\/p>",
+        "working_hours_show": true
       }
     },
     "60ef9f47-8157-4b11-994b-7121ecba24f9": {
