@@ -52,10 +52,18 @@
       "settings": {
         "animation_speed": 10
       }
+    },
+    "6384c0c1-293b-45d2-8f25-944bffb89f9c": {
+      "type": "block_distributors",
+      "settings": {
+        "title": "Locate our Distributor",
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+      }
     }
   },
   "order": [
     "main",
-    "5343dcae-785a-4804-b6e1-14f30944fb01"
+    "5343dcae-785a-4804-b6e1-14f30944fb01",
+    "6384c0c1-293b-45d2-8f25-944bffb89f9c"
   ]
 }
