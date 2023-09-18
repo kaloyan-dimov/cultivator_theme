@@ -2544,6 +2544,7 @@ video {
 .distributors_section .distributors_address,
 .distributors_section .distributors_phone,
 .distributors_section .distributors_mail {
+  position: relative;
   padding-left: 36px;
 }
 .distributors_section .distributors_address::before,
