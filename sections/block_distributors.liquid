@@ -6,12 +6,12 @@
     {% for block in section.blocks %}
       <div class="flex flex-col bg-white rounded-[48px] border border-[#E6DFDB] p-[24px] w-full sm:w-[426px]">
         <h2 class="mb-[24px]">{{ block.settings.name }}</h2>
-        <div class="mb-[16px]">
+        <div class="mb-[16px] distributors_address">
           <h2>{{ block.settings.address_1 }}</h2>
           <h2>{{ block.settings.address_2 }}</h2>
         </div>
-        <a class="mb-[16px]" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
-        <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
+        <a class="mb-[16px] distributors_phone" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
+        <a class="distributors_mail" href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
       </div>
     {% endfor %}
   </div>
