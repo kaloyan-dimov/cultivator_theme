@@ -3318,6 +3318,10 @@ video {
     width: 320px;
   }
 
+  .md\:w-\[411px\] {
+    width: 411px;
+  }
+
   .md\:w-\[441px\] {
     width: 441px;
   }
