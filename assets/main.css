@@ -3192,6 +3192,11 @@ video {
     padding-bottom: 128px;
   }
 
+  .sm\:py-\[56px\] {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
   .sm\:pr-\[42px\] {
     padding-right: 42px;
   }
