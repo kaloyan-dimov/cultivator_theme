@@ -83,7 +83,7 @@
                   {% if product.selected_variant == nil and forloop.index == 1 %}
                   checked
                   {% endif %}>
-                <h3 class="pointer-events-none text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</h3>
+                <h3 class="text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</h3>
               </label>
             {% endfor %}
           </div>
