@@ -1,5 +1,9 @@
 <div class="section flex flex-col contact_us_page mb-[64px]">
-
+  <h1 class="text-[32px] text-center py-6">{{ section.settings.title }}</h1>
+  {% if section.settings.working_hours_show == true %}
+    <h2 class="text-[16px] text-center py-2">{{ settings.working_hours }}</h2>
+  {% endif %}
+  <h2 class="text-[16px] text-center py-2">{{ section.settings.paragraph }}</h2>
   {% form 'contact' %}
     <div class="first-name">
       <input
@@ -43,25 +47,6 @@
 {% schema %}
   {
     "name": "Contact Page Details",
-    "settings": [
-      {
-        "type": "text",
-        "label": "Contact us page title",
-        "id": "title"
-      }, {
-        "type": "richtext",
-        "label": "Contact us page paragraph",
-        "id": "paragraph"
-      }, {
-        "type": "checkbox",
-        "label": "Show working hours",
-        "id": "working_hours_show",
-        "default": true
-      }, {
-        "type": "text",
-        "label": "Working hours",
-        "id": "working_hours"
-      }
-    ]
+    "settings": []
   }
 {% endschema %}
