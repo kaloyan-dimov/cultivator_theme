@@ -1,7 +1,7 @@
 <div class="section flex flex-col contact_us_page mb-[64px]">
   {% assign title_text = section.settings.title1 %}
   {% include 'section_title' with title_text %}
-  <h3 class="text-[16px] text-center">{{ section.settings.paragraph }}</h3>
+  <h3 class="text-[16px] text-center">{{ section.settings.paragraph1 }}</h3>
   <div class="flex flex-col gap-2">
     <div class="flex gap-2 w-full py-6 px-2">
       <div class="w-[72px] h-[68px] text-red-300">Image</div>
@@ -32,11 +32,11 @@
       </div>
     </div>
   </div>
-  <h1 class="text-[32px] text-center py-6">{{ section.settings.title }}</h1>
+  <h1 class="text-[32px] text-center py-6">{{ section.settings.title2 }}</h1>
   {% if section.settings.working_hours_show == true %}
     <h2 class="text-[16px] text-center py-2">{{ settings.working_hours }}</h2>
   {% endif %}
-  <h2 class="text-[16px] text-center py-2">{{ section.settings.paragraph }}</h2>
+  <h2 class="text-[16px] text-center py-2">{{ section.settings.paragraph2 }}</h2>
   {% form 'contact' %}
     <div class="first-name">
       <input
