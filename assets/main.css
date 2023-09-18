@@ -797,6 +797,9 @@ video {
 .h-\[34px\] {
   height: 34px;
 }
+.h-\[356px\] {
+  height: 356px;
+}
 .h-\[360px\] {
   height: 360px;
 }
@@ -905,6 +908,9 @@ video {
 }
 .min-h-\[201px\] {
   min-height: 201px;
+}
+.min-h-\[240px\] {
+  min-height: 240px;
 }
 .min-h-\[260px\] {
   min-height: 260px;
@@ -3364,6 +3370,10 @@ video {
 
   .md\:self-end {
     align-self: flex-end;
+  }
+
+  .md\:rounded-\[240px\] {
+    border-radius: 240px;
   }
 
   .md\:border-b-0 {
