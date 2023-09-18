@@ -7,23 +7,21 @@
         alt="">
     {% endif %}
   </div>
-  <div class="section relative">
-    <div class="relative sm: absolute top-[0] sm:top-[126px] sm:left-[15.7%] w-full sm:w-[320px] sm:h-[416px] sm:bg-white sm:rounded-[160px] flex flex-col items-start sm:justify-center sm:items-center ">
-      {% if section.settings.title != null %}
-        <h2 class="mb-2 text-[32px] text-[#56463D] text-center">{{ section.settings.title }}</h2>
-      {% endif %}
+  <div class="w-full sm:w-[491px]">
+    {% if section.settings.title != null %}
+      <h2 class="mb-2 text-[32px] text-[#56463D] text-center">{{ section.settings.title }}</h2>
+    {% endif %}
 
-      {% if section.settings.paragraph != null %}
-        <h3 class="mb-4 text-[16px] text-[#7B695E] text-center">{{ section.settings.paragraph }}</h3>
-      {% endif %}
+    {% if section.settings.paragraph != null %}
+      <h3 class="mb-4 text-[16px] text-[#7B695E] text-center">{{ section.settings.paragraph }}</h3>
+    {% endif %}
 
-      <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="border-[#CCAC71] border text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] sm:mx-auto items-center">
-        {% if section.settings.button_text != null %}
-          <h3 class="text-[#CCAC71] h-[18px]">{{ section.settings.button_text }}</h3>
-        {% endif %}
-        <div class="button_arrow button_arrow_gold"></div>
-      </a>
-    </div>
+    <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="border-[#CCAC71] border text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] sm:mx-auto items-center">
+      {% if section.settings.button_text != null %}
+        <h3 class="text-[#CCAC71] h-[18px]">{{ section.settings.button_text }}</h3>
+      {% endif %}
+      <div class="button_arrow button_arrow_gold"></div>
+    </a>
   </div>
 </div>
 {% schema %}
