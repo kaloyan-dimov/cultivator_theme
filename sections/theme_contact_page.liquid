@@ -1,4 +1,4 @@
-<div class="section flex flex-col contact_us_page mb-[64px]">
+<div class="section flex flex-col sm:flex-row contact_us_page mb-[64px]">
   <div>
     {% assign title_text = section.settings.title1 %}
     {% include 'section_title' with title_text %}
@@ -34,49 +34,51 @@
       </div>
     </div>
   </div>
-  <h2 class="text-[32px] text-center py-6">{{ section.settings.title2 }}</h2>
-  {% if section.settings.working_hours_show == true %}
-    <h3 class="text-[16px] text-center py-2">{{ settings.working_hours }}</h3>
-  {% endif %}
-  <h2 class="text-[16px] text-center py-2">{{ section.settings.paragraph2 }}</h2>
-  {% form 'contact' %}
-    <div class="first-name">
-      <input
-        type="text"
-        name="contact[first_name]"
-        id="first-name"
-        placeholder="First name" />
-    </div>
+  <div>
+    <h2 class="text-[32px] text-center py-6">{{ section.settings.title2 }}</h2>
+    {% if section.settings.working_hours_show == true %}
+      <h3 class="text-[16px] text-center py-2">{{ settings.working_hours }}</h3>
+    {% endif %}
+    <h2 class="text-[16px] text-center py-2">{{ section.settings.paragraph2 }}</h2>
+    {% form 'contact' %}
+      <div class="first-name">
+        <input
+          type="text"
+          name="contact[first_name]"
+          id="first-name"
+          placeholder="First name" />
+      </div>
 
-    <div class="phone">
-      <input
-        type="tel"
-        name="contact[phone]"
-        id="phone"
-        placeholder="Phone" />
-    </div>
+      <div class="phone">
+        <input
+          type="tel"
+          name="contact[phone]"
+          id="phone"
+          placeholder="Phone" />
+      </div>
 
-    <div class="email">
-      <input
-        type="email"
-        name="contact[email]"
-        id="email"
-        placeholder="Email address" />
-    </div>
+      <div class="email">
+        <input
+          type="email"
+          name="contact[email]"
+          id="email"
+          placeholder="Email address" />
+      </div>
 
-    <div class="message">
-      <textarea
-        name="contact[body]"
-        id="message"
-        placeholder="Message"></textarea>
-    </div>
+      <div class="message">
+        <textarea
+          name="contact[body]"
+          id="message"
+          placeholder="Message"></textarea>
+      </div>
 
-    <div class="submit">
-      <input type="submit" value="SEND" />
-    </div>
+      <div class="submit">
+        <input type="submit" value="SEND" />
+      </div>
 
-    {{ form.errors | default_errors }}
-  {% endform %}
+      {{ form.errors | default_errors }}
+    {% endform %}
+  </div>
 </div>
 
 {% schema %}
