@@ -2,7 +2,13 @@
   {% assign title_text = section.settings.title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
-  {% for block in section.blocks %}{% endfor %}
+  <div class="flex flex-wrap">
+    {% for block in section.blocks %}
+      <div class="flex flex-col bg-white rounded-[48px] border border-[#E6DFDB]">
+        <h2>{{ block.settings.name }}</h2>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 {% schema %}
   {
