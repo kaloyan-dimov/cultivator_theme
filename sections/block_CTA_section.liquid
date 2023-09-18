@@ -1,10 +1,12 @@
-{% if section.settings.background_image != null %}
-  <div class="relative w-full h-[570px] sm:h-[671px] mb-[64px]">
-    <img
-      class="relative sm:absolute top-0 left-0 w-full h-[356px] sm:h-full object-cover mb-6 sm:mb-[0]"
-      src="{{ section.settings.background_image | img_url: 'master'}}"
-      alt="">
-  {% endif %}
+<div class="section flex flex-col sm:flex-row h-[595px] sm:h-[640px] mb-[64px] rounded-[20px] border border-[#E6DFDB]">
+  <div class="h-full w-full">
+    {% if section.settings.background_image != null %}
+      <img
+        class="h-full w-full object-cover"
+        src="{{ section.settings.background_image | img_url: 'master'}}"
+        alt="">
+    {% endif %}
+  </div>
   <div class="section relative">
     <div class="relative sm: absolute top-[0] sm:top-[126px] sm:left-[15.7%] w-full sm:w-[320px] sm:h-[416px] sm:bg-white sm:rounded-[160px] flex flex-col items-start sm:justify-center sm:items-center ">
       {% if section.settings.title != null %}
