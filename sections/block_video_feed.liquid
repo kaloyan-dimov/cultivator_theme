@@ -8,7 +8,7 @@
       {% for block in section.blocks %}
         <div class="swiper-slide overflow-hidden rounded-[16px]">
           <div class="video_feed_video w-full h-full">
-            {{ block.settings.video | video_tag: autoplay: true, loop: true }}
+            {{ block.settings.video | video_tag: autoplay: false, loop: true }}
           </div>
         </div>
       {% endfor %}
