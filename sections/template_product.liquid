@@ -110,8 +110,8 @@
     <div class="bg-red-500 min-h-[50px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}
         <img
-          class="w-full h-full object-cover"
-          src="{{ obj.image | img_url }}"
+          class="w-[50px] h-[50px]"
+          src="{{ obj.image }}"
           alt="">
         {{ obj.text }}
       {% endfor %}
