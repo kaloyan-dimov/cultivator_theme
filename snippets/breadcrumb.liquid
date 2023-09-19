@@ -42,9 +42,9 @@
   }
 </style>
 
-{%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+template: {{ template }}
+{%- unless template == 'index' or template == 'cart' or template == 'customers/login' or template == '404' -%}
   {%- assign t = template | split: '.' | first -%}
-  template: {{ t }}
   <nav
     class="breadcrumbs p-4"
     role="navigation"
