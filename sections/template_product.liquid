@@ -107,8 +107,9 @@
         value="ADD TO CART"
         class="product_add flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
     </div>
-    <div class="bg-red-500 min-h-[50px]">
+    <div class="bg-red-500 min-h-[50px] ">
       {% for obj in product.metafields.custom.product_description_tags.value %}
+        {{ obj.image }}
         <img
           class="w-[50px] h-[50px]"
           src="{{ obj.image }}"
