@@ -109,10 +109,10 @@
     </div>
     <div class="bg-red-500 min-h-[50px] ">
       {% for obj in product.metafields.custom.product_description_tags.value %}
-        {{ obj.image | image_url }}s
+        {{ obj.image | image_url }}ss
         <img
           class="w-[50px] h-[50px]"
-          src="{{ obj.image }}"
+          src="{{ obj.image | image_url }}"
           alt="">
         {{ obj.text }}
       {% endfor %}
