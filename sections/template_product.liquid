@@ -111,7 +111,7 @@
       {% for obj in product.metafields.custom.product_description_tags.value %}
         <img
           class="w-full h-full object-cover"
-          src="{{ obj.image }}"
+          src="{{ obj.image | img_url }}"
           alt="">
         {{ obj.text }}
       {% endfor %}
