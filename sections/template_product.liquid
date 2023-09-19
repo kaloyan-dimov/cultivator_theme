@@ -107,14 +107,17 @@
         value="ADD TO CART"
         class="product_add flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
     </div>
-    <div class="bg-red-500 min-h-[50px] ">
+    <div class="grid grid-cols-2">
       {% for obj in product.metafields.custom.product_description_tags.value %}
-        {{ obj.image | image_url }}ss
-        <img
-          class="w-[50px] h-[50px]"
-          src="{{ obj.image | image_url }}"
-          alt="">
-        {{ obj.text }}
+        <div class="flex gap-[8px]">
+          <div class="w-[44px] h-[41px]">
+            <img
+              class=""
+              src="{{ obj.image | image_url }}"
+              alt="">
+          </div>
+          <h3>{{ obj.text }}</h3>
+        </div>
       {% endfor %}
     </div>
     <ul class="w-full flex flex-col">

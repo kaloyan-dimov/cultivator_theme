@@ -815,6 +815,9 @@ video {
 .h-\[417px\] {
   height: 417px;
 }
+.h-\[41px\] {
+  height: 41px;
+}
 .h-\[420px\] {
   height: 420px;
 }
@@ -1125,6 +1128,9 @@ video {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
