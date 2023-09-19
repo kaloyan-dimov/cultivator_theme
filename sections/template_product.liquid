@@ -109,7 +109,8 @@
     </div>
     <div class="bg-red-500 min-h-[50px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}
-        {{ obj | json }}
+        {{ obj.image }}
+        {{ obj.text }}
       {% endfor %}
     </div>
     <ul class="w-full flex flex-col">
