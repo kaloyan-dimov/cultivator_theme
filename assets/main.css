@@ -2590,6 +2590,8 @@ video {
   height: 56px;
   border-radius: 20px;
   background-color: #FBF9F9;
+  cursor: pointer;
+  pointer-events: none;
 }
 .video_feed .video_feed_swiper .video_feed_video .video_play_button::after {
   display: block;
