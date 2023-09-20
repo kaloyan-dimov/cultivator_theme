@@ -2594,13 +2594,6 @@ video {
   transform: translate(-24vw, -50vh);
   transition: all 0.5s;
 }
-.video_feed .video_feed_swiper .video_feed_video video {
-  width: 100%;
-  height: 100%;
-  border-radius: 32px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .video_feed .video_feed_swiper .video_feed_video .video_play_button {
   display: flex;
   justify-content: center;
