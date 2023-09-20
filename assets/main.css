@@ -2583,17 +2583,6 @@ video {
   background-color: white;
   cursor: pointer;
 }
-.video_feed .video_feed_swiper .video_feed_video .video_background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  opacity: 0.2;
-  width: 0;
-  height: 0;
-  background-color: black;
-  transform: translate(-24vw, -50vh);
-  transition: all 0.5s;
-}
 .video_feed .video_feed_swiper .video_feed_video .video_play_button {
   display: flex;
   justify-content: center;
@@ -2615,14 +2604,42 @@ video {
   background-repeat: no-repeat;
   background-size: 12px 17px;
 }
-.video_feed .video_feed_swiper .video_feed_video .close_video {
-  max-height: 0;
-  opacity: 0;
-}
-.video_feed .video_feed_swiper .video_feed_video.active .video_background {
+
+.video_feed_playing_video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
+  opacity: 0;
+  background-color: rgba(1, 1, 1, 0);
   transition: all 0.5s;
+}
+.video_feed_playing_video .video_container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  min-width: 902px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 16px;
+  background-color: white;
+  border-radius: 20px;
+}
+.video_feed_playing_video .video_container video {
+  border-radius: 20px;
+}
+.video_feed_playing_video.active {
+  pointer-events: all;
+  background-color: rgba(1, 1, 1, 0.4);
+  transition: all 0.5s;
+}
+.video_feed_playing_video.active .video_container {
+  max-height: 2000px;
 }
 
 .instagram_feed_logo {
