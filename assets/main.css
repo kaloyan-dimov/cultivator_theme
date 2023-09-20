@@ -2589,6 +2589,7 @@ video {
   height: 0;
   background-color: black;
   transform: translate(-24vw, -50vh);
+  transition: all 0.5s;
 }
 .video_feed .video_feed_swiper .video_feed_video video {
   width: 100%;
@@ -2625,6 +2626,7 @@ video {
 .video_feed .video_feed_swiper .video_feed_video.active .video_background {
   width: 100vw;
   height: 100vh;
+  transition: all 0.5s;
 }
 
 .instagram_feed_logo {
