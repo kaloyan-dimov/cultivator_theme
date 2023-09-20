@@ -6,12 +6,12 @@
   <div class="swiper video_feed_swiper">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide rounded-[32px] relative">
+        <div class="swiper-slide rounded-[32px]">
           <div class="video_feed_video w-full h-full">
             <div class="video_background"></div>
             <img
               class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
-              src="{{ block.settings.video.preview_image.src | img_url: 'large'}}"
+              src="{{ block.settings.video.preview_image.src | img_url}}"
               alt="">
             <div class="video_play_button video_play_gold"></div>
             <h2 class="close_video">close</h2>
