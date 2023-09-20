@@ -2589,6 +2589,8 @@ video {
   background-color: #FBF9F9;
 }
 .video_feed .video_feed_swiper .video_feed_video .video_play_button::after {
+  width: 12px;
+  height: 17px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px 17px;
