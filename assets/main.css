@@ -785,9 +785,6 @@ video {
 .h-\[24px\] {
   height: 24px;
 }
-.h-\[250px\] {
-  height: 250px;
-}
 .h-\[260px\] {
   height: 260px;
 }
@@ -1289,6 +1286,9 @@ video {
 }
 .rounded-\[26px\] {
   border-radius: 26px;
+}
+.rounded-\[32px\] {
+  border-radius: 32px;
 }
 .rounded-\[48px\] {
   border-radius: 48px;
