@@ -2574,7 +2574,6 @@ video {
   overflow: visible;
 }
 .video_feed .video_feed_swiper .video_feed_video {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
