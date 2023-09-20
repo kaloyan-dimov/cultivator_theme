@@ -2579,6 +2579,7 @@ video {
   cursor: pointer;
 }
 .video_feed .video_feed_swiper .video_feed_video::before {
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
