@@ -2580,11 +2580,13 @@ video {
 }
 .video_feed .video_feed_swiper .video_feed_video .video_background {
   position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  opacity: 0.2;
   width: 100vw;
   height: 100vh;
+  background-color: black;
+  transform: translate(-24vw, -50vh);
 }
 .video_feed .video_feed_swiper .video_feed_video video {
   width: 100%;
