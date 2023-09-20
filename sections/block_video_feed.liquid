@@ -6,7 +6,7 @@
   <div class="swiper video_feed_swiper">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="swiper-slide rounded-[16px]">
+        <div class="swiper-slide overflow-hidden rounded-[16px]">
           <div class="video_feed_video w-full h-full">
             <div class="video_background"></div>
             {{ block.settings.video | video_tag: image_size: 'master', autoplay: false, loop: true }}
