@@ -2605,7 +2605,7 @@ video {
   background-size: 12px 17px;
 }
 
-.video_feed_playing_video {
+.video_feed_player {
   position: fixed;
   top: 0;
   left: 0;
@@ -2619,7 +2619,7 @@ video {
   background-color: rgba(1, 1, 1, 0);
   transition: all 0.5s;
 }
-.video_feed_playing_video .video_container {
+.video_feed_player .video_container {
   display: flex;
   gap: 8px;
   width: 100%;
@@ -2630,15 +2630,15 @@ video {
   background-color: white;
   border-radius: 20px;
 }
-.video_feed_playing_video .video_container video {
+.video_feed_player .video_container video {
   border-radius: 20px;
 }
-.video_feed_playing_video.active {
+.video_feed_player.active {
   pointer-events: all;
   background-color: rgba(1, 1, 1, 0.4);
   transition: all 0.5s;
 }
-.video_feed_playing_video.active .video_container {
+.video_feed_player.active .video_container {
   max-height: 2000px;
 }
 
