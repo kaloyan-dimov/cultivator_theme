@@ -2578,8 +2578,7 @@ video {
   background-color: white;
   cursor: pointer;
 }
-.video_feed .video_feed_swiper .video_feed_video::before {
-  content: "";
+.video_feed .video_feed_swiper .video_feed_video .video_background {
   position: fixed;
   top: 0;
   left: 0;
