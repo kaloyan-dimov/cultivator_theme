@@ -16,7 +16,7 @@
           </div>
         </div>
         Video Src:
-        {{ block.settings.video.sources.value }}2
+        {{ block.settings.video | json }}2
       {% endfor %}
     </div>
     <div class="swiper-pagination"></div>
