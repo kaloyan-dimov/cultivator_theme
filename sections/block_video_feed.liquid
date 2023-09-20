@@ -11,7 +11,7 @@
             <div class="video_background"></div>
             <img
               class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
-              src="{{ block.settings.video.preview_image.src | img_url}}"
+              src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
               alt="">
             <div class="video_play_button video_play_gold"></div>
             <h2 class="close_video">close</h2>
