@@ -9,7 +9,7 @@
         <div class="swiper-slide rounded-[16px]">
           <div class="video_feed_video w-full h-full">
             <div class="video_background"></div>
-            {{ block.settings.video | video_tag: image_size: 'master', autoplay: false, loop: true }}
+            {{ block.settings.video | video_tag: image_size: 'master', autoplay: false, loop: true, preload: "none" }}
             <div class="video_play_button video_play_gold"></div>
             <h2 class="close_video">close</h2>
           </div>
