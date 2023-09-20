@@ -2630,6 +2630,7 @@ video {
   padding: 16px;
   background-color: white;
   border-radius: 20px;
+  transition: all 0.5s;
 }
 .video_feed_player .video_container video {
   border-radius: 20px;
@@ -2641,6 +2642,7 @@ video {
 }
 .video_feed_player.active .video_container {
   max-height: 2000px;
+  transition: all 0.5s;
 }
 
 .instagram_feed_logo {
