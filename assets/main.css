@@ -2615,7 +2615,6 @@ video {
   pointer-events: none;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
   background-color: rgba(1, 1, 1, 0);
   transition: all 0.5s;
 }
