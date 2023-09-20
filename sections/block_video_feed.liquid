@@ -12,7 +12,7 @@
             {{ block.settings.video | json }}
             <img
               class="[w-250px] h-[250px] absolute top-[0] left-[0]"
-              src="{{ block.settings.video.preview_image.src }}"
+              src="{{ block.settings.video.preview_image.src | img_url}}"
               alt="">
             <div class="video_play_button video_play_gold"></div>
             <h2 class="close_video">close</h2>
