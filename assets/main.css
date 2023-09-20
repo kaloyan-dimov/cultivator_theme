@@ -2589,6 +2589,7 @@ video {
   background-color: #FBF9F9;
 }
 .video_feed .video_feed_swiper .video_feed_video .video_play_button::after {
+  display: block;
   width: 12px;
   height: 17px;
   background-position: center;
