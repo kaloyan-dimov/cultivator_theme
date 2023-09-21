@@ -1,15 +1,21 @@
-<div class="flex flex-col lg:flex-row lg:mx-[auto] lg:px[64px] lg:max-w-[1440px] lg:gap-[16px]">
-  <div class="w-full lg:w-1/2">
+<div
+  class="flex flex-col lg:flex-row lg:mx-[auto] lg:px[64px] lg:max-w-[1440px] lg:gap-[16px]">
+  <div
+    class="w-full lg:w-1/2">
     {% if product.media.size > 1 %}
-      <div class="swiper single_product_swiper w-full  mb-[24px] sticky">
-        <div class="swiper-wrapper lg:pl-[111px]">
+      <div
+        class="swiper single_product_swiper w-full  mb-[24px] sticky">
+        <div
+          class="swiper-wrapper lg:pl-[111px]">
           {% for image in product.media %}
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide">
               <img
                 class="w-full h-full object-cover"
                 src="{{ image | img_url: 'master'}}"
                 alt="">
-              <div class="swiper_thumb hidden">
+              <div
+                class="swiper_thumb hidden">
                 <img
                   class="w-full h-full object-cover"
                   src="{{ image | img_url}}"
@@ -17,12 +23,16 @@
             </div>
           {% endfor %}
         </div>
-        <div class="swiper-pagination hidden lg:flex"></div>
-        <div class="swiper-button-prev lg:hidden"></div>
-        <div class="swiper-button-next lg:hidden"></div>
+        <div
+          class="swiper-pagination hidden lg:flex"></div>
+        <div
+          class="swiper-button-prev lg:hidden"></div>
+        <div
+          class="swiper-button-next lg:hidden"></div>
       </div>
     {% else %}
-      <div class="w-full h-[360px]">
+      <div
+        class="w-full h-[360px]">
         <img
           class="w-full h-full object-cover"
           src="{{ product.featured_image | img_url: 'master'}}"
@@ -30,31 +40,38 @@
       </div>
     {% endif %}
   </div>
-  <div class="w-full lg:w-1/2">
-    <div class="flex flex-col gap-2">
-      <div class="flex justify-between">
-        <div class="review_only_stars"></div>
+  <div
+    class="w-full lg:w-1/2">
+    <div
+      class="flex flex-col gap-2">
+      <div
+        class="flex justify-between">
+        <div
+          class="review_only_stars"></div>
         {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
         <div
-          class="w-[40px] h-[40px] border border-[#CCAC71] heart_gold add_to_wishlist
+          class="w-[40px] h-[40px] heart_gold add_to_wishlist
           {% for wishlist_item in wishlist_array %}
             {% assign current_product = all_products[wishlist_item] %}
-            {% if current_product.handle == product.handle %}bg-[#CCAC71]
-            {% else %}
-              no-match{% endif %}
+            {% if current_product.handle == product.handle %}in_wishlist{% endif %}
           {% endfor %}"
           data-handle="{{ product.handle }}"></div>
       </div>
-      <div class="flex">
+      <div
+        class="flex">
         <div>tag</div>
         <div>tag</div>
         <div>tag</div>
       </div>
-      <h1 class="text-[18px]">{{ product.title }}</h1>
-      <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
-      <h2 class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
+      <h1
+        class="text-[18px]">{{ product.title }}</h1>
+      <h2
+        class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
+      <h2
+        class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>|
-        <span class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
+        <span
+          class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
         </span>
         |
         {% assign offer_price = product.price %}
@@ -62,10 +79,12 @@
         {% assign discount = offer_price | divided_by: max_price %}
         {{ discount | times: 100 | minus: 100 | round: 2 }} %
       </h2>
-      <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
+      <h3
+        class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
         {% else %}
-          <div class="flex flex-col border border-[#E6DFDB]">
+          <div
+            class="flex flex-col border border-[#E6DFDB]">
             {% for variant in product.variants %}
               <label
                 for="{{ variant.id }}"
@@ -82,16 +101,21 @@
                   {% if product.selected_variant == nil and forloop.index == 1 %}
                   checked
                   {% endif %}>
-                <h3 class="pointer-events-none text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</h3>
+                <h3
+                  class="pointer-events-none text-[#54443B] text-[16px]">{{ variant.option1 }} - {{ variant.price | money }}</h3>
               </label>
             {% endfor %}
           </div>
       {% endif %}
     </div>
 
-    <div class="flex gap-2 text-[#CCAC71]">
-      <div class="min-w-[146px] min-h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px]">
-        <div id="input_minus" class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">-</div>
+    <div
+      class="flex gap-2 text-[#CCAC71]">
+      <div
+        class="min-w-[146px] min-h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px]">
+        <div
+          id="input_minus"
+          class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">-</div>
         <input
           class="bg-transparent w-[50px] text-center"
           min="1"
@@ -99,7 +123,9 @@
           id="quantity"
           name="quantity"
           value="1" />
-        <div id="input_plus" class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">+</div>
+        <div
+          id="input_plus"
+          class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">+</div>
       </div>
       <input
         data-id="{{ product.selected_or_first_available_variant.id }}"
@@ -107,10 +133,13 @@
         value="ADD TO CART"
         class="product_add flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
     </div>
-    <div class="grid grid-cols-2 gap-[8px]">
+    <div
+      class="grid grid-cols-2 gap-[8px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}
-        <div class="flex gap-[8px] items-center">
-          <div class="w-[44px] h-[41px] ">
+        <div
+          class="flex gap-[8px] items-center">
+          <div
+            class="w-[44px] h-[41px] ">
             <img
               class="w-full h-full object-contain"
               src="{{ obj.image | image_url }}"
@@ -120,42 +149,68 @@
         </div>
       {% endfor %}
     </div>
-    <ul class="w-full flex flex-col">
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">Description</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
+    <ul
+      class="w-full flex flex-col">
+      <li
+        class="border-t border-[#E6DFDB]">
+        <div
+          class="list_item flex flex-col px-[16px]">
+          <div
+            class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+            <h2
+              class="text-[16px]">Description</h2>
+            <div
+              class="list_arrow h-[32px] w-[32px]"></div>
           </div>
-          <div class="list_content pb-[16px]">{{ product.description }}</div>
+          <div
+            class="list_content pb-[16px]">{{ product.description }}</div>
         </li>
       </li>
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col  px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">Clinical Safe Product</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
+      <li
+        class="border-t border-[#E6DFDB]">
+        <div
+          class="list_item flex flex-col  px-[16px]">
+          <div
+            class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+            <h2
+              class="text-[16px]">Clinical Safe Product</h2>
+            <div
+              class="list_arrow h-[32px] w-[32px]"></div>
           </div>
-          <div class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_clinically_safe | metafield_tag }}</div>
+          <div
+            class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_clinically_safe | metafield_tag }}</div>
         </div>
       </li>
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">Ingridients</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
+      <li
+        class="border-t border-[#E6DFDB]">
+        <div
+          class="list_item flex flex-col px-[16px]">
+          <div
+            class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+            <h2
+              class="text-[16px]">Ingridients</h2>
+            <div
+              class="list_arrow h-[32px] w-[32px]"></div>
           </div>
-          <div class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_ingridients | metafield_tag }}</div>
+          <div
+            class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_ingridients | metafield_tag }}</div>
         </div>
       </li>
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">FAQ</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
+      <li
+        class="border-t border-[#E6DFDB]">
+        <div
+          class="list_item flex flex-col px-[16px]">
+          <div
+            class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+            <h2
+              class="text-[16px]">FAQ</h2>
+            <div
+              class="list_arrow h-[32px] w-[32px]"></div>
           </div>
-          <div class="list_content pb-[16px]">
-            <div class="flex flex-col gap-[8px]">
+          <div
+            class="list_content pb-[16px]">
+            <div
+              class="flex flex-col gap-[8px]">
               {% for block in section.blocks %}
                 {% if block.type == "Product_FAQ" %}
                   <h2>{{ block.settings.faq_title }}</h2>
@@ -166,13 +221,19 @@
           </div>
         </div>
       </li>
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">Certification</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
+      <li
+        class="border-t border-[#E6DFDB]">
+        <div
+          class="list_item flex flex-col px-[16px]">
+          <div
+            class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+            <h2
+              class="text-[16px]">Certification</h2>
+            <div
+              class="list_arrow h-[32px] w-[32px]"></div>
           </div>
-          <div class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_certification | metafield_tag }}</div>
+          <div
+            class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_certification | metafield_tag }}</div>
         </div>
       </li>
     </ul>
