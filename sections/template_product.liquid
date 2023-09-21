@@ -78,8 +78,13 @@
       <h2
         class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
+        discount_applications:
         {% for d in cart.discount_applications %}
           {{ d }}
+        {% endfor %}<br>
+        discount_allocations:
+        {% for s in cart.discount_allocations %}
+          {{ s }}
         {% endfor %}
         {% comment %}
         {% for variant in product.variants %}
