@@ -16,7 +16,7 @@
             {% if block.settings.button_text != null %}
               <button class="border-[#CCAC71] border text-[14px] uppercase px-[24px] flex items-center justify-center gap-[8px] rounded-[24px] text-[#CCAC71]">
                 {{ block.settings.button_text }}
-                <div class="w-[12px] h-[17px] video_play_gold"></div>
+                <div class="video_play_gold"></div>
               </button>
             {% endif %}
           </li>
@@ -30,7 +30,7 @@
             class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
             src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
             alt="">
-          <div class="video_play_button video_play_white"></div>
+          <div class="video_play_white"></div>
         </div>
       {% endfor %}
     </div>
