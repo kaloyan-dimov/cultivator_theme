@@ -2630,6 +2630,11 @@ video {
   border-radius: 20px;
   border: 1px solid white;
 }
+.video_feed_with_text .video_feed_videos .video_feed_video .video_play_white::after {
+  width: 12px;
+  height: 17px;
+  opacity: 1;
+}
 
 .video_feed .video_feed_swiper {
   overflow: visible;
