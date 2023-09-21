@@ -2664,7 +2664,7 @@ video {
   width: 28px;
 }
 
-.video_feed_player {
+.video_player {
   position: fixed;
   top: 0;
   left: 0;
@@ -2679,7 +2679,7 @@ video {
   z-index: 2;
   padding: 32px;
 }
-.video_feed_player .video_container {
+.video_player .video_container {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -2694,16 +2694,16 @@ video {
   opacity: 0;
   transition: all 0.5s;
 }
-.video_feed_player .video_container .video_close {
+.video_player .video_container .video_close {
   cursor: pointer;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   align-self: flex-end;
 }
-.video_feed_player .video_container video {
+.video_player .video_container video {
   border-radius: 20px;
 }
-.video_feed_player .video_container .video_play_white {
+.video_player .video_container .video_play_white {
   position: absolute;
   left: 32px;
   bottom: 32px;
@@ -2715,19 +2715,19 @@ video {
   border-radius: 20px;
   border: 1px solid white;
 }
-.video_feed_player .video_container .video_play_white::after {
+.video_player .video_container .video_play_white::after {
   width: 12px;
   height: 17px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
-.video_feed_player.active {
+.video_player.active {
   pointer-events: all;
   background-color: rgba(1, 1, 1, 0.4);
   transition: all 0.5s;
 }
-.video_feed_player.active .video_container {
+.video_player.active .video_container {
   max-height: 2000px;
   opacity: 1;
   transition: all 0.5s;
