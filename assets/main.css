@@ -755,9 +755,6 @@ video {
 .h-\[170px\] {
   height: 170px;
 }
-.h-\[17px\] {
-  height: 17px;
-}
 .h-\[180px\] {
   height: 180px;
 }
@@ -944,9 +941,6 @@ video {
 }
 .w-\[115px\] {
   width: 115px;
-}
-.w-\[12px\] {
-  width: 12px;
 }
 .w-\[140px\] {
   width: 140px;
@@ -1489,10 +1483,6 @@ video {
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
-}
-.px-\[48px\] {
-  padding-left: 48px;
-  padding-right: 48px;
 }
 .py-12 {
   padding-top: 3rem;
@@ -2552,6 +2542,7 @@ video {
   max-height: 0;
   padding: 0;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .video_feed_with_text .video_feed_list ol li button .video_play_gold {
   width: 12px;
@@ -2564,6 +2555,9 @@ video {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.video_feed_with_text .video_feed_list ol li.active {
+  cursor: auto;
 }
 .video_feed_with_text .video_feed_list ol li.active h2 {
   opacity: 1;
@@ -2588,6 +2582,7 @@ video {
 .video_feed_with_text .video_feed_videos .video_feed_video {
   position: absolute;
   opacity: 0;
+  cursor: pointer;
   top: 50%;
   left: 50%;
   overflow: hidden;
