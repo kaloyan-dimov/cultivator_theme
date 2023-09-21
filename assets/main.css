@@ -2625,7 +2625,7 @@ video {
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  max-width: 902px;
+  max-width: 62.6%;
   max-height: 0;
   overflow: hidden;
   padding: 16px;
