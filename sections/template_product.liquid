@@ -78,25 +78,26 @@
       <h2
         class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
+        {{ cart.discount_applications | json }}
+        {% comment %}
         {% for variant in product.variants %}
-          variant.discounts {{ variant.discounts | json }}<br>
-          compare: {{ variant.compare_at_price }}<br>
-          price: {{ variant.price }}<br>
-          final_price: {{ variant.final_price }}<br>
-          line_level_total_discount: {{ variant.line_level_total_discount }}<br>
-          unit_price: {{ variant.unit_price }}<br>
-          discount_application: {{ variant.discount_application }}<br>
-          discount_allocation: {{ variant.discount_allocation }}<br>
-          unit_price_measurement: {{ variant.unit_price_measurement }}<br><br><br>
+        variant.discounts {{ variant.discounts | json }}<br>
+        compare: {{ variant.compare_at_price }}<br>
+        price: {{ variant.price }}<br>
+        final_price: {{ variant.final_price }}<br>
+        line_level_total_discount: {{ variant.line_level_total_discount }}<br>
+        unit_price: {{ variant.unit_price }}<br>
+        discount_application: {{ variant.discount_application }}<br>
+        discount_allocation: {{ variant.discount_allocation }}<br>
+        unit_price_measurement: {{ variant.unit_price_measurement }}<br><br><br>
         {% endfor %}
         {% if product.variant.compare_at_price %}
-          {% capture discount %}
-            discount: {{ discount }}
-            {{ product.compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}%
-          {% endcapture %}
-          {{ discount }}
+        {% capture discount %}
+        discount: {{ discount }}
+        {{ product.compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}%
+        {% endcapture %}
+        {{ discount }}
         {% endif %}
-        {% comment %}
         <span
         class="line-through">{{ product.compare_at_price | money_without_trailing_zeros }}
         </span>
