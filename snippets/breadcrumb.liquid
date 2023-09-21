@@ -19,7 +19,7 @@
           aria-current="page">{{ page.title }}</a>
       </li>
       {%- when 'product' -%}
-      {{ template }}i
+      {{ template }}{{ product.collections }}
       {%- if collection.url -%}
         <li
           class="breadcrumb">
