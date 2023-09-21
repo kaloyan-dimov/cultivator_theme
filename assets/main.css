@@ -1822,21 +1822,21 @@ video {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg width=%2724%27 height=%2720%27 viewBox=%270 0 24 20%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Crect x=%272.375%27 y=%270.875%27 width=%277.25%27 height=%2718.25%27 rx=%271.625%27 stroke=%27%23FBF9F9%27 stroke-width=%270.75%27/%3E%3Crect x=%2714.375%27 y=%270.875%27 width=%277.25%27 height=%2718.25%27 rx=%271.625%27 stroke=%27%23FBF9F9%27 stroke-width=%270.75%27/%3E%3C/svg%3E%0A");
   opacity: 1;
-  transition: opacitiy 0.25s;
+  transition: opacitiy 0.5s;
 }
 .video_play_white::after {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2717%27 viewBox=%270 0 12 17%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M11.1116 6.86942L11.1115 6.86945L11.1137 6.87108C11.6018 7.24229 11.9 7.85251 11.9 8.49767C11.9 9.14252 11.6017 9.75286 11.105 10.1305L11.1049 10.1305L11.1028 10.1322L3.17494 16.5081C2.83433 16.7671 2.44181 16.9 2.03105 16.9C1.72975 16.9 1.42766 16.8246 1.15778 16.6821C0.506437 16.3368 0.1 15.6474 0.1 14.8806V2.11441C0.1 1.34796 0.506725 0.658752 1.1576 0.313215C1.79334 -0.0233163 2.59079 0.043028 3.16659 0.480415L11.1116 6.86942ZM1.42581 0.879627L1.42562 0.879726C0.976278 1.11821 0.698696 1.59261 0.698696 2.11441V14.8806C0.698696 15.403 0.97595 15.8771 1.42565 16.1156L1.42577 16.1157C1.86789 16.3494 2.42015 16.3024 2.81781 15.9994L2.81783 15.9995L2.81989 15.9978L10.7477 9.62197C11.098 9.35495 11.301 8.9373 11.301 8.49735C11.301 8.05787 11.0984 7.64002 10.7561 7.3793L2.81146 0.990601L2.81148 0.990571L2.80927 0.988889C2.58835 0.821136 2.3158 0.728648 2.03135 0.728648C1.82163 0.728648 1.61242 0.781086 1.42581 0.879627Z%27 fill=%27white%27 stroke=%27white%27 stroke-width=%270.2%27/%3E%3C/svg%3E%0A");
   opacity: 0;
-  transition: opacitiy 0.25s;
+  transition: opacitiy 0.5s;
 }
 .video_play_white.paused::before {
   opacity: 0;
-  transition: opacitiy 0.25s;
+  transition: opacitiy 0.5s;
 }
 .video_play_white.paused::after {
   opacity: 1;
-  transition: opacitiy 0.25s;
+  transition: opacitiy 0.5s;
 }
 
 .single_product_swiper {
