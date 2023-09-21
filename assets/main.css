@@ -2666,7 +2666,7 @@ video {
 
 .video_player {
   position: fixed;
-  top: 0;
+  top: 1px;
   left: 0;
   display: flex;
   justify-content: center;
