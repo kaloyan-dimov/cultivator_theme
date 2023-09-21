@@ -2617,7 +2617,7 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.video_feed_with_text .video_feed_videos .video_feed_video video .video_play_white {
+.video_feed_with_text .video_feed_videos .video_feed_video .video_play_white {
   position: absolute;
   top: 50%;
   left: 50%;
