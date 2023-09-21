@@ -15,14 +15,14 @@
             <div class="video_play_button video_play_gold"></div>
           </div>
         </div>
+        {% for test in block.settings.video.sources %}
+          {{ test }}s
+        {% endfor %}sss
       {% endfor %}
     </div>
     <div class="swiper-pagination"></div>
   </div>
 </div>
-{% for test in block.settings.video.sources %}
-  {{ test }}s
-{% endfor %}sss
 {
 "alt":null,
   "id":34862913225016,
