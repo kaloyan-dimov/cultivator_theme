@@ -2630,6 +2630,7 @@ video {
   padding: 16px;
   background-color: white;
   border-radius: 20px;
+  opacity: 0;
   transition: all 0.5s;
 }
 .video_feed_player .video_container video {
@@ -2642,6 +2643,7 @@ video {
 }
 .video_feed_player.active .video_container {
   max-height: 2000px;
+  opacity: 1;
   transition: all 0.5s;
 }
 
