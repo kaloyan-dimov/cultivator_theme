@@ -2695,7 +2695,8 @@ video {
   border: 1px solid white;
 }
 .video_feed_player .video_container .video_play_white::after {
-  width: 17px;
+  width: 12px;
+  height: 17px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
