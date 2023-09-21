@@ -2564,7 +2564,7 @@ video {
   width: 12px;
   height: 17px;
 }
-.video_feed_with_text .video_feed_list ol li button .video_play_gold::before, .video_feed_with_text .video_feed_list ol li button .video_play_gold::after {
+.video_feed_with_text .video_feed_list ol li button .video_play_gold::before {
   display: block;
   width: 100%;
   height: 100%;
@@ -2735,6 +2735,10 @@ video {
   border: 1px solid white;
 }
 .video_player .video_container .video_play_white::before, .video_player .video_container .video_play_white::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 12px;
   height: 17px;
   background-repeat: no-repeat;
