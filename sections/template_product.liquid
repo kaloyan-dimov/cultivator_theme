@@ -79,6 +79,7 @@
         class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
         {% for variant in product.variants %}
+          variant.discounts {{ variant.discounts | json }}<br>
           compare: {{ variant.compare_at_price }}<br>
           price: {{ variant.price }}<br>
           final_price: {{ variant.final_price }}<br>
