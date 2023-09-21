@@ -81,6 +81,20 @@
         discount_applications:
         {% for d in cart.discount_applications %}
           {{ d }}
+          target_selection:{{ d.target_selection }}<br>
+
+          target_type:{{ d.target_type }}<br>
+
+          title:{{ d.title }}<br>
+
+          total_allocated_amount:{{ d.total_allocated_amount }}<br>
+
+          type:{{ d.type }}<br>
+
+          value:{{ d.value }}<br>
+
+          value_type:{{ d.value_type }}<br>
+
         {% endfor %}<br>
         discount_allocation:
         {% for s in cart.discount_allocation %}
