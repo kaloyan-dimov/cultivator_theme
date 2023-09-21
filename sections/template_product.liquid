@@ -79,7 +79,10 @@
         class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
         {% for variant in product.variants %}
-          compare: {{ variant.compare_at_price }}
+          compare: {{ variant.compare_at_price }}<br>
+          price: {{ variant.price }}<br>
+          unit_price: {{ variant.unit_price }}<br>
+          unit_price_measurement: {{ variant.unit_price_measurement }}<br>
         {% endfor %}
         {% if product.variant.compare_at_price %}
           {% capture discount %}
