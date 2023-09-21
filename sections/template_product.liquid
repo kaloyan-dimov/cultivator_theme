@@ -78,8 +78,8 @@
       <h2
         class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
+        compare: {{ product.variant.compare_at_price }}
         {% if product.variant.compare_at_price %}
-          compare: {{ product.variant.compare_at_price }}
           {% capture discount %}
             discount: {{ discount }}
             {{ product.compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}%
