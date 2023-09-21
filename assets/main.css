@@ -2622,6 +2622,13 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 56px;
+  border-radius: 20px;
+  border: 1px solid white;
 }
 
 .video_feed .video_feed_swiper {
