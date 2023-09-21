@@ -1,5 +1,8 @@
 <style>
   .video_loader {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -8,6 +11,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     animation: rotate 1s linear infinite
+  }
+
+  .video_loader.active {
+    opacity: 1;
+    transition: opacity 0.25s;
   }
   .video_loader::before,
   .video_loader::after {
