@@ -78,9 +78,9 @@
       <h2
         class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
-        discount_applications:
+        discount_applications:<br>
         {% for d in cart.discount_applications %}
-          {{ d }}
+          {{ d }}<br>
           target_selection:{{ d.target_selection }}<br>
 
           target_type:{{ d.target_type }}<br>
