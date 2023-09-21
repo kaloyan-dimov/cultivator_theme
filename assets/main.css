@@ -2763,6 +2763,9 @@ video {
   background-size: 100% 100%;
   background-position: center;
 }
+.video_player .video_container .video_play_white::before {
+  width: 24px;
+}
 .video_player.active {
   pointer-events: all;
   background-color: rgba(1, 1, 1, 0.4);
