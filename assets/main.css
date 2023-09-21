@@ -2566,9 +2566,11 @@ video {
   overflow: hidden;
   transform: translate(-50%, -50%);
   transition: all 0.5s 0.5s;
+  pointer-events: none;
 }
 .video_feed_with_text .video_feed_videos .video_feed_video.active {
   opacity: 1;
+  pointer-events: all;
   transition: all 0.5s;
 }
 .video_feed_with_text .video_feed_videos .video_feed_video video {
@@ -2660,6 +2662,7 @@ video {
 }
 .video_feed_player .video_container {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 8px;
   width: 100%;
@@ -2671,7 +2674,6 @@ video {
   border-radius: 20px;
   opacity: 0;
   transition: all 0.5s;
-  position: relative;
 }
 .video_feed_player .video_container .video_close {
   cursor: pointer;
