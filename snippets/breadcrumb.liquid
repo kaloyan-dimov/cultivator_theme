@@ -19,11 +19,7 @@
           aria-current="page">{{ page.title }}</a>
       </li>
       {%- when 'product' -%}
-      {{ template }}
-      {{ template.directory }}
-      {% for collection in product.collections %}
-        {{ collection.title }} new
-      {% endfor %}
+      <li>Products</li>
       {%- if collection.url -%}
         <li
           class="breadcrumb">
