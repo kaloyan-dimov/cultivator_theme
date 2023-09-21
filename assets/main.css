@@ -2558,6 +2558,15 @@ video {
   padding-bottom: 0;
   transition: all 0.5s;
 }
+.video_feed_with_text .video_feed_list ol li button .video_play_gold {
+  width: 12px;
+  height: 17px;
+}
+.video_feed_with_text .video_feed_list ol li button .video_play_gold::after {
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .video_feed_with_text .video_feed_list ol li.active h2 {
   opacity: 1;
   transition: all 0.5s;
@@ -2666,7 +2675,7 @@ video {
 
 .video_player {
   position: fixed;
-  top: 1px;
+  top: 0;
   left: 0;
   display: flex;
   justify-content: center;
