@@ -81,8 +81,10 @@
         {% for variant in product.variants %}
           compare: {{ variant.compare_at_price }}<br>
           price: {{ variant.price }}<br>
+          final_price: {{ variant.final_price }}<br>
+          line_level_total_discount: {{ variant.line_level_total_discount }}<br>
           unit_price: {{ variant.unit_price }}<br>
-          unit_price_measurement: {{ variant.unit_price_measurement }}<br>
+          unit_price_measurement: {{ variant.unit_price_measurement }}<br><br><br>
         {% endfor %}
         {% if product.variant.compare_at_price %}
           {% capture discount %}
