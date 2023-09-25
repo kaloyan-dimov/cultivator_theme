@@ -66,7 +66,7 @@
         {% assign comp_at_price = product.first_available_variant.compare_at_price %}
         {{ comp_at_price }} , {{ comp_price }}
         calc: {% assign new = comp_price | divided_by: comp_at_price %}
-        {{ new }}
+        new: {{ new }}
       </h2>
       <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
