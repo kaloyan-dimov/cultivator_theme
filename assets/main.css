@@ -1308,6 +1308,10 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-r-\[9px\] {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
 .border {
   border-width: 1px;
 }
