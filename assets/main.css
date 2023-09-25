@@ -6,6 +6,7 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 /*
@@ -1875,6 +1876,16 @@ video {
 .video_play_white.paused::after {
   opacity: 1;
   transition: opacitiy 0.5s;
+}
+
+.body-s-semibold {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.body-m {
+  font-size: 18px;
 }
 
 .single_product_swiper {
