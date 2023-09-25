@@ -60,13 +60,9 @@
       <h2>
         {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.price }}%<br>
         {{ product.price | divided_by: product.compare_at_price | times: 100 | minus: 100 }}%<br>
-        {{ product.first_available_variant.price | divided_by: product.first_available_variant.compare_at_price }} <br>
-        price:{{ product.first_available_variant.price }} comp: {{ product.first_available_variant.compare_at_price }}<br>
-        {% assign comp_price = product.first_available_variant.price %}
-        {% assign comp_at_price = product.first_available_variant.compare_at_price %}
-        {{ comp_at_price }} , {{ comp_price }}
-        calc: {% assign new = comp_price | divided_by: comp_at_price %}
-        new: {{ new }}
+        price: {{ product.first_available_variant.price | times: 100 | divided_by: product.first_available_variant.compare_at_price }} <br>
+        {{ product.first_available_variant.price }} comp: {{ product.first_available_variant.compare_at_price }}<br>
+
       </h2>
       <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
