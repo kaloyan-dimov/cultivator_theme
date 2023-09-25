@@ -5,8 +5,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0">
     {{ 'main.css' | asset_url | stylesheet_tag }}
+    {% if template == 'cart' %}{% include "revy-bundle-script" %}{% endif %}
+
   </head>
-  <body
+<body
     class="bg-[#FBF9F9]">
     <div
       class="master_header w-full h-fit fixed top-0 left-0 z-[2]">
@@ -25,6 +27,8 @@
       src="{{ 'main.js' | asset_url }}"
       defer="defer"
       type="module"></script>
+
+    {% include 'revy-bundle-script' %}
 
   </body>
 </html>
