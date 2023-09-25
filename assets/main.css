@@ -1299,6 +1299,9 @@ video {
 .rounded-\[90px\] {
   border-radius: 90px;
 }
+.rounded-\[9px\] {
+  border-radius: 9px;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1387,6 +1390,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 168, 212, 1);
   background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, 1);
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
@@ -1535,6 +1543,10 @@ video {
 .py-\[48px\] {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+.py-\[4px\] {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .py-\[64px\] {
   padding-top: 64px;
