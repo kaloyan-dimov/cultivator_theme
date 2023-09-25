@@ -50,8 +50,8 @@
           data-handle="{{ product.handle }}"></div>
       </div>
       <div class="flex gap-[8px]">
+        {{ product.tags | size }}
         {% for tag in product.tags %}
-          {{ product.tags | size }}
           <span class="py-[4px] px-[12px] rounded-[9px] bg-red-500">{{ tag }}</span>
         {% endfor %}
       </div>
