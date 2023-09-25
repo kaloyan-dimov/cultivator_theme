@@ -1,6 +1,6 @@
 <header id="desktop_header" class="hidden md:block w-full top-0 left-0 bg-white z-[2] relative">
   <div class="section flex justify-between h-[92px] items-center w-full">
-    <ul class="flex w-[430px] min-w-[29%] max-w-[40%] justify-between h-full uppercase">
+    <ul class="flex w-[391px] min-w-[29%] max-w-[40%] justify-between h-full uppercase">
       {% for link in linklists.main-menu.links %}
       <li class="flex items-center h-full text-[16px]"><a href="{{ link.url }}{%- if link.type == 'collections_link' -%}#{{ link.handle }}{%- endif -%}"><h2>{{ link.title }}</h2></a>
           <ul class="absolute flex justify-center py-[48px] w-full bg-white gap-[24px] top-[100%] left-[0]">
@@ -29,7 +29,7 @@
       {% endfor %}
     </ul>
     <a href="{{ shop.url }}" class="header_logo_desktop w-[275px] h-[46px]"></a>
-    <div class="w-[430px] min-w-[29%] max-w-[40%] flex gap-6 items-center justify-end">
+    <div class="w-[391px] min-w-[29%] max-w-[40%] flex gap-6 items-center justify-end">
       <div class="client_interactions flex gap-4">
         <div class="search_icon w-[44px] h-[44px] cursor-pointer"></div>
         <a
