@@ -58,10 +58,6 @@
       <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
       <h2 class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
-        pr json:
-        {% for variant in product.variants %}
-          VAR:{{ variant | json }}<br>
-        {% endfor %}
         discount_allocation: {{ discount_allocation }}<br>
         discount_applications:<br>
         {% for d in cart.discount_applications %}
