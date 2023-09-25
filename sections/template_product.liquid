@@ -63,7 +63,8 @@
         {{ product.first_available_variant.price | divided_by: product.first_available_variant.compare_at_price }} <br>
         price:{{ product.first_available_variant.price }} comp: {{ product.first_available_variant.compare_at_price }}<br>
         {% assign comp_price = product.first_available_variant.price %}
-        {% assign comp_at_price = product.first_available_variant.compare_at_price %}s
+        {% assign comp_at_price = product.first_available_variant.compare_at_price %}
+        {{ comp_price }}
         calc: {{ comp_price | divided_by: comp_at_price }}
         {{ 16 | divided_by: 4 }}
       </h2>
