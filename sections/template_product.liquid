@@ -64,7 +64,7 @@
         price:{{ product.first_available_variant.price }} comp: {{ product.first_available_variant.compare_at_price }}<br>
         {% assign comp_price = product.first_available_variant.price %}
         {% assign comp_at_price = product.first_available_variant.compare_at_price %}
-        {{ comp_at_price }}
+        {{ comp_at_price }} , {{ comp_price }}
         calc: {% assign new = comp_price | divided_by: comp_at_price %}
         {{ new }}
       </h2>
