@@ -61,6 +61,9 @@
         PROD:
         {% if product.has_discount %}
           <span class="discount">This product is on sale!</span>
+        {% else %}
+          <span class="discount">This product is not on sale!</span>
+
         {% endif %}<br>
         discount_allocation: {{ discount_allocation }}<br>
         discount_applications:<br>
