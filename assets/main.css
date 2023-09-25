@@ -1368,6 +1368,11 @@ video {
   background-color: rgba(204, 172, 113, 1);
   background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
 }
+.bg-\[\#FAE1DD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(250, 225, 221, 1);
+  background-color: rgba(250, 225, 221, var(--tw-bg-opacity));
+}
 .bg-\[\#FBF9F9\] {
   --tw-bg-opacity: 1;
   background-color: rgba(251, 249, 249, 1);
@@ -1554,6 +1559,10 @@ video {
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .py-\[8px\] {
   padding-top: 8px;
