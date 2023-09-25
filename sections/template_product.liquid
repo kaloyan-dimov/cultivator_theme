@@ -58,9 +58,9 @@
       <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
       <h2 class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
-        {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.price }}%<br>
-        {{ product.price | divided_by: product.compare_at_price | times: 100 | minus: 100 }}%<br>
-        price: {{ product.first_available_variant.price | times: 100 | divided_by: product.first_available_variant.compare_at_price | minus: 100 }}% <br>
+        <span>{{ product.first_available_variant.price }}</span>
+        <span>{{ product.first_available_variant.compare_at_price }}</span>
+        <span>{{ product.first_available_variant.price | times: 100 | divided_by: product.first_available_variant.compare_at_price | minus: 100 }}% OFF</span>
 
       </h2>
       <h3 class="text-[#54443B] text-[#FF0000]">100 Gramm (109,00 Eur / 1 Kg) Inclusive Of All Taxes</h3>
