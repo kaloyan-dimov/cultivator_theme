@@ -1,0 +1,7 @@
+{% if show_price.compare_at_price != null %}
+  <span>{{ show_price.price | money }}</span>
+  <span class="line-through">{{ show_price.compare_at_price | money }}</span>
+  <span>{{ show_price.price | times: 100 | divided_by: show_price.compare_at_price | minus: 100 | abs }}% OFF</span>
+{% else %}
+  <span>{{ show_price.price | money }}</span>
+{% endif %}
