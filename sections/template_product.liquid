@@ -58,7 +58,11 @@
       <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
       <h2 class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
-        compare: {{ product.first_available_variant.compare_at_price | money }}<br>
+        {% if product.first_available_variant.compare_at_price != null %}
+          product has compare_at_price
+        {% else %}
+          product has no compare_at_price
+        {% endif %}
         <span>{{ product.first_available_variant.price | money }}</span>
         <span class="line-through">{{ product.first_available_variant.compare_at_price | money }}</span>
         <span>{{ product.first_available_variant.price | times: 100 | divided_by: product.first_available_variant.compare_at_price | minus: 100 | abs }}% OFF</span>
