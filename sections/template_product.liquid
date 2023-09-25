@@ -56,7 +56,6 @@
       </div>
       <h1 class="text-[18px]">{{ product.title }}</h1>
       <h2 class="text-[14px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
-      <h2 class="product_price text-[14px]">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</h2>
       <h2>
         {% if product.first_available_variant.compare_at_price != null %}
           <span>{{ product.first_available_variant.price | money }}</span>
