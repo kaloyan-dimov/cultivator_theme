@@ -2801,6 +2801,7 @@ video {
   width: 76px;
   height: 56px;
   border-radius: 20px;
+  z-index: 5;
 }
 .usage_guide_video .video_play_gold::after {
   display: block;
@@ -2814,6 +2815,8 @@ video {
 .usage_guide_video img {
   opacity: 1;
   transition: all 0.5s;
+}
+.usage_guide_video img {
   z-index: 4;
 }
 .usage_guide_video .video_loader {
