@@ -2824,6 +2824,7 @@ video {
   height: 42px;
   opacity: 0;
   border: 1px solid red;
+  z-index: 1;
   transition: all 0.5s;
 }
 .usage_guide_video.active .video_play_gold,
