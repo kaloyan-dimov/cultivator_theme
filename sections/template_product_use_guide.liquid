@@ -54,15 +54,15 @@
   }
 </style>
 <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] relative" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
-  <div class="video_play_gold bg-neutral"></div>
+  <div class="video_play_gold bg-neutral cursor-pointer"></div>
   <img
-    class="w-full h-full object-cover absolute top-[0] left-[0]"
+    class="w-full h-full object-cover absolute top-[0] left-[0] cursor-pointer"
     src="{{ section.settings.usage_guide_video.preview_image.src | img_url: 'master' }}"
     alt="">
   <div class="video_loader"></div>
   <div class="video_controls">
     <div class="progress_bar">
-      <div class="progress"></div>
+      <div class="progress cursor-pointer"></div>
       <h4 class="elapsed"></h4>
       <h4 class="remaining"></h4>
     </div>
