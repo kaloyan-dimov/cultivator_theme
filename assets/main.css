@@ -2819,6 +2819,7 @@ video {
 .usage_guide_video .video_controls {
   position: absolute;
   display: flex;
+  align-items: center;
   padding: 0 65px 0 72px;
   bottom: 78px;
   left: 0;
@@ -2829,7 +2830,11 @@ video {
   opacity: 0;
   transition: all 0.5s;
 }
-.usage_guide_video .video_controls .progress {
+.usage_guide_video .video_controls .progress_bar {
+  width: 100%;
+  padding-right: 38px;
+}
+.usage_guide_video .video_controls .progress_bar .progress {
   width: 100%;
   position: relative;
   height: 6px;
