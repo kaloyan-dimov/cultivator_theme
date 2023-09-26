@@ -138,6 +138,8 @@
         "e8cc56ec-65da-4041-8c98-54e2b81e86c2"
       ],
       "settings": {
+        "b_top": false,
+        "b_bot": true
       }
     },
     "23c7a703-cb92-4fd9-b047-d17653a74cd9": {
