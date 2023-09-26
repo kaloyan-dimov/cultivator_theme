@@ -2832,22 +2832,23 @@ video {
 .usage_guide_video .video_controls .progress_bar {
   width: 100%;
   position: relative;
-  border: 1px solid red;
 }
 .usage_guide_video .video_controls .progress_bar .progress {
   width: 100%;
   height: 6px;
   border-radius: 8px;
-  background-color: red;
+  background: linear-gradient(90deg, #8F7666 0%, #D9D9D9 0%);
 }
-.usage_guide_video .video_controls .progress_bar .elapsed {
-  position: absolute;
-  left: 0;
-  top: 6px;
-}
+.usage_guide_video .video_controls .progress_bar .elapsed,
 .usage_guide_video .video_controls .progress_bar .remaining {
   position: absolute;
-  top: 6px;
+  color: white;
+  top: 26px;
+}
+.usage_guide_video .video_controls .progress_bar .elapsed {
+  left: 0;
+}
+.usage_guide_video .video_controls .progress_bar .remaining {
   right: 0;
 }
 .usage_guide_video .video_controls .play_pause,
