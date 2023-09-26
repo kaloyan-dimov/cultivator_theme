@@ -1,10 +1,66 @@
+<style>
+  .video_loader {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 1s linear infinite
+  }
+  .video_loader.active {
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+  .video_loader::before,
+  .video_loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 5px solid #CCAC71;
+    animation: prixClipFix 2s linear infinite;
+  }
+  .video_loader::after {
+    transform: rotate3d(90, 90, 0, 180deg);
+    border-color: #E6DFDB;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+
+  @keyframes prixClipFix {
+    0% {
+      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+    50% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+    75%,
+    100% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+  }
+</style>
 <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] relative cursor-pointer" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
   <div class="video_play_gold bg-neutral"></div>
   <img
     class="w-full h-full object-cover absolute top-[0] left-[0]"
     src="{{ section.settings.usage_guide_video.preview_image.src | img_url: 'master' }}"
     alt="">
-  <div class="video_controls">s
+  <div class="video_loader"></div>
+  <div class="video_controls">
     <div class="progress_bar"></div>
     <div class="play_pause"></div>
     <div class="mute"></div>
