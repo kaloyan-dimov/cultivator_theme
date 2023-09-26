@@ -1934,8 +1934,14 @@ video {
 
 .body-m {
   font-size: 1.125rem;
-  line-height: 1.6875rem;
   font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.caption {
+  font-size: 2.125rem;
+  font-weight: 400;
+  line-height: 2.975rem;
 }
 
 .single_product_swiper {
@@ -3488,9 +3494,6 @@ video {
   }
   .sm\:text-left {
     text-align: left;
-  }
-  .sm\:text-\[42px\] {
-    font-size: 42px;
   }
   .sm\:text-\[48px\] {
     font-size: 48px;
