@@ -2817,7 +2817,13 @@ video {
   transition: all 0.5s;
 }
 .usage_guide_video .video_controls {
+  position: absolute;
+  bottom: 78px;
+  left: 0;
+  width: 100%;
+  height: 42px;
   opacity: 0;
+  border: 1px solid red;
   transition: all 0.5s;
 }
 .usage_guide_video.active .video_play_gold,
