@@ -2831,7 +2831,6 @@ video {
 }
 .usage_guide_video .video_controls .progress_bar {
   width: 100%;
-  padding-right: 38px;
   position: relative;
   border: 1px solid red;
 }
@@ -2858,6 +2857,9 @@ video {
   border-radius: 14px;
   width: 57px;
   height: 42px;
+}
+.usage_guide_video .video_controls .play_pause {
+  padding-left: 38px;
 }
 .usage_guide_video .video_controls .mute {
   margin-left: 8px;
