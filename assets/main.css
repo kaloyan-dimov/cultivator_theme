@@ -1306,8 +1306,8 @@ video {
 .rounded-\[60px\] {
   border-radius: 60px;
 }
-.rounded-\[90px\] {
-  border-radius: 90px;
+.rounded-\[80px\] {
+  border-radius: 80px;
 }
 .rounded-\[9px\] {
   border-radius: 9px;
@@ -1913,7 +1913,9 @@ video {
 }
 
 .body-m {
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: 400;
 }
 
 .single_product_swiper {
@@ -3518,10 +3520,6 @@ video {
 
   .sm\:text-left {
     text-align: left;
-  }
-
-  .sm\:text-\[20px\] {
-    font-size: 20px;
   }
 
   .sm\:text-\[42px\] {
