@@ -1,4 +1,4 @@
-<div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] overflow-hidden relative" data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
+<div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] overflow-hidden relative" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
   <img
     class="w-full h-full object-cover absolute top-[0] left-[0]"
     src="{{ section.settings.usage_guide_video.preview_image.src | img_url: 'master' }}"
