@@ -1911,6 +1911,7 @@ video {
 
 @font-face {
   font-family: "wix";
+  src: local("./WixMadeforDisplay-VariableFont_wght.ttf");
 }
 .nav-links {
   font-size: 1rem;
