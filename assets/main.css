@@ -3563,10 +3563,6 @@ video {
     margin-right: 0;
   }
 
-  .md\:mb-\[64px\] {
-    margin-bottom: 64px;
-  }
-
   .md\:block {
     display: block;
   }
