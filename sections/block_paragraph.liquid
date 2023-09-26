@@ -1,21 +1,22 @@
-<div class="container sm:max-w-[72.3%] py-[64px] sm:py-[80px] mx-[24px] sm:mx-auto w-fit border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
-  <h2 class="text-center caption text-taupe">
-    {% for block in section.blocks %}
-      {% if block.settings.image_for_text != null %}
-        <span class="border border-taupe-20 rounded-[20px] px-[14px] inline-block">
+<div class="w-full border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
+  <div class="container sm:max-w-[72.3%] py-[64px] sm:py-[80px] mx-[24px] sm:mx-auto w-fit ">
+    <h2 class="text-center caption text-taupe">
+      {% for block in section.blocks %}
+        {% if block.settings.image_for_text != null %}
+          <span class="border border-taupe-20 rounded-[20px] px-[14px] inline-block">
+            {{ block.settings.text }}
+            <img
+              class="h-[25px] w-[26px] inline-block"
+              src="{{ block.settings.image_for_text | img_url: 'master'}}"
+              alt="">
+          </span>&nbsp
+        {% else %}
           {{ block.settings.text }}
-          <img
-            class="h-[25px] w-[26px] inline-block"
-            src="{{ block.settings.image_for_text | img_url: 'master'}}"
-            alt="">
-        </span>&nbsp
-      {% else %}
-        {{ block.settings.text }}
-      {% endif %}
-    {% endfor %}
-  </h2>
+        {% endif %}
+      {% endfor %}
+    </h2>
+  </div>
 </div>
-
 {% schema %}
   {
     "name": "Paragraph",
