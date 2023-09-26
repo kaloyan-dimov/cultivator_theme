@@ -1,4 +1,4 @@
-<div class="container sm:max-w-[72.3%] py-[64px] sm:py-[80px] mx-[24px] sm:mx-auto w-fit">
+<div class="container sm:max-w-[72.3%] py-[64px] sm:py-[80px] mx-[24px] sm:mx-auto w-fit border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
   <h2 class="text-center text-[32px] sm:text-[42px]">
     {% for block in section.blocks %}
       {% if block.settings.image_for_text != null %}
@@ -19,6 +19,17 @@
 {% schema %}
   {
     "name": "Paragraph",
+    "settings": [
+      {
+        "label": "Border Top",
+        "type": "checkbox",
+        "id": "b_top"
+      }, {
+        "label": "Border Bottom",
+        "type": "checkbox",
+        "id": "b_bot"
+      }
+    ],
     "blocks": [
       {
         "type": "section",
