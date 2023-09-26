@@ -1196,9 +1196,6 @@ video {
 .gap-\[11px\] {
   gap: 11px;
 }
-.gap-\[13px\] {
-  gap: 13px;
-}
 .gap-\[16px\] {
   gap: 16px;
 }
@@ -2243,8 +2240,8 @@ video {
 }
 
 .client_interactions a {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
 }
 
 .search_icon {
