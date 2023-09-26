@@ -1573,13 +1573,13 @@ video {
   padding-top: 56px;
   padding-bottom: 56px;
 }
+.py-\[64px\] {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
-}
-.py-\[80px\] {
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 .py-\[8px\] {
   padding-top: 8px;
@@ -3472,13 +3472,13 @@ video {
     padding-left: 64px;
     padding-right: 64px;
   }
-  .sm\:py-\[128px\] {
-    padding-top: 128px;
-    padding-bottom: 128px;
-  }
   .sm\:py-\[56px\] {
     padding-top: 56px;
     padding-bottom: 56px;
+  }
+  .sm\:py-\[80px\] {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .sm\:pr-\[42px\] {
     padding-right: 42px;
