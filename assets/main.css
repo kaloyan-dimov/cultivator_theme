@@ -1009,11 +1009,11 @@ video {
 .w-\[37px\] {
   width: 37px;
 }
+.w-\[391px\] {
+  width: 391px;
+}
 .w-\[40px\] {
   width: 40px;
-}
-.w-\[430px\] {
-  width: 430px;
 }
 .w-\[44px\] {
   width: 44px;
@@ -1575,6 +1575,10 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-\[9px\] {
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 .pb-4 {
   padding-bottom: 1rem;
