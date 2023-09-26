@@ -2837,7 +2837,7 @@ video {
 }
 .usage_guide_video .video_controls .progress_bar {
   width: 100%;
-  padding: 6px 0;
+  padding: 9px 0;
   position: relative;
 }
 .usage_guide_video .video_controls .progress_bar .progress {
