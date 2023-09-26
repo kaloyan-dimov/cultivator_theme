@@ -2,10 +2,10 @@
   <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class=" w-full h-full">
     <img
       class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
-      src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
+      src="{{ section.settings.usage_guide_video.preview_image.src | img_url: 'large' }}"
       alt="">
     <div class="video_play_button video_play_gold"></div>
-    <video src="" class="w-full h-full video_feed_video"></video>
+    <video src="" class="absolute top-[0] left-[0] w-full h-full video_feed_video"></video>
   </div>
 </div>
 {% assign title_text = section.settings.section_title %}
