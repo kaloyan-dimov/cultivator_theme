@@ -790,6 +790,9 @@ video {
 .h-\[24px\] {
   height: 24px;
 }
+.h-\[25px\] {
+  height: 25px;
+}
 .h-\[260px\] {
   height: 260px;
 }
@@ -979,6 +982,9 @@ video {
 }
 .w-\[25px\] {
   width: 25px;
+}
+.w-\[26px\] {
+  width: 26px;
 }
 .w-\[274px\] {
   width: 274px;
