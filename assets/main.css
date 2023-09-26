@@ -2794,6 +2794,10 @@ video {
 }
 
 .usage_guide_video .video_play_gold {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 76px;
   height: 56px;
   border-radius: 20px;
