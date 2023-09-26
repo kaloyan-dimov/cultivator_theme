@@ -2843,9 +2843,11 @@ video {
 .usage_guide_video .video_controls .progress_bar .elapsed {
   position: absolute;
   left: 0;
+  top: 6px;
 }
 .usage_guide_video .video_controls .progress_bar .remaining {
   position: absolute;
+  top: 6px;
   right: 0;
 }
 .usage_guide_video .video_controls .play_pause,
