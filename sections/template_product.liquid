@@ -59,7 +59,7 @@
       <h1 class="text-[18px]">{{ product.title }}</h1>
       <h2 class="text-[14px] mb-[8px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
 
-      <h2 class="product_price">{{ shop.money_format }}
+      <h2 class="product_price">
         {% assign show_variant_price = product.first_available_variant %}
         {% include 'product_price' with show_variant_price %}
       </h2>
