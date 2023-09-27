@@ -509,6 +509,10 @@ video {
   font-display: fallback;
   font-style: normal;
 }
+html * {
+  font-family: Unbounded, sans-serif;
+}
+
 .nav-links {
   font-size: 1rem;
   font-weight: 500;
