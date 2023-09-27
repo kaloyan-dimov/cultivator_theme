@@ -110,6 +110,7 @@
       "type": "template_product_clinically_safe",
       "settings": {
         "clinically_safe_title": "Clinically Safe Product",
+        "clinically_safe_text": "View Certification",
         "background_image": "shopify:\/\/shop_images\/Clinically_safe_image.png",
         "pdf_url": "{{ product.metafields.custom.clinically_safe_product_file.value.link_to_clinically_safe_product_file.value }}"
       }
