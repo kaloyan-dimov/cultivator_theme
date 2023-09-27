@@ -3257,7 +3257,7 @@ html * {
 }
 .spr-container .spr-header .spr-summary .spr-summary-caption {
   justify-content: center;
-  background-color: red;
+  background-color: blue;
 }
 .spr-container .spr-header .spr-summary .spr-starrating {
   justify-content: end;
@@ -3266,6 +3266,7 @@ html * {
 .spr-container .spr-header .spr-summary .spr-starrating + .spr-summary-caption {
   justify-content: start;
   padding-left: 4px;
+  background-color: red;
 }
 .spr-container .spr-header .spr-summary .spr-summary-actions {
   display: flex;
