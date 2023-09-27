@@ -2915,7 +2915,7 @@ html * {
 .usage_guide_video .video_controls .mute {
   margin-left: 8px;
 }
-.usage_guide_video .video_controls .mute.video_muted::before, .usage_guide_video .video_controls .mute.video_muted::after {
+.usage_guide_video .video_controls .mute.video_mute::before, .usage_guide_video .video_controls .mute.video_mute::after {
   position: absolute;
   width: 25px;
   height: 18px;
