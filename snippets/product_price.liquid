@@ -1,7 +1,7 @@
 {% if show_variant_price.compare_at_price != null %}
   <span>{{ show_variant_price.price | money }}</span>
   <span class="line-through">{{ show_variant_price.compare_at_price | money }}</span>
-  <span>{{ show_variant_price.price | times: 100 | divided_by: show_variant_price.compare_at_price | minus: 100 | abs }}% OFF</span>
+  <span>{{ show_variant_price.price | times: 100 | divided_by: show_variant_price.compare_at_price | minus: 100 }}% OFF</span>
   price: {{ show_variant_price.price }} compare {{ show_variant_price.compare_at_price }}
 {% else %}
   <span>{{ show_variant_price.price | money }}</span>
