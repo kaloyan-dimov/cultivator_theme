@@ -136,7 +136,7 @@
         <div class="list_item flex flex-col px-[16px]">
           <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
             <h2 class="text-[16px]">Description test:
-              {% if product.description != null %}
+              {% if product.description != null and product.description != '' %}
                 not null
               {% else %}
                 is null
