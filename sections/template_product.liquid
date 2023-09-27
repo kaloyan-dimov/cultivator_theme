@@ -166,24 +166,26 @@
           </div>
         </li>
       {% endif %}
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">FAQ s:{{ section.blocks.size }}</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
-          </div>
-          <div class="list_content pb-[16px]">
-            <div class="flex flex-col gap-[8px]">
-              {% for block in section.blocks %}
-                {% if block.type == "Product_FAQ" %}
-                  <h2>{{ block.settings.faq_title }}</h2>
-                  <h3>{{ block.settings.faq_answer }}</h3>
-                {% endif %}
-              {% endfor %}
+      {% if section.blocks.size > 1 %}
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+              <h2 class="text-[16px]">FAQ</h2>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
+            </div>
+            <div class="list_content pb-[16px]">
+              <div class="flex flex-col gap-[8px]">
+                {% for block in section.blocks %}
+                  {% if block.type == "Product_FAQ" %}
+                    <h2>{{ block.settings.faq_title }}</h2>
+                    <h3>{{ block.settings.faq_answer }}</h3>
+                  {% endif %}
+                {% endfor %}
+              </div>
             </div>
           </div>
-        </div>
-      </li>
+        </li>
+      {% endif %}
       {% if product.metafields.custom.product_accordion_certification != null and product.metafields.custom.product_accordion_certification != '' %}
         <li class="border-t border-[#E6DFDB]">
           <div class="list_item flex flex-col px-[16px]">
