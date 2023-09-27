@@ -3233,7 +3233,7 @@ html * {
   max-width: 1440px;
   margin: auto;
   padding: 16px;
-  border: none;
+  border: 0;
 }
 .spr-container .spr-header {
   display: flex;
