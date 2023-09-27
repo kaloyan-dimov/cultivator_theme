@@ -113,7 +113,7 @@
         data-id="{{ product.selected_or_first_available_variant.id }}"
         type="submit"
         value="ADD TO CART"
-        class="product_add flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn" />
+        class="product_add flex justify-center items-center w-full max-w-[204px] text-center bg-[#CCAC71] rounded-[12px] text-white btn cursor-pointer" />
     </div>
     <div class="grid grid-cols-2 gap-[8px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}
