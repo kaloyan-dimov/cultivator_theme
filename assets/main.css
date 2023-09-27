@@ -2878,9 +2878,6 @@ html * {
 .usage_guide_video .video_controls .play_pause {
   margin-left: 38px;
 }
-.usage_guide_video .video_controls .play_pause.video_play_white {
-  position: relative;
-}
 .usage_guide_video .video_controls .play_pause.video_play_white::before, .usage_guide_video .video_controls .play_pause.video_play_white::after {
   position: absolute;
   top: 50%;
