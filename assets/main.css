@@ -2889,6 +2889,7 @@ html * {
 .usage_guide_video .video_controls .play_pause.video_play_white::after {
   width: 12px;
   height: 17px;
+  background-size: 12px 17px;
 }
 .usage_guide_video .video_controls .mute {
   margin-left: 8px;
