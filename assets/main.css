@@ -2884,6 +2884,7 @@ html * {
 .usage_guide_video .video_controls .play_pause.video_play_white::before {
   width: 20px;
   height: 19px;
+  background-size: 20px 19px;
 }
 .usage_guide_video .video_controls .play_pause.video_play_white::after {
   width: 12px;
