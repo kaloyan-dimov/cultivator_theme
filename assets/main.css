@@ -3250,23 +3250,21 @@ html * {
   display: flex;
   row-gap: 16px;
 }
-.spr-container .spr-header .spr-summary .spr-starrating,
 .spr-container .spr-header .spr-summary .spr-summary-caption {
-  width: 50%;
   display: flex;
-}
-.spr-container .spr-header .spr-summary .spr-summary-caption {
   justify-content: center;
-  background-color: yellow;
+  width: 100%;
 }
 .spr-container .spr-header .spr-summary .spr-starrating {
+  width: 50%;
+  display: flex;
   justify-content: end;
   padding-right: 4px;
 }
 .spr-container .spr-header .spr-summary .spr-starrating ~ .spr-summary-caption {
   justify-content: start;
   padding-left: 4px;
-  background-color: red;
+  width: 50%;
 }
 .spr-container .spr-header .spr-summary .spr-summary-actions {
   display: flex;
