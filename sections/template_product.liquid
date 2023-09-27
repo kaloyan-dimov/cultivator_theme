@@ -64,8 +64,8 @@
         {% include 'product_price' with show_variant_price %}
       </h2>
       <h3 class="product_weight text-[#54443B] text-[#FF0000] mb-[24px]">
-        {{ product.first_available_variant.weight }} Gramm
-        ( {{ 1000 | divided_by: product.first_available_variant.weight | times: product.first_available_variant.price | money }} / 1kg )
+        {{ product.selected_or_first_available_variant.weight }} Gramm
+        ( {{ 1000 | divided_by: product.selected_or_first_available_variant.weight | times: product.selected_or_first_available_variant.price | money }} / 1kg )
         Inclusive Of All Taxes</h3>
       {% if product.has_only_default_variant %}
         {% else %}
