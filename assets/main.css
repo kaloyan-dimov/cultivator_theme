@@ -637,6 +637,9 @@ video {
 .m-4 {
   margin: 1rem;
 }
+.m-\[16px\] {
+  margin: 16px;
+}
 .m-auto {
   margin: auto;
 }
@@ -863,6 +866,9 @@ video {
 }
 .h-\[518px\] {
   height: 518px;
+}
+.h-\[52px\] {
+  height: 52px;
 }
 .h-\[565px\] {
   height: 565px;
