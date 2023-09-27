@@ -3257,7 +3257,7 @@ html * {
 }
 .spr-container .spr-header .spr-summary .spr-summary-caption {
   justify-content: center;
-  background-color: blue;
+  background-color: yellow;
 }
 .spr-container .spr-header .spr-summary .spr-starrating {
   justify-content: end;
