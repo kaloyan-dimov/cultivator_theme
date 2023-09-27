@@ -53,6 +53,8 @@
     }
   }
 </style>
+test:
+{{ section.settings.usage_guide_video | json }}
 <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] relative" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
   <div class="video_play_gold bg-neutral cursor-pointer"></div>
   <img
