@@ -3255,11 +3255,15 @@ html * {
   width: 50%;
   display: flex;
 }
+.spr-container .spr-header .spr-summary .spr-summary-caption {
+  justify-content: center;
+}
 .spr-container .spr-header .spr-summary .spr-starrating {
   justify-content: end;
   padding-right: 4px;
 }
-.spr-container .spr-header .spr-summary .spr-summary-caption {
+.spr-container .spr-header .spr-summary .spr-starrating ~ .spr-summary-caption {
+  justify-content: start;
   padding-left: 4px;
 }
 .spr-container .spr-header .spr-summary .spr-summary-actions {
