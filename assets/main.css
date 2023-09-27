@@ -667,6 +667,10 @@ video {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+.my-\[24px\] {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 .my-\[8px\] {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -1753,6 +1757,9 @@ video {
   --tw-text-opacity: 1;
   color: rgba(255, 0, 0, 1);
   color: rgba(255, 0, 0, var(--tw-text-opacity));
+}
+.text-\[FF0000\] {
+  color: FF0000;
 }
 .text-black {
   --tw-text-opacity: 1;
