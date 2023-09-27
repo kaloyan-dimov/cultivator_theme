@@ -64,10 +64,10 @@
         {% include 'product_price' with show_variant_price %}
       </h2>
       test: {{ product.selected_or_first_available_variant.weight }}
-      {% if product.selected_or_first_available_variant.weight != null %}
-        not null
+      {% if product.selected_or_first_available_variant.weight != 0 %}
+        not 0
       {% else %}
-        null
+        is 0
       {% endif %}
       <h3 class="product_weight text-[#54443B] mb-[24px]">
         {{ product.selected_or_first_available_variant.weight }} Gramm
