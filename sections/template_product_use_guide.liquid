@@ -53,26 +53,27 @@
     }
   }
 </style>
-test:
-{{ section.settings.usage_guide_video | json }}
-<div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] relative" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
-  <div class="video_play_gold bg-neutral cursor-pointer"></div>
-  <img
-    class="w-full h-full object-cover absolute top-[0] left-[0] cursor-pointer"
-    src="{{ section.settings.usage_guide_video.preview_image.src | img_url: 'master' }}"
-    alt="">
-  <div class="video_loader"></div>
-  <div class="video_controls">
-    <div class="progress_bar cursor-pointer">
-      <div class="progress"></div>
-      <h4 class="elapsed"></h4>
-      <h4 class="remaining"></h4>
+
+{% if section.settings.usage_guide_video != null %}
+  <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px]  mb-[24px] relative" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
+    <div class="video_play_gold bg-neutral cursor-pointer"></div>
+    <img
+      class="w-full h-full object-cover absolute top-[0] left-[0] cursor-pointer"
+      src="{{ section.settings.usage_guide_video.preview_image.src | img_url: 'master' }}"
+      alt="">
+    <div class="video_loader"></div>
+    <div class="video_controls">
+      <div class="progress_bar cursor-pointer">
+        <div class="progress"></div>
+        <h4 class="elapsed"></h4>
+        <h4 class="remaining"></h4>
+      </div>
+      <div class="play_pause cursor-pointer video_play_white"></div>
+      <div class="mute cursor-pointer video_mute"></div>
     </div>
-    <div class="play_pause cursor-pointer video_play_white"></div>
-    <div class="mute cursor-pointer video_mute"></div>
+    <video class="absolute top-[0] left-[0] object-cover w-full h-full video_feed_video"></video>
   </div>
-  <video class="absolute top-[0] left-[0] object-cover w-full h-full video_feed_video"></video>
-</div>
+{% endif %}
 {% assign title_text = section.settings.section_title %}
 {% assign title_image = section.settings.title_image %}
 {% include 'section_title' with title_text, title_image %}
