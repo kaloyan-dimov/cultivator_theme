@@ -532,6 +532,9 @@ video {
 .pointer-events-none {
   pointer-events: none;
 }
+.static {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
@@ -1786,6 +1789,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+html * {
+  font-family: "wix";
+}
+
 .nav-links {
   font-size: 1rem;
   font-weight: 500;
