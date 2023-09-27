@@ -3230,10 +3230,13 @@ html * {
 }
 
 .spr-container {
+  border: none !important;
+}
+
+.spr-container {
   max-width: 1440px;
   margin: auto;
   padding: 16px;
-  border: 0;
 }
 .spr-container .spr-header {
   display: flex;
