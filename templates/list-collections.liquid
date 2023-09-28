@@ -2,5 +2,8 @@
   <h1 class="m-auto text-[50px] text-center">This is product-collections page</h1>
   {% for collection in collections %}
     <h2 class="text-[FF0000] text-[45px]">{{ collection.title }}</h2>
+    {% for product in collection.products %}
+      <h3 class="text-[35px]">{{ product.title }}</h3>
+    {% endfor %}
   {% endfor %}
 </div>
