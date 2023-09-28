@@ -1492,6 +1492,9 @@ video {
 .p-\[24px\] {
   padding: 24px;
 }
+.p-\[30px\] {
+  padding: 30px;
+}
 .p-\[50px\] {
   padding: 50px;
 }
@@ -3910,6 +3913,10 @@ html * {
     display: none;
   }
 
+  .lg\:h-\[564px\] {
+    height: 564px;
+  }
+
   .lg\:h-\[811px\] {
     height: 811px;
   }
@@ -3936,6 +3943,16 @@ html * {
 
   .lg\:border-r {
     border-right-width: 1px;
+  }
+
+  .lg\:px-\[44px\] {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .lg\:py-\[58px\] {
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
 
   .lg\:pl-\[111px\] {
