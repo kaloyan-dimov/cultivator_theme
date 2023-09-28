@@ -3325,6 +3325,15 @@ html * {
     padding: 64px;
   }
 }
+.pagination .page {
+  width: 40px;
+  height: 38px;
+  background-color: white;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(230, 223, 219, 1);
+  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
+}
 .pagination .next,
 .pagination .prev {
   width: 57px;
