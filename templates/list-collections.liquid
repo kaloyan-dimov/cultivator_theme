@@ -3,9 +3,9 @@
   {% for collection in collections %}
     <h2 class="text-[FF0000] text-[45px]">{{ collection.title }}</h2>
     {% for product in collection.products %}
-      <div class="flex">
+      <div class="flex gap-[16px]">
         <h3 class="text-[35px]">{{ product.title }}</h3>
-        <h3>{{ product.type }}</h3>
+        <h3 class="text-[35px]">{{ product.type }}</h3>
       </div>
     {% endfor %}
   {% endfor %}
