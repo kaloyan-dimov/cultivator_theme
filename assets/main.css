@@ -2986,7 +2986,6 @@ html * {
   height: 100vh;
   background-color: rgba(1, 1, 1, 0);
   transition: all 0.5s;
-  z-index: 2;
   padding: 32px;
 }
 .video_player .video_container {
