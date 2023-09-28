@@ -3147,6 +3147,9 @@ html * {
   position: fixed;
   left: 0;
   bottom: 0;
+  margin: 0;
+  width: 100%;
+  padding: 8px 16px;
 }
 
 #quantity::-webkit-outer-spin-button, #quantity::-webkit-inner-spin-button {
