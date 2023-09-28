@@ -14,7 +14,7 @@
     {% endif %}
 
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-    <div class="flex flex-wrap gap-[16px]">
+    <div class="flex flex-wrap gap-[16px] justify-center">
       {%- for product in recommendations.products -%}
         <div class="w-[316px]">
           {% include 'product_card' with product, wishlist_array %}
