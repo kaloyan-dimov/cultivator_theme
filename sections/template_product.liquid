@@ -116,7 +116,7 @@
         data-price="{{ product.selected_or_first_available_variant.price | money }}"
         type="submit"
         value="ADD TO CART"
-        class="product_add flex justify-center items-center w-full text-center bg-[#CCAC71] rounded-[12px] text-white btn cursor-pointer" />
+        class="product_add flex justify-center items-center w-full text-center bg-[#CCAC71] rounded-[12px] text-white btn cursor-pointer whitespace-pre-wrap px-[16px]" />
     </div>
     <div class="grid grid-cols-2 gap-[8px] mx-[16px] my-[24px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}

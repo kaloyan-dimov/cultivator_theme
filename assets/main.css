@@ -1285,6 +1285,9 @@ video {
 .overflow-y-hidden {
   overflow-y: hidden;
 }
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
 .break-words {
   word-wrap: break-word;
 }
