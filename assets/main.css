@@ -3330,6 +3330,9 @@ html * {
   width: 50px;
   height: 50px;
   border: 1px solid taupe;
+  --tw-bg-opacity: 1;
+  background-color: rgba(84, 68, 59, 1);
+  background-color: rgba(84, 68, 59, var(--tw-bg-opacity));
 }
 .pagination .next::after,
 .pagination .prev::after {
