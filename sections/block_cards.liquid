@@ -1,9 +1,13 @@
-<div class="w-full border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
-  <div class="section w-full py-[56px] flex justify-center flex-wrap items-center gap-[16px]">
+<div
+  class="w-full border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
+  <div
+    class="section w-full py-[56px] flex justify-center flex-wrap items-center gap-[16px]">
     {% for block in section.blocks %}
-      <div class="w-[171px] sm:w-[205px] h-[200px] sm:h-[266px] flex flex-col items-center justify-start pt-[23px] lg:pt-[48px] border rounded-[80px] border-taupe-20">
+      <div
+        class="w-[171px] sm:w-[205px] h-[200px] sm:h-[266px] flex flex-col items-center justify-start pt-[23px] lg:pt-[48px] border rounded-[80px] border-taupe-20">
         {% if block.settings.card_image != null %}
-          <div class="w-[100px] h-[102px]">
+          <div
+            class="w-[100px] h-[102px]">
             <img
               class="bg-center w-full h-full object-cover"
               src="{{ block.settings.card_image | img_url: 'master'}}"
@@ -11,12 +15,14 @@
           </div>
         {% endif %}
         {% if block.settings.card_text != null %}
-          <h2 class="text-center max-w-[115px] sm:max-w-[151px] min-w-[46px] body-m">{{ block.settings.card_text }}</h2>
+          <h2
+            class="text-center max-w-[115px] sm:max-w-[151px] min-w-[46px] body-m">{{ block.settings.card_text }}</h2>
         {% endif %}
       </div>
     {% endfor %}
   </div>
 </div>
+test
 {% schema %}
   {
     "name": "Cards",
