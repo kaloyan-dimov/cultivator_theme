@@ -1,4 +1,5 @@
 {%- assign t = template | split: '.' | first -%}
+t:{{ t | json }}
 <nav
   class="breadcrumbs"
   role="navigation"
@@ -15,7 +16,6 @@
 
       {%- when 'product' -%}
       <li>Products</li>
-      t:{{ t | json }}
       {%- if collection.url -%}
         <li class="breadcrumb">
           {{ collection.title | link_to: collection.url }}
