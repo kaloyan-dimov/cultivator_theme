@@ -1,6 +1,6 @@
 {%- assign t = template | split: '.' | first -%}
 ts:{{ template | json }}
-st:{{ template.collections | json }}
+st:{{ template.type | json }}
 <nav
   class="breadcrumbs"
   role="navigation"
