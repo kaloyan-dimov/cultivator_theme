@@ -17,7 +17,7 @@
       {% for collection in product.collections %}
         title:{{ collection.title }}
         t:{{ collection.all_types }}
-        rules: {{ collection.rules }}
+        rules: {{ collection.rules | json }}
       {% endfor %}
       {%- if collection.url -%}
         <li class="breadcrumb">
