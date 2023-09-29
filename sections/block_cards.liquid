@@ -22,11 +22,11 @@
     {% endfor %}
   </div>
 </div>
-<div class="test">test</div>
+<div class="test">test</div><div class="test2"></div>
 {% javascript %}
   document.querySelector(".test").addEventListener("click", () => {
     console.log("buttonclickd")
-    {% include 'added_to_cart_popup' %}
+    document.querySelector(".test2").innerHTML = `{% include 'added_to_cart_popup' %}`;
   })
 {% endjavascript %}
 {% schema %}
