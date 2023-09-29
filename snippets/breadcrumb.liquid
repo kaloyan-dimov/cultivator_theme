@@ -14,17 +14,12 @@
       </li>
 
       {%- when 'product' -%}
-      {% assign number = 0 %}
+      {% assign num = 0 %}
       {% for collection in product.collections %}
-        numss: {{ number }}
-        true?:
-        {% assign test = collection | json %}
-        {% if test contains "type" and number == 0 %}
+        {% assign current_col = collection | json %}
+        {% if current_col contains "type" and num == 0 %}
           title:{{ collection.title }}
-          {% assign number = 1 %}
-          true
-        {% else %}
-          false
+          {% assign num = 1 %}
         {% endif %}
       {% endfor %}
       {%- if collection.url -%}
