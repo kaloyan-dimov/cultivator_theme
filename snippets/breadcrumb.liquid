@@ -15,11 +15,11 @@
 
       {%- when 'product' -%}
       {% for collection in product.collections %}
+        {% assign number = 0 %}
         title:{{ collection.title }}
-        t:{{ collection.all_types }}
         true?:
         {% assign test = collection | json %}
-        {% if test contains "type" %}
+        {% if test contains "type" and number == 0 %}
           true
         {% else %}
           false
