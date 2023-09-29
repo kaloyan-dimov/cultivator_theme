@@ -17,7 +17,7 @@
       {% assign num = 0 %}
       {% for collection in product.collections %}
         {% assign current_col = collection | json %}
-        {% if current_col contains 'column":"type",' and num == 0 %}
+        {% if current_col contains '"column":"type",' and num == 0 %}
           <li class="breadcrumb">
             {{ collection.title | link_to: collection.url }}
           </li>
