@@ -22,7 +22,12 @@
     {% endfor %}
   </div>
 </div>
-test
+<div class="test">test</div>
+{% javascript %}
+  document.querySelector(".test").addEventListener("click", () => {
+    console.log("buttonclickd")
+  })
+{% endjavascript %}
 {% schema %}
   {
     "name": "Cards",
