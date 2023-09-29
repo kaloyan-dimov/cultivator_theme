@@ -2333,7 +2333,10 @@ html * {
   transform: scaleY(0);
   transform-origin: top;
   opacity: 0;
-  transition: max-height 0.3s, transform 0.3s, opacity 0.45s;
+  -webkit-clip-path: inset(0px 0px -32px 0px);
+          clip-path: inset(0px 0px -32px 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: max-height 0.3s, transform 0.3s, box-shadow 0.3s, opacity 0.45s;
 }
 #desktop_header ul li:hover > a {
   -webkit-text-decoration: underline;
@@ -2344,7 +2347,8 @@ html * {
   transform: scaleY(1);
   transform-origin: top;
   opacity: 1;
-  transition: max-height 0.3s, transform 0.3s, opacity 0.45s;
+  box-shadow: 0px 5px 23px 2px rgba(0, 0, 0, 0.23);
+  transition: max-height 0.3s, transform 0.3s, box-shadow 0.3s, opacity 0.45s;
 }
 #desktop_header ul li:hover ul:hover {
   display: flex;
