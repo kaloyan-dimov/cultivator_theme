@@ -14,6 +14,7 @@
       </li>
 
       {%- when 'product' -%}
+      {{ product.type }}
       {% for collection in product.collections %}
         {% assign number = 0 %}
         title:{{ collection.title }}
