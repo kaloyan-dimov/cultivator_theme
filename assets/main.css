@@ -711,9 +711,6 @@ video {
 .mb-\[4px\] {
   margin-bottom: 4px;
 }
-.mb-\[52px\] {
-  margin-bottom: 52px;
-}
 .mb-\[56px\] {
   margin-bottom: 56px;
 }
@@ -737,6 +734,9 @@ video {
 }
 .mt-\[48px\] {
   margin-top: 48px;
+}
+.mt-\[52px\] {
+  margin-top: 52px;
 }
 .mt-\[64px\] {
   margin-top: 64px;
