@@ -14,8 +14,8 @@
       </li>
 
       {%- when 'product' -%}
+      {% assign number = 0 %}
       {% for collection in product.collections %}
-        {% assign number = 0 %}
         title:{{ collection.title }}
         true?:
         {% assign test = collection | json %}
