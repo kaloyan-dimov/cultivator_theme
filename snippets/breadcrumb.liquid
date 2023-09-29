@@ -19,8 +19,8 @@
         numss: {{ number }}
         true?:
         {% assign test = collection | json %}
-        title:{{ collection.title }}
         {% if test contains "type" and number == 0 %}
+          title:{{ collection.title }}
           {% assign number = 1 %}
           true
         {% else %}
