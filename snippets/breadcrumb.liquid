@@ -17,7 +17,9 @@
       {% assign number = 0 %}
       {% for collection in product.collections %}
         title:{{ collection.title }}
-        num: {{ number }} {{ number == 0 }}
+        num: {{ number }}
+        {% if number == 0 %}
+          eq 0{% endif %}
         true?:
         {% assign test = collection | json %}
         {% if test contains "type" and number == 0 %}
