@@ -16,6 +16,7 @@
       {%- when 'product' -%}
       {% for collection in product.collections %}
         {{ collection.title }}
+        t:{{ collection.all_types }}
       {% endfor %}
       {%- if collection.url -%}
         <li class="breadcrumb">
