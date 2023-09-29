@@ -3341,6 +3341,7 @@ html * {
   align-items: center;
 }
 .pagination .page {
+  position: relative;
   width: 40px;
   height: 38px;
   display: flex;
@@ -3354,6 +3355,17 @@ html * {
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
+}
+.pagination .page a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
 }
 .pagination .page.current {
   background-color: white;
@@ -3379,18 +3391,12 @@ html * {
 }
 .pagination .next a,
 .pagination .prev a {
-  width: 100% !important;
-  height: 100% !important;
-}
-.pagination .next a,
-.pagination .prev a {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .pagination .next::after,
 .pagination .prev::after {
