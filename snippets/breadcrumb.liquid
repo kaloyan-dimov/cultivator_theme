@@ -1,5 +1,5 @@
 {%- assign t = template | split: '.' | first -%}
-t:{{ t | json }}
+t:{{ template | json }}
 <nav
   class="breadcrumbs"
   role="navigation"
