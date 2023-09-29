@@ -15,7 +15,7 @@
 
       {%- when 'product' -%}
       {% for collection in product.collections %}
-        {{ collection.title }}
+        title:{{ collection.title }}
         t:{{ collection.all_types }}
       {% endfor %}
       {%- if collection.url -%}
