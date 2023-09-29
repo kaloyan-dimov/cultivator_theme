@@ -20,6 +20,7 @@
         true?:
         {% assign test = collection | json %}
         {% if test contains "type" and number == 0 %}
+          {% assign number = 1 %}
           true
         {% else %}
           false
