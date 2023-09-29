@@ -3399,6 +3399,10 @@ html * {
   background-position: center;
   pointer-events: none;
 }
+.pagination .next.disabled,
+.pagination .prev.disabled {
+  opacity: 0.4;
+}
 
 .contact_us_page form {
   display: flex;
