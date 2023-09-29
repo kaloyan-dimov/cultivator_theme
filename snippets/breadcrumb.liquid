@@ -20,7 +20,9 @@
         {% if current_col contains "type" and num == 0 %}
           <li class="breadcrumb">
             {{ collection.title | link_to: collection.url }}
-            {{ collection | json | split: "rules" }}
+            {% for a in collection | json | split: "rules" %}
+              a:{{ a }}
+            {% endfor %}
           </li>
           {% assign num = 1 %}
         {% endif %}
