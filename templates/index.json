@@ -30,7 +30,7 @@
             "slide_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ultrices augue. Etiam vitae tempus augue. In aliquet est sit amet quam fermentum, ac elementum ex suscipit.",
             "button_link": "shopify:\/\/collections\/all",
             "button_text": "shop now",
-            "slide_image": "shopify:\/\/shop_images\/portrait-positive-darkhaired-woman-with-natural-makeup-dressed-furry-sweater-top-girl-laughs-takes-selfie-kitchen_1_2.png"
+            "slide_image": "shopify:\/\/shop_images\/womens-green-turtleneck_925x_8e43b795-a279-4609-a6c1-a65c1ea3dbcc.jpg"
           }
         }
       },
@@ -155,7 +155,7 @@
         "14678796-b66b-46e3-8702-22c4885ca4a5": {
           "type": "section",
           "settings": {
-            "selected_collection": "super-ingridients",
+            "selected_collection": "frontpage",
             "products_number": 3
           }
         }
@@ -177,7 +177,7 @@
         "429cc835-a147-4aff-a21b-e384ca9b0fe0": {
           "type": "section",
           "settings": {
-            "selected_collection": "super-ingridients",
+            "selected_collection": "frontpage",
             "collection_image": "shopify:\/\/shop_images\/charming-woman-with-flowers-her-hair-touches-her-curls-girl-yellow-top-cute-smiling-bright-room_1.png",
             "collection_title": "Cleanse and Rejuvenate",
             "collection_description": "Hair cleaners for all hair types",
