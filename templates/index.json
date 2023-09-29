@@ -148,7 +148,7 @@
         "4782bc96-f0f6-43d3-98a2-9436ec6f91fa": {
           "type": "section",
           "settings": {
-            "selected_collection": "frontpage",
+            "selected_collection": "organic-hair-color",
             "products_number": 3
           }
         },
@@ -166,7 +166,9 @@
       ],
       "settings": {
         "section_title": "Best Sellers",
-        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
+        "b_top": false,
+        "b_bot": false
       }
     },
     "b25833b1-4d5b-4b37-8aaa-c74105602ffe": {
