@@ -15,7 +15,7 @@
 
       {%- when 'product' -%}
       <li>Products</li>
-      t:{{ t.type }}
+      t:{{ t | json }}
       {%- if collection.url -%}
         <li class="breadcrumb">
           {{ collection.title | link_to: collection.url }}
