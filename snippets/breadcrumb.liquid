@@ -18,7 +18,8 @@
         title:{{ collection.title }}
         t:{{ collection.all_types }}
         true?:
-        {% if collection | json includes "type" %}
+        {% assign test = collection | json %}
+        {% if test contains "type" %}
           true
         {% else %}
           false
