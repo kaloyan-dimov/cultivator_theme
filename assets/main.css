@@ -3334,6 +3334,9 @@ html * {
     padding: 64px;
   }
 }
+.pagination {
+  align-items: center;
+}
 .pagination .page {
   width: 40px;
   height: 38px;
@@ -3351,6 +3354,9 @@ html * {
 }
 .pagination .page.current {
   background-color: white;
+}
+.pagination .prev {
+  transform: rotate(180deg);
 }
 .pagination .next,
 .pagination .prev {
