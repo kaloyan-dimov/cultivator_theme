@@ -1,106 +1,107 @@
 <div
-  class="w-full border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
-  <div
-    class="section w-full py-[56px] flex justify-center flex-wrap items-center gap-[16px]">
-    {% for block in section.blocks %}
-      <div
-        class="w-[171px] sm:w-[205px] h-[200px] sm:h-[266px] flex flex-col items-center justify-start pt-[23px] lg:pt-[48px] border rounded-[80px] border-taupe-20">
-        {% if block.settings.card_image != null %}
-          <div
-            class="w-[100px] h-[102px]">
-            <img
-              class="bg-center w-full h-full object-cover"
-              src="{{ block.settings.card_image | img_url: 'master'}}"
-              alt="">
-          </div>
-        {% endif %}
-        {% if block.settings.card_text != null %}
-          <h2
-            class="text-center max-w-[115px] sm:max-w-[151px] min-w-[46px] body-m">{{ block.settings.card_text }}</h2>
-        {% endif %}
-      </div>
-    {% endfor %}
+    class="w-full border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
+    <div
+      class="section w-full py-[56px] flex justify-center flex-wrap items-center gap-[16px]">
+      {% for block in section.blocks %}
+        <div
+          class="w-[171px] sm:w-[205px] h-[200px] sm:h-[266px] flex flex-col items-center justify-start pt-[23px] lg:pt-[48px] border rounded-[80px] border-taupe-20">
+          {% if block.settings.card_image != null %}
+            <div
+              class="w-[100px] h-[102px]">
+              <img
+                class="bg-center w-full h-full object-cover"
+                src="{{ block.settings.card_image | img_url: 'master'}}"
+                alt="">
+            </div>
+          {% endif %}
+          {% if block.settings.card_text != null %}
+            <h2
+              class="text-center max-w-[115px] sm:max-w-[151px] min-w-[46px] body-m">{{ block.settings.card_text }}</h2>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {{ shop.money_format }}
   </div>
-</div>
 
-{% schema %}
-  {
-    "name": "Cards",
-    "settings": [
-      {
-        "label": "Border Top",
-        "type": "checkbox",
-        "id": "b_top"
-      }, {
-        "label": "Border Bottom",
-        "type": "checkbox",
-        "id": "b_bot"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "section",
-        "name": "Card",
-        "settings": [
-          {
-            "type": "text",
-            "label": "Card Text",
-            "id": "card_text"
-          }, {
-            "type": "image_picker",
-            "label": "Card Image",
-            "id": "card_image"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "category": "block",
-        "name": "Cards",
-        "blocks": [
-          {
-            "type": "section",
-            "settings": {
-              "card_text": "100% Plant-Based",
-              "card_image": "shopify:\/\/shop_images\/Card_6.png"
+  {% schema %}
+    {
+      "name": "Cards",
+      "settings": [
+        {
+          "label": "Border Top",
+          "type": "checkbox",
+          "id": "b_top"
+        }, {
+          "label": "Border Bottom",
+          "type": "checkbox",
+          "id": "b_bot"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "section",
+          "name": "Card",
+          "settings": [
+            {
+              "type": "text",
+              "label": "Card Text",
+              "id": "card_text"
+            }, {
+              "type": "image_picker",
+              "label": "Card Image",
+              "id": "card_image"
             }
-          },
-          {
-            "type": "section",
-            "settings": {
-              "card_text": "Zero Toxic Chemical",
-              "card_image": "shopify:\/\/shop_images\/Card_5.png"
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "category": "block",
+          "name": "Cards",
+          "blocks": [
+            {
+              "type": "section",
+              "settings": {
+                "card_text": "100% Plant-Based",
+                "card_image": "shopify:\/\/shop_images\/Card_6.png"
+              }
+            },
+            {
+              "type": "section",
+              "settings": {
+                "card_text": "Zero Toxic Chemical",
+                "card_image": "shopify:\/\/shop_images\/Card_5.png"
+              }
+            },
+            {
+              "type": "section",
+              "settings": {
+                "card_text": "100% Organic Ingredients",
+                "card_image": "shopify:\/\/shop_images\/Card_4.png"
+              }
+            },
+            {
+              "type": "section",
+              "settings": {
+                "card_text": "GMO Free",
+                "card_image": "shopify:\/\/shop_images\/Card_3.png"
+              }
+            }, {
+              "type": "section",
+              "settings": {
+                "card_text": "Dermatologically Tested",
+                "card_image": "shopify:\/\/shop_images\/Card_2.png"
+              }
+            }, {
+              "type": "section",
+              "settings": {
+                "card_text": "Sustainability Focused",
+                "card_image": "shopify:\/\/shop_images\/Card_1.png"
+              }
             }
-          },
-          {
-            "type": "section",
-            "settings": {
-              "card_text": "100% Organic Ingredients",
-              "card_image": "shopify:\/\/shop_images\/Card_4.png"
-            }
-          },
-          {
-            "type": "section",
-            "settings": {
-              "card_text": "GMO Free",
-              "card_image": "shopify:\/\/shop_images\/Card_3.png"
-            }
-          }, {
-            "type": "section",
-            "settings": {
-              "card_text": "Dermatologically Tested",
-              "card_image": "shopify:\/\/shop_images\/Card_2.png"
-            }
-          }, {
-            "type": "section",
-            "settings": {
-              "card_text": "Sustainability Focused",
-              "card_image": "shopify:\/\/shop_images\/Card_1.png"
-            }
-          }
-        ]
-      }
-    ]
-  }
-{% endschema %}
+          ]
+        }
+      ]
+    }
+  {% endschema %}
