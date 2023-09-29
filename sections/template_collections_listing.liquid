@@ -2,7 +2,7 @@
   <h1 class="m-auto text-[50px] text-center">This is product-collections page</h1>
   {% for collection in collections %}
     <h2 class="text-[FF0000] text-[45px]">{{ collection.title }}</h2>
-    <div class="flex">
+    <div class="flex mb-[52px]">
       {% for type in collection.all_types %}
         <h3 class="text-[25px]">{{ type }}</h3>
       {% endfor %}
