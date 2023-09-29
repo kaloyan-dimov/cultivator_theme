@@ -14,7 +14,9 @@
       </li>
 
       {%- when 'product' -%}
-      {{ product.collections | json }}
+      {% for collection in product.collections %}
+        {{ collection.title }}
+      {% endfor %}
       <li>{{ product.category }}</li>
       <li>{{ product.type }}</li>
       {%- if collection.url -%}
