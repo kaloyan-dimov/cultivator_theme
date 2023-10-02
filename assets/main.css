@@ -1554,10 +1554,6 @@ video {
   padding-left: 12px;
   padding-right: 12px;
 }
-.px-\[14px\] {
-  padding-left: 14px;
-  padding-right: 14px;
-}
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
@@ -1665,11 +1661,17 @@ video {
 .pl-\[16px\] {
   padding-left: 16px;
 }
+.pl-\[21px\] {
+  padding-left: 21px;
+}
 .pl-\[44px\] {
   padding-left: 44px;
 }
 .pl-\[64px\] {
   padding-left: 64px;
+}
+.pr-\[9px\] {
+  padding-right: 9px;
 }
 .pt-4 {
   padding-top: 1rem;
