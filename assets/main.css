@@ -3447,12 +3447,12 @@ html * {
 .added_to_cart_popup {
   right: -600px;
   opacity: 0;
-  transition: opacity 0.5s, right 0.25s;
+  transition: opacity 0.5s, right 0.5s;
 }
 .added_to_cart_popup.active {
   opacity: 1;
   right: 64px;
-  transition: opacity 0.5s, right 0.25s;
+  transition: opacity 0.5s, right 0.5s;
 }
 
 .contact_us_page form {
