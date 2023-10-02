@@ -115,6 +115,7 @@
         data-id="{{ product.selected_or_first_available_variant.id }}"
         data-price="{{ product.selected_or_first_available_variant.price | money }}"
         data-image="{{ image | img_url}}"
+        data-title="{{ product.title }}"
         type="submit"
         value="ADD TO CART"
         class="product_add flex justify-center items-center w-full text-center bg-[#CCAC71] rounded-[12px] text-white btn cursor-pointer whitespace-pre-wrap px-[16px]" />
