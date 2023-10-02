@@ -1846,6 +1846,11 @@ video {
   color: rgba(119, 98, 85, 1);
   color: rgba(119, 98, 85, var(--tw-text-opacity));
 }
+.text-taupe-50 {
+  --tw-text-opacity: 1;
+  color: rgba(143, 118, 102, 1);
+  color: rgba(143, 118, 102, var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, 1);
@@ -1908,6 +1913,14 @@ html * {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
+}
+
+.body-s-semibold-underline {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .body-m {

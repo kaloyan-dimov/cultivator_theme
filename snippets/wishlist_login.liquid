@@ -11,7 +11,7 @@
 
         <div class="email w-full">
           <input
-            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            class="body-m text-taupe-50 flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px]"
             type="email"
             name="customer[email]"
             placeholder="Email">
@@ -19,17 +19,17 @@
 
         <div class="password w-full">
           <input
-            class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+            class="body-m text-taupe-50 flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px]"
             type="password"
             name="customer[password]"
             placeholder="Password">
         </div>
 
-        <h2 class="text-[18px] recover_password_trigger underline self-end cursor-pointer">Forgot password?</h2>
+        <h2 class="body-s-semibold-underline text-taupe recover_password_trigger underline self-end cursor-pointer">Forgot password?</h2>
 
-        <h2 class="text-[18px] my-[8px]">by logging in, you agree to our
-          <a href="#">terms</a>, and
-          <a href="#">privacy policy</a>
+        <h2 class="body-m text-taupe my-[8px]">by logging in, you agree to our
+          <a class="body-m-semibold-underline" href="#">terms</a>, and
+          <a class="body-m-semibold-underline" href="#">privacy policy</a>
         </h2>
 
         <div class="submit">
@@ -42,8 +42,8 @@
     {% endform %}
     {% if shop.customer_accounts_enabled %}
       <div class="flex flex-col items-center">
-        <h2 class="text-[18px] text-[#776255]">Don't have an account yet?</h2>
-        <a class="text-[18px] text-[#776255] underline" href="{{ routes.account_register_url }}">Create an account</a>
+        <h2 class="body-m text-taupe-200 ">Don't have an account yet?</h2>
+        <a class="body-m-semibold-underline text-taupe-200 underline" href="{{ routes.account_register_url }}">Create an account</a>
       </div>
     {% endif %}
     {% render "recover_password_form" %}
