@@ -40,7 +40,7 @@
                 {{ variant.option1 }}</h4>
             {% endfor %}
           </div>
-          <h4 class="body-m-semibold option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money }}</h4>
+          <h4 class="body-m-semibold option_price mt-2 mx-auto">{{ product.first_available_variant.price | money }}</h4>
         </div>
       </div>
     {% endif %}
