@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Wix';
-  src: url('WixMadeforDisplay-Regular.woff2') format('woff2'),
-      url('WixMadeforDisplay-Regular.woff') format('woff');
+  src: url('WixMadeforDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
