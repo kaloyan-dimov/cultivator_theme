@@ -945,6 +945,9 @@ video {
 .max-h-\[566px\] {
   max-height: 566px;
 }
+.max-h-\[674px\] {
+  max-height: 674px;
+}
 .max-h-\[68px\] {
   max-height: 68px;
 }
@@ -1490,6 +1493,9 @@ video {
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
+.bg-opacity-5 {
+  --tw-bg-opacity: 0.05;
+}
 .bg-center {
   background-position: center;
 }
@@ -1893,6 +1899,14 @@ html * {
   line-height: 1.5rem;
 }
 
+.body-s-underline {
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  line-height: 1.5rem;
+}
+
 .body-s-semibold {
   font-size: 1rem;
   font-weight: 600;
@@ -1923,6 +1937,12 @@ html * {
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.8rem;
+}
+
+.subtitle-1-bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.1rem;
 }
 
 .CTA {
