@@ -6,7 +6,6 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
 }
 
 /*
@@ -1866,6 +1865,7 @@ video {
 }
 html * {
   font-family: "wix";
+  font-size: 16px;
 }
 
 .nav-links {
@@ -3115,6 +3115,18 @@ html * {
     bottom: 57px;
   }
 }
+.special_offer_banner .body-s-semibold {
+  font-weight: 600;
+}
+.special_offer_banner .body-s-semibold strong {
+  font-weight: 700;
+}
+.special_offer_banner .body-s-semibold a {
+  font-weight: 700;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .search_container .search_text {
   font-size: 14px;
   margin-left: 16px;
