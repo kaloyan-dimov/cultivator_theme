@@ -10,7 +10,7 @@
       <h2 class="body-m-semibold text-taupe-200 text-center mb-[2px]">{{ product.title }}</h2>
       <h2 class="body-s text-taupe-200 text-center mb-[16px]">{{ product.options_by_name['color'].values }}</h2>
       <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden">{{ product.description }}</h2>
-      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money_without_trailing_zeros }}</h2>
+      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money }}</h2>
       <div class="w-full h-[56px]"></div>
     </a>
     {% if product.has_only_default_variant %}
@@ -31,7 +31,7 @@
             {% for variant in product.variants %}
               <h4
                 data-id="{{ variant.id }}"
-                data-price="{{ variant.price | money_without_trailing_zeros }}"
+                data-price="{{ variant.price | money }}"
                 class="
                 add_option flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px] cursor-pointer
                 {% if forloop.index == 1 %}
@@ -40,7 +40,7 @@
                 {{ variant.option1 }}</h4>
             {% endfor %}
           </div>
-          <h4 class="option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money_without_trailing_zeros }}</h4>
+          <h4 class="option_price mt-2 mx-auto text-[18px]">{{ product.first_available_variant.price | money }}</h4>
         </div>
       </div>
     {% endif %}
