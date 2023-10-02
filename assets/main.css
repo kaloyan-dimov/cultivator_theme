@@ -589,9 +589,6 @@ video {
 .right-\[24px\] {
   right: 24px;
 }
-.right-\[64px\] {
-  right: 64px;
-}
 .top-0 {
   top: 0px;
 }
@@ -3445,6 +3442,17 @@ html * {
 .pagination .next.disabled,
 .pagination .prev.disabled {
   opacity: 0.4;
+}
+
+.added_to_cart_popup {
+  right: -600px;
+  opacity: 0;
+  transition: opacity 0.5s, right 0.25s;
+}
+.added_to_cart_popup.active {
+  opacity: 1;
+  right: 64px;
+  transition: opacity 0.5s, right 0.25s;
 }
 
 .contact_us_page form {
