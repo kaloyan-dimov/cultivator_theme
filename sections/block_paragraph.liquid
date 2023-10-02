@@ -4,14 +4,14 @@
       {% for block in section.blocks %}
         {% if block.settings.image_for_text != null %}
           <span class="border border-taupe-20 rounded-[20px] px-[14px] inline-block">
-            {{ block.settings.text }}
+            <h3 class="body-m text-taupe">{{ block.settings.text }}</h3>
             <img
               class="h-[25px] w-[26px] inline-block"
               src="{{ block.settings.image_for_text | img_url: 'master'}}"
               alt="">
           </span>&nbsp
         {% else %}
-          {{ block.settings.text }}
+          <h3 class="body-m text-taupe">{{ block.settings.text }}</h3>
         {% endif %}
       {% endfor %}
     </h2>
