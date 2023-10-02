@@ -1,26 +1,21 @@
 <html>
   <head>
     {{ content_for_header }}
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ 'typography.css' | asset_url | stylesheet_tag }}
   </head>
-  <body
-    class="bg-neutral relative"
-    data-currency="{{ cart.currency.symbol }}">
-    <div
-      class="master_header w-full h-fit fixed top-0 left-0 z-[3]">
+  <body class="bg-neutral relative" data-currency="{{ cart.currency.symbol }}">
+    <div class="master_header w-full h-fit fixed top-0 left-0 z-[3]">
       {% section "theme_special_offer_banner" %}
       {% section "theme_header" %}
     </div>
-    <main
-      class="main pt-[81px] lg:pt-[97px]">
+    <main class="main pt-[81px] lg:pt-[97px]">
       {% include 'ajax_cart' %}
       {{ content_for_layout }}
       {% include 'video_player' %}
       {% include 'added_to_cart_popup' %}
+      {% include 'wishlist_login' %}
     </main>
 
     {% section "theme_footer" %}
