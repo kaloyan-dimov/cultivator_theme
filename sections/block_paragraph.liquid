@@ -10,8 +10,7 @@
               src="{{ block.settings.image_for_text | img_url: 'master'}}"
               alt="">
           </span>&nbsp
-        {% endif %}
-        {% if block.settings.text != null %}
+        {% else %}
           {{ block.settings.text }}
         {% endif %}
       {% endfor %}
