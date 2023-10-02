@@ -1901,6 +1901,13 @@ html * {
   line-height: 2.975rem;
 }
 
+.h2 {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
 .no-scroll {
   overflow: hidden;
 }
