@@ -734,9 +734,6 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
-.mt-\[-32px\] {
-  margin-top: -32px;
-}
 .mt-\[16px\] {
   margin-top: 16px;
 }
@@ -2923,6 +2920,9 @@ html * {
   top: 0;
 }
 
+.video_feed_with_text {
+  margin-top: -32px;
+}
 .video_feed_with_text .video_feed_list ol li {
   list-style: none;
   cursor: pointer;
