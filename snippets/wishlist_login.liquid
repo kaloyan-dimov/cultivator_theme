@@ -4,7 +4,7 @@
       <h2 class="subtitle-1-bold text-taupe">We’re glad you like it!</h2>
       <h3 class="body-s-underline text-taupe">Close</h3>
     </div>
-    <h3 class="body-m text-taupe mb-[40px]">To create your wishlist with a product, you must login or create new account.</h3>
+    <h3 class="body-m text-taupe mb-[40px]">{{ template }}To create your wishlist with a product, you must login or create new account.</h3>
     {% form 'customer_login' %}
       <div class="flex flex-col gap-[16px]">
         {{ form.errors | default_errors }}
