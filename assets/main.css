@@ -1691,8 +1691,8 @@ video {
 .pt-\[24px\] {
   padding-top: 24px;
 }
-.pt-\[30px\] {
-  padding-top: 30px;
+.pt-\[31px\] {
+  padding-top: 31px;
 }
 .pt-\[32px\] {
   padding-top: 32px;
@@ -2001,6 +2001,10 @@ html * {
     padding-left: 64px;
     padding-right: 64px;
   }
+}
+
+.CTA_secondary .CTA_secondary_arrow path {
+  fill: red;
 }
 
 .button_arrow {
