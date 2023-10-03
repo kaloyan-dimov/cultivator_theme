@@ -23,7 +23,7 @@
         {% endfor %}
       </ol>
     </div>
-    <div class="video_feed_videos min-h-[574px] relative md:w-[50%]">
+    <div class="video_feed_videos min-h-[400px] relative md:w-[50%]">
       {% for block in section.blocks %}
         <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class="video_feed_video w-[342px] md:w-[320px] h-[400px] rounded-[140px]">
           <img
