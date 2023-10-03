@@ -1965,6 +1965,13 @@ html * {
   line-height: 2.1rem;
 }
 
+.subtitle-2 {
+  font-family: "Prata";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
 .CTA {
   font-size: 0.9375rem;
   font-weight: 700;
