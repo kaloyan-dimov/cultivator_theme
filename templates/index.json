@@ -269,7 +269,7 @@
           "settings": {
             "video_title": "Organic, Ethical and Sustainable Sourcing",
             "video_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec neque metus. Cras vel urna quis turpis dictum facilisis.",
-            "button_text": "Watch Video",
+            "button_text": "WATCH VIDEO",
             "video": "shopify:\/\/files\/videos\/2500_02217_FPpreview.mp4",
             "video_url": ""
           }
@@ -279,7 +279,7 @@
           "settings": {
             "video_title": "World Class Manufacturing",
             "video_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec neque metus. Cras vel urna quis turpis dictum facilisis.",
-            "button_text": "Watch Video",
+            "button_text": "WATCH VIDEO",
             "video": "shopify:\/\/files\/videos\/BB_02f955bc-41e2-4fd9-b489-24880468518c_FPpreview.mp4",
             "video_url": ""
           }
@@ -289,7 +289,7 @@
           "settings": {
             "video_title": "Global Research Center",
             "video_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec neque metus. Cras vel urna quis turpis dictum facilisis.",
-            "button_text": "Watch Video",
+            "button_text": "WATCH VIDEO",
             "video": "shopify:\/\/files\/videos\/BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4",
             "video_url": ""
           }
@@ -302,7 +302,9 @@
       ],
       "settings": {
         "section_title": "How we produce",
-        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
+        "b_top": false,
+        "b_bot": false
       }
     },
     "bb32c763-4e89-466a-be07-8858c238064b": {
