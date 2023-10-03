@@ -963,6 +963,9 @@ video {
 .min-h-\[260px\] {
   min-height: 260px;
 }
+.min-h-\[400px\] {
+  min-height: 400px;
+}
 .min-h-\[50px\] {
   min-height: 50px;
 }
@@ -2920,9 +2923,6 @@ html * {
   top: 0;
 }
 
-.video_feed_with_text {
-  margin-top: -32px;
-}
 .video_feed_with_text .video_feed_list ol li {
   list-style: none;
   cursor: pointer;
