@@ -3204,6 +3204,7 @@ html * {
 
 .login_popup {
   opacity: 0;
+  top: 1px;
 }
 .login_popup > div {
   max-height: 0;
