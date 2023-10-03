@@ -2,7 +2,7 @@
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
-  <div class="flex flex-col sm:flex-row gap-4 sm:gap-[0] pt-[30px]">
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-[0] pt-[31px]">
     {% for block in section.blocks %}
       {% if block.settings.selected_collection != null %}
         <div class="flex flex-col w-full sm:w-[50%] overflow-hidden">
@@ -29,7 +29,7 @@
             <h2 class="body-m text-taupe-200 text-center mb-4">{{ block.settings.collection_description }}</h2>
           {% endif %}
         {% endif %}
-        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA text-ecru py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center mx-auto mb-8">
+        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA text-ecru border border-ecru py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] items-center mx-auto mb-8">
           {% if block.settings.button_text != null %}
             <h3 class="h-[18px]">{{ block.settings.button_text }}</h3>
           {% endif %}
