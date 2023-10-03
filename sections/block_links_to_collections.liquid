@@ -1,15 +1,15 @@
-<div class="section mb-[64px]">
+<div class="section pt-[72px] mb-[64px]">
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
-  <div class="flex flex-col sm:flex-row gap-4 sm:gap-[0]">
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-[0] mt-[30px]">
     {% for block in section.blocks %}
       {% if block.settings.selected_collection != null %}
         <div class="flex flex-col w-full sm:w-[50%] overflow-hidden">
           <div class="relative w-[320px] h-[416px] mx-auto mb-4">
             {% if block.settings.collection_image != null %}
               <img
-                class="w-full h-full rounded-[150px] object-cover"
+                class="w-full h-full rounded-[140px] object-cover"
                 src="{{ block.settings.collection_image | img_url: 'master'}}"
                 alt="">
             {% endif %}
