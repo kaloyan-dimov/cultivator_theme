@@ -2015,6 +2015,8 @@ html * {
 }
 .heart_gold::before, .heart_gold::after {
   content: "";
+  width: 31px;
+  height: 29px;
   position: absolute;
   top: 50%;
   left: 50%;
