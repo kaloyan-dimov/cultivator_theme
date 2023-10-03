@@ -1666,6 +1666,9 @@ video {
 .pb-\[32px\] {
   padding-bottom: 32px;
 }
+.pb-\[55px\] {
+  padding-bottom: 55px;
+}
 .pb-\[56px\] {
   padding-bottom: 56px;
 }
@@ -1802,11 +1805,6 @@ video {
   --tw-text-opacity: 1;
   color: rgba(120, 120, 120, 1);
   color: rgba(120, 120, 120, var(--tw-text-opacity));
-}
-.text-\[\#7B695E\] {
-  --tw-text-opacity: 1;
-  color: rgba(123, 105, 94, 1);
-  color: rgba(123, 105, 94, var(--tw-text-opacity));
 }
 .text-\[\#8F7666\] {
   --tw-text-opacity: 1;
@@ -4290,6 +4288,10 @@ html * {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[490px\] {
+    width: 490px;
   }
 
   .lg\:w-\[491px\] {
