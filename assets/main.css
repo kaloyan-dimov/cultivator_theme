@@ -1493,6 +1493,9 @@ video {
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
 .bg-center {
   background-position: center;
 }
