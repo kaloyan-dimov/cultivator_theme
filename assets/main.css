@@ -2043,7 +2043,7 @@ html * {
   transition: all 0.25s;
 }
 .heart_gold:hover::before, .heart_gold:hover::after {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.15);
   transition: all 0.25s;
 }
 
