@@ -1499,6 +1499,9 @@ video {
 .bg-center {
   background-position: center;
 }
+.fill-\[\#00FFFF\] {
+  fill: #00FFFF;
+}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -2001,10 +2004,6 @@ html * {
     padding-left: 64px;
     padding-right: 64px;
   }
-}
-
-.CTA_secondary .CTA_secondary_arrow path {
-  fill: red;
 }
 
 .button_arrow {
