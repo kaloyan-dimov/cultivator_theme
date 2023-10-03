@@ -1493,6 +1493,9 @@ video {
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
+.bg-opacity-5 {
+  --tw-bg-opacity: 0.05;
+}
 .bg-center {
   background-position: center;
 }
@@ -1609,10 +1612,6 @@ video {
 .py-\[19px\] {
   padding-top: 19px;
   padding-bottom: 19px;
-}
-.py-\[23px\] {
-  padding-top: 23px;
-  padding-bottom: 23px;
 }
 .py-\[24px\] {
   padding-top: 24px;
