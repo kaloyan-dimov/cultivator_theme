@@ -29,11 +29,11 @@
             <h2 class="body-m text-taupe-200 text-center mb-4">{{ block.settings.collection_description }}</h2>
           {% endif %}
         {% endif %}
-        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA text-ecru border border-ecru py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] items-center mx-auto mb-8">
+        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA CTA_secondary text-ecru border border-ecru py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] items-center mx-auto mb-8">
           {% if block.settings.button_text != null %}
             <h3 class="h-[18px]">{{ block.settings.button_text }}</h3>
           {% endif %}
-          <div class="CTA_secondary">
+          <div class="CTA_secondary_arrow">
             <svg
               width="25"
               height="20"
