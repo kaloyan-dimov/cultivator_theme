@@ -2,7 +2,7 @@
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
-  <div class="video_feed_with_text flex gap-6 min-h-[574px] flex-col-reverse md:flex-row">
+  <div class="video_feed_with_text flex gap-6 min-h-[574px] flex-col-reverse md:flex-row mt-[-32px]">
     <div class="video_feed_list md:w-[50%] md:flex items-center justify-center hidden ">
       <ol class="max-w-[532px]">
         {% for block in section.blocks %}
