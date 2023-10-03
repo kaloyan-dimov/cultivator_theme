@@ -201,14 +201,16 @@
       ],
       "settings": {
         "section_title": "Shop by Category",
-        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
+        "b_top": false,
+        "b_bot": false
       }
     },
     "636788fc-189a-4931-be1f-0a05116c181c": {
       "type": "block_CTA_section",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/image_31.png",
-        "title": "30% Off on hair colors",
+        "title": "30% OFF ON HAIR COLORS",
         "paragraph": "Hair cleaners for all hair types",
         "button_text": "SHOP NOW",
         "button_link": ""
