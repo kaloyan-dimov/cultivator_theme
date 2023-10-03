@@ -1669,6 +1669,9 @@ video {
 .pb-\[32px\] {
   padding-bottom: 32px;
 }
+.pb-\[35px\] {
+  padding-bottom: 35px;
+}
 .pb-\[55px\] {
   padding-bottom: 55px;
 }
@@ -4075,10 +4078,6 @@ html * {
 
   .sm\:text-left {
     text-align: left;
-  }
-
-  .sm\:text-\[48px\] {
-    font-size: 48px;
   }
 }
 @media (min-width: 1024px) {
