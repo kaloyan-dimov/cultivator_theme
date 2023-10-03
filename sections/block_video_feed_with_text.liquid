@@ -14,8 +14,8 @@
               <h3 class="body-m text-taupe-200">{{ block.settings.video_paragraph }}</h3>
             {% endif %}
             {% if block.settings.button_text != null %}
-              <button class="CTA_secondary CTA outline outline-1 ring-ecru text-ecru flex items-center justify-center gap-[8px] rounded-[20px]">
-                {{ block.settings.button_text }}
+              <button class="CTA_secondary  outline outline-1 ring-ecru text-ecru flex items-center justify-center gap-[8px] rounded-[20px]">
+                <h4 class="CTA">{{ block.settings.button_text }}</h4>
                 <div class="CTA_secondary_arrow">
                   <svg
                     width="12"
@@ -38,7 +38,9 @@
     </div>
     <div class="video_feed_videos h-[400px] relative md:w-[50%]">
       {% for block in section.blocks %}
-        <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class="video_feed_video w-[342px] md:w-[320px] h-[400px] rounded-[140px]">
+        <div
+          data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}"
+          class="video_feed_video w-[342px] md:w-[320px] h-[400px] rounded-[140px]">
           <img
             class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
             src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
