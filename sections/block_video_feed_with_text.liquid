@@ -1,4 +1,4 @@
-<div class="section mb-[64px]">
+<div class="section pt-[72px] border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
@@ -35,8 +35,10 @@
       {% endfor %}
     </div>
   </div>
-  <div class="section md:hidden">
-    <div class="swiper video_feed_with_text_swiper">
+  <div
+    class="section md:hidden">
+    <div
+      class="swiper video_feed_with_text_swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           <div class="swiper-slide relative flex">
@@ -66,6 +68,14 @@
         "type": "image_picker",
         "label": "Title Images",
         "id": "title_image"
+      }, {
+        "label": "Border Top",
+        "type": "checkbox",
+        "id": "b_top"
+      }, {
+        "label": "Border Bottom",
+        "type": "checkbox",
+        "id": "b_bot"
       }
     ],
     "blocks": [
