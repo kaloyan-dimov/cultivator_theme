@@ -23,13 +23,13 @@
             {% endif %}
           </div>
           {% if block.settings.collection_title != null %}
-            <h2 class="text-[40px] text-center mb-2">{{ block.settings.collection_title }}</h2>
+            <h2 class="subtitle-2 text-taupe text-center mb-2">{{ block.settings.collection_title }}</h2>
           {% endif %}
           {% if block.settings.collection_description != null %}
-            <h2 class="text-[16px] text-center mb-4">{{ block.settings.collection_description }}</h2>
+            <h2 class="body-m text-taupe-200 text-center mb-4">{{ block.settings.collection_description }}</h2>
           {% endif %}
         {% endif %}
-        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="bg-[#CCAC71] text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center mx-auto mb-8">
+        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA text-ecru py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center mx-auto mb-8">
           {% if block.settings.button_text != null %}
             <h3 class="h-[18px]">{{ block.settings.button_text }}</h3>
           {% endif %}
