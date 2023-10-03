@@ -1519,9 +1519,6 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
-.p-\[0\] {
-  padding: 0;
-}
 .p-\[16px\] {
   padding: 16px;
 }
@@ -4233,10 +4230,6 @@ html * {
     --tw-border-opacity: 1;
     border-color: rgba(234, 226, 219, 1);
     border-color: rgba(234, 226, 219, var(--tw-border-opacity));
-  }
-
-  .md\:p-\[64px\] {
-    padding: 64px;
   }
 
   .md\:px-4 {
