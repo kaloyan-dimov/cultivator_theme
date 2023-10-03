@@ -2006,7 +2006,7 @@ html * {
   }
 }
 
-.CTA_secondary.disabled {
+.CTA_secondary.disabled, .CTA_secondary.disabled:hover, .CTA_secondary.disabled:active {
   cursor: not-allowed;
   --tw-border-opacity: 1;
   border-color: rgba(233, 220, 195, 1);
@@ -2015,7 +2015,7 @@ html * {
   color: rgba(233, 220, 195, 1);
   color: rgba(233, 220, 195, var(--tw-text-opacity));
 }
-.CTA_secondary.disabled .CTA_secondary_arrow path {
+.CTA_secondary.disabled .CTA_secondary_arrow path, .CTA_secondary.disabled:hover .CTA_secondary_arrow path, .CTA_secondary.disabled:active .CTA_secondary_arrow path {
   fill: #E9DCC3;
 }
 .CTA_secondary:hover {
