@@ -10,12 +10,12 @@
     </div>
     <div class="flex flex-col items-center justify-center w-full md:w-[411px] lg:w-[490px] bg-white min-h-[240px] md:rounded-[240px] md:border border-[#E6DFDB] shrink-0">
       {% if section.settings.title != null %}
-        <h2 class="mb-2 text-[32px] text-[#56463D] text-center">{{ section.settings.title }}</h2>
+        <h2 class="subtitle-2 text-taupe mb-[8px] text-center">{{ section.settings.title }}</h2>
       {% endif %}
       {% if section.settings.paragraph != null %}
-        <h3 class="mb-4 text-[16px] text-[#7B695E] text-center">{{ section.settings.paragraph }}</h3>
+        <h3 class="body-m text-taupe-200 mb-[24px] text-center">{{ section.settings.paragraph }}</h3>
       {% endif %}
-      <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="border-[#CCAC71] border text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] sm:mx-auto items-center">
+      <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="CTA CTA_secondary border-ecru border py-[18.5px] px-[32px] flex gap-2 w-fit rounded-[20px] sm:mx-auto items-center">
         {% if section.settings.button_text != null %}
           <h3 class="text-[#CCAC71] h-[18px]">{{ section.settings.button_text }}</h3>
         {% endif %}
