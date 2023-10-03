@@ -2014,6 +2014,9 @@ html * {
   }
 }
 
+.CTA_secondary {
+  transition: all 2s;
+}
 .CTA_secondary.disabled, .CTA_secondary.disabled:hover, .CTA_secondary.disabled:active {
   cursor: not-allowed;
   border-width: 1px;
