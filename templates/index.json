@@ -256,7 +256,9 @@
       ],
       "settings": {
         "section_title": "Shop our Feed",
-        "title_image": "shopify:\/\/shop_images\/Square_flower.png"
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
+        "b_top": false,
+        "b_bot": true
       }
     },
     "30ce9665-2aad-40d6-98c6-8036efbbb9f4": {
