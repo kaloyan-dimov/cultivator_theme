@@ -335,7 +335,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {\n  document.querySelector(\".login_popup\").addEventListener(\"click\", e => {\n    console.log(\"e.tagert\", e.target, \"e.currentTarget\", e.currentTarget);\n  });\n});\n\n//# sourceURL=webpack://theme/./src/js/sections/login_popup.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {\n  const login_popup = document.querySelector(\".login_popup\");\n  login_popup.addEventListener(\"click\", e => {\n    console.log(\"e.tagert\", e.target, \"e.currentTarget\", e.currentTarget);\n    if (e.target == login_popup) {\n      console.log(\"is current\");\n    } else {\n      console.log(\"is not current\");\n    }\n  });\n});\n\n//# sourceURL=webpack://theme/./src/js/sections/login_popup.js?");
 
 /***/ }),
 
