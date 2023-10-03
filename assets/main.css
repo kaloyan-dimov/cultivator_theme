@@ -3576,9 +3576,6 @@ html * {
   transition: opacity 0.5s, right 0.5s;
 }
 
-.remove_from_wishlist {
-  position: relative;
-}
 .remove_from_wishlist.icon_close::after {
   position: absolute;
   width: 15.5px;
