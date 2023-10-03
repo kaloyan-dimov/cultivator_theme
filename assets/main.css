@@ -2024,17 +2024,7 @@ html * {
   }
 }
 
-.CTA_secondary {
-  transition: all 0.25s;
-}
-.CTA_secondary .CTA_secondary_arrow {
-  transition: all 0.25s;
-}
-.CTA_secondary .CTA_secondary_arrow path {
-  transition: all 0.25s;
-}
 .CTA_secondary.disabled, .CTA_secondary.disabled:hover, .CTA_secondary.disabled:active {
-  transition: all 0.25s;
   cursor: not-allowed;
   --tw-text-opacity: 1;
   color: rgba(233, 220, 195, 1);
@@ -2043,15 +2033,10 @@ html * {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(233, 220, 195, var(--tw-ring-opacity));
 }
-.CTA_secondary.disabled .CTA_secondary_arrow, .CTA_secondary.disabled:hover .CTA_secondary_arrow, .CTA_secondary.disabled:active .CTA_secondary_arrow {
-  transition: all 0.25s;
-}
 .CTA_secondary.disabled .CTA_secondary_arrow path, .CTA_secondary.disabled:hover .CTA_secondary_arrow path, .CTA_secondary.disabled:active .CTA_secondary_arrow path {
-  transition: all 0.25s;
   fill: #E9DCC3;
 }
 .CTA_secondary:hover {
-  transition: all 0.25s;
   --tw-text-opacity: 1;
   color: rgba(190, 150, 75, 1);
   color: rgba(190, 150, 75, var(--tw-text-opacity));
@@ -2059,15 +2044,10 @@ html * {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(190, 150, 75, var(--tw-ring-opacity));
 }
-.CTA_secondary:hover .CTA_secondary_arrow {
-  transition: all 0.25s;
-}
 .CTA_secondary:hover .CTA_secondary_arrow path {
-  transition: all 0.25s;
   fill: #BE964B;
 }
 .CTA_secondary:active {
-  transition: all 0.25s;
   --tw-text-opacity: 1;
   color: rgba(180, 140, 65, 1);
   color: rgba(180, 140, 65, var(--tw-text-opacity));
@@ -2075,11 +2055,7 @@ html * {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(180, 140, 65, var(--tw-ring-opacity));
 }
-.CTA_secondary:active .CTA_secondary_arrow {
-  transition: all 0.25s;
-}
 .CTA_secondary:active .CTA_secondary_arrow path {
-  transition: all 0.25s;
   fill: #B48C41;
 }
 
