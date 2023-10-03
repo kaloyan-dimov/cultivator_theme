@@ -3808,6 +3808,14 @@ html * {
 .shopify-policy__container .shopify-policy__body {
   padding: 56px 0;
 }
+.after\:h-\[15\.5px\]::after {
+  content: var(--tw-content);
+  height: 15.5px;
+}
+.after\:w-\[15\.5px\]::after {
+  content: var(--tw-content);
+  width: 15.5px;
+}
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
 }
