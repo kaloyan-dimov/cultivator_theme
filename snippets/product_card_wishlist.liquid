@@ -1,5 +1,5 @@
 <div class="relative w-[316px]">
-  <div class="flex flex-col h-[488px] rounded-[48px] justify-between p-4 bg-white border border-[#E6DFDB] relative">
+  <div class="flex flex-col h-[488px] rounded-[48px] justify-between p-4 bg-white border border-taupe-20 relative">
     <a href="{{ product.url }}">
       <div class="w-full h-[200px] mb-2">
         <img
@@ -20,14 +20,14 @@
     {% else %}
       <div class="add_to_bag rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
         <a href="javascript:void(0)" class="choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
-        <div class="options_list flex flex-col w-full absolute left-[0] bg-white  h-[114px] pt-[21px] border-t border-[#E6DFDB]">
+        <div class="options_list flex flex-col w-full absolute left-[0] bg-white  h-[114px] pt-[21px] border-t border-taupe-20">
           <div class="flex gap-[11px] justify-between">
             {% for variant in product.variants %}
               <h4
                 data-id="{{ variant.id }}"
                 data-price="{{ variant.price | money_without_trailing_zeros }}"
                 class="body-s-semibold
-                add_option flex flex-grow h-[34px] border border-[#E6DFDB] justify-center items-center rounded-[12px] cursor-pointer
+                add_option flex flex-grow h-[34px] border border-taupe-20 justify-center items-center rounded-[12px] cursor-pointer
                 {% if forloop.index == 1 %}
                   active
                 {% endif %}">
