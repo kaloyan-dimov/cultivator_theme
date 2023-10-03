@@ -3216,7 +3216,7 @@ html * {
   transition: all 0.5s;
 }
 .login_popup.active > div {
-  max-height: 1000px;
+  max-height: 674px;
   transform: translateY(1);
   transition: all 0.5s;
 }
