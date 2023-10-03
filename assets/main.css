@@ -3222,7 +3222,6 @@ html * {
   display: flex;
   position: relative;
   flex-direction: column;
-  gap: 8px;
   width: 100%;
   max-width: 62.6%;
   max-height: 0;
@@ -3235,6 +3234,7 @@ html * {
 }
 .video_player .video_container .video_close {
   cursor: pointer;
+  padding-bottom: 8px;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   align-self: flex-end;
