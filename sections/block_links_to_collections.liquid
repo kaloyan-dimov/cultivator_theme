@@ -29,7 +29,7 @@
             <h2 class="body-m text-taupe-200 text-center mb-4">{{ block.settings.collection_description }}</h2>
           {% endif %}
         {% endif %}
-        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA CTA_secondary text-ecru border border-ecru py-[18.5px] px-[32px] flex gap-[8px] w-fit rounded-[24px] items-center mx-auto mb-8">
+        <a href="{% if block.settings.selected_collection != null%} {{ block.settings.selected_collection.url }} {% endif %}" class="CTA CTA_secondary text-ecru border border-ecru py-[18.5px] px-[32px] flex gap-[8px] w-fit rounded-[20px] items-center mx-auto mb-8">
           {% if block.settings.button_text != null %}
             <h3 class="h-[18px]">{{ block.settings.button_text }}</h3>
           {% endif %}
