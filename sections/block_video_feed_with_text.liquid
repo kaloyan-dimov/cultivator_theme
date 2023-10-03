@@ -3,18 +3,18 @@
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
   <div class="video_feed_with_text flex gap-6 min-h-[574px] flex-col-reverse md:flex-row mt-[-32px]">
-    <div class="video_feed_list md:w-[50%] md:flex items-center justify-center hidden ">
+    <div class="video_feed_list md:w-[50%] md:flex items-center hidden ">
       <ol class="max-w-[532px]">
         {% for block in section.blocks %}
           <li class="mb-[40px]">
             {% if block.settings.video_title != null %}
-              <h2 class="text-[32px] text-[#56463D]">{{ block.settings.video_title }}</h2>
+              <h2 class="subtitle-2 text-taupe">{{ block.settings.video_title }}</h2>
             {% endif %}
             {% if block.settings.video_paragraph != null %}
-              <h3>{{ block.settings.video_paragraph }}</h3>
+              <h3 class="body-m text-taupe-200">{{ block.settings.video_paragraph }}</h3>
             {% endif %}
             {% if block.settings.button_text != null %}
-              <button class="border-[#CCAC71] border text-[14px] uppercase px-[24px] flex items-center justify-center gap-[8px] rounded-[24px] text-[#CCAC71]">
+              <button class="CTA text-ecru border-exru border py-[18.5px] px-[32px] flex items-center justify-center gap-[8px] rounded-[20px]">
                 {{ block.settings.button_text }}
                 <div class="video_play_gold"></div>
               </button>
@@ -25,7 +25,7 @@
     </div>
     <div class="video_feed_videos min-h-[574px] relative md:w-[50%]">
       {% for block in section.blocks %}
-        <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class="video_feed_video w-[342px] md:w-[320px] h-[513px] rounded-[160px]">
+        <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class="video_feed_video w-[342px] md:w-[320px] h-[400px] rounded-[140px]">
           <img
             class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
             src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
@@ -35,10 +35,8 @@
       {% endfor %}
     </div>
   </div>
-  <div
-    class="section md:hidden">
-    <div
-      class="swiper video_feed_with_text_swiper">
+  <div class="section md:hidden">
+    <div class="swiper video_feed_with_text_swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           <div class="swiper-slide relative flex">
