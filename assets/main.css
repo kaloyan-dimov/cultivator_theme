@@ -1702,8 +1702,8 @@ video {
 .pt-\[36px\] {
   padding-top: 36px;
 }
-.pt-\[70px\] {
-  padding-top: 70px;
+.pt-\[48px\] {
+  padding-top: 48px;
 }
 .pt-\[72px\] {
   padding-top: 72px;
@@ -2423,7 +2423,7 @@ html * {
   }
 }
 .best_selling_swiper {
-  padding-bottom: 41px !important;
+  padding-bottom: 55px !important;
 }
 .best_selling_swiper .swiper-wrapper {
   width: 100%;
@@ -2445,10 +2445,14 @@ html * {
   transition: all 0.5s;
 }
 
+@media (min-width: 768px) {
+  .best_selling_swiper {
+    padding-bottom: 41px !important;
+  }
+}
 .video_feed_with_text_swiper {
   padding-bottom: 41px !important;
 }
-
 .video_feed_with_text_swiper {
   counter-reset: section-swiper;
 }
@@ -4319,6 +4323,10 @@ html * {
 
   .lg\:pt-\[48px\] {
     padding-top: 48px;
+  }
+
+  .lg\:pt-\[70px\] {
+    padding-top: 70px;
   }
 
   .lg\:pt-\[97px\] {
