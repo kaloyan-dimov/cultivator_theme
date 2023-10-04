@@ -2489,9 +2489,6 @@ html * {
 .video_feed_with_text_swiper {
   padding-bottom: 41px !important;
 }
-.video_feed_with_text_swiper {
-  counter-reset: section-swiper;
-}
 .video_feed_with_text_swiper .swiper-wrapper {
   width: 100%;
   height: -moz-fit-content;
@@ -2501,17 +2498,6 @@ html * {
   width: 100%;
   border: 1px solid transparent;
   transition: all 0.5s;
-}
-.video_feed_with_text_swiper .swiper-wrapper .swiper-slide h2 {
-  position: relative;
-}
-.video_feed_with_text_swiper .swiper-wrapper .swiper-slide h2::before {
-  content: "0" counter(section-swiper);
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  counter-increment: section-swiper;
 }
 .video_feed_with_text_swiper .swiper-pagination-bullet {
   height: 10px;
