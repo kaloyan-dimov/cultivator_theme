@@ -804,6 +804,9 @@ video {
 .h-\[200px\] {
   height: 200px;
 }
+.h-\[21\.5px\] {
+  height: 21.5px;
+}
 .h-\[219px\] {
   height: 219px;
 }
@@ -897,6 +900,9 @@ video {
 .h-\[56px\] {
   height: 56px;
 }
+.h-\[57px\] {
+  height: 57px;
+}
 .h-\[595px\] {
   height: 595px;
 }
@@ -906,20 +912,17 @@ video {
 .h-\[64px\] {
   height: 64px;
 }
-.h-\[65px\] {
-  height: 65px;
-}
 .h-\[68px\] {
   height: 68px;
 }
 .h-\[71px\] {
   height: 71px;
 }
+.h-\[72px\] {
+  height: 72px;
+}
 .h-\[735px\] {
   height: 735px;
-}
-.h-\[75px\] {
-  height: 75px;
 }
 .h-\[81px\] {
   height: 81px;
@@ -1006,6 +1009,9 @@ video {
 .w-\[17px\] {
   width: 17px;
 }
+.w-\[19\.5px\] {
+  width: 19.5px;
+}
 .w-\[191px\] {
   width: 191px;
 }
@@ -1069,17 +1075,14 @@ video {
 .w-\[50px\] {
   width: 50px;
 }
-.w-\[59px\] {
-  width: 59px;
-}
 .w-\[64px\] {
   width: 64px;
 }
+.w-\[67px\] {
+  width: 67px;
+}
 .w-\[72px\] {
   width: 72px;
-}
-.w-\[76px\] {
-  width: 76px;
 }
 .w-\[80px\] {
   width: 80px;
@@ -1342,9 +1345,6 @@ video {
 .rounded-\[24px\] {
   border-radius: 24px;
 }
-.rounded-\[26px\] {
-  border-radius: 26px;
-}
 .rounded-\[32px\] {
   border-radius: 32px;
 }
@@ -1391,11 +1391,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgba(204, 172, 113, 1);
   border-color: rgba(204, 172, 113, var(--tw-border-opacity));
-}
-.border-\[\#D1BEB1\] {
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 190, 177, 1);
-  border-color: rgba(209, 190, 177, var(--tw-border-opacity));
 }
 .border-\[\#E6DFDB\] {
   --tw-border-opacity: 1;
@@ -1842,11 +1837,6 @@ video {
   --tw-text-opacity: 1;
   color: rgba(204, 172, 113, 1);
   color: rgba(204, 172, 113, var(--tw-text-opacity));
-}
-.text-\[\#FF0000\] {
-  --tw-text-opacity: 1;
-  color: rgba(255, 0, 0, 1);
-  color: rgba(255, 0, 0, var(--tw-text-opacity));
 }
 .text-\[FF0000\] {
   color: FF0000;
@@ -2603,15 +2593,19 @@ html * {
 }
 
 .cart_icon {
-  background-image: url("data:image/svg+xml, %3Csvg width=%2723%27 height=%2724%27 viewBox=%270 0 23 24%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M0.95 0.885459V21.3105C0.95 22.6064 1.82329 23.6776 2.916 23.6776H20.084C21.1767 23.6776 22.05 22.6064 22.05 21.3105V0.885459C22.05 0.644993 21.8552 0.45 21.6145 0.45H1.38546C1.14477 0.45 0.95 0.644993 0.95 0.885459ZM1.82092 1.32092H21.1791V21.3105C21.1791 21.7271 21.0535 22.103 20.8531 22.3735C20.6527 22.6441 20.38 22.8066 20.084 22.8066H2.916C2.61996 22.8066 2.34733 22.6441 2.14692 22.3735C1.94653 22.103 1.82092 21.7271 1.82092 21.3105V1.32092Z%27 fill=%27%2356463D%27 stroke=%27%2356463D%27 stroke-width=%270.1%27/%3E%3Cpath d=%27M11.5 10.1955C14.2612 10.1955 16.5075 7.94923 16.5075 5.18802V3.56808C16.5075 3.32761 16.3127 3.13262 16.0721 3.13262C15.8314 3.13262 15.6366 3.32761 15.6366 3.56808V5.18802C15.6366 7.46884 13.781 9.32462 11.5 9.32462C9.219 9.32462 7.3634 7.46884 7.3634 5.18802V3.56808C7.3634 3.32761 7.16863 3.13262 6.92794 3.13262C6.68725 3.13262 6.49248 3.32761 6.49248 3.56808V5.18802C6.49248 7.94923 8.73879 10.1955 11.5 10.1955Z%27 fill=%27%2356463D%27 stroke=%27%2356463D%27 stroke-width=%270.1%27/%3E%3C/svg%3E%0A");
-  width: 19.5px;
-  height: 21.5px;
+  position: relative;
+}
+.cart_icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: 100% 100%;
+  background-image: url("data:image/svg+xml, %3Csvg width=%2723%27 height=%2724%27 viewBox=%270 0 23 24%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M0.95 0.885459V21.3105C0.95 22.6064 1.82329 23.6776 2.916 23.6776H20.084C21.1767 23.6776 22.05 22.6064 22.05 21.3105V0.885459C22.05 0.644993 21.8552 0.45 21.6145 0.45H1.38546C1.14477 0.45 0.95 0.644993 0.95 0.885459ZM1.82092 1.32092H21.1791V21.3105C21.1791 21.7271 21.0535 22.103 20.8531 22.3735C20.6527 22.6441 20.38 22.8066 20.084 22.8066H2.916C2.61996 22.8066 2.34733 22.6441 2.14692 22.3735C1.94653 22.103 1.82092 21.7271 1.82092 21.3105V1.32092Z%27 fill=%27%2356463D%27 stroke=%27%2356463D%27 stroke-width=%270.1%27/%3E%3Cpath d=%27M11.5 10.1955C14.2612 10.1955 16.5075 7.94923 16.5075 5.18802V3.56808C16.5075 3.32761 16.3127 3.13262 16.0721 3.13262C15.8314 3.13262 15.6366 3.32761 15.6366 3.56808V5.18802C15.6366 7.46884 13.781 9.32462 11.5 9.32462C9.219 9.32462 7.3634 7.46884 7.3634 5.18802V3.56808C7.3634 3.32761 7.16863 3.13262 6.92794 3.13262C6.68725 3.13262 6.49248 3.32761 6.49248 3.56808V5.18802C6.49248 7.94923 8.73879 10.1955 11.5 10.1955Z%27 fill=%27%2356463D%27 stroke=%27%2356463D%27 stroke-width=%270.1%27/%3E%3C/svg%3E%0A");
   background-position: center;
   background-repeat: no-repeat;
-}
-.cart_icon.cart_icon_mobile {
-  background-size: 26px 28px;
 }
 
 .hamburger {
