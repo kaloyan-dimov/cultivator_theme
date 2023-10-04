@@ -2495,7 +2495,7 @@ html * {
   height: fit-content;
 }
 .video_feed_with_text_swiper .swiper-wrapper .swiper-slide {
-  width: 100%;
+  width: 358px;
   border: 1px solid transparent;
   transition: all 0.5s;
 }
@@ -2512,6 +2512,17 @@ html * {
   transition: all 0.5s;
 }
 
+@media (min-width: 1024px) {
+  .video_feed_with_text_swiper {
+    padding-bottom: 41px !important;
+  }
+  .video_feed_with_text_swiper .swiper-wrapper {
+    width: 100%;
+  }
+  .video_feed_with_text_swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+  }
+}
 .sustainable_sourcing_swiper .swiper-wrapper {
   width: 100%;
   height: 570px;
