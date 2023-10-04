@@ -672,9 +672,9 @@ video {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.my-\[56px\] {
-  margin-top: 56px;
-  margin-bottom: 56px;
+.my-\[32px\] {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .my-\[8px\] {
   margin-top: 8px;
@@ -4251,6 +4251,11 @@ html * {
   .lg\:mx-\[auto\] {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:my-\[56px\] {
+    margin-top: 56px;
+    margin-bottom: 56px;
   }
 
   .lg\:mb-\[24px\] {
