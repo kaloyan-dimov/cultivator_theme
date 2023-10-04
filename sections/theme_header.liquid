@@ -72,8 +72,8 @@
       <span></span>
     </div>
   </div>
-  <div class="mobile_header_items flex z-[1] fixed  w-full top-[0]  h-full ">
-    <div class="w-full sm:w-[50%] flex-col bg-white px-[24px] overflow-scroll">
+  <div class="mobile_header_items flex z-[1] fixed  w-full top-[0] h-full">
+    <div class="w-full max-w-[350px] shrink-0 flex-col bg-white px-[24px] overflow-scroll">
       <div class="h-[81px] flex justify-end px-4 gap-2 items-center">
         <a href="/account" class="profile_icon w-[44px] h-[44px]"></a>
         <a href="#" class="change_language w-6 h-6"></a>
@@ -97,8 +97,13 @@
           </ul>
         </div>
       {% endfor %}
+      <div class="absolute left-[0] bottom-[0]] w-full bg-neutral min-h-[171px]">
+        <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="break-words mb-[3px] text-[32px]">{{ settings.phone_number }}</a>
+        <h3 class="break-words mb-6 text-[13px]">{{ settings.working_hours }}</h3>
+        <a href="mailto:{{ settings.email }}" class="break-words text-[20px]">{{ settings.email }}</a>
+      </div>
     </div>
-    <div class="w-[0] sm:w-[50%] bg-black mobile_header_background_filler opacity-50"></div>
+    <div class="w-full bg-black mobile_header_background_filler opacity-50"></div>
   </div>
 </header>
 {% schema %}
