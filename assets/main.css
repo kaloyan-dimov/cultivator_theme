@@ -1404,6 +1404,11 @@ video {
   border-color: rgba(234, 226, 219, 1);
   border-color: rgba(234, 226, 219, var(--tw-border-opacity));
 }
+.border-\[\#FF0000\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 0, 0, 1);
+  border-color: rgba(255, 0, 0, var(--tw-border-opacity));
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgba(0, 0, 0, 1);
