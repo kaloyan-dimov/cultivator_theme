@@ -2793,8 +2793,8 @@ html * {
 }
 
 .banner .banner_container {
-  width: 100%;
-  transition: all 0.5s ease;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .ajax_cart_container {
