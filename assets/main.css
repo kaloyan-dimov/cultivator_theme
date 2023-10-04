@@ -1404,11 +1404,6 @@ video {
   border-color: rgba(234, 226, 219, 1);
   border-color: rgba(234, 226, 219, var(--tw-border-opacity));
 }
-.border-\[\#FF0000\] {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 0, 0, 1);
-  border-color: rgba(255, 0, 0, var(--tw-border-opacity));
-}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgba(0, 0, 0, 1);
@@ -2790,14 +2785,6 @@ html * {
 .banner {
   width: 100%;
   overflow: hidden;
-}
-
-.banner .banner_container {
-  padding: 0 !important;
-}
-
-.banner .banner_container {
-  border: 2px solid blue;
 }
 
 .ajax_cart_container {
