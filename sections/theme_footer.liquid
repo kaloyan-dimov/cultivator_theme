@@ -1,4 +1,4 @@
-<footer class="my-[56px]">
+<footer class="my-[32px] lg:my-[56px]">
   <div class="section">
     <div class="w-full border border-[#EAE2DB]">
       <div class="flex flex-wrap md:flex-nowrap border-b border-[#EAE2DB] ">
@@ -28,7 +28,9 @@
         </div>
         <div class="border-r border-[#EAE2DB] border-b sm:border-b-0 w-full sm:w-[50%] md:w-[25.46%] py-[32px] flex flex-col px-6 md:px-4">
           <h2 class="mb-4 text-[20px]">Contact Us</h2>
-          <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="break-words mb-[3px] text-[32px]">{{ settings.phone_number }}</a>
+          <a
+            href="tel:{{ settings.phone_number | remove: ' ' }}"
+            class="break-words mb-[3px] text-[32px]">{{ settings.phone_number }}</a>
           <h3 class="break-words mb-6 text-[13px]">{{ settings.working_hours }}</h3>
           <a href="mailto:{{ settings.email }}" class="break-words text-[20px]">{{ settings.email }}</a>
         </div>
