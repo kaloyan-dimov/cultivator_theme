@@ -4301,6 +4301,10 @@ html * {
     flex-direction: row;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:gap-\[16px\] {
     gap: 16px;
   }
