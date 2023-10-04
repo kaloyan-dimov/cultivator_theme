@@ -2782,11 +2782,6 @@ html * {
     transform: rotate(225deg);
   }
 }
-.banner {
-  width: 100%;
-  overflow: hidden;
-}
-
 .ajax_cart_container {
   width: 100%;
   height: 100%;
