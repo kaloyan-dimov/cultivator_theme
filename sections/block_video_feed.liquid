@@ -1,23 +1,25 @@
-<div class="section video_feed pt-[8px] pb-[13px] border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
-  {% assign title_text = section.settings.section_title %}
-  {% assign title_image = section.settings.title_image %}
-  {% include 'section_title' with title_text, title_image %}
+<div class="w-full border-ecru {% if section.settings.b_top == true %} border-t {% endif %} {% if section.settings.b_bot == true %} border-b {% endif %}">
+  <div class="section video_feed pt-[8px] pb-[13px]">
+    {% assign title_text = section.settings.section_title %}
+    {% assign title_image = section.settings.title_image %}
+    {% include 'section_title' with title_text, title_image %}
 
-  <div class="swiper video_feed_swiper overflow-hidden">
-    <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-        <div class="swiper-slide rounded-[32px] overflow-hidden">
-          <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class="video_feed_video w-full h-full">
-            <img
-              class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
-              src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
-              alt="">
-            <div class="video_play_button video_play_gold"></div>
+    <div class="swiper video_feed_swiper overflow-hidden">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide rounded-[32px] overflow-hidden">
+            <div data-video="{% for source in block.settings.video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}" class="video_feed_video w-full h-full">
+              <img
+                class="w-full h-full object-cover rounded-[32px] absolute top-[0] left-[0]"
+                src="{{ block.settings.video.preview_image.src | img_url: 'large' }}"
+                alt="">
+              <div class="video_play_button video_play_gold"></div>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 </div>
 {% schema %}
