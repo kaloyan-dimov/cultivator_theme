@@ -2798,7 +2798,7 @@ html * {
 }
 
 .banner .banner_container {
-  background-color: red;
+  border: 1px solid blue;
 }
 
 .ajax_cart_container {
