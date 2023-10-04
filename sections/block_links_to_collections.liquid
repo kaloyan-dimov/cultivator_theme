@@ -3,7 +3,7 @@
     {% assign title_text = section.settings.section_title %}
     {% assign title_image = section.settings.title_image %}
     {% include 'section_title' with title_text, title_image %}
-    <div class="flex flex-col sm:flex-row gap-[47px] sm:gap-[0] pt-[31px] pb-[55px]">
+    <div class="flex flex-col sm:flex-row gap-[47px] sm:gap-[0] pt-[31px] pb-[63px] lg:pb-[55px]">
       {% for block in section.blocks %}
         {% if block.settings.selected_collection != null %}
           <div class="flex flex-col w-full sm:w-[50%] overflow-hidden">

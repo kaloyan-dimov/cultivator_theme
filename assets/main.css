@@ -1663,11 +1663,11 @@ video {
 .pb-\[41px\] {
   padding-bottom: 41px;
 }
-.pb-\[55px\] {
-  padding-bottom: 55px;
-}
 .pb-\[56px\] {
   padding-bottom: 56px;
+}
+.pb-\[63px\] {
+  padding-bottom: 63px;
 }
 .pl-\[16px\] {
   padding-left: 16px;
@@ -4321,6 +4321,10 @@ html * {
   .lg\:py-\[58px\] {
     padding-top: 58px;
     padding-bottom: 58px;
+  }
+
+  .lg\:pb-\[55px\] {
+    padding-bottom: 55px;
   }
 
   .lg\:pb-\[9px\] {
