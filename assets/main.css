@@ -603,8 +603,8 @@ video {
 .top-\[129px\] {
   top: 129px;
 }
-.top-\[19px\] {
-  top: 19px;
+.top-\[17px\] {
+  top: 17px;
 }
 .top-\[23px\] {
   top: 23px;
@@ -1035,6 +1035,9 @@ video {
 }
 .w-\[278px\] {
   width: 278px;
+}
+.w-\[28px\] {
+  width: 28px;
 }
 .w-\[300px\] {
   width: 300px;
@@ -2609,30 +2612,30 @@ html * {
 }
 
 .hamburger {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 .hamburger .hamburger_container {
-  width: 27px;
-  height: 22px;
+  width: 23px;
+  height: 19px;
   flex-direction: column;
   justify-content: space-between;
   display: flex;
 }
 .hamburger .hamburger_container span {
   display: block;
-  width: 27px;
+  width: 23px;
   height: 0.3px;
   border-radius: 1px;
   background-color: #56463D;
   transition: all 0.5s;
 }
 .hamburger .hamburger_container span:nth-child(2) {
-  width: 17px;
+  width: 14px;
 }
 .hamburger.active .hamburger_container span {
   transition: all 0.5s;
