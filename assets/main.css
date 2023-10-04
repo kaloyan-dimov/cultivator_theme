@@ -2385,7 +2385,7 @@ html * {
 }
 
 .instagram_feed_swiper {
-  padding-bottom: 41px !important;
+  padding-bottom: 62px !important;
 }
 .instagram_feed_swiper .swiper-wrapper {
   width: 100%;
@@ -2410,6 +2410,9 @@ html * {
 }
 
 @media (max-width: 1024px) {
+  .instagram_feed_swiper {
+    padding-bottom: 41px !important;
+  }
   .instagram_feed_swiper .swiper-wrapper {
     height: 163px;
   }
