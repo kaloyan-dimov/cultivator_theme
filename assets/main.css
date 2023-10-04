@@ -4336,6 +4336,10 @@ html * {
     padding-top: 70px;
   }
 
+  .lg\:pt-\[72px\] {
+    padding-top: 72px;
+  }
+
   .lg\:pt-\[97px\] {
     padding-top: 97px;
   }
