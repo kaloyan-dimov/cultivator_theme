@@ -82,7 +82,7 @@
       "theme_special_offer_banner": {
         "type": "theme_special_offer_banner",
         "settings": {
-          "display_banner": true,
+          "display_banner": false,
           "background_color": "#e2dad5",
           "banner_text": "<p>Save 20% on your first order. <strong>Use code:<\/strong> <strong>First20.<\/strong> <a href=\"\/collections\/conditioning-oil\" title=\"Conditioning Oil\">Shop now<\/a><\/p>"
         }
