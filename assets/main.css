@@ -3229,7 +3229,7 @@ html * {
   height: 100vh;
   background-color: rgba(1, 1, 1, 0);
   transition: all 0.5s;
-  padding: 32px;
+  padding: 16px;
 }
 .video_player .video_container {
   display: flex;
