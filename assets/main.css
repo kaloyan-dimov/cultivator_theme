@@ -1543,10 +1543,6 @@ video {
   padding-left: 19px;
   padding-right: 19px;
 }
-.px-\[20\.5px\] {
-  padding-left: 20.5px;
-  padding-right: 20.5px;
-}
 .px-\[24px\] {
   padding-left: 24px;
   padding-right: 24px;
@@ -4274,9 +4270,19 @@ html * {
     padding-right: 16px;
   }
 
+  .md\:px-\[20\.5px\] {
+    padding-left: 20.5px;
+    padding-right: 20.5px;
+  }
+
   .md\:px-\[64px\] {
     padding-left: 64px;
     padding-right: 64px;
+  }
+
+  .md\:py-\[32px\] {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .md\:pt-\[72px\] {
