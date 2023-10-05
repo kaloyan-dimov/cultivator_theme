@@ -957,6 +957,9 @@ video {
 .min-h-\[240px\] {
   min-height: 240px;
 }
+.min-h-\[250px\] {
+  min-height: 250px;
+}
 .min-h-\[260px\] {
   min-height: 260px;
 }
