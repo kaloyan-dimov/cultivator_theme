@@ -3696,6 +3696,7 @@ html * {
 
 .review_only_stars {
   display: flex;
+  align-items: center;
   gap: 4px;
 }
 .review_only_stars i {
