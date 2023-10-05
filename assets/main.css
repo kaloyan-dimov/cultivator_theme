@@ -4249,10 +4249,20 @@ html * {
     border-right-width: 1px;
   }
 
+  .md\:border-t {
+    border-top-width: 1px;
+  }
+
   .md\:border-ecru-x {
     --tw-border-opacity: 1;
     border-color: rgba(234, 226, 219, 1);
     border-color: rgba(234, 226, 219, var(--tw-border-opacity));
+  }
+
+  .md\:border-taupe-20 {
+    --tw-border-opacity: 1;
+    border-color: rgba(230, 223, 219, 1);
+    border-color: rgba(230, 223, 219, var(--tw-border-opacity));
   }
 
   .md\:px-\[0\] {
