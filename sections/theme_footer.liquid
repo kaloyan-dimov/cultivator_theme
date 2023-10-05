@@ -25,7 +25,7 @@
               </div>
             {% endfor %}
           </div>
-          <div class="flex flex-col pt-[9px] sm:pt-[16px] pb-[16px] px-[24px] md:px-[16px] gap-[16px] h-full md:min-h-[250px] sm:justify-center md:border-t md:border-taupe-20">
+          <div class="flex flex-col pt-[9px] sm:pt-[16px] pb-[16px] px-[24px] md:px-[16px] gap-[16px] h-full sm:justify-center md:border-t md:border-taupe-20">
             <a href="{{ shop.url }}">
               <img
                 class="bg-center w-[241px] h-[40px] "
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="border-r border-ecru-x border-b sm:border-b-0 w-full sm:w-[50%] md:w-[333px] py-[32px] sm:py-[24px] px-[24px] sm:px-[16px] flex flex-col justify-between ">
-          <div>
+          <div class="mb-[32px] sm:mb-[48px]">
             <h2 class="mb-4 h8 text-taupe">Order support</h2>
             <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="break-words mb-[3px] h7 text-taupe-x underline">{{ settings.phone_number }}</a>
             <h3 class="break-words mb-6 body-m text-taupe-200">{{ settings.working_hours }}</h3>
