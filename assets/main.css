@@ -3976,6 +3976,10 @@ html * {
     width: 316px;
   }
 
+  .sm\:w-\[333px\] {
+    width: 333px;
+  }
+
   .sm\:w-\[391px\] {
     width: 391px;
   }
@@ -4181,12 +4185,12 @@ html * {
     width: 50%;
   }
 
-  .md\:w-\[67\.53\%\] {
-    width: 67.53%;
+  .md\:w-\[95px\] {
+    width: 95px;
   }
 
-  .md\:w-\[7\.24\%\] {
-    width: 7.24%;
+  .md\:max-w-\[886px\] {
+    max-width: 886px;
   }
 
   .md\:flex-row {
