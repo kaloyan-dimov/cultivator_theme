@@ -1819,6 +1819,11 @@ video {
   color: rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgba(96, 165, 250, 1);
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
+}
 .text-ecru {
   --tw-text-opacity: 1;
   color: rgba(204, 172, 113, 1);
