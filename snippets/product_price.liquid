@@ -4,5 +4,5 @@
   </span>
   <span class="body-m-semibold pl-[8px]">{{ show_variant_price.compare_at_price | minus: show_variant_price.price | times: 100.0 | divided_by: show_variant_price.compare_at_price | round: 2 }}% OFF</span>
 {% else %}
-  <span class="body-m-semibold text-taupe orange-x">{{ show_variant_price.price | money }}</span>
+  <span class="body-m-semibold text-orange-x">{{ show_variant_price.price | money }}</span>
 {% endif %}
