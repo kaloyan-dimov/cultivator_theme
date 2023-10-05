@@ -1886,9 +1886,9 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(234, 226, 219, var(--tw-ring-opacity));
 }
-.ring-red-400 {
+.ring-green-400 {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(248, 113, 113, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(74, 222, 128, var(--tw-ring-opacity));
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
