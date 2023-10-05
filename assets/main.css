@@ -4178,8 +4178,8 @@ html * {
     height: 100%;
   }
 
-  .md\:min-h-\[251px\] {
-    min-height: 251px;
+  .md\:min-h-\[250px\] {
+    min-height: 250px;
   }
 
   .md\:w-\[333px\] {
