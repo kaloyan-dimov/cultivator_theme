@@ -2760,7 +2760,7 @@ html * {
   .footer_nav_entry .footer_expand {
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 32px;
     transform: translateY(-50%);
     height: 22px;
     width: 22px;
