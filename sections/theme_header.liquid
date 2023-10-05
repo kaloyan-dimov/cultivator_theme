@@ -10,16 +10,16 @@
                 {% assign linkCollection = child_link.object %}
                   <a class="flex flex-col gap-[8px]" href="{{ child_link.url }}">
                     <div class="flex justify-center items-center w-[140px] h-[140px]">
-                      <img
+                      <img 
                         class="w-[95px] h-[95px]"
                         crossorigin="anonymous"
                         src="{{ linkCollection.featured_image.src | image_url: width: 95, height: 95 }}"
                         alt="">
                     </div>
-                    <h3 class="text-center">{{ child_link.title }}</h3></a>
+                    <h3 class="text-center nav-links-level-2 ">{{ child_link.title }}</h3></a>
                   {%- else -%}
-                    <a class="flex flex-col gap-[8px] text-[14px]" href="{{ child_link.url }}">   
-                      <h3 class="text-center">{{ child_link.title }}</h3>
+                    <a href="{{ child_link.url }}">   
+                      <h3 class="text-center nav-links-level-2 ">{{ child_link.title }}</h3>
                     </a>
                   {%- endif -%}
               </li>
@@ -43,7 +43,7 @@
         <a href="/account" class="profile_icon"></a>
       </div>
       <a href="javascript:void(0);" class="cart_div flex w-[80px] h-[41px] rounded-[14px] border-[1px] border-taupe-20 flex gap-[16px] justify-center items-center">
-        <div class="cart_icon w-[19.5px] h-[21.5px]"></div>
+        <div class="cart_icon w-[36px] h-[36px]"></div>
         <div class="cart_item_count text-taupe body-m">{{ cart.item_count }}</div>
       </a>
       <a href="#" class="change_language w-[36px] h-[36px]"></a>
