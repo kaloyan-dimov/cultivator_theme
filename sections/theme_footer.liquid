@@ -2,7 +2,7 @@
   <div class="section">
     <div class="w-full border border-ecru-x">
       <div class="flex flex-wrap md:flex-nowrap border-b border-ecru-x ">
-        <div class="flex  flex-col w-full md:w-[67.91%] md:border-r md:border-ecru-x border-b md:border-b-0">
+        <div class="flex  flex-col w-full md:w-[67.53%] md:border-r md:border-ecru-x border-b md:border-b-0">
           <div class="w-full flex flex-col sm:flex-row justify-between py-[24px] px-[16px]">
             {% for link in linklists.footer.links %}
               <div class="flex flex-col footer_nav_entry">
@@ -35,7 +35,7 @@
             <h2 class="footness w-full">{{ section.settings.footer_text }}</h2>
           </div>
         </div>
-        <div class="border-r border-ecru-x border-b sm:border-b-0 w-full sm:w-[50%] md:w-[25.46%] py-[24px] flex flex-col justify-between px-[16px]">
+        <div class="border-r border-ecru-x border-b sm:border-b-0 w-full sm:w-[50%] md:w-[25.3%] py-[24px] flex flex-col justify-between px-[16px]">
           <div>
             <h2 class="mb-4 h8 text-taupe">Order Support</h2>
             <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="break-words mb-[3px] h7 text-taupe-x underline">{{ settings.phone_number }}</a>
@@ -62,7 +62,7 @@
               value="SEND">
           </div>
         </div>
-        <div class="w-full sm:w-[50%] md:w-[6.63%] py-[32px] px-[20.5px] flex flex-row md:flex-col gap-2 min-w-[87px] items-center justify-around md:justify-center">
+        <div class="w-full sm:w-[50%] md:w-[7.24%] py-[32px] px-[20.5px] flex flex-row md:flex-col gap-2 min-w-[87px] items-center justify-around md:justify-center">
           {% if settings.instagram_link != null and section.settings.instagram_link == true %}
             <a href="{{ settings.instagram_link }}" class="footer_social instagram_footer"></a>
           {% endif %}
