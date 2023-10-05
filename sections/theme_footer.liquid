@@ -25,14 +25,14 @@
               </div>
             {% endfor %}
           </div>
-          <div class="py-[16px] px-[24px] md:px-[16px] flex flex-col gap-[16px] justify-center items-center">
+          <div class="py-[16px] px-[24px] md:px-[16px] flex flex-col gap-[16px] justify-center">
             <a href="{{ shop.url }}">
               <img
                 class="bg-center w-[274px] h-[46px] "
                 src="{{ section.settings.footer_logo | img_url: 'master'}}"
                 alt="">
             </a>
-            <h2 class="footness w-full text-center">{{ section.settings.footer_text }}</h2>
+            <h2 class="footness w-full">{{ section.settings.footer_text }}</h2>
           </div>
         </div>
         <div class="border-r border-ecru-x border-b sm:border-b-0 w-full sm:w-[50%] md:w-[25.46%] py-[24px] flex flex-col justify-between px-[16px]">
