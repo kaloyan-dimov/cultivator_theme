@@ -1878,9 +1878,6 @@ video {
 .outline-1 {
   outline-width: 1px;
 }
-.outline-green-400 {
-  outline-color: #4ade80;
-}
 .ring-ecru {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(204, 172, 113, var(--tw-ring-opacity));
