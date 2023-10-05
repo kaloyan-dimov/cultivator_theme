@@ -3980,10 +3980,6 @@ html * {
     width: 316px;
   }
 
-  .sm\:w-\[333px\] {
-    width: 333px;
-  }
-
   .sm\:w-\[391px\] {
     width: 391px;
   }
@@ -4169,8 +4165,8 @@ html * {
     height: 100%;
   }
 
-  .md\:w-\[25\.3\%\] {
-    width: 25.3%;
+  .md\:w-\[333px\] {
+    width: 333px;
   }
 
   .md\:w-\[411px\] {
