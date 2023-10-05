@@ -1,8 +1,8 @@
 {% if show_variant_price.compare_at_price != null %}
   <span class="body-m-semibold text-taupe">{{ show_variant_price.price | money }}</span>
-  <span class="body-m text-taupe-40 line-through">{{ show_variant_price.compare_at_price | money }}
+  <span class="body-m text-taupe-40 line-through pl-[8px]">{{ show_variant_price.compare_at_price | money }}
   </span>
-  <span class="body-m-semibold">{{ show_variant_price.compare_at_price | minus: show_variant_price.price | times: 100.0 | divided_by: show_variant_price.compare_at_price | round: 2 }}% OFF</span>
+  <span class="body-m-semibold pl-[8px]">{{ show_variant_price.compare_at_price | minus: show_variant_price.price | times: 100.0 | divided_by: show_variant_price.compare_at_price | round: 2 }}% OFF</span>
 {% else %}
   <span class="body-m-semibold text-taupe orange-x">{{ show_variant_price.price | money }}</span>
 {% endif %}
