@@ -6,7 +6,8 @@
           <div class="w-full flex flex-col sm:flex-row justify-between pt-[32px] px-[16px] pb-[16px] ">
             {% for link in linklists.footer.links %}
               <div class="flex flex-col footer_nav_entry">
-                <div class="footer_entry_title relative text-[20px] pb-4 pt-4 sm:pt-[0]">{{ link.title }}
+                <div class="footer_entry_title relative pb-4 pt-4 sm:pt-[0]">
+                  <h2>{{ link.title }}</h2>
                   <div class="footer_expand">
                     <span></span>
                     <span></span>
