@@ -3700,6 +3700,8 @@ html * {
 }
 .review_only_stars i {
   width: 16px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .review_only_stars i::before {
   font-size: 80%;
