@@ -1574,6 +1574,10 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-\[0\] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1696,6 +1700,9 @@ video {
 }
 .pt-\[81px\] {
   padding-top: 81px;
+}
+.pt-\[8px\] {
+  padding-top: 8px;
 }
 .text-center {
   text-align: center;
@@ -2752,7 +2759,7 @@ html * {
   }
   .footer_nav_entry .footer_expand {
     position: absolute;
-    right: 24px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     height: 22px;
@@ -4065,6 +4072,11 @@ html * {
   .sm\:px-\[64px\] {
     padding-left: 64px;
     padding-right: 64px;
+  }
+
+  .sm\:py-\[24px\] {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .sm\:py-\[56px\] {
