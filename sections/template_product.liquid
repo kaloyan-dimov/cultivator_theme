@@ -1,25 +1,18 @@
-<div
-  class="block lg:hidden h-[56px] flex items-center">
+<div class="block lg:hidden h-[56px] flex items-center">
   {% include 'breadcrumb' %}
 </div>
-<div
-  class="product_page flex flex-col lg:flex-row lg:mx-[auto] lg:px[64px] lg:max-w-[1440px] lg:gap-[16px]">
-  <div
-    class="w-full lg:w-1/2">
+<div class="product_page flex flex-col lg:flex-row lg:mx-[auto] lg:px[64px] lg:max-w-[1440px] lg:gap-[16px]">
+  <div class="w-full lg:w-1/2">
     {% if product.media.size > 1 %}
-      <div
-        class="swiper single_product_swiper w-full  mb-[24px] sticky">
-        <div
-          class="swiper-wrapper lg:pl-[111px]">
+      <div class="swiper single_product_swiper w-full  mb-[24px] sticky">
+        <div class="swiper-wrapper lg:pl-[111px]">
           {% for image in product.media %}
-            <div
-              class="swiper-slide">
+            <div class="swiper-slide">
               <img
                 class="w-full h-full object-cover"
                 src="{{ image | img_url: 'master'}}"
                 alt="">
-              <div
-                class="swiper_thumb hidden">
+              <div class="swiper_thumb hidden">
                 <img
                   class="w-full h-full object-cover"
                   src="{{ image | img_url}}"
@@ -27,16 +20,12 @@
             </div>
           {% endfor %}
         </div>
-        <div
-          class="swiper-pagination hidden lg:flex"></div>
-        <div
-          class="swiper-button-prev arrow_prev_next lg:hidden"></div>
-        <div
-          class="swiper-button-next arrow_prev_next lg:hidden"></div>
+        <div class="swiper-pagination hidden lg:flex"></div>
+        <div class="swiper-button-prev arrow_prev_next lg:hidden"></div>
+        <div class="swiper-button-next arrow_prev_next lg:hidden"></div>
       </div>
     {% else %}
-      <div
-        class="w-full h-[360px] lg:h-[564px] p-[30px] lg:py-[58px] lg:px-[44px]">
+      <div class="w-full h-[360px] lg:h-[564px] p-[30px] lg:py-[58px] lg:px-[44px]">
         <img
           class="w-full h-full object-cover"
           src="{{ product.featured_image | img_url: 'master'}}"
@@ -44,18 +33,13 @@
       </div>
     {% endif %}
   </div>
-  <div
-    class="w-full lg:w-1/2 z-[2]">
-    <div
-      class="hidden lg:block p-[16px] mb-[24px]">
+  <div class="w-full lg:w-1/2 z-[2]">
+    <div class="hidden lg:block p-[16px] my-[24px]">
       {% include 'breadcrumb' %}
     </div>
-    <div
-      class="flex flex-col gap-[8px] mx-[16px]">
-      <div
-        class="flex justify-between h-[52px] items-center mb-[8px]">
-        <div
-          class="review_only_stars"></div>
+    <div class="flex flex-col gap-[8px] mx-[16px]">
+      <div class="flex justify-between h-[52px] items-center mb-[8px]">
+        <div class="review_only_stars"></div>
         {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
         <div
           class="w-[40px] h-[40px] heart_gold add_to_wishlist
@@ -66,35 +50,28 @@
           data-handle="{{ product.handle }}"></div>
       </div>
       {% if product.tags.size > 0 %}
-        <div
-          class="flex gap-[8px]">
+        <div class="flex gap-[8px]">
           {% for tag in product.tags %}
-            <span
-              class="py-[4px] px-[12px] rounded-[9px] bg-red-500">{{ tag }}</span>
+            <span class="py-[4px] px-[12px] rounded-[9px] bg-red-500">{{ tag }}</span>
           {% endfor %}
         </div>
       {% endif %}
-      <h1
-        class="text-[18px]">{{ product.title }}</h1>
-      <h2
-        class="text-[14px] mb-[8px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
+      <h1 class="text-[18px]">{{ product.title }}</h1>
+      <h2 class="text-[14px] mb-[8px]">{{ product.metafields.custom.product_short_description | metafield_tag }}</h2>
 
-      <h2
-        class="product_price">
+      <h2 class="product_price">
         {% assign show_variant_price = product.selected_or_first_available_variant %}
         {% include 'product_price' with show_variant_price %}
       </h2>
       {% if product.selected_or_first_available_variant.weight != 0 %}
-        <h3
-          class="product_weight text-[#54443B] mb-[24px]">
+        <h3 class="product_weight text-[#54443B] mb-[24px]">
           {{ product.selected_or_first_available_variant.weight }} Gramm
           ( {{ 1000 | times: product.selected_or_first_available_variant.price | divided_by: product.selected_or_first_available_variant.weight | money }} / 1kg ) Inclusive Of All Taxes
         </h3>
       {% endif %}
       {% if product.has_only_default_variant %}
         {% else %}
-          <div
-            class="flex flex-col border border-[#E6DFDB] my-[16px]">
+          <div class="flex flex-col border border-[#E6DFDB] my-[16px]">
             {% for variant in product.variants %}
               <label
                 for="{{ variant.id }}"
@@ -113,8 +90,7 @@
                   {% if product.selected_variant == nil and forloop.index == 1 %}
                   checked
                   {% endif %}>
-                <h3
-                  class="pointer-events-none text-[#54443B] text-[16px]">{{ variant.option1 }} -
+                <h3 class="pointer-events-none text-[#54443B] text-[16px]">{{ variant.option1 }} -
                   {% assign show_variant_price = variant %}
                   {% include 'product_price' with show_variant_price %}</h3>
               </label>
@@ -123,13 +99,9 @@
       {% endif %}
     </div>
 
-    <div
-      class="add_to_cart_el flex gap-[8px] text-[#CCAC71] m-[16px]">
-      <div
-        class="min-w-[146px] min-h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px] bg-neutral">
-        <div
-          id="input_minus"
-          class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">-</div>
+    <div class="add_to_cart_el flex gap-[8px] text-[#CCAC71] m-[16px]">
+      <div class="min-w-[146px] min-h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px] bg-neutral">
+        <div id="input_minus" class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">-</div>
         <input
           class="bg-transparent w-[50px] text-center"
           min="1"
@@ -137,9 +109,7 @@
           id="quantity"
           name="quantity"
           value="1" />
-        <div
-          id="input_plus"
-          class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">+</div>
+        <div id="input_plus" class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">+</div>
       </div>
       <input
         data-id="{{ product.selected_or_first_available_variant.id }}"
@@ -148,13 +118,10 @@
         value="ADD TO CART"
         class="product_add flex justify-center items-center w-full text-center bg-[#CCAC71] rounded-[12px] text-white btn cursor-pointer whitespace-pre-wrap px-[16px]" />
     </div>
-    <div
-      class="grid grid-cols-2 gap-[8px] mx-[16px] my-[24px]">
+    <div class="grid grid-cols-2 gap-[8px] mx-[16px] my-[24px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}
-        <div
-          class="flex gap-[8px] items-center">
-          <div
-            class="w-[44px] h-[41px] ">
+        <div class="flex gap-[8px] items-center">
+          <div class="w-[44px] h-[41px] ">
             <img
               class="w-full h-full object-contain"
               src="{{ obj.image | image_url }}"
@@ -164,76 +131,50 @@
         </div>
       {% endfor %}
     </div>
-    <ul
-      class="w-full flex flex-col">
+    <ul class="w-full flex flex-col">
       {% if product.description != null and product.description != '' %}
-        <li
-          class="border-t border-[#E6DFDB]">
-          <div
-            class="list_item flex flex-col px-[16px]">
-            <div
-              class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-              <h2
-                class="text-[16px]">Description
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+              <h2 class="text-[16px]">Description
               </h2>
-              <div
-                class="list_arrow h-[32px] w-[32px]"></div>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div
-              class="list_content pb-[16px]">{{ product.description }}</div>
+            <div class="list_content pb-[16px]">{{ product.description }}</div>
           </li>
         {% endif %}
       </li>
       {% if product.metafields.custom.product_accordion_clinically_safe != null and product.metafields.custom.product_accordion_clinically_safe != '' %}
-        <li
-          class="border-t border-[#E6DFDB]">
-          <div
-            class="list_item flex flex-col  px-[16px]">
-            <div
-              class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-              <h2
-                class="text-[16px]">Clinical Safe Product</h2>
-              <div
-                class="list_arrow h-[32px] w-[32px]"></div>
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col  px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+              <h2 class="text-[16px]">Clinical Safe Product</h2>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div
-              class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_clinically_safe | metafield_tag }}</div>
+            <div class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_clinically_safe | metafield_tag }}</div>
           </div>
         </li>
       {% endif %}
       {% if product.metafields.custom.product_accordion_ingridients != null and product.metafields.custom.product_accordion_ingridients != '' %}
-        <li
-          class="border-t border-[#E6DFDB]">
-          <div
-            class="list_item flex flex-col px-[16px]">
-            <div
-              class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-              <h2
-                class="text-[16px]">Ingridients</h2>
-              <div
-                class="list_arrow h-[32px] w-[32px]"></div>
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+              <h2 class="text-[16px]">Ingridients</h2>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div
-              class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_ingridients | metafield_tag }}</div>
+            <div class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_ingridients | metafield_tag }}</div>
           </div>
         </li>
       {% endif %}
       {% if section.blocks.size > 0 %}
-        <li
-          class="border-t border-[#E6DFDB]">
-          <div
-            class="list_item flex flex-col px-[16px]">
-            <div
-              class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-              <h2
-                class="text-[16px]">FAQ</h2>
-              <div
-                class="list_arrow h-[32px] w-[32px]"></div>
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+              <h2 class="text-[16px]">FAQ</h2>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div
-              class="list_content pb-[16px]">
-              <div
-                class="flex flex-col gap-[8px]">
+            <div class="list_content pb-[16px]">
+              <div class="flex flex-col gap-[8px]">
                 {% for block in section.blocks %}
                   {% if block.type == "Product_FAQ" %}
                     <h2>{{ block.settings.faq_title }}</h2>
@@ -246,19 +187,13 @@
         </li>
       {% endif %}
       {% if product.metafields.custom.product_accordion_certification != null and product.metafields.custom.product_accordion_certification != '' %}
-        <li
-          class="border-t border-[#E6DFDB]">
-          <div
-            class="list_item flex flex-col px-[16px]">
-            <div
-              class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-              <h2
-                class="text-[16px]">Certification</h2>
-              <div
-                class="list_arrow h-[32px] w-[32px]"></div>
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
+              <h2 class="text-[16px]">Certification</h2>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div
-              class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_certification | metafield_tag }}</div>
+            <div class="list_content pb-[16px]">{{ product.metafields.custom.product_accordion_certification | metafield_tag }}</div>
           </div>
         </li>
       {% endif %}
