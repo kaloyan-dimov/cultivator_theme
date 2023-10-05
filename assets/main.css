@@ -1533,10 +1533,6 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 .px-\[0\] {
   padding-left: 0;
   padding-right: 0;
@@ -2006,6 +2002,12 @@ html * {
   font-weight: 700;
   line-height: 1.18125rem;
   letter-spacing: 0.0375rem;
+}
+
+.footness {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
 }
 
 .no-scroll {
@@ -4190,10 +4192,6 @@ html * {
     width: 67.91%;
   }
 
-  .md\:max-w-\[422px\] {
-    max-width: 422px;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -4243,6 +4241,11 @@ html * {
   .md\:px-\[0\] {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .md\:px-\[16px\] {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .md\:px-\[64px\] {
