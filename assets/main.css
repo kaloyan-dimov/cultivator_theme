@@ -3694,6 +3694,9 @@ html * {
   transform: translate(-50%, -50%);
 }
 
+.review_only_stars i {
+  width: 16px;
+}
 .review_only_stars i::before {
   font-size: 80%;
 }
