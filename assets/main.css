@@ -2005,7 +2005,7 @@ html * {
   font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.18125rem;
-  letter-spacing: 4%;
+  letter-spacing: 0.0375rem;
 }
 
 .no-scroll {
