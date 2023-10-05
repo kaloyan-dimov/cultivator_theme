@@ -1878,11 +1878,8 @@ video {
 .outline-1 {
   outline-width: 1px;
 }
-.outline-offset-2 {
-  outline-offset: 2px;
-}
-.outline-blue-500 {
-  outline-color: #3b82f6;
+.outline-green-500 {
+  outline-color: #22c55e;
 }
 .ring-ecru {
   --tw-ring-opacity: 1;
