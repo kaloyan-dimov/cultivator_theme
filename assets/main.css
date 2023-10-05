@@ -1832,6 +1832,11 @@ video {
   color: rgba(119, 98, 85, 1);
   color: rgba(119, 98, 85, var(--tw-text-opacity));
 }
+.text-taupe-40 {
+  --tw-text-opacity: 1;
+  color: rgba(179, 160, 148, 1);
+  color: rgba(179, 160, 148, var(--tw-text-opacity));
+}
 .text-taupe-50 {
   --tw-text-opacity: 1;
   color: rgba(143, 118, 102, 1);
