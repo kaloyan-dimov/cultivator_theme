@@ -1860,6 +1860,16 @@ video {
 .line-through {
   text-decoration-line: line-through;
 }
+.placeholder-red-600::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(220, 38, 38, 1);
+  color: rgba(220, 38, 38, var(--tw-placeholder-opacity));
+}
+.placeholder-red-600::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(220, 38, 38, 1);
+  color: rgba(220, 38, 38, var(--tw-placeholder-opacity));
+}
 .opacity-50 {
   opacity: 0.5;
 }
@@ -4228,11 +4238,6 @@ html * {
     --tw-border-opacity: 1;
     border-color: rgba(234, 226, 219, 1);
     border-color: rgba(234, 226, 219, var(--tw-border-opacity));
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .md\:px-\[0\] {
