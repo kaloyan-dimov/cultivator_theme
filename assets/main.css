@@ -857,9 +857,6 @@ video {
 .h-\[420px\] {
   height: 420px;
 }
-.h-\[42\] {
-  height: 42;
-}
 .h-\[44px\] {
   height: 44px;
 }
@@ -1123,9 +1120,6 @@ video {
 }
 .max-w-\[40\%\] {
   max-width: 40%;
-}
-.max-w-\[400px\] {
-  max-width: 400px;
 }
 .max-w-\[421px\] {
   max-width: 421px;
@@ -1500,9 +1494,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.p-2 {
-  padding: 0.5rem;
 }
 .p-4 {
   padding: 1rem;
