@@ -5,12 +5,15 @@
   aria-label="breadcrumbs">
   <ul class="flex gap-[24px]">
     <li class="breadcrumb">
-      <a href="/">Home</a>
+      <a class="body-s text-taupe" href="/">Home</a>
     </li>
     {%- case t -%}
       {%- when 'page' -%}
       <li class="breadcrumb">
-        <a href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+        <a
+          class="body-s text-taupe"
+          href="{{ page.url }}"
+          aria-current="page">{{ page.title }}</a>
       </li>
 
       {%- when 'product' -%}
@@ -25,7 +28,10 @@
         {% endif %}
       {% endfor %}
       <li class="breadcrumb">
-        <a href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+        <a
+          class="body-s text-taupe"
+          href="{{ product.url }}"
+          aria-current="page">{{ product.title }}</a>
       </li>
       {%- when 'collection' and collection.handle -%}
       {%- if current_tags -%}
@@ -35,11 +41,17 @@
         <li class="breadcrumb">
           {%- capture tag_url -%}
             {{ collection.url }}/{{ current_tags | join: "+" }}{%- endcapture -%}
-          <a href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+          <a
+            class="body-s text-taupe"
+            href="{{ tag_url }}"
+            aria-current="page">{{ current_tags | join: " + " }}</a>
         </li>
       {%- else -%}
         <li class="breadcrumb">
-          <a href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+          <a
+            class="body-s text-taupe"
+            href="{{ collection.url }}"
+            aria-current="page">{{ collection.title }}</a>
         </li>
       {%- endif -%}
 
@@ -51,11 +63,17 @@
         <li class="breadcrumb">
           {%- capture tag_url -%}
             {{ blog.url }}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
-          <a href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+          <a
+            class="body-s text-taupe"
+            href="{{ tag_url }}"
+            aria-current="page">{{ current_tags | join: " + " }}</a>
         </li>
       {%- else -%}
         <li class="breadcrumb">
-          <a href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+          <a
+            class="body-s text-taupe"
+            href="{{ blog.url }}"
+            aria-current="page">{{ blog.title }}</a>
         </li>
       {%- endif -%}
 
@@ -64,11 +82,17 @@
         {{ blog.title | link_to: blog.url }}
       </li>
       <li class="breadcrumb">
-        <a href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+        <a
+          class="body-s text-taupe"
+          href="{{ article.url }}"
+          aria-current="page">{{ article.title }}</a>
       </li>
     {%- else -%}
       <li class="breadcrumb">
-        <a href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+        <a
+          class="body-s text-taupe"
+          href="{{ request.path }}"
+          aria-current="page">{{ page_title }}</a>
       </li>
     {%- endcase -%}
   </ul>
