@@ -2141,8 +2141,7 @@ html * {
   border-radius: 50%;
   outline-style: solid;
   outline-width: 1px;
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(230, 223, 219, var(--tw-ring-opacity));
+  outline-color: #E6DFDB;
 }
 .radio_button_custom::before {
   content: "";
