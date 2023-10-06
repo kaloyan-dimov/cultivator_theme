@@ -1850,6 +1850,11 @@ video {
   color: rgba(143, 118, 102, 1);
   color: rgba(143, 118, 102, var(--tw-text-opacity));
 }
+.text-taupe-800 {
+  --tw-text-opacity: 1;
+  color: rgba(17, 14, 12, 1);
+  color: rgba(17, 14, 12, var(--tw-text-opacity));
+}
 .text-taupe-x {
   --tw-text-opacity: 1;
   color: rgba(86, 70, 61, 1);
@@ -2019,6 +2024,12 @@ html * {
   font-weight: 700;
   line-height: 1.18125rem;
   letter-spacing: 0.0375rem;
+}
+
+.product-labels {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
 }
 
 .footness {
