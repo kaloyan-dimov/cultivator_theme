@@ -3524,9 +3524,6 @@ html * {
   outline: none;
 }
 
-.list_item {
-  padding-bottom: 8px;
-}
 .list_item .list_arrow {
   position: relative;
   transform: scale(1);
@@ -3554,8 +3551,8 @@ html * {
   transform: scaleY(1);
   transform-origin: top;
   max-height: 1000px;
-  transition: all 0.5s;
   padding-bottom: 24px;
+  transition: all 0.5s;
 }
 .list_item.active .list_arrow {
   transform: scale(-1);
