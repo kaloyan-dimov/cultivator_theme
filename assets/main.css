@@ -525,6 +525,11 @@ video {
     max-width: 1280px;
   }
 }
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1366px;
+  }
+}
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
@@ -4016,8 +4021,8 @@ html * {
   .sm\:h-\[671px\] {
     height: 671px;
   }
-  .sm\:w-\[205px\] {
-    width: 205px;
+  .sm\:w-\[193px\] {
+    width: 193px;
   }
   .sm\:w-\[250px\] {
     width: 250px;
@@ -4376,6 +4381,11 @@ html * {
   }
   .lg\:pt-\[97px\] {
     padding-top: 97px;
+  }
+}
+@media (min-width: 1366px) {
+  .lg-x\:w-\[205px\] {
+    width: 205px;
   }
 }
 /*!**************************************************************************************************************************************************************************!*\
