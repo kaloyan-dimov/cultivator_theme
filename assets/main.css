@@ -1351,10 +1351,6 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
-.rounded-r-\[9px\] {
-  border-top-right-radius: 9px;
-  border-bottom-right-radius: 9px;
-}
 .border {
   border-width: 1px;
 }
@@ -1638,10 +1634,6 @@ video {
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
-}
-.py-\[7px\] {
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 .py-\[8px\] {
   padding-top: 8px;
@@ -4340,6 +4332,10 @@ html * {
   .lg\:px-\[44px\] {
     padding-left: 44px;
     padding-right: 44px;
+  }
+  .lg\:px-\[64px\] {
+    padding-left: 64px;
+    padding-right: 64px;
   }
   .lg\:py-\[56px\] {
     padding-top: 56px;
