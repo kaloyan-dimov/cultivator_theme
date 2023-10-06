@@ -100,8 +100,8 @@
       {% endif %}
     </div>
 
-    <div class="add_to_cart_el flex gap-[8px] text-[#CCAC71] m-[16px]">
-      <div class="min-w-[146px] min-h-[56px] border border-[#CCAC71] px-[16px] flex justify-between items-center rounded-[12px] bg-neutral">
+    <div class="add_to_cart_el flex gap-[8px] text-ecru m-[16px]">
+      <div class="min-w-[146px] min-h-[56px] border border-ecru px-[16px] flex justify-between items-center rounded-[12px] bg-neutral">
         <div id="input_minus" class=" w-[32px] h-[32px] flex justify-center items-center cursor-pointer">-</div>
         <input
           class="bg-transparent w-[50px] text-center"
@@ -117,7 +117,7 @@
         data-price="{{ product.selected_or_first_available_variant.price | money }}"
         type="submit"
         value="ADD TO CART"
-        class="product_add flex justify-center items-center w-full text-center bg-[#CCAC71] rounded-[12px] text-white btn cursor-pointer whitespace-pre-wrap px-[16px]" />
+        class="product_add flex justify-center items-center w-full text-center bg-ecru rounded-[12px] text-white btn cursor-pointer whitespace-pre-wrap px-[16px]" />
     </div>
     <div class="grid grid-cols-2 gap-[8px] mx-[16px] my-[24px]">
       {% for obj in product.metafields.custom.product_description_tags.value %}
