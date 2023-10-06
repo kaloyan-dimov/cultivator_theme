@@ -2138,10 +2138,10 @@ html * {
   position: relative;
   width: 20px;
   height: 20px;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgba(230, 223, 219, 1);
-  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
+  outline-style: solid;
+  outline-width: 1px;
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(230, 223, 219, var(--tw-ring-opacity));
 }
 .radio_button_custom::before {
   content: "";
@@ -2169,10 +2169,7 @@ html * {
   background-color: rgba(251, 249, 249, var(--tw-bg-opacity));
 }
 .radio_button_custom:checked {
-  border-width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(204, 172, 113, 1);
-  background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
+  outline-width: 0px;
 }
 .radio_button_custom:checked::before {
   --tw-bg-opacity: 1;
