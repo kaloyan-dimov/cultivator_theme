@@ -2136,14 +2136,16 @@ html * {
 
 .radio_button_custom {
   position: relative;
+  width: 20px;
+  height: 20px;
 }
 .radio_button_custom::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   --tw-bg-opacity: 1;
   background-color: rgba(204, 172, 113, 1);
