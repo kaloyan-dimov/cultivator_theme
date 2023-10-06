@@ -2315,7 +2315,7 @@ html * {
   transform: rotate(180deg);
 }
 .single_product_swiper .swiper-pagination {
-  left: 0 !important;
+  left: 7px !important;
   top: auto !important;
   top: initial !important;
   transform: none !important;
