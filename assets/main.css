@@ -6,9 +6,7 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
   scrollbar-gutter: stable;
-  overflow-y: overlay;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
@@ -4342,9 +4340,6 @@ html * {
     margin-top: 56px;
     margin-bottom: 56px;
   }
-  .lg\:mb-\[106px\] {
-    margin-bottom: 106px;
-  }
   .lg\:mb-\[24px\] {
     margin-bottom: 24px;
   }
@@ -4408,6 +4403,9 @@ html * {
   .lg\:py-\[58px\] {
     padding-top: 58px;
     padding-bottom: 58px;
+  }
+  .lg\:pb-\[106px\] {
+    padding-bottom: 106px;
   }
   .lg\:pb-\[13px\] {
     padding-bottom: 13px;
