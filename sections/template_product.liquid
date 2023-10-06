@@ -72,14 +72,14 @@
       {% endif %}
       {% if product.has_only_default_variant %}
         {% else %}
-          <div class="flex flex-col border border-[#E6DFDB] my-[16px]">
+          <div class="flex flex-col border border-taupe-20 my-[16px]">
             {% for variant in product.variants %}
               <label
                 for="{{ variant.id }}"
                 data-price="{{ variant.price }}"
                 data-compare-at-price="{{ variant.compare_at_price }}"
                 data-weight="{{ variant.weight }}"
-                class="product_page_variant flex gap-[8px] h-[55px] cursor-pointer border-b border-[#E6DFDB] last:border-b-0 flex items-center px-[16px]">
+                class="product_page_variant flex gap-[8px] h-[55px] cursor-pointer border-b border-taupe-20 last:border-b-0 flex items-center px-[16px]">
                 <input
                   class="pointer-events-none radio_button_custom"
                   type="radio"
@@ -134,7 +134,7 @@
     </div>
     <ul class="w-full flex flex-col">
       {% if product.description != null and product.description != '' %}
-        <li class="border-t border-[#E6DFDB]">
+        <li class="border-t border-taupe-20">
           <div class="list_item flex flex-col px-[16px]">
             <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
               <h2 class="body-m-semibold text-taupe">Description</h2>
@@ -147,7 +147,7 @@
         {% endif %}
       </li>
       {% if product.metafields.custom.product_accordion_clinically_safe != null and product.metafields.custom.product_accordion_clinically_safe != '' %}
-        <li class="border-t border-[#E6DFDB]">
+        <li class="border-t border-taupe-20">
           <div class="list_item flex flex-col  px-[16px]">
             <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
               <h2 class="body-m-semibold text-taupe">Clinical Safe Product</h2>
@@ -160,7 +160,7 @@
         </li>
       {% endif %}
       {% if product.metafields.custom.product_accordion_ingridients != null and product.metafields.custom.product_accordion_ingridients != '' %}
-        <li class="border-t border-[#E6DFDB]">
+        <li class="border-t border-taupe-20">
           <div class="list_item flex flex-col px-[16px]">
             <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
               <h2 class="body-m-semibold text-taupe">Ingridients</h2>
@@ -173,7 +173,7 @@
         </li>
       {% endif %}
       {% if section.blocks.size > 0 %}
-        <li class="border-t border-[#E6DFDB]">
+        <li class="border-t border-taupe-20">
           <div class="list_item flex flex-col px-[16px]">
             <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
               <h2 class="body-m-semibold text-taupe">FAQ</h2>
@@ -193,7 +193,7 @@
         </li>
       {% endif %}
       {% if product.metafields.custom.product_accordion_certification != null and product.metafields.custom.product_accordion_certification != '' %}
-        <li class="border-t border-[#E6DFDB]">
+        <li class="border-t border-taupe-20">
           <div class="list_item flex flex-col px-[16px]">
             <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
               <h2 class="body-m-semibold text-taupe">Certification</h2>
