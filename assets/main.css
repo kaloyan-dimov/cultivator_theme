@@ -2138,6 +2138,7 @@ html * {
   position: relative;
   width: 20px;
   height: 20px;
+  display: none;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
@@ -2169,9 +2170,13 @@ html * {
   background-color: rgba(251, 249, 249, var(--tw-bg-opacity));
 }
 .radio_button_custom:checked {
+  border-width: 0px;
   --tw-bg-opacity: 1;
   background-color: rgba(204, 172, 113, 1);
   background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
+}
+.radio_button_custom:checked::before {
+  background-color: transparent;
 }
 .radio_button_custom:checked::after {
   background-color: transparent;
