@@ -52,7 +52,7 @@
       {% if product.tags.size > 0 %}
         <div class="flex gap-[8px]">
           {% for tag in product.tags %}
-            <span class="py-[4px] px-[12px] rounded-[9px] product-labels text-taupe-800 {% if tag contains "%" %} bg-[#FAE1DD] {% else %} bg-red-500 {% endif %} %}">{{ tag }}</span>
+            <span class="pt-[4px] pb-[5px] px-[12px] rounded-[9px] product-labels text-taupe-800 {% if tag contains "%" %} bg-[#FAE1DD] {% else %} bg-red-500 {% endif %} %}">{{ tag }}</span>
           {% endfor %}
         </div>
       {% endif %}
