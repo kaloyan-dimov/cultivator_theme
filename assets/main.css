@@ -2175,7 +2175,9 @@ html * {
   background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
 }
 .radio_button_custom:checked::before {
-  background-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgba(251, 249, 249, 1);
+  background-color: rgba(251, 249, 249, var(--tw-bg-opacity));
 }
 .radio_button_custom:checked::after {
   background-color: transparent;
