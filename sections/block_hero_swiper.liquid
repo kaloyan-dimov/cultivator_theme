@@ -1,38 +1,26 @@
-<div
-  class="swiper hero_swiper w-full h-[735px] md:h-[600px]">
-  <div
-    class="swiper-wrapper">
+<div class="swiper hero_swiper w-full h-[735px] md:h-[600px]">
+  <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <div
-        class="swiper-slide relative  md:px-[64px] flex-col-reverse flex">
-
-        <div
-          class="flex flex-col relative md:absolute px-[24px] md:px-[0] md:left-[65px] md:bottom-[111px] md:z-[1]  md:self-end">
+      <div class="swiper-slide relative  md:px-[64px] flex-col-reverse flex">
+        <div class="flex flex-col relative md:absolute px-[24px] md:px-[0] md:left-[65px] md:bottom-[111px] md:z-[1]  md:self-end">
 
           {% if block.settings.slide_title != null %}
-            <h2
-              class="mx-[auto] md:mx-[0] mb-2 text-center md:text-left text-[40px] md:text-[56px] text-[#56463D] md:text-white max-w-[650px]">{{ block.settings.slide_title }}</h2>
+            <h2 class="mx-[auto] md:mx-[0] mb-2 text-center md:text-left text-[40px] md:text-[56px] text-[#56463D] md:text-white max-w-[650px]">{{ block.settings.slide_title }}</h2>
           {% endif %}
 
           {% if block.settings.slide_paragraph != null %}
-            <h3
-              class="mx-[auto] md:mx-[0] mb-8 text-center md:text-left text-[16px] text-[#56463D] md:text-white max-w-[550px]">{{ block.settings.slide_paragraph }}</h3>
+            <h3 class="mx-[auto] md:mx-[0] mb-8 text-center md:text-left text-[16px] text-[#56463D] md:text-white max-w-[550px]">{{ block.settings.slide_paragraph }}</h3>
           {% endif %}
 
-          <a
-            href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}"
-            class="mx-[auto] md:mx-[0] bg-[#CCAC71] text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center">
+          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="mx-[auto] md:mx-[0] bg-[#CCAC71] text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center">
             {% if block.settings.button_text != null %}
-              <h2
-                class="h-[18px]">{{ block.settings.button_text }}</h2>
+              <h2 class="h-[18px]">{{ block.settings.button_text }}</h2>
             {% endif %}
-            <div
-              class="button_arrow button_arrow_white"></div>
+            <div class="button_arrow button_arrow_white"></div>
           </a>
         </div>
         {% if block.settings.slide_image != null %}
-          <div
-            class="md:absolute md:top-0 md:left-0 w-full min-h-[260px] md:h-full">
+          <div class="md:absolute md:top-0 md:left-0 w-full min-h-[260px] md:h-full">
             <img
               class="w-full h-full object-cover"
               src="{{ block.settings.slide_image | img_url: 'master'}}"
@@ -44,8 +32,7 @@
       </div>
     {% endfor %}
   </div>
-  <div
-    class="swiper-pagination"></div>
+  <div class="swiper-pagination"></div>
 </div>
 {% schema %}
   {
