@@ -32,12 +32,14 @@
                 src="{{ section.settings.footer_logo | img_url: 'master'}}"
                 alt="">
             </a>
-            <h2 class="footness w-full">{{ section.settings.footer_text }}</h2>
+            <h2
+              class="footness w-full">{{ section.settings.footer_text }}</h2>
           </div>
         </div>
         <div class="border-r border-ecru-x border-b sm:border-b-0 w-full sm:w-[50%] md:w-[333px] py-[32px] sm:py-[24px] px-[24px] sm:px-[16px] flex flex-col justify-between ">
           <div class="mb-[32px] sm:mb-[48px]">
-            <h2 class="mb-4 h8 text-taupe">Order support</h2>
+            <h2
+              class="mb-4 h8 text-taupe">Order support</h2>
             <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="break-words mb-[3px] h7 text-taupe-x underline">{{ settings.phone_number }}</a>
             <h3 class="break-words mb-6 body-m text-taupe-200">{{ settings.working_hours }}</h3>
             <a href="mailto:{{ settings.email }}" class="break-words body-s text-taupe underline">{{ settings.email }}</a>
@@ -57,7 +59,7 @@
               name=""
               id="">
             <input
-              class="CTA text-white py-[18.5px] px-[16px] bg-ecru rounded-[12px] w-fit"
+              class="CTA text-white py-[18.5px] px-[16px] bg-ecru rounded-[12px] w-fit cursor-pointer"
               type="button"
               value="SEND">
           </div>
