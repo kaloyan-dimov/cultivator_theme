@@ -2151,6 +2151,11 @@ html * {
   background-color: rgba(204, 172, 113, 1);
   background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
 }
+.radio_button_custom:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(248, 113, 113, 1);
+  background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+}
 
 .heart_gold {
   cursor: pointer;
