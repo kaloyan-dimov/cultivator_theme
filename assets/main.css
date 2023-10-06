@@ -2339,8 +2339,16 @@ html * {
 }
 
 .single_product_swiper {
+  position: sticky !important;
+}
+
+.single_product_swiper {
   height: 565px;
-  position: sticky;
+  -ms-overflow-style: auto; /* IE and Edge */
+  scrollbar-width: auto;
+}
+.single_product_swiper::-webkit-scrollbar {
+  display: auto;
 }
 .single_product_swiper .swiper-wrapper {
   width: 100%;
