@@ -1413,6 +1413,11 @@ video {
   background-color: rgba(204, 172, 113, 1);
   background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
 }
+.bg-\[\#D8E2DC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(216, 226, 220, 1);
+  background-color: rgba(216, 226, 220, var(--tw-bg-opacity));
+}
 .bg-\[\#DEE2FF\] {
   --tw-bg-opacity: 1;
   background-color: rgba(222, 226, 255, 1);
