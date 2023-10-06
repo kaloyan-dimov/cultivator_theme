@@ -2134,6 +2134,20 @@ html * {
   background-repeat: no-repeat;
 }
 
+.radio_button_custom {
+  position: relative;
+}
+.radio_button_custom::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(204, 172, 113, 1);
+  background-color: rgba(204, 172, 113, var(--tw-bg-opacity));
+}
+
 .heart_gold {
   cursor: pointer;
 }
