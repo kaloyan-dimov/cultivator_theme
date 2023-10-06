@@ -3544,6 +3544,7 @@ html * {
   transform: scaleY(0);
   max-height: 0;
   transform-origin: top;
+  margin-bottom: 0px;
   transition: all 0.5s;
 }
 .list_item.active .list_content {
@@ -3551,6 +3552,7 @@ html * {
   transform-origin: top;
   max-height: 1000px;
   transition: all 0.5s;
+  margin-bottom: 16px;
 }
 .list_item.active .list_arrow {
   transform: scale(-1);
