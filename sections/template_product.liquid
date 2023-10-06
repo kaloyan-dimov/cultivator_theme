@@ -140,7 +140,7 @@
               <h2 class="body-m-semibold text-taupe">Description</h2>
               <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div class="list_content">
+            <div class="list_content pt-[8px]">
               <h3 class="body-s text-taupe">{{ product.description }}</h3>
             </div>
           </li>
@@ -153,7 +153,7 @@
               <h2 class="body-m-semibold text-taupe">Clinical Safe Product</h2>
               <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div class="list_content">
+            <div class="list_content pt-[8px]">
               <h3 class="body-s text-taupe">{{ product.metafields.custom.product_accordion_clinically_safe | metafield_tag }}</h3>
             </div>
           </div>
@@ -166,7 +166,7 @@
               <h2 class="body-m-semibold text-taupe">Ingridients</h2>
               <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div class="list_content">
+            <div class="list_content pt-[8px]">
               <h3 class="body-s text-taupe">{{ product.metafields.custom.product_accordion_ingridients | metafield_tag }}</h3>
             </div>
           </div>
@@ -179,7 +179,7 @@
               <h2 class="body-m-semibold text-taupe">FAQ</h2>
               <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div class="list_content">
+            <div class="list_content pt-[8px]">
               <div class="flex flex-col gap-[8px]">
                 {% for block in section.blocks %}
                   {% if block.type == "Product_FAQ" %}
@@ -199,7 +199,7 @@
               <h2 class="body-m-semibold text-taupe">Certification</h2>
               <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
-            <div class="list_content">
+            <div class="list_content pt-[8px]">
               <h3 class="body-s text-taupe">{{ product.metafields.custom.product_accordion_certification | metafield_tag }}</h3>
             </div>
           </div>
