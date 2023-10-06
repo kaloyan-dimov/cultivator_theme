@@ -39,5 +39,13 @@
       </div>
     {% endif %}
     <div class="remove_from_wishlist icon_close bg-primary-20 w-[40px] h-[40px] rounded-[14px] absolute top-[23px] right-[24px] cursor-pointer" data-handle="{{ product.handle }}"></div>
+    {% if product.tags.size > 0 %}
+      <div class="absolute left-[0] top-[28px] flex flex-col gap-[8px]">
+        {% for tag in product.tags %}
+          {% assign tagcheck = tag | downcase %}
+          <span class="pt-[4px] pb-[5px] px-[12px] rounded-[9px] product-labels text-taupe-800 {% if tagcheck contains "new launch" %} bg-[#D8E2DC] {% elsif tagcheck contains "%" %} true bg-[#FAE1DD] {% else %} bg-[#DEE2FF] {% endif %} ">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
