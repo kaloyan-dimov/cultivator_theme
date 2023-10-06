@@ -3555,7 +3555,7 @@ html * {
   transform-origin: top;
   max-height: 1000px;
   transition: all 0.5s;
-  padding-bottom: 16px;
+  padding-bottom: 24px;
 }
 .list_item.active .list_arrow {
   transform: scale(-1);
