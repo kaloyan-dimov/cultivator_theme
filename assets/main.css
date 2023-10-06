@@ -3551,6 +3551,7 @@ html * {
   transform: scaleY(1);
   transform-origin: top;
   max-height: 1000px;
+  padding-top: 6px;
   padding-bottom: 24px;
   transition: all 0.5s;
 }
