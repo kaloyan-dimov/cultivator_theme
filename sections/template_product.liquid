@@ -20,7 +20,7 @@
             </div>
           {% endfor %}
         </div>
-        <div>
+        <div class="absolute w-[95px] h-full top-[0] left-[0] border border-red-500">
           <div class="swiper-pagination hidden lg:flex"></div>
         </div>
         <div class="swiper-button-prev arrow_prev_next lg:hidden"></div>
@@ -36,7 +36,8 @@
     {% endif %}
   </div>
   <div class="w-full lg:w-1/2 z-[2]">
-    <div class="hidden lg:block p-[16px] my-[24px]">
+    <div
+      class="hidden lg:block p-[16px] my-[24px]">
       {% include 'breadcrumb' %}
     </div>
     <div class="flex flex-col mx-[16px]">

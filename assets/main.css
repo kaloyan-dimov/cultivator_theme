@@ -1408,6 +1408,11 @@ video {
   border-color: rgba(234, 226, 219, 1);
   border-color: rgba(234, 226, 219, var(--tw-border-opacity));
 }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, 1);
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+}
 .border-taupe-20 {
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
