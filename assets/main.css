@@ -2160,6 +2160,7 @@ html * {
   width: 50%;
   height: 50%;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
   --tw-bg-opacity: 1;
   background-color: rgba(251, 249, 249, 1);
   background-color: rgba(251, 249, 249, var(--tw-bg-opacity));
