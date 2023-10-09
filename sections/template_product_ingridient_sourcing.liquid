@@ -5,17 +5,17 @@
     {% include 'section_title' with title_text, title_image %}
     <div class="flex flex-wrap gap-[16px]">
       {% for block in section.blocks %}
-        <div class="flex flex-col justify-between w-[358px] sm:w-[316px] h-[417px] rounded-[48px] border border-[#E6DFDB] overflow-hidden">
-          <div class="h-[260px] w-full border-b border-[#E6DFDB] ">
+        <div class="flex flex-col justify-between w-[358px] sm:w-[316px] h-[417px] rounded-[48px] border border-taupe-20 overflow-hidden">
+          <div class="h-[260px] w-full border-b border-taupe-20 ">
             <img
               class="w-full h-full object-cover"
               src="{{ block.settings.ingridient_image | img_url: 'master'}}"
               alt="">
           </div>
-          <div class="bg-white flex flex-col py-[32px] px-[16px]">
+          <div class="bg-white flex flex-col py-[32px] px-[16px] h-full">
             <h2 class="h8 text-taupe">{{ block.settings.ingridient_title }}</h2>
             <div class="flex">
-              <h3 class="text-[18px]">{{ block.settings.ingridient_country_name }}</h3>
+              <h3 class="body-m text-taupe-200">{{ block.settings.ingridient_country_name }}</h3>
               <div class="w-[37px] h-[37px] overflow-hidden rounded-full overflow-hidden shrink-0">
                 <img
                   src="//cdn.shopify.com/static/images/flags/{{ block.settings.ingridient_country_code | downcase }}.svg?width=32"
