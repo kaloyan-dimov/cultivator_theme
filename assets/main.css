@@ -3770,6 +3770,14 @@ html * {
   font-weight: 700;
   line-height: 2.1rem;
 }
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-review-header-byline {
+  --tw-text-opacity: 1;
+  color: rgba(119, 98, 85, 1);
+  color: rgba(119, 98, 85, var(--tw-text-opacity));
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
 
 @media (min-width: 768px) {
   .spr-container {
