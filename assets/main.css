@@ -3748,6 +3748,9 @@ html * {
   padding: 16px 16px 0px;
   margin-bottom: 16px;
   border: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .spr-container .spr-content .spr-reviews .spr-review:first-child {
   margin-top: 0;
