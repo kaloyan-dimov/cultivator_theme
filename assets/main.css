@@ -551,6 +551,9 @@ video {
 .sticky {
   position: sticky;
 }
+.\!top-\[0\] {
+  top: 0 !important;
+}
 .bottom-0 {
   bottom: 0px;
 }
