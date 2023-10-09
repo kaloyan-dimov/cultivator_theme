@@ -1661,6 +1661,9 @@ video {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.pb-\[112px\] {
+  padding-bottom: 112px;
+}
 .pb-\[16px\] {
   padding-bottom: 16px;
 }
@@ -1729,6 +1732,9 @@ video {
 }
 .pt-\[76px\] {
   padding-top: 76px;
+}
+.pt-\[80px\] {
+  padding-top: 80px;
 }
 .pt-\[81px\] {
   padding-top: 81px;
