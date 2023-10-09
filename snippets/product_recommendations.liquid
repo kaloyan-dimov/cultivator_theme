@@ -7,6 +7,8 @@
 {% endif %}
 n: {{ number }}
 re: {{ recommendation_type }}
+Products_count: {{ recommendations.products_count }}
+
 <div class="product_recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ number }}&intent={{ recommendation_type }}">
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% comment %}
