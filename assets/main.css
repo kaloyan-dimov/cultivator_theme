@@ -557,8 +557,8 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.bottom-\[-9px\] {
-  bottom: -9px;
+.bottom-\[-7px\] {
+  bottom: -7px;
 }
 .bottom-\[0\] {
   bottom: 0;
@@ -879,9 +879,6 @@ video {
 }
 .h-\[44px\] {
   height: 44px;
-}
-.h-\[45px\] {
-  height: 45px;
 }
 .h-\[460px\] {
   height: 460px;
