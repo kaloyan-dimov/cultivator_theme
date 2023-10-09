@@ -3754,6 +3754,7 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings {
   display: flex;
   gap: 4px;
+  padding-bottom: 5px;
 }
 .spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings i {
   width: 16px;
@@ -3763,6 +3764,7 @@ html * {
   font-size: 100%;
 }
 .spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-review-header-title {
+  padding-bottom: 7px;
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
