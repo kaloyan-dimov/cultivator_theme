@@ -3745,12 +3745,9 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
   max-width: 437px;
-  padding: 16px 16px 24px;
+  padding: 16px 16px 0px;
   margin-bottom: 16px;
-  border-width: 0px 0px 1px 0px;
-  --tw-border-opacity: 1;
-  border-color: rgba(230, 223, 219, 1);
-  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
+  border: 0px;
 }
 .spr-container .spr-content .spr-reviews .spr-review:first-child {
   margin-top: 0;
@@ -3783,6 +3780,13 @@ html * {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
+}
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-footer {
+  padding-bottom: 24px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(230, 223, 219, 1);
+  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
 }
 
 @media (min-width: 768px) {
