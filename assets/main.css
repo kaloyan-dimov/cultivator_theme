@@ -3745,9 +3745,13 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
   max-width: 437px;
-  padding: 16px 16px 0px;
+  padding: 16px 16px 24px;
   margin-bottom: 16px;
-  border-bottom: 1px solid red;
+  border-top: 0px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(230, 223, 219, 1);
+  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
 }
 .spr-container .spr-content .spr-reviews .spr-review:first-child {
   margin-top: 0;
