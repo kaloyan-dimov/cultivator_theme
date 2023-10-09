@@ -3747,7 +3747,7 @@ html * {
   max-width: 437px;
   padding: 16px 16px 24px;
   margin-bottom: 16px;
-  border-width: 1px 5px 5px 1px;
+  border-width: 0px 0px 1px 0px;
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
   border-color: rgba(230, 223, 219, var(--tw-border-opacity));
