@@ -3656,12 +3656,13 @@ html * {
 .spr-container {
   max-width: 1440px;
   margin: auto;
-  padding: 16px;
+  padding: 64px;
 }
 .spr-container .spr-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 28px;
 }
 .spr-container .spr-header .spr-header-title {
   margin-bottom: 8px;
@@ -3723,7 +3724,7 @@ html * {
 
 @media (min-width: 768px) {
   .spr-container {
-    padding: 64px;
+    padding: 16px;
   }
 }
 .pagination {
