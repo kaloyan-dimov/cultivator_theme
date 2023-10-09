@@ -3680,6 +3680,7 @@ html * {
 .spr-container .spr-header .spr-summary .spr-summary-caption {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .spr-container .spr-header .spr-summary .spr-summary-caption .spr-summary-actions-togglereviews {
@@ -3700,6 +3701,9 @@ html * {
   justify-content: start;
   padding-left: 4px;
   width: 50%;
+}
+.spr-container .spr-header .spr-summary .spr-starrating i::before {
+  font-size: 80%;
 }
 .spr-container .spr-header .spr-summary .spr-summary-actions {
   display: flex;
