@@ -3745,8 +3745,9 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
   max-width: 437px;
-  padding: 16px;
-  border: 1px solid red;
+  padding: 16px 16px 0px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid red;
 }
 .spr-container .spr-content .spr-reviews .spr-review:first-child {
   margin-top: 0;
