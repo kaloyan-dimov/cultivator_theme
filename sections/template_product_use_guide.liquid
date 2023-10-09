@@ -55,7 +55,7 @@
 </style>
 
 {% if section.settings.usage_guide_video != null %}
-  <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px] mt-[82px]  mb-[24px] relative z-[1]" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
+  <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px] mt-[82px]  mb-[201px] relative z-[1]" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
     <div class="video_play_gold bg-neutral cursor-pointer"></div>
     <img
       class="w-full h-full object-cover absolute top-[0] left-[0] cursor-pointer"
@@ -78,7 +78,7 @@
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
-  <div class="swiper product_usage_swiper">
+  <div class="swiper product_usage_swiper mb-[56px]">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         <div class="swiper-slide flex flex-col justify-between bg-white border border-[#E6DFDB] rounded-[24px] p-[24px]">
