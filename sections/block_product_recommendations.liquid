@@ -8,9 +8,9 @@
   r: {{ recommendation_type }}
   {% if section.settings.selected_product != empty %}
     {% assign product = section.settings.selected_product %}
-    {% include "product_recommendations" with product %}
+    {% include "product_recommendations" with product, number, recommendation_type %}
   {% else %}
-    {% include "product_recommendations" %}
+    {% include "product_recommendations" with number, recommendation_type %}
   {% endif %}
 </div>
 
