@@ -3,9 +3,9 @@
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
   {% assign number = section.settings.products_number %}
-  s{{ number }}
+  n: {{ number }}
   {% assign recommendation_type = section.settings.recommendation_type %}
-  q{{ recommendation_type }}
+  r: {{ recommendation_type }}
   {% if section.settings.selected_product != empty %}
     {% assign product = section.settings.selected_product %}
     {% include "product_recommendations" with product %}
