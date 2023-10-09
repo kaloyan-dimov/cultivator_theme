@@ -959,6 +959,9 @@ video {
 .max-h-\[135px\] {
   max-height: 135px;
 }
+.max-h-\[201px\] {
+  max-height: 201px;
+}
 .max-h-\[566px\] {
   max-height: 566px;
 }
@@ -967,6 +970,9 @@ video {
 }
 .max-h-\[68px\] {
   max-height: 68px;
+}
+.max-h-\[96px\] {
+  max-height: 96px;
 }
 .min-h-\[171px\] {
   min-height: 171px;
