@@ -3723,7 +3723,7 @@ html * {
 
 @media (min-width: 768px) {
   .spr-container {
-    padding: 64px !important;
+    padding: 53px 64px !important;
   }
 }
 .pagination {
