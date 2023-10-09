@@ -3650,13 +3650,13 @@ html * {
 }
 
 .spr-container {
+  padding: 16px !important;
   border: none !important;
 }
 
 .spr-container {
   max-width: 1440px;
   margin: auto;
-  padding: 64px;
 }
 .spr-container .spr-header {
   display: flex;
@@ -3724,7 +3724,7 @@ html * {
 
 @media (min-width: 768px) {
   .spr-container {
-    padding: 16px;
+    padding: 64px !important;
   }
 }
 .pagination {
