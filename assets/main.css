@@ -3676,6 +3676,7 @@ html * {
   flex-wrap: wrap;
   display: flex;
   row-gap: 16px;
+  padding-bottom: 13px;
 }
 .spr-container .spr-header .spr-summary .spr-summary-caption {
   display: flex;
@@ -3740,6 +3741,13 @@ html * {
 }
 .spr-container .spr-content .spr-reviews .spr-review:first-child {
   margin-top: 0;
+}
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings {
+  display: flex;
+  gap: 4px;
+}
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings i::before {
+  font-size: 100%;
 }
 
 @media (min-width: 768px) {
