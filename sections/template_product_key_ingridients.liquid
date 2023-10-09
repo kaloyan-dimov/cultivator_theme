@@ -1,17 +1,17 @@
 {% if section.blocks.size > 1 %}
   <div class="section pt-[88px] pb-[112px]">
-    <div class="flex flex-col lg:flex-row w-full border border-[#E6DFDB] bg-white rounded-[20px]">
-      <div class="w-1/2 px-[24px] py-[42px] lg:border-r border-[#E6DFDB]">
-        <div class="sticky top-[45vh] caption text-center text-[FF0000]">
+    <div class="flex flex-col lg:flex-row w-full border border-taupe-20 bg-white rounded-[20px]">
+      <div class="w-1/2 px-[24px] py-[42px] lg:border-r border-taupe-20">
+        <div class="sticky top-[45vh] caption text-center text-taupe text-[FF0000]">
           {% if section.settings.section_title != null %}
             {{ section.settings.section_title }}
           {% endif %}
         </div>
       </div>
-      <div class="flex flex-col w-1/2 py-[42px] px-[24px] border-b lg:border-r border-[#E6DFDB] gap-[32px]">
+      <div class="flex flex-col w-1/2 py-[42px] px-[24px] border-b lg:border-r border-taupe-20 gap-[32px]">
         {% for block in section.blocks %}
           <div class="flex flex-col lg:flex-row w-full max-h-[201px] justify-center gap-[16px] items-center">
-            <div class="h-[185px] w-[142px] rounded-[60px] border border-[#E6DFDB] overflow-hidden">
+            <div class="h-[185px] w-[142px] rounded-[60px] border border-taupe-20 overflow-hidden">
               <img
                 class="w-full h-full object-cover"
                 src="{{ block.settings.ingridient_image | img_url: 'master'}}"
