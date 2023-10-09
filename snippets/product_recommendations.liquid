@@ -2,7 +2,7 @@
   {% else %}
     <div class="flex flex-col justify-center items-center">
       <h2>Product Recommendations Error:</h2>
-      <h2>No product found in context, please select one from the section options</h2>
+      <h2>No product found in context, please select one from the section options administration</h2>
     </div>
 {% endif %}
 <div class="product_recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related">
