@@ -757,6 +757,9 @@ video {
 .mt-\[64px\] {
   margin-top: 64px;
 }
+.mt-\[82px\] {
+  margin-top: 82px;
+}
 .block {
   display: block;
 }
@@ -1726,9 +1729,6 @@ video {
 }
 .pt-\[81px\] {
   padding-top: 81px;
-}
-.pt-\[82px\] {
-  padding-top: 82px;
 }
 .pt-\[8px\] {
   padding-top: 8px;
