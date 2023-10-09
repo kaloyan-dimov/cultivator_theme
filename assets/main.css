@@ -3791,6 +3791,9 @@ html * {
   border-color: rgba(230, 223, 219, 1);
   border-color: rgba(230, 223, 219, var(--tw-border-opacity));
 }
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-content {
+  flex: 1;
+}
 
 @media (min-width: 768px) {
   .spr-container {
