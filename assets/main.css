@@ -3723,10 +3723,19 @@ html * {
   width: 168px;
   height: 56px;
   font-size: 15px;
-  color: #CCAC71;
-  border: 1px solid #CCAC71;
   text-transform: uppercase;
   border-radius: 24px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(204, 172, 113, 1);
+  border-color: rgba(204, 172, 113, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(204, 172, 113, 1);
+  color: rgba(204, 172, 113, var(--tw-text-opacity));
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.18125rem;
+  letter-spacing: 0.0375rem;
 }
 .spr-container .spr-content .spr-reviews {
   display: flex;
