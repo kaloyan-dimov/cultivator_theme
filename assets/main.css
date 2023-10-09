@@ -3762,6 +3762,14 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings i::before {
   font-size: 100%;
 }
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-review-header-title {
+  --tw-text-opacity: 1;
+  color: rgba(84, 68, 59, 1);
+  color: rgba(84, 68, 59, var(--tw-text-opacity));
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
 
 @media (min-width: 768px) {
   .spr-container {
