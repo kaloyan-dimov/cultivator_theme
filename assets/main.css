@@ -1727,6 +1727,9 @@ video {
 .pt-\[81px\] {
   padding-top: 81px;
 }
+.pt-\[82px\] {
+  padding-top: 82px;
+}
 .pt-\[8px\] {
   padding-top: 8px;
 }
@@ -4414,14 +4417,14 @@ html * {
     padding-top: 58px;
     padding-bottom: 58px;
   }
-  .lg\:pb-\[106px\] {
-    padding-bottom: 106px;
-  }
   .lg\:pb-\[13px\] {
     padding-bottom: 13px;
   }
   .lg\:pb-\[15px\] {
     padding-bottom: 15px;
+  }
+  .lg\:pb-\[24px\] {
+    padding-bottom: 24px;
   }
   .lg\:pb-\[35px\] {
     padding-bottom: 35px;
