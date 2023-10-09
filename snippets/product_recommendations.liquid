@@ -7,7 +7,7 @@
 {% endif %}
 n: {{ number }}
 r: {{ recommendation_type }}
-<div class="product_recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related">
+<div class="product_recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ number }}&intent={{ recommendation_type }}">
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% comment %}
     {% if recommendations.intent == 'related' %}
