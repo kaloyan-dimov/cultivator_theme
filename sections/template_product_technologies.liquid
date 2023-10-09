@@ -3,7 +3,7 @@
     {% assign title_text = section.settings.section_title %}
     {% assign title_image = section.settings.title_image %}
     {% include 'section_title' with title_text, title_image %}
-    <div class="flex flex-wrap gap-[24px]">
+    <div class="flex flex-wrap gap-x-[24px] gap-y-[48px]">
       {% for block in section.blocks %}
         <div class="flex gap-[16px] items-center w-full max-w-[421px] min-h-[201px] py-[8px] px-[24px]">
           <div class="rounded-[60px] h-full w-[142px] overflow-hidden border border-[#E6DFDB] shrink-0">

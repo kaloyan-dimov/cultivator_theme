@@ -1288,6 +1288,10 @@ video {
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
+.gap-x-\[24px\] {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
 .gap-x-\[8px\] {
   -moz-column-gap: 8px;
        column-gap: 8px;
@@ -1300,6 +1304,9 @@ video {
 }
 .gap-y-\[32px\] {
   row-gap: 32px;
+}
+.gap-y-\[48px\] {
+  row-gap: 48px;
 }
 .self-end {
   align-self: flex-end;
