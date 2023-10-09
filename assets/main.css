@@ -3696,11 +3696,16 @@ html * {
   display: flex;
   justify-content: end;
   padding-right: 4px;
+  gap: 4px;
 }
 .spr-container .spr-header .spr-summary .spr-starrating ~ .spr-summary-caption {
   justify-content: start;
   padding-left: 4px;
   width: 50%;
+}
+.spr-container .spr-header .spr-summary .spr-starrating i {
+  width: 16px;
+  height: 15px;
 }
 .spr-container .spr-header .spr-summary .spr-starrating i::before {
   font-size: 80%;
@@ -3739,7 +3744,7 @@ html * {
 
 @media (min-width: 768px) {
   .spr-container {
-    padding: 53px 64px !important;
+    padding: 56px 64px !important;
   }
 }
 .pagination {
