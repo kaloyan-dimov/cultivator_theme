@@ -3746,6 +3746,10 @@ html * {
   display: flex;
   gap: 4px;
 }
+.spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings i {
+  width: 16px;
+  height: 15px;
+}
 .spr-container .spr-content .spr-reviews .spr-review .spr-review-header .spr-starratings i::before {
   font-size: 100%;
 }
