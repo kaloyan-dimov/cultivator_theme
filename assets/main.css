@@ -1733,11 +1733,11 @@ video {
 .pt-\[76px\] {
   padding-top: 76px;
 }
-.pt-\[80px\] {
-  padding-top: 80px;
-}
 .pt-\[81px\] {
   padding-top: 81px;
+}
+.pt-\[88px\] {
+  padding-top: 88px;
 }
 .pt-\[8px\] {
   padding-top: 8px;
@@ -1783,9 +1783,6 @@ video {
 }
 .text-\[32px\] {
   font-size: 32px;
-}
-.text-\[34px\] {
-  font-size: 34px;
 }
 .text-\[35px\] {
   font-size: 35px;
@@ -2486,7 +2483,7 @@ html * {
   }
 }
 .product_usage_swiper {
-  padding-bottom: 88px !important;
+  padding-bottom: 80px !important;
 }
 .product_usage_swiper {
   position: relative;
