@@ -132,7 +132,13 @@
     "f437be0a-2e06-48d2-874c-e71e4b5e4ebe": {
       "type": "block_product_recommendations",
       "settings": {
-        "selected_product": "boho-earrings"
+        "section_title": "Complete Yourself Care Ritual",
+        "title_image": "shopify:\/\/shop_images\/Square_flower.png",
+        "b_top": false,
+        "b_bot": false,
+        "selected_product": "",
+        "products_number": 4,
+        "recommendation_type": "related"
       }
     },
     "8d395340-5ea1-4a17-ba2e-d76f4275198d": {
