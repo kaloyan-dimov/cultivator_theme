@@ -7,14 +7,12 @@
     {% assign number = section.settings.products_number %}
     {% assign recommendation_type = section.settings.recommendation_type %}
 
-    {% comment %} 
     {% if section.settings.selected_product != empty %}
-    {% assign product = section.settings.selected_product %}
-    {% include "product_recommendations" with product, number, recommendation_type %}
+      {% assign product = section.settings.selected_product %}
+      {% include "product_recommendations" with product, number, recommendation_type %}
     {% else %}
+      {% include "product_recommendations" with number, recommendation_type %}
     {% endif %}
-    {% endcomment %}
-    {% include "product_recommendations" with number, recommendation_type %}
   </div>
 </div>
 {% schema %}
