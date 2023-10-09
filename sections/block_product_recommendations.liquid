@@ -1,20 +1,22 @@
-<div class="section pt-[72px] pb-[56px]">
-  {% assign title_text = section.settings.section_title %}
-  {% assign title_image = section.settings.title_image %}
-  {% include 'section_title' with title_text, title_image %}
+<div class="w-full">
+  <div class="section pt-[72px] pb-[56px]">
+    {% assign title_text = section.settings.section_title %}
+    {% assign title_image = section.settings.title_image %}
+    {% include 'section_title' with title_text, title_image %}
 
-  {% assign number = section.settings.products_number %}
-  {% assign recommendation_type = section.settings.recommendation_type %}
+    {% assign number = section.settings.products_number %}
+    {% assign recommendation_type = section.settings.recommendation_type %}
 
-  {% comment %} 
-  {% if section.settings.selected_product != empty %}
-  {% assign product = section.settings.selected_product %}
-  {% include "product_recommendations" with product, number, recommendation_type %}
-  {% else %}
-  {% endif %}
-  {% endcomment %}{% include "product_recommendations" with number, recommendation_type %}
+    {% comment %} 
+    {% if section.settings.selected_product != empty %}
+    {% assign product = section.settings.selected_product %}
+    {% include "product_recommendations" with product, number, recommendation_type %}
+    {% else %}
+    {% endif %}
+    {% endcomment %}
+    {% include "product_recommendations" with number, recommendation_type %}
+  </div>
 </div>
-
 {% schema %}
   {
     "name": "Product Recommendations",
