@@ -12,9 +12,26 @@
     "name": "Product Recommendations",
     "settings": [
       {
-        "label": "Product",
+        "label": "Selected Product (leave blank for context product)",
         "type": "product",
         "id": "selected_product"
+      }, {
+        "label": "Number of Recommended Products",
+        "type": "number",
+        "id": "products_number"
+      }, {
+        "label": "Recommendation Type",
+        "type": "select",
+        "id": "recommendation_type",
+        "options": [
+          {
+            "value": "related",
+            "label": "Related"
+          }, {
+            "value": "complementary",
+            "label": "Complementary"
+          }
+        ]
       }
     ],
     "presets": [
