@@ -557,8 +557,8 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.bottom-\[-15\.5px\] {
-  bottom: -15.5px;
+.bottom-\[-9px\] {
+  bottom: -9px;
 }
 .bottom-\[0\] {
   bottom: 0;
@@ -1741,6 +1741,9 @@ video {
 }
 .pt-\[4px\] {
   padding-top: 4px;
+}
+.pt-\[72px\] {
+  padding-top: 72px;
 }
 .pt-\[76px\] {
   padding-top: 76px;
