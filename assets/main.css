@@ -557,6 +557,9 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
+.bottom-\[-15\.5px\] {
+  bottom: -15.5px;
+}
 .bottom-\[0\] {
   bottom: 0;
 }
@@ -876,6 +879,9 @@ video {
 }
 .h-\[44px\] {
   height: 44px;
+}
+.h-\[45px\] {
+  height: 45px;
 }
 .h-\[460px\] {
   height: 460px;
@@ -4409,6 +4415,9 @@ html * {
   }
   .lg\:rounded-\[80px\] {
     border-radius: 80px;
+  }
+  .lg\:border-b-0 {
+    border-bottom-width: 0px;
   }
   .lg\:border-r {
     border-right-width: 1px;
