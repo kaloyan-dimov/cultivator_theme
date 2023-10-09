@@ -1,0 +1,25 @@
+{% if product %}
+  {% else %}
+    <div class="flex flex-col justify-center items-center">
+      <h2>Product Recommendations Error:</h2>
+      <h2>No product found in context, please select one from the section options</h2>
+    </div>
+{% endif %}
+<div class="product_recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related">
+  {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+    {% if recommendations.intent == 'related' %}
+      <h2>You may also like</h2>
+    {% elsif recommendations.intent == 'complementary' %}
+      <h2>Pair it with</h2>
+    {% endif %}
+
+    {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
+    <div class="flex flex-wrap gap-[16px] justify-center">
+      {%- for product in recommendations.products -%}
+        <div class="w-[316px]">
+          {% include 'product_card' with product, wishlist_array %}
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
