@@ -129,6 +129,12 @@
       "settings": {
       }
     },
+    "f437be0a-2e06-48d2-874c-e71e4b5e4ebe": {
+      "type": "block_product_recommendations",
+      "settings": {
+        "selected_product": "boho-earrings"
+      }
+    },
     "8d395340-5ea1-4a17-ba2e-d76f4275198d": {
       "type": "block_banner",
       "blocks": {
@@ -170,12 +176,6 @@
       "settings": {
         "animation_speed": 10
       }
-    },
-    "f437be0a-2e06-48d2-874c-e71e4b5e4ebe": {
-      "type": "block_product_recommendations",
-      "settings": {
-        "selected_product": "boho-earrings"
-      }
     }
   },
   "order": [
@@ -187,7 +187,7 @@
     "product_technologies",
     "clinically_safe",
     "169320605971fdd3ff",
-    "8d395340-5ea1-4a17-ba2e-d76f4275198d",
-    "f437be0a-2e06-48d2-874c-e71e4b5e4ebe"
+    "f437be0a-2e06-48d2-874c-e71e4b5e4ebe",
+    "8d395340-5ea1-4a17-ba2e-d76f4275198d"
   ]
 }
