@@ -757,6 +757,9 @@ video {
 .mt-\[16px\] {
   margin-top: 16px;
 }
+.mt-\[2px\] {
+  margin-top: 2px;
+}
 .mt-\[48px\] {
   margin-top: 48px;
 }
@@ -4553,6 +4556,9 @@ html * {
   }
   .lg\:mb-\[24px\] {
     margin-bottom: 24px;
+  }
+  .lg\:mt-\[0\] {
+    margin-top: 0;
   }
   .lg\:block {
     display: block;
