@@ -55,10 +55,24 @@
             "ingridient_description": "{{ block.repeater.ingridient_description.value }}",
             "ingridient_image": "{{ block.repeater.ingridient_media.value }}"
           }
+        },
+        "41dbd6d3-3119-4ec3-83d1-8eaabc9737db": {
+          "type": "paragraph",
+          "settings": {
+            "Paragraph_title": "Sustainable"
+          }
+        },
+        "c90585de-7c6c-4a1c-a414-8924c3ab5f14": {
+          "type": "paragraph",
+          "settings": {
+            "Paragraph_title": "Sustainable        ingredients sourcing - no no harsh chemicals, parabens, SLSs or fillers."
+          }
         }
       },
       "block_order": [
-        "50f50378-a15c-4d28-99c8-2f28045890a9"
+        "50f50378-a15c-4d28-99c8-2f28045890a9",
+        "41dbd6d3-3119-4ec3-83d1-8eaabc9737db",
+        "c90585de-7c6c-4a1c-a414-8924c3ab5f14"
       ],
       "settings": {
         "section_title": "Sustainable        ingredients sourcing - no no harsh chemicals, parabens, SLSs or fillers."
