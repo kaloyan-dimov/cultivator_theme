@@ -1756,6 +1756,9 @@ video {
 .pt-\[48px\] {
   padding-top: 48px;
 }
+.pt-\[49px\] {
+  padding-top: 49px;
+}
 .pt-\[4px\] {
   padding-top: 4px;
 }
@@ -4396,6 +4399,9 @@ html * {
   }
   .sm\:pt-\[16px\] {
     padding-top: 16px;
+  }
+  .sm\:pt-\[72px\] {
+    padding-top: 72px;
   }
   .sm\:text-left {
     text-align: left;
