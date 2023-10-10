@@ -10,10 +10,10 @@
       </div>
       <div class="flex flex-col w-1/2 py-[42px] px-[24px] border-b lg:border-b-0 border-taupe-20 gap-[32px]">
         {% for block in section.blocks %}
-          {% if block.type == "Ingridient" %}
+          {% if block.type == "ingridient" %}
             <h2>Block is ingridient</h2>
-            {% else %}
-            <h2>Block is not ingridient</h2>
+          {% elsif block.type == "paragraph"%}
+            <h2>Block is paragraph</h2>
           {% endif %}
           <div class="flex flex-col lg:flex-row w-full min-h-[201px] justify-center gap-[16px] items-center">
             <div class="h-[185px] w-[142px] rounded-[60px] border border-taupe-20 overflow-hidden">
@@ -53,7 +53,7 @@
     ],
     "blocks": [
       {
-        "type": "Ingridient",
+        "type": "ingridient",
         "name": "Ingridient",
         "settings": [
           {
@@ -72,8 +72,8 @@
         ]
       },
       {
-        "type": "ParagraphText",
-        "name": "ParagraphText",
+        "type": "paragraph",
+        "name": "Paragraph Text",
         "settings": [
           {
             "type": "text",
