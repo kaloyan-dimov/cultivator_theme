@@ -47,8 +47,8 @@
     "ingridients": {
       "type": "template_product_key_ingridients",
       "blocks": {
-        "99b32e59-8f12-421c-b4f2-7113fa969d19": {
-          "type": "Ingridient",
+        "50f50378-a15c-4d28-99c8-2f28045890a9": {
+          "type": "ingridient",
           "repeater": "{{ product.metafields.custom.product_ingridients_metafield.value }}",
           "settings": {
             "ingridient_title": "{{ block.repeater.ingridient_name.value }}",
@@ -58,7 +58,7 @@
         }
       },
       "block_order": [
-        "99b32e59-8f12-421c-b4f2-7113fa969d19"
+        "50f50378-a15c-4d28-99c8-2f28045890a9"
       ],
       "settings": {
         "section_title": "Sustainable        ingredients sourcing - no no harsh chemicals, parabens, SLSs or fillers."
