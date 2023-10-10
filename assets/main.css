@@ -3610,7 +3610,7 @@ html * {
 }
 
 .key_ingridient_list_item .list_item_text {
-  max-height: 0px;
+  max-height: 96px;
   margin-bottom: 0;
 }
 .key_ingridient_list_item .read_more {
