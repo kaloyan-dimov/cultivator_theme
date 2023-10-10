@@ -10,6 +10,11 @@
       </div>
       <div class="flex flex-col w-1/2 py-[42px] px-[24px] border-b lg:border-b-0 border-taupe-20 gap-[32px]">
         {% for block in section.blocks %}
+          {% if block.type == "Ingridient" %}
+            <h2>Block is ingridient</h2>
+            {% else %}
+            <h2>Block is not ingridient</h2>
+          {% endif %}
           <div class="flex flex-col lg:flex-row w-full min-h-[201px] justify-center gap-[16px] items-center">
             <div class="h-[185px] w-[142px] rounded-[60px] border border-taupe-20 overflow-hidden">
               <img
@@ -59,6 +64,21 @@
             "type": "text",
             "label": "Ingridient Description",
             "id": "ingridient_description"
+          }, {
+            "type": "image_picker",
+            "label": "Ingridient Image",
+            "id": "ingridient_image"
+          }
+        ]
+      },
+      {
+        "type": "ParagraphText",
+        "name": "ParagraphText",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Ingridient_title",
+            "id": "ingridient_title"
           }, {
             "type": "image_picker",
             "label": "Ingridient Image",
