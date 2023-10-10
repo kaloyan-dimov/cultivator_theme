@@ -55,7 +55,7 @@
 </style>
 
 {% if section.settings.usage_guide_video != null %}
-  <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px] mt-[82px]  mb-[201px] relative z-[1]" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
+  <div class="usage_guide_video w-full h-[219px] sm:h-[416px] md:h-[614px]  lg:h-[811px] mt-[58px] md:mt-[82px]  mb-[201px] relative z-[1]" data-video="{% for source in section.settings.usage_guide_video.sources %}{{ source.url }}|{{ source.format }};{% endfor %}">
     <div class="video_play_gold bg-neutral cursor-pointer"></div>
     <img
       class="w-full h-full object-cover absolute top-[0] left-[0] cursor-pointer"
