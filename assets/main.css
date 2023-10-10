@@ -703,11 +703,11 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-\[121px\] {
+  margin-bottom: 121px;
+}
 .mb-\[16px\] {
   margin-bottom: 16px;
-}
-.mb-\[201px\] {
-  margin-bottom: 201px;
 }
 .mb-\[21px\] {
   margin-bottom: 21px;
@@ -766,11 +766,14 @@ video {
 .mt-\[52px\] {
   margin-top: 52px;
 }
+.mt-\[58px\] {
+  margin-top: 58px;
+}
 .mt-\[64px\] {
   margin-top: 64px;
 }
-.mt-\[82px\] {
-  margin-top: 82px;
+.mt-\[8px\] {
+  margin-top: 8px;
 }
 .block {
   display: block;
@@ -968,6 +971,9 @@ video {
 .max-h-\[135px\] {
   max-height: 135px;
 }
+.max-h-\[144px\] {
+  max-height: 144px;
+}
 .max-h-\[566px\] {
   max-height: 566px;
 }
@@ -976,9 +982,6 @@ video {
 }
 .max-h-\[68px\] {
   max-height: 68px;
-}
-.max-h-\[96px\] {
-  max-height: 96px;
 }
 .min-h-\[170px\] {
   min-height: 170px;
@@ -3621,7 +3624,7 @@ html * {
 }
 
 .key_ingridient_list_item .list_item_text {
-  max-height: 96px;
+  max-height: 144px;
   margin-bottom: 0;
   transition: all 0.5s;
 }
@@ -3666,6 +3669,11 @@ html * {
   transition: all 0.5s;
 }
 
+@media (min-width: 1024px) {
+  .key_ingridient_list_item .list_item_text {
+    max-height: 96px;
+  }
+}
 .recover_password_form {
   width: 0;
   height: 0;
@@ -4419,6 +4427,18 @@ html * {
     margin-left: 0;
     margin-right: 0;
   }
+  .md\:mb-\[201px\] {
+    margin-bottom: 201px;
+  }
+  .md\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+  .md\:mt-\[0\] {
+    margin-top: 0;
+  }
+  .md\:mt-\[82px\] {
+    margin-top: 82px;
+  }
   .md\:block {
     display: block;
   }
@@ -4445,6 +4465,9 @@ html * {
   }
   .md\:h-full {
     height: 100%;
+  }
+  .md\:w-1\/2 {
+    width: 50%;
   }
   .md\:w-\[333px\] {
     width: 333px;
@@ -4581,6 +4604,9 @@ html * {
   .lg\:h-\[811px\] {
     height: 811px;
   }
+  .lg\:max-h-\[96px\] {
+    max-height: 96px;
+  }
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -4604,12 +4630,6 @@ html * {
   }
   .lg\:rounded-\[80px\] {
     border-radius: 80px;
-  }
-  .lg\:border-b-0 {
-    border-bottom-width: 0px;
-  }
-  .lg\:border-r {
-    border-right-width: 1px;
   }
   .lg\:px-\[44px\] {
     padding-left: 44px;
