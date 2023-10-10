@@ -1756,6 +1756,9 @@ video {
 .pt-\[4px\] {
   padding-top: 4px;
 }
+.pt-\[6px\] {
+  padding-top: 6px;
+}
 .pt-\[72px\] {
   padding-top: 72px;
 }
@@ -2413,6 +2416,12 @@ html * {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+.single_product_swiper .swiper-button-prev {
+  left: 16px;
+}
+.single_product_swiper .swiper-button-next {
+  right: 16px;
 }
 .single_product_swiper .swiper-button-prev::after {
   transform: rotate(180deg);
@@ -4598,6 +4607,9 @@ html * {
   }
   .lg\:pl-\[111px\] {
     padding-left: 111px;
+  }
+  .lg\:pt-\[0\] {
+    padding-top: 0;
   }
   .lg\:pt-\[26px\] {
     padding-top: 26px;
