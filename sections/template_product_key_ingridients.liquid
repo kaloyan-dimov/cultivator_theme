@@ -5,7 +5,6 @@
         <div class="sticky top-[45vh] caption text-center text-taupe text-[FF0000]">
           {% for block in section.blocks %}
             {% if block.type == "paragraph" %}
-              {{ block.settings.text_snippet }}
               {% if block.settings.snippet_image != null %}
                 &nbsp
                 <span class="caption border border-taupe-20 rounded-[20px] h-[44px] pl-[21px] pr-[9px] inline-block">
