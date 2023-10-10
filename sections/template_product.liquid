@@ -4,7 +4,7 @@
 <div class="product_page flex flex-col lg:flex-row lg:mx-[auto] lg:px-[64px] lg:max-w-[1440px] lg:gap-[16px] lg:pb-[24px]">
   <div class="w-full lg:w-1/2 relative">
     {% if product.media.size > 1 %}
-      <div class="swiper single_product_swiper w-full  mb-[24px] sticky">
+      <div class="swiper single_product_swiper w-full sticky">
         <div class="swiper-wrapper lg:pl-[111px]">
           {% for image in product.media %}
             <div class="swiper-slide">
