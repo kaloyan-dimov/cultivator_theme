@@ -1,6 +1,6 @@
-<h2 class="h2 flex items-center justify-center gap-[8px] text-taupe mb-[40px] w-auto">
+<h2 class="h2 flex items-center justify-center text-center gap-[8px] text-taupe mb-[40px] w-auto">
   {% if title_image != null %}
-    <span class="w-[35px] h-[35px]">
+    <span class="w-[35px] h-[35px] shrink-0">
       <img
         class="h-full w-full object-cover inline-block"
         src="{{ title_image | img_url: 'master' }}"
@@ -11,7 +11,7 @@
     {{ title_text }}
   {% endif %}
   {% if title_image != null %}
-    <span class="w-[35px] h-[35px]">
+    <span class="w-[35px] h-[35px] shrink-0">
       <img
         class="h-full w-full object-cover inline-block"
         src="{{ title_image | img_url: 'master'}}"
