@@ -1,7 +1,7 @@
 {% if section.blocks.size > 1 %}
   <div class="section pt-[88px] pb-[112px]">
-    <div class="flex flex-col lg:flex-row w-full border border-taupe-20 bg-white rounded-[20px]">
-      <div class="w-full md:w-1/2 px-[24px] py-[42px] border-b lg:border-b-0 lg:border-r border-taupe-20">
+    <div class="flex flex-col md:flex-row w-full border border-taupe-20 bg-white rounded-[20px]">
+      <div class="w-full md:w-1/2 px-[24px] py-[42px] border-b md:border-b-0 md:border-r border-taupe-20">
         <div class="sticky top-[45vh] caption text-center text-taupe text-[FF0000]">
           {% for block in section.blocks %}
             {% if block.type == "paragraph" %}
@@ -21,10 +21,10 @@
         {% endfor %}
         </div>
       </div>
-      <div class="flex flex-col w-full md:w-1/2 py-[42px] px-[24px] border-b lg:border-b-0 border-taupe-20 gap-[32px]">
+      <div class="flex flex-col w-full md:w-1/2 py-[42px] px-[24px] border-b md:border-b-0 border-taupe-20 gap-[32px]">
         {% for block in section.blocks %}
           {% if block.type == "ingridient" %}
-          <div class="flex flex-col lg:flex-row w-full min-h-[201px] justify-center gap-[16px] items-center">
+          <div class="flex flex-col md:flex-row w-full min-h-[201px] justify-center gap-[16px] items-center">
             <div class="h-[185px] w-[142px] rounded-[60px] border border-taupe-20 overflow-hidden">
               <img
                 class="w-full h-full object-cover"
