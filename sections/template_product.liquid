@@ -44,7 +44,7 @@
         <div class="review_only_stars"></div>
         {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
         <div
-          class="w-[36px] h-[36px] before:w-[24px] before:h-[21px] heart_gold add_to_wishlist relative
+          class="w-[36px] h-[36px] before:w-[24px] before:h-[21px] after:w-[24px] after:h-[21px] heart_gold add_to_wishlist relative
           {% for wishlist_item in wishlist_array %}
             {% assign current_product = all_products[wishlist_item] %}
             {% if current_product.handle == product.handle %}in_wishlist{% endif %}
