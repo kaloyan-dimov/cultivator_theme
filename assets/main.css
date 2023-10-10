@@ -989,6 +989,9 @@ video {
 .min-h-\[171px\] {
   min-height: 171px;
 }
+.min-h-\[185px\] {
+  min-height: 185px;
+}
 .min-h-\[201px\] {
   min-height: 201px;
 }
@@ -4293,6 +4296,9 @@ html * {
   }
   .sm\:h-\[671px\] {
     height: 671px;
+  }
+  .sm\:min-h-\[201px\] {
+    min-height: 201px;
   }
   .sm\:w-\[193px\] {
     width: 193px;
