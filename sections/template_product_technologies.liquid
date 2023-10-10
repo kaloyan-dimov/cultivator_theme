@@ -5,7 +5,7 @@
     {% include 'section_title' with title_text, title_image %}
     <div class="flex flex-wrap gap-x-[24px] gap-y-[48px]">
       {% for block in section.blocks %}
-        <div class="flex gap-[16px] items-center w-full max-w-[421px] min-h-[201px] py-[8px] px-[24px]">
+        <div class="flex gap-[16px] items-center w-full max-w-[421px] min-h-[201px] py-[0] px-[0] sm:py-[8px] sm:px-[24px]">
           <div class="rounded-[60px] h-full w-[142px] overflow-hidden border border-[#E6DFDB] shrink-0">
             {% if block.settings.technology_image != null %}
               <img

@@ -4375,6 +4375,10 @@ html * {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .sm\:px-\[24px\] {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .sm\:px-\[64px\] {
     padding-left: 64px;
     padding-right: 64px;
@@ -4390,6 +4394,10 @@ html * {
   .sm\:py-\[80px\] {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .sm\:py-\[8px\] {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   .sm\:pr-\[42px\] {
     padding-right: 42px;
