@@ -823,9 +823,6 @@ video {
 .h-\[219px\] {
   height: 219px;
 }
-.h-\[21px\] {
-  height: 21px;
-}
 .h-\[240px\] {
   height: 240px;
 }
@@ -1042,9 +1039,6 @@ video {
 }
 .w-\[249px\] {
   width: 249px;
-}
-.w-\[24px\] {
-  width: 24px;
 }
 .w-\[25px\] {
   width: 25px;
@@ -2248,15 +2242,13 @@ html * {
 }
 .heart_gold::before, .heart_gold::after {
   content: "";
-  width: 31px;
-  height: 29px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 31px 29px;
+  background-size: 100% 100%;
   transition: all 0.25s;
 }
 .heart_gold::after {
@@ -4214,13 +4206,45 @@ html * {
 .shopify-policy__container .shopify-policy__body {
   padding: 56px 0;
 }
+.before\:h-\[21px\]::before {
+  content: var(--tw-content);
+  height: 21px;
+}
+.before\:h-\[29px\]::before {
+  content: var(--tw-content);
+  height: 29px;
+}
+.before\:w-\[24px\]::before {
+  content: var(--tw-content);
+  width: 24px;
+}
+.before\:w-\[31px\]::before {
+  content: var(--tw-content);
+  width: 31px;
+}
 .after\:h-\[15\.5px\]::after {
   content: var(--tw-content);
   height: 15.5px;
 }
+.after\:h-\[21px\]::after {
+  content: var(--tw-content);
+  height: 21px;
+}
+.after\:h-\[29px\]::after {
+  content: var(--tw-content);
+  height: 29px;
+}
 .after\:w-\[15\.5px\]::after {
   content: var(--tw-content);
   width: 15.5px;
+}
+.after\:w-\[24px\]::after {
+  content: var(--tw-content);
+  width: 24px;
+}
+.after\:w-\[31px\]::after {
+  content: var(--tw-content);
+  width: 31px;
 }
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;

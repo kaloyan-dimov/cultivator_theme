@@ -45,13 +45,13 @@
       </div>
     {% endif %}
     <div
-      class="w-[40px] h-[40px] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
+      class="w-[40px] h-[40px] before:w-[31px] before:h-[29px] after:w-[31px] after:h-[29px] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
       {% for wishlist_item in wishlist_array %}
         {% assign current_product = all_products[wishlist_item] %}
         {% if current_product.handle == product.handle %}in_wishlist{% endif %}
       {% endfor %}"
       data-handle="{{ product.handle }}"></div>
-    {% if product.tags.size > 0 %}
+    {% if product.tags.size > 0 %} 
       <div class="absolute left-[0] top-[28px] flex flex-col gap-[8px]">
         {% for tag in product.tags %}
           {% assign tagcheck = tag | downcase %}
