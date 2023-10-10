@@ -4556,6 +4556,9 @@ html * {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .md\:pb-\[0\] {
+    padding-bottom: 0;
+  }
   .md\:pt-\[72px\] {
     padding-top: 72px;
   }
