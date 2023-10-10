@@ -3612,6 +3612,7 @@ html * {
 .key_ingridient_list_item .list_item_text {
   max-height: 96px;
   margin-bottom: 0;
+  transform: all 0.5s;
 }
 .key_ingridient_list_item .read_more {
   position: absolute;
@@ -3620,20 +3621,36 @@ html * {
   top: 0;
   left: 0;
 }
-.key_ingridient_list_item .read_more::before {
-  content: "Read More +";
+.key_ingridient_list_item .read_more::before, .key_ingridient_list_item .read_more::after {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  transform: all 0.5s;
+}
+.key_ingridient_list_item .read_more::before {
+  content: "Read More +";
+  opacity: 1;
+}
+.key_ingridient_list_item .read_more::after {
+  content: "Read Less -";
+  opacity: 0;
 }
 .key_ingridient_list_item.active .list_item_text {
   max-height: 1000px;
   margin-bottom: 35px;
+  transform: all 0.5s;
 }
 .key_ingridient_list_item.active .read_more::before {
+  content: "Read More +";
+  opacity: 0;
+  transform: all 0.5s;
+}
+.key_ingridient_list_item.active .read_more::after {
   content: "Read Less -";
+  opacity: 1;
+  transform: all 0.5s;
 }
 
 .recover_password_form {
