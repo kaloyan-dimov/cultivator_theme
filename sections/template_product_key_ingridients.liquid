@@ -25,7 +25,7 @@
         {% for block in section.blocks %}
           {% if block.type == "ingridient" %}
           <div class="flex flex-col md:flex-row w-full min-h-[201px] justify-center gap-[16px] items-center">
-            <div class="h-[185px] w-[142px] rounded-[60px] border border-taupe-20 overflow-hidden shrink-0">
+            <div class="h-[185px] w-[142px] rounded-[60px] border border-taupe-20 overflow-hidden shrink-0 mt-[8px] md:mt-[0]">
               <img
                 class="w-full h-full object-cover"
                 src="{{ block.settings.ingridient_image | img_url: 'master'}}"
