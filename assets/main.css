@@ -760,6 +760,9 @@ video {
 .mt-\[2px\] {
   margin-top: 2px;
 }
+.mt-\[46px\] {
+  margin-top: 46px;
+}
 .mt-\[48px\] {
   margin-top: 48px;
 }
@@ -768,9 +771,6 @@ video {
 }
 .mt-\[58px\] {
   margin-top: 58px;
-}
-.mt-\[64px\] {
-  margin-top: 64px;
 }
 .mt-\[8px\] {
   margin-top: 8px;
@@ -4278,6 +4278,9 @@ html * {
   }
   .sm\:mb-\[48px\] {
     margin-bottom: 48px;
+  }
+  .sm\:mt-\[64px\] {
+    margin-top: 64px;
   }
   .sm\:h-\[193px\] {
     height: 193px;
