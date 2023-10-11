@@ -48,16 +48,16 @@
     </div>
     <div class="ajax_cart_recommended"></div>
     <div class="absolute flex flex-col py-[24px] px-[16px] justify-between w-full left-0 bottom-[0] h-[182px] bg-white border-t border-[#E6DFDB]">
-      <div class="flex justify-between">
-        {% if cart.item_count > 0 %}
-          <h2>Estimated total:</h2>
-          <h2 class="cart_subtotal">{{ cart.total_price | money }}</h2>
-          <h3>shipping and discounts calculated at checkout</h3>
+      {% if cart.item_count > 0 %}
+          <div class="flex justify-between">
+            <h2>Estimated total:</h2>
+            <h2 class="cart_subtotal">{{ cart.total_price | money }}</h2>
+            <h3>shipping and discounts calculated at checkout</h3>
+          </div>
           <a href="/checkout" class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</a>
         {% else %}
           <button class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">RETURN TO SHOPPING</button>
         {% endif %}
-        </div>
     </div>
   </div>
 </div>
