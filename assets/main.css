@@ -2541,7 +2541,7 @@ html * {
   }
 }
 .product_usage_swiper {
-  padding: 0 64px 80px !important;
+  padding: 0 16px 80px !important;
 }
 .product_usage_swiper {
   position: relative;
@@ -2586,7 +2586,7 @@ html * {
 
 @media (min-width: 768px) {
   .product_usage_swiper {
-    padding: 0 16px 80px !important;
+    padding: 0 64px 80px !important;
   }
 }
 .instagram_feed_swiper {
