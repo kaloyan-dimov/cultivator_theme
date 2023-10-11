@@ -18,7 +18,7 @@
         <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1 text-white add_product_variants" class="CTA text-white w-full h-full flex justify-center items-center">ADD TO BAG</a>
       </div>
     {% else %}
-      <div class="add_to_bag rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
+      <div class="add_to_bag rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] cursor-pointer">
         <a href="javascript:void(0)" class="CTA choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
         <div class="options_list flex flex-col w-full absolute left-[0] bg-white  h-[114px] pt-[21px] border-t border-taupe-20">
           <div class="flex gap-[11px] justify-between">
