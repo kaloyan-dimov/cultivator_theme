@@ -3815,6 +3815,7 @@ html * {
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px;
+  position: relative;
 }
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
