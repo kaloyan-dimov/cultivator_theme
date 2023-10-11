@@ -3720,7 +3720,7 @@ html * {
 }
 
 .spr-container {
-  padding: 16px !important;
+  padding: 16px 16px 52px !important;
   border: none !important;
 }
 
