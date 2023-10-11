@@ -2,8 +2,11 @@
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div class="swiper-slide relative  md:px-[64px] flex-col-reverse flex">
-        <div class="flex flex-col relative md:absolute px-[24px] md:px-[0] md:left-[65px] md:bottom-[111px] md:z-[1]  md:self-end">
-
+        <div class="flex flex-col relative md:absolute w-full max-w-[1440px] px-[65px] md:bottom-[111px] md:z-[1] md:self-end">
+          width: 100%;
+          max-width: 1312px;
+          left: 50%;
+          transform: translateX(-50%);
           {% if block.settings.slide_title != null %}
             <h2 class="mx-[auto] md:mx-[0] mb-2 text-center md:text-left text-[40px] md:text-[56px] text-[#56463D] md:text-white max-w-[650px]">{{ block.settings.slide_title }}</h2>
           {% endif %}
