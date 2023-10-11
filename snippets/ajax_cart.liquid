@@ -54,8 +54,8 @@
           <h2 class="cart_subtotal">{{ cart.total_price | money }}</h2>
           <h3>shipping and discounts calculated at checkout</h3>
           <a href="/checkout" class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</a>
-          {% else %}
-          <a href="/checkout" class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</a>
+        {% else %}
+          <button class="flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</button>
         {% endif %}
         </div>
     </div>
