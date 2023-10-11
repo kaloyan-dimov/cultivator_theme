@@ -2465,6 +2465,7 @@ html * {
   height: 80px;
   border-radius: 12px;
   border: 1px solid #E6DFDB;
+  background-color: transparent;
   overflow: hidden;
 }
 .single_product_swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
