@@ -41,7 +41,7 @@
     </div>
     <div class="flex flex-col mx-[16px]">
       <div class="flex justify-between h-[52px] items-center mt-[2px] lg:mt-[0] mb-[16px]">
-        <div class="review_only_stars"></div>
+        <div class="review_only_stars cursor-pointer"></div>
         {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
         <div
           class="w-[36px] h-[36px] before:w-[24px] before:h-[21px] after:w-[24px] after:h-[21px] heart_gold add_to_wishlist relative
