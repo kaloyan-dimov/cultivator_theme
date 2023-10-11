@@ -3700,7 +3700,6 @@ html * {
   top: -114px;
 }
 .add_to_bag.active .options_list {
-  max-height: 500px;
   transform: scaleY(1);
   transform-origin: 50% 100%;
   pointer-events: all;
