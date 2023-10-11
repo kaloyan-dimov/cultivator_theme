@@ -2433,6 +2433,16 @@ html * {
 .single_product_swiper .overflow-y-scroll::-webkit-scrollbar {
   width: 5px;
 }
+.single_product_swiper .overflow-y-scroll::-webkit-scrollbar-track {
+  width: 5px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.single_product_swiper .overflow-y-scroll::-webkit-scrollbar-thumb {
+  width: 5px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(84, 68, 59, 1);
+  background-color: rgba(84, 68, 59, var(--tw-bg-opacity));
+}
 .single_product_swiper .swiper-pagination {
   position: relative !important;
   left: 7px !important;
