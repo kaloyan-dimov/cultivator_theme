@@ -4521,9 +4521,6 @@ html * {
   .md\:left-0 {
     left: 0px;
   }
-  .md\:left-\[65px\] {
-    left: 65px;
-  }
   .md\:top-0 {
     top: 0px;
   }
@@ -4643,10 +4640,6 @@ html * {
     border-color: rgba(230, 223, 219, 1);
     border-color: rgba(230, 223, 219, var(--tw-border-opacity));
   }
-  .md\:px-\[0\] {
-    padding-left: 0;
-    padding-right: 0;
-  }
   .md\:px-\[16px\] {
     padding-left: 16px;
     padding-right: 16px;
@@ -4658,6 +4651,10 @@ html * {
   .md\:px-\[64px\] {
     padding-left: 64px;
     padding-right: 64px;
+  }
+  .md\:px-\[65px\] {
+    padding-left: 65px;
+    padding-right: 65px;
   }
   .md\:py-\[32px\] {
     padding-top: 32px;
