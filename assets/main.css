@@ -3734,7 +3734,7 @@ html * {
   align-items: center;
 }
 .spr-container .spr-header .spr-header-title {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   line-height: 44px;
   font-size: 32px;
   --tw-text-opacity: 1;
@@ -3748,7 +3748,7 @@ html * {
 .spr-container .spr-header .spr-summary {
   flex-wrap: wrap;
   display: flex;
-  row-gap: 16px;
+  row-gap: 22px;
   padding-bottom: 13px;
 }
 .spr-container .spr-header .spr-summary .spr-summary-caption {
@@ -3818,7 +3818,7 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review {
   width: 100%;
   max-width: 437px;
-  padding: 16px 16px 0px;
+  padding: 0;
   margin-bottom: 16px;
   border: 0px;
   display: flex;
@@ -3871,6 +3871,15 @@ html * {
 @media (min-width: 768px) {
   .spr-container {
     padding: 56px 64px !important;
+  }
+  .spr-container .spr-header .spr-header-title {
+    margin-bottom: 8px;
+  }
+  .spr-container .spr-header .spr-summary {
+    row-gap: 16px;
+  }
+  .spr-container .spr-content .spr-reviews .spr-review {
+    padding: 16px 16px 0px;
   }
 }
 .pagination {
