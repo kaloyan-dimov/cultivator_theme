@@ -2444,7 +2444,8 @@ html * {
   right: auto;
   right: initial;
   width: 95px;
-  scrollbar-width: thin;
+  scrollbar-width: 30px;
+  scrollbar-gutter: 30px;
 }
 .single_product_swiper .swiper-pagination .swiper-pagination-bullet {
   width: 80px;
