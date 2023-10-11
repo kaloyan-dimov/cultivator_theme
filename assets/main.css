@@ -2541,12 +2541,12 @@ html * {
   }
 }
 .product_usage_swiper {
+  overflow: visible !important;
+  overflow: initial !important;
   padding: 0 16px 80px !important;
 }
 .product_usage_swiper {
   position: relative;
-  overflow: visible;
-  overflow: initial;
 }
 .product_usage_swiper .swiper-wrapper {
   height: 514px;
