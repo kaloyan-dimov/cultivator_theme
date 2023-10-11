@@ -1150,9 +1150,6 @@ video {
 .max-w-\[123px\] {
   max-width: 123px;
 }
-.max-w-\[1312px\] {
-  max-width: 1312px;
-}
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
@@ -2544,10 +2541,12 @@ html * {
   }
 }
 .product_usage_swiper {
-  padding-bottom: 80px !important;
+  padding: 0 64px 80px !important;
 }
 .product_usage_swiper {
   position: relative;
+  overflow: visible;
+  overflow: initial;
 }
 .product_usage_swiper .swiper-wrapper {
   height: 514px;
@@ -2585,6 +2584,11 @@ html * {
   right: 64px;
 }
 
+@media (min-width: 768px) {
+  .product_usage_swiper {
+    padding: 0 16px 80px !important;
+  }
+}
 .instagram_feed_swiper {
   padding-bottom: 62px !important;
 }
