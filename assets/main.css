@@ -3732,6 +3732,7 @@ html * {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 41px;
 }
 .spr-container .spr-header .spr-header-title {
   margin-bottom: 12px;
@@ -3867,10 +3868,28 @@ html * {
 .spr-container .spr-content .spr-reviews .spr-review .spr-review-content {
   flex: 1;
 }
+.spr-container .spr-content .spr-reviews .spr-pagination {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.spr-container .spr-content .spr-reviews .spr-pagination > div {
+  border: 1px solid red !important;
+}
+.spr-container .spr-content .spr-reviews .spr-pagination > div {
+  display: flex;
+  gap: 16px;
+}
+.spr-container .spr-content .spr-reviews .spr-pagination > div > span {
+  position: static !important;
+}
 
 @media (min-width: 768px) {
   .spr-container {
     padding: 56px 64px !important;
+  }
+  .spr-container .spr-header {
+    margin-bottom: 0;
   }
   .spr-container .spr-header .spr-header-title {
     margin-bottom: 8px;
