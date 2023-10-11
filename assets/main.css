@@ -2541,8 +2541,6 @@ html * {
   }
 }
 .product_usage_swiper {
-  overflow: visible !important;
-  overflow: initial !important;
   padding: 0 16px 80px !important;
 }
 .product_usage_swiper {
