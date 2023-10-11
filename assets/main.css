@@ -1684,10 +1684,6 @@ video {
   padding-top: 48px;
   padding-bottom: 48px;
 }
-.py-\[56px\] {
-  padding-top: 56px;
-  padding-bottom: 56px;
-}
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -1710,6 +1706,9 @@ video {
 }
 .pb-\[46px\] {
   padding-bottom: 46px;
+}
+.pb-\[50px\] {
+  padding-bottom: 50px;
 }
 .pb-\[56px\] {
   padding-bottom: 56px;
@@ -4685,6 +4684,9 @@ html * {
   .lg\:pb-\[55px\] {
     padding-bottom: 55px;
   }
+  .lg\:pb-\[56px\] {
+    padding-bottom: 56px;
+  }
   .lg\:pb-\[9px\] {
     padding-bottom: 9px;
   }
@@ -4699,6 +4701,9 @@ html * {
   }
   .lg\:pt-\[48px\] {
     padding-top: 48px;
+  }
+  .lg\:pt-\[56px\] {
+    padding-top: 56px;
   }
   .lg\:pt-\[70px\] {
     padding-top: 70px;
