@@ -3869,9 +3869,17 @@ html * {
   flex: 1;
 }
 .spr-container .spr-content .spr-reviews .spr-pagination {
+  border: medium none currentColor !important;
+  border: initial !important;
+}
+.spr-container .spr-content .spr-reviews .spr-pagination {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .spr-container .spr-content .spr-reviews .spr-pagination > div {
   border: 1px solid red !important;
