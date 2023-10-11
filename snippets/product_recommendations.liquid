@@ -1,7 +1,8 @@
 {% if product %}
 
   <div class="product_recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ number }}&intent={{ recommendation_type }}">
-    {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+    {%- if recommendations.performed? -%}
+      {%- if recommendations.products_count > 0 -%}
       {% comment %}
       {% if recommendations.intent == 'related' %}
       <h2>You may also like</h2>
@@ -12,13 +13,23 @@
 
       {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
       <div class="flex flex-wrap gap-[16px] justify-center">
-        {%- for product in recommendations.products -%}
-          <div class="w-[316px]">
-            {% include 'product_card' with product, wishlist_array %}
+        <div class="swiper recommended_products_swiper">
+          <div class="swiper-wrapper">
+            {%- for product in recommendations.products -%}
+              <div class="swiper-slide">
+                {% include 'product_card' with product, wishlist_array %}
+              </div>
+            {%- endfor -%}
           </div>
-        {%- endfor -%}
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
+      {%- else -%}
+      <h2>Recommendations product count is 0</h2>
     {%- endif -%}
+    {%- else %}
+    <h2>Recommendations was not performed.</h2>
+  {%- endif -%}
   </div>
 {% else %}
   <div class="flex flex-col justify-center items-center">
