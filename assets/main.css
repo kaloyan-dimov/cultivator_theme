@@ -706,9 +706,6 @@ video {
 .mb-\[16px\] {
   margin-bottom: 16px;
 }
-.mb-\[21px\] {
-  margin-bottom: 21px;
-}
 .mb-\[22px\] {
   margin-bottom: 22px;
 }
@@ -738,6 +735,9 @@ video {
 }
 .mb-\[64px\] {
   margin-bottom: 64px;
+}
+.mb-\[6px\] {
+  margin-bottom: 6px;
 }
 .mb-\[8px\] {
   margin-bottom: 8px;
@@ -4432,6 +4432,9 @@ html * {
   }
   .sm\:mb-\[0\] {
     margin-bottom: 0;
+  }
+  .sm\:mb-\[25px\] {
+    margin-bottom: 25px;
   }
   .sm\:mb-\[48px\] {
     margin-bottom: 48px;
