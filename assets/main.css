@@ -3039,6 +3039,7 @@ html * {
   transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart .ajax_cart_summary.empty > div, .ajax_cart_container .ajax_cart .ajax_cart_summary.empty > h3 {
+  max-height: 0;
   transform: scaleY(0);
   transition: all 0.5s;
 }
@@ -3047,6 +3048,7 @@ html * {
   transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart .ajax_cart_summary a.active {
+  max-height: 200px;
   transform: scaleY(1);
   transition: all 0.5s;
 }
