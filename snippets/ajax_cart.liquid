@@ -53,7 +53,8 @@
         <h2 class="cart_subtotal body-m-semibold text-taupe">{{ cart.total_price | money }}</h2>
       </div>
       <h3 class="body-s text-taupe-x2">shipping and discounts calculated at checkout</h3>
-      <a href="/checkout" class="CTA flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</a>
+      <a href="/checkout" class="CTA {% if cart.item_count == 0 %}active{% endif %} flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">CHECKOUT</a>
+      <a href="javascript:void(0)" class="CTA {% if cart.item_count > 0 %}active{% endif %} flex justify-center items-center bg-[#CCAC71] text-white w-full h-[56px] rounded-[24px]">RETURN TO SHOPPING</a>
     </div>
   </div>
 </div>
