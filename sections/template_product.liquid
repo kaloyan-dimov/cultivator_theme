@@ -93,7 +93,7 @@
                   {% if product.selected_variant == nil and forloop.index == 1 %}
                   checked
                   {% endif %}>
-                <h3 class="pointer-events-none text-[#54443B] text-[16px]">{{ variant.option1 }} -
+                <h3 class="pointer-events-none body-s-semibold text-taupe">{{ variant.option1 }} -
                   {% assign show_variant_price = variant %}
                   {% include 'product_variant_price' with show_variant_price %}</h3>
               </label>
