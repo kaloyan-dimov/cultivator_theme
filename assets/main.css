@@ -4097,6 +4097,7 @@ html * {
 .added_to_cart_popup.active {
   bottom: 24px;
   right: 16px;
+  opacity: 1;
   transition: all 0.5s;
 }
 
@@ -4108,7 +4109,6 @@ html * {
     bottom: initial;
   }
   .added_to_cart_popup.active {
-    opacity: 1;
     right: 64px;
     bottom: auto;
     bottom: initial;
