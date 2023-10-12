@@ -3031,7 +3031,7 @@ html * {
   transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart .ajax_cart_summary > div, .ajax_cart_container .ajax_cart .ajax_cart_summary > h3 {
-  transform: scaleY(0);
+  transform: scaleY(1);
   transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart .ajax_cart_summary.empty {
@@ -3039,7 +3039,7 @@ html * {
   transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart .ajax_cart_summary.empty > div, .ajax_cart_container .ajax_cart .ajax_cart_summary.empty > h3 {
-  transform: scaleY(1);
+  transform: scaleY(0);
   transition: all 0.5s;
 }
 .ajax_cart_container .ajax_cart .ajax_cart_summary a {
