@@ -611,9 +611,6 @@ video {
 .top-\[100\%\] {
   top: 100%;
 }
-.top-\[129px\] {
-  top: 129px;
-}
 .top-\[17px\] {
   top: 17px;
 }
@@ -4092,6 +4089,9 @@ html * {
 .added_to_cart_popup {
   right: -600px;
   opacity: 0;
+  top: 129px;
+  bottom: auto;
+  bottom: initial;
   transition: opacity 0.5s, right 0.5s;
 }
 .added_to_cart_popup.active {
@@ -4100,6 +4100,20 @@ html * {
   transition: opacity 0.5s, right 0.5s;
 }
 
+@media (min-width: 768px) {
+  .added_to_cart_popup {
+    right: 16px;
+    bottom: -600px;
+    top: auto;
+    top: initial;
+    transition: opacity 0.5s, bottom 0.5s;
+  }
+  .added_to_cart_popup.active {
+    bottom: 24px;
+    right: 16px;
+    transition: opacity 0.5s, bottom 0.5s;
+  }
+}
 .remove_from_wishlist.icon_close::after {
   position: absolute;
   width: 15.5px;
@@ -4451,6 +4465,9 @@ html * {
   }
   .sm\:w-\[426px\] {
     width: 426px;
+  }
+  .sm\:w-\[458px\] {
+    width: 458px;
   }
   .sm\:w-\[50\%\] {
     width: 50%;
