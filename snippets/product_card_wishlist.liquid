@@ -2,14 +2,14 @@
   <div class="flex flex-col h-[496px] rounded-[48px] justify-between p-4 bg-white border border-taupe-20 relative">
     <a href="{{ product.url }}">
       <div class="w-full h-[200px] mb-2">
-        <img
+        <img 
           class="w-full h-full object-contain"
           src="{{ product.featured_image | img_url: 'master'}}"
           alt="">
       </div>
       <h2 class="body-m-semibold text-taupe-200 text-center mb-[2px]">{{ product.title }}</h2>
       <h2 class="body-s text-taupe-200 text-center mb-[16px]">{{ product.options_by_name['color'].values }}</h2>
-      <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden">{{ product.description }}</h2>
+      <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden absolute bottom-[100px] w-[calc(100%-32px)]">{{ product.description }}</h2>
       <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money }}</h2>
       <div class="w-full h-[56px]"></div>
     </a>
@@ -43,7 +43,7 @@
       <div class="absolute left-[0] top-[28px] flex flex-col gap-[8px]">
         {% for tag in product.tags %}
           {% assign tagcheck = tag | downcase %}
-          <span class="pt-[4px] pb-[5px] px-[12px] rounded-[9px] product-labels text-taupe-800 {% if tagcheck contains "new launch" %} bg-[#D8E2DC] {% elsif tagcheck contains "%" %} true bg-[#FAE1DD] {% else %} bg-[#DEE2FF] {% endif %} ">{{ tag }}</span>
+          <span class="pt-[4px] pb-[5px] px-[12px] rounded-r-[9px] product-labels text-taupe-800 {% if tagcheck contains "new launch" %} bg-[#D8E2DC] {% elsif tagcheck contains "%" %} true bg-[#FAE1DD] {% else %} bg-[#DEE2FF] {% endif %} ">{{ tag }}</span>
         {% endfor %}
       </div>
     {% endif %}
