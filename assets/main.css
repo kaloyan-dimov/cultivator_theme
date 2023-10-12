@@ -1761,6 +1761,9 @@ video {
 .pt-\[4px\] {
   padding-top: 4px;
 }
+.pt-\[66px\] {
+  padding-top: 66px;
+}
 .pt-\[6px\] {
   padding-top: 6px;
 }
@@ -1772,9 +1775,6 @@ video {
 }
 .pt-\[81px\] {
   padding-top: 81px;
-}
-.pt-\[88px\] {
-  padding-top: 88px;
 }
 .pt-\[8px\] {
   padding-top: 8px;
@@ -2590,18 +2590,24 @@ html * {
 .product_usage_swiper .swiper-button-prev {
   left: auto;
   left: initial;
-  right: 145px;
+  right: 97px;
 }
 .product_usage_swiper .swiper-button-prev::after {
   transform: rotate(180deg);
 }
 .product_usage_swiper .swiper-button-next {
-  right: 64px;
+  right: 16px;
 }
 
 @media (min-width: 768px) {
   .product_usage_swiper {
     padding: 0 64px 80px !important;
+  }
+  .product_usage_swiper .swiper-button-prev {
+    right: 145px;
+  }
+  .product_usage_swiper .swiper-button-next {
+    right: 64px;
   }
 }
 .instagram_feed_swiper {
@@ -4573,6 +4579,9 @@ html * {
   }
   .sm\:pt-\[72px\] {
     padding-top: 72px;
+  }
+  .sm\:pt-\[88px\] {
+    padding-top: 88px;
   }
   .sm\:text-left {
     text-align: left;
