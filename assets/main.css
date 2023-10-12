@@ -2439,6 +2439,7 @@ html * {
   top: calc(100% - 6px);
   height: 20px;
   width: 25px;
+  z-index: 1;
 }
 .single_product_swiper .swiper-button-prev::after,
 .single_product_swiper .swiper-button-next::after {
