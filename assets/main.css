@@ -1928,6 +1928,11 @@ video {
   color: rgba(86, 70, 61, 1);
   color: rgba(86, 70, 61, var(--tw-text-opacity));
 }
+.text-taupe-x2 {
+  --tw-text-opacity: 1;
+  color: rgba(123, 105, 94, 1);
+  color: rgba(123, 105, 94, var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, 1);
