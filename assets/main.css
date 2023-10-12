@@ -4110,6 +4110,8 @@ html * {
   .added_to_cart_popup.active {
     opacity: 1;
     right: 64px;
+    bottom: auto;
+    bottom: initial;
   }
 }
 .remove_from_wishlist.icon_close::after {
