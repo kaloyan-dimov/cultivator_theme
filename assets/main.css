@@ -3524,7 +3524,7 @@ html * {
   transition: all 0.5s;
 }
 .video_player.active .video_container {
-  max-height: 2000px;
+  max-height: calc(100vh - 10px);
   opacity: 1;
   transition: all 0.5s;
 }
