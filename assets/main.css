@@ -814,9 +814,6 @@ video {
 .h-\[180px\] {
   height: 180px;
 }
-.h-\[182px\] {
-  height: 182px;
-}
 .h-\[185px\] {
   height: 185px;
 }
@@ -3027,6 +3024,30 @@ html * {
   transform: scaleX(0);
   max-width: 0;
   transform-origin: right center;
+  transition: all 0.5s;
+}
+.ajax_cart_container .ajax_cart .ajax_cart_summary {
+  height: 182px;
+  transition: all 0.5s;
+}
+.ajax_cart_container .ajax_cart .ajax_cart_summary > div, .ajax_cart_container .ajax_cart .ajax_cart_summary > h3 {
+  transform: scaleY(0);
+  transition: all 0.5s;
+}
+.ajax_cart_container .ajax_cart .ajax_cart_summary.empty {
+  height: 104px;
+  transition: all 0.5s;
+}
+.ajax_cart_container .ajax_cart .ajax_cart_summary.empty > div, .ajax_cart_container .ajax_cart .ajax_cart_summary.empty > h3 {
+  transform: scaleY(1);
+  transition: all 0.5s;
+}
+.ajax_cart_container .ajax_cart .ajax_cart_summary a {
+  transform: scaleY(0);
+  transition: all 0.5s;
+}
+.ajax_cart_container .ajax_cart .ajax_cart_summary a.active {
+  transform: scaleY(1);
   transition: all 0.5s;
 }
 .ajax_cart_container.active {
