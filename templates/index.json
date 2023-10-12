@@ -206,6 +206,16 @@
         "b_bot": false
       }
     },
+    "636788fc-189a-4931-be1f-0a05116c181c": {
+      "type": "block_CTA_section",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/image_31.png",
+        "title": "30% OFF ON HAIR COLORS",
+        "paragraph": "Hair cleaners for all hair types",
+        "button_text": "SHOP NOW",
+        "button_link": ""
+      }
+    },
     "e1d366af-0f30-4ee8-8dc9-c9f7c85276e1": {
       "type": "block_video_feed",
       "blocks": {
@@ -249,16 +259,6 @@
         "title_image": "shopify:\/\/shop_images\/Square_flower.png",
         "b_top": false,
         "b_bot": true
-      }
-    },
-    "636788fc-189a-4931-be1f-0a05116c181c": {
-      "type": "block_CTA_section",
-      "settings": {
-        "background_image": "shopify:\/\/shop_images\/image_31.png",
-        "title": "30% OFF ON HAIR COLORS",
-        "paragraph": "Hair cleaners for all hair types",
-        "button_text": "SHOP NOW",
-        "button_link": ""
       }
     },
     "30ce9665-2aad-40d6-98c6-8036efbbb9f4": {
@@ -414,8 +414,8 @@
     "54802d62-1f56-426a-8f28-6d4c05933e7e",
     "23c7a703-cb92-4fd9-b047-d17653a74cd9",
     "b25833b1-4d5b-4b37-8aaa-c74105602ffe",
-    "e1d366af-0f30-4ee8-8dc9-c9f7c85276e1",
     "636788fc-189a-4931-be1f-0a05116c181c",
+    "e1d366af-0f30-4ee8-8dc9-c9f7c85276e1",
     "30ce9665-2aad-40d6-98c6-8036efbbb9f4",
     "bb32c763-4e89-466a-be07-8858c238064b",
     "29ef1e09-83f2-4734-93e1-5afcb978f683"

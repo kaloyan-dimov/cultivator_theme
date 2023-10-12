@@ -27,10 +27,24 @@
       "theme_footer": {
         "type": "theme_footer",
         "blocks": {
+          "df79b658-b822-46df-b247-6e54d3f0bc91": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Amex.png",
+              "payment_name": ""
+            }
+          },
           "5a30f7ab-0ea6-47a8-aec4-7f57d876af79": {
             "type": "section",
             "settings": {
               "payment_image": "shopify:\/\/shop_images\/Visa.png",
+              "payment_name": ""
+            }
+          },
+          "dc8394c5-2f26-4f56-9979-6c1c3b2b3937": {
+            "type": "section",
+            "settings": {
+              "payment_image": "shopify:\/\/shop_images\/Maestro.png",
               "payment_name": ""
             }
           },
@@ -41,10 +55,10 @@
               "payment_name": ""
             }
           },
-          "df79b658-b822-46df-b247-6e54d3f0bc91": {
+          "e01b6234-4db2-4ffc-b98b-913d45ef5244": {
             "type": "section",
             "settings": {
-              "payment_image": "shopify:\/\/shop_images\/Amex.png",
+              "payment_image": "shopify:\/\/shop_images\/Klarna.png",
               "payment_name": ""
             }
           },
@@ -54,29 +68,15 @@
               "payment_image": "shopify:\/\/shop_images\/PayPal.png",
               "payment_name": "PayPal"
             }
-          },
-          "dc8394c5-2f26-4f56-9979-6c1c3b2b3937": {
-            "type": "section",
-            "settings": {
-              "payment_image": "shopify:\/\/shop_images\/Maestro.png",
-              "payment_name": ""
-            }
-          },
-          "e01b6234-4db2-4ffc-b98b-913d45ef5244": {
-            "type": "section",
-            "settings": {
-              "payment_image": "shopify:\/\/shop_images\/Klarna.png",
-              "payment_name": ""
-            }
           }
         },
         "block_order": [
-          "5a30f7ab-0ea6-47a8-aec4-7f57d876af79",
-          "042634fa-5dac-4328-af54-b13b878603ce",
           "df79b658-b822-46df-b247-6e54d3f0bc91",
-          "a2e1b6c0-c167-42a9-a2a7-2ee404ac172f",
+          "5a30f7ab-0ea6-47a8-aec4-7f57d876af79",
           "dc8394c5-2f26-4f56-9979-6c1c3b2b3937",
-          "e01b6234-4db2-4ffc-b98b-913d45ef5244"
+          "042634fa-5dac-4328-af54-b13b878603ce",
+          "e01b6234-4db2-4ffc-b98b-913d45ef5244",
+          "a2e1b6c0-c167-42a9-a2a7-2ee404ac172f"
         ],
         "settings": {
           "footer_logo": "shopify:\/\/shop_images\/01_1.png",
