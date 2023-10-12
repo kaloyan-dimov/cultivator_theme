@@ -2115,6 +2115,21 @@ html * {
   line-height: 1.3125rem;
 }
 
+.h1 {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54.2px;
+  color: #56463D;
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 75.88px;
+    color: white;
+  }
+}
 .no-scroll {
   overflow: hidden;
 }
