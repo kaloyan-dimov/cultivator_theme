@@ -8,8 +8,8 @@
           alt="">
       </div>
       <h2 class="body-m-semibold text-taupe-200 text-center mb-[2px]">{{ product.title }}</h2>
-      <h2 class="body-s text-taupe-200 text-center mb-[16px]">{{ product.options_by_name['color'].values }}</h2>
-      <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden">{{ product.description }}</h2>
+      <h2 class="body-s text-taupe-200 text-center mb-[16px] absolute bottom-[170px] w-[calc(100%-32px)]">{{ product.options_by_name['color'].values }}</h2>
+      <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden absolute bottom-[100px] w-[calc(100%-32px)]">{{ product.description }}</h2>
       <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money }}</h2>
       <div class="w-full h-[56px]"></div>
     </a> 
