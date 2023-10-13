@@ -2144,6 +2144,9 @@ html * {
   }
 }
 
+.CTA_main {
+  transition: all 0.5s;
+}
 .CTA_main.disabled, .CTA_main.disabled:hover, .CTA_main.disabled:active {
   --tw-bg-opacity: 1;
   background-color: rgba(233, 220, 195, 1);
