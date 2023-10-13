@@ -24,8 +24,8 @@ ss: {% if  variants_number > 1 %}more than 1{% endif %}
       <div class="w-full h-[56px]"></div>
     </a>
     {% assign variants_number = product.variants | size %}
-    {% if product.has_only_default_variant or variants_number > 1%}
-      <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] more_than_1">
+    {% if product.has_only_default_variant or variants_number < 2 %}
+      <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] less_than_1">
         <a
           href="javascript:void(0);"
           data-id="{{ product.first_available_variant.id }}"
