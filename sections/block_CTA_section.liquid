@@ -15,7 +15,7 @@
       {% if section.settings.paragraph != null %}
         <h3 class="body-m text-taupe-200 mb-[22px] lg:mb-[24px] text-center max-w-[320px]">{{ section.settings.paragraph }}</h3>
       {% endif %}
-      <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="CTA CTA_secondary outline outline-1 ring-ecru py-[18.5px] px-[32px] flex gap-2 w-fit rounded-[20px] sm:mx-auto items-center">
+      <a href="{% if section.settings.button_link != null%} {{ section.settings.button_link }} {% endif %}" class="CTA CTA_secondary outline outline-1 outline-ecru py-[18.5px] px-[32px] flex gap-2 w-fit rounded-[20px] sm:mx-auto items-center">
         {% if section.settings.button_text != null %}
           <h3 class="text-[#CCAC71] h-[18px]">{{ section.settings.button_text }}</h3>
         {% endif %}
