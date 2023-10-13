@@ -2623,6 +2623,12 @@ html * {
     font-size: 24px;
     transition: all 0.25s;
   }
+  .hero_swiper .swiper-button-prev {
+    left: 80px;
+  }
+  .hero_swiper .swiper-button-next {
+    right: 80px;
+  }
 }
 .product_usage_swiper {
   padding: 0 16px 80px !important;
