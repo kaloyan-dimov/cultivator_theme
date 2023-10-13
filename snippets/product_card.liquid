@@ -7,7 +7,7 @@
   default false
 {% endif %}<br>
 {% assign variants_number = product.variants | size %}
-ss: {% if  variants_number > 1 %}more than 1{% endif %}
+ss: {% if  variants_number < 2 %}less than 2{% endif %}s
 <div class="relative">
   <div class="flex flex-col h-[496px] rounded-[48px] justify-between p-4 bg-white border border-taupe-20 relative overflow-hidden">
     <a href="{{ product.url }}">
