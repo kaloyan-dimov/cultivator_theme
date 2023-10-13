@@ -2151,15 +2151,17 @@ html * {
   fill: #E9DCC3;
 }
 .CTA_secondary:hover {
-  --tw-text-opacity: 1;
-  color: rgba(190, 150, 75, 1);
-  color: rgba(190, 150, 75, var(--tw-text-opacity));
   outline-width: 2px;
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(190, 150, 75, var(--tw-ring-opacity));
 }
 .CTA_secondary:hover .CTA_secondary_arrow path {
   fill: #BE964B;
+}
+.CTA_secondary:hover h3 {
+  --tw-text-opacity: 1;
+  color: rgba(190, 150, 75, 1);
+  color: rgba(190, 150, 75, var(--tw-text-opacity));
 }
 .CTA_secondary:active {
   --tw-text-opacity: 1;
@@ -2171,6 +2173,11 @@ html * {
 }
 .CTA_secondary:active .CTA_secondary_arrow path {
   fill: #B48C41;
+}
+.CTA_secondary:active h3 {
+  --tw-text-opacity: 1;
+  color: rgba(180, 140, 65, 1);
+  color: rgba(180, 140, 65, var(--tw-text-opacity));
 }
 
 .button_arrow {
