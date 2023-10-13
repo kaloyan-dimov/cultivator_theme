@@ -9,7 +9,7 @@
           alt="">
       </div>
       <h2 class="body-m-semibold text-taupe-200 text-center mb-[2px]">{{ product.title }}</h2>
-      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%] w-full">
+      <h2 class="body-s text-taupe-200 text-center mb-[16px] absolute bottom-[170px] w-[calc(100%-32px)]">
         {% if product.has_only_default_variant or variants_number < 2 %}
           {{ product.first_available_variant.title }}
         {% else %}
@@ -17,7 +17,7 @@
         {% endif  %}
       </h2>
       <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden absolute bottom-[100px] w-[calc(100%-32px)]">{{ product.description }}</h2>
-      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">
+      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%] w-full">
         {% if product.price_min == product.price_max %} 
           {{ product.price | money}} 
         {% else %} 
