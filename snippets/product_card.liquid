@@ -46,7 +46,7 @@
                 {{ variant.option1 }}</h4>
             {% endfor %}
           </div>
-          <h4 class="body-m-semibold option_price mt-2 mx-auto">{{ product.first_available_variant.price | money }}</h4>
+          <h4 class="body-m-semibold option_price mt-2 mx-auto">min: {{ product.price_min }} max: {{ product.price_max }}</h4>
         </div>
       </div>
     {% endif %}
