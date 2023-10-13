@@ -3678,13 +3678,19 @@ html * {
   transform: rotate(-45deg);
 }
 
+.add_to_cart_el {
+  width: 100%;
+  padding: 8px 16px;
+  z-index: 3;
+}
 .add_to_cart_el.active {
   position: fixed;
   left: 0;
   bottom: 0;
   margin: 0;
-  width: 100%;
-  padding: 8px 16px;
+}
+.add_to_cart_el input {
+  text-wrap: balance;
 }
 
 #quantity::-webkit-outer-spin-button, #quantity::-webkit-inner-spin-button {
