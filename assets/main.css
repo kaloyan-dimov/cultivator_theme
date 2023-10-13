@@ -3678,10 +3678,10 @@ html * {
   transform: rotate(-45deg);
 }
 
-.add_to_cart_el.active {
-  position: fixed;
+.add_to_cart_el {
+  position: sticky;
   left: 0;
-  bottom: 0;
+  bottom: calc(100vh - 80px);
   margin: 0;
   width: 100%;
   padding: 8px 16px;
@@ -3697,6 +3697,11 @@ html * {
   outline: none;
 }
 
+@media (min-width: 1280px) {
+  .add_to_cart_el {
+    position: static;
+  }
+}
 .list_item .list_arrow {
   position: relative;
   transform: scale(1);
