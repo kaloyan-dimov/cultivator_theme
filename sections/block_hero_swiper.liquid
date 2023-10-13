@@ -13,9 +13,9 @@
 
           <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="mx-[auto] md:mx-[0] bg-[#CCAC71] text-[14px] uppercase py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center">
             {% if block.settings.button_text != null %}
-              <h2 class="h-[18px]">{{ block.settings.button_text }}</h2>
+              <h2 class="CTA h-[18px]">{{ block.settings.button_text }}</h2>
             {% endif %}
-            <div class="button_arrow button_arrow_white"></div>
+            <div class="w-[26px] h-[10px] button_arrow_white"></div>
           </a>
         </div>
         {% if block.settings.slide_image != null %}

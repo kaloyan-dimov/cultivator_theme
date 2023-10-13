@@ -1,4 +1,3 @@
-{% assign variants_number = product.variants | size %}
 <div class="relative w-[316px]">
   <div class="flex flex-col h-[496px] rounded-[48px] justify-between p-4 bg-white border border-taupe-20 relative">
     <a href="{{ product.url }}">
@@ -20,7 +19,7 @@
       <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money }}</h2>
       <div class="w-full h-[56px]"></div>
     </a>
-    {% if product.has_only_default_variant or variants_number < 2 %}
+    {% if product.has_only_default_variant %}
       <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px]">
         <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1 text-white add_product_variants" class="CTA text-white w-full h-full flex justify-center items-center">ADD TO BAG</a>
       </div>
