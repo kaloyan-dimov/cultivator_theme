@@ -2589,6 +2589,7 @@ html * {
 }
 .hero_swiper .swiper-button-prev,
 .hero_swiper .swiper-button-next {
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -2597,6 +2598,7 @@ html * {
 }
 .hero_swiper .swiper-button-prev {
   left: 16px;
+  transform: translateY(-50%) rotate(180deg);
 }
 .hero_swiper .swiper-button-next {
   right: 16px;
