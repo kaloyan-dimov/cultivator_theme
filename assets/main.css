@@ -2145,7 +2145,7 @@ html * {
 }
 
 .CTA_main {
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 .CTA_main.disabled, .CTA_main.disabled:hover, .CTA_main.disabled:active {
   --tw-bg-opacity: 1;
