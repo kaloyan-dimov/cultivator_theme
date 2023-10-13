@@ -351,6 +351,13 @@
             "image": "shopify:\/\/shop_images\/image_40.png",
             "link_url": ""
           }
+        },
+        "823fc127-9187-4526-9dfd-e5d389e8a149": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_31.png",
+            "link_url": ""
+          }
         }
       },
       "block_order": [
@@ -359,7 +366,8 @@
         "35f1273f-50ea-455a-bae0-35e1b760eeb1",
         "c3a03da9-6bfa-4a85-b015-e5c83fd0b1c7",
         "58795f7e-cacb-4181-b5ac-a98fcf6f8319",
-        "869f4d63-1d8e-4e10-bb8a-9b1866745506"
+        "869f4d63-1d8e-4e10-bb8a-9b1866745506",
+        "823fc127-9187-4526-9dfd-e5d389e8a149"
       ],
       "settings": {
         "section_title": "Follow Products and Discounts on"
