@@ -1,27 +1,22 @@
 <div class="added_to_cart_popup fixed flex flex-col gap-[16px] w-[calc(100%-32px)] sm:w-[458px] bg-neutral px-[16px] py-[24px] bg-neutral rounded-[24px] shadow-[0px_0px_34px_9px_rgba(0,0,0,0.3)] z-[3]">
   <div class="flex justify-between">
-    <h2>Added to your cart</h2>
-    <h3 class="popup_close underline cursor-pointer">Close</h3>
+    <h2 class="subtitle-1-bold text-taupe">Added to your cart</h2>
+    <h3 class="popup_close body-s underline cursor-pointer text-taupe">Close</h3>
   </div>
   <div class="flex gap-[8px] py-[24px] px-[16px] border border-taupe-20 bg-white rounded-[16px]">
-    <div
-      class="relative w-[64px] h-[64px] shrink-0"><img
+    <div class="relative w-[64px] h-[64px] shrink-0"><img
         class="popup_image w-full h-full object-cover"
         src=""
         alt="">
-      <div
-        class="absolute top-[0] right-[0] w-[17px] h-[17px] bg-[#B3A094] flex items-center justify-center text-white leading-[0px] rounded-full">
-        <h4
-          class="popup_quantity">1</h4>
+      <div class="absolute top-[0] right-[0] w-[17px] h-[17px] bg-[#B3A094] flex items-center justify-center text-white leading-[0px] rounded-full">
+        <h4 class="popup_quantity">1</h4>
       </div>
     </div>
-    <div
-      class="flex flex-col w-full">
-      <h3 class="popup_product_title">Title</h3>
-      <h4 class="popup_variant_title"></h4>
+    <div class="flex flex-col justify-center gap-[8px] w-full">
+      <h3 class="popup_product_title body-m-semibold text-taupe">Title</h3>
+      <h4 class="popup_variant_title body-s text-taupe-200"></h4>
     </div>
-    <h2
-      class="popup_price shrink-0 self-center">Price</h2>
+    <h2 class="popup_price shrink-0 self-center">Price</h2>
   </div>
   <div
     class="flex gap-[8px]">
@@ -33,7 +28,7 @@
       class="shrink-0 cart_subtotal"></h3>
   </div>
   <div
-    class="popup_view_cart flex justify-center items-center w-full bg-ecru text-white rounded-[24px] h-[56px] cursor-pointer">View Cart (<span
+    class="popup_view_cart CTA flex justify-center items-center w-full bg-ecru text-white rounded-[24px] h-[56px] cursor-pointer">View Cart (<span
       class="cart_item_count">{{ cart.item_count }}</span>)<span
       class="currency"></span>
   </div>
