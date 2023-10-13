@@ -1,7 +1,7 @@
 <div class="swiper hero_swiper w-full h-[735px] md:h-[600px]">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <div class="swiper-slide relative  md:px-[64px] flex-col-reverse flex">
+      <div class="swiper-slide relative  md:px-[64px] flex-col-reverse flex cursor-grab active:cursor-grabbing">
         <div class="flex flex-col relative md:absolute w-full max-w-[1440px] px-[16px] md:px-[65px] md:bottom-[111px] md:z-[1] md:self-end left-[50%] translate-x-[-50%]">
           {% if block.settings.slide_title != null %}
             <h2 class="h1 mx-[auto] md:mx-[0] mb-2 text-center md:text-left text-[40px] md:text-[56px] text-[#56463D] md:text-white max-w-[650px]">{{ block.settings.slide_title }}</h2>
@@ -11,7 +11,7 @@
             <h3 class="mx-[auto] md:mx-[0] mb-[32px] text-center md:text-left text-[16px] text-[#56463D] md:text-white max-w-[550px]">{{ block.settings.slide_paragraph }}</h3>
           {% endif %}
 
-          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="mx-[auto] md:mx-[0] bg-ecru  py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center">
+          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="mx-[auto] md:mx-[0] bg-ecru  py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center cursor-pointer">
             {% if block.settings.button_text != null %}
               <h2 class="CTA uppercase">{{ block.settings.button_text }}</h2>
             {% endif %}
@@ -19,7 +19,7 @@
           </a>
         </div>
         {% if block.settings.slide_image != null %}
-          <div class="md:absolute md:top-0 md:left-0 w-full min-h-[260px] md:h-full cursor-grab active:cursor-grabbing">
+          <div class="md:absolute md:top-0 md:left-0 w-full min-h-[260px] md:h-full ">
             <img
               class="w-full h-full object-cover"
               src="{{ block.settings.slide_image | img_url: 'master'}}"
