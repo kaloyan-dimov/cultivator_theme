@@ -16,7 +16,7 @@
           {{ product.options_by_name['color'].values }}</h2>
         {% endif  %}
       <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden absolute bottom-[100px] w-[calc(100%-32px)]">{{ product.description }}</h2>
-      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money }}</h2>
+      <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">min: {{ product.price_min }} max: {{ product.price_max }}</h2>
       <div class="w-full h-[56px]"></div>
     </a>
     {% if product.has_only_default_variant or variants_number < 2 %}
@@ -46,7 +46,7 @@
                 {{ variant.option1 }}</h4>
             {% endfor %}
           </div>
-          <h4 class="body-m-semibold option_price mt-2 mx-auto">min: {{ product.price_min }} max: {{ product.price_max }}</h4>
+          <h4 class="body-m-semibold option_price mt-2 mx-auto">{{ product.first_available_variant.price | money }}</h4>
         </div>
       </div>
     {% endif %}
