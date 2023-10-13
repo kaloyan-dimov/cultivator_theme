@@ -774,9 +774,6 @@ video {
 .h-\[102px\] {
   height: 102px;
 }
-.h-\[10px\] {
-  height: 10px;
-}
 .h-\[114px\] {
   height: 114px;
 }
@@ -797,6 +794,9 @@ video {
 }
 .h-\[18px\] {
   height: 18px;
+}
+.h-\[19px\] {
+  height: 19px;
 }
 .h-\[200px\] {
   height: 200px;
