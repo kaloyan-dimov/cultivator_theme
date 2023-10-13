@@ -49,42 +49,42 @@
           "type": "section",
           "settings": {
             "card_text": "100% Plant-Based",
-            "card_image": "shopify:\/\/shop_images\/Card_6.png"
+            "card_image": "shopify:\/\/shop_images\/Frame_15.svg"
           }
         },
         "0fd17f79-b920-422b-b912-8b82769740dc": {
           "type": "section",
           "settings": {
             "card_text": "Zero Toxic Chemical",
-            "card_image": "shopify:\/\/shop_images\/Card_5.png"
+            "card_image": "shopify:\/\/shop_images\/Frame_16.svg"
           }
         },
         "f3f0c0a3-773f-47c4-b215-4da99baa20be": {
           "type": "section",
           "settings": {
             "card_text": "100% Organic Ingredients",
-            "card_image": "shopify:\/\/shop_images\/Card_4.png"
+            "card_image": "shopify:\/\/shop_images\/Frame_17.svg"
           }
         },
         "e1cacdb0-c443-403c-b627-8aa4263fb0c8": {
           "type": "section",
           "settings": {
             "card_text": "GMO Free",
-            "card_image": "shopify:\/\/shop_images\/Card_3.png"
+            "card_image": "shopify:\/\/shop_images\/Frame_18.svg"
           }
         },
         "c486c41c-1836-4081-ae06-8d989997983d": {
           "type": "section",
           "settings": {
             "card_text": "Dermatologically Tested",
-            "card_image": "shopify:\/\/shop_images\/Card_2.png"
+            "card_image": "shopify:\/\/shop_images\/Frame_19.svg"
           }
         },
         "053e6958-dd72-4e18-8c08-b5d7367f8fc8": {
           "type": "section",
           "settings": {
             "card_text": "Sustainability Focused",
-            "card_image": "shopify:\/\/shop_images\/Card_1.png"
+            "card_image": "shopify:\/\/shop_images\/Frame_20.svg"
           }
         }
       },
