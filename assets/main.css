@@ -1190,6 +1190,9 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.cursor-grab {
+  cursor: grab;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -4434,6 +4437,9 @@ html * {
 }
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
+}
+.active\:cursor-grabbing:active {
+  cursor: grabbing;
 }
 @media (min-width: 768px) {
   .sm\:m-\[unset\] {
