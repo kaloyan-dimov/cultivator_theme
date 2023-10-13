@@ -3678,14 +3678,13 @@ html * {
   transform: rotate(-45deg);
 }
 
-.add_to_cart_el {
-  position: sticky;
+.add_to_cart_el.active {
+  position: fixed;
   left: 0;
-  top: calc(100vh - 80px);
+  bottom: 0;
   margin: 0;
   width: 100%;
   padding: 8px 16px;
-  z-index: 3;
 }
 
 #quantity::-webkit-outer-spin-button, #quantity::-webkit-inner-spin-button {
@@ -3698,11 +3697,6 @@ html * {
   outline: none;
 }
 
-@media (min-width: 1280px) {
-  .add_to_cart_el {
-    position: static;
-  }
-}
 .list_item .list_arrow {
   position: relative;
   transform: scale(1);
