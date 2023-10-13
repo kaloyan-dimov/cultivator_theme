@@ -2144,6 +2144,22 @@ html * {
   }
 }
 
+.CTA_main.disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgba(233, 220, 195, 1);
+  background-color: rgba(233, 220, 195, var(--tw-bg-opacity));
+}
+.CTA_main:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(190, 150, 75, 1);
+  background-color: rgba(190, 150, 75, var(--tw-bg-opacity));
+}
+.CTA_main:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(180, 140, 65, 1);
+  background-color: rgba(180, 140, 65, var(--tw-bg-opacity));
+}
+
 .CTA_secondary.disabled, .CTA_secondary.disabled:hover, .CTA_secondary.disabled:active {
   cursor: not-allowed;
   --tw-text-opacity: 1;
