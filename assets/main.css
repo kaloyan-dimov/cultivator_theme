@@ -2174,6 +2174,7 @@ html * {
 .CTA_secondary:active .CTA_secondary_arrow path {
   fill: #B48C41;
 }
+.CTA_secondary:active h4,
 .CTA_secondary:active h3 {
   --tw-text-opacity: 1;
   color: rgba(180, 140, 65, 1);
