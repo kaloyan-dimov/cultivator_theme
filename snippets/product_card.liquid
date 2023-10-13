@@ -37,7 +37,7 @@
         <a
           href="javascript:void(0)"
           data-id="{{ product.first_available_variant.id }}"
-          class="CTA CTA_main choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
+          class="CTA CTA_main rounded-[24px] choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
         <div class="options_list flex flex-col w-full absolute left-[0] bg-white  h-[114px] pt-[21px] border-t border-taupe-20">
           <div class="flex gap-[11px] justify-between">
             {% for variant in product.variants %}
@@ -56,8 +56,7 @@
         </div>
       </div>
     {% endif %}
-    <div
-      class="w-[40px] h-[40px] before:w-[31px] before:h-[29px] after:w-[31px] after:h-[29px] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
+    <div class="w-[40px] h-[40px] before:w-[31px] before:h-[29px] after:w-[31px] after:h-[29px] heart_gold add_to_wishlist absolute top-[24px] right-[24px]
       {% for wishlist_item in wishlist_array %}
         {% assign current_product = all_products[wishlist_item] %}
         {% if current_product.handle == product.handle %}in_wishlist{% endif %}
