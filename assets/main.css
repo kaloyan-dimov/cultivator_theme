@@ -3679,11 +3679,11 @@ html * {
 }
 
 .add_to_cart_el {
-  width: 100%;
   padding: 8px 16px;
   z-index: 3;
 }
 .add_to_cart_el.active {
+  width: 100%;
   position: fixed;
   left: 0;
   bottom: 0;
