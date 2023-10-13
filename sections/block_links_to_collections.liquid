@@ -31,7 +31,7 @@
             {% endif %}
           {% endif %}
           {% if block.settings.selected_collection != null %}
-            <a href=" {{ block.settings.selected_collection.url }}" class="CTA CTA_secondary text-ecru outline outline-1 ring-ecru py-[18.5px] px-[32px] flex gap-[8px] w-fit rounded-[20px] items-center mx-auto mb-8">
+            <a href=" {{ block.settings.selected_collection.url }}" class="CTA CTA_secondary text-ecru outline outline-1 outline-ecru py-[18.5px] px-[32px] flex gap-[8px] w-fit rounded-[20px] items-center mx-auto mb-8">
               {% if block.settings.button_text != null %}
                 <h3 class="h-[18px]">{{ block.settings.button_text }}</h3>
               {% endif %}
@@ -42,7 +42,7 @@
                   viewBox="0 0 25 20"
                   fill="#000"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path
+                  <path 
                     class="fill-ecru"
                     fill-rule="evenodd"
                     clip-rule="evenodd"
