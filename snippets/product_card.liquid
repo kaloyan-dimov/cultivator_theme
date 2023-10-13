@@ -11,6 +11,7 @@
       <h2 class="body-m-semibold text-taupe-200 text-center mb-[2px]">{{ product.title }}</h2>
       <h2 class="body-s text-taupe-200 text-center mb-[16px] absolute bottom-[170px] w-[calc(100%-32px)]">
         {% if product.has_only_default_variant or variants_number < 2 %}
+          {{ product.first_available_variant.title }}
           {% else %}
           {{ product.options_by_name['color'].values }}</h2>
         {% endif  %}
