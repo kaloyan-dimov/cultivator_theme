@@ -774,6 +774,9 @@ video {
 .h-\[102px\] {
   height: 102px;
 }
+.h-\[10px\] {
+  height: 10px;
+}
 .h-\[114px\] {
   height: 114px;
 }
@@ -2191,6 +2194,15 @@ html * {
 }
 
 .button_arrow_white {
+  position: relative;
+}
+.button_arrow_white::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width=%2727%27 height=%2710%27 viewBox=%270 0 27 10%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M0.5 5.73485H24.2469L21.3502 8.9606L22.2835 10L26.3067 5.51976C26.4304 5.3821 26.5 5.19522 26.5 5.00006C26.5 4.80549 26.4304 4.61844 26.3067 4.48036L22.2835 0L21.3502 1.0394L24.2469 4.26515H0.5V5.73485Z%27 fill=%27white%27/%3E%3C/svg%3E%0A");
 }
 
