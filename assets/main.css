@@ -2158,6 +2158,7 @@ html * {
 .CTA_secondary:hover .CTA_secondary_arrow path {
   fill: #BE964B;
 }
+.CTA_secondary:hover h4,
 .CTA_secondary:hover h3 {
   --tw-text-opacity: 1;
   color: rgba(190, 150, 75, 1);
