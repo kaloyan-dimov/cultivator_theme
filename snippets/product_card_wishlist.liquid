@@ -20,7 +20,6 @@
       <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%]">{{ product.price | money }}</h2>
       <div class="w-full h-[56px]"></div>
     </a>
-    num: {{ variants_number }}
     {% if product.has_only_default_variant or variants_number < 2 %}
       <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] less_than_1">
         <a
