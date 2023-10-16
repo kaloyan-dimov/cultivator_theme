@@ -3895,6 +3895,51 @@ html * {
   .key_ingridient_list_item .list_item_text {
     max-height: 96px;
   }
+  .block_image_title_paragraph .list_item_text {
+    max-height: 243px;
+    margin-bottom: 0;
+    transition: all 0.5s;
+  }
+  .block_image_title_paragraph .read_more {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .block_image_title_paragraph .read_more::before, .block_image_title_paragraph .read_more::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+  .block_image_title_paragraph .read_more::before {
+    content: "Read More +";
+    opacity: 1;
+  }
+  .block_image_title_paragraph .read_more::after {
+    content: "Read Less -";
+    opacity: 0;
+  }
+  .block_image_title_paragraph.active .list_item_text {
+    max-height: 1000px;
+    margin-bottom: 35px;
+    transition: all 0.5s;
+  }
+  .block_image_title_paragraph.active .read_more::before {
+    content: "Read More +";
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .block_image_title_paragraph.active .read_more::after {
+    content: "Read Less -";
+    opacity: 1;
+    transition: all 0.5s;
+  }
 }
 .recover_password_form {
   width: 0;
