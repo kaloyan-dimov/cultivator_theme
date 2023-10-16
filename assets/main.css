@@ -4642,6 +4642,9 @@ html * {
   cursor: grabbing;
 }
 @media (min-width: 768px) {
+  .sm\:bottom-\[48px\] {
+    bottom: 48px;
+  }
   .sm\:top-\[0\] {
     top: 0;
   }
