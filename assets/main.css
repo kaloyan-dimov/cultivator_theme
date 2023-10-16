@@ -1247,6 +1247,9 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-\[0\] {
+  gap: 0;
+}
 .gap-\[11px\] {
   gap: 11px;
 }
@@ -4607,6 +4610,9 @@ html * {
   }
   .sm\:gap-\[0\] {
     gap: 0;
+  }
+  .sm\:gap-\[16px\] {
+    gap: 16px;
   }
   .sm\:gap-\[24px\] {
     gap: 24px;
