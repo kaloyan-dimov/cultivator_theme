@@ -4429,6 +4429,7 @@ html * {
 }
 
 .collection_page_faq .list_item:not(:first-child) {
+  background-color: red;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
