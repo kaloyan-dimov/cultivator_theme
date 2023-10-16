@@ -3,7 +3,7 @@
   {% render 'breadcrumb' %}
   </div>
   <h1 class="w-full text-center mb-[20px] h1 text-taupe mt-[25px]">{{ blog.title }}</h1>
-  <div class="p-[16px] overflow-x-auto overflow-y-hidden">
+  <div class="p-[16px] overflow-x-auto overflow-y-hidden mb-[30px]">
     <ul class="blog_tag_nagivation flex gap-[8px] justify-center w-full py-[12px] w-max mx-[auto]">
       <li>
         <a href="/blogs/{{ blog.title }}" class="CTA py-[15px] px-[12px] border border-taupe-40 rounded-[16px] text-taupe-40 {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
