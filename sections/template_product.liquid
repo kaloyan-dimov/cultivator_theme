@@ -9,7 +9,7 @@
           {% for image in product.media %}
             <div class="swiper-slide">
               <img
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
                 src="{{ image | img_url: 'master'}}"
                 alt="">
               <div class="swiper_thumb hidden">
