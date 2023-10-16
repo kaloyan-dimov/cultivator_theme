@@ -4431,13 +4431,12 @@ html * {
   line-height: 1.6875rem;
 }
 
-.collection_page_faq .list_item:not(:first-child) {
+.collection_page_faq li {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
   border-color: rgba(230, 223, 219, var(--tw-border-opacity));
 }
-
 .faq_navigation {
   display: flex;
   gap: 8px;
