@@ -1407,14 +1407,14 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-b-0 {
+  border-bottom-width: 0px;
+}
 .border-r {
   border-right-width: 1px;
 }
 .border-t {
   border-top-width: 1px;
-}
-.border-t-0 {
-  border-top-width: 0px;
 }
 .border-\[\#B3A094\] {
   --tw-border-opacity: 1;
@@ -4668,6 +4668,9 @@ html * {
   .sm\:border-0 {
     border-width: 0px;
   }
+  .sm\:border-b {
+    border-bottom-width: 1px;
+  }
   .sm\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -4680,8 +4683,8 @@ html * {
   .sm\:border-r {
     border-right-width: 1px;
   }
-  .sm\:border-t {
-    border-top-width: 1px;
+  .sm\:border-t-0 {
+    border-top-width: 0px;
   }
   .sm\:bg-transparent {
     background-color: transparent;
