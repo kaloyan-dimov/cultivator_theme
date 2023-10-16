@@ -3302,6 +3302,10 @@ html * {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.18125rem;
+  letter-spacing: 0.0375rem;
 }
 .ajax_cart_container .ajax_cart_products .ajax_cart_product .ajax_cart_quantity .add_remove_quantity .item_quantity {
   text-align: center;
