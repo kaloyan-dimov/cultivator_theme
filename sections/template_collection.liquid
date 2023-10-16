@@ -5,23 +5,23 @@
  {% for block in section.blocks %}
   {{ block.settings.title }}
   {% endfor %}
-{% if section.blocks.length > 0 %}
-  <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
-    {% for block in section.blocks %}
-      <li class="border-t border-[#E6DFDB]">
-        <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center">
-            <h2 class="text-[16px]">{{ block.settings.title }}s</h2>
-            <div class="list_arrow h-[32px] w-[32px]"></div>
+  {% if section.blocks.length > 0 %}
+    <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
+      {% for block in section.blocks %}
+        <li class="border-t border-[#E6DFDB]">
+          <div class="list_item flex flex-col px-[16px]">
+            <div class="list_title h-[64px] flex justify-between items-center">
+              <h2 class="text-[16px]">{{ block.settings.title }}s</h2>
+              <div class="list_arrow h-[32px] w-[32px]"></div>
+            </div>
+            <div class="list_content pb-[16px]">
+              <p>{{ block.settings.paragraph }}</p>
+            </div>
           </div>
-          <div class="list_content pb-[16px]">
-            <p>{{ block.settings.paragraph }}</p>
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 
 <div class="section" id="collection_page_listing">
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
