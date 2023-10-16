@@ -3998,7 +3998,7 @@ html * {
   border: 2px solid #CCAC71;
 }
 
-.blog_tag_nagivation a.active {
+.blog_tag_nagivation a:hover, .blog_tag_nagivation a.active {
   --tw-bg-opacity: 1;
   background-color: rgba(179, 160, 148, 1);
   background-color: rgba(179, 160, 148, var(--tw-bg-opacity));
