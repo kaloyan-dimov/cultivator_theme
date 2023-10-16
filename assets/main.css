@@ -1322,11 +1322,11 @@ video {
 .overflow-x-auto {
   overflow-x: auto;
 }
+.overflow-y-auto {
+  overflow-y: auto;
+}
 .overflow-y-hidden {
   overflow-y: hidden;
-}
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 .whitespace-pre-wrap {
   white-space: pre-wrap;
@@ -1787,9 +1787,6 @@ video {
 }
 .text-\[16px\] {
   font-size: 16px;
-}
-.text-\[17px\] {
-  font-size: 17px;
 }
 .text-\[18px\] {
   font-size: 18px;
@@ -2499,16 +2496,16 @@ html * {
 .single_product_swiper .swiper-button-prev::after {
   transform: rotate(180deg);
 }
-.single_product_swiper .overflow-y-scroll::-webkit-scrollbar {
+.single_product_swiper .overflow-y-auto::-webkit-scrollbar {
   width: 5px;
 }
-.single_product_swiper .overflow-y-scroll::-webkit-scrollbar-track {
+.single_product_swiper .overflow-y-auto::-webkit-scrollbar-track {
   width: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-.single_product_swiper .overflow-y-scroll::-webkit-scrollbar-thumb {
+.single_product_swiper .overflow-y-auto::-webkit-scrollbar-thumb {
   width: 5px;
   --tw-bg-opacity: 1;
   background-color: rgba(84, 68, 59, 1);
