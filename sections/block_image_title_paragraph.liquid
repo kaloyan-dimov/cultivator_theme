@@ -5,7 +5,7 @@
     <div class="w-full flex flex-col gap-[16px] sm:gap-[24px]">
       {% for block in section.blocks %}
         {% assign even_odd = forloop.index | modulo: 2 %}
-        <div class="flex flex-col {% if even_odd == 0 %}sm:flex-row{% else %}sm:flex-row-reverse{% endif %} w-full gap-[16px] border border-taupe-20 rounded-[20px] overflow-hidden">
+        <div class="flex flex-col {% if even_odd == 0 %}sm:flex-row{% else %}sm:flex-row-reverse{% endif %} w-full border border-taupe-20 rounded-[20px] overflow-hidden">
           <div class="w-full sm:w-[391px] md:w-[441px] lg:w-[491px] h-[420px] sm:h-[671px] sm:rounded-[240px] overflow-hidden shrink-0 border border-taupe-20">
             {% if block.settings.image != null %}
               <img
@@ -14,7 +14,7 @@
                 alt="">
             {% endif %}
           </div>
-          <div class="flex flex-col text-center sm:text-left bg-white rounded-[120px] sm:rounded-[0] sm:bg-transparent py-[48px] px-[24px] sm:px-[64px] justify-center">
+          <div class="flex flex-col gap-[16px] text-center sm:text-left bg-white rounded-[120px] sm:rounded-[0] sm:bg-transparent py-[48px] px-[24px] sm:px-[64px] justify-center">
             <h2 class="subtitle-2 text-taupe">{{ block.settings.title }}
             </h2>
             <p class="body-m text-taupe-200">{{ block.settings.paragraph }}</p>
