@@ -1704,6 +1704,9 @@ video {
 .pb-\[0\] {
   padding-bottom: 0;
 }
+.pb-\[121px\] {
+  padding-bottom: 121px;
+}
 .pb-\[16px\] {
   padding-bottom: 16px;
 }
@@ -4818,6 +4821,9 @@ html * {
   .sm\:py-\[8px\] {
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+  .sm\:pb-\[48px\] {
+    padding-bottom: 48px;
   }
   .sm\:pb-\[56px\] {
     padding-bottom: 56px;
