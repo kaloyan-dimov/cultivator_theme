@@ -2120,16 +2120,10 @@ html * {
 .h1 {
   font-family: "Prata";
   font-weight: 400;
-  font-size: 40px;
-  line-height: 54.2px;
+  font-size: 2.25rem;
+  line-height: 3.04875rem;
 }
 
-@media (min-width: 1024px) {
-  .h1 {
-    font-size: 56px;
-    line-height: 75.88px;
-  }
-}
 .no-scroll {
   overflow: hidden;
 }
@@ -4413,14 +4407,8 @@ html * {
   color: rgba(84, 68, 59, var(--tw-text-opacity));
   font-family: "Prata";
   font-weight: 400;
-  font-size: 40px;
-  line-height: 54.2px;
-}
-@media (min-width: 1024px) {
-  .collection_description h1 {
-    font-size: 56px;
-    line-height: 75.88px;
-  }
+  font-size: 2.25rem;
+  line-height: 3.04875rem;
 }
 .collection_description p {
   --tw-text-opacity: 1;
