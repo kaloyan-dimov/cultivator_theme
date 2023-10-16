@@ -4,11 +4,11 @@
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
   
-  <ul class="collection_page_faq w-full flex flex-col max-w-[868px] mx-[auto] pb-[56px] pt-[8px]">
+  <ul class="collection_page_faq w-full flex flex-col max-w-[868px] mx-[auto] pb-[56px] relative top-[-8px]">
     {% for block in section.blocks %}
     <li class="border-t border-[#E6DFDB]">
       <div class="list_item flex flex-col">
-        <div class="list_title h-[80px] flex justify-between items-center cursor-pointer">
+        <div class="list_title h-[79px] flex justify-between items-center cursor-pointer">
           <h2 class="text-[16px]">{{ block.settings.title }}</h2>
           <div class="list_arrow h-[32px] w-[32px]"></div>
         </div>
