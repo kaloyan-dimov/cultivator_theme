@@ -2114,14 +2114,12 @@ html * {
   font-weight: 400;
   font-size: 40px;
   line-height: 54.2px;
-  color: #56463D;
 }
 
 @media (min-width: 1024px) {
   .h1 {
     font-size: 56px;
     line-height: 75.88px;
-    color: white;
   }
 }
 .no-scroll {
@@ -4411,13 +4409,11 @@ html * {
   font-weight: 400;
   font-size: 40px;
   line-height: 54.2px;
-  color: #56463D;
 }
 @media (min-width: 1024px) {
   .collection_description h1 {
     font-size: 56px;
     line-height: 75.88px;
-    color: white;
   }
 }
 .collection_description p {
