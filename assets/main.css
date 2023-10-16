@@ -1407,6 +1407,9 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-b-\[0\] {
+  border-bottom-width: 0;
+}
 .border-r {
   border-right-width: 1px;
 }
@@ -1768,9 +1771,6 @@ video {
 }
 .pt-\[4px\] {
   padding-top: 4px;
-}
-.pt-\[56px\] {
-  padding-top: 56px;
 }
 .pt-\[66px\] {
   padding-top: 66px;
@@ -4409,11 +4409,10 @@ html * {
   justify-content: center;
   align-items: center;
   height: 56px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   min-width: 201px;
   border-radius: 18px;
-  margin-top: 18px;
+  margin-top: 7px;
   margin-bottom: 56px;
 }
 .collection_description h1 {
@@ -4434,6 +4433,13 @@ html * {
   line-height: 1.6875rem;
 }
 
+@media (min-width: 768px) {
+  .collection_description .product_button {
+    margin-top: 18px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 .faq_navigation {
   display: flex;
   gap: 8px;
@@ -4658,6 +4664,11 @@ html * {
   .sm\:bg-transparent {
     background-color: transparent;
   }
+  .sm\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
   .sm\:px-\[16px\] {
     padding-left: 16px;
     padding-right: 16px;
@@ -4694,6 +4705,9 @@ html * {
   }
   .sm\:pt-\[16px\] {
     padding-top: 16px;
+  }
+  .sm\:pt-\[56px\] {
+    padding-top: 56px;
   }
   .sm\:pt-\[72px\] {
     padding-top: 72px;
