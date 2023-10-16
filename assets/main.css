@@ -741,9 +741,6 @@ video {
 .mt-\[48px\] {
   margin-top: 48px;
 }
-.mt-\[52px\] {
-  margin-top: 52px;
-}
 .mt-\[58px\] {
   margin-top: 58px;
 }
@@ -1653,6 +1650,10 @@ video {
 .py-\[24px\] {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.py-\[27\.5px\] {
+  padding-top: 27.5px;
+  padding-bottom: 27.5px;
 }
 .py-\[32px\] {
   padding-top: 32px;
