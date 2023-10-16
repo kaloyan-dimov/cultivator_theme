@@ -4428,7 +4428,7 @@ html * {
   line-height: 1.6875rem;
 }
 
-#collection_page_faq .list_item:not(:first-child) {
+.collection_page_faq .list_item:not(:first-child) {
   background-color: red;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
