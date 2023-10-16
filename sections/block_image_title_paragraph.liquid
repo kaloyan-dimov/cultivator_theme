@@ -15,9 +15,12 @@
             {% endif %}
           </div>
           <div class="flex flex-col border sm:border-0 {% if even_odd == 0 %}sm:border-l{% else %}sm:border-r{% endif %} border-taupe-20 gap-[0] sm:gap-[16px] text-center sm:text-left bg-white rounded-[120px] sm:rounded-[0] sm:bg-transparent py-[48px] px-[24px] sm:px-[64px] justify-center">
-            <h2 class="subtitle-2 text-taupe p-[16px] sm:p-[0]">{{ block.settings.title }}
+            <h2 class="list_item_text subtitle-2 text-taupe p-[16px] sm:p-[0]">{{ block.settings.title }}
             </h2>
             <p class="body-m text-taupe-200 p-[16px] sm:p-[0]">{{ block.settings.paragraph }}</p>
+            <div class="absolute h-[40px] w-[108px] flex items-center justify-center left-[0] bottom-[-7px]">
+              <h3 class="read_more body-m text-taupe underline cursor-pointer"></h3>
+            </div>
           </div>
         </div>
       {% endfor %}
