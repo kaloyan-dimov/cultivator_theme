@@ -19,7 +19,7 @@
     {% endfor %}
   </ul>
 {% endif %}
-s
+
 <div class="section" id="collection_page_listing">
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   {% paginate collection.products by section.settings.product_pagination %}
