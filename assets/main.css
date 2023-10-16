@@ -4441,6 +4441,7 @@ html * {
   border-color: rgba(230, 223, 219, 1);
   border-color: rgba(230, 223, 219, var(--tw-border-opacity));
 }
+
 .faq_navigation {
   display: flex;
   gap: 8px;
