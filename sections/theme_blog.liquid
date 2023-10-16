@@ -2,11 +2,11 @@
   <div class="py-[16px]">
   {% render 'breadcrumb' %}
   </div>
-  <h1 class="w-full text-center mb-[24px] h1 text-taupe">{{ blog.title }}</h1>
+  <h1 class="w-full text-center mb-[24px] h1 text-taupe mt-23px">{{ blog.title }}</h1>
   <div class="p-[16px] overflow-x-auto overflow-y-hidden">
     <ul class="blog_tag_nagivation flex gap-[8px] justify-center w-full py-[12px] w-max mx-[auto]">
       <li>
-        <a href="/blogs/{{ blog.title }}" class="CTA py-[16px] px-[12px] border border-taupe-40 rounded-[16px] text-taupe-40 {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
+        <a href="/blogs/{{ blog.title }}" class="CTA py-[15px] px-[12px] border border-taupe-40 rounded-[16px] text-taupe-40 {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
       </li>
       {% for tag in blog.all_tags %}
         <li>
