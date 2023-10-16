@@ -1,4 +1,3 @@
-{% if section.blocks > 0 %}
   <div class="section">
     {% assign title_text = section.settings.section_title %}
     {% assign title_image = section.settings.title_image %}
@@ -24,7 +23,6 @@
       {% endfor %}
     </div>
   </div>
-{% endif %}
 {% schema %}
   {
     "name": "Image, Title, Paragraph",
