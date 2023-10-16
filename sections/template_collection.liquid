@@ -1,5 +1,5 @@
 
-<div class="section py-[56px] ">
+<div class="section py-[56px] mb-[24px]">
   {% assign title_text = section.settings.section_title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
@@ -21,7 +21,7 @@
   </ul>
 </div>
 
-<div class="section mb-[24px]" id="collection_page_listing">
+<div class="section mb-[56px] py-[56px]" id="collection_page_listing">
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   {% paginate collection.products by section.settings.product_pagination %}
     <div class="flex flex-wrap gap-y-[32px] gap-x-[16px]">
