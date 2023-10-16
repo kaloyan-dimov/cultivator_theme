@@ -5,6 +5,7 @@
  {% for block in section.blocks %}
   {{ block.settings.title }}
   {% endfor %}
+  {% if section.blocks.length > 0 %}
     <ul class="w-full flex flex-col max-w-[868px] mx-[auto]">
       {% for block in section.blocks %}
         <li class="border-t border-[#E6DFDB]">
@@ -20,6 +21,7 @@
         </li>
       {% endfor %}
     </ul>
+  {% endif %}
 
 <div class="section" id="collection_page_listing">
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
