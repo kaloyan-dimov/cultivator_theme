@@ -541,8 +541,8 @@ video {
 .bottom-\[170px\] {
   bottom: 170px;
 }
-.bottom-\[64px\] {
-  bottom: 64px;
+.bottom-\[48px\] {
+  bottom: 48px;
 }
 .bottom-\[96px\] {
   bottom: 96px;
@@ -1699,8 +1699,8 @@ video {
 .pb-\[0\] {
   padding-bottom: 0;
 }
-.pb-\[121px\] {
-  padding-bottom: 121px;
+.pb-\[104px\] {
+  padding-bottom: 104px;
 }
 .pb-\[16px\] {
   padding-bottom: 16px;
@@ -3887,12 +3887,10 @@ html * {
   transition: all 0.5s;
 }
 .key_ingridient_list_item.active .read_more::before {
-  content: "Read More +";
   opacity: 0;
   transition: all 0.5s;
 }
 .key_ingridient_list_item.active .read_more::after {
-  content: "Read Less -";
   opacity: 1;
   transition: all 0.5s;
 }
@@ -3904,7 +3902,7 @@ html * {
 }
 @media (max-width: 1024px) {
   .block_image_title_paragraph .list_item_text {
-    max-height: 243px;
+    max-height: 260px;
     margin-bottom: 0;
     transition: all 0.5s;
   }
@@ -3926,11 +3924,11 @@ html * {
     text-decoration: underline;
   }
   .block_image_title_paragraph .read_more::before {
-    content: "Read More +";
+    content: "Read more +";
     opacity: 1;
   }
   .block_image_title_paragraph .read_more::after {
-    content: "Read Less -";
+    content: "Read less -";
     opacity: 0;
   }
   .block_image_title_paragraph.active .list_item_text {
@@ -3939,12 +3937,10 @@ html * {
     transition: all 0.5s;
   }
   .block_image_title_paragraph.active .read_more::before {
-    content: "Read More +";
     opacity: 0;
     transition: all 0.5s;
   }
   .block_image_title_paragraph.active .read_more::after {
-    content: "Read Less -";
     opacity: 1;
     transition: all 0.5s;
   }
