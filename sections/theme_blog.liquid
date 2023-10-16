@@ -4,11 +4,11 @@
   <div class="p-[16px] overflow-x-auto overflow-y-hidden">
     <ul class="blog_tag_nagivation flex gap-[8px] justify-center w-full py-[12px] w-max mx-[auto]">
       <li>
-        <a href="/blogs/{{ blog.title }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px] text-[15px] text-[#B3A094] {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
+        <a href="/blogs/{{ blog.title }}" class="CTA py-[16px] px-[12px] border border-taupe-40 rounded-[16px] text-taupe-40 {% if current_tags.size > 0 %}{% else %} active {% endif %}">ALL</a>
       </li>
       {% for tag in blog.all_tags %}
         <li>
-          <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="py-[16px] px-[12px] border border-[#B3A094] rounded-[16px] text-[15px] text-[#B3A094] {% if current_tags contains tag %} active {% endif %}">{{ tag | upcase }}</a>
+          <a href="/blogs/{{ blog.title }}/tagged/{{ tag }}" class="CTA py-[16px] px-[12px] border border-taupe-40 rounded-[16px] text-taupe-40 {% if current_tags contains tag %} active {% endif %}">{{ tag | upcase }}</a>
         </li>
       {% endfor %}
     </ul>
