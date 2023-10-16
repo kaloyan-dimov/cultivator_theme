@@ -4655,6 +4655,9 @@ html * {
     -moz-column-gap: 16px;
          column-gap: 16px;
   }
+  .sm\:gap-y-\[32px\] {
+    row-gap: 32px;
+  }
   .sm\:self-end {
     align-self: flex-end;
   }
