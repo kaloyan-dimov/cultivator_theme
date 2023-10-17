@@ -13,22 +13,22 @@
       <a href="mailto:{{ settings.shipping_enquiries_email }}" class="flex gap-2 w-full py-6 px-2">
         <div class="w-[72px] h-[68px] icon icon_mail"></div>
         <div class="flex flex-col justify-between gap-4">
-          <h4 class="text-[18px]">Shipping Enquiries</h4>
-          <h4" class="underline">{{ settings.shipping_enquiries_email }}</h4>
+          <h4 class="body-m semibold text-taupe">Shipping Enquiries</h4>
+          <h4" class="body-s underline text-taupe-200">{{ settings.shipping_enquiries_email }}</h4>
         </div>
       </a>
       <div class="flex gap-2 w-full py-6 px-2">
         <div class="w-[72px] h-[68px] icon icon_phone"></div>
         <div class="flex flex-col justify-between gap-4">
-          <h4 class="text-[18px]">Phone</h4>
-          <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="underline">{{ settings.phone_number }}</a>
+          <h4 class="body-m semibold text-taupe">Phone</h4>
+          <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="body-s underline text-taupe-200">{{ settings.phone_number }}</a>
         </div>
       </div>
       <div class="flex gap-2 w-full py-6 px-2">
         <div class="w-[72px] h-[68px] icon icon_address"></div>
         <div class="flex flex-col justify-between gap-4">
-          <h4 class="text-[18px]">Address</h4>
-          <h4>{{ settings.address }}</h4>
+          <h4 class="body-m semibold text-taupe">Address</h4>
+          <h4 class="body-s underline text-taupe-200">{{ settings.address }}</h4>
         </div>
       </div>
     </div>
