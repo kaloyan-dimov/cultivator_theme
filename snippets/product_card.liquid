@@ -17,7 +17,7 @@
         {% endif  %}
       </h2>
       {% if product.metafields.custom.product_short_description != null and product.metafields.custom.product_short_description != '' %}
-      <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden absolute top-[320px] w-[calc(100%-32px)]">{{ product.metafields.custom.product_short_description |  metafield_tag }}</h2>
+        <h2 class="body-s text-taupe-200 text-center mb-[24px] max-h-[68px] overflow-hidden absolute top-[320px] w-[calc(100%-32px)]">{{ product.metafields.custom.product_short_description |  metafield_tag }}</h2>
       {% endif %}
       <h2 class="body-m-semibold text-taupe text-center absolute bottom-[96px] left-[50%] translate-x-[-50%] w-full"> 
         {% if product.price_min == product.price_max %} 
