@@ -1337,9 +1337,6 @@ video {
 .gap-y-\[16px\] {
   row-gap: 16px;
 }
-.gap-y-\[24px\] {
-  row-gap: 24px;
-}
 .gap-y-\[32px\] {
   row-gap: 32px;
 }
@@ -4863,6 +4860,9 @@ html * {
   .sm\:gap-x-\[16px\] {
     -moz-column-gap: 16px;
          column-gap: 16px;
+  }
+  .sm\:gap-y-\[24px\] {
+    row-gap: 24px;
   }
   .sm\:gap-y-\[32px\] {
     row-gap: 32px;
