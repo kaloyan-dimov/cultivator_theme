@@ -14,6 +14,7 @@
       {{ template.name }}
       {% if template.name == null %}
         is null
+        {% render 'banner' %}
       {% else %}
         is not null
       {% endif %}
