@@ -11,7 +11,6 @@
       {% section "theme_header" %}
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
-      page: {{ page | json }}
       {% assign t = template | split: '.' | first %}
       {% if page_title == 'Privacy policy' or t == 'page'%}
         <div class="section">{% include 'breadcrumb' %}</div>
