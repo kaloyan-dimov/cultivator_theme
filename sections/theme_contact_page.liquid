@@ -17,13 +17,13 @@
           <h4" class="body-s underline text-taupe-200">{{ settings.shipping_enquiries_email }}</h4>
         </div>
       </a>
-      <div class="flex gap-2 w-full py-6 px-2">
+      <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="flex w-full h-[68px]">
         <div class="w-[72px] h-[68px] icon icon_phone"></div>
         <div class="flex flex-col justify-between py-[4px] pl-[8px]">
           <h4 class="body-m semibold text-taupe">Phone</h4>
-          <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="body-s underline text-taupe-200">{{ settings.phone_number }}</a>
+          <h4 class="body-s underline text-taupe-200">{{ settings.phone_number }}</h4>
         </div>
-      </div>
+      </a>
       <div class="flex gap-2 w-full py-6 px-2">
         <div class="w-[72px] h-[68px] icon icon_address"></div>
         <div class="flex flex-col justify-between py-[4px] pl-[8px]">
