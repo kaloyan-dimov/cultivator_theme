@@ -1479,11 +1479,6 @@ video {
   border-color: rgba(234, 226, 219, 1);
   border-color: rgba(234, 226, 219, var(--tw-border-opacity));
 }
-.border-taupe {
-  --tw-border-opacity: 1;
-  border-color: rgba(84, 68, 59, 1);
-  border-color: rgba(84, 68, 59, var(--tw-border-opacity));
-}
 .border-taupe-20 {
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
@@ -1834,9 +1829,6 @@ video {
 }
 .pt-\[4px\] {
   padding-top: 4px;
-}
-.pt-\[56px\] {
-  padding-top: 56px;
 }
 .pt-\[66px\] {
   padding-top: 66px;
