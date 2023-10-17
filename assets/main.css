@@ -4401,10 +4401,20 @@ html * {
   border-radius: 12px;
 }
 .contact_us_page form > div > *::-moz-placeholder {
-  color: #7B695E;
+  --tw-text-opacity: 1;
+  color: rgba(143, 118, 102, 1);
+  color: rgba(143, 118, 102, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
 }
 .contact_us_page form > div > *::placeholder {
-  color: #7B695E;
+  --tw-text-opacity: 1;
+  color: rgba(143, 118, 102, 1);
+  color: rgba(143, 118, 102, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
 }
 .contact_us_page form .submit {
   margin-top: 24px;
