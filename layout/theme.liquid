@@ -12,7 +12,7 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       {%- assign t = template | split: '.' | first -%}
-      {{ template }}{{ template == 'collection' }}{{ template == 'product' }}
+      t: {{ t }}
       {% if t == 'collection' or t == 'product' %}
         {% else %}
         <div class="section">{% include 'breadcrumb' %}</div>
