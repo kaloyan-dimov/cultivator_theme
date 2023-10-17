@@ -12,8 +12,8 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       page: {{ page | json }}
-      template {{ template | split: '.' | first }}
-      {% if page_title == 'Privacy policy'%}
+      {% assign t = template | split: '.' | first %}
+      {% if page_title == 'Privacy policy' or t == 'page'%}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
       {% include 'ajax_cart' %}
