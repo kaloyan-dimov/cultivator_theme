@@ -19,7 +19,7 @@
     {% endfor %}
   </div>
 </div>
-{% schema %}
+{% schema %} 
   {
     "name": "Banner",
     "settings": [
@@ -50,7 +50,35 @@
     "presets": [
       {
         "category": "block",
-        "name": "Banner"
+        "name": "Banner",
+        "blocks": [{
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_35.svg",
+            "banner_text": "Dermatologically Tested"
+        }
+},
+          {
+            "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_36.svg",
+            "banner_text": "Cruelty FREE"
+        }},{
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_37.svg",
+            "banner_text": "100% Organic"
+        }
+},{
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_38.svg",
+            "banner_text": "Fairly Sourced"
+        }
+      }],
+      "settings": {
+        "animation_speed": 10
+      }
       }
     ]
   }
