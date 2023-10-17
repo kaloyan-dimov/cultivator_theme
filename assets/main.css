@@ -2002,6 +2002,12 @@ video {
 .line-through {
   text-decoration-line: line-through;
 }
+.placeholder-\[FF0000\]::-moz-placeholder {
+  color: FF0000;
+}
+.placeholder-\[FF0000\]::placeholder {
+  color: FF0000;
+}
 .placeholder-taupe-50::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(143, 118, 102, 1);
@@ -4952,6 +4958,9 @@ html * {
   }
   .md\:left-0 {
     left: 0px;
+  }
+  .md\:left-\[10px\] {
+    left: 10px;
   }
   .md\:top-0 {
     top: 0px;
