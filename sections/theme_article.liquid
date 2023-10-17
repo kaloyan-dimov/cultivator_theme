@@ -1,4 +1,5 @@
 <div class="section">
+  <div class="py-[16px]">{% render 'breadcrumb' %}</div>
   <div class="article_single max-w-[867px] mx-[auto] flex flex-col pb-[56px] px-[0] sm:px-[16px]">
     <h1 class="text-[36px] text-[#54443B] text-center mb-[56px]">{{ article.title }}</h1>
     <div class="w-full h-[240px] sm:h-[407px] md:h-[575px] rounded-[17px] overflow-hidden mb-[32px]">
@@ -10,4 +11,4 @@
     <h2 class="border border-[#E6DFDB] rounded-[12px] text-center py-[10px] mb-[16px] text-[#776255]">by {{ article.author }} | {{ article.published_at | date: "%b %d, %y" }}</h2>
     <div>{{ article.content }}</div>
   </div>
-</div>
+</div> 
