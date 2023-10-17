@@ -1,9 +1,9 @@
 {%- assign t = template | split: '.' | first -%}
 <nav
-  class="breadcrumbs"
+  class="breadcrumbs overflow-auto"
   role="navigation"
   aria-label="breadcrumbs">
-  <ul class="flex gap-[24px]">
+  <ul class="flex gap-[24px] whitespace-nowrap py-[16px]">
     <li class="breadcrumb">
       <a class="body-s text-taupe" href="/">Home</a>
     </li>
