@@ -60,7 +60,7 @@
         </div>
       {% endif %}
       <h1 class="subtitle-1-bold text-taupe mb-[8px]">{{ product.title }}</h1>
-      <div class="body-s text-taupe-200 mb-[16px]">{{ product.metafields.custom.product_short_description }}</div>
+      <div class="body-s text-taupe-200 mb-[16px]">{{ product.metafields.custom.product_short_description |  metafield_tag }}</div>
       <h2 class="product_price mb-[4px]">
         {% assign show_variant_price = product.selected_or_first_available_variant %}
         {% include 'product_price' with show_variant_price %}
