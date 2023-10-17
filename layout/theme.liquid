@@ -14,6 +14,7 @@
       {%- assign t = template | split: '.' | first -%}
       t: {{ t }}
       tit:{{ page_title }}
+      cann: {{ canonical_url }}
       {% if t == 'collection' or t == 'product' ot t == 'customers/login'%}
         {% else %}
         <div class="section">{% include 'breadcrumb' %}</div>
