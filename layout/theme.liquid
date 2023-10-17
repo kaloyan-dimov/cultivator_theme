@@ -11,8 +11,9 @@
       {% section "theme_header" %}
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
+      {%- assign t = template | split: '.' | first -%}
       {{ template }}{{ template == 'collection' }}{{ template == 'product' }}
-      {% if template != 'collection' or template != 'product' %}
+      {% if t != 'collection' or t != 'product' %}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
       {% include 'ajax_cart' %}
