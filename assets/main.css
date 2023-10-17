@@ -1847,6 +1847,9 @@ video {
 .text-\[16px\] {
   font-size: 16px;
 }
+.text-\[17px\] {
+  font-size: 17px;
+}
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -4617,6 +4620,24 @@ html * {
   line-height: 2.1rem;
 }
 .article_single .article_content p {
+  --tw-text-opacity: 1;
+  color: rgba(119, 98, 85, 1);
+  color: rgba(119, 98, 85, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.shopify-policy__container h1 {
+  --tw-text-opacity: 1;
+  color: rgba(84, 68, 59, 1);
+  color: rgba(84, 68, 59, var(--tw-text-opacity));
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 3.04875rem;
+}
+.shopify-policy__container p {
   --tw-text-opacity: 1;
   color: rgba(119, 98, 85, 1);
   color: rgba(119, 98, 85, var(--tw-text-opacity));
