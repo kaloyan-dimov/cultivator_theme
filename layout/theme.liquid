@@ -17,7 +17,7 @@
       cann: {{ canonical_url }}
       handle: {{ page.handle }}
       policy: {{ policy }}
-      {% if t == 'collection' or t == 'product' ot t == 'customers/login'%}
+      {% if page_title == 'customers/login'%}
         {% else %}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
