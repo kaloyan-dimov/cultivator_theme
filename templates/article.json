@@ -11,7 +11,7 @@
         "section_title": "You may also like",
         "title_image": "shopify:\/\/shop_images\/Square_flower.png",
         "b_top": true,
-        "b_bot": false,
+        "b_bot": true,
         "selected_product": "gold-bird-necklace",
         "products_number": 4,
         "recommendation_type": "related"
