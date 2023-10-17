@@ -12,8 +12,7 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       {% assign t = template %}
-      t: {{ t }}
-      {% if page_title == 'Privacy policy' or t == 'page'%}
+      {% if page_title == 'Privacy policy' or t == 'page.contact'%}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
       {% include 'ajax_cart' %}
