@@ -11,7 +11,7 @@
       {% section "theme_header" %}
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
-      {{ page | json }}
+      {{ template | json }}
       {% include 'ajax_cart' %}
       {{ content_for_layout }}
       {% include 'video_player' %}
