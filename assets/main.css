@@ -1358,6 +1358,9 @@ video {
 .overflow-y-hidden {
   overflow-y: hidden;
 }
+.whitespace-nowrap {
+  white-space: nowrap;
+}
 .whitespace-pre-wrap {
   white-space: pre-wrap;
 }
@@ -1745,14 +1748,14 @@ video {
 .pb-\[56px\] {
   padding-bottom: 56px;
 }
+.pb-\[57px\] {
+  padding-bottom: 57px;
+}
 .pb-\[5px\] {
   padding-bottom: 5px;
 }
 .pb-\[63px\] {
   padding-bottom: 63px;
-}
-.pb-\[80px\] {
-  padding-bottom: 80px;
 }
 .pl-\[21px\] {
   padding-left: 21px;
@@ -4874,6 +4877,9 @@ html * {
   }
   .sm\:pb-\[56px\] {
     padding-bottom: 56px;
+  }
+  .sm\:pb-\[80px\] {
+    padding-bottom: 80px;
   }
   .sm\:pr-\[42px\] {
     padding-right: 42px;
