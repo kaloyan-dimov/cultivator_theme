@@ -12,7 +12,7 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       {{ template.name }}
-      {{ page.title }}
+      {{ page | json }}s
       {% if template.name == null %}
         is null
       {% else %}
