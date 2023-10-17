@@ -11,7 +11,7 @@
       {% section "theme_header" %}
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
-      {{ template }}
+      {{ template }}{{ template == 'collection' }}{{ template == 'product' }}
       {% if template != 'collection' or template != 'product' %}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
