@@ -741,6 +741,9 @@ video {
 .mb-\[6px\] {
   margin-bottom: 6px;
 }
+.mb-\[80px\] {
+  margin-bottom: 80px;
+}
 .mb-\[8px\] {
   margin-bottom: 8px;
 }
@@ -4913,8 +4916,8 @@ html * {
   .md\:hidden {
     display: none;
   }
-  .md\:h-\[575px\] {
-    height: 575px;
+  .md\:h-\[559px\] {
+    height: 559px;
   }
   .md\:h-\[614px\] {
     height: 614px;
