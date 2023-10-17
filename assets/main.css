@@ -1860,6 +1860,9 @@ video {
 .pt-\[8px\] {
   padding-top: 8px;
 }
+.pt-\[92px\] {
+  padding-top: 92px;
+}
 .pt-\[9px\] {
   padding-top: 9px;
 }
@@ -5147,6 +5150,9 @@ html * {
   }
   .md\:pt-\[0\] {
     padding-top: 0;
+  }
+  .md\:pt-\[180px\] {
+    padding-top: 180px;
   }
   .md\:pt-\[72px\] {
     padding-top: 72px;
