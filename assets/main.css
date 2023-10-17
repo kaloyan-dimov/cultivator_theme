@@ -4599,6 +4599,24 @@ html * {
 .shopify-policy__container .shopify-policy__body {
   padding: 56px 0;
 }
+
+.article_single .article_content h1 {
+  --tw-text-opacity: 1;
+  color: rgba(84, 68, 59, 1);
+  color: rgba(84, 68, 59, var(--tw-text-opacity));
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 3.04875rem;
+}
+.article_single .article_content p {
+  --tw-text-opacity: 1;
+  color: rgba(119, 98, 85, 1);
+  color: rgba(119, 98, 85, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
 .before\:h-\[21px\]::before {
   content: var(--tw-content);
   height: 21px;
