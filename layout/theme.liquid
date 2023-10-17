@@ -12,7 +12,7 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       {{ template }}
-      {% if  template != 'product' %}
+      {% if template != 'collection' or template != 'product' %}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
       {% include 'ajax_cart' %}
