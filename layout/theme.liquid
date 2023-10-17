@@ -11,12 +11,6 @@
       {% section "theme_header" %}
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
-      {%- assign t = template | split: '.' | first -%}
-      t: {{ t }}
-      tit:{{ page_title }}
-      cann: {{ canonical_url }}
-      handle: {{ page.handle }}s
-      policy: {{ policy }}
       {% if page_title == 'Privacy policy'%}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
