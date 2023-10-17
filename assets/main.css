@@ -4902,8 +4902,14 @@ html * {
   .sm\:pb-\[80px\] {
     padding-bottom: 80px;
   }
+  .sm\:pl-\[64px\] {
+    padding-left: 64px;
+  }
   .sm\:pr-\[42px\] {
     padding-right: 42px;
+  }
+  .sm\:pr-\[64px\] {
+    padding-right: 64px;
   }
   .sm\:pt-\[0\] {
     padding-top: 0;
