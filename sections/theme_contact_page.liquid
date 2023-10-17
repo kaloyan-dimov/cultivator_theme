@@ -2,7 +2,7 @@
   <div class="sm:py-[56px] md:pr-[64px]">
     <h2 class="h1 text-taupe text-center pb-[16px]">{{ section.settings.title1 }}</h2>
     <div class="body-s text-taupe-200 text-center pb-[40px]">{{ section.settings.paragraph1 }}</div>
-    <div class="flex flex-col px-[8px]">
+    <div class="flex flex-col px-[8px] gap-[56px]">
       <a href="mailto:{{ settings.product_enquiries_email }}" class="flex w-full h-[68px]">
         <div class="w-[72px] h-[68px] icon icon_mail"></div>
         <div class="flex flex-col justify-between py-[4px] pl-[8px]">
@@ -12,21 +12,21 @@
       </a>
       <a href="mailto:{{ settings.shipping_enquiries_email }}" class="flex w-full h-[68px]">
         <div class="w-[72px] h-[68px] icon icon_mail"></div>
-        <div class="flex flex-col justify-between">
+        <div class="flex flex-col justify-between py-[4px] pl-[8px]">
           <h4 class="body-m semibold text-taupe">Shipping Enquiries</h4>
           <h4" class="body-s underline text-taupe-200">{{ settings.shipping_enquiries_email }}</h4>
         </div>
       </a>
       <div class="flex gap-2 w-full py-6 px-2">
         <div class="w-[72px] h-[68px] icon icon_phone"></div>
-        <div class="flex flex-col justify-between gap-4">
+        <div class="flex flex-col justify-between py-[4px] pl-[8px]">
           <h4 class="body-m semibold text-taupe">Phone</h4>
           <a href="tel:{{ settings.phone_number | remove: ' ' }}" class="body-s underline text-taupe-200">{{ settings.phone_number }}</a>
         </div>
       </div>
       <div class="flex gap-2 w-full py-6 px-2">
         <div class="w-[72px] h-[68px] icon icon_address"></div>
-        <div class="flex flex-col justify-between gap-4">
+        <div class="flex flex-col justify-between py-[4px] pl-[8px]">
           <h4 class="body-m semibold text-taupe">Address</h4>
           <h4 class="body-s underline text-taupe-200">{{ settings.address }}</h4>
         </div>
