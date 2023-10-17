@@ -2005,12 +2005,6 @@ video {
 .line-through {
   text-decoration-line: line-through;
 }
-.placeholder-\[FF0000\]::-moz-placeholder {
-  color: FF0000;
-}
-.placeholder-\[FF0000\]::placeholder {
-  color: FF0000;
-}
 .placeholder-taupe-50::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(143, 118, 102, 1);
