@@ -16,10 +16,53 @@
         "products_number": 4,
         "recommendation_type": "related"
       }
+    },
+    "75209f51-e54d-4568-9ab8-bf457f86d589": {
+      "type": "block_banner",
+      "blocks": {
+        "8aa0de60-9e1d-4b1d-aa6a-0e7b8b810782": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_35.svg",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "da109dfe-e471-48c2-8fe6-6e792d6e032e": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_36.svg",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "c46bcbd7-acc8-48a0-a960-619e838a70d4": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_37.svg",
+            "banner_text": "100% Organic"
+          }
+        },
+        "fef2da32-b475-4e60-a0c9-01b4dab6f0be": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_38.svg",
+            "banner_text": "Fairly Sourced"
+          }
+        }
+      },
+      "block_order": [
+        "8aa0de60-9e1d-4b1d-aa6a-0e7b8b810782",
+        "da109dfe-e471-48c2-8fe6-6e792d6e032e",
+        "c46bcbd7-acc8-48a0-a960-619e838a70d4",
+        "fef2da32-b475-4e60-a0c9-01b4dab6f0be"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
     }
   },
   "order": [
     "main",
-    "57d57e03-4013-4cb7-96ee-7719588bbb01"
+    "57d57e03-4013-4cb7-96ee-7719588bbb01",
+    "75209f51-e54d-4568-9ab8-bf457f86d589"
   ]
 }
