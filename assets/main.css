@@ -741,9 +741,6 @@ video {
 .mb-\[6px\] {
   margin-bottom: 6px;
 }
-.mb-\[80px\] {
-  margin-bottom: 80px;
-}
 .mb-\[8px\] {
   margin-bottom: 8px;
 }
@@ -1750,6 +1747,9 @@ video {
 }
 .pb-\[63px\] {
   padding-bottom: 63px;
+}
+.pb-\[80px\] {
+  padding-bottom: 80px;
 }
 .pl-\[21px\] {
   padding-left: 21px;
