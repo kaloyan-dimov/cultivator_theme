@@ -693,6 +693,9 @@ video {
 .mb-\[121px\] {
   margin-bottom: 121px;
 }
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
 .mb-\[16px\] {
   margin-bottom: 16px;
 }
@@ -4601,6 +4604,8 @@ html * {
 }
 
 .article_single .article_content h1 {
+  padding-top: 56px;
+  padding-bottom: 33px;
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
