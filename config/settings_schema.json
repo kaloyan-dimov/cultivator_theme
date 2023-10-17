@@ -39,7 +39,7 @@
       },
       {
         "type": "text",
-        "label": "Address Line 1",
+        "label": "Address Line 2",
         "id": "address2"
       },
       {
