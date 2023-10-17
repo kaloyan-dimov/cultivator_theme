@@ -12,6 +12,11 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       {{ template.name }}
+      {% if template.name == null %}
+        is null
+      {% else %}
+        is not null
+      {% endif %}
       {% include 'ajax_cart' %}
       {{ content_for_layout }}
       {% include 'video_player' %}
