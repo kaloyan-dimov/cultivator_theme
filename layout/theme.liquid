@@ -15,6 +15,7 @@
       t: {{ t }}
       tit:{{ page_title }}
       cann: {{ canonical_url }}
+      handle: {{ page.handle }}
       {% if t == 'collection' or t == 'product' ot t == 'customers/login'%}
         {% else %}
         <div class="section">{% include 'breadcrumb' %}</div>
