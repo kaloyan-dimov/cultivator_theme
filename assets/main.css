@@ -1012,6 +1012,9 @@ video {
 .min-h-\[400px\] {
   min-height: 400px;
 }
+.min-h-\[54px\] {
+  min-height: 54px;
+}
 .min-h-\[56px\] {
   min-height: 56px;
 }
@@ -4750,9 +4753,6 @@ html * {
   }
   .sm\:mb-\[0\] {
     margin-bottom: 0;
-  }
-  .sm\:mb-\[24px\] {
-    margin-bottom: 24px;
   }
   .sm\:mb-\[25px\] {
     margin-bottom: 25px;
