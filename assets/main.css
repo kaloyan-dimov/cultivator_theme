@@ -4799,6 +4799,9 @@ html * {
   .sm\:min-h-\[201px\] {
     min-height: 201px;
   }
+  .sm\:min-h-\[27px\] {
+    min-height: 27px;
+  }
   .sm\:w-\[193px\] {
     width: 193px;
   }
