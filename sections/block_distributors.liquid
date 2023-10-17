@@ -1,12 +1,12 @@
 <div class="w-full border-t border-b border-taupe-20">
-<div class="section distributors_section pt-[48px] sm:pt-[72px] pb-[56px]">
+<div class="section distributors_section pt-[48px] sm:pt-[72px] pb-[32px] sm:pb-[56px]">
   {% assign title_text = section.settings.title %}
   {% assign title_image = section.settings.title_image %}
   {% include 'section_title' with title_text, title_image %}
-  <div class="flex flex-wrap justify-center gap-x-[16px] gap-y-[24px]">
+  <div class="flex flex-wrap justify-center gap-x-[16px] gap-y-[16px] sm:gap-y-[24px]">
     {% for block in section.blocks %}
       <div class="flex flex-col bg-white rounded-[48px] border border-taupe-20 p-[24px] pb-[30px] w-full sm:w-[426px]">
-        <h2 class="body-m-semibold text-taupe mb-[30px] sm:mb-[24px]">{{ block.settings.name }}</h2>
+        <h2 class="body-m-semibold text-taupe mb-[24px] min-h-[54px]">{{ block.settings.name }}</h2>
         <div class="mb-[16px] icon icon_address">
           <h2 class="body-s underline">{{ block.settings.address_1 }}</h2>
           <h2 class="body-s underline">{{ block.settings.address_2 }}</h2>
