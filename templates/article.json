@@ -8,7 +8,7 @@
     "57d57e03-4013-4cb7-96ee-7719588bbb01": {
       "type": "block_product_recommendations",
       "settings": {
-        "section_title": "You may also like",
+        "section_title": "You may like",
         "title_image": "shopify:\/\/shop_images\/Square_flower.png",
         "b_top": true,
         "b_bot": true,
