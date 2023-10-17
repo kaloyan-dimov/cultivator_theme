@@ -20,7 +20,7 @@
       {% else %}
         is not null
       {% endif %}
-      {%  include 'breadcrumb' %}
+      <div class="section">{% include 'breadcrumb' %}</div>
       {% include 'ajax_cart' %}
       {{ content_for_layout }}
       {% include 'video_player' %}
