@@ -1,67 +1,77 @@
 [
-    {
-        "name": "Social Media",
-        "settings": [
-            {
-                "type": "url",
-                "label": "Instagram Link",
-                "id": "instagram_link"     
-            },
-            {
-                "type": "url",
-                "label": "Facebook Link",
-                "id": "facebook_link"     
-            },            {
-                "type": "url",
-                "label": "Twitter Link",
-                "id": "twitter_link"     
-            },            {
-                "type": "url",
-                "label": "LinkedIn Link",
-                "id": "linkedin_link"     
-            }
-        ]
-    }, { 
-        "name": "Contact Details",
-        "settings": [
-            {
-                "type": "text",
-                "label": "Phone Number",
-                "id": "phone_number"     
-            },
-            {
-                "type": "textarea",
-                "label": "Address",
-                "id": "address"
-            },
-            {
-                "type": "text",
-                "label": "Working Hours",
-                "id": "working_hours"     
-            },            
-            {
-                "type": "text",
-                "label": "Email",
-                "id": "email"     
-            },{
-                "type": "text",
-                "label": "Shipping Enquiries Email",
-                "id": "shipping_enquiries_email"     
-            },{
-                "type": "text",
-                "label": "Product Enquiries Email",
-                "id": "product_enquiries_email"     
-            }
-        ]
-    },
-    {
-        "name": "Trending Products",
-        "settings": [
-            {
-                "type": "product_list",
-                "label": "Products List",
-                "id": "trending_products"
-            }
-        ]
-    }
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "url",
+        "label": "Instagram Link",
+        "id": "instagram_link"
+      },
+      {
+        "type": "url",
+        "label": "Facebook Link",
+        "id": "facebook_link"
+      },
+      {
+        "type": "url",
+        "label": "Twitter Link",
+        "id": "twitter_link"
+      },
+      {
+        "type": "url",
+        "label": "LinkedIn Link",
+        "id": "linkedin_link"
+      }
+    ]
+  },
+  {
+    "name": "Contact Details",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Phone Number",
+        "id": "phone_number"
+      },
+      {
+        "type": "text",
+        "label": "Address Line 1",
+        "id": "address1"
+      },
+      {
+        "type": "text",
+        "label": "Address Line 1",
+        "id": "address2"
+      },
+      {
+        "type": "text",
+        "label": "Working Hours",
+        "id": "working_hours"
+      },
+      {
+        "type": "text",
+        "label": "Email",
+        "id": "email"
+      },
+      {
+        "type": "text",
+        "label": "Shipping Enquiries Email",
+        "id": "shipping_enquiries_email"
+      },
+      {
+        "type": "text",
+        "label": "Product Enquiries Email",
+        "id": "product_enquiries_email"
+      }
+    ]
+  },
+  {
+    "name": "Trending Products",
+    "settings": [
+      {
+        "type": "product_list",
+        "label": "Products List",
+        "id": "trending_products"
+      }
+    ]
+  }
 ]
