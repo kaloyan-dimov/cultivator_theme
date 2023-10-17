@@ -60,8 +60,7 @@
         </div>
       {% endif %}
       <h1 class="subtitle-1-bold text-taupe mb-[8px]">{{ product.title }}</h1>
-      <div class="body-s text-taupe-200 mb-[16px]">{{ product.description }}</div>
-
+      <div class="body-s text-taupe-200 mb-[16px]">{{ product.metafields.custom.product_short_description }}</div>
       <h2 class="product_price mb-[4px]">
         {% assign show_variant_price = product.selected_or_first_available_variant %}
         {% include 'product_price' with show_variant_price %}
@@ -135,7 +134,7 @@
       {% endfor %}
     </div>
     <ul class="w-full flex flex-col">
-      {% if product.metafields.custom.product_short_description != null and product.metafields.custom.product_short_description != '' %}
+        {% if product.description != null and product.description != '' %}
         <li class="border-t border-taupe-20">
           <div class="list_item flex flex-col px-[16px]">
             <div class="list_title h-[63px] flex justify-between items-center cursor-pointer">
@@ -143,7 +142,7 @@
               <div class="list_arrow h-[32px] w-[32px]"></div>
             </div>
             <div class="list_content">
-              <h3 class="body-s text-taupe">{{ product.metafields.custom.product_short_description | metafield_tag }}</h3>
+              <h3 class="body-s text-taupe">{{ product.description }}</h3>
             </div>
           </li>
         {% endif %}
