@@ -4604,10 +4604,9 @@ html * {
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
-  font-family: "Prata";
-  font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 3.04875rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.1rem;
 }
 .article_single .article_content p {
   --tw-text-opacity: 1;
