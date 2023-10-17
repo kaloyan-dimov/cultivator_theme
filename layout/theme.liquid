@@ -13,6 +13,7 @@
     <main class="main pt-[81px] lg:pt-[97px]">
       {%- assign t = template | split: '.' | first -%}
       t: {{ t }}
+      tit:{{ page_title }}
       {% if t == 'collection' or t == 'product' ot t == 'customers/login'%}
         {% else %}
         <div class="section">{% include 'breadcrumb' %}</div>
