@@ -11,8 +11,9 @@
       {% section "theme_header" %}
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
+      {{ template }}
       {% if template != 'collection' %}
-      <div class="section">{% include 'breadcrumb' %}</div>
+        <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
       {% include 'ajax_cart' %}
       {{ content_for_layout }}
