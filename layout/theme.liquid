@@ -12,7 +12,7 @@
     </div>
     <main class="main pt-[81px] lg:pt-[97px]">
       page: {{ page | json }}
-      template {{ template }}
+      template {{ template | split: '.' | first }}
       {% if page_title == 'Privacy policy'%}
         <div class="section">{% include 'breadcrumb' %}</div>
       {% endif %}
