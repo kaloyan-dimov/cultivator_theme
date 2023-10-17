@@ -4364,8 +4364,8 @@ html * {
 .contact_us_page form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-top: 24px;
+  gap: 16px;
+  padding-top: 32px;
 }
 .contact_us_page form > div {
   width: 100%;
