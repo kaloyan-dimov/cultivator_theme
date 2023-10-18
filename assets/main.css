@@ -1884,6 +1884,9 @@ video {
 .pt-\[76px\] {
   padding-top: 76px;
 }
+.pt-\[7px\] {
+  padding-top: 7px;
+}
 .pt-\[81px\] {
   padding-top: 81px;
 }
@@ -4512,7 +4515,7 @@ html * {
   padding-left: 12px;
   padding-right: 12px;
   border-radius: 16px;
-  gap: 6px;
+  gap: 4px;
   transition: all 0.5s;
   text-transform: uppercase;
   border-width: 1px;
