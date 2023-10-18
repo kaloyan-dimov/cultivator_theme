@@ -4695,12 +4695,6 @@ html * {
   max-height: 1000px;
   transition: all 0.5s;
 }
-.faq_questions li.active:not(:last-child) {
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgba(230, 223, 219, 1);
-  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
-}
 
 .shopify-policy__container {
   max-width: 867px;
