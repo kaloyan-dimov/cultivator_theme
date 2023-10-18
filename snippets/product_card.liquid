@@ -69,7 +69,7 @@
       <div class="absolute left-[0] top-[28px] flex flex-col gap-[8px]">
         {% for tag in product.tags %}
           {% assign tagcheck = tag | downcase %}
-          <span class="pt-[4px] pb-[5px] px-[12px] rounded-r-[9px] product-labels text-taupe-800 {% if tagcheck contains "new launch" %} bg-[#D8E2DC] {% elsif tagcheck contains "%" %} true bg-[#FAE1DD] {% else %} bg-[#DEE2FF] {% endif %} ">{{ tag }}</span>
+          <span class="pt-[4px] pb-[5px] px-[12px] rounded-r-[9px] product-labels text-taupe-800 w-fit uppercase {% if tagcheck contains "new launch" %} bg-[#D8E2DC] {% elsif tagcheck contains "%" %} true bg-[#FAE1DD] {% else %} bg-[#DEE2FF] {% endif %} ">{{ tag }}</span>
         {% endfor %}
       </div>
     {% endif %}
