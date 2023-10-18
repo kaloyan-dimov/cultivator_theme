@@ -1847,6 +1847,9 @@ video {
 .pt-\[31px\] {
   padding-top: 31px;
 }
+.pt-\[32px\] {
+  padding-top: 32px;
+}
 .pt-\[33px\] {
   padding-top: 33px;
 }
@@ -1855,9 +1858,6 @@ video {
 }
 .pt-\[38px\] {
   padding-top: 38px;
-}
-.pt-\[3px\] {
-  padding-top: 3px;
 }
 .pt-\[44px\] {
   padding-top: 44px;
@@ -5093,6 +5093,9 @@ html * {
   }
   .sm\:pt-\[16px\] {
     padding-top: 16px;
+  }
+  .sm\:pt-\[3px\] {
+    padding-top: 3px;
   }
   .sm\:pt-\[56px\] {
     padding-top: 56px;
