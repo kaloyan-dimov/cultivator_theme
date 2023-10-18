@@ -74,14 +74,12 @@
                   <h2 class="body-s text-taupe-x justify-self-end">TOTAL</h2>
                 </div>
                 {% for line_item in order.line_items %}
-                  <div
-                    class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px]">
-                    <h2>{{ line_item.title }}</h2>
-                    <h2>{{ line_item.sku }}</h2>
-                    <h2>{{ line_item.price | money_with_currency }}</h2>
-                    <h2>{{ line_item.quantity }}</h2>
-                    <h2
-                      class="justify-self-end">{{ line_item.price | money_with_currency }}</h2>
+                  <div class="grid grid-cols-5 h-[56px] items-center border-t border-[#E6DFDB] px-[24px]">
+                    <h2 class="body-m-semibold text-taupe underline">{{ line_item.title }}</h2>
+                    <h2 class="body-s-semibold text-taupe-x">{{ line_item.sku }}</h2>
+                    <h2 class="body-s-semibold text-taupe">{{ line_item.price | money_with_currency }}</h2>
+                    <h2 class="body-s-semibold text-taupe-x">{{ line_item.quantity }}</h2>
+                    <h2 class="body-s-semibold text-taupe justify-self-end">{{ line_item.price | money_with_currency }}</h2>
                   </div>
                 {% endfor %}
                 <div
