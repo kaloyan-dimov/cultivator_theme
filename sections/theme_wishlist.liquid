@@ -10,7 +10,7 @@
           {% assign product = all_products[wishlist_item] %}
           {% include 'product_card_wishlist' with product %}
         {% else %}
-          Your wishlist is empty, start shopping now!
+        <h3 class="body-I text-taupe">Your wishlist is empty, start shopping now!</h3>
         {% endif %}
       {% endfor %}
     </div>
