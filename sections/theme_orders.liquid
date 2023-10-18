@@ -18,19 +18,17 @@
             <h2 class="body-s text-taupe-x">DATE</h2>
             <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
           </div>
-          <div
-            class="w-full flex justify-between">
-            <h2>PAYMENT STATUS</h2>
+          <div class="w-full flex justify-between">
+            <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
             <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
           </div>
           <div
             class="w-full flex justify-between">
-            <h2>FULFILMENT STATUS</h2>
+            <h2 class="body-s text-taupe-x">FULFILMENT STATUS</h2>
             <h2>{{ order.fulfillment_status_label }}</h2>
           </div>
-          <div
-            class="w-full flex justify-between">
-            <h2>TOTAL</h2>
+          <div class="w-full flex justify-between">
+            <h2 class="body-s text-taupe-x">TOTAL</h2>
             <h2>{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
         </div>
