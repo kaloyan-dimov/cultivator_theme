@@ -1476,11 +1476,6 @@ video {
 .border-t {
   border-top-width: 1px;
 }
-.border-\[\#CCAC71\] {
-  --tw-border-opacity: 1;
-  border-color: rgba(204, 172, 113, 1);
-  border-color: rgba(204, 172, 113, var(--tw-border-opacity));
-}
 .border-\[\#E6DFDB\] {
   --tw-border-opacity: 1;
   border-color: rgba(230, 223, 219, 1);
@@ -1861,6 +1856,9 @@ video {
 .pt-\[38px\] {
   padding-top: 38px;
 }
+.pt-\[3px\] {
+  padding-top: 3px;
+}
 .pt-\[44px\] {
   padding-top: 44px;
 }
@@ -1932,9 +1930,6 @@ video {
 }
 .text-\[20px\] {
   font-size: 20px;
-}
-.text-\[24px\] {
-  font-size: 24px;
 }
 .text-\[25px\] {
   font-size: 25px;
