@@ -4663,7 +4663,7 @@ html * {
   line-height: 1.18125rem;
   letter-spacing: 0.0375rem;
 }
-.faq_navigation li.active {
+.faq_navigation li:hover, .faq_navigation li.active {
   transition: all 0.5s;
   --tw-bg-opacity: 1;
   background-color: rgba(179, 160, 148, 1);
@@ -4672,7 +4672,7 @@ html * {
   color: rgba(255, 255, 255, 1);
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
-.faq_navigation li.active h3 {
+.faq_navigation li:hover h3, .faq_navigation li.active h3 {
   transition: all 0.5s;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, 1);
