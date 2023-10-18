@@ -1758,9 +1758,6 @@ video {
 .pb-\[171px\] {
   padding-bottom: 171px;
 }
-.pb-\[23px\] {
-  padding-bottom: 23px;
-}
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -1987,11 +1984,6 @@ video {
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
-}
-.text-taupe-20 {
-  --tw-text-opacity: 1;
-  color: rgba(230, 223, 219, 1);
-  color: rgba(230, 223, 219, var(--tw-text-opacity));
 }
 .text-taupe-200 {
   --tw-text-opacity: 1;
@@ -4631,7 +4623,7 @@ html * {
   gap: 8px;
 }
 .faq_navigation li {
-  height: 51px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
