@@ -6,7 +6,7 @@
   <div class="w-full px-[25px] overflow-x-auto">
     <ul class="faq_navigation justify-center mx-[auto] my-[12px] w-max"></ul>
   </div>
-  <ul class="w-full flex flex-col max-w-[868px] mx-[auto] faq_questions">
+  <ul class="w-full flex flex-col max-w-[868px] mx-[auto] faq_questions pb-[56px]">
     {% for block in section.blocks %}
       <li class="border-b border-taupe-20 active" data-category="{{ block.settings.category | upcase }}">
         <div class="list_item flex flex-col px-[16px]">
