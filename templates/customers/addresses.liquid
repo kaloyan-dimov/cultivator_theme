@@ -4,14 +4,14 @@
   <div class="section mt-[48px] sm:mt-[60px] overflow-hidden">
     <div class="flex flex-col gap-[16px]">
       {% if customer.addresses_count > 0 %}
-        <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
+        <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-taupe-20 p-[24px] m-auto">
           <div class="flex flex-col w-full">
             <h2 class="body-I-semibold text-taupe-x mb-[8px]">Default address</h2>
             <h3 class="body-m text-taupe-x mb-[4px]">{{ customer.default_address.name }}</h3>
             <h3 class="body-m text-taupe-x mb-[8px] sm:mb-[0]">{{ customer.default_address.country }}</h3>
           </div>
           <div class="w-full flex sm:justify-end sm:items-start">
-            <button class="edit_address_button body-m-semibold underline text-taupe-x ">Edit</button>
+            <button class="edit_address_button body-m-semibold underline text-taupe-x pt-[3px]">Edit</button>
             {% assign form_address = customer.default_address %}
             {% assign existing = true %}
             {% include 'address_form' with form_address, existing %}
@@ -19,14 +19,14 @@
         </div>
         {% for address in customer.addresses %}
           {% if customer.default_address.id != address.id %}
-            <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-[#E6DFDB] p-[24px] m-auto">
+            <div class="flex flex-col sm:flex-row w-full max-w-[868px] bg-white rounded-[20px] border border-taupe-20 p-[24px] m-auto">
               <div class="flex flex-col w-full">
                 <h2 class="body-I-semibold text-taupe-x mb-[8px]">Secondary address</h2>
                 <h3 class="body-m text-taupe-x mb-[4px]">{{ address.name }}</h3>
                 <h3 class="body-m text-taupe-x mb-[8px] sm:mb-[0]">{{ address.country }}</h3>
               </div>
               <div class="w-full flex sm:justify-end sm:items-start">
-                <button class="edit_address_button body-m-semibold underline text-taupe-x">Edit</button>
+                <button class="edit_address_button body-m-semibold underline text-taupe-x pt-[3px]">Edit</button>
                 {% assign form_address = address %}
                 {% assign existing = true %}
                 {% include 'address_form' with form_address, existing %}
