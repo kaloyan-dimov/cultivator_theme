@@ -16,11 +16,11 @@
           </div>
           <div class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">DATE</h2>
-            <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
+            <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
           </div>
           <div class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
-            <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
+            <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
           </div>
           <div
             class="w-full flex justify-between">
