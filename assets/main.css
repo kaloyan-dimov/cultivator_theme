@@ -4688,18 +4688,12 @@ html * {
 .faq_questions li {
   transform: scaleY(0);
   max-height: 0;
-  transition: max-height 0.5s, transform 0.5s;
+  transition: all 0.5s;
 }
 .faq_questions li.active {
   transform: scaleY(1);
   max-height: 1000px;
-  transition: max-height 0.5s, transform 0.5s;
-}
-.faq_questions li.active:not(:last-child) {
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgba(230, 223, 219, 1);
-  border-color: rgba(230, 223, 219, var(--tw-border-opacity));
+  transition: all 0.5s;
 }
 
 .shopify-policy__container {
