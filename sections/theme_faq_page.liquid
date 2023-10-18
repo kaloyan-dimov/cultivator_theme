@@ -8,7 +8,7 @@
   </div>
   <ul class="w-full flex flex-col max-w-[900px] px-[16px] mx-[auto] faq_questions pb-[56px] pt-[6px]">
     {% for block in section.blocks %}
-      <li class="active border-b border-taupe-20 last:border-b-0" data-category="{{ block.settings.category | upcase }}">
+      <li class="active border-b border-taupe-20 " data-category="{{ block.settings.category | upcase }}">
         <div class="list_item flex flex-col">
           <div class="list_title h-[79px] flex justify-between items-center cursor-pointer">
             <h2 class="body-m text-taupe">{{ block.settings.title }}</h2>
