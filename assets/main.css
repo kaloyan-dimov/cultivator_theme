@@ -780,9 +780,6 @@ video {
 .mt-\[5px\] {
   margin-top: 5px;
 }
-.mt-\[60px\] {
-  margin-top: 60px;
-}
 .mt-\[8px\] {
   margin-top: 8px;
 }
@@ -1728,6 +1725,10 @@ video {
 .py-\[19px\] {
   padding-top: 19px;
   padding-bottom: 19px;
+}
+.py-\[23px\] {
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 .py-\[24px\] {
   padding-top: 24px;
@@ -5139,6 +5140,9 @@ html * {
   }
   .md\:mt-\[0\] {
     margin-top: 0;
+  }
+  .md\:mt-\[60px\] {
+    margin-top: 60px;
   }
   .md\:mt-\[82px\] {
     margin-top: 82px;
