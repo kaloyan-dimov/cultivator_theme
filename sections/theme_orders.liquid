@@ -81,14 +81,14 @@
                     <h2 class="body-s-semibold text-taupe justify-self-end">{{ line_item.price | money_with_currency }}</h2>
                   </div>
                 {% endfor %}
-                <div class="flex justify-between h-[56px] items-center border-t border-taupe-20 mx-[16px]">
-                  <div class="flex flex-col">
-                    <h2>Subtotal</h2>
-                    <h2>Shipping</h2>
+                <div class="flex justify-between h-[56px] items-center border-t border-taupe-20 mx-[16px] py-[8px]">
+                  <div class="flex flex-col gap-[16px]">
+                    <h2 class="body-m text-taupe">Subtotal</h2>
+                    <h2 class="body-m text-taupe">Shipping</h2>
                   </div>
-                  <div class="flex flex-col">
-                    <h2 class="justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
-                    <h2 class="justify-self-end">{{ order.shipping_price | money_with_currency }}</h2>
+                  <div class="flex flex-col gap-[16px]">
+                    <h2 class="justify-self-end body-m-semibold text-taupe">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+                    <h2 class="justify-self-end body-m-semibold text-taupe">{{ order.shipping_price | money_with_currency }}</h2>
                   </div>
                 </div>
                 <div class="flex justify-between h-[56px] items-center border-t border-taupe-20 px-[24px]">
