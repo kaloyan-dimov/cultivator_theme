@@ -3,14 +3,11 @@
     <div class="max-w-[662px] bg-white px-[16px] pt-[24px] pb-[32px] rounded-[24px]">
       <!-- form content -->
       <div class="flex flex-wrap gap-y-[16px]">
-        <div
-          class="w-full flex justify-between">
-          <h2
-            class="w-1/2 text-underline sm:self-end">Edit address</h2>
+        <div class="w-full flex justify-between">
+          <h2 class="w-1/2 text-underline sm:self-end">Edit address</h2>
           {% if existing %}existing
           {% endif %}
-          <h2
-            class="close_address_button underline">Close</h2>
+          <h2 class="close_address_button underline">Close</h2>
         </div>
         <select
           data-selected-country="{{ form_address.country }}"
@@ -18,8 +15,7 @@
           name="address[country]">
           {{ all_country_option_tags }}
         </select>
-        <div
-          class="flex flex-col sm:flex-row gap-x-[8px] w-full gap-y-[16px]">
+        <div class="flex flex-col sm:flex-row gap-x-[8px] w-full gap-y-[16px]">
           <input
             class="w-full rounded-[12px] border border-[#EAE2DB] py-[14.5px] px-[16px]"
             type="text"
@@ -66,8 +62,7 @@
           name="address[phone]"
           placeholder="Phone"
           value="{{ form_address.phone }}">
-        <h3
-          class="w-full">
+        <h3 class="w-full">
           {{ form.set_as_default_checkbox }} set as default
         </h3>
         <button
