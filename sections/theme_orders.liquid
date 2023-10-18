@@ -49,11 +49,10 @@
       <div
         class="grid grid-cols-5 h-[63px] pb-[8px] items-center px-[24px]">
         <h2 class="body-s text-taupe-x">ORDER</h2>
-        <h2>DATE</h2>
-        <h2>PAYMENT STATUS</h2>
-        <h2>FULFILMENT STATUS</h2>
-        <h2
-          class="justify-self-end">TOTAL</h2>
+        <h2 class="body-s text-taupe-x">DATE</h2>
+        <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
+        <h2 class="body-s text-taupe-x">FULFILMENT STATUS</h2>
+        <h2 class="body-s text-taupe-x justify-self-end">TOTAL</h2>
       </div>
       {% paginate customer.orders by 10 %}
         {% for order in customer.orders %}
