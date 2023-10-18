@@ -52,8 +52,7 @@
       </div>
       {% paginate customer.orders by 10 %}
         {% for order in customer.orders %}
-          <div
-            class="order">
+          <div class="order">
             <div
               class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
               <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
@@ -82,7 +81,7 @@
                     <h2 class="body-s-semibold text-taupe justify-self-end">{{ line_item.price | money_with_currency }}</h2>
                   </div>
                 {% endfor %}
-                <div class="flex justify-between h-[56px] items-center border-t border-taupe-20 px-[24px]">
+                <div class="flex justify-between h-[56px] items-center border-t border-taupe-20 mx-[16px]">
                   <div class="flex flex-col">
                     <h2>Subtotal</h2>
                     <h2>Shipping</h2>
