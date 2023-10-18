@@ -20,16 +20,16 @@
           </div>
           <div class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
-            <h2>{{ order.created_at | date: '%B %d, %Y' }}</h2>
+            <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
           </div>
           <div
             class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">FULFILMENT STATUS</h2>
-            <h2>{{ order.fulfillment_status_label }}</h2>
+            <h2 class="body-s-semibold text-taupe-x">{{ order.fulfillment_status_label }}</h2>
           </div>
           <div class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">TOTAL</h2>
-            <h2>{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+            <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
         </div>
       {% endfor %}
