@@ -11,7 +11,7 @@
             <h3 class="body-m text-taupe-x mb-[8px] sm:mb-[0]">{{ customer.default_address.country }}</h3>
           </div>
           <div class="w-full flex sm:justify-end sm:items-start">
-            <button class="edit_address_button body-m-semibold underline text-taupe-x pt-[3px]">Edit</button>
+            <button class="edit_address_button body-m-semibold underline text-taupe-x sm:pt-[3px]">Edit</button>
             {% assign form_address = customer.default_address %}
             {% assign existing = true %}
             {% include 'address_form' with form_address, existing %}
@@ -26,7 +26,7 @@
                 <h3 class="body-m text-taupe-x mb-[8px] sm:mb-[0]">{{ address.country }}</h3>
               </div>
               <div class="w-full flex sm:justify-end sm:items-start">
-                <button class="edit_address_button body-m-semibold underline text-taupe-x pt-[3px]">Edit</button>
+                <button class="edit_address_button body-m-semibold underline text-taupe-x sm:pt-[3px]">Edit</button>
                 {% assign form_address = address %}
                 {% assign existing = true %}
                 {% include 'address_form' with form_address, existing %}
