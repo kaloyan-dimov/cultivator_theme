@@ -11,12 +11,10 @@
           class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px]">
           <div
             class="w-full flex justify-between">
-            <h2>ORDER</h2>
-            <h2
-              class="underline">#{{ order.order_number }}</h2>
+            <h2 class="body-s text-taupe-x">ORDER</h2>
+            <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
           </div>
-          <div
-            class="w-full flex justify-between">
+          <div class="w-full flex justify-between">
             <h2>DATE</h2>
             <h2>{{ order.financial_status_label }}</h2>
           </div>
@@ -60,7 +58,7 @@
             class="order">
             <div
               class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
-              <h2 class="body-s-semibold-underline text-taupe-x underline">#{{ order.order_number }}</h2>
+              <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
               <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
               <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
               <h2 class="body-s-semibold text-taupe-x">{{ order.fulfillment_status_label }}</h2>
