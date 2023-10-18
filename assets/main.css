@@ -4855,9 +4855,6 @@ html * {
   content: var(--tw-content);
   width: 31px;
 }
-.last\:mb-\[31px\]:last-child {
-  margin-bottom: 31px;
-}
 .last\:border-b-0:last-child {
   border-bottom-width: 0px;
 }
