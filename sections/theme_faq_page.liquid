@@ -2,20 +2,20 @@
   {% include 'breadcrumb' %}
 </div>
 <div class="w-full">
-  <h1 class="h1 text-taupe m-auto text-center">FAQs</h1>
+  <h1 class="h1 text-taupe m-auto text-center pt-[25px] pb-[23px]">FAQs</h1>
   <div class="w-full px-[25px] overflow-x-auto">
     <ul class="faq_navigation justify-center mx-[auto] my-[12px] w-max"></ul>
   </div>
   <ul class="w-full flex flex-col max-w-[868px] mx-[auto] faq_questions">
     {% for block in section.blocks %}
-      <li class="border-b border-[#E6DFDB] active" data-category="{{ block.settings.category | upcase }}">
+      <li class="border-b border-taupe-20 active" data-category="{{ block.settings.category | upcase }}">
         <div class="list_item flex flex-col px-[16px]">
-          <div class="list_title h-[64px] flex justify-between items-center cursor-pointer">
-            <h2 class="text-[16px]">{{ block.settings.title }}</h2>
+          <div class="list_title h-[80px] flex justify-between items-center cursor-pointer">
+            <h2 class="body-m text-taupe">{{ block.settings.title }}</h2>
             <div class="list_arrow h-[32px] w-[32px]"></div>
           </div>
           <div class="list_content pb-[16px]">
-            <p>{{ block.settings.paragraph }}</p>
+            <p class="body-s text-taupe-20">{{ block.settings.paragraph }}</p>
           </div>
         </div>
       </li>
