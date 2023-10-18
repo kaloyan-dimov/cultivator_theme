@@ -4,11 +4,11 @@
     <div class="bg-white rounded-[20px] w-full flex flex-col p-6 border border-[#E6DFDB] m-auto max-w-[868px] gap-[2px]">
       <div class="w-full flex justify-between">
         <h2 class="body-I-semibold text-taupe-x">{{ customer.first_name }} {{ customer.last_name }}</h2>
-        <h2 class="recover_password_trigger body-m-semibold text-taupe-x underline cursor-pointer pt-[4px] none sm:block">Reset Password</h2>
+        <h2 class="recover_password_trigger body-m-semibold text-taupe-x underline cursor-pointer pt-[4px] hidden sm:block">Reset Password</h2>
       </div>
       <h2 class="body-m text-taupe-x pt-[7px]">{{ customer.email }}</h2>
       <h2 class="body-m text-taupe-x">************</h2>
-      <h2 class="recover_password_trigger body-m-semibold text-taupe-x underline cursor-pointer pt-[4px] sm:none block">Reset Password</h2>
+      <h2 class="recover_password_trigger body-m-semibold text-taupe-x underline cursor-pointer pt-[4px] sm:hidden block">Reset Password</h2>
       {% comment %}
         <h2>Password length</h2>
         <h2 class="recover_password_trigger">Reset password</h2>
