@@ -2227,6 +2227,12 @@ html * {
   line-height: 1.3125rem;
 }
 
+.body-I-semibold {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
 .h1 {
   font-family: "Prata";
   font-weight: 400;
