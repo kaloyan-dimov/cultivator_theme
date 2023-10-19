@@ -4982,6 +4982,9 @@ html * {
   .sm\:items-start {
     align-items: flex-start;
   }
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
   .sm\:justify-end {
     justify-content: flex-end;
   }
