@@ -41,11 +41,8 @@
         <div class="options_list flex flex-col w-full absolute left-[0] bg-white  h-[114px] pt-[21px] border-t border-taupe-20">
           <div class="flex gap-[11px] justify-between">
             {% for variant in product.variants %}
-              <h4
-                data-id="{{ variant.id }}"
-                data-price="{{ variant.price | money }}"
-                class="body-s-semibold
-                add_option flex flex-grow h-[34px] border border-taupe-20 justify-center items-center rounded-[12px] cursor-pointer
+              <h4 data-id="{{ variant.id }}" data-price="{{ variant.price | money }}"
+                class="body-s-semibold add_option flex flex-grow h-[34px] border border-taupe-20 justify-center items-center rounded-[12px] cursor-pointer
                 {% if forloop.index == 1 %}
                   active
                 {% endif %}">
