@@ -4,7 +4,7 @@
   <div class="section mt-[48px] md:mt-[60px]">
   {% comment %} Mobile {% endcomment %}
   <div class="overflow-hidden md:hidden">
-    <div class="orders_wrapper active flex md:hidden flex-col gap-[16px]">
+    <div class="orders_wrapper active flex md:hidden flex-col gap-[16px] relative">
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         <div class="order">
@@ -35,7 +35,7 @@
             </div>
           {% comment %}{% endcomment %}
             <div class="order_content absolute top-[0]">
-                <h2 class="hidden order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
+                <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
                 <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
                 <div class="bg-white border border-taupe-20 rounded-[20px] py-[24px]">
                   {% for line_item in order.line_items %}
