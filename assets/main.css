@@ -5119,14 +5119,11 @@ html * {
   }
 }
 @media (min-width: 1024px) {
-  .md\:bottom-\[111px\] {
-    bottom: 111px;
+  .md\:bottom-\[64px\] {
+    bottom: 64px;
   }
   .md\:left-\[10px\] {
     left: 10px;
-  }
-  .md\:z-\[1\] {
-    z-index: 1;
   }
   .md\:mx-\[0\] {
     margin-left: 0;
