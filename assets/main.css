@@ -2743,7 +2743,7 @@ html * {
 @media (min-width: 1024px) {
   .hero_swiper .swiper-button-prev,
 .hero_swiper .swiper-button-next {
-    position: absolute;
+    display: block;
   }
 }
 .hero_swiper .swiper-button-prev {
