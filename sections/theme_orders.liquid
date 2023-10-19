@@ -6,7 +6,7 @@
   <div class="flex md:hidden flex-col gap-[16px]">
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
-        <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px]">
+        <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px] relative">
           <div class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">ORDER</h2>
             <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
@@ -28,9 +28,8 @@
             <h2 class="body-s text-taupe-x">TOTAL</h2>
             <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
-        {% comment %}{% endcomment %}
-          {% for order in customer.orders %}
-            <div class="order">
+          
+            <div class="border border-1 border-[#FF0000] absolute top-[0] left-[0]">
               <div class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
                 <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
                 <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
@@ -75,8 +74,6 @@
                 </div>
               </div>
             </div>
-          {% endfor %}
-        {% comment %}{% endcomment %}
         </div>
       {% endfor %}
       {{ paginate | default_pagination }}
