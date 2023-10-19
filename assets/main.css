@@ -2191,6 +2191,13 @@ html * {
   line-height: 2.975rem;
 }
 
+.h1 {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 3.04875rem;
+}
+
 .h2 {
   font-family: "Prata";
   font-size: 2rem;
@@ -2260,13 +2267,6 @@ html * {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.25rem;
-}
-
-.h1 {
-  font-family: "Prata";
-  font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 3.04875rem;
 }
 
 .no-scroll {
