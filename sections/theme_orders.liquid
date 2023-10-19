@@ -3,7 +3,8 @@
 
   <div class="section mt-[48px] md:mt-[60px]">
   {% comment %} Mobile {% endcomment %}
-  <div class="flex md:hidden flex-col gap-[16px]">
+  <div class="overflow-hidden md:hidden">
+    <div class="flex md:hidden flex-col gap-[16px]">
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px]">
@@ -79,10 +80,11 @@
       {{ paginate | default_pagination }}
     {% endpaginate %}
   </div>
+</div>
 
   {% comment %} Desktop {% endcomment %}
-  <div class="overflow-hidden">
-    <div class="orders_wrapper active hidden md:flex flex-col w-full bg-white border border-taupe-20 rounded-[20px] relative py-[24px]">
+  <div class="overflow-hidden hidden md:flex">
+    <div class="orders_wrapper active flex-col w-full bg-white border border-taupe-20 rounded-[20px] relative py-[24px]">
       <div class="grid grid-cols-5 h-[63px] pb-[8px] items-center px-[24px]">
         <h2 class="body-s text-taupe-x">ORDER</h2>
         <h2 class="body-s text-taupe-x">DATE</h2>
