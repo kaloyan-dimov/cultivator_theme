@@ -4,7 +4,7 @@
 <div class="section mt-[16px] mt-[28px]">
   <div class="flex flex-col relative">
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
-    <div class="flex flex-wrap gap-y-[24px] gap-x-[16px]">
+    <div class="flex flex-wrap gap-y-[16px] sm:gap-y-[24px] gap-x-[16px] justify-center items-center">
       {% for wishlist_item in wishlist_array %}
         {% if wishlist_item != "null" %}
           {% assign product = all_products[wishlist_item] %}
