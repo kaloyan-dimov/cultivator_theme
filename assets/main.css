@@ -5125,10 +5125,6 @@ html * {
   .md\:left-\[10px\] {
     left: 10px;
   }
-  .md\:mx-\[0\] {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .md\:mb-\[201px\] {
     margin-bottom: 201px;
   }
