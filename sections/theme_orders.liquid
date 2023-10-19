@@ -28,6 +28,52 @@
             <h2 class="body-s text-taupe-x">TOTAL</h2>
             <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
+          
+            <div class="border border-1 border-[#FF0000] order">
+              <div class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
+                <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.fulfillment_status_label }}</h2>
+                <h2 class="body-s-semibold text-taupe-x justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+              </div>
+              <div class="order_content absolute top-[0]">
+                <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
+                <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
+                <div class="bg-white border border-taupe-20 rounded-[20px] py-[24px]">
+                  <div class="grid grid-cols-5 h-[63px] pb-[8px] items-center px-[24px]">
+                    <h2 class="body-s text-taupe-x">PRODUCT</h2>
+                    <h2 class="body-s text-taupe-x">SKU</h2>
+                    <h2 class="body-s text-taupe-x">PRICE</h2>
+                    <h2 class="body-s text-taupe-x">QTY</h2>
+                    <h2 class="body-s text-taupe-x justify-self-end">TOTAL</h2>
+                  </div>
+                  {% for line_item in order.line_items %}
+                    <div class="grid grid-cols-5 min-h-[58px] items-center border-t border-taupe-20 px-[24px] {% if forloop.last %} mb-[32px]{% endif %}">
+                      <h2 class="body-m-semibold text-taupe underline">{{ line_item.title }}</h2>
+                      <h2 class="body-s-semibold text-taupe-x">{{ line_item.sku }}</h2>
+                      <h2 class="body-s-semibold text-taupe">{{ line_item.price | money_with_currency }}</h2>
+                      <h2 class="body-s-semibold text-taupe-x">{{ line_item.quantity }}</h2>
+                      <h2 class="body-s-semibold text-taupe justify-self-end">{{ line_item.price | money_with_currency }}</h2>
+                    </div>
+                  {% endfor %}
+                  <div class="flex justify-between items-center border-t border-taupe-20 mx-[16px] py-[8px]">
+                    <div class="flex flex-col gap-[16px]">
+                      <h2 class="body-m text-taupe">Subtotal</h2>
+                      <h2 class="body-m text-taupe">Shipping</h2>
+                    </div>
+                    <div class="flex flex-col gap-[16px]">
+                      <h2 class="justify-self-end body-m-semibold text-taupe">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+                      <h2 class="justify-self-end body-m-semibold text-taupe">{{ order.shipping_price | money_with_currency }}</h2>
+                    </div>
+                  </div>
+                  <div class="flex justify-between pt-[8px] items-center border-t border-taupe-20 mx-[16px]">
+                    <h2 class="body-m text-taupe">Total</h2>
+                    <h2 class="body-I-semibold text-taupe justify-self-end">{{ order.total_price | money_with_currency }}</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       {% endfor %}
       {{ paginate | default_pagination }}
