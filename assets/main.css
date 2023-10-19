@@ -1319,6 +1319,9 @@ video {
 .gap-\[16px\] {
   gap: 16px;
 }
+.gap-\[17px\] {
+  gap: 17px;
+}
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -1654,10 +1657,6 @@ video {
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
-}
-.px-\[17px\] {
-  padding-left: 17px;
-  padding-right: 17px;
 }
 .px-\[19px\] {
   padding-left: 19px;
