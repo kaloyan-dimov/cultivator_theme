@@ -3,8 +3,7 @@
   <div class="flex flex-col h-[496px] rounded-[48px] justify-between p-4 bg-white border border-taupe-20 relative overflow-hidden">
     <a href="{{ product.url }}">
       <div class="w-full h-[200px] mb-2">
-        <img
-          class="w-full h-full object-contain"
+        <img class="w-full h-full object-contain"
           src="{{ product.featured_image | img_url: 'master'}}"
           alt="">
       </div>
@@ -30,16 +29,12 @@
     </a>
     {% if product.has_only_default_variant or variants_number < 2 %}
       <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] less_than_1">
-        <a
-          href="javascript:void(0);"
-          data-id="{{ product.first_available_variant.id }}"
+        <a href="javascript:void(0);" data-id="{{ product.first_available_variant.id }}"
           class="CTA CTA_main rounded-[24px] text-white w-full h-full flex justify-center items-center add_to_bag">ADD TO BAG</a>
       </div>
     {% else %}
       <div class="add_to_bag CTA_main rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] cursor-pointer">
-        <a
-          href="javascript:void(0)"
-          data-id="{{ product.first_available_variant.id }}"
+        <a href="javascript:void(0)" data-id="{{ product.first_available_variant.id }}"
           class="CTA CTA_main rounded-[24px] choose_option text-white flex justify-center items-center h-full w-full cursor-pointer">CHOOSE OPTION</a>
         <div class="options_list flex flex-col w-full absolute left-[0] bg-white  h-[114px] pt-[21px] border-t border-taupe-20">
           <div class="flex gap-[11px] justify-between">
