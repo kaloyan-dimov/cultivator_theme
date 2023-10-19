@@ -6,7 +6,7 @@
   <div class="flex md:hidden flex-col gap-[16px]">
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
-        <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px]">
+        <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px] relative">
           <div class="w-full flex justify-between">
             <h2 class="body-s text-taupe-x">ORDER</h2>
             <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
