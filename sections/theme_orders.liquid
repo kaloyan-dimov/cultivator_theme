@@ -9,29 +9,30 @@
       {% for order in customer.orders %}
         <div class="order">
           <div class="order_show">
-        <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px]">
-          <div class="w-full flex justify-between">
-            <h2 class="body-s text-taupe-x">ORDER</h2>
-            <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
-          </div>
-          <div class="w-full flex justify-between">
-            <h2 class="body-s text-taupe-x">DATE</h2>
-            <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
-          </div>
-          <div class="w-full flex justify-between">
-            <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
-            <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
-          </div>
-          <div
-            class="w-full flex justify-between">
-            <h2 class="body-s text-taupe-x">FULFILMENT STATUS</h2>
-            <h2 class="body-s-semibold text-taupe-x">{{ order.fulfillment_status_label }}</h2>
-          </div>
-          <div class="w-full flex justify-between">
-            <h2 class="body-s text-taupe-x">TOTAL</h2>
-            <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
-          </div>
-          </div>
+            <div class="w-full bg-white border border-taupe-20 rounded-[20px] py-[23px] px-[16px] flex flex-col gap-[24px]">
+              <div class="w-full flex justify-between">
+                <h2 class="body-s text-taupe-x">ORDER</h2>
+                <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
+              </div>
+              <div class="w-full flex justify-between">
+                <h2 class="body-s text-taupe-x">DATE</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
+              </div>
+              <div class="w-full flex justify-between">
+                <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
+              </div>
+              <div
+                class="w-full flex justify-between">
+                <h2 class="body-s text-taupe-x">FULFILMENT STATUS</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.fulfillment_status_label }}</h2>
+              </div>
+              <div class="w-full flex justify-between">
+                <h2 class="body-s text-taupe-x">TOTAL</h2>
+                <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
+              </div>
+              </div>
+            </div>
           {% comment %}{% endcomment %}
             <div class="order_content absolute top-[0] left-[0]">
                 <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
@@ -77,7 +78,6 @@
                   </div>
               </div>
             </div>
-          </div>
           </div>
         {% comment %}{% endcomment %}
       {% endfor %}
