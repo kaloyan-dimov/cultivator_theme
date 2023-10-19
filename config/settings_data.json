@@ -23,6 +23,8 @@
     "checkout_logo_position": "left",
     "checkout_body_background_color": "#e6dfdb",
     "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_button_color": "#ccac71",
     "address": "Address line 1\nAddress line 2",
     "sections": {
       "theme_header": {
