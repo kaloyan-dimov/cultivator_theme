@@ -38,12 +38,9 @@
   </div>
 
   {% comment %} Desktop {% endcomment %}
-  <div
-    class="overflow-hidden">
-    <div
-      class="orders_wrapper active hidden md:flex flex-col w-full bg-white border border-taupe-20 rounded-[20px] relative py-[24px]">
-      <div
-        class="grid grid-cols-5 h-[63px] pb-[8px] items-center px-[24px]">
+  <div class="overflow-hidden">
+    <div class="orders_wrapper active hidden md:flex flex-col w-full bg-white border border-taupe-20 rounded-[20px] relative py-[24px]">
+      <div class="grid grid-cols-5 h-[63px] pb-[8px] items-center px-[24px]">
         <h2 class="body-s text-taupe-x">ORDER</h2>
         <h2 class="body-s text-taupe-x">DATE</h2>
         <h2 class="body-s text-taupe-x">PAYMENT STATUS</h2>
@@ -53,8 +50,7 @@
       {% paginate customer.orders by 10 %}
         {% for order in customer.orders %}
           <div class="order">
-            <div
-              class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
+            <div class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
               <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
               <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
               <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
