@@ -4,7 +4,7 @@
   <div class="section mt-[48px] md:mt-[60px]">
   {% comment %} Mobile {% endcomment %}
   <div class="overflow-hidden md:hidden">
-    <div class="orders_wrapper active flex md:hidden flex-col gap-[16px] relative">
+    <div class="orders_wrapper active flex md:hidden flex-col gap-[16px] relative pb-[48px]">
     {% paginate customer.orders by 10 %}
       {% for order in customer.orders %}
         <div class="order">
