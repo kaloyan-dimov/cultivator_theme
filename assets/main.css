@@ -2738,13 +2738,20 @@ html * {
   transform: translateY(-50%);
   width: 57px;
   height: 48px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hero_swiper .swiper-button-prev,
+.hero_swiper .swiper-button-next {
+    position: absolute;
+  }
 }
 .hero_swiper .swiper-button-prev {
-  left: 80px;
+  left: 4px;
   transform: translateY(-50%) rotate(180deg);
 }
 .hero_swiper .swiper-button-next {
-  right: 80px;
+  right: 4px;
 }
 
 @media (max-width: 1024px) {
