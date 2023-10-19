@@ -20,8 +20,8 @@
       "galaxy-earrings"
     ],
     "checkout_logo_image": "shopify:\/\/shop_images\/01_1.png",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
     "checkout_body_background_color": "#e6dfdb",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#ffffff",
