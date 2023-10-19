@@ -8,10 +8,10 @@
           {% endif %}
 
           {% if block.settings.slide_paragraph != null %} 
-            <h3 class="body-m text-white mb-[32px] max-w-[550px]">{{ block.settings.slide_paragraph }}</h3>
+            <h3 class="body-m text-white mb-[22px] max-w-[550px]">{{ block.settings.slide_paragraph }}</h3>
           {% endif %}
 
-          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="CTA_main bg-ecru py-[19px] px-[24px] flex gap-[8px] w-fit rounded-[24px] text-white items-center cursor-pointer">
+          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="CTA_main bg-ecru py-[19px] px-[32px] flex gap-[8px] w-fit rounded-[24px] text-white items-center cursor-pointer">
             {% if block.settings.button_text != null %}
               <h2 class="CTA CTA_main uppercase">{{ block.settings.button_text }}</h2>
             {% endif %}
