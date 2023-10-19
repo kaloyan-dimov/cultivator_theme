@@ -29,7 +29,6 @@
             <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
         {% comment %}{% endcomment %}
-            <div class="order">
               <div class="order_content border border-1 border-[#FF0000]">
                 <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
                 <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
@@ -84,7 +83,6 @@
               </div>
             </div>
         {% comment %}{% endcomment %}
-        </div>
       {% endfor %}
       {{ paginate | default_pagination }}
     {% endpaginate %}
