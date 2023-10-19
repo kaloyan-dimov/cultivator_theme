@@ -35,7 +35,7 @@
                 <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
                 <div class="bg-white border border-taupe-20 rounded-[20px] py-[24px]">
                   {% for line_item in order.line_items %}
-                    <div class="w-full bg-white border-b border-taupe-20 py-[23px] flex flex-col gap-[24px] mx-[16px]">
+                    <div class="w-full bg-white border-b border-taupe-20 py-[23px] flex flex-col gap-[24px] px-[16px]">
                       <div class="w-full flex justify-between">
                         <h2 class="body-s text-taupe-x">PRODUCT</h2>
                         <h2 class="body-s-semibold-underline text-taupe-x">{{ line_item.title }}</h2>
