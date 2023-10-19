@@ -29,16 +29,8 @@
             <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
         {% comment %}{% endcomment %}
-          {% for order in customer.orders %}
             <div class="order">
-              <div class="order_show grid grid-cols-5 h-[55px] items-center border-t border-taupe-20 px-[24px]">
-                <h2 class="body-s-semibold-underline text-taupe-x">#{{ order.order_number }}</h2>
-                <h2 class="body-s-semibold text-taupe-x">{{ order.created_at | date: '%B %d, %Y' }}</h2>
-                <h2 class="body-s-semibold text-taupe-x">{{ order.financial_status_label }}</h2>
-                <h2 class="body-s-semibold text-taupe-x">{{ order.fulfillment_status_label }}</h2>
-                <h2 class="body-s-semibold text-taupe-x justify-self-end">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
-              </div>
-              <div class="order_content BORDER BORDER-1 BORDER-[#FF0000]">
+              <div class="order_content border border-1 border-[#FF0000]">
                 <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
                 <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
                 <div class="bg-white border border-taupe-20 rounded-[20px] py-[24px]">
@@ -91,7 +83,6 @@
                 </div>
               </div>
             </div>
-          {% endfor %}
         {% comment %}{% endcomment %}
         </div>
       {% endfor %}
