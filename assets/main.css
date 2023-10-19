@@ -936,6 +936,9 @@ video {
 .h-\[595px\] {
   height: 595px;
 }
+.h-\[600px\] {
+  height: 600px;
+}
 .h-\[60px\] {
   height: 60px;
 }
@@ -944,9 +947,6 @@ video {
 }
 .h-\[64px\] {
   height: 64px;
-}
-.h-\[670px\] {
-  height: 670px;
 }
 .h-\[68px\] {
   height: 68px;
@@ -4923,9 +4923,6 @@ html * {
   }
   .sm\:h-\[566px\] {
     height: 566px;
-  }
-  .sm\:h-\[600px\] {
-    height: 600px;
   }
   .sm\:h-\[668px\] {
     height: 668px;
