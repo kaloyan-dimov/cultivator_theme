@@ -1,7 +1,7 @@
 {% assign selected = "orders" %}
 {% include 'account_nav' with selected %}
 
-  <div class="section mt-[48px] md:mt-[60px]">
+<div class="section mt-[48px] md:mt-[60px]">
   {% comment %} Mobile {% endcomment %}
   <div class="flex md:hidden flex-col gap-[16px]">
     {% paginate customer.orders by 10 %}
