@@ -19,6 +19,10 @@
       "choker-with-triangle",
       "galaxy-earrings"
     ],
+    "checkout_logo_image": "shopify:\/\/shop_images\/01_1.png",
+    "checkout_logo_position": "left",
+    "checkout_body_background_color": "#e6dfdb",
+    "checkout_input_background_color_mode": "white",
     "address": "Address line 1\nAddress line 2",
     "sections": {
       "theme_header": {
