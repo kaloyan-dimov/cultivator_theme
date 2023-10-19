@@ -1,21 +1,25 @@
-<div class="swiper hero_swiper w-full h-[670px] sm:h-[600px]">
+<div class="swiper hero_swiper w-full h-[670px] sm:h-[600px]"> 
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div class="swiper-slide relative  md:px-[64px] flex-col-reverse flex cursor-grab active:cursor-grabbing">
         <div class="flex flex-col relative md:absolute w-full max-w-[1440px] px-[16px] md:px-[65px] md:bottom-[111px] md:z-[1] md:self-end left-[50%] translate-x-[-50%]">
           {% if block.settings.slide_title != null %}
-            <h2 class="h1 mx-[auto] md:mx-[0] mb-2 text-center md:text-left text-[40px] md:text-[56px] text-[#56463D] md:text-white max-w-[650px]">{{ block.settings.slide_title }}</h2>
+            <h2 class="h1 mx-[auto] md:mx-[0] mb-2 text-white max-w-[6490px]">{{ block.settings.slide_title }}</h2>
           {% endif %}
 
           {% if block.settings.slide_paragraph != null %} 
             <h3 class="mx-[auto] md:mx-[0] mb-[32px] text-center md:text-left text-[16px] text-[#56463D] md:text-white max-w-[550px]">{{ block.settings.slide_paragraph }}</h3>
           {% endif %}
 
-          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="CTA_main mx-[auto] md:mx-[0] bg-ecru  py-[19px] px-[24px] flex gap-2 w-fit rounded-[24px] text-white items-center cursor-pointer">
+          <a href="{% if block.settings.button_link != null%} {{ block.settings.button_link }} {% endif %}" class="CTA_main mx-[auto] md:mx-[0] bg-ecru  py-[19px] px-[24px] flex gap-[8px] w-fit rounded-[24px] text-white items-center cursor-pointer">
             {% if block.settings.button_text != null %}
-              <h2 class="CTA uppercase">{{ block.settings.button_text }}</h2>
+              <h2 class="CTA CTA_main uppercase">{{ block.settings.button_text }}</h2>
             {% endif %}
-            <div class="w-[26px] h-[19px] button_arrow_white"></div>
+            <div class="w-[25px] h-[20px]">
+              <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9551 10.499H25V9.49903H23.955C22.4386 9.38285 20.1288 8.76991 18.1552 7.3136C16.1904 5.86381 14.5514 3.57573 14.3485 0.0585938L13.3502 0.11619C13.5721 3.96209 15.3845 6.5119 17.5614 8.11825C18.3414 8.69382 19.1673 9.14792 19.9827 9.49903L0 9.49903L0 10.499L19.9828 10.499C19.1673 10.8501 18.3415 11.3042 17.5614 11.8798C15.3845 13.4862 13.5721 16.036 13.3502 19.8819L14.3485 19.9395C14.5514 16.4223 16.1904 14.1343 18.1552 12.6845C20.1288 11.2281 22.4386 10.6152 23.9551 10.499Z" fill="white"/>
+              </svg>
+            </div>
           </a>
         </div>
         {% if block.settings.slide_image != null %}

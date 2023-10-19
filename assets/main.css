@@ -831,9 +831,6 @@ video {
 .h-\[18px\] {
   height: 18px;
 }
-.h-\[19px\] {
-  height: 19px;
-}
 .h-\[200px\] {
   height: 200px;
 }
@@ -1218,8 +1215,8 @@ video {
 .max-w-\[648px\] {
   max-width: 648px;
 }
-.max-w-\[650px\] {
-  max-width: 650px;
+.max-w-\[6490px\] {
+  max-width: 6490px;
 }
 .max-w-\[662px\] {
   max-width: 662px;
@@ -5316,9 +5313,6 @@ html * {
   }
   .md\:text-left {
     text-align: left;
-  }
-  .md\:text-\[56px\] {
-    font-size: 56px;
   }
   .md\:text-white {
     --tw-text-opacity: 1;
