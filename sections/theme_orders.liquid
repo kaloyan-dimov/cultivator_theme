@@ -36,7 +36,7 @@
           {% comment %}{% endcomment %}
             <div class="order_content absolute top-[0]">
                 <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
-                <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
+                <h2 class="subtitle-1-bold text-taupe mb-[16px]">#{{ order.order_number }}</h2>
                 <div class="bg-white border border-taupe-20 rounded-[20px] py-[24px]">
                   {% for line_item in order.line_items %}
                     <div class="w-[calc(100%-32px)] bg-white border-b border-taupe-20 py-[23px] flex flex-col gap-[24px] mx-[16px]">
