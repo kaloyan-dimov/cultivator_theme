@@ -29,8 +29,8 @@
             <h2 class="body-s-semibold text-taupe-x">{{ order.line_items_subtotal_price | money_with_currency }}</h2>
           </div>
           </div>
-                {% comment %}{% endcomment %}
-                <div class="order_content">
+          {% comment %}{% endcomment %}
+            <div class="order_content">
                 <h2 class="order_hide body-s-semibold-underline text-taupe-x mb-[16px]">Return to Orders</h2>
                 <h2 class="subtitle-1-bold text-taupe mb-[48px]">#{{ order.order_number }}</h2>
                 <div class="bg-white border border-taupe-20 rounded-[20px] py-[24px]">
@@ -56,6 +56,7 @@
                         <h2 class="body-s text-taupe-x">TOTAL</h2>
                         <h2 class="body-s-semibold text-taupe-x">{{ line_item.price | money_with_currency }}</h2>
                       </div>
+                    </div>
                   {% endfor %}
                   <div class="flex justify-between items-center border-t border-taupe-20 mx-[16px] py-[8px]">
                     <div class="flex flex-col gap-[16px]">
@@ -71,10 +72,9 @@
                     <h2 class="body-m text-taupe">Total</h2>
                     <h2 class="body-I-semibold text-taupe justify-self-end">{{ order.total_price | money_with_currency }}</h2>
                   </div>
-                </div>
               </div>
             </div>
-            </div>
+          </div>
         {% comment %}{% endcomment %}
       {% endfor %}
       {{ paginate | default_pagination }}
