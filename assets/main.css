@@ -2279,10 +2279,6 @@ html * {
 }
 
 .input_text {
-  font-size: 45px !important;
-}
-
-.input_text {
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
@@ -2307,18 +2303,12 @@ html * {
   line-height: 1.6875rem;
 }
 .input_text:-webkit-autofill:hover, .input_text:-webkit-autofill, .input_text:-webkit-autofill:focus {
-  font-size: 1.125rem !important;
-}
-.input_text:-webkit-autofill:hover, .input_text:-webkit-autofill, .input_text:-webkit-autofill:focus {
-  -webkit-text-fill-color: #31b0dd;
+  -webkit-text-fill-color: #8F7666;
   -webkit-box-shadow: 0 0 0px 40rem white inset;
-  font-weight: 400;
 }
+
 .input_text:-webkit-autofill::first-line {
   font-size: 5rem !important;
-}
-.input_text:-webkit-autofill::first-line {
-  font-size: 37px;
 }
 
 .CTA_main {
