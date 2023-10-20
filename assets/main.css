@@ -2313,6 +2313,10 @@ html * {
   font-size: 5rem !important;
 }
 
+.max-w-\[316px\] {
+  max-width: 316px;
+}
+
 .CTA_main {
   transition: all 0.25s;
 }
