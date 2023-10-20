@@ -25,7 +25,6 @@
           {{ product.price_min | money }} - {{ product.price_max | money }} 
         {% endif %}
       </h2>
-      <div class="w-full h-[56px]"></div>
     </a>
     {% if product.has_only_default_variant or variants_number < 2 %}
       <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] less_than_1">
