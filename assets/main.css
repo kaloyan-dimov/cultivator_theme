@@ -2306,6 +2306,10 @@ html * {
   -webkit-text-fill-color: #8F7666;
   -webkit-box-shadow: 0 0 0px 40rem white inset;
 }
+.input_text:-webkit-autofill:active {
+  -webkit-text-fill-color: #54443B;
+  -webkit-box-shadow: 0 0 0px 40rem white inset;
+}
 
 .input_text:-webkit-autofill::first-line {
   font-size: 5rem !important;
