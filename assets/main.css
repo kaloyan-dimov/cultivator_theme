@@ -2311,7 +2311,7 @@ html * {
   font-weight: 400;
 }
 .input_text:-webkit-autofill::first-line {
-  font-size: 36px;
+  font-size: 37px;
 }
 
 .CTA_main {
