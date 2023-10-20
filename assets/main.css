@@ -2278,9 +2278,7 @@ html * {
   }
 }
 
-.input_text:-webkit-autofill:hover,
-.input_text:-webkit-autofill,
-.input_text:-webkit-autofill:focus {
+.input_text:-webkit-autofill:hover, .input_text:-webkit-autofill, .input_text:-webkit-autofill:focus {
   -webkit-text-fill-color: #31b0dd;
   -webkit-box-shadow: 0 0 0px 40rem white inset;
 }
