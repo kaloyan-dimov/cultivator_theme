@@ -1370,6 +1370,9 @@ video {
 .gap-y-\[48px\] {
   row-gap: 48px;
 }
+.self-start {
+  align-self: flex-start;
+}
 .self-end {
   align-self: flex-end;
 }
