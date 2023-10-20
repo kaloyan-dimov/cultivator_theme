@@ -1975,11 +1975,6 @@ video {
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
 }
-.text-\[\#776255\] {
-  --tw-text-opacity: 1;
-  color: rgba(119, 98, 85, 1);
-  color: rgba(119, 98, 85, var(--tw-text-opacity));
-}
 .text-\[\#8F7666\] {
   --tw-text-opacity: 1;
   color: rgba(143, 118, 102, 1);
