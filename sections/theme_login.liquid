@@ -4,16 +4,14 @@
     <div class="flex flex-col gap-[16px] pb-[32px]">
       {{ form.errors | default_errors }}
       <div class="email w-full">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+        <input class="input_text flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
           type="email"
           name="customer[email]"
           placeholder="Email">
       </div>
 
       <div class="password w-full">
-        <input
-          class="flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+        <input class="input_text flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
           type="password"
           name="customer[password]"
           placeholder="Password">
