@@ -2279,6 +2279,10 @@ html * {
 }
 
 .input_text {
+  font-size: 45px !important;
+}
+
+.input_text {
   --tw-text-opacity: 1;
   color: rgba(84, 68, 59, 1);
   color: rgba(84, 68, 59, var(--tw-text-opacity));
