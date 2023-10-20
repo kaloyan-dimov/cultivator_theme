@@ -2310,6 +2310,9 @@ html * {
   -webkit-box-shadow: 0 0 0px 40rem white inset;
   font-weight: 400;
 }
+.input_text:-webkit-autofill::first-line {
+  font-size: 36px;
+}
 
 .CTA_main {
   transition: all 0.25s;
