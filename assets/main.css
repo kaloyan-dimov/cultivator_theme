@@ -2302,7 +2302,7 @@ html * {
   font-weight: 400;
   line-height: 1.6875rem;
 }
-.input_text:auto-fill, .input_text:-webkit-autofill, .input_text:-webkit-autofill:hover, .input_text:-webkit-autofill:focus, .input_text:-webkit-autofill:active {
+.input_text:-webkit-autofill, .input_text:-webkit-autofill:hover, .input_text:-webkit-autofill:focus, .input_text:-webkit-autofill:active, .input_text:-internal-autofill-selected, .input_text:auto-fill {
   color: red !important;
 }
 
