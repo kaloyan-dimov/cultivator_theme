@@ -4,14 +4,14 @@
     <div class="flex flex-col gap-[16px] pb-[32px]">
       {{ form.errors | default_errors }}
       <div class="email w-full">
-        <input class="input_text flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+        <input class="input_text flex items-center w-full bg-white border border-ecru-x rounded-[12px] px-[16px] h-[56px]"
           type="email"
           name="customer[email]"
           placeholder="Email">
       </div>
 
       <div class="password w-full">
-        <input class="input_text flex items-center w-full bg-white border border-[#EAE2DB] rounded-[12px] px-[16px] h-[56px] text-[18px]"
+        <input class="input_text flex items-center w-full bg-white border border-ecru-x rounded-[12px] px-[16px] h-[56px]"
           type="password"
           name="customer[password]"
           placeholder="Password">
@@ -24,10 +24,7 @@
         <a class="body-m-semibold" href="/policies/privacy-policy">privacy policy</a>
       </h2>
       <div class="submit">
-        <input
-          type="submit"
-          value="LOGIN"
-          class="CTA flex justify-center items-center w-full bg-ecru rounded-[18px] h-[56px] text-white cursor-pointer">
+        <input type="submit" value="LOGIN" class="CTA flex justify-center items-center w-full bg-ecru rounded-[18px] h-[56px] text-white cursor-pointer">
       </div>
     </div>
   {% endform %}
