@@ -4,7 +4,7 @@
   }
 </style>
 {% assign count = 0 %}{% for block in section.blocks %}{% assign count = count | plus: 1 %}{% endfor %}
-<div class="special_offer_banner_swiper top-[0] left-0] py-[8px] px-[16px] flex justify-center items-center text-center {% if section.settings.display_banner != true %} hidden {% endif %}{% if count > 1 %}custom-class{% endif %}">
+<div class="special_offer_banner_swiper top-[0] left-0] py-[8px] px-[16px] flex justify-center items-center text-center {% if section.settings.display_banner != true %} hidden {% endif %}{% if count > 1 %}cursor-grab active:cursor-grabbing{% endif %}">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div class="swiper-slide">
