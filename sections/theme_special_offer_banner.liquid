@@ -5,7 +5,9 @@
   }
 </style>
 <div class="special_offer_banner top-[0] left-0] py-[8px] px-[16px] flex justify-center items-center text-center {% if section.settings.display_banner != true %} hidden {% endif %}">
-  <h2 class="body-s-semibold text-taupe">{{ section.settings.banner_text }}</h2>
+  {% for block in settings.blocks %}
+    <h2 class="body-s-semibold text-taupe">{{ block.settings.banner_text }}</h2>
+  {% endfor %}
 </div>
 {% schema %}
   {
