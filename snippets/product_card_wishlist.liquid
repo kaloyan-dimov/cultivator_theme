@@ -28,8 +28,7 @@
     </a>
     {% if product.has_only_default_variant or variants_number < 2 %}
       <div class="rounded-[24px] bg-ecru w-[calc(100%-32px)] h-[56px] absolute bottom-[16px] left-[16px] less_than_1">
-        <a
-          href="javascript:void(0);"
+        <a href="javascript:void(0);"
           data-id="{{ product.first_available_variant.id }}"
           class="CTA text-white w-full h-full flex justify-center items-center add_to_bag">ADD TO BAG</a>
       </div>
