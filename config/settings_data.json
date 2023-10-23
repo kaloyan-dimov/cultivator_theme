@@ -98,10 +98,20 @@
       },
       "theme_special_offer_banner": {
         "type": "theme_special_offer_banner",
+        "blocks": {
+          "ff013a67-25ba-41b7-be57-7739b5780e22": {
+            "type": "section",
+            "settings": {
+              "banner_text": "<p>Save 20% on your first order. Use code: <strong>First20<\/strong>. <a href=\"\/collections\/organic-hair-color\" title=\"Organic Hair Color\">Shop now<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "ff013a67-25ba-41b7-be57-7739b5780e22"
+        ],
         "settings": {
           "display_banner": true,
-          "background_color": "#e2dad5",
-          "banner_text": "<p>Save 20% on your first order. <strong>Use code:<\/strong> <strong>First20.<\/strong> <a href=\"\/collections\/conditioning-oil\" title=\"Conditioning Oil\">Shop now<\/a><\/p>"
+          "background_color": "#e2dad5"
         }
       }
     },
