@@ -104,10 +104,24 @@
             "settings": {
               "banner_text": "<p>Save 20% on your first order. Use code: <strong>First20<\/strong>. <a href=\"\/collections\/organic-hair-color\" title=\"Organic Hair Color\">Shop now<\/a><\/p>"
             }
+          },
+          "2157fb5d-5a73-4ee8-9967-ee3e2c4020d6": {
+            "type": "section",
+            "settings": {
+              "banner_text": "<p>Save 20% on your second order. Use code: <strong>First20<\/strong>. <a href=\"\/collections\/organic-hair-color\" title=\"Organic Hair Color\">Shop now<\/a><\/p>"
+            }
+          },
+          "7658d535-8185-4df7-ad32-bda0fd93e13f": {
+            "type": "section",
+            "settings": {
+              "banner_text": "<p>Save 20% on your third order. Use code: <strong>First20<\/strong>. <a href=\"\/collections\/organic-hair-color\" title=\"Organic Hair Color\">Shop now<\/a><\/p>"
+            }
           }
         },
         "block_order": [
-          "ff013a67-25ba-41b7-be57-7739b5780e22"
+          "ff013a67-25ba-41b7-be57-7739b5780e22",
+          "2157fb5d-5a73-4ee8-9967-ee3e2c4020d6",
+          "7658d535-8185-4df7-ad32-bda0fd93e13f"
         ],
         "settings": {
           "display_banner": true,
