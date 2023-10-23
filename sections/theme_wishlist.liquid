@@ -8,7 +8,7 @@
       {% for wishlist_item in wishlist_array %}
         {% if wishlist_item != "null" %}
           {% assign product = all_products[wishlist_item] %}
-      
+          {{ product.title }}
         {%if product != null %}not null {% else %} null {% endif %}
           {% include 'product_card_wishlist' with product %}
         {% else %}
