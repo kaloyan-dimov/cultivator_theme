@@ -7,7 +7,7 @@
     <div class="flex flex-wrap gap-y-[16px] sm:gap-y-[24px] gap-x-[16px] justify-center sm:justify-start items-center">
       {% for wishlist_item in wishlist_array %}
         {% if wishlist_item != null %}
-          {{ all_products[wishlist_item] }}
+        {% if all_products[wishlist_item] == empty %} empty {% else %} not empty {% endif %}
           {% assign product = all_products[wishlist_item] %}
             {% include 'product_card_wishlist' with product %}
         {% else %}
