@@ -3884,7 +3884,7 @@ html * {
   transition: all 0.25s;
 }
 .search_container .search_close {
-  position: fixed;
+  position: absolute;
   top: 8px;
   right: 16px;
   width: 44px;
