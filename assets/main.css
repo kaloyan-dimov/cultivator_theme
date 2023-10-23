@@ -3056,14 +3056,20 @@ html * {
     width: 316px;
   }
 }
-.special_offer_banner_swiper .swiper-wrapper .swiper-slide .body-s-semibold {
+.special_offer_banner_swiper .swiper-wrapper .swiper-slide .special_offer_banner_text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.special_offer_banner_swiper .swiper-wrapper .swiper-slide .special_offer_banner_text strong {
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1.5rem;
 }
-.special_offer_banner_swiper .swiper-wrapper .swiper-slide .body-s-semibold strong {
+.special_offer_banner_swiper .swiper-wrapper .swiper-slide .special_offer_banner_text a {
+  font-size: 1rem;
   font-weight: 700;
-}
-.special_offer_banner_swiper .swiper-wrapper .swiper-slide .body-s-semibold a {
-  font-weight: 700;
+  line-height: 1.5rem;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
