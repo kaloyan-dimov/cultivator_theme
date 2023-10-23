@@ -1,10 +1,9 @@
 <style>
-  .special_offer_banner {
-    background-color: {{ section.settings.background_color }}
-    ;
+  .special_offer_banner_swiper {
+    background-color: {{ section.settings.background_color }};
   }
 </style>
-<div class="special_offer_banner top-[0] left-0] py-[8px] px-[16px] flex justify-center items-center text-center {% if section.settings.display_banner != true %} hidden {% endif %}">
+<div class="special_offer_banner_swiper top-[0] left-0] py-[8px] px-[16px] flex justify-center items-center text-center {% if section.settings.display_banner != true %} hidden {% endif %}">
   {% for block in settings.blocks %}
     <h2 class="body-s-semibold text-taupe">{{ block.settings.banner_text }}</h2>
   {% endfor %}
