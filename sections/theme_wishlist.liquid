@@ -6,10 +6,11 @@
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
     <div class="flex flex-wrap gap-y-[16px] sm:gap-y-[24px] gap-x-[16px] justify-center sm:justify-start items-center">
       {% for wishlist_item in wishlist_array %}
-        {% if wishlist_item != null %}
+        {% if wishlist_item != null %}s
           {% assign product = all_products[wishlist_item] %}
-            {% if product == empty %} empty {% else %} not empty {% endif %}
-            {% include 'product_card_wishlist' with product %}
+            {% if product != empty %} 
+              {% include 'product_card_wishlist' with product %}
+             {% endif %}
         {% else %}
         <h3 class="body-I text-taupe pt-[44px]">Your wishlist is empty, start shopping now!</h3>
         {% endif %}
