@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template_search",
+      "type": "theme_search",
       "settings": {
       }
     }
