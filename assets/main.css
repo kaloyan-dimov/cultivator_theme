@@ -3885,15 +3885,13 @@ html * {
   transition: all 0.5s;
 }
 .search_container .see_all_results {
-  max-height: 0;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: center;
   transition: all 0.25s;
 }
 .search_container .see_all_results.active {
-  max-height: 1000px;
   transform: scaleX(1);
-  transform-origin: left;
+  transform-origin: center;
   transition: all 0.25s;
 }
 .search_container .search_products::after {
