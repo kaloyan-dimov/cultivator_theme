@@ -765,9 +765,6 @@ video {
 .mt-\[20px\] {
   margin-top: 20px;
 }
-.mt-\[22px\] {
-  margin-top: 22px;
-}
 .mt-\[25px\] {
   margin-top: 25px;
 }
@@ -944,9 +941,6 @@ video {
 }
 .h-\[600px\] {
   height: 600px;
-}
-.h-\[60px\] {
-  height: 60px;
 }
 .h-\[63px\] {
   height: 63px;
@@ -1852,6 +1846,9 @@ video {
 }
 .pt-\[21px\] {
   padding-top: 21px;
+}
+.pt-\[22px\] {
+  padding-top: 22px;
 }
 .pt-\[24px\] {
   padding-top: 24px;
