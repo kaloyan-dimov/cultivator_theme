@@ -3993,13 +3993,13 @@ html * {
 }
 
 @media (min-width: 1024px) {
-  .search_products::after {
+  .search_container .search_products::after {
     left: 72px;
   }
-  .search_close::after {
+  .search_container .search_close::after {
     display: block;
   }
-  .search_close span {
+  .search_container .search_close span {
     display: none;
   }
 }
