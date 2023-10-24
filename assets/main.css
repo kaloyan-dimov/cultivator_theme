@@ -541,6 +541,9 @@ video {
 .bottom-\[170px\] {
   bottom: 170px;
 }
+.bottom-\[18px\] {
+  bottom: 18px;
+}
 .bottom-\[48px\] {
   bottom: 48px;
 }
@@ -758,6 +761,9 @@ video {
 }
 .mt-\[16px\] {
   margin-top: 16px;
+}
+.mt-\[20px\] {
+  margin-top: 20px;
 }
 .mt-\[22px\] {
   margin-top: 22px;
@@ -3884,10 +3890,10 @@ html * {
   transform-origin: top;
   transform: scaleY(0);
   transition: all 0.5s;
-  height: 700px;
+  height: 725px;
 }
 .search_container.active {
-  max-height: 700px;
+  max-height: 725px;
   transform-origin: top;
   transform: scaleY(1);
   transition: all 0.5s;
