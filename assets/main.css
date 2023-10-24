@@ -3890,7 +3890,6 @@ html * {
   transition: all 0.5s;
 }
 .search_container .see_all_results {
-  display: block;
   opacity: 0;
   transform: scaleX(0);
   transform-origin: center;
