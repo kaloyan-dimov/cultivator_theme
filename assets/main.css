@@ -3917,7 +3917,7 @@ html * {
   max-height: 3000px;
   transition: all 0.25s;
 }
-.search_container .search_results :nth-child(n+6) {
+.search_container .search_results :nth-child(n+5) {
   display: none;
 }
 
