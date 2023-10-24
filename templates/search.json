@@ -3,7 +3,7 @@
     "main": {
       "type": "theme_search",
       "settings": {
-        "search_pagination": 6
+        "search_pagination": 20
       }
     },
     "5b06d078-5c4d-42ea-8697-73568c047ea0": {
