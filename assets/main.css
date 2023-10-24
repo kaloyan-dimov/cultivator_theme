@@ -1958,9 +1958,6 @@ video {
 .text-\[45px\] {
   font-size: 45px;
 }
-.text-\[49px\] {
-  font-size: 49px;
-}
 .text-\[50px\] {
   font-size: 50px;
 }
@@ -5182,11 +5179,17 @@ html * {
     padding-top: 8px;
     padding-bottom: 8px;
   }
+  .sm\:pb-\[24px\] {
+    padding-bottom: 24px;
+  }
   .sm\:pb-\[48px\] {
     padding-bottom: 48px;
   }
   .sm\:pb-\[56px\] {
     padding-bottom: 56px;
+  }
+  .sm\:pb-\[72px\] {
+    padding-bottom: 72px;
   }
   .sm\:pb-\[80px\] {
     padding-bottom: 80px;
