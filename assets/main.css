@@ -5170,6 +5170,10 @@ html * {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .sm\:py-\[27\.5px\] {
+    padding-top: 27.5px;
+    padding-bottom: 27.5px;
+  }
   .sm\:py-\[56px\] {
     padding-top: 56px;
     padding-bottom: 56px;
