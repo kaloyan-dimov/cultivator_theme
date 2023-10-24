@@ -3891,11 +3891,13 @@ html * {
 }
 .search_container .see_all_results {
   display: block;
+  opacity: 0;
   transform: scaleX(0);
   transform-origin: center;
   transition: all 0.25s;
 }
 .search_container .see_all_results.active {
+  opacity: 1;
   transform: scaleX(1);
   transform-origin: center;
   transition: all 0.25s;
