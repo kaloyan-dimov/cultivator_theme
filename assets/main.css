@@ -3915,7 +3915,7 @@ html * {
   transition: all 0.25s;
 }
 .search_container .search_results :nth-child(n+6) {
-  background-color: red;
+  display: none;
 }
 .search_container .search_close {
   position: absolute;
