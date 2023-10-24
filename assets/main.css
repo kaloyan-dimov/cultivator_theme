@@ -756,6 +756,9 @@ video {
 .mt-\[16px\] {
   margin-top: 16px;
 }
+.mt-\[22px\] {
+  margin-top: 22px;
+}
 .mt-\[25px\] {
   margin-top: 25px;
 }
@@ -3877,10 +3880,6 @@ html * {
   transform-origin: top;
   transform: scaleY(1);
   transition: all 0.5s;
-}
-.search_container .search_text {
-  font-size: 14px;
-  margin-left: 16px;
 }
 .search_container .search_products::after {
   content: "";
