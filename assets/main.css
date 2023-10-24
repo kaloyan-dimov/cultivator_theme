@@ -3882,13 +3882,13 @@ html * {
   transition: all 0.5s;
 }
 .search_container .see_all_results {
-  max-width: 0;
+  max-height: 0;
   transform: scaleX(0);
   transform-origin: left;
   transition: all 0.25s;
 }
 .search_container .see_all_results.active {
-  max-width: 1000px;
+  max-height: 1000px;
   transform: scaleX(1);
   transform-origin: left;
   transition: all 0.25s;
