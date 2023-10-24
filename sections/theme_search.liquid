@@ -1,7 +1,7 @@
 <div class="section">
-  <h1 class="text-[49px]">Search</h1>
+  <h1 class="h1 text-taupe pt-[56px] pb-[8px]">Search</h1>
   {% if search.performed %}
-    <h2>search results for "{{ search.terms | escape }}" ({{ search.results | size }})</h2>
+    <h2 class="body-m-semibold text-taupe">search results for "{{ search.terms | escape }}" ({{ search.results | size }})</h2>
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
     <div class="flex flex-col w-full sm:flex-row gap-x-[16px] gap-y-[32px] sm:flex-wrap justify-center">
       {% for result in search.results %}
