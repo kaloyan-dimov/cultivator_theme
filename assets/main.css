@@ -3920,29 +3920,6 @@ html * {
 .search_container .search_results :nth-child(n+6) {
   display: none;
 }
-.search_container .search_close {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.search_container .search_close span {
-  position: absolute;
-  width: 22.5px;
-  height: 2px;
-  background-color: #000000;
-  border-radius: 2px;
-}
-.search_container .search_close span:first-child {
-  transform: rotate(45deg);
-}
-.search_container .search_close span:last-child {
-  transform: rotate(-45deg);
-}
 
 .add_to_cart_el {
   padding: 16px 16px;
