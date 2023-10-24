@@ -4,7 +4,6 @@
     <h2 class="body-m-semibold text-taupe pb-[16px] sm:pb-[72px]">search results for "{{ search.terms | escape }}" ({{ search.results | size }})</h2>
     {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
     <div class="flex flex-col w-full sm:flex-row gap-x-[16px] gap-y-[32px] sm:flex-wrap justify-center">
-      {% paginate search.results by section.settings.search_pagination %}
         {% for result in search.results %}
           {% if result.object_type == "product" %}
             {% assign product = result %}
@@ -13,10 +12,7 @@
             </div>
           {% endif %}
         {% endfor %}
-          <div class="pagination flex w-full gap-[16px] py-[0] sm:py-[27.5px] mb-[16px] justify-end">
-            {{ paginate | default_pagination }}
-          </div>
-        {% endpaginate %}
+
       </div>
     {% else %}
       <h2 class="body-m-semibold text-taupe">Start your search from the searchbar</h2>
