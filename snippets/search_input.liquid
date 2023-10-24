@@ -1,7 +1,7 @@
 <div class="search_container fixed z-[3] w-full top-[0] left-[0] shadow-[0px_15px_10px_-15px_rgba(0,0,0,0.3)]">
-  <form class="search_products relative fixed z-[2] w-full h-[60px] bg-white" action="{{ routes.search_url }}">
+  <form class="search_products relative z-[2] w-full h-[60px] my-[16px] mx-auto bg-white" action="{{ routes.search_url }}">
     <input
-      class="search_input absolute pl-[44px] h-[44px] w-[200px] top-[8px] left-[16px] border border-ecru-x rounded-[12px]"
+      class="search_input absolute pl-[44px] h-[56px] top-[8px] left-[16px] border border-ecru-x rounded-[12px]"
       type="text" 
       placeholder="search"
       name="q"
@@ -9,7 +9,7 @@
       <div class="search_close z-[2] cursor-pointer">
         <span></span>
         <span></span>
-        </div>
+      </div>
   </form>
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   <div class="fixed top-[0] left-0 w-full h-full bg-white z-[1] pt-[76px] overflow-auto">
