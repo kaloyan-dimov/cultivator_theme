@@ -3974,11 +3974,11 @@ html * {
 }
 .search_container .search_close::after {
   content: "close";
-  display: block;
+  display: none;
   width: 46px;
 }
 .search_container .search_close span {
-  display: none;
+  display: block;
   position: absolute;
   width: 22.5px;
   height: 2px;
@@ -3997,10 +3997,10 @@ html * {
     left: 72px;
   }
   .search_close::after {
-    display: none;
+    display: block;
   }
   .search_close span {
-    display: block;
+    display: none;
   }
 }
 .add_to_cart_el {
