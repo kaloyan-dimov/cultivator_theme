@@ -571,9 +571,6 @@ video {
 .right-\[0\] {
   right: 0;
 }
-.right-\[16px\] {
-  right: 16px;
-}
 .right-\[24px\] {
   right: 24px;
 }
@@ -618,9 +615,6 @@ video {
 }
 .top-\[68px\] {
   top: 68px;
-}
-.top-\[76px\] {
-  top: 76px;
 }
 .top-\[8px\] {
   top: 8px;
@@ -1143,9 +1137,6 @@ video {
 }
 .w-\[calc\(100\%-32px\)\] {
   width: calc(100% - 32px);
-}
-.w-\[calc\(100vw-68px\)\] {
-  width: calc(100vw - 68px);
 }
 .w-auto {
   width: auto;

@@ -1,20 +1,22 @@
 <div class="search_container fixed z-[3] w-full top-[0] left-[0] shadow-[0px_15px_10px_-15px_rgba(0,0,0,0.3)]">
   <form class="search_products relative fixed z-[2] w-full h-[60px] bg-white" action="{{ routes.search_url }}">
     <input
-      class="search_input absolute pl-[44px] h-[44px] w-[200px] top-[8px] left-[16px] w-[calc(100vw-68px)] border border-ecru-x rounded-[12px]"
+      class="search_input absolute pl-[44px] h-[44px] w-[200px] top-[8px] left-[16px] border border-ecru-x rounded-[12px]"
       type="text" 
       placeholder="search"
       name="q"
       value="{{ search.terms | escape }}" />
-    <button class="absolute top-[76px] right-[16px] underline">see all results</button>
+      <div class="search_close z-[2] cursor-pointer">
+        <span></span>
+        <span></span>
+        </div>
   </form>
-  <div class="search_close z-[2] cursor-pointer">
-    <span></span>
-    <span></span>
-  </div>
   {% assign wishlist_array = customer.metafields.custom.wishlist | split: "," %}
   <div class="fixed top-[0] left-0 w-full h-full bg-white z-[1] pt-[76px] overflow-auto">
+    <div class="flex">
     <h2 class="search_text mb-[16px]">Trending products:</h2>
+      <button class="cursor-pointer underline">see all results</button>
+    </div>
     <div class="search_results flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center"></div>
     <div class="search_trending_products flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center active">
       {% for product in settings.trending_products %}
