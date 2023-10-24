@@ -3059,12 +3059,14 @@ html * {
 .special_offer_banner_swiper {
   max-height: 0;
   transform: scaleY(0);
+  transform-origin: top;
   padding: 0;
   transition: all 0.5s;
 }
 .special_offer_banner_swiper.active {
   max-height: 1000px;
   transform: scaleY(1);
+  transform-origin: top;
   padding: 8px 16px;
   transition: all 0.5s;
 }
