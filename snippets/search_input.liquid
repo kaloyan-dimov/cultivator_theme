@@ -16,7 +16,6 @@
       <h2 class="search_text body-m-semibold text-taupe-x">Trending products:</h2>
       <h2 class="see_all_results cursor-pointer body-m-semibold-underline text-taupe-x">see all results</h2>
     </div>
-    <h2 class="see_all_results CTA CTA_secondary absolute left-[calc(50%-56px)] bottom-[18px] text-ecru cursor-pointer w-[113px] h-[56px] flex items-center justify-center rounded-[18px] border border-ecru bg-white z-[1]">SHOP ALL</h2>
     <div class="search_results flex flex-col sm:flex-row px-[16px] gap-[18px] sm:flex-wrap justify-center"></div>
     <div class="search_trending_products section flex flex-col sm:flex-row px-[16px] gap-[16px] sm:flex-wrap justify-center active">
       {% for product in settings.trending_products %}
@@ -26,4 +25,5 @@
       {% endfor %}
     </div>
   </div>
+  <h2 class="see_all_results CTA CTA_secondary absolute left-[calc(50%-56px)] bottom-[18px] text-ecru cursor-pointer w-[113px] h-[56px] flex items-center justify-center rounded-[18px] border border-ecru bg-white z-[1]">SHOP ALL</h2>
 </div>
