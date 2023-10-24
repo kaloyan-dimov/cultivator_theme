@@ -4,9 +4,52 @@
       "type": "theme_search",
       "settings": {
       }
+    },
+    "5b06d078-5c4d-42ea-8697-73568c047ea0": {
+      "type": "block_banner",
+      "blocks": {
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-1": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_35.svg",
+            "banner_text": "Dermatologically Tested"
+          }
+        },
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-2": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_36.svg",
+            "banner_text": "Cruelty FREE"
+          }
+        },
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-3": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_37.svg",
+            "banner_text": "100% Organic"
+          }
+        },
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-4": {
+          "type": "section",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/Frame_38.svg",
+            "banner_text": "Fairly Sourced"
+          }
+        }
+      },
+      "block_order": [
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-1",
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-2",
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-3",
+        "template--21099279286584__5b06d078-5c4d-42ea-8697-73568c047ea0-section-4"
+      ],
+      "settings": {
+        "animation_speed": 10
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "5b06d078-5c4d-42ea-8697-73568c047ea0"
   ]
 }
