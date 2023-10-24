@@ -3097,6 +3097,9 @@ html * {
   height: 500px;
 }
 
+#desktop_header {
+  transition: all 0.25s;
+}
 #desktop_header ul li ul {
   max-height: 0;
   transform: scaleY(0);
