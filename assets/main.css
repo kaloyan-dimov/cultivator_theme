@@ -3906,6 +3906,30 @@ html * {
   background-position: center;
   background-repeat: no-repeat;
 }
+.search_container .search_products .search_input {
+  --tw-text-opacity: 1;
+  color: rgba(86, 70, 61, 1);
+  color: rgba(86, 70, 61, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+.search_container .search_products .search_input::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgba(143, 118, 102, 1);
+  color: rgba(143, 118, 102, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+.search_container .search_products .search_input::placeholder {
+  --tw-text-opacity: 1;
+  color: rgba(143, 118, 102, 1);
+  color: rgba(143, 118, 102, var(--tw-text-opacity));
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
 .search_container .search_trending_products {
   max-height: 0;
   transform: scaleY(0);
