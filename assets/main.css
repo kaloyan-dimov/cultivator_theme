@@ -3974,6 +3974,7 @@ html * {
 }
 .search_container .search_close::after {
   content: "close";
+  width: 46px;
 }
 .search_container .search_close span {
   position: absolute;
