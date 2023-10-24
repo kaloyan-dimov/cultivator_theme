@@ -3966,7 +3966,7 @@ html * {
   display: none;
 }
 .search_container .search_close {
-  width: 44px;
+  width: 36px;
   height: 44px;
   display: flex;
   align-items: center;
@@ -3980,7 +3980,7 @@ html * {
 .search_container .search_close span {
   display: block;
   position: absolute;
-  width: 22.5px;
+  width: 20.5px;
   height: 2px;
   background-color: #000000;
   border-radius: 2px;
