@@ -2270,6 +2270,10 @@ html * {
   cursor: progress;
 }
 
+.main {
+  transition: all 0.25s;
+}
+
 .section {
   max-width: 1440px;
   padding-left: 16px;
