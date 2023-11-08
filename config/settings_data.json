@@ -137,6 +137,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "11784258968709844120": {
+        "type": "shopify:\/\/apps\/oc-instagram-feed-tiktok-feed\/blocks\/orichi-tiktok\/b06431bf-3e42-4917-87e9-01944d0361e1",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
