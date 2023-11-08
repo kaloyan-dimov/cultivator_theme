@@ -430,6 +430,23 @@
       "settings": {
         "animation_speed": 20
       }
+    },
+    "169944399884948802": {
+      "type": "apps",
+      "blocks": {
+        "3b8dc16d-794a-4f18-bd5d-1cf9744450a6": {
+          "type": "shopify:\/\/apps\/wishlist\/blocks\/star_rating\/5dc538ef-3b62-4d3f-ab12-257e8c0ac658",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "3b8dc16d-794a-4f18-bd5d-1cf9744450a6"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -443,6 +460,7 @@
     "30ce9665-2aad-40d6-98c6-8036efbbb9f4",
     "bb32c763-4e89-466a-be07-8858c238064b",
     "1698415428669770d6",
-    "29ef1e09-83f2-4734-93e1-5afcb978f683"
+    "29ef1e09-83f2-4734-93e1-5afcb978f683",
+    "169944399884948802"
   ]
 }
